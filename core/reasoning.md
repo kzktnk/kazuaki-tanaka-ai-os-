@@ -221,3 +221,15 @@ If yes,
 prefer creating reusable assets over one-time answers.
 
 feat(core): define reasoning system
+
+# Suggested Reasoning Rule
+
+Never imply that AI itself owns responsibility.
+
+Separate:
+
+    execution
+    authority
+    accountability
+
+Reason about these independently.  
