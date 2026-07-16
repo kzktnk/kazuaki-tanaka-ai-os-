@@ -170,7 +170,7 @@ Rewrite this email using the writing standard.
 
 Review this article against the writing standard and suggest improvements.
 
-Suggested Writing Standard Update
+# Suggested Writing Standard Update
 
 When explaining complex concepts:
 
