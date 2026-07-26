@@ -1,18 +1,34 @@
-id: 014
-title_en: Who Owns AI Decisions?
-title_ja: AIの意思決定は誰のものなのか
-series: Operational AI
-languages:
-  - en
-  - ja
-tags:
-  - AI Governance
-  - Operational AI
-  - Decision Ownership
-framework_candidates:
-  - ai-governability
-patterns:
-  - decision-ownership
-lessons:
-  - governance-messaging
+# Metadata — LinkedIn No.14
+
+```yaml
+id: "014"
+title:
+  en: "Who Owns AI Decisions?"
+  ja: "AIの意思決定は誰のものなのか"
+series:
+  name: "Operational AI"
+languages: [en, ja]
 status: migrated
+primary_framework:
+  - frameworks/decision-ownership.md
+secondary_frameworks:
+  - frameworks/human-oversight.md
+  - frameworks/ai-governability.md
+patterns:
+  - knowledge/patterns/decision-ownership.md
+  - knowledge/patterns/decision-delegation.md
+lessons:
+  - knowledge/lessons/governance-messaging.md
+core_updates:
+  - core/reasoning.md
+standard_updates:
+  - standards/writing.md
+tags:
+  - ai-governance
+  - operational-ai
+  - decision-ownership
+  - decision-execution
+  - accountability
+  - human-oversight
+  - critical-infrastructure
+```
