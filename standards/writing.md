@@ -170,12 +170,55 @@ Rewrite this email using the writing standard.
 
 Review this article against the writing standard and suggest improvements.
 
-# Suggested Writing Standard Update
+## Concept-Distinction Writing Pattern
 
-When explaining complex concepts:
+Use this pattern when explaining complex governance, operating-model, or organizational concepts.
 
-    Contrast two related concepts.
-    Give memorable names.
-    Move from abstract discussion to operational implications.
+### Structure
 
-Example: Decision Execution vs Decision Ownership
+1. Start with the common question.
+2. Reframe it as the more important question.
+3. Separate two concepts that are often confused.
+4. Use an operational example.
+5. Explain the governance or organizational implication.
+6. End with a forward-looking capability statement.
+
+### Example
+
+Common question:
+
+> Can AI make decisions?
+
+Reframed question:
+
+> Who owns those decisions?
+
+Concept distinction:
+
+- Decision Execution
+- Decision Ownership
+
+### Quality Criteria
+
+A strong concept distinction should:
+
+- use memorable names
+- clarify a real operating problem
+- avoid false binary framing
+- explain why the distinction matters
+- show how the distinction changes design or governance
+- connect the idea to a future organizational capability
+
+### Reusable Structure
+
+Common assumption  
+↓  
+Deeper question  
+↓  
+Concept distinction  
+↓  
+Operational example  
+↓  
+Governance implication  
+↓  
+Future capability
