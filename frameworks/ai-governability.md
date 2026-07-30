@@ -203,6 +203,31 @@ Planned additions:
 - Architecture patterns
 - Case studies
 - Figures and diagrams
+  
+## Human Accountability as a Governability Condition
+
+AI Governability requires more than technical control over AI systems.
+
+It also requires explicit human and institutional accountability.
+
+As AI autonomy increases, organizations must be able to determine:
+
+- who reviews consequential AI decisions
+- who has authority to approve or override them
+- who owns the resulting outcome
+- who can explain the decision to relevant stakeholders
+
+Human-in-the-Loop is therefore not merely a temporary control used while AI remains unreliable.
+
+It can function as an accountability mechanism within the broader AI governance operating model.
+
+A governable AI system must preserve an identifiable chain from:
+
+AI Action
+→ Human Authority
+→ Organizational Accountability
+
+even when technical execution is increasingly automated.
 
 # Suggested Framework Update
 
