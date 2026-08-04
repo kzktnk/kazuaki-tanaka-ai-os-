@@ -223,13 +223,7 @@ prefer creating reusable assets over one-time answers.
 feat(core): define reasoning system
 
 # Suggested Reasoning Rule
+...
+Reason about these independently.
 
-Never imply that AI itself owns responsibility.
-
-Separate:
-
-    execution
-    authority
-    accountability
-
-Reason about these independently.  
++ See `core/ai-collaboration.md` for how requests to AI should be leveled (information / structuring / review) and how work should be divided between human and AI.
