@@ -56,7 +56,7 @@ last_updated: 2026-08-03
 新規5要素（Purpose/Capability/Measurement/Change/Sustainability）は、AIが `core/reasoning.md` の項目名から論理展開して起案したものであり、実案件での使用実績を経ていない。特にMeasurement・Sustainabilityの「例」列は仮置き。実際の案件で使いながら精度を確認する。
 
 ## 関連ファイル
-- 元の4要素版のAIプロンプト例・レビュー観点は `references/thinking-patterns-reference.md` のPattern 5行を参照（9要素化に伴い更新が必要）
+- AIプロンプト例・AIレビュー観点は `references/thinking-patterns-reference.md` の Pattern 5 節を参照（9要素版）
 - 上位の考え方は `core/reasoning.md` の「Transformation thinking」
 
 ---
