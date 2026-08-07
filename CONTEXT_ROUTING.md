@@ -26,6 +26,7 @@ Load:
 - core/identity.md
 - core/values.md
 - core/reasoning.md
+- core/author-voice.md
 
 ---
 
@@ -34,6 +35,7 @@ Load:
 Load:
 - standards/consulting-review.md
 - standards/writing.md
+- core/author-voice.md
 - frameworks/operating-model.md
 - frameworks/capability-model.md
 - Relevant domain files
@@ -52,6 +54,7 @@ Outputs:
 Load:
 - standards/consulting-review.md
 - standards/writing.md
+- core/author-voice.md
 - frameworks/transformation-roadmap.md
 - frameworks/operating-model.md
 

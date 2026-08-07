@@ -278,6 +278,9 @@ Avoid:
 - unnecessary restatement of the question
 - excessive use of fashionable terminology
 
+For concrete voice, tone, and anti-AI-pattern guidance in deliverables,
+see `core/author-voice.md`.
+
 ---
 
 ## Quality Expectations
