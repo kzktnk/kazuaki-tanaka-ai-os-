@@ -36,6 +36,7 @@ Load:
 - standards/consulting-review.md
 - standards/writing.md
 - core/author-voice.md
+- knowledge/lessons/author-voice-archetypes-legacy.md (Archetype 1: Proposal)
 - frameworks/operating-model.md
 - frameworks/capability-model.md
 - Relevant domain files
@@ -49,12 +50,63 @@ Outputs:
 
 ---
 
+# Vendor Proposal Evaluation
+
+Load:
+- standards/vendor-proposal-evaluation.md
+- standards/consulting-review.md
+- core/author-voice.md
+- knowledge/lessons/author-voice-archetypes-legacy.md (Archetype 2)
+- Relevant RFP / domain context (if available, non-confidential)
+
+Focus:
+- Evaluation criteria design (rationale per scoring point)
+- Weighting and team assignment
+- Value-add definition
+- Multi-evaluator reconciliation
+- Fair comparison across vendors
+
+Outputs:
+- Evaluation sheet design
+- Scoring rationale
+- Gap / concern summary
+- Selection recommendation with evidence
+
+---
+
+# Investigation Program / Requirements Definition
+
+Load:
+- frameworks/program-phases-investigation-to-requirements.md
+- core/author-voice.md
+- knowledge/lessons/author-voice-archetypes-legacy.md (Archetypes 4–7)
+- frameworks/thinking-patterns/pattern-02-as-is-gap-to-be.md
+- frameworks/thinking-patterns/pattern-01-why-what-how.md
+- standards/writing.md
+
+Focus:
+- Phase gate compliance (100→500)
+- As-Is before Gap; approach before requirements
+- Option comparison and evaluation sheets
+- Requirements document structure
+- Report storyline as compression of prior phases
+
+Outputs:
+- Phase deliverable checklist
+- Gap / issue extraction
+- Option evaluation matrix
+- Requirements outline
+- Investigation report storyline
+
+---
+
 # Steering Committee Review
 
 Load:
 - standards/consulting-review.md
 - standards/writing.md
 - core/author-voice.md
+- knowledge/lessons/author-voice-archetypes-legacy.md (Archetype 3)
 - frameworks/transformation-roadmap.md
 - frameworks/operating-model.md
 
@@ -63,6 +115,7 @@ Focus:
 - Decision readiness
 - Missing risks
 - Actionability
+- Priority of issues before asking for decisions
 
 ---
 

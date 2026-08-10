@@ -1,9 +1,9 @@
 # Author Voice — Kazuaki Tanaka
 
-**Version:** v1.0  
+**Version:** v1.1  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
-**Origin:** JERA 発電所自立経営資料（v0.2→v0.6）の反復修正とチームフィードバック（2026年8月）
+**Origin:** JERA 発電所自立経営資料（v0.2→v0.6、2026年8月）＋レガシー成果物アーキタイプ（2002–2009年頃）の一般化
 
 ---
 
@@ -52,7 +52,23 @@
 | 成熟度 × ガバナンス | 権限委譲を一度きりのイベントとして語らないとき | 本書 §2.3 |
 | 説明チェーン設計 | 作成者→PO→役員など、読者が複数いるとき | 本書 §4.2 |
 
-### 1.3 判断の優先順位（`core/reasoning.md` との接続）
+### 1.3 成果物アーキタイプ（レガシー由来）
+
+状況に応じて、以下の**資料の型**を選ぶ。詳細は `knowledge/lessons/author-voice-archetypes-legacy.md`。
+
+| アーキタイプ | 使うとき | 関連標準 |
+|-------------|---------|---------|
+| **提案書** | RFP応答、Phase提案 | `pattern-01` |
+| **ベンダー評価** | 複数社提案の選定・評価シート設計 | `standards/vendor-proposal-evaluation.md` |
+| **SteerComm** | 経営層への進捗・論点・決定依頼 | `standards/consulting-review.md` |
+| **課題抽出→改善案** | As-Is調査後のGap整理 | `pattern-02`, Phase 300 |
+| **方式比較→各案評価** | ゾーニング・アーキ選定 | `vendor-proposal-evaluation`, Phase 410 |
+| **要件定義書** | 方式FIX後の要件文書化 | `program-phases-investigation-to-requirements` Phase 420 |
+| **調査研究報告** | プログラム中間/最終報告 | Phase 500 |
+
+**共通線：** いずれも Fact → 構造化 → 仮説/推奨 → 次アクション。Howの詳細は定義・方式の**後**。
+
+### 1.4 判断の優先順位（`core/reasoning.md` との接続）
 
 1. ビジネス目的・決定事項  
 2. Operating Model / 運営の仕組み  
@@ -63,7 +79,7 @@
 **テクノロジー（AI含む）から議論を始めない。**  
 AIは手段であり、議論の主役にしない（§2.4）。
 
-### 1.4 コンサルとしてのスタンス
+### 1.5 コンサルとしてのスタンス
 
 - **Constructive challenge：** クライアント材料の矛盾・ギャップを指摘する（Rev.4機能⑥など）
 - **Hypothesis, not prescription：** 初期段階は「IBM仮説」「案」。確定口調にしない
@@ -255,6 +271,10 @@ JERA案件で確立した例：
 | `core/ai-collaboration.md` | AI協働の基本姿勢 |
 | `standards/writing.md` | 文体・Concept-Distinction |
 | `standards/consulting-review.md` | レビュー観点 |
+| `standards/vendor-proposal-evaluation.md` | ベンダー提案評価 |
+| `frameworks/program-phases-investigation-to-requirements.md` | 調査→要件プログラム |
+| `knowledge/lessons/author-voice-archetypes-legacy.md` | 成果物アーキタイプ（2002–2009） |
+| `knowledge/lessons/client-deliverable-voice-jera-2026-08.md` | JERA事例（2026） |
 | `knowledge/lessons/governance-messaging.md` | ガバナンスの語り方 |
 
 ---
