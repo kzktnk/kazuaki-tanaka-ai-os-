@@ -122,7 +122,7 @@ def build_maturity_slide(slide, slide_no):
     add_label(slide, "第1部｜エグゼクティブ")
     add_title(slide, "権限成熟度モデル（案）｜Level 0〜3")
     data = [
-        ["Level", "名称", "委譲範囲（発電所長）", "本社/CJPOが保持", "③-b実証での位置づけ"],
+        ["Level", "名称", "委譲範囲（発電所長）", "本社/本社が保持", "トラックB実証での位置づけ"],
         ["0", "本社主導", "ツール選定・予算・KPI設定すべて本社", "—", "現状の一部（移行前）"],
         ["1", "限定委譲", "カタログ内ツール・小額予算・所内運用設計", "KPI設定・基準・大型投資", "★ 実証開始点（IBM推奨）"],
         ["2", "標準委譲", "Level1＋一定額予算執行・施策選定", "KPI設定・セキュリティ統制", "6ヶ月後の拡大検討"],
@@ -134,8 +134,8 @@ def build_maturity_slide(slide, slide_no):
     note.fill.fore_color.rgb = IBM_LIGHT
     note.line.color.rgb = ACCENT
     note.text_frame.text = (
-        "IBM推奨（Option Bとの対応）：③-b実証は Level 1 から開始 → 6ヶ月の実証後に Level 2 への拡大可否を判断\n"
-        "8/13 経営層ディスカッション：Level 1 の具体的範囲（ツールカタログ・予算上限・期間）を確定することが最優先\n"
+        "IBM推奨（Option Bとの対応）：トラックB実証は Level 1 から開始 → 6ヶ月の実証後に Level 2 への拡大可否を判断\n"
+        "経営層ディスカッション：Level 1 の具体的範囲（ツールカタログ・予算上限・期間）を確定することが最優先\n"
         "※ Level定義は論点整理用の案です。最終的な委譲範囲はクライアント様ご判断により確定します。"
     )
     for p in note.text_frame.paragraphs:
@@ -156,7 +156,7 @@ def build_concept_slide(slide, slide_no):
         ("Why｜なぜ今、定義が必要か", True),
         "・4月より発電所長が経営責任者に移行済みだが、「何を自律的に運営するか」の合意が未整理",
         "・権限委譲（現場裁量）とKPI管理（本社集中）の非対称が、施策実行のボトルネック",
-        "・8/13 経営層で「どこまで委譲するか」を議論する前提として、概念の共通理解が必要",
+        "・経営層で「どこまで委譲するか」を議論する前提として、概念の共通理解が必要",
     ])
     what = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(6.70), Inches(1.25), Inches(6.13), Inches(2.35))
     what.fill.solid()
@@ -165,8 +165,8 @@ def build_concept_slide(slide, slide_no):
     add_bullets(slide, Inches(6.90), Inches(1.35), Inches(5.73), Inches(2.15), [
         ("What｜発電所自立経営とは（クライアント文脈）", True),
         "・発電所長がKPI達成に向け、権限の範囲内で自律的に運営・施策実行するモデル",
-        "・AMP構築PJ：収支計画PDCA・ユニット価値最大化　／　DX：デジタル施策の実行手段",
-        "・≠ ③-a AI検証（技術・導入検証）　／　＝ 権限×KPI×PDCAの運用モデル実証（③-b）",
+        "・アセット管理構築プログラム：収支計画PDCA・ユニット価値最大化　／　DX：デジタル施策の実行手段",
+        "・≠ トラックA（AI検証）（技術・導入検証）　／　＝ 権限×KPI×PDCAの運用モデル実証（トラックB）",
     ])
     dist = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(0.50), Inches(3.85), Inches(12.33), Inches(1.55))
     dist.fill.solid()
@@ -175,7 +175,7 @@ def build_concept_slide(slide, slide_no):
     add_bullets(slide, Inches(0.70), Inches(3.95), Inches(11.90), Inches(1.35), [
         ("So What｜本資料の提案との関係", True),
         "・二層体制（KPI管理ライン／実行権限ライン）で「自律」と「統制」を両立",
-        "・権限成熟度 Level 1 から段階的に委譲（第1部参照）／ ③-b モデルプラントで実証",
+        "・権限成熟度 Level 1 から段階的に委譲（第1部参照）／ トラックB モデルプラントで実証",
         "・次スライド以降：3つの取組の関係 → ギャップ → 体制案 → Options の順で具体化",
     ])
     add_footer(slide, "発電所自立経営の定義", slide_no)
@@ -275,9 +275,9 @@ def main():
         12: (  # slide 13 index
             "詳細データ・質疑対応用\n"
             "4月移行後の実態ギャップ（詳細：プロセス・PJ連携）　p.14\n"
-            "Rev.4体制案への示唆（詳細）　p.15\n"
+            "クライアント推進体制案への示唆（詳細）　p.15\n"
             "権限委譲マトリクス詳細・意思決定責任　p.16\n"
-            "AMP構築PJとの接続　p.17\n"
+            "アセット管理構築プログラムとの接続　p.17\n"
             "モデルプラント検証設計・スケジュール・役割分担（詳細）　p.18-20\n"
             "経営判断事項・次のステップ　p.21"
         ),
@@ -303,7 +303,7 @@ def main():
     for shape in dst.slides[3].shapes:
         if shape.has_text_frame and "IBM推奨" in shape.text_frame.text:
             shape.text_frame.text = (
-                "IBM推奨：段階的委譲（Option B）＋PMO機能拡張＋③-bは③-a開始後に段階選定。"
+                "IBM推奨：段階的委譲（Option B）＋PMO機能拡張＋トラックBはトラックA開始後に段階選定。"
                 "委譲Level1の範囲確定を最優先の判断事項とする"
                 "（Level定義は次スライド参照／詳細Optionsは第2部参照）"
             )

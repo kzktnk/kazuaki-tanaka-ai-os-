@@ -108,7 +108,7 @@ def slide_title(prs, slide_no):
     line.line.fill.background()
 
     t1 = slide.shapes.add_textbox(Inches(0.5), Inches(1.2), Inches(9), Inches(0.6))
-    t1.text_frame.text = "骨子（たたき台）Rev.3"
+    t1.text_frame.text = "骨子（たたき台）ドラフトv3"
     t1.text_frame.paragraphs[0].font.size = Pt(14)
     t1.text_frame.paragraphs[0].font.color.rgb = GRAY
 
@@ -132,7 +132,7 @@ def slide_title(prs, slide_no):
     meta = slide.shapes.add_textbox(Inches(0.5), Inches(5.8), Inches(9), Inches(1.2))
     mtf = meta.text_frame
     mtf.text = (
-        "クライアント様　技術統括部 デジタルパワープラント推進部\n"
+        "クライアント様　技術統括部門 デジタル推進部門\n"
         "PO・ステークホルダー　ご報告用ドラフト\n"
         "2026年8月5日（第2回ヒアリング）時点の情報に基づく仮説ベースの一次たたき台　｜　IBM"
     )
@@ -148,24 +148,24 @@ def slide_purpose(prs, n):
     add_header_bar(slide, "本資料の位置づけ", slide_no=n)
 
     add_bullet_box(slide, Inches(0.4), Inches(0.95), Inches(4.5), Inches(2.2), [
-        ("本日（8/5）のご要望", 0, True),
+        ("初回ヒアリングのご要望", 0, True),
         ("① 推進体制に対する示唆だし（改善提案）と、貴社側で実際の体制案を記述", 0),
         ("② デジタル施策実行に係る自立運営モデルプラントの設計（案）を記述", 0),
     ], 10)
 
     add_bullet_box(slide, Inches(0.4), Inches(3.2), Inches(4.5), Inches(2.0), [
-        ("Rev.3での主な更新", 0, True),
-        ("・3つの取組（DX戦略／AMP自立経営／モデルプラント）の統合プロセス図を追加", 0),
+        ("ドラフトv3での主な更新", 0, True),
+        ("・3つの取組（DX戦略／AMプログラム自立経営／モデルプラント）の統合プロセス図を追加", 0),
         ("・As-Is／Gap／To-Beによる現状ギャップ整理を追加", 0),
-        ("・Rev.4形式の体制図・権限マトリクス（Decision Ownership 3層）を具体化", 0),
+        ("・クライアント体制案形式の体制図・権限マトリクス（Decision Ownership 3層）を具体化", 0),
         ("・自立運営モデルプラントの検証設計・経営判断Optionsを追加", 0),
     ], 10)
 
     add_bullet_box(slide, Inches(5.0), Inches(0.95), Inches(4.5), Inches(2.5), [
         ("活用タイミング", 0, True),
-        ("8/7（金）　簡易インプットとしてご提供", 0),
-        ("8/12　定例会議でのPOへのご報告", 0),
-        ("8/13以降　経営層ディスカッション（権限設定・自立経営モデル）", 0),
+        ("第2回すり合わせ　簡易インプットとしてご提供", 0),
+        ("PO報告　定例会議でのPOへのご報告", 0),
+        ("経営層DC以降　経営層ディスカッション（権限設定・自立経営モデル）", 0),
     ], 10)
 
     note = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(5.0), Inches(3.5), Inches(4.5), Inches(1.5))
@@ -176,7 +176,7 @@ def slide_purpose(prs, n):
     ntf.text = (
         "ご留意：本資料は仮説ベースの骨子です。"
         "用語はクライアント資料に合わせ「発電所自立経営」に統一しています。"
-        "8/12以降の議論・フィードバックを経て精緻化する前提でご覧ください。"
+        "PO報告以降の議論・フィードバックを経て精緻化する前提でご覧ください。"
     )
     for p in ntf.paragraphs:
         p.font.size = Pt(9)
@@ -186,7 +186,7 @@ def slide_purpose(prs, n):
 def slide_process(prs, n):
     slide = prs.slides.add_slide(prs.slide_layouts[6])
     set_slide_bg(slide)
-    add_header_bar(slide, "全体プロセス｜3つの取組の関係性", "DX（AI活用）推進 × AMP構築PJ × モデルプラント", n)
+    add_header_bar(slide, "全体プロセス｜3つの取組の関係性", "DX（AI活用）推進 × アセット管理構築プログラム × モデルプラント", n)
 
     # Upper band
     upper = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(0.4), Inches(1.0), Inches(9.2), Inches(1.5))
@@ -200,7 +200,7 @@ def slide_process(prs, n):
     utf.paragraphs[0].font.color.rgb = IBM_BLUE
 
     boxes = [
-        ("① 戦略策定\nDGD施策抽出\n重点施策選定\n推進体制整理", Inches(0.6), Inches(1.45)),
+        ("① 戦略策定\n重点施策抽出\n推進体制整理", Inches(0.6), Inches(1.45)),
         ("→", Inches(2.55), Inches(1.65)),
         ("② ロードマップ具体化\n業務モデル設計\nKPI設定\n開発・検証", Inches(2.85), Inches(1.45)),
         ("→", Inches(4.8), Inches(1.65)),
@@ -223,14 +223,14 @@ def slide_process(prs, n):
                 p.font.size = Pt(8)
                 p.alignment = PP_ALIGN.CENTER
 
-    # Middle AMP
+    # Middle AMプログラム
     mid = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(0.4), Inches(2.7), Inches(9.2), Inches(1.0))
     mid.fill.solid()
     mid.fill.fore_color.rgb = RGBColor(0xFF, 0xF3, 0xE0)
     mid.line.color.rgb = ORANGE
     mtf = mid.text_frame
     mtf.text = (
-        "【横串】AMP構築PJ｜発電所自立経営・アセマネプロセス構築\n"
+        "【横串】アセット管理構築プログラム｜発電所自立経営・アセマネプロセス構築\n"
         "発電所主体の収支計画PDCA・モニタリング｜2027年度事業計画プロセス（2027年）への実装着手が今年度ゴール"
     )
     for p in mtf.paragraphs:
@@ -252,10 +252,10 @@ def slide_process(prs, n):
     mp1.line.color.rgb = ACCENT
     mp1tf = mp1.text_frame
     mp1tf.text = (
-        "③-a AI検証モデルプラント（既存・Rev.4）\n"
+        "トラックA（AI検証）モデルプラント（既存・クライアント推進体制案）\n"
         "目的：クイック施策・PoCの技術・導入検証\n"
         "時期：2026/9〜2027/3\n"
-        "主体：発電所長＋機能チーム（DPP/G-DAC）"
+        "主体：発電所長＋機能チーム（デジタル推進・データ部門）"
     )
     for p in mp1tf.paragraphs:
         p.font.size = Pt(9)
@@ -267,10 +267,10 @@ def slide_process(prs, n):
     mp2.line.width = Pt(2)
     mp2tf = mp2.text_frame
     mp2tf.text = (
-        "③-b 自立運営モデルプラント（新設・本資料の提案）\n"
+        "トラックB 自立運営モデルプラント（新設・本資料の提案）\n"
         "目的：権限委譲×KPI管理の運用モデル実証\n"
         "時期：2026/10〜2027/3（案）\n"
-        "主体：発電所長＋PMO拡張機能＋AMP連携"
+        "主体：発電所長＋PMO拡張機能＋AMプログラム連携"
     )
     for p in mp2tf.paragraphs:
         p.font.size = Pt(9)
@@ -278,7 +278,7 @@ def slide_process(prs, n):
             p.font.bold = True
 
     add_bullet_box(slide, Inches(0.4), Inches(5.85), Inches(9.2), Inches(1.0), [
-        ("So What：上段②と横串AMPは「合流していく」前提。③-aと③-bは別トラックで並行推進し、③-bで経営判断に必要な権限設計の実証データを得る", 0, True),
+        ("So What：上段②と横串AMプログラムは「合流していく」前提。トラックAとトラックBは別トラックで並行推進し、トラックBで経営判断に必要な権限設計の実証データを得る", 0, True),
     ], 9)
 
 
@@ -291,13 +291,13 @@ def slide_as_is_gap(prs, n):
         ["", "As-Is（現状）", "Gap（構造的課題）", "To-Be（あるべき姿）"],
         [
             "組織・\n権限",
-            "4月より発電所長が経営責任者に。\nCJPOから数値目標を受領済み",
+            "4月より発電所長が経営責任者に。\n本社から数値目標を受領済み",
             "ツール選定・予算執行等の\n権限範囲が未明文化",
             "権限委譲マトリクスに基づく\n現場裁量＋本社ガードレール",
         ],
         [
             "KPI\n管理",
-            "Rev.4で機能⑥に発電所が主担。\nCJPOが目標設定",
+            "推進体制案でKPI管理に発電所が主担。\n本社が目標設定",
             "KPI管理（本社集中）と\n実行権限（現場委譲）の非対称",
             "KPI管理ラインと実行権限ラインを\n分離し接続点を明確化",
         ],
@@ -309,13 +309,13 @@ def slide_as_is_gap(prs, n):
         ],
         [
             "モデル\nプラント",
-            "AI検証用モデルプラント\n（③-a）のみ計画",
-            "自立経営モデル（③-b）の\n検証場が体制上未整備",
-            "2トラック並行＋AMP PDCA\nを題材とした実証",
+            "AI検証用モデルプラント\n（トラックA）のみ計画",
+            "自立経営モデル（トラックB）の\n検証場が体制上未整備",
+            "2トラック並行＋AMプログラムPDCA\nを題材とした実証",
         ],
         [
             "PJ\n連携",
-            "DX推進体制とAMP構築PJが\n別体系で整理",
+            "DX推進体制とアセット管理構築プログラムが\n別体系で整理",
             "全体最適と現場自律の\n関係性が未整理",
             "PMO機能共通化・\n定期報告統合",
         ],
@@ -330,23 +330,23 @@ def slide_why(prs, n):
 
     add_bullet_box(slide, Inches(0.4), Inches(0.95), Inches(4.5), Inches(2.8), [
         ("現状の到達点", 0, True),
-        ("・DX（AI活用）推進体制（案）はRev.4で策定済み", 0),
-        ("・AMP構築PJで「発電所自律運営によるユニット価値最大化」を目指す姿を設定", 0),
-        ("・4月から発電所長が経営責任者に移行、CJPOから数値目標を受領", 0),
+        ("・DX（AI活用）推進体制（案）はクライアント推進体制案で策定済み", 0),
+        ("・アセット管理構築プログラムで「発電所自立運営によるユニット価値最大化」を目指す姿を設定", 0),
+        ("・4月から発電所長が経営責任者に移行、本社から数値目標を受領", 0),
         ("・今年度ゴール：2027年度事業計画プロセスへのPDCA実装着手", 0),
     ], 10)
 
     add_bullet_box(slide, Inches(0.4), Inches(3.9), Inches(4.5), Inches(2.8), [
         ("足元の経営文脈", 0, True),
         ("・事業領域毎の戦略が不透明な中でDX戦略を策定する必要（PO指摘）", 0),
-        ("・8/13以降、経営層と権限設定・自立経営モデルのあり方を議論", 0),
+        ("・経営層DC以降、経営層と権限設定・自立経営モデルのあり方を議論", 0),
     ], 10)
 
     add_bullet_box(slide, Inches(5.0), Inches(0.95), Inches(4.5), Inches(5.5), [
         ("未解決の論点＝示唆の源泉", 0, True),
         ("1. 権限委譲（現場裁量）とKPI管理（本社集中）の非対称性を制度設計として両立", 0),
-        ("2. モデルプラント＝クイックAI検証（③-a）であり、自立経営実証（③-b）の場が未整備", 0),
-        ("3. DX推進体制とAMP構築PJの関係性が未整理（全体最適 vs 現場自律）", 0),
+        ("2. モデルプラント＝クイックAI検証（トラックA）であり、自立経営実証（トラックB）の場が未整備", 0),
+        ("3. DX推進体制とAMプログラムの関係性が未整理（全体最適 vs 現場自律）", 0),
         ("4. 現場主導の施策導入における失敗・定着リスクへのガバナンス設計", 0),
         ("5. 発電所長が「困らないようサポート」する仕組みの体制への落とし込み", 0),
     ], 10)
@@ -355,17 +355,17 @@ def slide_why(prs, n):
 def slide_rev4_comments(prs, n):
     slide = prs.slides.add_slide(prs.slide_layouts[6])
     set_slide_bg(slide)
-    add_header_bar(slide, "①体制への示唆｜Rev.4体制案に対するコメント", slide_no=n)
+    add_header_bar(slide, "①体制への示唆｜クライアント推進体制案に対するコメント", slide_no=n)
 
     data = [
-        ["#", "観点", "現状（Rev.4）", "示唆", "So What"],
+        ["#", "観点", "現状（クライアント推進体制案）", "示唆", "So What"],
         ["1", "権限の明文化", "発電所長は意見提示・整合判断・先行検証にとどまる", "権限委譲マトリクスを体制表に追加", "現場の施策停滞を防ぐ"],
         ["2", "KPI/実行権限", "KPI管理が機能⑥・PMO・統括部長に分散", "KPI管理ラインと実行権限ラインを分離", "本社統制と現場自律の両立"],
-        ["3", "エスカレーション", "KPI未達時フロー未記載", "発電所長→PMO→CJPOの支援ライン新設", "「困らないサポート」を制度化"],
-        ["4", "PJ接続", "DX推進とAMP構築PJが別体系", "PMO共通化・定期報告統合", "合流前提の全体最適"],
-        ["5", "モデルプラント", "AI検証用途に限定", "③-b自立運営モデル実証を別トラック新設", "経営判断の実証データ取得"],
+        ["3", "エスカレーション", "KPI未達時フロー未記載", "発電所長→PMO→本社経営統括の支援ライン新設", "「困らないサポート」を制度化"],
+        ["4", "PJ接続", "DX推進とアセット管理構築プログラムが別体系", "PMO共通化・定期報告統合", "合流前提の全体最適"],
+        ["5", "モデルプラント", "AI検証用途に限定", "トラックB自立運営モデル実証を別トラック新設", "経営判断の実証データ取得"],
         ["6", "会議体", "発電所長はモデルプラント時のみ必須", "全体進捗会議等への位置づけ明確化", "全所への展開意思醸成"],
-        ["7", "機能⑥矛盾", "KPI主担=発電所 vs 本社集中方針", "KPI設定（本社）/達成責任（現場）/報告（PMO）を分離", "Rev.4内部矛盾の解消"],
+        ["7", "機能⑥矛盾", "KPI主担=発電所 vs 本社集中方針", "KPI設定（本社）/達成責任（現場）/報告（PMO）を分離", "推進体制案内部矛盾の解消"],
     ]
     add_table(slide, 8, 5, Inches(0.15), Inches(0.9), Inches(9.7), Inches(5.9), data)
 
@@ -373,14 +373,14 @@ def slide_rev4_comments(prs, n):
 def slide_org_chart(prs, n):
     slide = prs.slides.add_slide(prs.slide_layouts[6])
     set_slide_bg(slide)
-    add_header_bar(slide, "①体制案（To-Be）｜全体像", "Rev.4形式｜KPI管理ライン（本社集中）と実行権限ライン（現場委譲）の二層構造", n)
+    add_header_bar(slide, "①体制案（To-Be）｜全体像", "クライアント体制案形式｜KPI管理ライン（本社集中）と実行権限ライン（現場委譲）の二層構造", n)
 
-    # CJPO
+    # 本社経営統括
     cjpo = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(3.5), Inches(0.95), Inches(3.0), Inches(0.55))
     cjpo.fill.solid()
     cjpo.fill.fore_color.rgb = IBM_BLUE
     cjpo.line.fill.background()
-    cjpo.text_frame.text = "CJPO（CJPO担当）｜最終意思決定"
+    cjpo.text_frame.text = "本社経営統括｜最終意思決定"
     cjpo.text_frame.paragraphs[0].font.color.rgb = WHITE
     cjpo.text_frame.paragraphs[0].font.size = Pt(10)
     cjpo.text_frame.paragraphs[0].font.bold = True
@@ -399,7 +399,7 @@ def slide_org_chart(prs, n):
     roles = [
         ("本社実行責任\n各統括部長", Inches(0.3), Inches(2.6), IBM_LIGHT, IBM_BLUE),
         ("発電所実行責任\n発電所長", Inches(3.5), Inches(2.6), RGBColor(0xE8, 0xF5, 0xE9), RGBColor(0x2E, 0x7D, 0x32)),
-        ("実行支援\nDPP推進部・G-DAC\nデジタル部門", Inches(6.8), Inches(2.6), IBM_LIGHT, IBM_BLUE),
+        ("実行支援\nデジタル推進部門・データ・分析部門\nデジタル部門", Inches(6.8), Inches(2.6), IBM_LIGHT, IBM_BLUE),
     ]
     for text, left, top, fill, line in roles:
         box = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, left, top, Inches(2.8), Inches(1.1))
@@ -416,7 +416,7 @@ def slide_org_chart(prs, n):
     kpi_line.fill.solid()
     kpi_line.fill.fore_color.rgb = RGBColor(0xFF, 0xEB, 0xEE)
     kpi_line.line.color.rgb = RGBColor(0xC6, 0x28, 0x28)
-    kpi_line.text_frame.text = "KPI管理ライン（本社集中）：CJPO目標設定 → PMO横串モニタリング → 統括部長整合 → 発電所長達成責任"
+    kpi_line.text_frame.text = "KPI管理ライン（本社集中）：本社KPI目標設定 → PMO横串モニタリング → 統括部長整合 → 発電所長達成責任"
     kpi_line.text_frame.paragraphs[0].font.size = Pt(9)
     kpi_line.text_frame.paragraphs[0].font.color.rgb = RGBColor(0xB7, 0x1C, 0x1C)
 
@@ -432,12 +432,12 @@ def slide_org_chart(prs, n):
     esc.fill.solid()
     esc.fill.fore_color.rgb = RGBColor(0xFF, 0xF3, 0xE0)
     esc.line.color.rgb = ORANGE
-    esc.text_frame.text = "エスカレーション（未達時）：発電所長 → PMO（支援・調整） → CJPO（重要判断・権限見直し）"
+    esc.text_frame.text = "エスカレーション（未達時）：発電所長 → PMO（支援・調整） → 本社経営統括（重要判断・権限見直し）"
     esc.text_frame.paragraphs[0].font.size = Pt(9)
 
     add_bullet_box(slide, Inches(0.3), Inches(5.85), Inches(9.4), Inches(1.0), [
-        ("注：「自律経営運営事務局」は新組織増設ではなく、PMO機能の拡張（AMP/DX接続窓口・権限運用ルール整備）として位置づけ", 0, True),
-        ("Rev.4 機能①–⑥（業務要件・データ基盤・AI開発・遠隔監視・現場実装・KPI管理）との対応関係は別紙または次版で詳細化", 0),
+        ("注：「自律経営運営事務局」は新組織増設ではなく、PMO機能の拡張（AMプログラム/DX接続窓口・権限運用ルール整備）として位置づけ", 0, True),
+        ("推進体制案 機能①–⑥（業務要件・データ基盤・AI開発・遠隔監視・現場実装・KPI管理）との対応関係は別紙または次版で詳細化", 0),
     ], 9)
 
 
@@ -447,13 +447,13 @@ def slide_authority_matrix(prs, n):
     add_header_bar(slide, "①体制案｜権限委譲マトリクス（案）＋ Decision Ownership", slide_no=n)
 
     data = [
-        ["領域", "委譲（発電所長）", "保持（本社/CJPO）", "Reviewer", "Approver", "Owner", "エスカレーション"],
-        ["ツール選定", "カタログ内・予算内", "基盤・セキュリティ基準", "DPP/G-DAC", "発電所長", "発電所長", "カタログ外・大型投資"],
-        ["予算執行", "KPI達成に資する範囲", "年度枠・重点配分", "PMO", "発電所長/CJPO", "発電所長", "予算超過見込"],
-        ["KPI", "目標水準の提案", "設定・改定", "統括部長", "CJPO", "CJPO", "3ヶ月連続未達"],
-        ["人員配置", "所内配置裁量", "横断配置方針", "統括部長", "CJPO", "発電所長", "大幅不足"],
-        ["業務プロセス\n変更", "所内運用設計", "全社標準・BPR", "DPP", "統括部長", "発電所長", "全社標準逸脱"],
-        ["データ整備", "所内データ入力・整備", "マスタ・ガバナンス", "DPP", "統括部長", "発電所長", "基盤不整合"],
+        ["領域", "委譲（発電所長）", "保持（本社）", "Reviewer", "Approver", "Owner", "エスカレーション"],
+        ["ツール選定", "カタログ内・予算内", "基盤・セキュリティ基準", "デジタル推進・データ部門", "発電所長", "発電所長", "カタログ外・大型投資"],
+        ["予算執行", "KPI達成に資する範囲", "年度枠・重点配分", "PMO", "発電所長/本社経営統括", "発電所長", "予算超過見込"],
+        ["KPI", "目標水準の提案", "設定・改定", "統括部長", "本社経営統括", "本社経営統括", "3ヶ月連続未達"],
+        ["人員配置", "所内配置裁量", "横断配置方針", "統括部長", "本社経営統括", "発電所長", "大幅不足"],
+        ["業務プロセス\n変更", "所内運用設計", "全社標準・BPR", "デジタル推進部門", "統括部長", "発電所長", "全社標準逸脱"],
+        ["データ整備", "所内データ入力・整備", "マスタ・ガバナンス", "デジタル推進部門", "統括部長", "発電所長", "基盤不整合"],
     ]
     add_table(slide, 7, 7, Inches(0.1), Inches(0.9), Inches(9.8), Inches(3.8), data)
 
@@ -461,30 +461,30 @@ def slide_authority_matrix(prs, n):
         ("Decision Ownership 設計原則（GitHub frameworks/decision-delegation 準拠）", 0, True),
         ("・実行権限は委譲可能。結果の説明責任（Accountability）はOwnerに残る", 0),
         ("・AI/デジタル施策：AI推薦 → 人間Review → 人間Approve → 実行 → Outcome Ownership", 0),
-        ("・委譲ラインの定量基準（予算上限・期間等）は8/13経営層ディスカッションで確定（本表は論点整理用）", 0),
+        ("・委譲ラインの定量基準（予算上限・期間等）は経営層ディスカッション経営層ディスカッションで確定（本表は論点整理用）", 0),
     ], 9)
 
 
 def slide_amp_connection(prs, n):
     slide = prs.slides.add_slide(prs.slide_layouts[6])
     set_slide_bg(slide)
-    add_header_bar(slide, "AMP構築PJとの接続", "自立運営モデルプラント（③-b）をAMP PDCA実証の場として位置づけ", n)
+    add_header_bar(slide, "アセット管理構築プログラムとの接続", "自立運営モデルプラント（トラックB）をAMプログラムPDCA実証の場として位置づけ", n)
 
     data = [
-        ["AMP構築PJ要素", "現状/方向性", "③-bモデルプラントでの検証内容"],
-        ["目指す姿", "発電所自律運営によるユニット価値最大化", "権限委譲下でのKPI達成→ユニット価値への寄与を実測"],
+        ["AMプログラム要素", "現状/方向性", "トラックBモデルプラントでの検証内容"],
+        ["目指す姿", "発電所自立運営によるユニット価値最大化", "権限委譲下でのKPI達成→ユニット価値への寄与を実測"],
         ["今年度ゴール", "2027年度事業計画プロセスへのPDCA実装着手", "収支計画→実績→改善アクションのPDCAを1拠点で試行"],
         ["発電所長の役割", "社長型経営責任者（4月移行済）", "PDCAサイクルの自律運用＋デジタル施策選定"],
-        ["PO所管", "AMシステム基盤構築部会リーダー", "KPI定義・データ要件の③-bへの接続"],
+        ["PO所管", "AMシステム基盤構築部会リーダー", "KPI定義・データ要件のトラックBへの接続"],
         ["D-61等施策", "ユニット別・発電所別収支管理", "ダッシュボード等を題材施策として活用"],
     ]
     add_table(slide, 6, 3, Inches(0.3), Inches(0.95), Inches(9.4), Inches(3.5), data)
 
     add_bullet_box(slide, Inches(0.3), Inches(4.6), Inches(9.4), Inches(2.2), [
         ("検証の題材施策（例示）", 0, True),
-        ("A. 自立運営ダッシュボード（DPP AP：SAP業務基盤活用・5件構築予定）", 0),
-        ("B. クイックWin施策（計画外停止削減系）— ③-a AI検証と連携可能", 0),
-        ("C. 収支計画PDCAプロセス — AMP構築PJの2027事業計画実装の先行実証", 0),
+        ("A. 自立運営ダッシュボード（デジタル推進 年間計画：基幹業務システム活用・5件構築予定）", 0),
+        ("B. 短期効果施策施策（計画外停止削減系）— トラックA（AI検証）と連携可能", 0),
+        ("C. 収支計画PDCAプロセス — AMプログラムの2027事業計画実装の先行実証", 0),
     ], 10)
 
 
@@ -496,9 +496,9 @@ def slide_model_why_what(prs, n):
     add_bullet_box(slide, Inches(0.4), Inches(0.95), Inches(4.5), Inches(5.5), [
         ("Why", 0, True),
         ("・権限委譲の程度は経営判断が必要。理論設計だけでなく実プラントでの実証が必要", 0),
-        ("・③-a（AI検証）とは目的が異なる。③-bは「統治・権限設計そのもの」の実証", 0),
+        ("・トラックA（AI検証）とは目的が異なる。トラックBは「統治・権限設計そのもの」の実証", 0),
         ("・現場主導導入の失敗リスクを、限定範囲で検証し本格展開条件を明確化", 0),
-        ("・AMP構築PJのPDCA実装着手（今年度ゴール）の先行実証場として活用", 0),
+        ("・AMプログラムのPDCA実装着手（今年度ゴール）の先行実証場として活用", 0),
     ], 10)
 
     add_bullet_box(slide, Inches(5.0), Inches(0.95), Inches(4.5), Inches(5.5), [
@@ -507,9 +507,9 @@ def slide_model_why_what(prs, n):
         ("・スコープ：", 0),
         ("　- 権限委譲マトリクスの先行適用", 0),
         ("　- 発電所長主導の施策選定・実行", 0),
-        ("　- KPI達成PDCA（AMP連携）", 0),
+        ("　- KPI達成PDCA（AMプログラム連携）", 0),
         ("　- エスカレーション・支援ラインの検証", 0),
-        ("・③-aとの関係：別トラック。同一拠点も選択肢（後述Options）", 0),
+        ("・トラックAとの関係：別トラック。同一拠点も選択肢（後述Options）", 0),
     ], 10)
 
 
@@ -521,11 +521,11 @@ def slide_model_how(prs, n):
     data = [
         ["#", "設計項目", "内容（案）"],
         ["1", "選定基準", "発電種別・設備規模＋発電所長の意欲・経営課題整合・DX受入体制・検証しやすさ"],
-        ["2", "拠点Options", "A同一拠点（③-aと③-b）/ B別拠点 / C段階的（③-a後に③-b）→ 推奨：C（リスク分散）"],
+        ["2", "拠点Options", "A同一拠点（トラックAとトラックB）/ B別拠点 / C段階的（トラックA後にトラックB）→ 推奨：C（リスク分散）"],
         ["3", "権限試行", "委譲マトリクス先行適用。Level1限定→Level2標準の段階的拡大"],
-        ["4", "KPI設計", "事業成果（収支・稼働率・安全）＋施策定着度。モニタリング：月次（PMO）/四半期（CJPO）"],
-        ["5", "題材施策", "A.自立運営DB B.クイックWin C.収支PDCA（AMP連携）— 最低1施策、推奨2施策"],
-        ["6", "プロセス", "Rev.4クイック施策ラインに「権限運用検証」トラック追加。Plan→Build→Run→Improve"],
+        ["4", "KPI設計", "事業成果（収支・稼働率・安全）＋施策定着度。モニタリング：月次（PMO）/四半期（本社経営統括）"],
+        ["5", "題材施策", "A.自立運営DB B.短期効果施策 C.収支PDCA（AMプログラム連携）— 最低1施策、推奨2施策"],
+        ["6", "プロセス", "推進体制案クイック施策ラインに「権限運用検証」トラック追加。Plan→Build→Run→Improve"],
         ["7", "成功基準", "KPI達成率≥目標80% / 施策定着率≥70% / エスカレーション適切処理率100%"],
         ["8", "撤退基準", "3ヶ月連続KPI未達→権限引き戻し検討。重大安全・コンプラ違反→即時停止"],
         ["9", "期間", "2026/10選定・体制整備 → 2026/11–2027/3実証（6ヶ月）"],
@@ -536,7 +536,7 @@ def slide_model_how(prs, n):
 def slide_when_who(prs, n):
     slide = prs.slides.add_slide(prs.slide_layouts[6])
     set_slide_bg(slide)
-    add_header_bar(slide, "②モデルプラント｜When / Who ＋ ③-aとの並行関係", slide_no=n)
+    add_header_bar(slide, "②モデルプラント｜When / Who ＋ トラックAとの並行関係", slide_no=n)
 
     # Timeline
     tl = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, Inches(0.3), Inches(0.95), Inches(9.4), Inches(1.8))
@@ -549,13 +549,13 @@ def slide_when_who(prs, n):
     tltf.paragraphs[0].font.size = Pt(10)
 
     milestones = [
-        ("8/7", "v3共有"),
-        ("8/12", "PO報告"),
-        ("8/13", "経営層DC"),
-        ("8/19", "DGD統合"),
-        ("9月", "③-a開始"),
-        ("10月", "③-b選定"),
-        ("11月", "③-b実証"),
+        ("第2回すり合わせ", "v3共有"),
+        ("PO報告会", "PO報告"),
+        ("経営層ディスカッション", "経営層DC"),
+        ("統合マイルストーン", "関連資料統合"),
+        ("9月", "トラックA開始"),
+        ("10月", "トラックB選定"),
+        ("11月", "トラックB実証"),
         ("3月", "評価・展開"),
     ]
     for i, (when, what) in enumerate(milestones):
@@ -572,13 +572,13 @@ def slide_when_who(prs, n):
             p.alignment = PP_ALIGN.CENTER
 
     data = [
-        ["役割", "主体", "③-a AI検証", "③-b 自立運営"],
-        ["経営判断", "CJPO（CJPO担当）", "方針承認", "権限委譲範囲承認"],
-        ["統合・PMO", "統括部長/長嶋/松田＋PMO拡張", "進捗・KPI管理", "権限運用ルール・接続窓口"],
-        ["AMP連携", "PO（基盤部会）", "データ要件", "KPI/PDCA設計"],
+        ["役割", "主体", "トラックA（AI検証）", "トラックB 自立運営"],
+        ["経営判断", "本社経営統括", "方針承認", "権限委譲範囲承認"],
+        ["統合・PMO", "統括部長/PO・PMO＋PMO拡張", "進捗・KPI管理", "権限運用ルール・接続窓口"],
+        ["AMプログラム連携", "PO（データ基盤WG）", "データ要件", "KPI/PDCA設計"],
         ["実証主体", "モデル発電所長", "UC検証実行", "権限運用・KPI達成"],
-        ["現場実装", "G-DAC", "チェンジマネ", "定着支援"],
-        ["技術支援", "DPP推進部", "開発・データ基盤", "ガードレール・カタログ"],
+        ["現場実装", "データ・分析部門", "チェンジマネ", "定着支援"],
+        ["技術支援", "デジタル推進部門", "開発・データ基盤", "ガードレール・カタログ"],
         ["統制", "デジタル部門", "アーキテクチャ", "セキュリティ・データ統制"],
         ["外部", "IBM", "PMO・示唆", "設計支援・ベンチマーク"],
     ]
@@ -611,9 +611,9 @@ def slide_options(prs, n):
             "失敗・定着不全\n統制不全",
         ],
         [
-            "③-b拠点",
-            "③-a同一拠点",
-            "段階的（③-a後）",
+            "トラックB拠点",
+            "トラックA同一拠点",
+            "段階的（トラックA後）",
             "別拠点同時",
         ],
         [
@@ -623,7 +623,7 @@ def slide_options(prs, n):
             "現場裁量維持",
         ],
         [
-            "DX/AMP体制",
+            "DX/AMプログラム体制",
             "完全統合",
             "PMO共通化（推奨）",
             "完全分離",
@@ -632,7 +632,7 @@ def slide_options(prs, n):
     add_table(slide, 6, 4, Inches(0.15), Inches(0.9), Inches(9.7), Inches(4.5), data)
 
     add_bullet_box(slide, Inches(0.3), Inches(5.55), Inches(9.4), Inches(1.2), [
-        ("IBM推奨：Option B（段階的委譲）＋ PMO共通化 ＋ ③-bは③-a開始後に段階選定。8/13経営層で委譲Level1の範囲確定を最優先判断事項とする", 0, True),
+        ("IBM推奨：Option B（段階的委譲）＋ PMO共通化 ＋ トラックBはトラックA開始後に段階選定。経営層ディスカッション経営層で委譲Level1の範囲確定を最優先判断事項とする", 0, True),
     ], 10)
 
 
@@ -644,21 +644,21 @@ def slide_next_steps(prs, n):
     add_bullet_box(slide, Inches(0.4), Inches(0.95), Inches(4.5), Inches(5.5), [
         ("経営判断を仰ぎたい論点", 0, True),
         ("1. 権限委譲Level1の範囲（ツール選定・予算執行の上限）", 0),
-        ("2. ③-bと③-aの拠点関係（同一/別/段階的）", 0),
+        ("2. トラックBとトラックAの拠点関係（同一/別/段階的）", 0),
         ("3. KPI未達時のガバナンス（介入基準・主体・頻度）", 0),
-        ("4. DX推進体制とAMP構築PJの統合タイミング", 0),
+        ("4. DX推進体制とAMプログラムの統合タイミング", 0),
         ("5. 10月組織改編との整合（体制案への影響）", 0),
     ], 10)
 
     add_bullet_box(slide, Inches(5.0), Inches(0.95), Inches(4.5), Inches(5.5), [
         ("Next Steps", 0, True),
-        ("8/7（金）　本Rev.3を共有、簡易フィードバック受領", 0),
-        ("8/12　定例：PO向け整理報告", 0),
-        ("8/13〜　経営層DC：Options提示→Level1確定", 0),
-        ("8/19　DGD関連資料へ統合", 0),
-        ("9月　③-a選定・体制整備", 0),
-        ("10月　③-b選定・実証設計確定", 0),
-        ("IBM　体制図詳細化・Rev.4機能①–⑥対応表を継続", 0),
+        ("第2回すり合わせ　本ドラフトv3を共有、簡易フィードバック受領", 0),
+        ("PO報告　定例：PO向け整理報告", 0),
+        ("経営層DC〜　経営層DC：Options提示→Level1確定", 0),
+        ("統合マイルストーン　関連資料へ統合", 0),
+        ("9月　トラックA選定・体制整備", 0),
+        ("10月　トラックB選定・実証設計確定", 0),
+        ("IBM 体制図詳細化・クライアント推進体制案機能①–⑥対応表を継続", 0),
     ], 10)
 
 

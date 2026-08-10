@@ -31,7 +31,9 @@ python scripts/generate_plant_autonomy_draft_v6_1.py
 ## Anonymization
 
 - Client name → `クライアント様`
-- Personal names → roles (PO, 作成者, etc.)
+- Personal names → roles (PO, プロジェクトオーナー, etc.)
+- Internal program codes → generic labels (推進体制案, AMプログラム, トラックA/B)
+- Meeting dates → generic phases (初回ヒアリング, 経営層ディスカッション)
 - Paths → repo-relative `outputs/`
 - See `core/identity.md` Confidentiality Boundary
 
