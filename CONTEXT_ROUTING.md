@@ -26,6 +26,7 @@ Load:
 - core/identity.md
 - core/values.md
 - core/reasoning.md
+- core/author-voice.md
 
 ---
 
@@ -33,7 +34,10 @@ Load:
 
 Load:
 - standards/consulting-review.md
+- standards/deliverable-archetypes.md
 - standards/writing.md
+- core/author-voice.md
+- knowledge/lessons/author-voice-archetypes-legacy.md (Archetype 1: Proposal)
 - frameworks/operating-model.md
 - frameworks/capability-model.md
 - Relevant domain files
@@ -47,11 +51,68 @@ Outputs:
 
 ---
 
+# Vendor Proposal Evaluation
+
+Load:
+- standards/vendor-proposal-evaluation.md
+- standards/deliverable-archetypes.md (Archetype B)
+- standards/consulting-review.md
+- core/author-voice.md
+- knowledge/lessons/author-voice-archetypes-legacy.md (Archetype 2)
+- Relevant RFP / domain context (if available, non-confidential)
+
+Focus:
+- Evaluation criteria design (rationale per scoring point)
+- Weighting and team assignment
+- Value-add definition
+- Multi-evaluator reconciliation
+- Fair comparison across vendors
+
+Outputs:
+- Evaluation sheet design
+- Scoring rationale
+- Gap / concern summary
+- Selection recommendation with evidence
+
+---
+
+# Investigation Program / Requirements Definition
+
+Load:
+- frameworks/program-phases-investigation-to-requirements.md
+- standards/deliverable-archetypes.md
+- standards/requirements-document-outline.md
+- core/author-voice.md
+- knowledge/lessons/author-voice-archetypes-legacy.md (Archetypes 4–7)
+- knowledge/index/legacy-source-index.md (if tracing source lineage)
+- frameworks/thinking-patterns/pattern-02-as-is-gap-to-be.md
+- frameworks/thinking-patterns/pattern-01-why-what-how.md
+- standards/writing.md
+
+Focus:
+- Phase gate compliance (100→500)
+- As-Is before Gap; approach before requirements
+- Option comparison and evaluation sheets
+- Requirements document structure
+- Report storyline as compression of prior phases
+
+Outputs:
+- Phase deliverable checklist
+- Gap / issue extraction
+- Option evaluation matrix
+- Requirements outline
+- Investigation report storyline
+
+---
+
 # Steering Committee Review
 
 Load:
 - standards/consulting-review.md
+- standards/deliverable-archetypes.md (Archetype C)
 - standards/writing.md
+- core/author-voice.md
+- knowledge/lessons/author-voice-archetypes-legacy.md (Archetype 3)
 - frameworks/transformation-roadmap.md
 - frameworks/operating-model.md
 
@@ -60,6 +121,7 @@ Focus:
 - Decision readiness
 - Missing risks
 - Actionability
+- Priority of issues before asking for decisions
 
 ---
 
