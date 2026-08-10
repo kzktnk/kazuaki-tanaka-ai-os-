@@ -19,7 +19,7 @@
 
 - 省庁・公共機関向けOA/基盤刷新
 - As-Is調査 → 課題抽出 → 方式検討 → 要件定義 の一連プログラム
-- PgMO/PMOによる成果物管理
+- PgMO/PMOによる成果物管理（`frameworks/transformation-pmo.md` 参照）
 - 中間報告会・最終報告会の設計
 
 ---

@@ -20,3 +20,4 @@ Plan transformation as a sequence of measurable capability improvements.
 - Change management
 - KPI tracking
 - Feedback loops
+- Program-level governance (see `frameworks/transformation-pmo.md`)

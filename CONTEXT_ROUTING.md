@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.0
+Version: v1.1
 
 ## Purpose
 
@@ -82,6 +82,8 @@ Load:
 - frameworks/program-phases-investigation-to-requirements.md
 - frameworks/strategic-capability-network.md (if mapping programs to value/capability)
 - standards/scn-creation-guide.md (if building or reviewing SCN)
+- frameworks/transformation-pmo.md (if multi-project program governance applies)
+- standards/pmo-operating-guide.md (if PMO/portfolio design applies)
 - standards/deliverable-archetypes.md
 - standards/requirements-document-outline.md
 - core/author-voice.md
@@ -118,6 +120,7 @@ Load:
 - core/author-voice.md
 - knowledge/lessons/author-voice-archetypes-legacy.md (Archetype 3)
 - frameworks/transformation-roadmap.md
+- frameworks/transformation-pmo.md (if program/portfolio governance is in scope)
 - frameworks/operating-model.md
 
 Focus:
@@ -135,6 +138,8 @@ Load:
 - frameworks/operating-model.md
 - frameworks/capability-model.md
 - frameworks/strategic-capability-network.md
+- frameworks/transformation-pmo.md
+- standards/pmo-operating-guide.md (if PMO design or assessment is in scope)
 - standards/scn-creation-guide.md (if SCN workshop or map is in scope)
 - frameworks/transformation-roadmap.md
 - Relevant domains
@@ -146,6 +151,39 @@ Outputs:
 - Governance
 - Roadmap
 - SCN linking value, capabilities, and KOPT enablers (optional)
+- PMO / program governance model (optional)
+
+---
+
+# Transformation PMO / Program Governance
+
+Load:
+- frameworks/transformation-pmo.md
+- standards/pmo-operating-guide.md
+- knowledge/lessons/pmo-professional-principles.md
+- frameworks/strategic-capability-network.md (strategy-to-initiative logic)
+- frameworks/transformation-roadmap.md
+- frameworks/program-phases-investigation-to-requirements.md
+- frameworks/thinking-patterns/pattern-02-as-is-gap-to-be.md
+- core/author-voice.md
+- standards/writing.md
+- Relevant project context (non-confidential)
+
+Focus:
+- pmo vs PMO scope and mission
+- Program vs project vs portfolio
+- Management gap (executive / line / project)
+- Program integration: synergy, scenario, benefit transition
+- PMO function map (portfolio, change, HCM, knowledge, integration)
+- PPM process and portfolio stop/start discipline
+- Change management: stakeholder progression (Awareness → Ownership)
+
+Outputs:
+- PMO assessment or target operating model for program office
+- Portfolio criteria and governance cadence
+- Program roadmap and scenario
+- RACI / steering structure
+- Gap summary for executive decisions
 
 ---
 

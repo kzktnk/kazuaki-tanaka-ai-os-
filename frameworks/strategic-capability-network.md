@@ -143,6 +143,7 @@ SCN supports **Findings**: structural gaps on the network (missing capability, w
 | `frameworks/thinking-patterns/pattern-06-strategy-org-process-system.md` | SCN enablers map to Org / Process / System; Value / Capability sit above. |
 | `frameworks/operating-model.md` | Operating model choices appear as Organization and Process enablers. |
 | `frameworks/program-phases-investigation-to-requirements.md` | SCN fits Phase 200–300 (current state, gap, findings) and Phase 400 (approach alignment). |
+| `frameworks/transformation-pmo.md` | SCN maps **what** to achieve; PMO governs **how** programs and projects deliver and integrate. |
 | `core/author-voice.md` | Findings on SCN: Fact → Issue → Hypothesis → To-Be → Approach; avoid template tables. |
 
 **Pattern 6 vs SCN:** Pattern 6 is a linear top-down stack. SCN is a **network** with direct/indirect links and cross-program visibility. Use both: Pattern 6 for narrative flow, SCN for diagnosis and integration.
