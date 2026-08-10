@@ -57,6 +57,23 @@
 
 ---
 
+## Program Line F: COS Tools & Techniques (legacy consulting strategy, 2001)
+
+| ローカル原本（例） | 種別 | 抽出先（リポジトリ） |
+|-------------------|------|---------------------|
+| `Sec01 Course Overview COS T&T.pdf` | エンゲージメント全体像 | `frameworks/consulting-strategy-process.md` |
+| `Sec02 Defining the Problem COS T&T.pdf` | 4Cs & 1Q | `standards/strategy-engagement-guide.md` §Problem scoping |
+| `Sec03 Structuring the Problem COS T&T.pdf` | ロジックツリー・MECE | `frameworks/consulting-strategy-process.md`, `standards/strategy-engagement-guide.md` |
+| `Sec04 Developing the Approach COS T&T.pdf` | ア分析計画・ストーリーボード | `standards/strategy-engagement-guide.md` §Plan the approach |
+| `Sec05 Strategy Analysis COS T&T.pdf` | 戦略分析・ツール群 | `frameworks/consulting-strategy-process.md` §Solve, `standards/strategy-engagement-guide.md` §Toolkit |
+| `Sec06 Data gathering.pdf` | データ収集・インタビュー | `standards/strategy-engagement-guide.md` §Data gathering |
+| `Sec07 Scenario Envisioning.pdf` | シナリオ構想 | `frameworks/consulting-strategy-process.md` §Scenario, `standards/strategy-engagement-guide.md` §Scenario |
+| `Sec08 Solutions Identification COS T&T.pdf` | 意思決定基準・オプション評価 | `frameworks/consulting-strategy-process.md` §Solutions, `standards/strategy-engagement-guide.md` §Solutions |
+
+**Note:** 原本は `COS T&T 011212/` 配下。クライアント事例・ベンダー名・PwC固有情報はリポジトリに登録しない。Sec05–08 は日英混在PDF。
+
+---
+
 ## Program Line E: PMO Training（legacy consulting, 2003）
 
 | ローカル原本（例） | 種別 | 抽出先（リポジトリ） |
@@ -105,6 +122,8 @@
 | `transformation-pmo.md` | 高 | ✅ 登録済 |
 | `pmo-operating-guide.md` | 高 | ✅ 登録済 |
 | `pmo-professional-principles.md` | 中 | ✅ 登録済 |
+| `consulting-strategy-process.md` | 高 | ✅ 登録済 |
+| `strategy-engagement-guide.md` | 高 | ✅ 登録済 |
 
 ---
 

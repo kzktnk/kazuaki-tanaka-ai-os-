@@ -241,6 +241,8 @@ Gapは「不満リスト」ではなく、As-Isと目指す方向の**構造的�
 
 | ファイル | 関係 |
 |---------|------|
+| `frameworks/consulting-strategy-process.md` | 100フェーズの問題定義・論点整理 |
+| `standards/strategy-engagement-guide.md` | 4Cs・ロジックツリー・ア分析計画 |
 | `frameworks/thinking-patterns/pattern-02-as-is-gap-to-be.md` | 300の思考 |
 | `frameworks/thinking-patterns/pattern-01-why-what-how.md` | 500のストーリー |
 | `standards/vendor-proposal-evaluation.md` | 400以降のRFP・選定 |
