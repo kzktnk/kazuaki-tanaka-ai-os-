@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Python virtual environments
+.venv/
+.venv-*/
+.venv-pptx/
+
+# Local generated outputs
+outputs/
+
+# Local scripts workspace (uncomment if scripts should stay local-only)
+# scripts/
