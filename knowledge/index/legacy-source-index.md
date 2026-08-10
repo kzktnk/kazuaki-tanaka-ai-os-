@@ -57,6 +57,21 @@
 
 ---
 
+## Program Line G: IT Strategy Foundations (legacy consulting, 2002)
+
+| ローカル原本（例） | 種別 | 抽出先（リポジトリ） |
+|-------------------|------|---------------------|
+| `Module1_final_20020417.pdf` | コース概要・5要素・Insight/Architecture/Investment | `frameworks/it-strategy-foundations.md` |
+| `ITS_ModuleII_Revised.pdf` | シナリオ・プランニング・BSA・ITオプション | `frameworks/it-strategy-foundations.md` §Formulation, `standards/it-strategy-engagement-guide.md` |
+| `Module3_final_20020416.pdf` | IATOアーキテクチャ・ギャップ・ガバナンス | `frameworks/it-strategy-foundations.md` §Architecture |
+| `Module4_final.pdf` | ソーシング（英語） | `frameworks/it-strategy-foundations.md` §Sourcing, `standards/it-strategy-engagement-guide.md` §Sourcing |
+| `Module5_final.pdf` | 導入計画・プログラム管理・BSC | `frameworks/it-strategy-foundations.md` §Implementation, `standards/it-strategy-engagement-guide.md` |
+| `Module6_補足資料.pdf` | 価値分析・FCF/NPV/MVA | `frameworks/it-strategy-foundations.md` §Value, `standards/it-strategy-engagement-guide.md` §Value |
+
+**Note:** 原本は `IT_Strategy_Foundation/` 配下。講師紹介・クライアント事例・PwC固有情報はリポジトリに登録しない。
+
+---
+
 ## Program Line F: COS Tools & Techniques (legacy consulting strategy, 2001)
 
 | ローカル原本（例） | 種別 | 抽出先（リポジトリ） |
@@ -124,6 +139,8 @@
 | `pmo-professional-principles.md` | 中 | ✅ 登録済 |
 | `consulting-strategy-process.md` | 高 | ✅ 登録済 |
 | `strategy-engagement-guide.md` | 高 | ✅ 登録済 |
+| `it-strategy-foundations.md` | 高 | ✅ 登録済 |
+| `it-strategy-engagement-guide.md` | 高 | ✅ 登録済 |
 
 ---
 

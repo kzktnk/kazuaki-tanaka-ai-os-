@@ -273,6 +273,7 @@ Score options against explicit criteria; the option meeting most criteria (with 
 | Analysis plan + investigation phases | `program-phases-investigation-to-requirements.md` Phase 100–300 |
 | Strategy options → capabilities | `strategic-capability-network.md` (Value → Capability → Enabler) |
 | Multi-initiative execution | `transformation-pmo.md` |
+| IT strategy and architecture delivery | `it-strategy-foundations.md` |
 | As-Is / Gap / To-Be storytelling | `thinking-patterns/pattern-02-as-is-gap-to-be.md` |
 | Executive narrative | `standards/writing.md`, `standards/deliverable-archetypes.md` |
 
