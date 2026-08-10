@@ -57,6 +57,18 @@
 
 ---
 
+## Program Line D: SCN Training（IBM legacy, 2003–2005）
+
+| ローカル原本（例） | 種別 | 抽出先（リポジトリ） |
+|-------------------|------|---------------------|
+| `SCN概要(KM).pdf` | 概要・定義・KOPT・KPI・事例 | `frameworks/strategic-capability-network.md` |
+| `SCN作成についての補足資料-SCN作成の勘どころ　-.pdf` | 作成勘どころ・As-Is/To-Be・広がり/深さ | `standards/scn-creation-guide.md` §Breadth/Depth, §Workflow |
+| `SCN作成のポイント.pdf` | 記述ルール・WS運営・Q&A | `standards/scn-creation-guide.md` §Notation, §Prerequisites |
+
+**Note:** 旧 `.ppt` は日本語抽出不可。PDF版を原本とする。IBM/client名・X社事例はリポジトリには一般化のみ登録。
+
+---
+
 ## Program Line C: JERA（2026）— リポジトリ内参照
 
 | 原本 | 状態 | 抽出先 |
@@ -76,6 +88,8 @@
 | `deliverable-archetypes.md` | 中 | ✅ 登録済 |
 | `requirements-document-outline.md` | 中 | ✅ 登録済 |
 | `legacy-source-index.md` | 中 | ✅ 本ファイル |
+| `strategic-capability-network.md` | 高 | ✅ 登録済 |
+| `scn-creation-guide.md` | 高 | ✅ 登録済 |
 
 ---
 
