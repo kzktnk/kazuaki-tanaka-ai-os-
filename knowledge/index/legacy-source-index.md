@@ -57,6 +57,18 @@
 
 ---
 
+## Program Line E: PMO Training（legacy consulting, 2003）
+
+| ローカル原本（例） | 種別 | 抽出先（リポジトリ） |
+|-------------------|------|---------------------|
+| `0. Introduction PMO_Ver3.0.pdf` | 研修構成・目的 | `legacy-source-index.md`（索引のみ） |
+| `1. What_s PMO_Ver2.0.pdf` | 変革PMO方法論中核 | `frameworks/transformation-pmo.md` |
+| `PMO LPD 20030403(Save).pdf` | pmo/PMO・実装・5か条 | `standards/pmo-operating-guide.md`, `knowledge/lessons/pmo-professional-principles.md` |
+
+**Note:** 旧 `.ppt` は日本語抽出不可。PDF版を原本とする。事例・講師名・製品比較表はリポジトリに登録しない。
+
+---
+
 ## Program Line D: SCN Training（IBM legacy, 2003–2005）
 
 | ローカル原本（例） | 種別 | 抽出先（リポジトリ） |
@@ -90,6 +102,9 @@
 | `legacy-source-index.md` | 中 | ✅ 本ファイル |
 | `strategic-capability-network.md` | 高 | ✅ 登録済 |
 | `scn-creation-guide.md` | 高 | ✅ 登録済 |
+| `transformation-pmo.md` | 高 | ✅ 登録済 |
+| `pmo-operating-guide.md` | 高 | ✅ 登録済 |
+| `pmo-professional-principles.md` | 中 | ✅ 登録済 |
 
 ---
 
