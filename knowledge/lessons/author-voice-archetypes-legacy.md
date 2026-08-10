@@ -230,7 +230,10 @@
 |---------|------|
 | `core/author-voice.md` | 声・トーン・チェックリスト |
 | `standards/vendor-proposal-evaluation.md` | Archetype 2 詳細 |
+| `standards/deliverable-archetypes.md` | 各アーキタイプの枚数・構成 |
+| `standards/requirements-document-outline.md` | Archetype 6 章立て |
 | `frameworks/program-phases-investigation-to-requirements.md` | Archetype 4–7 のフェーズ文脈 |
+| `knowledge/index/legacy-source-index.md` | 原本との対応（索引のみ） |
 | `knowledge/lessons/client-deliverable-voice-jera-2026-08.md` | 同一声の最新事例 |
 
 ---

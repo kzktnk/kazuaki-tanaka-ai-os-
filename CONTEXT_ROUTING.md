@@ -34,6 +34,7 @@ Load:
 
 Load:
 - standards/consulting-review.md
+- standards/deliverable-archetypes.md
 - standards/writing.md
 - core/author-voice.md
 - knowledge/lessons/author-voice-archetypes-legacy.md (Archetype 1: Proposal)
@@ -54,6 +55,7 @@ Outputs:
 
 Load:
 - standards/vendor-proposal-evaluation.md
+- standards/deliverable-archetypes.md (Archetype B)
 - standards/consulting-review.md
 - core/author-voice.md
 - knowledge/lessons/author-voice-archetypes-legacy.md (Archetype 2)
@@ -78,8 +80,11 @@ Outputs:
 
 Load:
 - frameworks/program-phases-investigation-to-requirements.md
+- standards/deliverable-archetypes.md
+- standards/requirements-document-outline.md
 - core/author-voice.md
 - knowledge/lessons/author-voice-archetypes-legacy.md (Archetypes 4–7)
+- knowledge/index/legacy-source-index.md (if tracing source lineage)
 - frameworks/thinking-patterns/pattern-02-as-is-gap-to-be.md
 - frameworks/thinking-patterns/pattern-01-why-what-how.md
 - standards/writing.md
@@ -104,6 +109,7 @@ Outputs:
 
 Load:
 - standards/consulting-review.md
+- standards/deliverable-archetypes.md (Archetype C)
 - standards/writing.md
 - core/author-voice.md
 - knowledge/lessons/author-voice-archetypes-legacy.md (Archetype 3)

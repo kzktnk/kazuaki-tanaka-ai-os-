@@ -272,8 +272,11 @@ JERA案件で確立した例：
 | `standards/writing.md` | 文体・Concept-Distinction |
 | `standards/consulting-review.md` | レビュー観点 |
 | `standards/vendor-proposal-evaluation.md` | ベンダー提案評価 |
+| `standards/deliverable-archetypes.md` | 資料の最小構成テンプレ |
+| `standards/requirements-document-outline.md` | 要件定義書章立て |
 | `frameworks/program-phases-investigation-to-requirements.md` | 調査→要件プログラム |
 | `knowledge/lessons/author-voice-archetypes-legacy.md` | 成果物アーキタイプ（2002–2009） |
+| `knowledge/index/legacy-source-index.md` | 原本→知識の索引（中身なし） |
 | `knowledge/lessons/client-deliverable-voice-jera-2026-08.md` | JERA事例（2026） |
 | `knowledge/lessons/governance-messaging.md` | ガバナンスの語り方 |
 
