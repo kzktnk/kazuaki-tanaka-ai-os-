@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.2
+Version: v1.3
 
 ## Purpose
 
@@ -111,6 +111,40 @@ Outputs:
 
 ---
 
+# IT Strategy / Architecture / Sourcing
+
+Load:
+- frameworks/it-strategy-foundations.md
+- standards/it-strategy-engagement-guide.md
+- frameworks/consulting-strategy-process.md (if business strategy/scenario context needed)
+- standards/strategy-engagement-guide.md (if general problem structuring applies)
+- frameworks/strategic-capability-network.md (if mapping IT initiatives to capabilities)
+- frameworks/transformation-pmo.md (if multi-project program governance applies)
+- standards/pmo-operating-guide.md (if PMO design applies)
+- frameworks/transformation-roadmap.md (if phased delivery narrative needed)
+- core/reasoning.md
+- standards/writing.md
+- core/author-voice.md
+- Relevant project context (non-confidential)
+
+Focus:
+- Insight → Architecture → Investment lifecycle
+- IT strategy formulation: scenarios, IT options, BSA, IT strategy grid
+- IATO architecture: information, applications, technology, organisation
+- Gap assessment and conceptual vs implementation architecture
+- Value analysis: business case, FCF/NPV, sensitivity/scenarios
+- Sourcing: insource, outsource, multi-source; strategic sourcing grid
+- Implementation planning: program vs project, BSC, PM tiering
+
+Outputs:
+- IT strategy options and BSA
+- Target architecture (IATO) and gap summary
+- Sourcing strategy recommendation
+- Program roadmap and master business case outline
+- Value realization metrics (balanced scorecard)
+
+---
+
 # Investigation Program / Requirements Definition
 
 Load:
@@ -175,6 +209,8 @@ Load:
 - frameworks/operating-model.md
 - frameworks/capability-model.md
 - frameworks/strategic-capability-network.md
+- frameworks/it-strategy-foundations.md (if IT architecture or sourcing is in scope)
+- standards/it-strategy-engagement-guide.md (if IATO or BSA work applies)
 - frameworks/transformation-pmo.md
 - standards/pmo-operating-guide.md (if PMO design or assessment is in scope)
 - standards/scn-creation-guide.md (if SCN workshop or map is in scope)

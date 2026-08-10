@@ -241,5 +241,7 @@ Program PMO owns **enterprise-level** change; pmo often focuses on **project sta
 ## Related Files
 
 - `standards/pmo-operating-guide.md`
+- `frameworks/it-strategy-foundations.md` — implementation planning and value realization
+- `standards/it-strategy-engagement-guide.md` — program BSC and business case
 - `knowledge/lessons/pmo-professional-principles.md`
 - `CONTEXT_ROUTING.md` — Transformation PMO / Program Governance route
