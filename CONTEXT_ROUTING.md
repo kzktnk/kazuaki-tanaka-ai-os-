@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.1
+Version: v1.2
 
 ## Purpose
 
@@ -38,6 +38,8 @@ Load:
 - standards/writing.md
 - core/author-voice.md
 - knowledge/lessons/author-voice-archetypes-legacy.md (Archetype 1: Proposal)
+- frameworks/consulting-strategy-process.md (if problem definition or approach is weak)
+- standards/strategy-engagement-guide.md (if scoping or logic tree review needed)
 - frameworks/operating-model.md
 - frameworks/capability-model.md
 - Relevant domain files
@@ -76,10 +78,45 @@ Outputs:
 
 ---
 
+# Strategy Engagement / Problem Structuring
+
+Load:
+- frameworks/consulting-strategy-process.md
+- standards/strategy-engagement-guide.md
+- core/reasoning.md
+- frameworks/thinking-patterns/pattern-01-why-what-how.md
+- frameworks/thinking-patterns/pattern-02-as-is-gap-to-be.md
+- frameworks/strategic-capability-network.md (if mapping to capabilities)
+- standards/scn-creation-guide.md (if SCN workshop follows strategy)
+- standards/writing.md
+- core/author-voice.md
+- Relevant project context (non-confidential)
+
+Focus:
+- 4Cs & 1Q problem definition (iterative, stakeholder-aligned)
+- MECE logic trees (deductive, hypothesis, issue map)
+- Analysis plan → storyboard → work plan chain
+- Strategy situation assessment (3-Cs, internal/external)
+- Scenario envisioning under uncertainty
+- Decision criteria and option evaluation (Diamond-E, suitability/feasibility/acceptability)
+- So-whats linking analysis to key question
+
+Outputs:
+- Problem definition statement (4Cs & 1Q)
+- Logic tree and issue list
+- Analysis plan with end products
+- Strategic options and evaluation matrix
+- Scenario set and implications (when applicable)
+- Recommendation with criteria traceability
+
+---
+
 # Investigation Program / Requirements Definition
 
 Load:
 - frameworks/program-phases-investigation-to-requirements.md
+- frameworks/consulting-strategy-process.md (if early problem scoping applies)
+- standards/strategy-engagement-guide.md (if 4Cs/logic tree/analysis plan needed)
 - frameworks/strategic-capability-network.md (if mapping programs to value/capability)
 - standards/scn-creation-guide.md (if building or reviewing SCN)
 - frameworks/transformation-pmo.md (if multi-project program governance applies)

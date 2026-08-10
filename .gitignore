@@ -8,6 +8,7 @@
 
 # Local generated outputs
 outputs/
+.tmp-*
 
 # Local scripts workspace (uncomment if scripts should stay local-only)
 # scripts/
