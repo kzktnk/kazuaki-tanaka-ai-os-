@@ -24,3 +24,10 @@ Describe *what* an organization must be able to do.
 - Technology
 - Data
 - Governance
+
+## Related: SCN
+
+For **causal mapping** of value, capabilities, and enablers (KOPT), use
+`frameworks/strategic-capability-network.md` and `standards/scn-creation-guide.md`.
+This capability model describes layers and maturity; SCN connects them to
+strategic outcomes and initiatives in a network.

@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v0.9 Bootstrap
+Version: v1.0
 
 ## Purpose
 
@@ -80,6 +80,8 @@ Outputs:
 
 Load:
 - frameworks/program-phases-investigation-to-requirements.md
+- frameworks/strategic-capability-network.md (if mapping programs to value/capability)
+- standards/scn-creation-guide.md (if building or reviewing SCN)
 - standards/deliverable-archetypes.md
 - standards/requirements-document-outline.md
 - core/author-voice.md
@@ -95,6 +97,7 @@ Focus:
 - Option comparison and evaluation sheets
 - Requirements document structure
 - Report storyline as compression of prior phases
+- SCN for initiative integration and gap visibility (when multi-program or strategy alignment)
 
 Outputs:
 - Phase deliverable checklist
@@ -102,6 +105,7 @@ Outputs:
 - Option evaluation matrix
 - Requirements outline
 - Investigation report storyline
+- SCN map or Findings on SCN (when applicable)
 
 ---
 
@@ -130,6 +134,8 @@ Focus:
 Load:
 - frameworks/operating-model.md
 - frameworks/capability-model.md
+- frameworks/strategic-capability-network.md
+- standards/scn-creation-guide.md (if SCN workshop or map is in scope)
 - frameworks/transformation-roadmap.md
 - Relevant domains
 - Relevant technology
@@ -139,6 +145,35 @@ Outputs:
 - Capability implications
 - Governance
 - Roadmap
+- SCN linking value, capabilities, and KOPT enablers (optional)
+
+---
+
+# SCN / Findings Analysis
+
+Load:
+- frameworks/strategic-capability-network.md
+- standards/scn-creation-guide.md
+- frameworks/thinking-patterns/pattern-02-as-is-gap-to-be.md
+- frameworks/thinking-patterns/pattern-06-strategy-org-process-system.md
+- frameworks/capability-model.md
+- core/author-voice.md
+- standards/writing.md
+- Relevant project context (non-confidential)
+
+Focus:
+- Value → Capability → Enabler (KOPT) causal logic
+- As-Is vs To-Be on the same network
+- 3–5 structural Findings as gaps on the SCN (not a flat issue list)
+- KPI placement: outcome on Value, monitor on Capability
+- Program / project mapping and cross-program integration
+- Workshop quality: notation consistency, breadth/depth, actionable enablers
+
+Outputs:
+- SCN map (draft or reviewed)
+- Findings register tied to SCN nodes
+- Gap summary for steering / executive discussion
+- Initiative prioritization and resource allocation view
 
 ---
 
