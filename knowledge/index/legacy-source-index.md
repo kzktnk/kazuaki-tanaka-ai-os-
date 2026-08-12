@@ -118,6 +118,8 @@
 | 原本 | 状態 | 抽出先 |
 |------|------|--------|
 | 発電所自立経営 v0.2–v0.6 | ローカル/Downloads | `client-deliverable-voice-jera-2026-08.md`, `author-voice.md` |
+| McKinsey 6/29 DX戦略ディスカッション（メモ・事前送付 p.7 等） | ローカル/Downloads | `knowledge/patterns/jera-scn-ebitda-tree.md` |
+| 7/2 DX戦略論点_fix、AMP rev009、DGD 第2版 | ローカル/Downloads | 同上 §出典 |
 | `scripts/generate_jera_draft_*.py` | 未コミット（任意） | — |
 
 ---
@@ -141,6 +143,7 @@
 | `strategy-engagement-guide.md` | 高 | ✅ 登録済 |
 | `it-strategy-foundations.md` | 高 | ✅ 登録済 |
 | `it-strategy-engagement-guide.md` | 高 | ✅ 登録済 |
+| `jera-scn-ebitda-tree.md` | 高 | ✅ 登録済（2026-08-12） |
 
 ---
 
