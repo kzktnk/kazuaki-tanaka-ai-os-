@@ -1,7 +1,7 @@
 # JERA SCN：EBITDAツリー基準の再整理
 
-**Version:** v1.1  
-**Status:** Active（有報レビュー反映済）  
+**Version:** v1.2  
+**Status:** Active（有報・Partnerレビュー反映済）  
 **Date:** 2026-08-13  
 **Owner:** Kazuaki Tanaka  
 **Context:** McKinsey 6/29 ディスカッション、7/2 DX戦略論点、AMP/DGD/Team DX 縦整合整理  
@@ -27,16 +27,32 @@
 - モデル発電所は **1 拠点×1–2 プロセス×2–3 年ストレッチ目標**（2B, 3A）
 - DPP 失敗＝横展開前成果確認不足・業務統制未連携・アプリ先行（2B）— **BPR として横展開可能に設計**
 
-### 1.3 SCN への当てはめ方
+### 1.3 SCN への当てはめ方（v1.2：Value Creation Tree）
 
-| SCN 層 | EBITDA ツリー基準での役割 |
-|--------|---------------------------|
-| **Value** | 頂点＝**発電 EBITDA 最大化**（Outcome KPI）。DX/AI は Value に置かない |
-| **Capability** | **EBITDA ツリーの枝＝「～できる能力」** に展開。Monitor KPI は McK 先行/遅行指標 |
-| **Enabler (KOPT)** | プログラム束（AMP / DGD / Team DX / 自立経営）＋重点施策。Technology は手段列 |
-| **主体列（拡張）** | 各ノードに **所長裁量 / 本社主管 / DX手段** を付与し、報告・施策マッピングを同一フレームで行う |
+**6層構造**（EBITDA ツリー単体ではなく **Value Creation Tree** として提示）：
 
-**長嶋様→森崎様報告での使い方:** 施策進捗は Enabler、現場変化は Capability Monitor KPI、経営インパクトは Value（EBITDA 枝）に **同じツリー上で昇格** して説明する。
+```
+EBITDA（Outcome）
+  ↓
+Value Driver（遅行/先行 KPI・有報費目の因数分解）
+  ↓
+Management Decision（誰が何を判断するか）
+  ↓
+Business Process（業務プロセス）
+  ↓
+Capability（～できる能力）
+  ↓
+Digital / AI（Enabler・手段）
+```
+
+| SCN 層 | Value Creation Tree での役割 |
+|--------|------------------------------|
+| **Value** | 頂点＝**発電 EBITDA 最大化**（Outcome KPI）。有報費目は**結果**として接続 |
+| **Decision**（拡張） | **発電所長・本社の経営判断**（運転計画見直し、修繕優先、AI 採否等）。鈴木様コメント「判断」の明示レイヤ |
+| **Capability** | **Business / Enterprise** に分類した「～できる能力」。Monitor KPI＋**Decision KPI** |
+| **Enabler (KOPT)** | **BPR を先行**（DPP 教訓）。Technology / AI は手段列 |
+
+**長嶋様→森崎様報告:** 施策→**BPR**→Capability→**判断**→Value Driver→EBITDA の連鎖で説明する。
 
 ### 1.4 有報整合の設計原則（2026-08-13 レビュー反映）
 
@@ -58,6 +74,23 @@
 
 **担当者名:** 手川 PM はヒアリング資料で確認済。AMP PJ オーナー（旧表記「高橋 PJ」）は体制図で要最新確認。
 
+### 1.5 Partner レビュー反映（2026-08-13・v2 SCN）
+
+**評価（92点）:** EBITDA→Capability→施策ストーリー、有報対応、C-0 主経路、G7 連鎖は高評価。
+
+**残り 8 点＝Decision（判断）レイヤと Value Driver の明示：**
+
+| 指摘 | 対応 |
+|------|------|
+| ① 費目と Capability の直結 | **Value Driver 層**を追加（例：燃料費→熱効率→運転最適化→C-A2） |
+| ② Capability 粒度混在 | **Business Capability**（運転/保全最適化）と **Enterprise Capability**（PDCA/標準化/権限）に分類 |
+| ③ 所長の判断が見えない | **Decision 層**＋ Decision KPI / Owner 列を Capability 表に追加 |
+| P2 ねらい | Value → **Decision** → Capability → Enabler |
+| P7 Enabler | 施策より **BPR 先行**（モデルプラント AI → BPR → Cap → EBITDA） |
+| G7 | **判断 → 行動 → KPI → EBITDA 枝** |
+
+**目標:** SCN から **JERA Operating Model 設計図**へ昇格。
+
 ---
 
 ## 2. EBITDA ツリー構造（McK 6/29 p.7 ベース）
@@ -77,43 +110,59 @@
     └─ 計画外停止（MWh）                  ← Cap-C2/C3（McK 3A-②③）
 ```
 
-**管理 KPI（McK p.9 例）:** アベイラビリティ、計画/計画外停止日数、熱効率、FTE、設備状態把握率、バッドアクター数 等 → **Capability Monitor**
+**管理 KPI（McK p.9 例）:** アベイラビリティ、計画/計画外停止日数、熱効率、FTE 等 → **Value Driver** → Capability Monitor
+
+### 2.1 Value Driver チェーン（有報費目 → Capability 間の中間層）
+
+| 有報費目（結果） | Value Driver | 業務プロセス（例） | Capability |
+|-----------------|--------------|-------------------|------------|
+| 燃料費 | 熱効率、運転パターン | 運転計画最適化 | C-A2 |
+| 他社販売電力料 | 送電 MWh × スプレッド | 需給・市場対応運転 | C-A1 |
+| 修繕費＋消耗品費 | LCC、設備リスク | 保全計画・点検 | C-B1 |
+| 計画外停止 MWh | 予兆・バッドアクター | 予兆対応・点検 | C-C2 |
+| 汽力発電費全体 | 収支計画精度 | 収支 PDCA | C-0（Enterprise） |
 
 ---
 
-## 3. SCN 全体像（テキストマップ）
+## 3. SCN 全体像（Value Creation Tree・テキストマップ）
 
 ```
 [Value-1] 発電ユニットの EBITDA を最大化する
-    Outcome KPI: 発電EBITDA（円）、ユニット別収支、2–3年ストレッチ目標（要設定）
-         ↑
-[Value-2] 株主・事業に対するユニット経済価値の最大化（ライフサイクル視点）
-    Outcome KPI: NPV / 複数年EBITDA（保全効果はこちらも参照 — McKメモ）
-         ↑
+    Outcome KPI: 発電EBITDA（個別124,483M＋D&A）
+         ↓ Value Driver（有報枝・管理会計）
+[Decision] 発電所長・本社の経営判断（運転/保全/投資の優先順位）
+         ↓
 ┌────────────────────────────────────────────────────────────────────┐
-│ 【主経路・太線】Capability-0                                        │
-│ 発電所主体の収支 PDCA を回せる能力                                  │
-│ Monitor: PDCA完遂率、計画対実績精度、27年度KPIモニタリング          │
-│ 所長裁量＋本社主管＋DX（ユニット別収支DB/SAP/Dataiku）              │
+│ 【Enterprise・主経路】C-0 収支 PDCA → 経営判断 → Business Cap     │
+│ Monitor + Decision KPI｜Owner: 所長（判断）＋本社（目標配賦）        │
 └────────────────────────────────────────────────────────────────────┘
-         ↑          ↑          ↑          ↑
-    Cap-A       Cap-B       Cap-C1      Cap-C2/3
-  収益最大化   O&M最適化   計画停止    計画外停止
-         ↑          ↑          ↑          ↑
-    [Enabler 束: AMP / DGD / Team DX / 自立経営 / 原価管理PJ]
+         ↓
+    Cap-A/B/C（Business）    Cap-X（Enterprise: 標準化・データ・裁量）
+         ↓
+    [Enabler: BPR → Process/Knowledge → Technology/AI]
 ```
 
 ---
 
-## 4. Capability 展開（EBITDA 枝 × 「～できる能力」）
+## 4. Capability 展開（Business / Enterprise 分類）
 
-### 4.0 主経路（太線）
+| 分類 | ID 帯 | 例 |
+|------|-------|-----|
+| **Business Capability** | C-A, C-B, C-C | 運転最適化、保全最適化、停止管理 |
+| **Enterprise Capability** | C-0, C-X | 収支 PDCA、標準化、データ基盤、権限運営 |
 
-| ID | Capability | EBITDA 接点 | Monitor KPI（例） | 所長裁量 | 本社主管 | DX手段 |
-|----|------------|-------------|-------------------|----------|----------|--------|
-| **C-0** | **発電所主体の収支 PDCA を回せる能力** | 全枝の統合 | PDCA 完遂、計画精度、期中モニタリング | 所内 Plan-Do-Check-Act | 目標配賦・1.5線・ExCom | ユニット別収支 DB、原価管理 PJ、Dataiku |
+### 4.0 主経路（Enterprise・太線）
 
-**プログラム:** AMP 構築 PJ（全体構築部会）、Capgemini 原価管理、Team DX ②ロードマップ
+| ID | Capability | EBITDA 接点 | Monitor KPI | **Decision（例）** | **Owner** |
+|----|------------|-------------|-------------|-------------------|-----------|
+| **C-0** | **発電所主体の収支 PDCA を回せる能力** | 全枝 | PDCA 完遂、計画精度 | 収支計画・修正の承認 | 所長＋本社 |
+| C-A2 | 熱効率・需給貢献で収益確保 | 燃料費 | 熱効率、起動回数 | **運転計画見直し** | 所長 |
+| C-B1 | 保全・修繕を最適化 | 修繕費 | LCC、点検 INT | **修繕延期/前倒し** | 所長 |
+| C-C2 | 計画外停止を防止 | 計外 MWh | 計外率、BA 数 | **予兆対応優先** | 所長 |
+| C-X2 | 標準プロセスで再現 | BPR | 定着率 | **標準手順採否** | 所長＋CoE |
+| C-X3 | 裁量で施策実行 | 自立 | 権限委譲度 | **ツール導入判断** | 所長 |
+
+（詳細主体列・DX は §4.1–4.4 既存表を参照）
 
 ---
 
@@ -201,7 +250,7 @@
 |--------|--------|----------|-----|
 | Value-1 | 発電 EBITDA 最大化 | **Outcome** | 電気事業営業利益 124,483M（個別）＋ D&A 116,753M → EBITDA |
 | Value-2 | ユニット経済価値 | **Outcome** | NPV、複数年 EBITDA |
-| C-0 | 収支 PDCA | **Monitor** | PDCA 完遂、計画対実績精度 |
+| C-0 | 収支 PDCA | **Monitor** + **Decision** | PDCA 完遂 / 計画修正判断 |
 | C-C2 | 計画外停止防止 | **Monitor** | 計画外停止率、バッドアクター数、予兆成功率 |
 | C-A1 | 収益 | **Monitor** | アベイラビリティ、稼働率 |
 | Enabler | DX 手段 | **変革 KPI**（McK 7/2） | 導入スピード—**単独 EBIDTA 責任は置かない** |
@@ -212,11 +261,12 @@
 
 ## 8. 報告テンプレ（長嶋様→森崎様用）
 
-同一 SCN/EBITDA フレームで 1 スライドまたは 3 行：
+同一 SCN/Value Creation Tree で 1 スライドまたは 4 行：
 
-1. **Value:** どの EBITDA 枝に効くか（例：計画外停止 MWh → EBITDA ○○百万円相当）
-2. **Capability:** 所長/本社のどの能力が変わったか（Monitor KPI の Before/After）
-3. **Enabler:** どのプログラム（AMP/DGD/PoC）のどの施策か—**利用率ではなく成果連鎖**
+1. **Value / Value Driver:** どの EBITDA 枝・因数に効くか
+2. **Decision:** 所長/本社が下した**判断**（Before/After）
+3. **Capability:** Monitor KPI の変化
+4. **Enabler:** どの **BPR**／プログラムか—AI 利用率ではなく **判断→行動→KPI** 連鎖
 
 ---
 
@@ -230,7 +280,7 @@
 | G4 地点未決 | モデル Enabler が Capability に未接続 | C-C1–C3 の 1 本に 1 拠点を太線 |
 | G5 KPI Open | Value-1 数値空白 | 個別ベース Value-1（124,483M）を掲示。ストレッチ目標は別途 |
 | G6 オーナー分散 | BPR が C-X2 未接続 | 業務棚卸・AMP・McK 4A を C-X2/C-C 下に集約 |
-| G7 DPP 再演 | T だけ Enabler に並ぶ | 各行に「行動→KPI→EBITDA 枝」を必須列 |
+| G7 DPP 再演 | T だけ Enabler に並ぶ | **判断→行動→KPI→EBITDA 枝**＋BPR 先行を必須列 |
 
 ---
 
@@ -238,7 +288,7 @@
 
 | 優先 | アクション |
 |------|-----------|
-| 1 | 若手 SCN 図を本ファイル §3–§6 に沿って Visio/PPT 化 |
+| 1 | SCN 図を **Value Creation Tree（6層）** で PPT 更新（v2.2） |
 | 2 | DGD 評点 3+ 施策を §6 表に 1:1 追加 |
 | 3 | モデル 1 拠点×McK 3A 1 プロセスで §8 報告テンプレ試行 |
 | 4 | 2–3 年ストレッチ EBITDA 確定後、Value-1 Outcome を更新（個別ベース整合を維持） |

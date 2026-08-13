@@ -16,7 +16,7 @@ from pptx.dml.color import RGBColor
 
 from _config import output_paths
 
-OUT_PATHS = output_paths("JERA_SCN_EBITDAツリー_v2.pptx")
+OUT_PATHS = output_paths("JERA_SCN_ValueCreationTree_v2.2.pptx")
 
 IBM_BLUE = RGBColor(0x05, 0x3F, 0x87)
 IBM_LIGHT = RGBColor(0xE8, 0xF0, 0xFA)
@@ -29,7 +29,9 @@ GREEN_BG = RGBColor(0xE8, 0xF5, 0xE9)
 GREEN_LINE = RGBColor(0x2E, 0x7D, 0x32)
 CAP_FILL = RGBColor(0xDE, 0xEB, 0xF7)
 EN_FILL = RGBColor(0xF5, 0xF5, 0xF5)
-FOOTER = "JERA｜SCN（EBITDAツリー基準）v2.1｜2026年8月13日"
+DECISION_FILL = RGBColor(0xFF, 0xF8, 0xE1)
+VD_FILL = RGBColor(0xE0, 0xF2, 0xF1)
+FOOTER = "JERA｜SCN（Value Creation Tree）v2.2｜2026年8月13日"
 FONT_BODY = 14
 FONT_TITLE = 22
 FONT_SUB = 12
@@ -190,17 +192,17 @@ def build_title(prs, n):
     slide = prs.slides.add_slide(prs.slide_layouts[6])
     set_bg(slide)
     t = slide.shapes.add_textbox(Inches(0.50), Inches(1.20), Inches(12.33), Inches(2.00))
-    t.text_frame.text = "JERA Strategic Capability Network\nEBITDAツリー基準 SCN（v2.1・有報整合・個別JGAAP）"
+    t.text_frame.text = "JERA Strategic Capability Network\nValue Creation Tree SCN（v2.2）"
     for p in t.text_frame.paragraphs:
         p.font.size = Pt(28)
         p.font.bold = True
         p.font.color.rgb = IBM_BLUE
-    s = slide.shapes.add_textbox(Inches(0.50), Inches(3.40), Inches(12.00), Inches(1.55))
+    s = slide.shapes.add_textbox(Inches(0.50), Inches(3.40), Inches(12.00), Inches(1.70))
     s.text_frame.word_wrap = True
     s.text_frame.text = (
-        "McK 6/29 EBITDA分解 × 有価証券報告書（第10期・2025/3）個別財務諸表\n"
-        f"出典：{YUHO_SOURCE}｜Value＝電気事業営業利益124,483M（ガス事業は対象外）\n"
-        "knowledge/patterns/jera-scn-ebitda-tree.md v1.1"
+        "6層：EBITDA → Value Driver → Decision → Process → Capability → Digital/AI\n"
+        "有報（個別JGAAP）× McK 6/29｜Value＝124,483M（電気事業営業利益）\n"
+        "knowledge/patterns/jera-scn-ebitda-tree.md v1.2"
     )
     s.text_frame.paragraphs[0].font.size = Pt(FONT_BODY)
     s.text_frame.paragraphs[0].font.color.rgb = GRAY
@@ -211,31 +213,33 @@ def build_rationale(prs, n):
     slide = new_slide(
         prs,
         "SCN再設計のねらい",
-        "施策マッピング・長嶋様→森崎様報告を同一フレーム（EBITDA→Capability→Enabler）で行う",
+        "Value Creation Tree：EBITDA→Value Driver→Decision→Capability→Enabler（BPR先行）",
     )
     add_table(
         slide,
         [
-            ["SCN層", "EBITDA基準での役割", "有報・管理会計との接続"],
-            ["Value", "電気事業EBITDA最大化（Outcome KPI）\nDX/AIはValueに置かない", "電気事業営業利益124,483M（個別）＋D&A116,753M"],
-            ["Capability", "EBITDA枝＝「～できる能力」\nMonitor KPI＝McK先行/遅行", "電気事業営業費用明細（汽力発電費＋他社購入電力料）"],
-            ["Enabler", "AMP・DGD・Team DX・自立経営のKOPT束", "Process→Technologyの順（G7回避）"],
+            ["層", "役割", "有報・Operating Model接続"],
+            ["Value", "EBITDA最大化（Outcome）\nDX/AIはValueに置かない", "124,483M（個別）＋D&A116,753M"],
+            ["Value Driver", "有報費目の因数分解\n（熱効率・送電量・LCC等）", "燃料費→熱効率→運転最適化"],
+            ["Decision", "誰が何を判断するか\n（所長の経営判断）", "運転計画見直し・修繕優先・AI採否"],
+            ["Capability", "Business / Enterprise\n「～できる能力」", "Monitor KPI＋Decision KPI"],
+            ["Enabler", "BPR→Process→Technology\n（DPP教訓：AI先行×）", "AMP/DGD/Team DX/自立経営"],
         ],
         Inches(0.30),
-        Inches(1.15),
+        Inches(1.05),
         Inches(12.70),
-        Inches(2.55),
-        col_widths=[Inches(1.35), Inches(7.35), Inches(4.00)],
+        Inches(3.15),
+        font_size=11,
+        col_widths=[Inches(1.25), Inches(5.45), Inches(6.00)],
     )
     note = add_box(
         slide,
         Inches(0.30),
-        Inches(3.85),
+        Inches(4.35),
         Inches(12.70),
-        Inches(1.05),
-        "報告3行：①Value＝有報のどの収益/費用枝か（個別JGAAP・＋/－明示）　"
-        "②Capability＝Monitor KPI　③Enabler＝施策（行動→KPI→EBITDA枝）\n"
-        "※1費目→複数Capabilityの重複紐づけあり（燃料費・人件費等）",
+        Inches(0.95),
+        "報告4行：①Value Driver＝有報のどの枝か　②Decision＝所長/本社の判断　"
+        "③Capability＝Monitor KPI　④Enabler＝BPR→施策（判断→行動→KPI→EBITDA）",
         ORANGE_BG,
         ORANGE,
         FONT_BODY,
@@ -254,34 +258,32 @@ def build_yuho_mapping(prs, n):
     add_table(
         slide,
         [
-            ["McK/SCNノード", "有報費目（汽力発電費＋他社購入電力料）", "符号", "FY25", "Capability"],
-            ["送電量×スプレッド", "他社販売電力料", "＋", y["他社販売電力料"], "Cap-A"],
-            ["付加収益", "電気事業雑収益", "＋", y["電気事業雑収益"], "Cap-A"],
-            ["O&M・変動費（最大）", "燃料費（石炭・ガス・油等）", "－", y["燃料費"], "Cap-A2/B2*"],
-            ["メンテナンス", "修繕費＋消耗品費", "－", f'{y["修繕費"]}＋{y["消耗品費"]}', "Cap-B1"],
-            ["委託・賃借", "委託費＋賃借料", "－", f'{y["委託費"]}＋{y["賃借料"]}', "Cap-B3"],
-            ["人件費", "給料手当＋厚生費", "－", f'{y["給料手当"]}＋{y["厚生費"]}', "Cap-B2/X2*"],
-            ["他社電源", "他社購入電力料（汽力発電費と並列）", "－", y["他社購入電力料"], "Cap-A"],
-            ["EBITDA加算", "減価償却費（個別・汽力発電費内）", "＋", y["減価償却費_個別"], "—"],
-            ["Value-1", "電気事業営業利益（個別）", "＝", y["電気事業営業利益_個別"], "Value-1"],
-            ["未掲載", "一般管理費＋接続供給託送料＋事業税", "－", y["その他未掲載合計"], "—"],
-            ["対象外", "ガス供給事業（収益／費用）", "±", f'{y["ガス供給収益"]}/{y["ガス供給費用"]}', "—"],
+            ["McK/SCN", "有報費目", "符号", "FY25", "Value Driver", "Cap"],
+            ["送電×スプレッド", "他社販売電力料", "＋", y["他社販売電力料"], "送電MWh×スプレッド", "C-A1"],
+            ["付加収益", "電気事業雑収益", "＋", y["電気事業雑収益"], "付加収益機会", "Cap-A"],
+            ["O&M・変動費", "燃料費", "－", y["燃料費"], "熱効率・運転パターン", "C-A2"],
+            ["メンテ", "修繕費＋消耗品費", "－", f'{y["修繕費"]}＋{y["消耗品費"]}', "LCC・設備リスク", "C-B1"],
+            ["委託・賃借", "委託費＋賃借料", "－", f'{y["委託費"]}＋{y["賃借料"]}', "生産性・FTE", "C-B3"],
+            ["人件費", "給料＋厚生", "－", f'{y["給料手当"]}＋{y["厚生費"]}', "標準化・定着", "C-B2/X2*"],
+            ["他社電源", "他社購入電力料", "－", y["他社購入電力料"], "需給・調達", "Cap-A"],
+            ["D&A加算", "減価償却費（個別）", "＋", y["減価償却費_個別"], "—", "—"],
+            ["Value-1", "電気事業営業利益", "＝", y["電気事業営業利益_個別"], "Outcome", "Value-1"],
         ],
-        Inches(0.18),
+        Inches(0.12),
         Inches(1.05),
-        Inches(12.95),
-        Inches(5.55),
-        font_size=11,
-        col_widths=[Inches(1.9), Inches(3.9), Inches(0.45), Inches(1.8), Inches(1.1)],
+        Inches(13.05),
+        Inches(5.35),
+        font_size=10,
+        col_widths=[Inches(1.5), Inches(3.2), Inches(0.4), Inches(1.5), Inches(2.2), Inches(0.75)],
         center_cols={2},
     )
     add_box(
         slide,
         Inches(0.18),
-        Inches(6.70),
+        Inches(6.55),
         Inches(12.95),
-        Inches(0.38),
-        "*燃料費・人件費は複数Capabilityに重複紐づけ（排他分割ではない）",
+        Inches(0.55),
+        f"未掲載185,496M・ガス事業対象外｜費目→Value Driver→Capability（直結しない）",
         EN_FILL,
         GRAY,
         9,
@@ -292,160 +294,152 @@ def build_yuho_mapping(prs, n):
 def build_ebitda_tree(prs, n):
     slide = new_slide(
         prs,
-        "EBITDAツリー（有報費目整合・個別JGAAP）",
-        f"McK 6/29構造 × {YUHO_SCOPE_NOTE}",
+        "Value Creation Tree（有報 × Value Driver）",
+        f"燃料費例：燃料費→熱効率→運転最適化→Decision→C-A2｜{YUHO_SCOPE_NOTE}",
     )
     y = YUHO_FY25
     items = [
-        (f"Value-1：電気事業営業利益（個別）\n{y['電気事業営業利益_個別']}M → EBITDA", "Outcome", IBM_BLUE, WHITE, 0.55, 1.02, 12.0, 0.62),
-        (f"＋ 他社販売電力料 {y['他社販売電力料']}M\n＋ 雑収益 {y['電気事業雑収益']}M", "Cap-A 収益", IBM_LIGHT, IBM_BLUE, 0.55, 1.78, 12.0, 0.50),
-        (f"－ 燃料費\n{y['燃料費']}M", "Cap-A2/B2*", CAP_FILL, IBM_BLUE, 0.55, 2.42, 3.85, 0.72),
-        (f"－ 修繕費＋消耗品費\n{y['修繕費']}M＋{y['消耗品費']}M", "Cap-B1", CAP_FILL, IBM_BLUE, 4.55, 2.42, 3.85, 0.72),
-        (f"－ 委託費＋賃借料\n{y['委託費']}M＋{y['賃借料']}M", "Cap-B3", CAP_FILL, IBM_BLUE, 8.55, 2.42, 3.95, 0.72),
-        (f"－ 人件費\n{y['給料手当']}M＋{y['厚生費']}M", "Cap-B2/X2*", CAP_FILL, IBM_BLUE, 0.55, 3.28, 3.85, 0.72),
-        (f"－ 他社購入電力料\n{y['他社購入電力料']}M", "Cap-A 費用", CAP_FILL, IBM_BLUE, 4.55, 3.28, 3.85, 0.72),
-        (f"計画停止 MWh\n（管理会計・McK Cap-C1）", "Cap-C1", CAP_FILL, IBM_BLUE, 8.55, 3.28, 3.95, 0.72),
-        (f"計画外停止 MWh\n（管理会計・McK Cap-C2/3）", "Cap-C2/3", CAP_FILL, IBM_BLUE, 0.55, 4.14, 7.85, 0.72),
-        (f"＋ D&A {y['減価償却費_個別']}M\n（個別・EBITDA加算）", "P.140–142", EN_FILL, GRAY, 8.55, 4.14, 3.95, 0.72),
+        (f"Value-1：EBITDA\n{y['電気事業営業利益_個別']}M（個別）", "Outcome", IBM_BLUE, WHITE, 0.55, 0.98, 12.0, 0.52),
+        (f"＋ 収益 {y['他社販売電力料']}M＋{y['電気事業雑収益']}M", "有報＋", IBM_LIGHT, IBM_BLUE, 0.55, 1.58, 12.0, 0.42),
+        (f"－ 燃料費 {y['燃料費']}M", "有報－", CAP_FILL, IBM_BLUE, 0.55, 2.08, 2.5, 0.55),
+        (f"Value Driver\n熱効率・運転パターン", "VD", VD_FILL, GREEN_LINE, 3.15, 2.08, 2.5, 0.55),
+        (f"Decision\n運転計画見直し", "所長", DECISION_FILL, ORANGE, 5.75, 2.08, 2.5, 0.55),
+        (f"Capability\nC-A2 運転最適化", "Business", CAP_FILL, IBM_BLUE, 8.35, 2.08, 2.5, 0.55),
+        (f"Enabler\nBPR→AI最適化", "手段", EN_FILL, GRAY, 10.95, 2.08, 2.1, 0.55),
+        (f"－ 修繕 {y['修繕費']}M＋消耗 {y['消耗品費']}M", "有報－", CAP_FILL, IBM_BLUE, 0.55, 2.78, 2.5, 0.55),
+        (f"VD: LCC・リスク", "VD", VD_FILL, GREEN_LINE, 3.15, 2.78, 2.5, 0.55),
+        (f"Decision: 修繕優先", "所長", DECISION_FILL, ORANGE, 5.75, 2.78, 2.5, 0.55),
+        (f"C-B1 保全最適化", "Business", CAP_FILL, IBM_BLUE, 8.35, 2.78, 2.5, 0.55),
+        (f"－ 人件費 / 他社購入 / 計停・計外", "その他枝", CAP_FILL, IBM_BLUE, 0.55, 3.48, 7.3, 0.55),
+        (f"＋ D&A {y['減価償却費_個別']}M", "EBITDA加算", EN_FILL, GRAY, 8.05, 3.48, 4.0, 0.55),
     ]
     for text, sub, fill, line, l, t, w, h in items:
-        add_box(slide, Inches(l), Inches(t), Inches(w), Inches(h), f"{text}\n{sub}" if sub else text, fill, line, 11, fill == IBM_BLUE)
+        add_box(slide, Inches(l), Inches(t), Inches(w), Inches(h), f"{text}\n{sub}" if sub else text, fill, line, 9, fill == IBM_BLUE)
     add_box(
         slide,
         Inches(0.55),
-        Inches(5.05),
+        Inches(4.25),
         Inches(12.0),
-        Inches(0.55),
-        f"未掲載：一般管理費等 {y['その他未掲載合計']}M｜対象外：ガス供給 {y['ガス供給収益']}/{y['ガス供給費用']}M｜"
-        f"参考：連結セグメント利益 {y['セグメント利益_連結参考']}M・D&A {y['減価償却費_連結参考']}M（P.85・混在禁止）",
+        Inches(0.45),
+        "凡例：有報（結果）→ Value Driver（因数）→ Decision（判断）→ Capability → Enabler（BPR→AI）",
         ORANGE_BG,
         ORANGE,
         9,
     )
-    add_footer(slide, "EBITDAツリー", n)
+    add_footer(slide, "Value Tree", n)
 
 
 def build_scn_map(prs, n):
-    slide = new_slide(prs, "SCN全体像", "Value → Capability（主経路太線）→ Enabler束")
-    add_oval(
-        slide,
-        Inches(4.60),
-        Inches(0.95),
-        Inches(4.20),
-        Inches(0.70),
-        "Value-1\n発電EBITDA最大化",
-        IBM_BLUE,
-        IBM_BLUE,
-        10,
-    )
-    add_oval(
-        slide,
-        Inches(3.80),
-        Inches(1.85),
-        Inches(5.80),
-        Inches(0.55),
-        "Value-2：ユニット経済価値（NPV／複数年EBITDA）",
-        IBM_LIGHT,
-        IBM_BLUE,
-        8,
-        False,
-    )
+    slide = new_slide(prs, "SCN全体像", "Value → Decision → Capability（C-0主経路）→ BPR/Enabler")
+    add_oval(slide, Inches(4.60), Inches(0.88), Inches(4.20), Inches(0.62), "Value-1\nEBITDA最大化", IBM_BLUE, IBM_BLUE, 10)
+    add_oval(slide, Inches(4.20), Inches(1.62), Inches(5.00), Inches(0.52), "Decision\n所長・本社の経営判断", DECISION_FILL, ORANGE, 9, False)
     add_box(
         slide,
         Inches(1.00),
-        Inches(2.65),
+        Inches(2.30),
         Inches(11.33),
-        Inches(0.85),
-        "【主経路・太線】C-0：発電所主体の収支PDCAを回せる能力\n"
-        "Monitor：PDCA完遂・計画精度｜Enabler：AMP／原価管理PJ／Dataiku",
+        Inches(0.78),
+        "【Enterprise・主経路】C-0：収支PDCA → 経営判断 → Business Capability\n"
+        "Decision KPI：計画修正・優先順位｜Monitor：PDCA完遂・計画精度",
         ORANGE_BG,
         ORANGE,
-        10,
+        9,
         True,
     )
     caps = [
-        ("Cap-A\n収益最大化", 0.55, 3.75),
-        ("Cap-B\nO&M最適化", 3.55, 3.75),
-        ("Cap-C1\n計画停止", 6.55, 3.75),
-        ("Cap-C2/3\n計画外停止", 9.55, 3.75),
+        ("Cap-A\n収益", 0.55, 3.35),
+        ("Cap-B\nO&M", 3.55, 3.35),
+        ("Cap-C\n停止", 6.55, 3.35),
+        ("Cap-X\nEnterprise", 9.55, 3.35),
     ]
     for label, l, t in caps:
-        add_oval(slide, Inches(l), Inches(t), Inches(2.85), Inches(0.95), label, CAP_FILL, IBM_BLUE, 9)
+        add_oval(slide, Inches(l), Inches(t), Inches(2.85), Inches(0.88), label, CAP_FILL, IBM_BLUE, 9)
     enablers = [
-        ("AMP構築PJ", 0.55),
-        ("DGD/Team DX", 3.35),
-        ("自立経営", 6.15),
-        ("原価管理PJ", 8.95),
-        ("McK DF（案）", 11.05),
+        ("BPR/業務棚卸", 0.55),
+        ("AMP構築PJ", 3.05),
+        ("DGD/Team DX", 5.55),
+        ("自立経営", 8.05),
+        ("原価管理PJ", 10.55),
     ]
     for label, l in enablers:
-        add_box(slide, Inches(l), Inches(5.05), Inches(2.05), Inches(0.55), label, EN_FILL, GRAY, 8)
-    # simple connectors
+        add_box(slide, Inches(l), Inches(4.55), Inches(2.05), Inches(0.50), label, EN_FILL, GRAY, 8)
     cx = Inches(6.70)
-    connect(slide, cx, Inches(1.65), cx, Inches(2.65))
-    connect(slide, cx, Inches(3.50), cx, Inches(3.75))
+    connect(slide, cx, Inches(1.50), cx, Inches(2.30))
+    connect(slide, cx, Inches(3.08), cx, Inches(3.35))
     for l in [1.97, 4.97, 7.97, 10.97]:
-        connect(slide, cx, Inches(3.50), Inches(l), Inches(3.75))
-        connect(slide, Inches(l), Inches(4.70), Inches(l + 0.3), Inches(5.05))
+        connect(slide, cx, Inches(3.08), Inches(l), Inches(3.35))
+        connect(slide, Inches(l), Inches(4.23), Inches(l + 0.3), Inches(4.55))
     add_footer(slide, "SCN全体像", n)
 
 
 def build_capability_table(prs, n):
     slide = new_slide(
         prs,
-        "Capability一覧（EBITDA枝 × 主体列）",
-        "○＝主担当　△＝支援／要確認",
+        "Capability一覧（Business / Enterprise × Decision）",
+        "種別：Biz=業務能力 Ent=組織能力｜○＝主担当",
     )
-    headers = ["ID", "Capability", "有報/EBITDA枝", "所長", "本社", "DX", "Monitor KPI（例）"]
+    headers = ["ID", "種", "Capability", "Value Driver", "Decision", "Owner", "Monitor KPI"]
     rows = [
-        ["C-0", "発電所主体の収支PDCAを回せる能力【太線】", "汽力発電費全体", "○", "○", "△", "PDCA完遂・計画精度"],
-        ["C-A1", "需給・市場に応じた運転計画を実行できる", "他社販売電力料", "○", "△", "△", "稼働率・アベイラ"],
-        ["C-A2", "熱効率・需給貢献で収益確保", "燃料費・雑収益", "○", "○", "○", "熱効率・起動回数"],
-        ["C-B1", "保全・修繕を最適化", "修繕費・消耗品費", "○", "○", "○", "LCC・点検INT"],
-        ["C-B2", "O&Mコスト（起動費等）管理", "燃料費（変動）・人件費", "○", "△", "△", "起動回数・FTE"],
-        ["C-B3", "修繕・委託の生産性向上", "委託費・賃借料", "○", "○", "△", "修繕期間・委託単価"],
-        ["C-C1", "計画停止を最適化", "計停MWh（管理会計）", "○", "○", "△", "計停日数"],
-        ["C-C2", "計画外停止を防止", "計外MWh（管理会計）", "○", "○", "○", "計外率・バッドアクター"],
-        ["C-C3", "計画外停止から早期復旧", "停止損失", "○", "△", "○", "復旧日数"],
-        ["C-X1", "設備・収支・前提をtimely把握", "Input（全費目）", "○", "○", "○", "データ整備率"],
-        ["C-X2", "標準プロセスで再現", "BPR・人件費効率", "○", "○", "△", "標準化・定着"],
-        ["C-X3", "裁量で施策実行", "自立・ガバナンス", "○", "○", "—", "権限委譲"],
+        ["C-0", "Ent", "収支PDCA【太線】", "計画精度", "計画修正承認", "所長+本社", "PDCA完遂"],
+        ["C-A1", "Biz", "需給・運転計画実行", "送電MWh", "稼働計画見直し", "所長", "稼働率"],
+        ["C-A2", "Biz", "熱効率・収益確保", "熱効率", "運転計画見直し", "所長", "熱効率"],
+        ["C-B1", "Biz", "保全・修繕最適化", "LCC", "修繕優先/延期", "所長", "点検INT"],
+        ["C-B2", "Biz", "O&Mコスト管理", "起動費", "起動回数調整", "所長", "起動回数"],
+        ["C-B3", "Biz", "委託生産性", "FTE", "委託範囲見直し", "所長", "修繕期間"],
+        ["C-C1", "Biz", "計画停止最適化", "計停MWh", "定検時期", "所長", "計停日数"],
+        ["C-C2", "Biz", "計画外停止防止", "計外MWh", "予兆対応優先", "所長", "計外率"],
+        ["C-C3", "Biz", "早期復旧", "停止損失", "初動判断", "所長", "復旧日数"],
+        ["C-X1", "Ent", "timely把握", "Input", "データ投資", "所長+本社", "整備率"],
+        ["C-X2", "Ent", "標準プロセス再現", "BPR", "標準採否", "所長+CoE", "定着率"],
+        ["C-X3", "Ent", "裁量実行", "権限", "ツール導入", "所長", "委譲度"],
     ]
     add_table(
         slide,
         [headers] + rows,
-        Inches(0.18),
+        Inches(0.12),
         Inches(1.05),
-        Inches(12.95),
+        Inches(13.05),
         Inches(5.85),
+        font_size=9,
         col_widths=[
-            Inches(0.55),
-            Inches(3.55),
+            Inches(0.48),
+            Inches(0.38),
+            Inches(2.85),
+            Inches(1.15),
             Inches(1.35),
-            Inches(0.45),
-            Inches(0.45),
-            Inches(0.45),
-            Inches(1.55),
+            Inches(0.75),
+            Inches(1.15),
         ],
-        center_cols={3, 4, 5},
+        center_cols={1},
     )
     add_footer(slide, "Capability", n)
 
 
 def build_enabler_table(prs, n):
-    slide = new_slide(prs, "Enabler束・施策マッピング", "プログラム → Capability接続（重点領域）")
+    slide = new_slide(prs, "Enabler束・BPRマッピング", "モデルプラントAI → BPR → Capability → EBITDA（施策単体×）")
+    add_box(
+        slide,
+        Inches(0.25),
+        Inches(1.02),
+        Inches(12.75),
+        Inches(0.42),
+        "DPP教訓：AI/Technology先行× → BPR（Process/Knowledge）→ Technology の順で接続",
+        ORANGE_BG,
+        ORANGE,
+        10,
+        True,
+    )
     add_table(
         slide,
         [
-            ["Initiative束", "接続Cap", "KOPT要点", "主体"],
-            ["AMP構築PJ", "C-0, C-C1–3", "P:収支PDCA To-Be / T:ユニット別収支 / O:責任分界", "AMP PJ（体制要確認）・長嶋SAP WG"],
-            ["発電所自立経営", "C-0, C-X3", "O:10/1組織・権限 / P:所長PDCA", "運営統括・経営企画"],
-            ["Team DX / DGD", "C-A–C, C-X1", "T:評点3+ / P:業務成熟度", "手川PM・長嶋PMO"],
-            ["原価管理PJ", "C-0", "T:S4 Check / P:両輪PDCA / Dataiku(S4外)", "経営管理"],
-            ["McK Digital Factory", "C-C1–3", "O+P:主管部深関与BPR", "国内運営+所長+DPP"],
+            ["Initiative束", "接続Cap", "BPR/KOPT", "主体"],
+            ["AMP構築PJ", "C-0, C-C", "P:収支PDCA / O:責任分界", "AMP PJ・長嶋SAP WG"],
+            ["発電所自立経営", "C-0, C-X3", "O:権限委譲 / P:所長PDCA", "運営統括"],
+            ["Team DX / DGD", "C-A–C, C-X", "P:業務成熟度 / T:3+", "手川PM・長嶋PMO"],
+            ["McK Digital Factory", "C-C", "O+P:主管部BPR", "国内運営+所長"],
         ],
         Inches(0.25),
-        Inches(1.05),
+        Inches(1.55),
         Inches(12.75),
         Inches(2.05),
         col_widths=[Inches(2.0), Inches(1.6), Inches(5.8), Inches(3.35)],
@@ -453,18 +447,18 @@ def build_enabler_table(prs, n):
     add_table(
         slide,
         [
-            ["施策", "Cap", "有報/EBITDA枝", "所長", "本社", "DX"],
-            ["AMP全体構築部会", "C-0", "汽力発電費全体", "○", "○", "△"],
-            ["ユニット別収支DB", "C-0", "収支・燃料・修繕", "○", "○", "○"],
-            ["計画外抑制部会", "C-C2", "計外MWh", "○", "○", "△"],
-            ["設備保守DB部会", "C-C2,X1", "修繕費・消耗品費", "○", "○", "○"],
-            ["J-AIME/G-DAC", "C-C2,A2", "計外・燃料効率", "△", "○", "○"],
-            ["モデルプラントAI", "C-C2/B1", "要選定", "○", "○", "○"],
-            ["業務棚卸(千葉)", "C-X2", "人件費・委託費", "○", "○", "△"],
-            ["10/1組織変更", "C-X3,C-0", "全枝", "○", "○", "—"],
+            ["施策/BPR", "Cap", "連鎖", "所長", "本社", "DX"],
+            ["業務棚卸(千葉)", "C-X2", "BPR→標準化", "○", "○", "△"],
+            ["モデルプラントAI", "C-C2/B1", "BPR→AI検証→Cap", "○", "○", "○"],
+            ["AMP全体構築部会", "C-0", "PDCA To-Be", "○", "○", "△"],
+            ["ユニット別収支DB", "C-0", "Decision支援", "○", "○", "○"],
+            ["計画外抑制部会", "C-C2", "予兆BPR", "○", "○", "△"],
+            ["設備保守DB部会", "C-C2,X1", "データ→判断", "○", "○", "○"],
+            ["J-AIME/G-DAC", "C-C2,A2", "予兆→運転判断", "△", "○", "○"],
+            ["10/1組織変更", "C-X3,C-0", "権限→Decision", "○", "○", "—"],
         ],
         Inches(0.25),
-        Inches(3.25),
+        Inches(3.75),
         Inches(12.75),
         Inches(3.55),
         col_widths=[Inches(2.4), Inches(1.1), Inches(1.8), Inches(0.5), Inches(0.5), Inches(0.5)],
@@ -474,17 +468,16 @@ def build_enabler_table(prs, n):
 
 
 def build_kpi_gap(prs, n):
-    slide = new_slide(prs, "KPI配置とGap対応", "OutcomeはValue／MonitorはCapability／DX利用率はOutcomeにしない")
+    slide = new_slide(prs, "KPI配置とGap対応", "Outcome / Monitor / Decision / 変革KPI｜G7＝判断→行動→KPI→EBITDA")
     add_table(
         slide,
         [
             ["レイヤ", "ノード", "指標種別", "例"],
-            ["Value-1", "発電EBITDA", "Outcome", "電気事業営業利益124,483M＋D&A116,753M（個別）"],
-            ["Value-2", "ユニット経済価値", "Outcome", "NPV・複数年EBITDA"],
-            ["C-0", "収支PDCA", "Monitor", "PDCA完遂・計画精度"],
-            ["C-B1", "修繕最適化", "Monitor", "修繕費・消耗品費（有報）"],
-            ["C-A2", "燃料効率", "Monitor", "燃料費（有報最大費目）"],
-            ["Enabler", "DX手段", "変革KPI", "導入スピード（EBITDA単独責任×）"],
+            ["Value-1", "EBITDA", "Outcome", "124,483M＋D&A116,753M"],
+            ["Value Driver", "熱効率等", "Driver KPI", "燃料費の因数分解"],
+            ["Decision", "所長判断", "Decision KPI", "計画修正・修繕優先"],
+            ["C-0", "収支PDCA", "Monitor", "PDCA完遂"],
+            ["Enabler", "BPR/DX", "変革KPI", "定着・導入（Outcome×）"],
         ],
         Inches(0.30),
         Inches(1.05),
@@ -501,7 +494,7 @@ def build_kpi_gap(prs, n):
             ["G4", "地点未決", "C-Cに1拠点を太線"],
             ["G5", "KPI Open", "Value-1にストレッチ数値"],
             ["G6", "オーナー分散", "BPR→C-X2に集約"],
-            ["G7", "DPP再演", "行動→KPI→EBITDA枝の連鎖必須"],
+            ["G7", "DPP再演", "判断→行動→KPI→EBITDA枝＋BPR先行"],
         ],
         Inches(6.70),
         Inches(1.05),
