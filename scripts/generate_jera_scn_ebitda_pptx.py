@@ -16,7 +16,7 @@ from pptx.dml.color import RGBColor
 
 from _config import output_paths
 
-OUT_PATHS = output_paths("JERA_SCN_ValueCreationTree_v2.2.pptx")
+OUT_PATHS = output_paths("JERA_SCN_ValueCreationTree_v2.3.pptx")
 
 IBM_BLUE = RGBColor(0x05, 0x3F, 0x87)
 IBM_LIGHT = RGBColor(0xE8, 0xF0, 0xFA)
@@ -31,7 +31,7 @@ CAP_FILL = RGBColor(0xDE, 0xEB, 0xF7)
 EN_FILL = RGBColor(0xF5, 0xF5, 0xF5)
 DECISION_FILL = RGBColor(0xFF, 0xF8, 0xE1)
 VD_FILL = RGBColor(0xE0, 0xF2, 0xF1)
-FOOTER = "JERA｜SCN（Value Creation Tree）v2.2｜2026年8月13日"
+FOOTER = "JERA｜SCN（Value Creation Tree）v2.3｜2026年8月13日"
 FONT_BODY = 14
 FONT_TITLE = 22
 FONT_SUB = 12
@@ -67,6 +67,20 @@ YUHO_SOURCE = "securities_report2506.pdf P.140–142（個別・印字）"
 YUHO_SCOPE_NOTE = (
     "個別JGAAP・電気事業のみ｜ガス供給事業・一般管理費等185,496Mは対象外（抜粋）"
 )
+
+# JPJ DGD v1.0 / プログラム定義書（20260813）— Value-1 ベースラインとは別層（増分 KGI）
+JPJ_KGI = {
+    "焚替損失回避_2027": "86.51億円/年",
+    "焚替損失回避_2030": "109億円/年",
+    "運用費削減": "5億円/年",
+    "工数_2027": "84.1名＋390名",
+    "工数_2030": "569名＋390名",
+    "内訳_保全": "79.5億",
+    "内訳_運転": "29.3億",
+    "内訳_資材SC": "0.37億",
+    "GDAC実績_2025": "18億円",
+}
+JPJ_SOURCE = "JPJ DGD v1.0 §7–8／20260813_プログラム定義書"
 
 
 def set_bg(slide):
@@ -192,7 +206,7 @@ def build_title(prs, n):
     slide = prs.slides.add_slide(prs.slide_layouts[6])
     set_bg(slide)
     t = slide.shapes.add_textbox(Inches(0.50), Inches(1.20), Inches(12.33), Inches(2.00))
-    t.text_frame.text = "JERA Strategic Capability Network\nValue Creation Tree SCN（v2.2）"
+    t.text_frame.text = "JERA Strategic Capability Network\nValue Creation Tree SCN（v2.3）"
     for p in t.text_frame.paragraphs:
         p.font.size = Pt(28)
         p.font.bold = True
@@ -201,8 +215,8 @@ def build_title(prs, n):
     s.text_frame.word_wrap = True
     s.text_frame.text = (
         "6層：EBITDA → Value Driver → Decision → Process → Capability → Digital/AI\n"
-        "有報（個別JGAAP）× McK 6/29｜Value＝124,483M（電気事業営業利益）\n"
-        "knowledge/patterns/jera-scn-ebitda-tree.md v1.2"
+        "Outcome＝有報124,483M（Baseline）｜KGI＝焚替回避86.51/109億（増分・Forward）\n"
+        "knowledge/patterns/jera-scn-ebitda-tree.md v1.3"
     )
     s.text_frame.paragraphs[0].font.size = Pt(FONT_BODY)
     s.text_frame.paragraphs[0].font.color.rgb = GRAY
@@ -219,11 +233,11 @@ def build_rationale(prs, n):
         slide,
         [
             ["層", "役割", "有報・Operating Model接続"],
-            ["Value", "EBITDA最大化（Outcome）\nDX/AIはValueに置かない", "124,483M（個別）＋D&A116,753M"],
+            ["Value", "EBITDA最大化（Outcome）\nDX/AIはValueに置かない", "Baseline：124,483M＋D&A\nKGI（増分）：86.51→109億"],
             ["Value Driver", "有報費目の因数分解\n（熱効率・送電量・LCC等）", "燃料費→熱効率→運転最適化"],
             ["Decision", "誰が何を判断するか\n（所長の経営判断）", "運転計画見直し・修繕優先・AI採否"],
             ["Capability", "Business / Enterprise\n「～できる能力」", "Monitor KPI＋Decision KPI"],
-            ["Enabler", "BPR→Process→Technology\n（DPP教訓：AI先行×）", "AMP/DGD/Team DX/自立経営"],
+            ["Enabler", "BPR→Process→Technology\n（DPP教訓：AI先行×）", "AMP/DGD/BPR/原価/データ基盤/資材DX"],
         ],
         Inches(0.30),
         Inches(1.05),
@@ -355,20 +369,33 @@ def build_scn_map(prs, n):
     for label, l, t in caps:
         add_oval(slide, Inches(l), Inches(t), Inches(2.85), Inches(0.88), label, CAP_FILL, IBM_BLUE, 9)
     enablers = [
-        ("BPR/業務棚卸", 0.55),
-        ("AMP構築PJ", 3.05),
-        ("DGD/Team DX", 5.55),
-        ("自立経営", 8.05),
-        ("原価管理PJ", 10.55),
+        ("BPR/業務棚卸", 0.35),
+        ("AMP構築PJ", 2.55),
+        ("DGD/Team DX", 4.75),
+        ("データ基盤", 6.95),
+        ("原価管理", 9.15),
+        ("資材DX", 11.35),
     ]
     for label, l in enablers:
-        add_box(slide, Inches(l), Inches(4.55), Inches(2.05), Inches(0.50), label, EN_FILL, GRAY, 8)
+        add_box(slide, Inches(l), Inches(4.55), Inches(1.85), Inches(0.50), label, EN_FILL, GRAY, 8)
     cx = Inches(6.70)
     connect(slide, cx, Inches(1.50), cx, Inches(2.30))
     connect(slide, cx, Inches(3.08), cx, Inches(3.35))
     for l in [1.97, 4.97, 7.97, 10.97]:
         connect(slide, cx, Inches(3.08), Inches(l), Inches(3.35))
         connect(slide, Inches(l), Inches(4.23), Inches(l + 0.3), Inches(4.55))
+    add_box(
+        slide,
+        Inches(0.25),
+        Inches(5.20),
+        Inches(12.75),
+        Inches(0.38),
+        "【PG-1】AMP×DGD 基盤重複 → C-X1/C-0 共有ノード＋RACI分担｜自立経営＝C-0/C-X3（プログラムゴール）",
+        ORANGE_BG,
+        ORANGE,
+        9,
+        True,
+    )
     add_footer(slide, "SCN全体像", n)
 
 
@@ -433,38 +460,115 @@ def build_enabler_table(prs, n):
         slide,
         [
             ["Initiative束", "接続Cap", "BPR/KOPT", "主体"],
-            ["AMP構築PJ", "C-0, C-C", "P:収支PDCA / O:責任分界", "AMP PJ・長嶋SAP WG"],
-            ["発電所自立経営", "C-0, C-X3", "O:権限委譲 / P:所長PDCA", "運営統括"],
-            ["Team DX / DGD", "C-A–C, C-X", "P:業務成熟度 / T:3+", "手川PM・長嶋PMO"],
-            ["McK Digital Factory", "C-C", "O+P:主管部BPR", "国内運営+所長"],
+            ["AMP構築PJ", "C-0, C-C", "P:収支PDCA / O:責任分界", "高橋PO・長嶋PM"],
+            ["発電所自立経営", "C-0, C-X3", "O:権限委譲 / P:所長PDCA", "運営統括（プログラムゴール）"],
+            ["Team DX / DGD", "C-A–C, C-X", "P:業務成熟度 / T:3+", "森崎PO・手川PM"],
+            ["プラントデータ基盤", "C-X1", "P:データフロー / T:構造化", "長嶋PO・市場DO"],
+            ["原価管理PJ", "C-0", "P:両輪PDCA / T:S4", "酒入/森崎/行徳"],
+            ["資材DX", "C-B3", "T:調達PF / P:SC業務", "鈴木PO（構想）"],
+            ["設備診断支援", "C-C1, C-B1", "P:懸案一元化 / K:INT", "DPP連携"],
         ],
         Inches(0.25),
         Inches(1.55),
         Inches(12.75),
-        Inches(2.05),
+        Inches(2.85),
+        font_size=10,
         col_widths=[Inches(2.0), Inches(1.6), Inches(5.8), Inches(3.35)],
+    )
+    add_box(
+        slide,
+        Inches(0.25),
+        Inches(4.52),
+        Inches(12.75),
+        Inches(0.32),
+        "【PG-1】AMP×DGD：C-X1/C-0 を共有。データ基盤とDGD施策の重複はRACIで解消",
+        ORANGE_BG,
+        ORANGE,
+        9,
+        True,
     )
     add_table(
         slide,
         [
-            ["施策/BPR", "Cap", "連鎖", "所長", "本社", "DX"],
+            ["施策/BPR", "Cap", "KGI/連鎖", "所長", "本社", "DX"],
             ["業務棚卸(千葉)", "C-X2", "BPR→標準化", "○", "○", "△"],
-            ["モデルプラントAI", "C-C2/B1", "BPR→AI検証→Cap", "○", "○", "○"],
+            ["モデルプラントAI", "C-C2/B1", "BPR→AI→Cap", "○", "○", "○"],
             ["AMP全体構築部会", "C-0", "PDCA To-Be", "○", "○", "△"],
             ["ユニット別収支DB", "C-0", "Decision支援", "○", "○", "○"],
-            ["計画外抑制部会", "C-C2", "予兆BPR", "○", "○", "△"],
+            ["計画外抑制部会", "C-C2", "予兆→109億の主因", "○", "○", "△"],
             ["設備保守DB部会", "C-C2,X1", "データ→判断", "○", "○", "○"],
-            ["J-AIME/G-DAC", "C-C2,A2", "予兆→運転判断", "△", "○", "○"],
+            ["設備診断支援", "C-C1,B1", "INT最適化", "○", "○", "○"],
+            ["J-AIME/G-DAC", "C-C2,A2", "18億実績→KGI", "△", "○", "○"],
             ["10/1組織変更", "C-X3,C-0", "権限→Decision", "○", "○", "—"],
         ],
         Inches(0.25),
-        Inches(3.75),
+        Inches(4.95),
         Inches(12.75),
-        Inches(3.55),
+        Inches(2.35),
         col_widths=[Inches(2.4), Inches(1.1), Inches(1.8), Inches(0.5), Inches(0.5), Inches(0.5)],
         center_cols={3, 4, 5},
     )
     add_footer(slide, "Enabler", n)
+
+
+def build_kpi_reconciliation(prs, n):
+    k = JPJ_KGI
+    y = YUHO_FY25
+    slide = new_slide(
+        prs,
+        "KPI階層：有報Baseline vs プログラムKGI",
+        f"出典：有報＝{YUHO_SOURCE}｜KGI＝{JPJ_SOURCE}",
+    )
+    add_table(
+        slide,
+        [
+            ["層", "指標", "数値", "SCN位置", "プログラム定義書との関係"],
+            ["A Baseline", "電気事業営業利益", f"{y['電気事業営業利益_個別']}M（≈1,245億）", "Value-1 アンカー", "FY25有報＝現状Outcome"],
+            ["A′ EBITDA", "営業利益＋D&A", f"{int(y['電気事業営業利益_個別'].replace(',',''))+int(y['減価償却費_個別'].replace(',','')):,}M", "Value-1補足", "EBITDA説明用（個別）"],
+            ["B KGI 2027", "焚替損失回避", k["焚替損失回避_2027"], "VD→C-C/C-B増分", "≠124,483M。増分効果"],
+            ["B KGI 2030", "焚替損失回避", k["焚替損失回避_2030"], "VD→C-C/C-B増分", "DGD §7 2030目標"],
+            ["B KGI", "運用費削減", k["運用費削減"], "C-B2/Enabler", "AIツール等"],
+            ["B 内訳", "保全/運転/資材", f"{k['内訳_保全']}/{k['内訳_運転']}/{k['内訳_資材SC']}", "C-B/C-C/C-A2", "109億の因数分解"],
+            ["C 実績", "GDAC予兆監視", k["GDAC実績_2025"], "C-C2実証", "KGI達成の先行事例"],
+        ],
+        Inches(0.18),
+        Inches(1.05),
+        Inches(12.95),
+        Inches(3.55),
+        font_size=10,
+        col_widths=[Inches(1.05), Inches(1.55), Inches(1.85), Inches(1.65), Inches(3.15)],
+    )
+    add_box(
+        slide,
+        Inches(0.18),
+        Inches(4.75),
+        Inches(12.95),
+        Inches(1.05),
+        "整合ルール：124,483M（有報）と86.51/109億（KGI）は同じ数値ではない。\n"
+        "有報＝Where we are（Baseline Outcome）｜KGI＝What program delivers（Forward増分）\n"
+        "McKストレッチ＝A＋Bの将来像。施策報告は「判断→行動→VD枝→KGI/有報枝」の連鎖で説明",
+        ORANGE_BG,
+        ORANGE,
+        10,
+        True,
+    )
+    add_table(
+        slide,
+        [
+            ["KGI枝", "主Capability", "主Enabler", "2027→2030"],
+            ["焚替・計外停止", "C-C2, C-C3", "AMP計外抑制・J-AIME", "86.51→109億"],
+            ["保全・計停", "C-B1, C-C1", "設備診断・設備保守DB", "79.5億内"],
+            ["運転・燃料", "C-A2", "G-DAC・運転データ", "29.3億内"],
+            ["収支PDCA", "C-0", "AMP・原価管理", "全枝統合"],
+        ],
+        Inches(0.18),
+        Inches(5.95),
+        Inches(12.95),
+        Inches(1.05),
+        font_size=9,
+        col_widths=[Inches(1.5), Inches(1.5), Inches(3.5), Inches(1.5)],
+    )
+    add_footer(slide, "KPI階層", n)
 
 
 def build_kpi_gap(prs, n):
@@ -473,7 +577,8 @@ def build_kpi_gap(prs, n):
         slide,
         [
             ["レイヤ", "ノード", "指標種別", "例"],
-            ["Value-1", "EBITDA", "Outcome", "124,483M＋D&A116,753M"],
+            ["Value-1", "EBITDA", "Baseline", "124,483M＋D&A116,753M"],
+            ["Value-1′", "Program KGI", "Forward増分", "焚替86.51→109億/運用費5億"],
             ["Value Driver", "熱効率等", "Driver KPI", "燃料費の因数分解"],
             ["Decision", "所長判断", "Decision KPI", "計画修正・修繕優先"],
             ["C-0", "収支PDCA", "Monitor", "PDCA完遂"],
@@ -492,9 +597,11 @@ def build_kpi_gap(prs, n):
             ["G2", "PDCA3系統分裂", "C-0にAMP/SAP/Dataikuを束ねOutcome一本化"],
             ["G3", "DGD体制未起動", "Team DX PMOをSCN右肩に明示"],
             ["G4", "地点未決", "C-Cに1拠点を太線"],
-            ["G5", "KPI Open", "Value-1にストレッチ数値"],
+            ["G5", "KPI混同", "Baseline/KGIを3層分離"],
             ["G6", "オーナー分散", "BPR→C-X2に集約"],
             ["G7", "DPP再演", "判断→行動→KPI→EBITDA枝＋BPR先行"],
+            ["G8", "PG-1重複", "AMP×DGD→C-X1/C-0共有+RACI"],
+            ["V-02", "自立未定義", "C-X3とC-0 To-Be同一図"],
         ],
         Inches(6.70),
         Inches(1.05),
@@ -522,6 +629,8 @@ def main():
     build_capability_table(prs, n)
     n += 1
     build_enabler_table(prs, n)
+    n += 1
+    build_kpi_reconciliation(prs, n)
     n += 1
     build_kpi_gap(prs, n)
     for path in OUT_PATHS:
