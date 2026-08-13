@@ -1,6 +1,6 @@
 # Legacy Source Index
 
-**Version:** v1.0  
+**Version:** v1.2  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** ローカル保管のレガシー原本と、リポジトリ内知識の対応索引。**原本の中身は含まない。**
@@ -32,7 +32,37 @@
 | `RFP/Appendices/AP_IF*.xls` | 連携Appendix | `requirements-document-outline.md` §IF category |
 | `RFP/Appendices/AP_BS*.xls` | 帳票Appendix | `requirements-document-outline.md` §BS category |
 | `RFP/Appendices/AP_ST*.ppt/xls` | 基盤Appendix | `requirements-document-outline.md` §ST category |
+| `RFP/Appendices/AP_ST002_開発標準要件定義書.xls` | 開発標準要求 | Program Line H 相互参照 |
 | `RFP/Appendices/Appendices_Index.xls` | 索引 | `requirements-document-outline.md` §RFP Appendix Category Map |
+
+---
+
+## Program Line H: 開発標準（2003/12）
+
+| ローカル原本（例） | 種別 | 抽出先（リポジトリ） |
+|-------------------|------|---------------------|
+| `20031219/開発標準の位置づけ.doc` | 全体位置づけ | `development-standards-framework.md` |
+| `20031219/開発標準目次.xls` | 目次 | 本索引（Program Line H） |
+| `20031219/ドキュメント分類.ppt` | 文書分類図 | **未登録**（`.ppt` 抽出困難）。`document-management-standard.md` §Document Types |
+| `20031219/開発管理ガイドライン/01Z0C-第１編…` | 管理概要 | `development-management-guide.md` §Overview（Phase 3） |
+| `20031219/開発管理ガイドライン/02Z0C-第２編…` | 管理本編 | `development-management-guide.md`（全章） |
+| `20031219/開発管理ガイドライン/02Z0C-第２編　管理本編.pdf` | 管理本編（PDF原本） | 同上 |
+| `20031219/開発管理ガイドライン/03Z0C-第３編…` | カスタム手順 | `deliverable-archetypes.md` Archetype G |
+| `20031219/…/02_カスタム開発手順編様式/様式目次.doc` | C様式索引 | 同上 |
+| `20031219/開発管理ガイドライン/04–05Z0C-*` | PS/SAP手順 | **未登録**（パッケージ固有） |
+| `20031219/開発管理ガイドライン/…/Z0C-様式-M*.xls/doc` | 管理様式 | **未登録**（実様式）。`document-management-standard.md` §Form Archetypes |
+| `20031219/開発管理ガイドライン/…/Z0C-様式-C*.xls/vsd` | 設計様式 | **未登録**（Phase 4 索引予定） |
+| `20031219/ドキュメント標準/01Z0C-…` | 文書管理・作成基準 | `document-management-standard.md` |
+| `20031219/ドキュメント標準/02Z0C-付録1-1　文書区分.doc` | 文書区分 | `document-management-standard.md` §Document Types |
+| `20031219/ドキュメント標準/…/Z0C-様式-D101–D104` | 表紙・台帳様式 | **未登録**（実様式）。`document-management-standard.md` §Form Archetypes |
+| `20031219/開発環境／試験環境ガイドライン/01–02Z0C-*` | 環境管理 | `environment-management-guide.md` |
+| `20031219/運用設計ガイドライン/01Z0C-…` | 運用設計 | `operations-design-guide.md` |
+| `20031219/運用引継ガイドライン/01Z0C-…` | 運用引継 | `operations-handover-guide.md` |
+| `20031219/開発規約/第１–２編` | 命名・コード | **未登録**（クライアント固有ID）。`development-standards-framework.md` §規約系 |
+| `20031219/開発規約/第３編` | リリース管理 | `release-management-guide.md` |
+| `20031219/開発規約/第４–９編` | 維持/UI/DB/技法 | **未登録**（索引のみ） |
+
+**Note:** 原本は `Downloads/20031219/` 配下。クライアント名・担当者名・Z0C文書番号・実様式はリポジトリに登録しない。Program Line A の RFP 開発標準要求（AP_ST002）の**履行成果**が本 Line。
 
 ---
 
@@ -131,7 +161,7 @@
 | `vendor-proposal-evaluation.md` | 高 | ✅ 登録済 |
 | `program-phases-investigation-to-requirements.md` | 高 | ✅ 登録済 |
 | `author-voice-archetypes-legacy.md` | 高 | ✅ 登録済 |
-| `deliverable-archetypes.md` | 中 | ✅ 登録済 |
+| `deliverable-archetypes.md` | 中 | ✅ 登録済（Archetype G 2026-08-13） |
 | `requirements-document-outline.md` | 中 | ✅ 登録済 |
 | `legacy-source-index.md` | 中 | ✅ 本ファイル |
 | `strategic-capability-network.md` | 高 | ✅ 登録済 |
@@ -144,6 +174,13 @@
 | `it-strategy-foundations.md` | 高 | ✅ 登録済 |
 | `it-strategy-engagement-guide.md` | 高 | ✅ 登録済 |
 | `jera-scn-ebitda-tree.md` | 高 | ✅ 登録済（2026-08-12） |
+| `development-standards-framework.md` | 高 | ✅ 登録済（2026-08-13） |
+| `document-management-standard.md` | 高 | ✅ 登録済（2026-08-13） |
+| `development-management-guide.md` | 高 | ✅ 登録済（2026-08-13） |
+| `operations-design-guide.md` | 中 | ✅ 登録済（2026-08-13） |
+| `operations-handover-guide.md` | 中 | ✅ 登録済（2026-08-13） |
+| `environment-management-guide.md` | 低 | ✅ 登録済（2026-08-13） |
+| `release-management-guide.md` | 中 | ✅ 登録済（2026-08-13） |
 
 ---
 
@@ -156,6 +193,8 @@
 | 提案書 v4.5 の章立て | LibreOffice/PPT→txt | `deliverable-archetypes.md` 精緻化 |
 | 各案評価シートの評価軸一覧 | xlrd | `vendor-proposal-evaluation.md` 付録 |
 | 200/900 フォルダ成果物 | ユーザー提供時 | Phase 200/900 詳細 |
+| 開発管理本編 `.doc` 本文 | LibreOffice/PDF→txt | `development-management-guide.md` ✅ |
+| カスタム開発 C様式目次 | xlrd / 様式目次.doc | `deliverable-archetypes.md` Archetype G ✅ |
 
 ---
 
