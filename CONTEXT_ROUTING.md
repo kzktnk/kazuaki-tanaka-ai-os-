@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.3
+Version: v1.4
 
 ## Purpose
 
@@ -157,6 +157,8 @@ Load:
 - standards/pmo-operating-guide.md (if PMO/portfolio design applies)
 - standards/deliverable-archetypes.md
 - standards/requirements-document-outline.md
+- standards/document-management-standard.md
+- standards/development-standards-framework.md
 - core/author-voice.md
 - knowledge/lessons/author-voice-archetypes-legacy.md (Archetypes 4–7)
 - knowledge/index/legacy-source-index.md (if tracing source lineage)
@@ -179,6 +181,38 @@ Outputs:
 - Requirements outline
 - Investigation report storyline
 - SCN map or Findings on SCN (when applicable)
+
+---
+
+# Development Standards / Build Phase
+
+Load:
+- standards/development-standards-framework.md
+- standards/document-management-standard.md
+- standards/development-management-guide.md
+- standards/deliverable-archetypes.md (Archetype G for build deliverables)
+- standards/operations-design-guide.md (if ops design / monitoring / backup)
+- standards/operations-handover-guide.md (if go-live handover)
+- standards/environment-management-guide.md (if PT/RT or dev env rules)
+- standards/release-management-guide.md (if library / PT→RT→prod release)
+- standards/requirements-document-outline.md (if upstream 要定 exists)
+- standards/pmo-operating-guide.md (if program governance overlap)
+- knowledge/index/legacy-source-index.md (Program Line H)
+- core/author-voice.md
+- standards/writing.md
+
+Focus:
+- Guideline vs regulation split and applicability by domain
+- Five management domains (schedule, spec, quality, config, communication)
+- Document types (要定/方概/詳設…) and control workflow
+- Tailoring and exception documentation
+- Operations design, handover, environment, and release (PT→RT→prod)
+
+Outputs:
+- Development standards applicability matrix
+- Document control rules for the program
+- Review checklist for vendor deliverables
+- Gap list vs RFP development-standard requirements
 
 ---
 
