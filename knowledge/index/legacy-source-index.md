@@ -1,6 +1,6 @@
 # Legacy Source Index
 
-**Version:** v1.2  
+**Version:** v1.3  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** ローカル保管のレガシー原本と、リポジトリ内知識の対応索引。**原本の中身は含まない。**
@@ -63,6 +63,20 @@
 | `20031219/開発規約/第４–９編` | 維持/UI/DB/技法 | **未登録**（索引のみ） |
 
 **Note:** 原本は `Downloads/20031219/` 配下。クライアント名・担当者名・Z0C文書番号・実様式はリポジトリに登録しない。Program Line A の RFP 開発標準要求（AP_ST002）の**履行成果**が本 Line。
+
+---
+
+## Program Line I: SAP Implementation Phase Model（Ascendant SAP）
+
+| ローカル原本（例） | 種別 | 抽出先（リポジトリ） | 登録範囲 |
+|-------------------|------|---------------------|---------|
+| `Downloads/AsendantSAP/ascendantsap overview_ver3_0.pdf` | クライアント向け方法論概説 | `frameworks/sap-implementation-phase-model.md` | Phase 0–6、Activity Group、試験体系、WBS/WP概念（一般化のみ） |
+| `Downloads/AsendantSAP/AscendantTraining_for_ChinaGDC_Day1PM_v0.2.pdf` | 内部研修 | 同上 §Tailoring Principle | 構想フェーズ前提と実案件の差異・応用適用（p6相当） |
+| `Downloads/AsendantSAP/AscendantTraining_for_ChinaGDC_Day1AM_v0.2.pdf` | 内部研修 | **未登録** | 索引のみ（比喩・Team Building・overview と重複） |
+| `Downloads/AsendantSAP/AscendantTraining_for_ChinaGDC_Day2AM_v0.2.pdf` | 内部研修 | **未登録** | 索引のみ（P3 は overview と重複） |
+| `Downloads/AsendantSAP/AscendantTraining_for_ChinaGDC_Day2PM_v0.2.pdf` | 内部研修 | **未登録** | 索引のみ（P4–6 は overview と重複） |
+
+**Note:** 原本は `Downloads/AsendantSAP/` 配下。Task ID・Work Product 番号・サンプル様式・Route Map 詳細・提案書事例はリポジトリに**登録しない**。ベンダー商標・クライアント名は一般化。
 
 ---
 
@@ -181,6 +195,7 @@
 | `operations-handover-guide.md` | 中 | ✅ 登録済（2026-08-13） |
 | `environment-management-guide.md` | 低 | ✅ 登録済（2026-08-13） |
 | `release-management-guide.md` | 中 | ✅ 登録済（2026-08-13） |
+| `sap-implementation-phase-model.md` | 中 | ✅ 登録済（2026-08-14） |
 
 ---
 

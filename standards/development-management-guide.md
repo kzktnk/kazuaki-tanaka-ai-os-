@@ -393,6 +393,7 @@ PM と PL は規模により同一人物でもよい。
 | ファイル | 関係 |
 |---------|------|
 | `standards/development-standards-framework.md` | 開発標準全体 |
+| `frameworks/sap-implementation-phase-model.md` | ERP プログラム Phase 0–6・試験ゲート（Build 前後の工程論） |
 | `standards/document-management-standard.md` | 文書区分・台帳 |
 | `standards/requirements-document-outline.md` | 要定（要件確定前） |
 | `standards/pmo-operating-guide.md` | プログラム横串 |

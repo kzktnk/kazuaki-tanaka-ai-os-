@@ -187,6 +187,7 @@ Outputs:
 # Development Standards / Build Phase
 
 Load:
+- frameworks/sap-implementation-phase-model.md (if ERP/SAP program phase map or test gates apply)
 - standards/development-standards-framework.md
 - standards/document-management-standard.md
 - standards/development-management-guide.md
