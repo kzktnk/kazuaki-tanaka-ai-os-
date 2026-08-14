@@ -23,6 +23,7 @@ This complements:
 - `core/reasoning.md` — default reasoning sequence
 - `frameworks/strategic-capability-network.md` — capability mapping after strategy direction is clear
 - `frameworks/program-phases-investigation-to-requirements.md` — phased investigation programs
+- `frameworks/sap-implementation-phase-model.md` — ERP package Phase 0 (evaluation / business case) when strategy feeds an implementation program
 - `frameworks/transformation-pmo.md` — multi-project execution after strategy is set
 
 ---
@@ -271,6 +272,7 @@ Score options against explicit criteria; the option meeting most criteria (with 
 |--------------|-------------|
 | 4Cs & 1Q + logic tree | `core/reasoning.md` steps 1, 4 |
 | Analysis plan + investigation phases | `program-phases-investigation-to-requirements.md` Phase 100–300 |
+| Strategy / business case before ERP program | `frameworks/sap-implementation-phase-model.md` Phase P0–P1 |
 | Strategy options → capabilities | `strategic-capability-network.md` (Value → Capability → Enabler) |
 | Multi-initiative execution | `transformation-pmo.md` |
 | IT strategy and architecture delivery | `it-strategy-foundations.md` |
@@ -295,5 +297,6 @@ Score options against explicit criteria; the option meeting most criteria (with 
 ## Related Files
 
 - `standards/strategy-engagement-guide.md` — operational checklists and templates
+- `frameworks/sap-implementation-phase-model.md` — ERP evaluation and project preparation (Phase 0–1)
 - `CONTEXT_ROUTING.md` — Strategy Engagement route
 - `knowledge/index/legacy-source-index.md` — Program Line F (source index)

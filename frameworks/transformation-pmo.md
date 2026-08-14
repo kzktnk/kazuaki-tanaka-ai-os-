@@ -222,6 +222,7 @@ Program PMO owns **enterprise-level** change; pmo often focuses on **project sta
 |-----------|--------------|
 | `frameworks/strategic-capability-network.md` | SCN = **what** to achieve (value/capability/enabler); PMO = **how** programs/projects are governed to deliver it |
 | `frameworks/program-phases-investigation-to-requirements.md` | Phase gates and deliverables; PMO manages program compliance |
+| `frameworks/sap-implementation-phase-model.md` | P0/P2 benefit plan → P5 measurement; hypercare, sustain handover (ERP program lifecycle) |
 | `frameworks/transformation-roadmap.md` | Roadmap phases; PMO operationalizes portfolio and program timing |
 | `frameworks/operating-model.md` | Target operating model; PMO drives adoption and transition |
 | `frameworks/thinking-patterns/pattern-02-as-is-gap-to-be.md` | Gap analysis feeds program planning and portfolio |
@@ -241,6 +242,7 @@ Program PMO owns **enterprise-level** change; pmo often focuses on **project sta
 ## Related Files
 
 - `standards/pmo-operating-guide.md`
+- `frameworks/sap-implementation-phase-model.md` — P5 go-live support and benefit realization timing
 - `frameworks/it-strategy-foundations.md` — implementation planning and value realization
 - `standards/it-strategy-engagement-guide.md` — program BSC and business case
 - `knowledge/lessons/pmo-professional-principles.md`

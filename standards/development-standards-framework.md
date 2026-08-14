@@ -125,7 +125,7 @@
 | 移行〜Go-live | 運用設計、運用引継、リリース規約 |
 | 運用 | 維持管理、ユーザ管理、ドキュメント改訂 |
 
-`frameworks/program-phases-investigation-to-requirements.md` は調査〜要件（Phase 100–500）を扱う。本フレームワークは**設計以降（Build / Run）**の標準体系です。
+`frameworks/program-phases-investigation-to-requirements.md` は調査〜要件（Phase 100–500）を扱う。`frameworks/sap-implementation-phase-model.md` は ERP パッケージ導入の Phase 0–6（評価〜維持）を扱う。本フレームワークは**設計以降（Build / Run）**の標準体系です。
 
 ---
 
@@ -179,7 +179,8 @@
 | `standards/operations-handover-guide.md` | 運用引継 |
 | `standards/environment-management-guide.md` | 開発/試験環境 |
 | `standards/release-management-guide.md` | ライブラリ/リリース |
-| `knowledge/index/legacy-source-index.md` | Program Line H（原本索引） |
+| `knowledge/index/legacy-source-index.md` | Program Line H / I（原本索引） |
+| `frameworks/sap-implementation-phase-model.md` | ERP Phase 0–6・試験体系（Build 前後の工程論） |
 
 ---
 

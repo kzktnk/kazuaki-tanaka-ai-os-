@@ -164,7 +164,7 @@
 
 **適用:** ウォーターフォール型のカスタム開発（要件定義 → 設計/製造 → 試験）  
 **読者:** 発注側レビュー担当、ベンダー設計リード、QA  
-**参照:** `standards/development-management-guide.md`, `standards/document-management-standard.md`
+**参照:** `standards/development-management-guide.md`, `standards/document-management-standard.md`, `frameworks/sap-implementation-phase-model.md`（試験体系 UT/IT/UAT 等）
 
 大規模案件をモデルとした**成果物カタログ**です。プロジェクトごとに作成単位・様式は調整可。実様式テンプレートはリポジトリに登録しない（ID と用途のみ）。
 
@@ -250,6 +250,8 @@
 | — | 基本操作/業務運用マニュアル | |
 
 C301/C302 は総合運転試験でも共用可。
+
+**試験体系（ERP プログラム）:** UT / ITa / ITb / 移行試験 / UAT / 本番リハーサル / SOT の定義・フェーズ対応は `frameworks/sap-implementation-phase-model.md` §Test Taxonomy。本 Archetype G の C301/C302 は総合試験・総合運転試験向け。
 
 ### Review Checkpoints by Deliverable Group
 
@@ -362,6 +364,7 @@ C301/C302 は総合運転試験でも共用可。
 | `standards/document-management-standard.md` | 文書区分・表紙・台帳 |
 | `standards/development-management-guide.md` | 5管理領域・レビュー/試験フロー |
 | `standards/development-standards-framework.md` | 開発標準全体 |
+| `frameworks/sap-implementation-phase-model.md` | ERP Phase 0–6・試験体系（Archetype G 試験フェーズの上位工程論） |
 | `standards/operations-design-guide.md` | 運設 |
 | `standards/operations-handover-guide.md` | 運説・引継 |
 | `standards/environment-management-guide.md` | PT/RT 環境 |

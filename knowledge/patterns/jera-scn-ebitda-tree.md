@@ -1,7 +1,7 @@
 # JERA SCN：EBITDAツリー基準の再整理
 
-**Version:** v1.2  
-**Status:** Active（有報・Partnerレビュー反映済）  
+**Version:** v1.3  
+**Status:** Active（有報・Partner・プログラム定義書整合反映済）  
 **Date:** 2026-08-13  
 **Owner:** Kazuaki Tanaka  
 **Context:** McKinsey 6/29 ディスカッション、7/2 DX戦略論点、AMP/DGD/Team DX 縦整合整理  
@@ -224,7 +224,12 @@ Digital / AI（Enabler・手段）
 | **発電所自立経営** | C-0, C-X3 | O: 10/1 組織・権限委譲 / P: 所長 PDCA | 運営統括、経営企画 |
 | **Team DX / DGD** | C-A–C, C-X1 | T: 評点 3+ 重点施策 / P: 業務成熟度 | 手川 PM、長嶋 PMO |
 | **原価管理 PJ（Capgemini）** | C-0 | T: S4 標準化 Check / P: 両輪 PDCA | 経営管理＋Dataiku（S4 外） |
+| **プラントデータ基盤** | C-X1 | P: データフロー標準化 / T: 構造化 | 長嶋 PO・市場 DO |
+| **資材 DX** | C-B3（調達） | T: 調達 PF / P: SC 業務 | 鈴木 PO（構想段階） |
+| **設備診断支援** | C-C1, C-B1 | P: 懸案一元化 / T: インターバル最適化 | DPP 業務計画連携 |
 | **McK Digital Factory（案）** | C-C1–C3（モデル） | O+P: 主管部深関与 BPR | 国内運営＋所長＋DPP |
+
+**PG-1（プログラム定義書）:** AMP 構築 PJ と DGD が**基盤部分（データ・プロセス）で重複**。SCN 上は C-X1/C-0 を共有ノードとし、Initiative 束の RACI で役割分担を明示する。
 
 ---
 
@@ -241,19 +246,42 @@ Digital / AI（Enabler・手段）
 | モデルプラント AI 検証 | C-C2 or C-B1 | 要プロセス選定 | T | ○ | ○ | ○ |
 | 業務棚卸（千葉・保全） | C-X2 | O&M | P, O | ○ | ○ | △ |
 | 10/1 組織変更 | C-X3, C-0 | 全枝 | O | ○ | ○ | — |
+| プラントデータ基盤 | C-X1 | Input 全枝 | P, T | ○ | ○ | ○ |
+| 資材 DX | C-B3 | 委託・調達 | T, P | ○ | ○ | △ |
+| 設備診断支援 | C-C1, C-B1 | 計停・修繕 | P, K | ○ | ○ | ○ |
 
 ---
 
 ## 7. KPI 配置（SCN 記法）
 
+### 7.1 数値の3層（有報 vs プログラム定義書）— **混同禁止**
+
+| 層 | 指標 | 数値 | 出典 | SCN 上の位置 |
+|----|------|------|------|-------------|
+| **A. Baseline Outcome** | 電気事業営業利益（個別） | **124,483 百万円**（≒1,245 億円） | 有報 P.140–142 FY25 | **Value-1 現状アンカー** |
+| **A′. Baseline EBITDA** | 営業利益＋D&A | **241,236 百万円**（124,483＋116,753） | 有報 | Value-1 補足（EBITDA 説明用） |
+| **B. Program KGI（増分）** | 焚替損失回避 | **86.51 億円/年（2027）**／**109 億円/年（2030）** | JPJ DGD v1.0 §7／プログラム定義書 | **Value Driver 枝への増分効果**（Value-1 と同数値ではない） |
+| **B′. Program KGI（増分）** | 運用費削減 | **5 億円/年**＋工数削減（84.1→569 名相当） | 同上 | C-B2 / Enabler 変革 KPI |
+| **C. Realized（実績例）** | GDAC 予兆監視効果 | **18 億円（2025 実績）** | DX戦略 Part1 骨子 | C-C2 の実証（KGI 達成の一部） |
+
+**整合の要点:**
+
+- **124,483M ≠ 86.51/109 億** — 前者は**有報ベースライン**、後者は**DX プログラムが創出する年間増分効果（KGI）**。
+- 109 億の内訳（DGD v1.0 §8）：保全 **79.5 億**＋運転 **29.3 億**＋資材 SC **0.37 億** → C-B/C-C / C-A2 / 資材 DX に接続。
+- プログラム定義書の「目標数値（JPJ 目標に応じ変動）」＝**層 B**。SCN Value-1 には載せず、**Value Driver → Capability 枝**に増分として接続する。
+- McK 6/29 の「2–3 年ストレッチ EBITDA」は **A＋B の将来像**（G5）。確定後 Value-1 ストレッチ行を更新。
+
+### 7.2 SCN レイヤ別 KPI
+
 | レイヤ | ノード | 指標種別 | 例 |
 |--------|--------|----------|-----|
-| Value-1 | 発電 EBITDA 最大化 | **Outcome** | 電気事業営業利益 124,483M（個別）＋ D&A 116,753M → EBITDA |
-| Value-2 | ユニット経済価値 | **Outcome** | NPV、複数年 EBITDA |
+| Value-1 | 発電 EBITDA 最大化 | **Outcome（Baseline）** | 124,483M（個別）＋ D&A 116,753M |
+| Value-1′ | プログラム KGI | **Outcome（増分・Forward）** | 焚替回避 86.51/109 億、運用費 5 億 |
+| Value Driver | 熱効率・計外 MWh 等 | **Driver KPI** | 燃料費・計外停止の因数分解 |
+| Decision | 所長判断 | **Decision KPI** | 計画修正・修繕優先・AI 採否 |
 | C-0 | 収支 PDCA | **Monitor** + **Decision** | PDCA 完遂 / 計画修正判断 |
-| C-C2 | 計画外停止防止 | **Monitor** | 計画外停止率、バッドアクター数、予兆成功率 |
-| C-A1 | 収益 | **Monitor** | アベイラビリティ、稼働率 |
-| Enabler | DX 手段 | **変革 KPI**（McK 7/2） | 導入スピード—**単独 EBIDTA 責任は置かない** |
+| C-C2 | 計画外停止防止 | **Monitor** | 計画外停止率、バッドアクター数 |
+| Enabler | BPR/DX | **変革 KPI**（McK 7/2） | 定着・導入—**単独 EBITDA 責任は置かない** |
 
 **禁止:** DX 登録数・アクティブユーザー数を Outcome にしない（McK メモ p.2）
 
@@ -278,7 +306,8 @@ Digital / AI（Enabler・手段）
 | G2 PDCA 分裂 | C-0 に SAP/Dataiku/AMP が未統合 | C-0 Enabler に 3 系統を束ね、Outcome は Value-1 一本 |
 | G3 DGD 未起動 | Initiative 束が未ゲート | Team DX PMO を SCN 図の右肩に明示（RACI 確定後） |
 | G4 地点未決 | モデル Enabler が Capability に未接続 | C-C1–C3 の 1 本に 1 拠点を太線 |
-| G5 KPI Open | Value-1 数値空白 | 個別ベース Value-1（124,483M）を掲示。ストレッチ目標は別途 |
+| G5 KPI Open | Value-1 数値空白 | Baseline＝124,483M（有報）。KGI＝86.51/109 億は**増分層**として分離 |
+| G8 PG-1 重複 | AMP×DGD 基盤競合 | C-X1/C-0 を共有ノード化、RACI で役割分担（プログラム定義書 PG-1） |
 | G6 オーナー分散 | BPR が C-X2 未接続 | 業務棚卸・AMP・McK 4A を C-X2/C-C 下に集約 |
 | G7 DPP 再演 | T だけ Enabler に並ぶ | **判断→行動→KPI→EBITDA 枝**＋BPR 先行を必須列 |
 
@@ -288,7 +317,7 @@ Digital / AI（Enabler・手段）
 
 | 優先 | アクション |
 |------|-----------|
-| 1 | SCN 図を **Value Creation Tree（6層）** で PPT 更新（v2.2） |
+| 1 | SCN 図を **Value Creation Tree（6層）** で PPT 更新（v2.3・KPI 3層明示） |
 | 2 | DGD 評点 3+ 施策を §6 表に 1:1 追加 |
 | 3 | モデル 1 拠点×McK 3A 1 プロセスで §8 報告テンプレ試行 |
 | 4 | 2–3 年ストレッチ EBITDA 確定後、Value-1 Outcome を更新（個別ベース整合を維持） |
