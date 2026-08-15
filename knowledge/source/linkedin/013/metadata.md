@@ -1,12 +1,32 @@
-# LinkedIn No.13 Metadata
+# Metadata — LinkedIn No.13
 
-## Title
-
-Human-in-the-Loop Is Not a Safety Mechanism—It's an Accountability Mechanism
-
-## Japanese Title
-
-Human-in-the-Loopは安全装置ではなく責任装置である
+```yaml
+id: "013"
+note_number: 9
+title:
+  en: "Human-in-the-Loop Is Not a Safety Mechanism—It's an Accountability Mechanism"
+  ja: "Human-in-the-Loopは安全装置ではなく責任装置である"
+series:
+  name: "Operational AI"
+languages: [en, ja]
+status: migrated
+primary_framework:
+  - frameworks/human-oversight.md
+secondary_frameworks:
+  - frameworks/decision-ownership.md
+  - frameworks/ai-governability.md
+patterns:
+  - knowledge/patterns/decision-ownership.md
+lessons:
+  - knowledge/lessons/governance-messaging.md
+tags:
+  - ai-governance
+  - operational-ai
+  - human-in-the-loop
+  - accountability
+  - human-oversight
+  - decision-ownership
+```
 
 ## Core Theme
 
@@ -14,59 +34,18 @@ Human-in-the-Loop should not be understood primarily as a temporary safety mecha
 
 Its more fundamental role is to preserve human and organizational accountability as AI systems gain greater operational autonomy.
 
-## Core Concepts
-
-- Human-in-the-Loop
-- Accountability
-- Human Oversight
-- Decision Ownership
-- Decision Approval
-- Operational AI
-- AI Governance
-- Non-delegable Responsibility
-
-## Key Distinction
-
-AI capability and human accountability are separate questions.
-
-Technical question:
-
-> Can AI do this?
-
-Operational governance question:
-
-> Who owns the consequences?
-
-## Accountability Chain
-
-AI Recommendation
-→ Human Review
-→ Human Approval
-→ Action
-→ Outcome
-→ Accountable Owner
-
-## Critical Insight
-
-Human involvement should not automatically be interpreted as evidence that AI is insufficiently capable.
-
-Human involvement may remain necessary because legal, safety, regulatory, and organizational accountability cannot simply be delegated to an AI system.
-
-## Relevant Frameworks
-
-- frameworks/human-oversight.md
-- frameworks/decision-ownership.md
-- frameworks/ai-governability.md
-
 ## Relationship to No.14
 
 No.13 establishes Human-in-the-Loop as an accountability mechanism.
 
-No.14 extends this argument by separating:
+No.14 extends this argument by separating Decision Execution from Decision Ownership.
 
-- Decision Execution
-- Decision Ownership
+## Relationship to No.16
 
-Together they form a broader governance principle:
+No.16 reframes ownership as **risk ownership**: who holds risk after AI acts.
 
-> AI execution may become increasingly autonomous while decision ownership remains explicitly assigned to humans and institutions.
+## Relationship to No.17
+
+No.17 adds Capability vs Authority. Combined with No.13–14:
+
+> Capability ↑ does not imply Authority ↑. Ownership, authority, and oversight must be designed together.
