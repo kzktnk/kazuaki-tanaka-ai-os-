@@ -2,7 +2,7 @@
 
 ## Architecture
 
-**Version:** v0.9 Bootstrap  
+**Version:** v1.0 Navigation  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Repository-wide architectural blueprint
@@ -160,6 +160,12 @@ kazuaki-tanaka-ai-os/
 ├── frameworks/
 ├── playbooks/
 ├── knowledge/
+│   ├── index/          ← master-index, domain indexes
+│   ├── source/         ← preserved originals (not default load)
+│   ├── patterns/
+│   ├── lessons/
+│   ├── decisions/
+│   └── migrations/
 ├── templates/
 ├── prompts/
 ├── projects/
@@ -414,15 +420,60 @@ Defines repeatable procedures for performing work.
 
 ### Purpose
 
-Stores knowledge extracted from experience.
+Stores knowledge extracted from experience, plus preserved sources and navigation indexes.
+
+The knowledge layer has two roles:
+
+1. **Distilled assets** (`patterns/`, `lessons/`, `decisions/`) — loaded during relevant tasks via `CONTEXT_ROUTING.md`
+2. **Preserved sources and indexes** (`source/`, `index/`, `migrations/`) — inventory, audit trail, and migration; not loaded wholesale during normal execution
 
 ```text
 knowledge/
+├── index/
+│   ├── master-index.md           ← 3–4 level map; update on every expansion
+│   ├── linkedin-series-index.md
+│   └── legacy-source-index.md
+├── source/
+│   └── linkedin/                 ← en.md, ja.md, metadata.md per article
+├── patterns/
 ├── lessons/
 ├── decisions/
-├── patterns/
-└── glossary.md
+├── migrations/
+└── glossary.md                   ← optional; not yet populated
 ```
+
+**Navigation entry:** For an up-to-date expandable map, read `knowledge/index/master-index.md`.
+
+### `knowledge/index/`
+
+Indexes record where assets live and how layers connect.
+
+- `master-index.md` — repository-wide 3–4 level map and maintenance rules
+- Domain indexes — e.g. LinkedIn series, legacy PDF extraction map
+
+Indexes are for orientation and maintenance. They are not substitutes for `CONTEXT_ROUTING.md`.
+
+### `knowledge/source/`
+
+Preserves authoritative originals (e.g. LinkedIn posts, archived articles).
+
+Preferred structure:
+
+```text
+knowledge/source/linkedin/014/
+├── en.md
+├── ja.md
+├── metadata.md
+└── assets/
+```
+
+Sources support migration, writing continuity, and audit. They should **not** be loaded in full for unrelated tasks.
+
+### `knowledge/migrations/`
+
+Records what was extracted, created, or updated during a knowledge migration.
+
+Each migration report should list source, new files, updated files, and primary contribution.
 
 ### `knowledge/lessons/`
 
@@ -465,9 +516,11 @@ A pattern should include:
 - response
 - exceptions
 
-### Rule
+### Rules
 
-The knowledge layer should preserve distilled insight, not unprocessed meeting notes.
+- The knowledge layer should preserve distilled insight, not unprocessed meeting notes.
+- Promote experience → pattern → framework → standard only when reusable and validated.
+- On every knowledge expansion, update `knowledge/index/master-index.md` and relevant domain indexes in the same change set.
 
 ---
 
@@ -646,6 +699,13 @@ It means they must not override more foundational layers without an explicit doc
 ## 8. Context Loading Model
 
 AI systems should not load the entire repository for every task.
+
+Expanded knowledge is **stored** in the repository but **selected** at runtime. `knowledge/source/` and `knowledge/migrations/` are normally excluded from task context unless the task is migration, writing continuity, or repository maintenance.
+
+Use:
+
+- `CONTEXT_ROUTING.md` — which files to load per task type
+- `knowledge/index/master-index.md` — where assets live (orientation, not default load)
 
 The recommended loading sequence is:
 

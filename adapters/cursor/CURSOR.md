@@ -286,7 +286,9 @@ When asked to migrate an asset:
 8. Remove confidential or project-identifying details.
 9. Create or update the appropriate files.
 10. Add cross-references.
-11. Produce a migration summary.
+11. Update `knowledge/index/master-index.md` and any domain index (`linkedin-series-index.md`, `legacy-source-index.md`).
+12. Update `CONTEXT_ROUTING.md` if new assets should load for a task type.
+13. Produce a migration summary.
 
 Possible outputs include:
 
