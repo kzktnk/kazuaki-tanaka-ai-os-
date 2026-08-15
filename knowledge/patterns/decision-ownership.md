@@ -1,7 +1,7 @@
 # Pattern: Decision Ownership
 
 **Status:** Active  
-**Origin:** LinkedIn No.14
+**Origin:** LinkedIn No.14 and No.16
 
 ## Pattern statement
 
@@ -59,3 +59,14 @@ The degree of human involvement should depend on:
 ## Core rule
 
 > Decision execution can be automated. Decision ownership must remain explicit.
+
+## Relationship to Risk Ownership (No.16)
+
+Decision ownership and **risk ownership** overlap in practice but serve different emphasis:
+
+- **Decision ownership** — who accepts, overrides, explains, and remains accountable for the decision
+- **Risk ownership** — who bears the non-delegable stake after AI recommends or acts
+
+No.16: organizations delegate **work** to AI, not **accountability**. The risk owner must remain identifiable even when execution is autonomous.
+
+See `knowledge/patterns/risk-ownership.md`.

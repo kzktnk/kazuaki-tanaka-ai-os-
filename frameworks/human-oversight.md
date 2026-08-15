@@ -60,3 +60,17 @@ The more important design question is:
 > Where, when, and how should humans remain in the loop?
 
 Human oversight should therefore be designed according to the accountability requirements of the decision rather than applied uniformly to every AI action.
+
+---
+
+## Authority Design (LinkedIn No.17)
+
+Human oversight levels should align with **designed authority levels**, not with AI capability alone.
+
+See `knowledge/patterns/authority-levels.md`:
+
+Recommend → Prepare → Act within limits → Execute with approval → Execute autonomously
+
+Higher authority levels require clearer ownership, approval paths, and override mechanisms—not fewer humans by default.
+
+The design question is not only *where humans remain in the loop* but *what authority the AI has been granted for each decision type*.

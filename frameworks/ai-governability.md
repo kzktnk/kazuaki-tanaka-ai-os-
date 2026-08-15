@@ -22,6 +22,25 @@ Build an organization where AI can be deployed rapidly while remaining trusted, 
 
 Governance must be embedded into daily operations rather than treated as an approval process.
 
+### Operational Governance (LinkedIn No.7, No.10, SP09)
+
+**Operational Governance** is the ability to continuously align AI decisions, human accountability, business objectives, and operational reality within day-to-day execution.
+
+It is not merely about defining rules in policy manuals. It is about ensuring those rules remain effective in practice as AI systems learn, agents act, and operational environments change.
+
+Operational Governance requires executable capabilities—not only documented standards:
+
+- detect failures and escalate exceptions
+- assign accountability and maintain auditability
+- log, trace, and monitor models in production
+- control authority and permissions per decision
+- embed Human-in-the-Loop where accountability must remain human
+- adapt controls as data, risk, and context evolve
+
+AI governance in critical infrastructure connects **strategy, operations, and technology**. Organizations that master Operational Governance may gain greater long-term advantage than those focused solely on model capability.
+
+See `knowledge/patterns/operational-governance.md`.
+
 ## 2. Judgment Before Generation
 
 AI should improve decision quality before improving productivity.
@@ -228,6 +247,78 @@ AI Action
 → Organizational Accountability
 
 even when technical execution is increasingly automated.
+
+---
+
+# Authority Design
+
+## Capability ≠ Authority
+
+As AI agents become capable of analyzing, recommending, and executing operational actions, organizations must separate:
+
+- **Capability** — what the AI can technically do
+- **Authority** — what the AI is authorized to do, under which conditions, and by whose grant
+
+Increasing capability does not automatically justify increasing authority.
+
+## Graduated Authority Levels
+
+Avoid treating autonomy as a binary:
+
+Human decision ↔ AI decision
+
+Instead, design authority per decision type:
+
+Recommend → Prepare → Act within limits → Execute with approval → Execute autonomously
+
+## Authority Design Factors
+
+Authority level should depend on **Decision × Risk × Context**:
+
+- consequence of error
+- reversibility
+- uncertainty
+- legal, regulatory, and safety responsibility
+- who owns the risk
+
+Same agent. Different authority levels for different decisions (e.g. reschedule maintenance vs shut down equipment).
+
+## Appropriate Autonomy
+
+The governability objective is not necessarily **maximum autonomy**.
+
+It is **appropriate autonomy**—especially in energy, finance, defense, healthcare, and other mission-critical environments.
+
+The operational design question:
+
+> What should AI be authorized to do—under what conditions, and by whom?
+
+See:
+
+- `knowledge/patterns/ai-capability-vs-authority.md`
+- `knowledge/patterns/authority-levels.md`
+
+---
+
+## Risk Ownership (LinkedIn No.16)
+
+AI agents may execute work—but cannot own risk.
+
+Risk owners must understand consequences, balance objectives, accept accountability, and justify decisions to regulators, boards, and society.
+
+Organizations should ask:
+
+> Who continues to own the risk after AI makes the recommendation?
+
+Not:
+
+> Can AI make this decision?
+
+**Delegation principle:** Organizations delegate work to AI—not accountability.
+
+Operational AI design: humans and institutions **retain risk ownership** while AI **scales execution**.
+
+See `knowledge/patterns/risk-ownership.md`.
 
 # Suggested Framework Update
 
