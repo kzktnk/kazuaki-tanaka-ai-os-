@@ -2,11 +2,13 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.4
+Version: v1.5
 
 ## Purpose
 
 This file tells AI systems which knowledge should be loaded for each type of task.
+
+**Navigation vs loading:** For a full 3–4 level map of repository assets, see `knowledge/index/master-index.md`. This file selects the **minimum sufficient subset** per task—not the entire knowledge base.
 
 Principles:
 - Load the minimum sufficient context.
@@ -327,6 +329,14 @@ Outputs:
 
 Load:
 - frameworks/ai-governability.md
+- frameworks/decision-ownership.md
+- frameworks/human-oversight.md
+- knowledge/patterns/ai-capability-vs-authority.md (if authority design)
+- knowledge/patterns/authority-levels.md (if authority design)
+- knowledge/patterns/decision-ownership.md
+- knowledge/patterns/verifiable-ownership.md
+- knowledge/patterns/risk-ownership.md
+- knowledge/lessons/governance-messaging.md (if executive messaging)
 - domains/enterprise-ai.md (if available)
 - standards/consulting-review.md
 
@@ -402,7 +412,9 @@ Workflow:
 3. Normalize
 4. Place
 5. Cross-reference
-6. Validate
+6. Update `knowledge/index/master-index.md` and relevant domain index
+7. Update `CONTEXT_ROUTING.md` if new assets should load for a task type
+8. Validate
 
 Outputs:
 - Lesson
@@ -430,11 +442,13 @@ Generalize reusable knowledge rather than documenting a single project.
 Load:
 - ARCHITECTURE.md
 - AI_OPERATING_MANUAL.md
+- knowledge/index/master-index.md
 
 Tasks:
 - Remove duplication
 - Improve structure
 - Update cross references
+- Update master-index and domain indexes when assets change
 - Preserve source-of-truth
 
 ---

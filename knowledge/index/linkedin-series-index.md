@@ -90,5 +90,6 @@ No.17  Capability ≠ authority
 
 ## Related
 
+- Master index: [`master-index.md`](./master-index.md)
 - Bulk migration record: `knowledge/migrations/linkedin-bulk-001-015-sp-erf.md`
 - Individual migrations: `knowledge/migrations/linkedin-013.md`, `linkedin-014.md`, `linkedin-016.md`, `linkedin-017.md`

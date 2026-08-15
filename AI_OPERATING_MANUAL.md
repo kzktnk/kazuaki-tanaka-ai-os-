@@ -92,7 +92,7 @@ Before performing a non-trivial task:
 1. Read this file.
 2. Read `CONTEXT_ROUTING.md` if it exists.
 3. Classify the task.
-4. Load the minimum relevant context.
+4. Load the minimum relevant context (see `knowledge/index/master-index.md` only for orientation or repository maintenance—not as default task load).
 5. Identify missing information.
 6. Execute the task.
 7. Apply the relevant quality standard.
@@ -442,6 +442,8 @@ When updating the repository:
 - use clear file names
 - add cross-references
 - update `CHANGELOG.md` for meaningful changes
+- update `knowledge/index/master-index.md` when assets are added, moved, or migrated
+- update domain indexes under `knowledge/index/` when a domain expands (LinkedIn, legacy sources, etc.)
 - update `ARCHITECTURE.md` if directory responsibilities change
 - update `CONTEXT_ROUTING.md` when routing behavior changes
 - update adapters when tool-specific behavior changes

@@ -5,6 +5,8 @@
 **Owner:** Kazuaki Tanaka  
 **Purpose:** ローカル保管のレガシー原本と、リポジトリ内知識の対応索引。**原本の中身は含まない。**
 
+**Related:** 全体マップ → [`master-index.md`](./master-index.md)
+
 ---
 
 ## Important
