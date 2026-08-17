@@ -11,10 +11,12 @@ Full catalog and cross-links: [`knowledge/index/master-index.md`](../knowledge/i
 | File | Focus |
 |------|--------|
 | `ai-governability.md` | Governability, authority design, operational AI |
+| `ai-adoption-roadmap.md` | Dual-layer AI adoption (tech × people, Year 1–5) |
+| `ai-role-maturity.md` | Five AI roles × phased maturity |
 | `decision-ownership.md` | Decision ownership vs execution |
 | `human-oversight.md` | Oversight aligned to authority and risk |
 | `governance-operating-model.md` | Governance as operating capability |
-| `ai-management-office.md` | AI management office structure |
+| `ai-management-office.md` | AI CoE and Initiative C operating structure |
 
 ---
 

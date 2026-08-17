@@ -4,7 +4,7 @@
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
-**Last updated:** 2026-08-15
+**Last updated:** 2026-08-17
 
 ---
 
@@ -77,7 +77,7 @@ kazuaki-tanaka-ai-os/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
 │   ├── patterns/               ← 12 distilled patterns
-│   ├── lessons/                ← 4 lessons
+│   ├── lessons/                ← 5 lessons
 │   ├── migrations/             ← 5 migration reports
 │   └── decisions/              ← (reserved, empty)
 ├── templates/                  ← 2 templates
@@ -159,6 +159,8 @@ frameworks/
 │   ├── decision-ownership.md
 │   ├── human-oversight.md
 │   ├── governance-operating-model.md
+│   ├── ai-adoption-roadmap.md
+│   ├── ai-role-maturity.md
 │   └── ai-management-office.md
 ├── Strategy & consulting
 │   ├── consulting-strategy-process.md
@@ -196,6 +198,7 @@ knowledge/
 ├── patterns/                         ← 12 files (see table below)
 ├── lessons/
 │   ├── governance-messaging.md
+│   ├── dual-roadmap-messaging.md
 │   ├── pmo-professional-principles.md
 │   ├── author-voice-archetypes-legacy.md
 │   └── client-deliverable-voice-jera-2026-08.md
@@ -204,7 +207,8 @@ knowledge/
 │   ├── linkedin-013.md
 │   ├── linkedin-014.md
 │   ├── linkedin-016.md
-│   └── linkedin-017.md
+│   ├── linkedin-017.md
+│   └── ai-dual-roadmap-2026-08.md
 └── decisions/                        ← reserved
 ```
 
@@ -285,6 +289,21 @@ frameworks/it-strategy-foundations.md
 standards/it-strategy-engagement-guide.md
 ```
 
+### D. AI dual roadmap (2026-08)
+
+```text
+Internal AI utilization + people maturity roadmaps (not archived)
+        ↓ generalize
+frameworks/ai-adoption-roadmap.md
+frameworks/ai-role-maturity.md
+frameworks/ai-management-office.md (update)
+knowledge/lessons/dual-roadmap-messaging.md
+        ↓ record
+knowledge/migrations/ai-dual-roadmap-2026-08.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  AI Adoption / DX Roadmap
+```
+
 ---
 
 ## Level 4 — CONTEXT_ROUTING Task Map (summary)
@@ -297,6 +316,7 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | IT strategy | `frameworks/it-strategy-foundations.md`, `standards/it-strategy-engagement-guide.md` |
 | PMO / transformation | `frameworks/transformation-pmo.md`, `standards/pmo-operating-guide.md` |
 | AI governance | `frameworks/ai-governability.md`, `decision-ownership.md`, `human-oversight.md`, related `patterns/` |
+| AI adoption / DX roadmap | `frameworks/ai-adoption-roadmap.md`, `ai-role-maturity.md`, `ai-governability.md`, `dual-roadmap-messaging.md` |
 | LinkedIn / Note writing | `standards/writing.md`, series `source/`, related `patterns/` and `frameworks/` |
 | Knowledge migration | `AI_OPERATING_MANUAL.md`, source asset, migration workflow |
 | Repository maintenance | `ARCHITECTURE.md`, `master-index.md` (this file) |
