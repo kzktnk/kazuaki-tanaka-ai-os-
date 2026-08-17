@@ -53,6 +53,18 @@ Full catalog and cross-links: [`knowledge/index/master-index.md`](../knowledge/i
 
 ---
 
+## Application Outsourcing / AMS
+
+| File | Focus |
+|------|--------|
+| `application-outsourcing-solution-planning.md` | As-Is → To-Be → estimate → proposal → transition |
+| `ams-services-pyramid.md` | L1/L2/L3 scope hierarchy and Solution Plan TOC |
+| `service-transition-approach.md` | Waves, KT, milestones, joint governance |
+
+Pairs with `standards/ams-solution-plan-checklist.md` and `deliverable-archetypes.md` Archetype I.
+
+---
+
 ## Thinking Patterns
 
 See [`thinking-patterns/README.md`](./thinking-patterns/README.md) — pattern-01 through pattern-08.

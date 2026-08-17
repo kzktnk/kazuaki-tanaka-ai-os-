@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.6
+Version: v1.7
 
 ## Purpose
 
@@ -352,6 +352,38 @@ Outputs:
 - Initiative prioritization and sync rules
 - Role maturity and enablement plan (draft)
 - Workshop or proposal sections on DX / AI change
+
+---
+
+# Application Outsourcing / AMS Proposal
+
+Load:
+- frameworks/application-outsourcing-solution-planning.md
+- frameworks/ams-services-pyramid.md
+- frameworks/service-transition-approach.md
+- standards/ams-solution-plan-checklist.md
+- standards/deliverable-archetypes.md (Archetype I)
+- frameworks/it-strategy-foundations.md (§Sourcing — if strategic fit check)
+- frameworks/sap-implementation-phase-model.md (if SAP AM / post-go-live scope)
+- frameworks/transformation-pmo.md (if large transition program)
+- standards/operations-handover-guide.md (if handover from implementation partner)
+- standards/vendor-proposal-evaluation.md (if client-side evaluation mirror)
+- core/author-voice.md
+- standards/consulting-review.md (if deliverable review)
+
+Focus:
+- Solution Planning phases (baseline → To-Be → size → transition → proposal)
+- Services pyramid scope split (AM / dev / infra)
+- Estimating approach and assumption traceability
+- Location and staffing pyramid decisions
+- Transition waves, KT, and responsibility transfer
+- Proposal outline vs internal Solution Plan consistency
+
+Outputs:
+- Solution Plan sections (checklist-driven)
+- AMS / outsourcing proposal deck (Archetype I)
+- Transition approach summary
+- Assumption and risk register
 
 ---
 
