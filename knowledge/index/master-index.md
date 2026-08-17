@@ -1,6 +1,6 @@
 # Knowledge Master Index
 
-**Version:** v1.0  
+**Version:** v1.1  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
@@ -70,15 +70,15 @@ kazuaki-tanaka-ai-os/
 ├── ARCHITECTURE.md             ← structural blueprint
 ├── CONTEXT_ROUTING.md          ← task-based context selection
 ├── core/                       ← 8 files (kernel)
-├── standards/                  ← 16 files (quality criteria)
-├── frameworks/                 ← 20 files + thinking-patterns/
+├── standards/                  ← 17 files (quality criteria)
+├── frameworks/                 ← 23 files + thinking-patterns/
 ├── playbooks/                  ← 1 playbook (+ README)
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
 │   ├── patterns/               ← 12 distilled patterns
 │   ├── lessons/                ← 5 lessons
-│   ├── migrations/             ← 5 migration reports
+│   ├── migrations/             ← 6 migration reports
 │   └── decisions/              ← (reserved, empty)
 ├── templates/                  ← 2 templates
 ├── prompts/                    ← (reserved, empty)
@@ -94,7 +94,7 @@ kazuaki-tanaka-ai-os/
 | Index | Scope |
 |-------|--------|
 | [linkedin-series-index.md](./linkedin-series-index.md) | LinkedIn / Note sources 001–017, sp01–09, erf01–03 |
-| [legacy-source-index.md](./legacy-source-index.md) | Local legacy PDFs → repo extraction map (Program Lines A–I) |
+| [legacy-source-index.md](./legacy-source-index.md) | Local legacy PDFs → repo extraction map (Program Lines A–J) |
 
 ---
 
@@ -114,7 +114,7 @@ core/
 
 ---
 
-## Level 3 — Standards (16)
+## Level 3 — Standards (17)
 
 Grouped by domain for navigation:
 
@@ -130,6 +130,8 @@ standards/
 │   ├── requirements-document-outline.md
 │   ├── document-management-standard.md
 │   └── writing.md
+├── Application outsourcing / AMS
+│   └── ams-solution-plan-checklist.md
 ├── Development & ERP delivery
 │   ├── development-standards-framework.md
 │   ├── development-management-guide.md
@@ -145,7 +147,7 @@ standards/
 
 ---
 
-## Level 3 — Frameworks (20 + thinking patterns)
+## Level 3 — Frameworks (23 + thinking patterns)
 
 ```text
 frameworks/
@@ -175,6 +177,10 @@ frameworks/
 │   ├── transformation-roadmap.md
 │   ├── transformation-pmo.md
 │   └── program-phases-investigation-to-requirements.md
+├── Application outsourcing / AMS
+│   ├── application-outsourcing-solution-planning.md
+│   ├── ams-services-pyramid.md
+│   └── service-transition-approach.md
 ├── ERP / SAP
 │   └── sap-implementation-phase-model.md
 └── principles.md                     ← framework-layer principles
@@ -208,7 +214,8 @@ knowledge/
 │   ├── linkedin-014.md
 │   ├── linkedin-016.md
 │   ├── linkedin-017.md
-│   └── ai-dual-roadmap-2026-08.md
+│   ├── ai-dual-roadmap-2026-08.md
+│   └── ao-sae-2026-08.md
 └── decisions/                        ← reserved
 ```
 
@@ -306,6 +313,24 @@ CONTEXT_ROUTING.md  →  AI Adoption / DX Roadmap
 
 ---
 
+### E. Application outsourcing SAE (Program Line J, 2026-08)
+
+```text
+Local AOSAE PDFs (Downloads/AO Materials/) — not archived
+        ↓ generalize
+frameworks/application-outsourcing-solution-planning.md
+frameworks/ams-services-pyramid.md
+frameworks/service-transition-approach.md
+standards/ams-solution-plan-checklist.md
+standards/deliverable-archetypes.md (Archetype I)
+        ↓ record
+knowledge/migrations/ao-sae-2026-08.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  Application Outsourcing / AMS Proposal
+```
+
+---
+
 ## Level 4 — CONTEXT_ROUTING Task Map (summary)
 
 Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
@@ -317,6 +342,7 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | PMO / transformation | `frameworks/transformation-pmo.md`, `standards/pmo-operating-guide.md` |
 | AI governance | `frameworks/ai-governability.md`, `decision-ownership.md`, `human-oversight.md`, related `patterns/` |
 | AI adoption / DX roadmap | `frameworks/ai-adoption-roadmap.md`, `ai-role-maturity.md`, `ai-governability.md`, `dual-roadmap-messaging.md` |
+| Application outsourcing / AMS | `application-outsourcing-solution-planning.md`, `ams-services-pyramid.md`, `service-transition-approach.md`, `ams-solution-plan-checklist.md` |
 | LinkedIn / Note writing | `standards/writing.md`, series `source/`, related `patterns/` and `frameworks/` |
 | Knowledge migration | `AI_OPERATING_MANUAL.md`, source asset, migration workflow |
 | Repository maintenance | `ARCHITECTURE.md`, `master-index.md` (this file) |

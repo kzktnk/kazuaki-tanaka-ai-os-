@@ -1,6 +1,6 @@
 # Legacy Source Index
 
-**Version:** v1.3  
+**Version:** v1.4  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** ローカル保管のレガシー原本と、リポジトリ内知識の対応索引。**原本の中身は含まない。**
@@ -79,6 +79,29 @@
 | `Downloads/AsendantSAP/AscendantTraining_for_ChinaGDC_Day2PM_v0.2.pdf` | 内部研修 | **未登録** | 索引のみ（P4–6 は overview と重複） |
 
 **Note:** 原本は `Downloads/AsendantSAP/` 配下。Task ID・Work Product 番号・サンプル様式・Route Map 詳細・提案書事例はリポジトリに**登録しない**。ベンダー商標・クライアント名は一般化。
+
+---
+
+## Program Line J: Application Outsourcing SAE (AOSAE, ~2015)
+
+| ローカル原本（例） | 種別 | 抽出先（リポジトリ） | 登録範囲 |
+|-------------------|------|---------------------|---------|
+| `Downloads/AO Materials/Day 1/D1_AOSAE.pdf` | コース Day1 | `frameworks/application-outsourcing-solution-planning.md` | Course Map、SA 役割、As-Is/To-Be（一般化のみ） |
+| `Downloads/AO Materials/Day 2/D2 00_AOSAE.pdf` | コース Day2 | 同上 + `frameworks/service-transition-approach.md` | Risk、Estimating、Sourcing、Pyramid、Transition 概念 |
+| `Downloads/AO Materials/Day 3/D3.00_AOSAE.pdf` | コース Day3 | 同上 | Solution model、レビューゲート（ツール固有名除外） |
+| `D1.01_INP_Services Pyramid Template.pdf` | テンプレ | `frameworks/ams-services-pyramid.md` | L1/L2/L3 階層モデルのみ |
+| `D1.04_SS_Services Pyramid.pdf` | 事例 SS | 同上 + `application-outsourcing-solution-planning.md` | Solution Plan TOC のみ |
+| `D1.10_SAP Project Overview 2015.pdf` | 事例背景 | `sap-implementation-phase-model.md` 参照 | Post-go-live AM 文脈（1段落相当） |
+| `D1.15_INP_GDN OnePagers SM.pdf` | マーケ | **未登録** | マルチロケーション原則のみ（`ao-solution-planning` §Location） |
+| `D1.16_SS_To Be Mode.pdf` | 事例 SS | `application-outsourcing-solution-planning.md` | To-Be 構成要素のみ |
+| `D2.05_SS_… Estimating.pdf` | 事例 SS | `application-outsourcing-solution-planning.md` §Estimating | 因子名のみ（FTE/時間数除外） |
+| `D2.06_SS_… Sourcing.pdf` | 事例 SS | 同上 §Location Strategy | ロケーション決定軸のみ |
+| `D2.09_SS_… Pyramids CT_EP Mix.pdf` | 事例 SS | 同上 §Pyramid | 概念のみ |
+| `D2.11_… Transition Approach v1.pdf` | 事例 | `frameworks/service-transition-approach.md` | 原則・WS・マイルストーン型 |
+| `D3.02_INP_Solution Plan and Assumptions Checklist.pdf` | チェックリスト | `standards/ams-solution-plan-checklist.md` | 全章（一般化） |
+| `D3.04_INP_… High Level Proposal Outline.pdf` | 骨子 | `standards/deliverable-archetypes.md` Archetype I | 章立てのみ |
+
+**Note:** 原本は `Downloads/AO Materials/` 配下。Accenture 社内秘・再配布禁止。クライアント事例名・FTE・コスト・拠点・人名・社内ツール名（Alpha/CDTS/CTA）・レートカードはリポジトリに**登録しない**。
 
 ---
 

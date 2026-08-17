@@ -287,6 +287,8 @@ Cross **strategic impact of IT environment on business** with **strategic impact
 
 **Outsource drivers:** Cost control, performance, right-sizing, cash infusion, access to skills, focus on core business.
 
+**Execution layer (when outsourcing proceeds to RFP):** Strategic sourcing choice here does not produce a bid — for Solution Planning, To-Be AMS design, transition, and proposal structure, see `frameworks/application-outsourcing-solution-planning.md`.
+
 **Insource drivers:** IP retention, strategic sensitivity, restructuring, IT competency building, technology access.
 
 **Contract risk themes:** Change flexibility, exit clauses, SLA measurement, competitive bidding rights, technology refresh, governance of provider relationship.
@@ -376,3 +378,4 @@ Capability/enabler map (strategic-capability-network) — optional deep dive
 - `frameworks/transformation-pmo.md` — program office and governance
 - `CONTEXT_ROUTING.md` — IT Strategy route
 - `knowledge/index/legacy-source-index.md` — Program Line G
+- `frameworks/application-outsourcing-solution-planning.md` — AMS RFP / Solution Planning (post-decision)

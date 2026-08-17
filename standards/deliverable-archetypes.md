@@ -1,6 +1,6 @@
 # Deliverable Archetypes — Slide & Document Structure
 
-**Version:** v1.1  
+**Version:** v1.2  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Origin:** レガシー成果物アーキタイプの**最小構成**テンプレ。クライアント名・固有情報なし。
@@ -327,6 +327,32 @@ C301/C302 は総合運転試験でも共用可。
 | 9 | 論点・次アクション | 決定依頼は定義後 |
 
 **参照:** `knowledge/lessons/client-deliverable-voice-jera-2026-08.md`
+
+---
+
+## Archetype I: AMS / Application Outsourcing 提案
+
+**目安枚数:** 15–25枚（Appendix除く）  
+**読者:** 調達、IT責任者、選定委員会
+
+| # | スライド | 内容 |
+|---|---------|------|
+| 1 | 表紙 | — |
+| 2 | Objectives | 本提案が達成すること |
+| 3 | Understanding — scope | ポートフォolio、As-Is要点 |
+| 4 | Solution approach — delivery model | Governance / SM / Delivery |
+| 5 | Operating model | L1→L3、スコープ分割 |
+| 6 | Staffing & location | 体制、拠点 mix、根拠 |
+| 7 | Transition & KT | Wave、マイルストーン、共同ガバナンス |
+| 8 | Timeline | 主要マイルストーン |
+| 9 | Financial summary | 前提に紐づく概算（詳細はAppendix可） |
+| 10 | Why us / differentiation | Win themes（Factベース） |
+| 11 | Assumptions & dependencies | クライアント依存を明示 |
+| 12 | 次ステップ | 合意・依頼事項 |
+
+**Appendix（任意）:** 詳細 SLA、L2/L3 スコープ表、前提一覧、Transition 詳細
+
+**参照:** `frameworks/application-outsourcing-solution-planning.md`, `standards/ams-solution-plan-checklist.md`
 
 ---
 
