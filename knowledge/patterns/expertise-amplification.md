@@ -37,6 +37,13 @@ Use this pattern when:
 
 > AI expands access to knowledge. Experts transform knowledge into decisions.
 
+## Roadmap application
+
+Initiative B (tacit → explicit knowledge) in `frameworks/ai-adoption-roadmap.md`
+peaks in **Year 2–3**: judgment types and exception libraries, not full
+manualization. User role maturity Level 3–4 aligns with expert–AI collaboration
+(`frameworks/ai-role-maturity.md`).
+
 ## Related patterns
 
 - `knowledge/patterns/operating-model-advantage.md`

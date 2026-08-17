@@ -76,6 +76,16 @@ For each decision type in an operational workflow:
 
 > The goal of Operational AI is not necessarily maximum autonomy. It is appropriate authority—designed per decision, risk, and context.
 
+## Adoption phase (typical ceiling)
+
+When using `frameworks/ai-adoption-roadmap.md` horizons:
+
+- **Year 1–2:** Recommend and Prepare dominate production use  
+- **Year 3:** Act within limits for bounded decisions; HITL explicit  
+- **Year 4–5:** Execute with approval or bounded autonomy for selected domains  
+
+Phase sets the default ceiling; Decision × Risk × Context still governs each decision.
+
 ## Related patterns
 
 - `knowledge/patterns/ai-capability-vs-authority.md`

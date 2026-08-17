@@ -298,6 +298,19 @@ See:
 - `knowledge/patterns/ai-capability-vs-authority.md`
 - `knowledge/patterns/authority-levels.md`
 
+## Authority × Adoption Phase
+
+Roadmap phase should constrain default authority — not model capability alone (`frameworks/ai-adoption-roadmap.md`):
+
+| Phase | Typical authority ceiling | Rationale |
+|-------|---------------------------|-----------|
+| Year 1 | Awareness; no production autonomy | Rules and risk literacy first |
+| Year 2 | Recommend → Prepare | Limited production UCs; human owns outcome |
+| Year 3 | Prepare → Act within limits | Workflow-embedded; HITL by design |
+| Year 4–5 | Selective Execute with approval / bounded autonomy | After LLMOps, audit, and governor maturity |
+
+Same agent may sit at different levels for different decisions in the same phase.
+
 ---
 
 ## Risk Ownership (LinkedIn No.16)

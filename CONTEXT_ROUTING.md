@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.5
+Version: v1.6
 
 ## Purpose
 
@@ -322,6 +322,36 @@ Outputs:
 - Findings register tied to SCN nodes
 - Gap summary for steering / executive discussion
 - Initiative prioritization and resource allocation view
+
+---
+
+# AI Adoption / DX Roadmap
+
+Load:
+- frameworks/ai-adoption-roadmap.md
+- frameworks/ai-role-maturity.md
+- frameworks/ai-governability.md
+- frameworks/ai-management-office.md (if CoE / Initiative C)
+- frameworks/transformation-roadmap.md (if lifecycle overlay)
+- frameworks/transformation-pmo.md (if portfolio / PgMO)
+- knowledge/patterns/expertise-amplification.md
+- knowledge/patterns/authority-levels.md
+- knowledge/patterns/operational-reality.md
+- knowledge/lessons/dual-roadmap-messaging.md (if executive audience)
+- standards/consulting-review.md (if deliverable review)
+
+Focus:
+- Dual-layer roadmap (technology × people)
+- Year 1–5 narrative and three-initiative sequence
+- Role × phase maturity and HR triggers
+- Authority design by phase
+- Executive vs internal messaging
+
+Outputs:
+- Adoption roadmap narrative
+- Initiative prioritization and sync rules
+- Role maturity and enablement plan (draft)
+- Workshop or proposal sections on DX / AI change
 
 ---
 
