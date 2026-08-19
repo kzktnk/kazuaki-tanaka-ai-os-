@@ -54,7 +54,7 @@ When context still exists after an intentional deviation:
 
 1. What was different this time?
 2. Why wasn't the standard response appropriate?
-3. What would you want the next person facing this situation to know?
+3. What should the next person know?
 
 ## Relationship to No.18
 
