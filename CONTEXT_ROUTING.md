@@ -141,7 +141,7 @@ Outputs:
 
 Load:
 - frameworks/private-it-rfp.md
-- frameworks/vendor-delivery-model-gap-analysis.md (if org / factory / estimate mismatch)
+- frameworks/vendor-delivery-model-gap-analysis.md (if prime vs in-house / lot split is still open)
 - playbooks/private-it-rfp-vendor-selection.md
 - standards/vendor-proposal-evaluation.md
 - standards/vendor-key-person-interview.md

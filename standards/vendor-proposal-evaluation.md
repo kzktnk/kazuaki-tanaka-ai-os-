@@ -202,7 +202,7 @@ Better: 移行責任者が明示されずアプリ PM 配下との記載のみ�
 | ファイル | 関係 |
 |---------|------|
 | `frameworks/private-it-rfp.md` | RFP の問い |
-| `frameworks/vendor-delivery-model-gap-analysis.md` | 体制・工場・見積の作業モデルの食い違い |
+| `frameworks/vendor-delivery-model-gap-analysis.md` | Stage 0 発注体制。提案の体制図採点ではない |
 | `playbooks/private-it-rfp-vendor-selection.md` | 実行手順 |
 | `standards/vendor-key-person-interview.md` | 指名人材 |
 | `knowledge/patterns/scoring-vs-calibration.md` | 点差の扱い |

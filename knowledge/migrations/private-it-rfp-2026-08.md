@@ -44,7 +44,7 @@ Local 2002–2003 private ERP/RFP pack (proposal, final report, evaluation sheet
 | Scoring | Visible judgment; calibrate variance; even-stage default |
 | Re-proposal | Completeness and commitment, not slide polish |
 | Key person | Proposal quality ≠ delivery leadership; name ≠ assignment |
-| Delivery model gap | Proposed org/factory vs work packages and estimate |
+| Delivery model gap | Stage 0: who is prime vs what stays in-house (patterns A–E); not vendor-proposal staffing vs estimate |
 
 ## Suggested commit message
 

@@ -21,9 +21,12 @@ type: playbook
 
 ## Prerequisites
 
+- Executive sponsor と Business owner が特定されている  
+- 投資自体をやるかの意思決定は済んでいる（本 Playbook の範囲外）  
 - 発注者が決めるべき目的・優先・権限が、RFP でベンダーに丸投げされていない（未決は明示）  
 - 評価者と最終決裁者が分かれている  
 - 公共の法定調達手続を、この Playbook で代替しようとしていない  
+- 発注体制（誰にプライムを任せ、何を自社に残すか）が未確定なら、先に `frameworks/vendor-delivery-model-gap-analysis.md`  
 
 ## Required inputs
 
@@ -118,6 +121,8 @@ Can the named team mobilize?
 4. Decide whether package / product choice must precede RFP.
 5. Define procurement lot / responsibility boundary.
 6. Confirm governance and decision authority.
+
+For steps 4–5, use `frameworks/vendor-delivery-model-gap-analysis.md` (money flow × management structure → patterns A–E → capability gap) before defaults are frozen.
 
 **Gate**
 - RFP を出すことで「要件を決めてもらう」状態になっていないか。
