@@ -1,6 +1,6 @@
 # Legacy Source Index
 
-**Version:** v1.9  
+**Version:** v1.10  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** ローカル保管のレガシー原本と、リポジトリ内知識の対応索引。**原本の中身は含まない。**
@@ -232,6 +232,17 @@
 
 ---
 
+## Program Line Q: Azure 企業閉域 API チェーン／個人 Sandbox 課金（2026-08）
+
+原本はローカル Downloads。ホスト・円・請求・リソース名は不登録。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| 閉域 API チェーン検証の引継ぎ・判断記録 | `technology/azure-enterprise.md`, `playbooks/private-api-connectivity-diagnosis.md`, `knowledge/decisions/diagnose-from-gateway-not-client-error.md` | 通信チェーン、gateway 診断、環境切替。FQDN・ポート実値・path は不登録 |
+| 個人 Azure 学習 Sandbox の検証・課金対応記録 | `technology/azure-enterprise.md`, `playbooks/azure-sandbox-cost-guard.md`, `knowledge/decisions/sandbox-cost-controls-before-resources.md` | 実行場所と認証、Budget、削除≠課金停止。円・請求書・サポート文・RG 名は不登録 |
+
+---
+
 ## Program Line G: IT Strategy Foundations (legacy consulting, 2002)
 
 | ローカル原本（例） | 種別 | 抽出先（リポジトリ） |
@@ -341,6 +352,11 @@
 | `public-defense.md` | 高 | ✅ 登録済（2026-08-19） |
 | `public-it-procurement-support.md` | 高 | ✅ 登録済（2026-08-19） |
 | `buyer-vs-seller-in-public-procurement.md` | 中 | ✅ 登録済（2026-08-19） |
+| `azure-enterprise.md` | 高 | ✅ 登録済（2026-08-19） |
+| `private-api-connectivity-diagnosis.md` | 高 | ✅ 登録済（2026-08-19） |
+| `azure-sandbox-cost-guard.md` | 中 | ✅ 登録済（2026-08-19） |
+| `diagnose-from-gateway-not-client-error.md` | 中 | ✅ 登録済（2026-08-19） |
+| `sandbox-cost-controls-before-resources.md` | 中 | ✅ 登録済（2026-08-19） |
 
 ---
 

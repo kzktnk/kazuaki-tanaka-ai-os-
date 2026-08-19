@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.15
+Version: v1.16
 
 ## Purpose
 
@@ -584,16 +584,20 @@ Focus:
 # Technology Architecture
 
 Load:
-- Relevant technology/*.md
-- Relevant frameworks
-- Project constraints
+- `technology/azure-enterprise.md`
+- `playbooks/private-api-connectivity-diagnosis.md` (if 502/500, APIM, private path, environment switch)
+- `playbooks/azure-sandbox-cost-guard.md` (if PoC / sandbox / unexpected Azure cost)
+- `knowledge/decisions/diagnose-from-gateway-not-client-error.md` (if diagnosing the chain)
+- `knowledge/decisions/sandbox-cost-controls-before-resources.md` (if creating or stopping a sandbox)
+- Project constraints (non-confidential)
 
 Focus:
-- Security
-- Integration
-- Operations
-- Maintainability
-- Cost
+- Communication chain, not connector-only design
+- Security, integration, operations, maintainability, cost
+- Client HTTP status as symptom; gateway backend response as split
+- High-fixed-cost SKUs as explicit decisions
+
+Do not load FQDNs, yen, or resource names from local originals.
 
 ---
 

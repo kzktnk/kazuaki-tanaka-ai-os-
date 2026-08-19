@@ -1,6 +1,6 @@
 # Knowledge Master Index
 
-**Version:** v1.5  
+**Version:** v1.6  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
@@ -72,20 +72,20 @@ kazuaki-tanaka-ai-os/
 ├── core/                       ← 8 files (kernel)
 ├── standards/                  ← 18 files (quality criteria)
 ├── frameworks/                 ← 28 files + thinking-patterns/
-├── playbooks/                  ← 1 playbook (+ README)
+├── playbooks/                  ← 3 playbooks (+ README)
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
 │   ├── patterns/               ← 21 distilled patterns
 │   ├── lessons/                ← 5 lessons
-│   ├── migrations/             ← 11 migration reports
-│   └── decisions/              ← (reserved, empty)
+│   ├── migrations/             ← 16 migration reports
+│   └── decisions/              ← 2 records
 ├── templates/                  ← 1 template
 ├── prompts/                    ← README placeholder
 ├── projects/                   ← project template structure
 ├── adapters/cursor/            ← Cursor adapter
 ├── domains/                    ← energy-utilities.md, public-defense.md
-├── technology/                 ← (reserved, empty)
+├── technology/                 ← azure-enterprise.md (parent)
 └── archive/                    ← README placeholder
 ```
 
@@ -94,7 +94,7 @@ kazuaki-tanaka-ai-os/
 | Index | Scope |
 |-------|--------|
 | [linkedin-series-index.md](./linkedin-series-index.md) | LinkedIn / Note sources 001–020, sp01–09, erf01–03 |
-| [legacy-source-index.md](./legacy-source-index.md) | Local legacy PDFs → repo extraction map (Program Lines A–J) |
+| [legacy-source-index.md](./legacy-source-index.md) | Local legacy PDFs → repo extraction map (Program Lines A–Q) |
 
 ---
 
@@ -122,6 +122,18 @@ domains/
 ├── energy-utilities.md           ← parent (generation / T&D stub / retail + cross-cutting)
 └── public-defense.md             ← parent (Japan public / defense IT; buyer vs seller)
 ```
+
+---
+
+## Level 3 — Technology
+
+```text
+technology/
+├── README.md
+└── azure-enterprise.md           ← parent (communication chain, APIM as contract, identity by host, sandbox cost)
+```
+
+Do not split yet.
 
 ---
 
@@ -243,8 +255,11 @@ knowledge/
 │   ├── change-management-2026-08.md
 │   ├── iosa-2026-08.md
 │   ├── sisa-sidl-dma-2026-08.md
-│   └── public-defense-2026-08.md
-└── decisions/                        ← reserved
+│   ├── public-defense-2026-08.md
+│   └── azure-enterprise-2026-08.md
+└── decisions/
+    ├── diagnose-from-gateway-not-client-error.md
+    └── sandbox-cost-controls-before-resources.md
 ```
 
 ### Patterns (21)
@@ -280,7 +295,9 @@ knowledge/
 ```text
 playbooks/
 ├── README.md
-└── wbs-design.md
+├── wbs-design.md
+├── private-api-connectivity-diagnosis.md
+└── azure-sandbox-cost-guard.md
 
 templates/
 └── wbs-breakdown-sheet.md
@@ -486,6 +503,24 @@ CONTEXT_ROUTING.md  →  Public Sector / Defense IT, Public Procurement Support 
 
 ---
 
+### L. Azure enterprise (Program Line Q)
+
+```text
+Local private-API handover + sandbox cost notes — not archived
+        ↓ generalize (no FQDN, yen, resource names)
+technology/azure-enterprise.md
+playbooks/private-api-connectivity-diagnosis.md
+playbooks/azure-sandbox-cost-guard.md
+knowledge/decisions/diagnose-from-gateway-not-client-error.md
+knowledge/decisions/sandbox-cost-controls-before-resources.md
+        ↓ record
+knowledge/migrations/azure-enterprise-2026-08.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  Technology Architecture
+```
+
+---
+
 ## Level 4 — CONTEXT_ROUTING Task Map (summary)
 
 Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
@@ -504,6 +539,7 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | Infrastructure outsourcing / ITO | `infrastructure-outsourcing-solution-planning.md`, `transition-vs-transformation-vs-realization.md` |
 | Systems integration / SI proposal | `systems-integration-solution-planning.md`, `estimate-target-commitment.md` |
 | Delivery leadership | `delivery-leadership.md`, `transformation-pmo.md`, `change-management.md` |
+| Azure / private API / sandbox cost | `technology/azure-enterprise.md`, connectivity and cost playbooks, related `decisions/` |
 | LinkedIn / Note writing | `standards/writing.md` (§De-AI Writing Pass), series `source/`, related `patterns/` and `frameworks/` |
 | Knowledge migration | `AI_OPERATING_MANUAL.md`, source asset, migration workflow |
 | Repository maintenance | `ARCHITECTURE.md`, `master-index.md` (this file) |
@@ -516,7 +552,7 @@ When adding or migrating knowledge, update **in the same change set**:
 
 | Change type | Update |
 |-------------|--------|
-| New file in `core/`, `standards/`, `frameworks/`, `playbooks/`, `knowledge/patterns|lessons|decisions` | This file — Level 3 tree and counts |
+| New file in `core/`, `standards/`, `frameworks/`, `playbooks/`, `technology/`, `knowledge/patterns|lessons|decisions` | This file — Level 3 tree and counts |
 | New LinkedIn / Note source folder | `linkedin-series-index.md` + this file if structure changes |
 | Legacy PDF extraction | `legacy-source-index.md` + this file Level 4 example if new Program Line |
 | New migration | `knowledge/migrations/*.md` + migration checklist items below |

@@ -54,7 +54,7 @@ Client-specific facts remain outside the reusable domain layer unless generalize
 小売・CIS/CRM/CX 中心なら Retail と Transformation principles を先に読む。  
 どちらでも Operating Model と「体験から入るか、システムから入るか」を確認する。
 
-Technology 製品手順はここには書かない → `technology/`（未整備）。
+Technology 製品手順はここには書かない → `technology/azure-enterprise.md`。
 
 ---
 

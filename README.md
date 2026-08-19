@@ -23,8 +23,10 @@ Model-independent knowledge and judgment system for consistent AI-assisted consu
 core/           → identity, principles, values, reasoning
 standards/      → quality criteria and review standards
 frameworks/     → problem structures, governance, ERP, strategy
+domains/        → industry constraints and roles
+technology/     → Azure / integration principles (not product manuals)
 playbooks/      → execution procedures
-knowledge/      → patterns, lessons, sources, indexes, migrations
+knowledge/      → patterns, lessons, decisions, sources, indexes, migrations
 templates/      → reusable document forms
 adapters/       → tool-specific instructions (e.g. Cursor)
 projects/       → project context templates (confidential work stays external)
