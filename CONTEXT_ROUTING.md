@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.12
+Version: v1.13
 
 ## Purpose
 
@@ -399,6 +399,7 @@ Load:
 - frameworks/transformation-pmo.md (if large transition program)
 - standards/operations-handover-guide.md (if handover from implementation partner)
 - standards/vendor-proposal-evaluation.md (if client-side evaluation mirror)
+- frameworks/infrastructure-outsourcing-solution-planning.md (if bundled AO+IO or infra towers)
 - core/author-voice.md
 - standards/consulting-review.md (if deliverable review)
 
@@ -415,6 +416,36 @@ Outputs:
 - AMS / outsourcing proposal deck (Archetype I)
 - Transition approach summary
 - Assumption and risk register
+
+---
+
+# Infrastructure Outsourcing / ITO Proposal
+
+Load:
+- frameworks/infrastructure-outsourcing-solution-planning.md
+- knowledge/patterns/transition-vs-transformation-vs-realization.md
+- frameworks/service-transition-approach.md
+- frameworks/application-outsourcing-solution-planning.md (if bundled AO+IO)
+- frameworks/change-management.md (if staff transfer or operating-model change)
+- frameworks/transformation-pmo.md (if large transformation program)
+- standards/operations-handover-guide.md (if run handover)
+- standards/vendor-proposal-evaluation.md (if client-side evaluation mirror)
+- core/author-voice.md
+- standards/consulting-review.md (if deliverable review)
+
+Focus:
+- Buyable × deliverable × financial
+- Take-on: D-B-R vs integrate transition+transformation vs as-is run
+- Run vs discretionary; CFS assumed when “you run IT”
+- SLA: excused performance, low volume, fee-at-risk cap
+- Contract ↔ approved solution two-way; inflation and FX in multi-year cost
+- Prime/sub vs operational management of third parties
+
+Outputs:
+- IO Solution Plan (towers, OM ownership, assumptions)
+- Take-on and transformation sequence
+- SLA / commercial outline
+- Risk and diligence plan
 
 ---
 

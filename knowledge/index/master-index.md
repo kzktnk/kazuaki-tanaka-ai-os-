@@ -1,6 +1,6 @@
 # Knowledge Master Index
 
-**Version:** v1.2  
+**Version:** v1.3  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
@@ -71,14 +71,14 @@ kazuaki-tanaka-ai-os/
 ├── CONTEXT_ROUTING.md          ← task-based context selection
 ├── core/                       ← 8 files (kernel)
 ├── standards/                  ← 18 files (quality criteria)
-├── frameworks/                 ← 24 files + thinking-patterns/
+├── frameworks/                 ← 25 files + thinking-patterns/
 ├── playbooks/                  ← 1 playbook (+ README)
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
-│   ├── patterns/               ← 18 distilled patterns
+│   ├── patterns/               ← 19 distilled patterns
 │   ├── lessons/                ← 5 lessons
-│   ├── migrations/             ← 8 migration reports
+│   ├── migrations/             ← 9 migration reports
 │   └── decisions/              ← (reserved, empty)
 ├── templates/                  ← 1 template
 ├── prompts/                    ← README placeholder
@@ -158,7 +158,7 @@ standards/
 
 ---
 
-## Level 3 — Frameworks (24 + thinking patterns)
+## Level 3 — Frameworks (25 + thinking patterns)
 
 ```text
 frameworks/
@@ -193,6 +193,8 @@ frameworks/
 │   ├── application-outsourcing-solution-planning.md
 │   ├── ams-services-pyramid.md
 │   └── service-transition-approach.md
+├── Infrastructure outsourcing / ITO
+│   └── infrastructure-outsourcing-solution-planning.md
 ├── ERP / SAP
 │   └── sap-implementation-phase-model.md
 └── principles.md                     ← framework-layer principles
@@ -213,7 +215,7 @@ knowledge/
 │       ├── 001–020/                  ← Operational AI main series
 │       ├── sp01–sp09/                ← special posts
 │       └── erf01–erf03/              ← Enterprise Redesign Framework
-├── patterns/                         ← 18 files (see table below)
+├── patterns/                         ← 19 files (see table below)
 ├── lessons/
 │   ├── governance-messaging.md
 │   ├── dual-roadmap-messaging.md
@@ -232,11 +234,12 @@ knowledge/
 │   ├── ai-dual-roadmap-2026-08.md
 │   ├── ao-sae-2026-08.md
 │   ├── energy-utilities-domain-2026-08.md
-│   └── change-management-2026-08.md
+│   ├── change-management-2026-08.md
+│   └── iosa-2026-08.md
 └── decisions/                        ← reserved
 ```
 
-### Patterns (18)
+### Patterns (19)
 
 | Pattern | Primary themes |
 |---------|----------------|
@@ -245,6 +248,7 @@ knowledge/
 | `experience-before-scope.md` | Experience → process → data → scope |
 | `platform-build-vs-enablement.md` | Platform release vs ability to run the loop |
 | `all-at-once-vs-stepwise-change.md` | Change strategy: cutover vs sequenced steps |
+| `transition-vs-transformation-vs-realization.md` | Outsourcing: three jobs, three cost plans |
 | `expertise-amplification.md` | AI amplifies experts |
 | `organizational-memory.md` | Intelligence vs organizational memory; decision context |
 | `exception-as-memory-entry.md` | Exceptions as memory entry; capture at deviation |
@@ -421,6 +425,22 @@ knowledge/migrations/change-management-2026-08.md
 CONTEXT_ROUTING.md  →  Change Management, Transformation PMO
 ```
 
+### I. Infrastructure outsourcing SA (Program Line M)
+
+```text
+Local IO SA Intermediate / Advanced (Downloads/IOSA/) — not archived
+        ↓ generalize
+frameworks/infrastructure-outsourcing-solution-planning.md
+knowledge/patterns/transition-vs-transformation-vs-realization.md
+        ↓ cross-link
+frameworks/application-outsourcing-solution-planning.md
+frameworks/service-transition-approach.md
+        ↓ record
+knowledge/migrations/iosa-2026-08.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  Infrastructure Outsourcing / ITO Proposal
+```
+
 ---
 
 ## Level 4 — CONTEXT_ROUTING Task Map (summary)
@@ -437,6 +457,7 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | AI adoption / DX roadmap | `frameworks/ai-adoption-roadmap.md`, `ai-role-maturity.md`, `organizational-memory.md`, `exception-as-memory-entry.md`, `connected-organizational-memory.md`, `dual-roadmap-messaging.md` |
 | Energy / utilities | `domains/energy-utilities.md`, `operational-reality.md`, `requirements-artifact-review.md` (if requirements) |
 | Application outsourcing / AMS | `application-outsourcing-solution-planning.md`, `ams-services-pyramid.md`, `service-transition-approach.md`, `ams-solution-plan-checklist.md` |
+| Infrastructure outsourcing / ITO | `infrastructure-outsourcing-solution-planning.md`, `transition-vs-transformation-vs-realization.md` |
 | LinkedIn / Note writing | `standards/writing.md` (§De-AI Writing Pass), series `source/`, related `patterns/` and `frameworks/` |
 | Knowledge migration | `AI_OPERATING_MANUAL.md`, source asset, migration workflow |
 | Repository maintenance | `ARCHITECTURE.md`, `master-index.md` (this file) |

@@ -66,6 +66,16 @@ Pairs with `standards/ams-solution-plan-checklist.md` and `deliverable-archetype
 
 ---
 
+## Infrastructure Outsourcing / ITO
+
+| File | Focus |
+|------|--------|
+| `infrastructure-outsourcing-solution-planning.md` | IO SA: qualification, take-on shape, run vs project, SLA/commercial, contract match |
+
+Pairs with `knowledge/patterns/transition-vs-transformation-vs-realization.md`.
+
+---
+
 ## Thinking Patterns
 
 See [`thinking-patterns/README.md`](./thinking-patterns/README.md) — pattern-01 through pattern-08.

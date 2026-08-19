@@ -1,6 +1,6 @@
 # Legacy Source Index
 
-**Version:** v1.6  
+**Version:** v1.7  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** ローカル保管のレガシー原本と、リポジトリ内知識の対応索引。**原本の中身は含まない。**
@@ -102,6 +102,27 @@
 | `D3.04_INP_… High Level Proposal Outline.pdf` | 骨子 | `standards/deliverable-archetypes.md` Archetype I | 章立てのみ |
 
 **Note:** 原本は `Downloads/AO Materials/` 配下。Accenture 社内秘・再配布禁止。クライアント事例名・FTE・コスト・拠点・人名・社内ツール名（Alpha/CDTS/CTA）・レートカードはリポジトリに**登録しない**。
+
+---
+
+## Program Line M: Infrastructure Outsourcing SA（IO SA Intermediate / Advanced, ~2014–2016）
+
+原本は `Downloads/IOSA/`, `Downloads/IOSA_Advanced/`。社内秘。ケース企業・原価ツール・レートカードは不登録。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| Intermediate Day1 — SA role, qualification, requirements, detailed solution, transformation | `infrastructure-outsourcing-solution-planning.md`, `transition-vs-transformation-vs-realization.md` | 三角制約、Lead/tower SA、Read/Ask/Assume/DD、To-Be 完了条件、T vs T vs R |
+| Intermediate Day2 — SLA, CFS, security, suppliers, discretionary, CI, PMO/SDM | 同上 | 手数料リスクの型、CFS 想定、Run vs project、PMO に SDM を混ぜない |
+| Intermediate Day3 — multi-tower, risk, mobilization, TPA, financials | 同上 | ESA、動員、価格形態、ARC/RRC、インフレ/FX の存在 |
+| Intermediate Day4 — price-to-win, response, orals, DD, negotiation, contracting, implementation | 同上 | 契約と承認解の双方向、DD 種別、口頭提案の型 |
+| Intermediate ケース（架空 RFP） | **未登録** | 演習ケース |
+| IOSM / サービス別原価ブック / Workbench | **未登録** | ツール・マスタ |
+| Inflation / Currency 解説 ppt | 同上 § commercials | リスク分担の考え方のみ。数値・社内ポリシー番号は不登録 |
+| Advanced — transformational IO, modeling, network/DC, third party, SLA, pricing, realization | 同上 | as-is vs transformed-only、prime/sub vs ops mgmt、realization は署名後も SA |
+| Advanced AVA クライアントケース、RFP、SOW、Orals | **未登録** | 実名・契約原本 |
+| SA Certification Guide / 認定プレイブック | **未登録** | 社内認定 |
+
+**Note:** Accenture / Avanade 資料。再配布禁止。個人メールは索引にも載せない。
 
 ---
 
@@ -268,6 +289,8 @@
 | `platform-build-vs-enablement.md` | 中 | ✅ 登録済（2026-08-19） |
 | `change-management.md` | 高 | ✅ 登録済（2026-08-19） |
 | `all-at-once-vs-stepwise-change.md` | 中 | ✅ 登録済（2026-08-19） |
+| `infrastructure-outsourcing-solution-planning.md` | 高 | ✅ 登録済（2026-08-19） |
+| `transition-vs-transformation-vs-realization.md` | 中 | ✅ 登録済（2026-08-19） |
 
 ---
 

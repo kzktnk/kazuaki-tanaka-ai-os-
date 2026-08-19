@@ -13,6 +13,8 @@ Define how to **plan and execute service transition** from client incumbent or i
 
 Transition is where most outsourcing deals fail or succeed. This framework covers **Phase 4** of `frameworks/application-outsourcing-solution-planning.md`.
 
+Do not use this file as a stand-in for **client transformation** or **solution realization**. Those are separate jobs and cost plans: `knowledge/patterns/transition-vs-transformation-vs-realization.md`. IO take-on shape (as-is vs transformed-only) is in `frameworks/infrastructure-outsourcing-solution-planning.md`.
+
 ---
 
 ## When to Use
@@ -171,6 +173,8 @@ Reference: `frameworks/sap-implementation-phase-model.md`, `standards/operations
 ## Related Files
 
 - `frameworks/application-outsourcing-solution-planning.md`
+- `frameworks/infrastructure-outsourcing-solution-planning.md`
+- `knowledge/patterns/transition-vs-transformation-vs-realization.md`
 - `frameworks/ams-services-pyramid.md`
 - `standards/ams-solution-plan-checklist.md` §Service Introduction
 - `frameworks/transformation-pmo.md`
