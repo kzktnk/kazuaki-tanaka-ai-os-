@@ -93,7 +93,7 @@ kazuaki-tanaka-ai-os/
 
 | Index | Scope |
 |-------|--------|
-| [linkedin-series-index.md](./linkedin-series-index.md) | LinkedIn / Note sources 001–018, sp01–09, erf01–03 |
+| [linkedin-series-index.md](./linkedin-series-index.md) | LinkedIn / Note sources 001–019, sp01–09, erf01–03 |
 | [legacy-source-index.md](./legacy-source-index.md) | Local legacy PDFs → repo extraction map (Program Lines A–J) |
 
 ---
@@ -198,10 +198,10 @@ knowledge/
 │   └── legacy-source-index.md
 ├── source/
 │   └── linkedin/
-│       ├── 001–018/                  ← Operational AI main series
+│       ├── 001–019/                  ← Operational AI main series
 │       ├── sp01–sp09/                ← special posts
 │       └── erf01–erf03/              ← Enterprise Redesign Framework
-├── patterns/                         ← 12 files (see table below)
+├── patterns/                         ← 14 files (see table below)
 ├── lessons/
 │   ├── governance-messaging.md
 │   ├── dual-roadmap-messaging.md
@@ -215,12 +215,13 @@ knowledge/
 │   ├── linkedin-016.md
 │   ├── linkedin-017.md
 │   ├── linkedin-018.md
+│   ├── linkedin-019.md
 │   ├── ai-dual-roadmap-2026-08.md
 │   └── ao-sae-2026-08.md
 └── decisions/                        ← reserved
 ```
 
-### Patterns (13)
+### Patterns (14)
 
 | Pattern | Primary themes |
 |---------|----------------|
@@ -228,6 +229,7 @@ knowledge/
 | `operational-reality.md` | OT / field reality vs DX narrative |
 | `expertise-amplification.md` | AI amplifies experts |
 | `organizational-memory.md` | Intelligence vs organizational memory; decision context |
+| `exception-as-memory-entry.md` | Exceptions as memory entry; capture at deviation |
 | `operating-model-advantage.md` | Competitive advantage from operating model |
 | `ai-resilience-shift.md` | Productivity → resilience |
 | `decision-ownership.md` | Execution ≠ ownership |
@@ -336,7 +338,7 @@ knowledge/migrations/ao-sae-2026-08.md
 CONTEXT_ROUTING.md  →  Application Outsourcing / AMS Proposal
 ```
 
-### F. Organizational memory (LinkedIn No.18)
+### F. Organizational memory (LinkedIn No.18–19)
 
 ```text
 knowledge/source/linkedin/018/
@@ -349,8 +351,16 @@ knowledge/patterns/expertise-amplification.md
 knowledge/patterns/operational-reality.md
         ↓ record
 knowledge/migrations/linkedin-018.md
+        ↓ continue (No.19)
+knowledge/source/linkedin/019/
+        ↓ extract
+knowledge/patterns/exception-as-memory-entry.md
+        ↓ standard
+standards/writing.md (§De-AI Writing Pass)
+        ↓ record
+knowledge/migrations/linkedin-019.md
         ↓ task routing
-CONTEXT_ROUTING.md  →  AI Adoption / DX Roadmap
+CONTEXT_ROUTING.md  →  AI Adoption / DX Roadmap, LinkedIn Writing
 ```
 
 ---
@@ -367,7 +377,7 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | AI governance | `frameworks/ai-governability.md`, `decision-ownership.md`, `human-oversight.md`, related `patterns/` |
 | AI adoption / DX roadmap | `frameworks/ai-adoption-roadmap.md`, `ai-role-maturity.md`, `organizational-memory.md`, `dual-roadmap-messaging.md` |
 | Application outsourcing / AMS | `application-outsourcing-solution-planning.md`, `ams-services-pyramid.md`, `service-transition-approach.md`, `ams-solution-plan-checklist.md` |
-| LinkedIn / Note writing | `standards/writing.md`, series `source/`, related `patterns/` and `frameworks/` |
+| LinkedIn / Note writing | `standards/writing.md` (§De-AI Writing Pass), series `source/`, related `patterns/` and `frameworks/` |
 | Knowledge migration | `AI_OPERATING_MANUAL.md`, source asset, migration workflow |
 | Repository maintenance | `ARCHITECTURE.md`, `master-index.md` (this file) |
 

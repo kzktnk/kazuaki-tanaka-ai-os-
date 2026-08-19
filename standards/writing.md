@@ -1,6 +1,7 @@
 # Writing Standard
 
-Version: v0.9 Bootstrap
+Version: v1.0  
+**Status:** Active
 
 ## Purpose
 
@@ -159,6 +160,93 @@ Before publishing:
 - Actionable conclusion
 - Grammar checked
 - No unsupported claims
+- De-AI pass applied (for LinkedIn, note, and external-facing prose)
+
+---
+
+# De-AI Writing Pass
+
+Apply after a draft exists—especially for LinkedIn, note, and client-facing narrative. Goal: read as **human judgment**, not generated prose. Origin: LinkedIn No.19 authoring practice (2026-08).
+
+## When to use
+
+- LinkedIn / note posts
+- Executive narrative sections
+- Any text that will be published under the author's name
+- After AI-assisted first draft
+
+## Process
+
+1. Write or accept a draft (structure and facts can be AI-assisted).
+2. Rewrite in the author's voice using this pass.
+3. Read aloud; fix anything that sounds uniformly "crafted."
+4. Remove placeholders; use `[Add example: …]` in the draft language only—never mix languages in placeholders.
+
+## Rules
+
+### 1. Remove over-uniform structure
+
+- Do not give every paragraph the same length or the same shape.
+- Avoid mechanical progression ("First… Next… Finally…").
+- Do not default to tidy three-point lists, antithesis pairs, or bullet blocks unless the content truly needs them.
+- Do not end every paragraph with a conclusion sentence.
+
+### 2. Cut abstract and hype phrasing
+
+Avoid unless strictly necessary:
+
+- "What matters is…" / 「重要なのは〜」
+- "The essence is…" / 「本質は〜」
+- "This is not merely X but Y" / 「単なるXではなくY」
+- "A major turning point" / 「大きな転換点」
+- "Redefines…" / 「〜を再定義する」
+- "What is required is…" / 「〜が求められている」
+
+### 3. Explain less
+
+- Do not explain what the reader already understands.
+- Do not restate the same claim in new words.
+- Do not summarize the conclusion repeatedly upfront.
+- Stop where residue or implication can carry the point.
+
+### 4. Show the writer's judgment
+
+- Prefer "I think…" / 「私は〜と思う」 over anonymous universal claims when stating a view.
+- Do not fake balance with forced both-sides neutrality.
+- Where evidence supports it, say which side matters more.
+
+### 5. Natural rhythm
+
+- Mix short and long sentences.
+- Use a one-sentence paragraph for emphasis sparingly.
+- Do not connect every paragraph with mechanical transitions.
+- Complete sentences in Japanese—avoid dangling noun-only endings (体言止め) unless deliberate.
+
+### 6. Avoid business-SNS AI rhetoric
+
+Avoid unless intentionally quoted:
+
+- "The question is no longer X. It is Y."
+- "This changes everything."
+- "The future belongs to…"
+- "The real challenge is…"
+- "It's not about X. It's about Y."
+
+### 7. Do not fabricate experience
+
+- Do not invent client stories, project names, or "when I was on site…" unless provided.
+- Mark gaps as `[Add one concrete example here: …]` in the **same language** as the draft.
+
+### 8. Final check
+
+Re-read the full text. Any sentence you can predict as "what AI would write next"—rewrite or cut.
+
+**Priority:** traces of a person thinking beat polished uniformity.
+
+## Related
+
+- `core/author-voice.md`
+- `knowledge/source/linkedin/019/metadata.md` — reference application (No.19)
 
 ---
 

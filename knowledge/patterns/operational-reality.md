@@ -42,3 +42,4 @@ Use this pattern when:
 - `knowledge/patterns/operating-model-advantage.md`
 - `knowledge/patterns/expertise-amplification.md`
 - `knowledge/patterns/organizational-memory.md` — exceptions and tacit context as operational memory (No.18)
+- `knowledge/patterns/exception-as-memory-entry.md` — capture reasoning at intentional deviations (No.19)

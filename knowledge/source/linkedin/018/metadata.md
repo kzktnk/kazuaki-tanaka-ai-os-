@@ -87,7 +87,20 @@ Combined insight:
 
 `frameworks/ai-adoption-roadmap.md` Initiative B (tacit → explicit knowledge) is the **program execution layer** for organizational memory—judgment types, exception libraries, continuous enrichment—not full manualization.
 
+## Relationship to No.19
+
+No.19: **where** organizational memory begins—exceptions and the reasoning between event and decision. Pattern: `knowledge/patterns/exception-as-memory-entry.md`.
+
+Memory arc:
+
+```text
+No.18  Why memory (vs intelligence)
+No.19  Where memory begins (exceptions) + capture at deviation
+No.20+ How to scale capture (future)
+```
+
 ## Related source
 
 - Migration: `knowledge/migrations/linkedin-018.md`
 - Pattern: `knowledge/patterns/organizational-memory.md`
+- Next: `knowledge/source/linkedin/019/metadata.md`

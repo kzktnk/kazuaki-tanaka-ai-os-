@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.8
+Version: v1.9
 
 ## Purpose
 
@@ -336,6 +336,7 @@ Load:
 - frameworks/transformation-pmo.md (if portfolio / PgMO)
 - knowledge/patterns/expertise-amplification.md
 - knowledge/patterns/organizational-memory.md
+- knowledge/patterns/exception-as-memory-entry.md
 - knowledge/patterns/authority-levels.md
 - knowledge/patterns/operational-reality.md
 - knowledge/lessons/dual-roadmap-messaging.md (if executive audience)
@@ -432,12 +433,18 @@ Focus:
 # LinkedIn / Note Writing
 
 Load:
-- standards/writing.md
+- standards/writing.md (including §De-AI Writing Pass)
+- core/author-voice.md
 - core/identity.md
 - core/values.md
 - Relevant framework
-- Related patterns
+- Related patterns (e.g. `organizational-memory.md`, `exception-as-memory-entry.md` for Memory Arc)
 - Previous posts in the series
+
+Focus:
+- Author voice over AI-polished uniformity
+- De-AI pass before publish (see `writing.md`)
+- Series continuity (Governance Arc No.13–17; Memory Arc No.18+)
 
 Outputs:
 - English
