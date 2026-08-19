@@ -164,6 +164,8 @@ Generalized messaging patterns: `knowledge/lessons/dual-roadmap-messaging.md`.
 
 ## Related Files
 
+- `playbooks/ai-utilization-roadmap.md` — execution sequence and feasibility gates
+- `playbooks/ai-work-before-after.md` — field Before / After
 - `frameworks/ai-role-maturity.md`
 - `frameworks/ai-governability.md`
 - `frameworks/ai-management-office.md`

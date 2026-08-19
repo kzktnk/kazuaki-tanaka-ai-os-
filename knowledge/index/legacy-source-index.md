@@ -1,6 +1,6 @@
 # Legacy Source Index
 
-**Version:** v1.10  
+**Version:** v1.11  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** ローカル保管のレガシー原本と、リポジトリ内知識の対応索引。**原本の中身は含まない。**
@@ -243,6 +243,22 @@
 
 ---
 
+## Program Line R: AI 変革プレイブック群（2026-08）
+
+原本はローカル Downloads。事業者名・KPI実数・FQDNカタログは不登録。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| 現場向け Before / After | `playbooks/ai-work-before-after.md` | 工程対称、人の判断残置。部門実例は不登録 |
+| AI活用ロードマップ／部門方針 playbook | `playbooks/ai-utilization-roadmap.md` | 基盤→知識→高度化、6ゲート。年次実タスクは不登録 |
+| AI PoC・ベンダー検証計画レビュー | `playbooks/ai-poc-quality-review.md`, `knowledge/decisions/buyer-owns-ai-poc-ground-truth.md` | 発注者側品質。スコア実値不登録 |
+| 変革オファリングレビュー | `playbooks/offering-review.md` | To-Be≠仕組み≠PMO≠CM。社内ブランド主張不登録 |
+| Responsible AI 適用 | `playbooks/responsible-ai-assessment.md` | 確認順と証跡。原則カタログ転載なし |
+| RAG 表データ品質 | `playbooks/rag-structure-diagnosis.md` | 検索≠構造。報告書の数値例不登録 |
+| 閉域暫定接続の抽出 | `playbooks/interim-connectivity.md`, `knowledge/decisions/interim-connectivity-is-not-the-target.md` | 暫定≠本命。製品FQDNリスト不登録 |
+
+---
+
 ## Program Line G: IT Strategy Foundations (legacy consulting, 2002)
 
 | ローカル原本（例） | 種別 | 抽出先（リポジトリ） |
@@ -357,6 +373,15 @@
 | `azure-sandbox-cost-guard.md` | 中 | ✅ 登録済（2026-08-19） |
 | `diagnose-from-gateway-not-client-error.md` | 中 | ✅ 登録済（2026-08-19） |
 | `sandbox-cost-controls-before-resources.md` | 中 | ✅ 登録済（2026-08-19） |
+| `ai-work-before-after.md` | 高 | ✅ 登録済（2026-08-19） |
+| `ai-utilization-roadmap.md` | 高 | ✅ 登録済（2026-08-19） |
+| `ai-poc-quality-review.md` | 高 | ✅ 登録済（2026-08-19） |
+| `offering-review.md` | 中 | ✅ 登録済（2026-08-19） |
+| `responsible-ai-assessment.md` | 高 | ✅ 登録済（2026-08-19） |
+| `rag-structure-diagnosis.md` | 中 | ✅ 登録済（2026-08-19） |
+| `interim-connectivity.md` | 中 | ✅ 登録済（2026-08-19） |
+| `interim-connectivity-is-not-the-target.md` | 中 | ✅ 登録済（2026-08-19） |
+| `buyer-owns-ai-poc-ground-truth.md` | 中 | ✅ 登録済（2026-08-19） |
 
 ---
 

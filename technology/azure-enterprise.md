@@ -26,7 +26,9 @@
 ## How to use
 
 閉域・API・502 切り分けなら先に `playbooks/private-api-connectivity-diagnosis.md`。  
+本命が使えない暫定経路なら `playbooks/interim-connectivity.md`。  
 個人／PoC サブスクの課金なら `playbooks/azure-sandbox-cost-guard.md`。  
+RAG で検索は当たるが表の数字が違うなら `playbooks/rag-structure-diagnosis.md`。  
 能力地図とトレードオフだけが必要ならこのファイルで止める。
 
 ---
@@ -129,6 +131,14 @@ UI の世代が変わって Identity のスイッチが見えないことはあ�
 
 円・請求書・サポート文面はリポジトリに置かない。手順は `playbooks/azure-sandbox-cost-guard.md`。
 
+### Principle — interim is not the new target
+
+本命の閉域チェーンが未承認でも、最小の暫定（gateway VM、Bastion 管理）で検証を続けてよい。
+
+同時に記録する: 何が揃ったら暫定を殺すか、何を消すか、本命で何を再検証するか。
+
+サインイン失敗に見えても、先に DNS・outbound 443・Proxy を見る。Identity / RBAC はその後。公式の宛先リストはベンダー文書に残し、ここには固定しない。
+
 ---
 
 ## Do not mix
@@ -145,6 +155,8 @@ UI の世代が変わって Identity のスイッチが見えないことはあ�
 |-------|------|
 | Technology parent | this file |
 | Playbook | `playbooks/private-api-connectivity-diagnosis.md` |
+| Playbook | `playbooks/interim-connectivity.md` |
+| Playbook | `playbooks/rag-structure-diagnosis.md` |
 | Playbook | `playbooks/azure-sandbox-cost-guard.md` |
-| Decisions | `knowledge/decisions/diagnose-from-gateway-not-client-error.md`, `knowledge/decisions/sandbox-cost-controls-before-resources.md` |
-| Migration | `knowledge/migrations/azure-enterprise-2026-08.md` |
+| Decisions | `knowledge/decisions/diagnose-from-gateway-not-client-error.md`, `knowledge/decisions/sandbox-cost-controls-before-resources.md`, `knowledge/decisions/interim-connectivity-is-not-the-target.md` |
+| Migration | `knowledge/migrations/azure-enterprise-2026-08.md`, `knowledge/migrations/ai-playbooks-2026-08.md` |

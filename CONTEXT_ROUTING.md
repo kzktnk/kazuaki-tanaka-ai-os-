@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.16
+Version: v1.17
 
 ## Purpose
 
@@ -52,6 +52,56 @@ Outputs:
 - Gaps
 - Risks
 - Recommendations
+
+---
+
+# AI PoC Quality Review (buyer)
+
+Load:
+- playbooks/ai-poc-quality-review.md
+- knowledge/decisions/buyer-owns-ai-poc-ground-truth.md
+- playbooks/rag-structure-diagnosis.md (if retrieval vs table/structure)
+- playbooks/responsible-ai-assessment.md (if principles / accountability)
+- standards/vendor-proposal-evaluation.md (if scoring-sheet design, not AI metrics)
+- standards/consulting-review.md
+
+Focus:
+- Requirement → scenario → metric → pass condition
+- Ground truth owned by the business
+- Retrieval vs answer vs business vs operations
+- Go / Conditional Go / No-Go, not “it ran”
+
+---
+
+# Offering Review
+
+Load:
+- playbooks/offering-review.md
+- standards/consulting-review.md
+- frameworks/change-management.md
+- frameworks/transformation-pmo.md
+
+Focus:
+- To-Be ≠ transformation mechanism ≠ offering
+- Program management vs change management
+- Pain → value → what the client buys
+
+---
+
+# Responsible AI Assessment
+
+Load:
+- playbooks/responsible-ai-assessment.md
+- frameworks/human-oversight.md
+- frameworks/decision-ownership.md
+- frameworks/ai-governability.md
+- domains/public-defense.md (if authorization / evidence)
+- domains/energy-utilities.md (if operational reality)
+
+Focus:
+- Accountability first, then failure impact, data, transparency, fairness
+- Evidence and owner per principle
+- Do not copy NIST / vendor principle catalogs
 
 ---
 
@@ -369,6 +419,8 @@ Load:
 - knowledge/patterns/authority-levels.md
 - knowledge/patterns/operational-reality.md
 - knowledge/lessons/dual-roadmap-messaging.md (if executive audience)
+- playbooks/ai-utilization-roadmap.md (if building or reviewing the roadmap pack)
+- playbooks/ai-work-before-after.md (if field Before / After)
 - standards/consulting-review.md (if deliverable review)
 
 Focus:
@@ -586,8 +638,11 @@ Focus:
 Load:
 - `technology/azure-enterprise.md`
 - `playbooks/private-api-connectivity-diagnosis.md` (if 502/500, APIM, private path, environment switch)
+- `playbooks/interim-connectivity.md` (if target path blocked; gateway / outbound looks like auth)
+- `playbooks/rag-structure-diagnosis.md` (if search hits but table/KPI answer is wrong)
 - `playbooks/azure-sandbox-cost-guard.md` (if PoC / sandbox / unexpected Azure cost)
 - `knowledge/decisions/diagnose-from-gateway-not-client-error.md` (if diagnosing the chain)
+- `knowledge/decisions/interim-connectivity-is-not-the-target.md` (if choosing an interim path)
 - `knowledge/decisions/sandbox-cost-controls-before-resources.md` (if creating or stopping a sandbox)
 - Project constraints (non-confidential)
 
