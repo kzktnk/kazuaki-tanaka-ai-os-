@@ -359,6 +359,7 @@ Outputs:
 Load:
 - frameworks/transformation-pmo.md
 - playbooks/pmo-function-standup.md (if the office exists on paper but not in operation)
+- playbooks/program-governance-cadence.md (if SteerComm / program board / standup / inspection are collapsing into one status meeting)
 - knowledge/patterns/hybrid-talent-in-transformation.md (if the program has no people who can redesign work)
 - knowledge/patterns/multi-year-transformation-sequence.md (if strategy, HR, systems, and purchasing are split across years)
 - frameworks/change-management.md (if people-side design, not only PMO ownership)
@@ -379,6 +380,8 @@ Focus:
 - Program integration: synergy, scenario, benefit transition
 - PMO function map (portfolio, change, HCM, knowledge, integration)
 - PPM process and portfolio stop/start discipline
+- Cadence stack: who meets for what; escalation between layers; inspection vs status
+- Phase 1 controlled document set (policy, roadmap, meeting pack) vs live minutes
 - Change management: stakeholder progression (Awareness → Ownership); readiness and strategy in `change-management.md`
 
 Outputs:
@@ -388,6 +391,7 @@ Outputs:
 - RACI / steering structure
 - Gap summary for executive decisions
 - Standup sequence (rules → pilot → people) when the office is being created
+- Cadence design and Phase 1 document classes when the office is already named
 
 ---
 

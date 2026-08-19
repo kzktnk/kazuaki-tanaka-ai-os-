@@ -1,6 +1,6 @@
 # Knowledge Master Index
 
-**Version:** v1.11  
+**Version:** v1.12  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
@@ -72,13 +72,13 @@ kazuaki-tanaka-ai-os/
 ├── core/                       ← 8 files (kernel)
 ├── standards/                  ← 19 files (quality criteria)
 ├── frameworks/                 ← 33 files + thinking-patterns/
-├── playbooks/                  ← 13 playbooks (+ README)
+├── playbooks/                  ← 14 playbooks (+ README)
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
 │   ├── patterns/               ← 29 distilled patterns
 │   ├── lessons/                ← 5 lessons
-│   ├── migrations/             ← 21 migration reports
+│   ├── migrations/             ← 22 migration reports
 │   └── decisions/              ← 4 records
 ├── templates/                  ← 1 template
 ├── prompts/                    ← README placeholder
@@ -94,7 +94,7 @@ kazuaki-tanaka-ai-os/
 | Index | Scope |
 |-------|--------|
 | [linkedin-series-index.md](./linkedin-series-index.md) | LinkedIn / Note sources 001–020, sp01–09, erf01–03 |
-| [legacy-source-index.md](./legacy-source-index.md) | Local legacy PDFs → repo extraction map (Program Lines A–R) |
+| [legacy-source-index.md](./legacy-source-index.md) | Local legacy PDFs → repo extraction map (Program Lines A–V) |
 
 ---
 
@@ -267,7 +267,8 @@ knowledge/
 │   ├── private-it-rfp-2026-08.md
 │   ├── enterprise-engagements-2013-2023-2026-08.md
 │   ├── pgmo-ai-change-2026-08.md
-│   └── local-gov-shared-it-2026-08.md
+│   ├── local-gov-shared-it-2026-08.md
+│   └── program-governance-cadence-2026-08.md
 └── decisions/
     ├── diagnose-from-gateway-not-client-error.md
     ├── sandbox-cost-controls-before-resources.md
@@ -325,6 +326,7 @@ playbooks/
 ├── rag-structure-diagnosis.md
 ├── private-it-rfp-vendor-selection.md
 ├── pmo-function-standup.md
+├── program-governance-cadence.md
 ├── public-multi-lot-construction-pmo.md
 ├── interim-connectivity.md
 ├── private-api-connectivity-diagnosis.md
@@ -633,6 +635,20 @@ CONTEXT_ROUTING.md  →  AI CoE / AI PgMO / AI Change, Change Management, AI Ado
 
 ---
 
+### Q. Program governance cadence (Program Line V)
+
+```text
+Local live PgMO cadence folders — not archived
+        ↓ generalize (no client names, yen, minutes bodies, inspection results, plant/site names)
+playbooks/program-governance-cadence.md
+        ↓ record
+knowledge/migrations/program-governance-cadence-2026-08.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  Transformation PMO / Program Governance
+```
+
+---
+
 ## Level 4 — CONTEXT_ROUTING Task Map (summary)
 
 Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
@@ -641,7 +657,7 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 |------|----------------|
 | Proposal review | `standards/consulting-review.md`, `deliverable-archetypes.md`, `writing.md` |
 | IT strategy | `frameworks/it-strategy-foundations.md`, `standards/it-strategy-engagement-guide.md` |
-| PMO / transformation | `frameworks/transformation-pmo.md`, `playbooks/pmo-function-standup.md`, `standards/pmo-operating-guide.md`, `frameworks/change-management.md` |
+| PMO / transformation | `frameworks/transformation-pmo.md`, `playbooks/pmo-function-standup.md`, `playbooks/program-governance-cadence.md`, `standards/pmo-operating-guide.md`, `frameworks/change-management.md` |
 | DX grand design | `frameworks/dx-grand-design.md`, change / roadmap as needed |
 | New venture assessment | `frameworks/new-venture-three-track-assessment.md` |
 | B2B sales workflow | `knowledge/patterns/sales-capacity-via-center-functions.md` |

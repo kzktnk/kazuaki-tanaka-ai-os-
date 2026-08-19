@@ -141,6 +141,7 @@ Key operating rhythm:
 - Change request → impact analysis → program review → approval
 - Multi-project monitoring; benefit continuous measurement
 - Program progress meetings; program reports
+- Layered cadence (standup → cross-project → program board → SteerComm; inspection as assurance, not status): `playbooks/program-governance-cadence.md`
 - Knowledge sharing; team development; stakeholder management
 - Project stop/defer when portfolio rebalancing requires
 
@@ -231,6 +232,8 @@ Before go-live:
 ## Related Files
 
 - `frameworks/transformation-pmo.md`
+- `playbooks/pmo-function-standup.md`
+- `playbooks/program-governance-cadence.md`
 - `frameworks/change-management.md`
 - `knowledge/lessons/pmo-professional-principles.md`
 - `frameworks/strategic-capability-network.md`

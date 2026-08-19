@@ -248,6 +248,8 @@ Program PMO owns **enterprise-level** change; pmo often focuses on **project sta
 ## Related Files
 
 - `standards/pmo-operating-guide.md`
+- `playbooks/pmo-function-standup.md` — office exists on paper; standup sequence
+- `playbooks/program-governance-cadence.md` — SteerComm / program board / standup / inspection layers
 - `frameworks/sap-implementation-phase-model.md` — P5 go-live support and benefit realization timing
 - `frameworks/change-management.md`
 - `frameworks/delivery-leadership.md` — program vs project; value scorecard; SA→DL
