@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.20
+Version: v1.21
 
 ## Purpose
 
@@ -712,7 +712,9 @@ Outputs:
 Load:
 - domains/public-defense.md
 - knowledge/patterns/buyer-vs-seller-in-public-procurement.md
+- knowledge/patterns/shared-operator-vs-ministry-vs-municipality.md (if shared local-government IT, not a ministry or a single municipality)
 - frameworks/public-it-procurement-support.md (if buyer-side procurement, scrutiny, or construction PMO)
+- playbooks/public-multi-lot-construction-pmo.md (if concurrent lots, start-of-stage gates, ops-doc merge)
 - frameworks/program-phases-investigation-to-requirements.md (if concept → requirements)
 - standards/vendor-proposal-evaluation.md (if technical evaluation)
 - standards/requirements-document-outline.md (if requirements document)
@@ -722,6 +724,7 @@ Load:
 
 Focus:
 - Buyer fairness vs seller win — do not mix on the same program
+- Shared operator ≠ ministry ≠ municipality; multi-lot acceptance is one story
 - 適合条件 before scoring; estimate scrutiny ≠ proposal scoring
 - Officials keep authorization / risk decisions
 - No inventories, yen, or network designs in generalized output

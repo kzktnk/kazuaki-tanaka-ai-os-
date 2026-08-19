@@ -1,6 +1,6 @@
 # Public Sector & Defense IT Domain
 
-**Version:** v0.1  
+**Version:** v0.2  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Parent file for reusable Japan public-sector / defense IT consulting knowledge  
@@ -54,6 +54,24 @@ Technology 製品手順は書かない。系統図・機器一覧・拠点数は
 | 標準 | 政府のIT標準ガイドライン類は「参考」ではなく工程の骨格になり得る |
 
 防衛は上記の **厳格なインスタンス**（情報保証、訓令、許可された場所での作業）。論理は公共と同じ。固有の系統構成は書かない。
+
+### Principle — shared local-government IT is a third actor
+
+省庁の情報システムと、個別団体の情報システムは、同じ「公共IT」でも発注者と利用者が違う。
+
+その間に、**複数団体が共同で使う基盤を運用する主体**（以下、共同利用の運用者）がいることがある。
+
+| 層 | 典型の役割 | コンサルが混同すると起きること |
+|----|------------|--------------------------------|
+| 政策・制度（省） | 制度、標準、全国の期限 | 運用者の契約PMOを「省の政策支援」だと思う |
+| 共同利用の運用者 | 共同基盤の発注・運用・対外説明 | 個別団体の基幹刷新だと思う。または省OAと同じ調達支援だと思う |
+| 団体・窓口・利用者 | 接続、窓口、住民向けチャネル | 運用者の切替判定を、団体側の業務改革だと思う |
+
+運用者は、構築ベンダーに対しては **買手** である。工程管理の役務を公示で買うなら、支援者は役務の **売手** だが、SIロットに対しては **官側PMO** として公平に立つ。応札で勝った記憶と、ロット横断の品質判定を混ぜない。
+
+団体数が多くても、切替の物語は **運用者の受入と本番** が一つである。ロット（コア、拠点／施設、チャネル）ごとに成功を宣言して終わらせない。
+
+詳細の判断は `knowledge/patterns/shared-operator-vs-ministry-vs-municipality.md`。手順は `playbooks/public-multi-lot-construction-pmo.md`。
 
 ### Principle — specification, contract, delivery, and acceptance are linked
 
@@ -143,7 +161,7 @@ See `knowledge/patterns/buyer-vs-seller-in-public-procurement.md`.
 | 次期構想・要件 | 何を残し、何を換装し、方式をどう切るか | 調査研究、方式比較、要件書（Phase 100–500） |
 | 調達支援 | 何を買い、どう評価し、仕様をどう書くか | 実施計画、調達方式比較、総合評価基準、仕様・適合条件 |
 | 見積精査 | 提案価格は何の作業量か。過不足はどこか | ベースライン、評価基準、ヒアリング、精査報告 |
-| 構築PMO | 契約後、官側は何を見て止めるか | 進捗・課題・変更・検収の官側PMO |
+| 構築PMO | 契約後、官側は何を見て止めるか | 進捗・課題・変更・検収の官側PMO。共同利用ならロット横断の開始判定と運用文書の統合 |
 | CIO／計画支援 | 横断の優先と予算の言い方 | 短い助言。個別仕様の代筆ではない |
 
 構想と調達仕様は別契約になりやすい。**要件がFIXする前に仕様書を書き始めない**（既存の要件書ゲートと同じ）。
@@ -288,6 +306,8 @@ Do not treat security governance as a technical appendix to system design.
 - 見積精査を値引き交渉にする  
 - 未確定の対象件数・拠点を、計画を埋めるために仮置きする  
 - 情報保証の認可を、支援ベンダーの成果物で代替したつもりになる  
+- 共同利用の運用者を、省庁または一団体のIT部門と同一視する  
+- 同時進行ロットの品質を、請負ごとの進捗会議の和で代替する  
 
 ---
 
@@ -297,7 +317,8 @@ Do not treat security governance as a technical appendix to system design.
 |-------|------|
 | Domain parent | this file |
 | Framework | `frameworks/public-it-procurement-support.md` |
-| Pattern | `knowledge/patterns/buyer-vs-seller-in-public-procurement.md` |
+| Pattern | `knowledge/patterns/buyer-vs-seller-in-public-procurement.md`, `knowledge/patterns/shared-operator-vs-ministry-vs-municipality.md` |
+| Playbook | `playbooks/public-multi-lot-construction-pmo.md`（複数ロットの官側構築PMO） |
 | Decision | `frameworks/decision-ownership.md`, `frameworks/human-oversight.md` |
-| Index | `knowledge/index/legacy-source-index.md` Program Line P |
-| Migration | `knowledge/migrations/public-defense-2026-08.md` |
+| Index | `knowledge/index/legacy-source-index.md` Program Line P, Line U |
+| Migration | `knowledge/migrations/public-defense-2026-08.md`, `knowledge/migrations/local-gov-shared-it-2026-08.md` |

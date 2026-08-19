@@ -9,7 +9,7 @@ type: playbook
 **Owner:** Kazuaki Tanaka  
 **Purpose:** 業務改革／基幹導入の **PMO を文書としてではなく運用可能な組織として立ち上げる**  
 **Use when:** 次期中計や ERP / 基幹導入の前に「PMO 規定はあるが回っていない」、品質・進捗・拠点展開の章が目次だけのとき  
-**Do not use as-is for:** 官側調達 PMO（`frameworks/public-it-procurement-support.md`）、単一プロジェクトの事務事務局
+**Do not use as-is for:** 官側調達 PMO（`frameworks/public-it-procurement-support.md`）、共同利用の複数ロット切替（`playbooks/public-multi-lot-construction-pmo.md`）、単一プロジェクトの事務事務局
 
 Pairs with `frameworks/transformation-pmo.md`（PMO とは何か）and `standards/pmo-operating-guide.md`（回し方）。本 Playbook は **立ち上げ順序**。人側の計画の中身は `frameworks/change-management.md` §4。AI で CoE / PgMO / Change を混ぜるなは `knowledge/patterns/ai-coe-vs-pgmo-vs-change.md`。
 

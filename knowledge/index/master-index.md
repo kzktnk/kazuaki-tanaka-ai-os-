@@ -1,6 +1,6 @@
 # Knowledge Master Index
 
-**Version:** v1.10  
+**Version:** v1.11  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
@@ -72,13 +72,13 @@ kazuaki-tanaka-ai-os/
 ├── core/                       ← 8 files (kernel)
 ├── standards/                  ← 19 files (quality criteria)
 ├── frameworks/                 ← 33 files + thinking-patterns/
-├── playbooks/                  ← 12 playbooks (+ README)
+├── playbooks/                  ← 13 playbooks (+ README)
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
-│   ├── patterns/               ← 28 distilled patterns
+│   ├── patterns/               ← 29 distilled patterns
 │   ├── lessons/                ← 5 lessons
-│   ├── migrations/             ← 20 migration reports
+│   ├── migrations/             ← 21 migration reports
 │   └── decisions/              ← 4 records
 ├── templates/                  ← 1 template
 ├── prompts/                    ← README placeholder
@@ -120,7 +120,7 @@ core/
 domains/
 ├── README.md
 ├── energy-utilities.md           ← parent (generation / T&D stub / retail + cross-cutting)
-└── public-defense.md             ← parent (Japan public / defense IT; buyer vs seller)
+└── public-defense.md             ← parent (Japan public / defense IT; buyer vs seller; shared local-gov operator)
 ```
 
 ---
@@ -239,7 +239,7 @@ knowledge/
 │       ├── 001–020/                  ← Operational AI main series
 │       ├── sp01–sp09/                ← special posts
 │       └── erf01–erf03/              ← Enterprise Redesign Framework
-├── patterns/                         ← 28 files (see table below)
+├── patterns/                         ← 29 files (see table below)
 ├── lessons/
 │   ├── governance-messaging.md
 │   ├── dual-roadmap-messaging.md
@@ -266,7 +266,8 @@ knowledge/
 │   ├── ai-playbooks-2026-08.md
 │   ├── private-it-rfp-2026-08.md
 │   ├── enterprise-engagements-2013-2023-2026-08.md
-│   └── pgmo-ai-change-2026-08.md
+│   ├── pgmo-ai-change-2026-08.md
+│   └── local-gov-shared-it-2026-08.md
 └── decisions/
     ├── diagnose-from-gateway-not-client-error.md
     ├── sandbox-cost-controls-before-resources.md
@@ -274,7 +275,7 @@ knowledge/
     └── buyer-owns-ai-poc-ground-truth.md
 ```
 
-### Patterns (28)
+### Patterns (29)
 
 | Pattern | Primary themes |
 |---------|----------------|
@@ -286,6 +287,7 @@ knowledge/
 | `transition-vs-transformation-vs-realization.md` | Introduction / transition / transformation / realization |
 | `estimate-target-commitment.md` | Estimate ≠ target ≠ commitment; work is the work |
 | `buyer-vs-seller-in-public-procurement.md` | Public IT: buyer fairness vs seller bid |
+| `shared-operator-vs-ministry-vs-municipality.md` | Shared local-gov IT: operator ≠ ministry ≠ municipality |
 | `scoring-vs-calibration.md` | Score makes judgment visible; calibration makes it reliable |
 | `reproposal-as-uncertainty-reduction.md` | Re-proposal converts uncertainty into commitment |
 | `hybrid-talent-in-transformation.md` | Knowledge + design + action; train in the program |
@@ -323,6 +325,7 @@ playbooks/
 ├── rag-structure-diagnosis.md
 ├── private-it-rfp-vendor-selection.md
 ├── pmo-function-standup.md
+├── public-multi-lot-construction-pmo.md
 ├── interim-connectivity.md
 ├── private-api-connectivity-diagnosis.md
 └── azure-sandbox-cost-guard.md
@@ -520,11 +523,14 @@ Local ministry-OA / defense-adjacent packs — not archived
 domains/public-defense.md
 frameworks/public-it-procurement-support.md
 knowledge/patterns/buyer-vs-seller-in-public-procurement.md
+knowledge/patterns/shared-operator-vs-ministry-vs-municipality.md
+playbooks/public-multi-lot-construction-pmo.md
         ↓ cross-link
 frameworks/program-phases-investigation-to-requirements.md
 standards/vendor-proposal-evaluation.md
         ↓ record
 knowledge/migrations/public-defense-2026-08.md
+knowledge/migrations/local-gov-shared-it-2026-08.md
         ↓ task routing
 CONTEXT_ROUTING.md  →  Public Sector / Defense IT, Public Procurement Support (buyer)
 ```
@@ -646,7 +652,7 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | Offering review | `playbooks/offering-review.md`, `change-management.md`, `transformation-pmo.md` |
 | Responsible AI assessment | `playbooks/responsible-ai-assessment.md`, `human-oversight.md`, `decision-ownership.md` |
 | Energy / utilities | `domains/energy-utilities.md`, `operational-reality.md`, `requirements-artifact-review.md` (if requirements) |
-| Public sector / defense IT | `domains/public-defense.md`, `public-it-procurement-support.md` (if buyer), `buyer-vs-seller-in-public-procurement.md` |
+| Public sector / defense IT | `domains/public-defense.md`, `public-it-procurement-support.md` (if buyer), `buyer-vs-seller-in-public-procurement.md`, shared-operator pattern + multi-lot construction PMO playbook if concurrent lots |
 | Private IT RFP / vendor selection | `frameworks/private-it-rfp.md`, `playbooks/private-it-rfp-vendor-selection.md`, `vendor-proposal-evaluation.md`, calibration / re-proposal patterns |
 | Application outsourcing / AMS | `application-outsourcing-solution-planning.md`, `ams-services-pyramid.md`, `service-transition-approach.md`, `ams-solution-plan-checklist.md` |
 | Infrastructure outsourcing / ITO | `infrastructure-outsourcing-solution-planning.md`, `transition-vs-transformation-vs-realization.md` |

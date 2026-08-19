@@ -7,7 +7,7 @@ See `ARCHITECTURE.md` §6.3.
 | File | Scope |
 |------|--------|
 | `energy-utilities.md` | Parent: generation / T&D (stub) / retail-customer, plus Data-AI and operating-model principles |
-| `public-defense.md` | Parent: Japan public-sector / defense IT — buyer vs seller, procurement lifecycle, 保全 |
+| `public-defense.md` | Parent: Japan public-sector / defense IT — buyer vs seller, procurement lifecycle, 保全, shared local-gov operator |
 
 Future splits (when a section outgrows the parent):
 

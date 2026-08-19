@@ -1,6 +1,6 @@
 # Legacy Source Index
 
-**Version:** v1.14  
+**Version:** v1.15  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** ローカル保管のレガシー原本と、リポジトリ内知識の対応索引。**原本の中身は含まない。**
@@ -291,6 +291,22 @@
 
 ---
 
+## Program Line U: 地方公共団体の共同利用IT運用者／複数ロット工程管理（2022、一般化のみ）
+
+原本はローカル。フォルダ名は識別子のため索引に書かない。匿名ラベル: **local-government shared IT operator / 2022**。団体名、円、仕様、提案本文、系統図、手順本文、名簿、契約IDは不登録。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| 工程管理役務の公示一式（説明書、仕様、総合評価、契約案、様式） | **未登録**（手続の型は既存 Line P） | 仕様・評価実項目・契約案は不登録。`public-it-procurement-support.md` を増殖しない |
+| 応札提案（表紙・目次・本文、前回提案） | **未登録** | 提案本文。評価項目対応の書き方は既存の売手原則のみ |
+| 支援実施計画（工程管理の見る範囲） | `playbooks/public-multi-lot-construction-pmo.md`, `public-defense.md` | 進捗・品質・開始判定・運用準備・関連案件。WBS実体・体制人名不登録 |
+| 開始判定・品質（計画確認／結果確認） | 同上 Playbook | ゲートの型のみ。試験実数・成績不登録 |
+| 運用手順・操作手順のマージ、構成変更台帳 | 同上。引継の一般型は既存 `operations-handover-guide.md` | 目次とマージが成果。本文・機器操作は不登録 |
+| 統合構成・設計書・環境表・セキュリティ範囲図 | **未登録** | 系統・在庫。Domain の「原本に残す」ルール |
+| 執行部向け見解資料 | 高度を分ける、の判断のみ Playbook | 製品リスクの中身不登録 |
+
+---
+
 ## Program Line G: IT Strategy Foundations (legacy consulting, 2002)
 
 | ローカル原本（例） | 種別 | 抽出先（リポジトリ） |
@@ -428,6 +444,8 @@
 | `multi-year-transformation-sequence.md` | 高 | ✅ 登録済（2026-08-20） |
 | `sales-capacity-via-center-functions.md` | 中 | ✅ 登録済（2026-08-20） |
 | `ai-coe-vs-pgmo-vs-change.md` | 高 | ✅ 登録済（2026-08-20） |
+| `shared-operator-vs-ministry-vs-municipality.md` | 高 | ✅ 登録済（2026-08-20） |
+| `public-multi-lot-construction-pmo.md` | 高 | ✅ 登録済（2026-08-20） |
 
 ---
 

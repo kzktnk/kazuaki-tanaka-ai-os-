@@ -104,7 +104,7 @@ Pairs with `playbooks/private-it-rfp-vendor-selection.md` and `standards/vendor-
 
 | File | Focus |
 |------|--------|
-| `public-it-procurement-support.md` | 調達方式、適合条件、総合評価、見積精査、官側PMO |
+| `public-it-procurement-support.md` | 調達方式、適合条件、総合評価、見積精査、官側PMO。複数ロット切替は playbook |
 
 Pairs with `domains/public-defense.md`.
 

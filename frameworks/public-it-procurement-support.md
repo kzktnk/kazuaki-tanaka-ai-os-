@@ -83,6 +83,8 @@
 見るもの: 契約範囲との差分、検収条件、他調達との依存、情報保全、官側作業（承認・接続・データ）の遅れ。  
 売手の Delivery Lead 枠（`frameworks/delivery-leadership.md`）を官側にそのまま当てない。成功指標が違う。
 
+共同利用基盤で複数ロットが同時にテスト・移行するときは、進捗の合算ではなく **次工程の開始判定**（計画確認 → 結果確認、受入、本番）が成果になる。手順は `playbooks/public-multi-lot-construction-pmo.md`。運用者／省／団体の混同は `knowledge/patterns/shared-operator-vs-ministry-vs-municipality.md`。
+
 ---
 
 ## Relationship to other assets
