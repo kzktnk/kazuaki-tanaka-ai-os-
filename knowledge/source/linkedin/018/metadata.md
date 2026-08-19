@@ -96,7 +96,8 @@ Memory arc:
 ```text
 No.18  Why memory (vs intelligence)
 No.19  Where memory begins (exceptions) + capture at deviation
-No.20+ How to scale capture (future)
+No.20  After capture — connect cases, outcomes, and standard-review signals
+No.21+ Who curates / governance of memory updates (future)
 ```
 
 ## Related source

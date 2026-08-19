@@ -67,8 +67,13 @@ No.19: **where** memory begins (exceptions) and **what** to capture first (reaso
 ```text
 No.18  Why memory (vs intelligence)
 No.19  Where memory begins (exceptions) + capture at deviation
-No.20+ How to scale capture and connect (future)
+No.20  After capture — connect cases, outcomes, and standard-review signals
+No.21+ Who curates / governance of memory updates (future)
 ```
+
+## Relationship to No.20
+
+No.20: capture without connection produces a repository, not memory. Pattern: `knowledge/patterns/connected-organizational-memory.md`.
 
 ## Writing note
 
@@ -78,3 +83,4 @@ Final text authored by Kazuaki Tanaka. Drafting used `standards/writing.md` §De
 
 - Migration: `knowledge/migrations/linkedin-019.md`
 - Pattern: `knowledge/patterns/exception-as-memory-entry.md`
+- Next: `knowledge/source/linkedin/020/metadata.md`

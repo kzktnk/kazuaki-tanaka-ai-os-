@@ -53,9 +53,11 @@ Use this pattern when:
 ## Related patterns
 
 - `knowledge/patterns/organizational-memory.md` — strategic framing (No.18)
+- `knowledge/patterns/connected-organizational-memory.md` — connection after capture (No.20)
 - `knowledge/patterns/operational-reality.md` — exceptions and workarounds in the field
 - `knowledge/patterns/expertise-amplification.md` — expert judgment in the moment
 
 ## Related source
 
 - `knowledge/source/linkedin/019/metadata.md`
+- `knowledge/source/linkedin/020/metadata.md`

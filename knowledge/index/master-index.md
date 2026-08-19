@@ -76,7 +76,7 @@ kazuaki-tanaka-ai-os/
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
-│   ├── patterns/               ← 13 distilled patterns
+│   ├── patterns/               ← 15 distilled patterns
 │   ├── lessons/                ← 5 lessons
 │   ├── migrations/             ← 7 migration reports
 │   └── decisions/              ← (reserved, empty)
@@ -93,7 +93,7 @@ kazuaki-tanaka-ai-os/
 
 | Index | Scope |
 |-------|--------|
-| [linkedin-series-index.md](./linkedin-series-index.md) | LinkedIn / Note sources 001–019, sp01–09, erf01–03 |
+| [linkedin-series-index.md](./linkedin-series-index.md) | LinkedIn / Note sources 001–020, sp01–09, erf01–03 |
 | [legacy-source-index.md](./legacy-source-index.md) | Local legacy PDFs → repo extraction map (Program Lines A–J) |
 
 ---
@@ -198,10 +198,10 @@ knowledge/
 │   └── legacy-source-index.md
 ├── source/
 │   └── linkedin/
-│       ├── 001–019/                  ← Operational AI main series
+│       ├── 001–020/                  ← Operational AI main series
 │       ├── sp01–sp09/                ← special posts
 │       └── erf01–erf03/              ← Enterprise Redesign Framework
-├── patterns/                         ← 14 files (see table below)
+├── patterns/                         ← 15 files (see table below)
 ├── lessons/
 │   ├── governance-messaging.md
 │   ├── dual-roadmap-messaging.md
@@ -216,12 +216,13 @@ knowledge/
 │   ├── linkedin-017.md
 │   ├── linkedin-018.md
 │   ├── linkedin-019.md
+│   ├── linkedin-020.md
 │   ├── ai-dual-roadmap-2026-08.md
 │   └── ao-sae-2026-08.md
 └── decisions/                        ← reserved
 ```
 
-### Patterns (14)
+### Patterns (15)
 
 | Pattern | Primary themes |
 |---------|----------------|
@@ -230,6 +231,7 @@ knowledge/
 | `expertise-amplification.md` | AI amplifies experts |
 | `organizational-memory.md` | Intelligence vs organizational memory; decision context |
 | `exception-as-memory-entry.md` | Exceptions as memory entry; capture at deviation |
+| `connected-organizational-memory.md` | Capture vs connection; retrieval vs memory; standard-review signals |
 | `operating-model-advantage.md` | Competitive advantage from operating model |
 | `ai-resilience-shift.md` | Productivity → resilience |
 | `decision-ownership.md` | Execution ≠ ownership |
@@ -338,7 +340,7 @@ knowledge/migrations/ao-sae-2026-08.md
 CONTEXT_ROUTING.md  →  Application Outsourcing / AMS Proposal
 ```
 
-### F. Organizational memory (LinkedIn No.18–19)
+### F. Organizational memory (LinkedIn No.18–20)
 
 ```text
 knowledge/source/linkedin/018/
@@ -359,6 +361,12 @@ knowledge/patterns/exception-as-memory-entry.md
 standards/writing.md (§De-AI Writing Pass)
         ↓ record
 knowledge/migrations/linkedin-019.md
+        ↓ continue (No.20)
+knowledge/source/linkedin/020/
+        ↓ extract
+knowledge/patterns/connected-organizational-memory.md
+        ↓ record
+knowledge/migrations/linkedin-020.md
         ↓ task routing
 CONTEXT_ROUTING.md  →  AI Adoption / DX Roadmap, LinkedIn Writing
 ```
@@ -375,7 +383,7 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | IT strategy | `frameworks/it-strategy-foundations.md`, `standards/it-strategy-engagement-guide.md` |
 | PMO / transformation | `frameworks/transformation-pmo.md`, `standards/pmo-operating-guide.md` |
 | AI governance | `frameworks/ai-governability.md`, `decision-ownership.md`, `human-oversight.md`, related `patterns/` |
-| AI adoption / DX roadmap | `frameworks/ai-adoption-roadmap.md`, `ai-role-maturity.md`, `organizational-memory.md`, `dual-roadmap-messaging.md` |
+| AI adoption / DX roadmap | `frameworks/ai-adoption-roadmap.md`, `ai-role-maturity.md`, `organizational-memory.md`, `exception-as-memory-entry.md`, `connected-organizational-memory.md`, `dual-roadmap-messaging.md` |
 | Application outsourcing / AMS | `application-outsourcing-solution-planning.md`, `ams-services-pyramid.md`, `service-transition-approach.md`, `ams-solution-plan-checklist.md` |
 | LinkedIn / Note writing | `standards/writing.md` (§De-AI Writing Pass), series `source/`, related `patterns/` and `frameworks/` |
 | Knowledge migration | `AI_OPERATING_MANUAL.md`, source asset, migration workflow |

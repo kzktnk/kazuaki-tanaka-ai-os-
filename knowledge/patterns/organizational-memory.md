@@ -66,6 +66,7 @@ See also `frameworks/ai-role-maturity.md` §Education Design Principles.
 ## Related patterns
 
 - `knowledge/patterns/exception-as-memory-entry.md` — where memory begins (No.19); capture at deviation
+- `knowledge/patterns/connected-organizational-memory.md` — after capture: connection, outcomes, standard-review signals (No.20)
 - `knowledge/patterns/expertise-amplification.md` — expert judgment in the moment
 - `knowledge/patterns/operational-reality.md` — tacit knowledge and exceptions as memory content
 - `knowledge/patterns/authority-levels.md` — who may act; memory informs what was learned
@@ -75,3 +76,4 @@ See also `frameworks/ai-role-maturity.md` §Education Design Principles.
 
 - `knowledge/source/linkedin/018/metadata.md`
 - `knowledge/source/linkedin/019/metadata.md`
+- `knowledge/source/linkedin/020/metadata.md`

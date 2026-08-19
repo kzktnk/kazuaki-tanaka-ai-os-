@@ -43,3 +43,4 @@ Use this pattern when:
 - `knowledge/patterns/expertise-amplification.md`
 - `knowledge/patterns/organizational-memory.md` — exceptions and tacit context as operational memory (No.18)
 - `knowledge/patterns/exception-as-memory-entry.md` — capture reasoning at intentional deviations (No.19)
+- `knowledge/patterns/connected-organizational-memory.md` — connect cases, outcomes, and standard-review signals (No.20)

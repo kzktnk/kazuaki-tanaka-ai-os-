@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.9
+Version: v1.10
 
 ## Purpose
 
@@ -337,6 +337,7 @@ Load:
 - knowledge/patterns/expertise-amplification.md
 - knowledge/patterns/organizational-memory.md
 - knowledge/patterns/exception-as-memory-entry.md
+- knowledge/patterns/connected-organizational-memory.md
 - knowledge/patterns/authority-levels.md
 - knowledge/patterns/operational-reality.md
 - knowledge/lessons/dual-roadmap-messaging.md (if executive audience)
@@ -438,7 +439,7 @@ Load:
 - core/identity.md
 - core/values.md
 - Relevant framework
-- Related patterns (e.g. `organizational-memory.md`, `exception-as-memory-entry.md` for Memory Arc)
+- Related patterns (e.g. `organizational-memory.md`, `exception-as-memory-entry.md`, `connected-organizational-memory.md` for Memory Arc)
 - Previous posts in the series
 
 Focus:
