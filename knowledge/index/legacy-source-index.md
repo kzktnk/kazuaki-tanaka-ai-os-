@@ -1,6 +1,6 @@
 # Legacy Source Index
 
-**Version:** v1.7  
+**Version:** v1.8  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** ローカル保管のレガシー原本と、リポジトリ内知識の対応索引。**原本の中身は含まない。**
@@ -123,6 +123,33 @@
 | SA Certification Guide / 認定プレイブック | **未登録** | 社内認定 |
 
 **Note:** Accenture / Avanade 資料。再配布禁止。個人メールは索引にも載せない。
+
+---
+
+## Program Line N: Systems Integration SA / SI Delivery Lead（SISA / SIDL, ~FY16）
+
+原本は `Downloads/SISA_SIDL/`。社内秘。ケース RFP・契約改訂・認定ツールは不登録。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| SISA FY16 Day1–2 / Prep | `systems-integration-solution-planning.md`, `estimate-target-commitment.md` | 見積≠目標≠約束、Solution Plan 質問、ブループリント、Vモデル、2種コンティンジェンシー、tick-and-tie |
+| SIDL Day1–2 | `delivery-leadership.md` | SA→DL、契約 vs 期待、ODE/EAC、動員、変更管理 |
+| Solution Plan / Blueprint / ケース RFP・契約 | **未登録** | クライアント演習・実契約 |
+| ロジスティクス、認定ガイド | **未登録** | |
+
+---
+
+## Program Line O: Delivery Management Academy（DMA II–III, ~2014–2015）
+
+原本は `Downloads/DMAⅡ/`, `Downloads/DMAⅢ/`。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| DMA III Days 1–5 講義 | `delivery-leadership.md` | プロジェクト vs プログラム、価値スコアカード、リリース、期待管理、商業ライフサイクル |
+| DMA II Module 9 サービス管理 | `delivery-leadership.md`, `transition-vs-transformation-vs-realization.md` | Introduction vs Transition、Warranty≠運用 |
+| FutureTech / Client メモ、レッスン学び発表 | **未登録** | ケース |
+| Playbook PDF、ソーシャルスタイル | **未登録** | ブランド方法論・アイスブレイク |
+| KT テンプレ実ファイル | **未登録** | 様式 |
 
 ---
 
@@ -291,6 +318,9 @@
 | `all-at-once-vs-stepwise-change.md` | 中 | ✅ 登録済（2026-08-19） |
 | `infrastructure-outsourcing-solution-planning.md` | 高 | ✅ 登録済（2026-08-19） |
 | `transition-vs-transformation-vs-realization.md` | 中 | ✅ 登録済（2026-08-19） |
+| `systems-integration-solution-planning.md` | 高 | ✅ 登録済（2026-08-19） |
+| `delivery-leadership.md` | 高 | ✅ 登録済（2026-08-19） |
+| `estimate-target-commitment.md` | 中 | ✅ 登録済（2026-08-19） |
 
 ---
 

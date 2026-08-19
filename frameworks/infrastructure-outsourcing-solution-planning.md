@@ -11,7 +11,7 @@
 
 Structure **pre-contract solution architecture** for infrastructure outsourcing (ITO) and related managed infrastructure — from deal qualification through To-Be design, commercial alignment, contract match, and handoff into mobilization / run.
 
-This is the **infrastructure twin** of `frameworks/application-outsourcing-solution-planning.md`. Do not collapse the two: AMS prices application support; IO prices towers (network, data center, EUC, service desk, security, cloud, and the processes that bind them). Bundled AO+IO deals need an **enterprise SA** who owns seams, not two independent solutions stapled together.
+This is the **infrastructure twin** of `frameworks/application-outsourcing-solution-planning.md`. **Build / SI** uses `frameworks/systems-integration-solution-planning.md`. Do not collapse the three: AMS prices application support; IO prices towers; SI prices design-build-test-deploy. Bundled deals need an **enterprise SA** who owns seams.
 
 | Layer | Question | Typical artifact |
 |-------|----------|------------------|
@@ -217,8 +217,10 @@ After signature the SA is not finished: **solution realization** is the early-de
 | Asset | Relationship |
 |-------|----------------|
 | `application-outsourcing-solution-planning.md` | Application twin; bundled deals need both |
+| `systems-integration-solution-planning.md` | Build / SI twin |
+| `delivery-leadership.md` | Post-signature; SA → Delivery Lead |
 | `service-transition-approach.md` | Mobilization / KT / waves — **not** the same as transformation |
-| `transition-vs-transformation-vs-realization.md` | Three workstreams, three cost plans |
+| `transition-vs-transformation-vs-realization.md` | Introduction / transition / transformation / realization |
 | `ams-solution-plan-checklist.md` | Completeness habit; IO uses the same discipline with tower-specific sections |
 | `transformation-pmo.md` | Program office when transformation is large |
 | `change-management.md` | People-side of staff transfer and new operating model |

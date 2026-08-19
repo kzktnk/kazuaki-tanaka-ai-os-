@@ -247,6 +247,7 @@ Program PMO owns **enterprise-level** change; pmo often focuses on **project sta
 - `standards/pmo-operating-guide.md`
 - `frameworks/sap-implementation-phase-model.md` — P5 go-live support and benefit realization timing
 - `frameworks/change-management.md`
+- `frameworks/delivery-leadership.md` — program vs project; value scorecard; SA→DL
 - `frameworks/it-strategy-foundations.md` — implementation planning and value realization
 - `standards/it-strategy-engagement-guide.md` — program BSC and business case
 - `knowledge/lessons/pmo-professional-principles.md`

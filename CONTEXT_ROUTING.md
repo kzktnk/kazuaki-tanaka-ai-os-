@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.13
+Version: v1.14
 
 ## Purpose
 
@@ -446,6 +446,61 @@ Outputs:
 - Take-on and transformation sequence
 - SLA / commercial outline
 - Risk and diligence plan
+
+---
+
+# Systems Integration / SI Proposal
+
+Load:
+- frameworks/systems-integration-solution-planning.md
+- knowledge/patterns/estimate-target-commitment.md
+- frameworks/delivery-leadership.md (if handoff or post-signature)
+- knowledge/patterns/transition-vs-transformation-vs-realization.md (if go-live support / warranty)
+- frameworks/application-outsourcing-solution-planning.md (if AM after build)
+- frameworks/infrastructure-outsourcing-solution-planning.md (if infra towers bundled)
+- core/author-voice.md
+- standards/consulting-review.md (if deliverable review)
+
+Focus:
+- Estimate ≠ target ≠ commitment; work is the work
+- Solution Plan completeness questions
+- Blueprint before firm estimate; V-model by release
+- Negotiation vs solution contingency; contract relief not eaten by contingency
+- Tick and tie: estimate, commercial, SOW, Solution Plan
+- Deliverable = thing not action
+
+Outputs:
+- SI Solution Plan
+- Estimate basis and contingency split
+- Delivery strategy (releases, locations)
+- Handoff pack for Delivery Lead
+
+---
+
+# Delivery Leadership
+
+Load:
+- frameworks/delivery-leadership.md
+- frameworks/systems-integration-solution-planning.md (if sold SI solution)
+- frameworks/transformation-pmo.md
+- frameworks/change-management.md
+- knowledge/patterns/transition-vs-transformation-vs-realization.md
+- frameworks/service-transition-approach.md (if outsourcing take-on)
+- core/author-voice.md
+- standards/pmo-operating-guide.md (if program office)
+
+Focus:
+- Project vs program; value scorecard vs SLA
+- Contract vs customer expectation
+- ODE vs EAC; no surprises in transition
+- Introduction vs transition vs warranty
+- Release at a rate the organization can absorb
+
+Outputs:
+- Mobilization and expectation plan
+- Change-control setup
+- EAC / original-deal comparison narrative
+- Service introduction or transition outline
 
 ---
 

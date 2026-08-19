@@ -1,33 +1,40 @@
 # Pattern: Transition vs Transformation vs Realization
 
 **Status:** Active  
-**Origin:** Infrastructure outsourcing SA training (Program Line M)
+**Origin:** Infrastructure outsourcing SA training (Program Line M); Service Introduction vs Transition from DMA II (Program Line O)
 
 ## Pattern statement
 
-Outsourcing programs fail when **three different jobs share one plan and one budget**. Name them separately. Cost them separately. Sequence them on purpose.
+Outsourcing and SI programs fail when **different jobs share one plan and one budget**. Name them separately. Cost them separately. Sequence them on purpose.
 
-## The three jobs
+## The jobs
 
 | Job | What it is | Whose benefit | Timing |
 |-----|------------|---------------|--------|
-| **Service transition / mobilization** | Stand up the provider’s ability to run: people, access, tools, KT, responsibility dates | Makes **run** possible | Independent workstream; usually around contract start |
-| **Transformation** | Fundamental change to the client’s processes, technology, and/or culture (e.g. DC consolidation, virtualization, platform migration, ITSM step-change) | **Client** capability and cost base | May precede, parallel, or follow transition; must have **stand-alone value** even if run never started |
-| **Solution realization** | The stretch of initiatives that move as-is operational capability to the benefits promised in the Solution Plan | Closes the **sold** gap | May start before transition, during mobilization, or in run |
+| **Service introduction** | Move a **new or changed system** into an **existing** support organization (operability + support readiness). No new run org; usually no staff transfer. | Makes **go-live supportable** | Alongside build; rehearsals and go/no-go before live |
+| **Service transition / mobilization** | Stand up a **new** ability to run: people, access, tools, KT, catalog, possible staff transfer | Makes **run** possible | Independent workstream; usually around outsourcing contract start |
+| **Transformation** | Fundamental change to the client’s processes, technology, and/or culture | **Client** capability and cost base | May precede, parallel, or follow transition; must have **stand-alone value** even if run never started |
+| **Solution realization** | Initiatives that move as-is operational capability to the benefits promised in the Solution Plan | Closes the **sold** gap | May start before transition, during mobilization, or in run |
 
-Transition on a **moving** estate (transformation in flight) multiplies delivery risk. Realization **during** transition does the same. If you do both, say so and staff it.
+**Warranty** after go-live is typically a **defect-fix window**, not incident management or operations. Agree what is in warranty before live; do not staff it as run.
 
-Accounting and commercial treatment often differ: work that is true transformation (client-valuable on its own) is not the same as transition (cost to establish run, with revenue typically tied to service start). Do not relabel transition as transformation to make a P&L look better.
+Transition on a **moving** estate (transformation in flight) multiplies delivery risk. Realization **during** transition does the same. Introduction into an unready support org fails silently after the build team leaves.
+
+Accounting: true transformation is not the same as transition (cost to establish run). Do not relabel to dress the P&L. Introduction is a build workstream, not an outsourcing take-on.
 
 ## Tests
 
-- If we cancelled the outsourcing run, would this initiative still be worth doing for the client? If yes, it is closer to **transformation**.  
+- Is there already a support organization that will keep the new system? If yes, you need **introduction**, not a full **transition**.  
+- If we cancelled the outsourcing run, would this initiative still be worth doing for the client? If yes, closer to **transformation**.  
 - If we cancelled transformation, could we still introduce service on the as-is? If yes, **transition** can stand.  
-- Are benefits in the proposal dated to events that have **owners and work plans** after signature? If not, **realization** is missing.
+- Are benefits dated to events with **owners and work plans** after signature? If not, **realization** is missing.  
+- Does “warranty” include incidents and how-to support? If yes, the contract is mixing warranty with run.
 
 ## Related
 
 - `frameworks/infrastructure-outsourcing-solution-planning.md`
+- `frameworks/systems-integration-solution-planning.md`
+- `frameworks/delivery-leadership.md`
 - `frameworks/service-transition-approach.md`
 - `frameworks/change-management.md`
 - `knowledge/patterns/all-at-once-vs-stepwise-change.md`

@@ -11,7 +11,7 @@
 
 Structure **pre-contract Solution Planning** for Application Management Services (AMS) and application outsourcing engagements — from scope understanding through To-Be design, estimating, delivery sourcing, transition planning, and proposal assembly.
 
-This is the **execution layer** for RFP response and deal shaping. It complements — does not replace — strategic sourcing decisions in `frameworks/it-strategy-foundations.md` §Sourcing. Infrastructure towers use `frameworks/infrastructure-outsourcing-solution-planning.md`.
+This is the **execution layer** for RFP response and deal shaping. It complements — does not replace — strategic sourcing decisions in `frameworks/it-strategy-foundations.md` §Sourcing. Infrastructure towers use `frameworks/infrastructure-outsourcing-solution-planning.md`. SI / build uses `frameworks/systems-integration-solution-planning.md`.
 
 | Layer | Question | Typical artifact |
 |-------|----------|------------------|
@@ -214,6 +214,8 @@ Do not embed client ERP history, investment figures, or vendor names in generali
 |-------|--------------|
 | `it-strategy-foundations.md` §Sourcing | Upstream make/buy; this framework assumes outsourcing is in scope |
 | `infrastructure-outsourcing-solution-planning.md` | Infrastructure twin; bundled AO+IO needs an enterprise SA |
+| `systems-integration-solution-planning.md` | Build / SI twin |
+| `delivery-leadership.md` | Post-signature program / SI delivery lead |
 | `ams-services-pyramid.md` | Scope hierarchy and Solution Plan TOC |
 | `service-transition-approach.md` | Phase 4 detail |
 | `ams-solution-plan-checklist.md` | Completeness standard |

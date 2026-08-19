@@ -76,6 +76,17 @@ Pairs with `knowledge/patterns/transition-vs-transformation-vs-realization.md`.
 
 ---
 
+## Systems Integration / Delivery
+
+| File | Focus |
+|------|--------|
+| `systems-integration-solution-planning.md` | SI SA: estimate integrity, blueprint, V-model, two contingencies, tick-and-tie |
+| `delivery-leadership.md` | SA→DL handoff, program vs project, EAC, expectations, introduction vs transition |
+
+Pairs with `knowledge/patterns/estimate-target-commitment.md`.
+
+---
+
 ## Thinking Patterns
 
 See [`thinking-patterns/README.md`](./thinking-patterns/README.md) — pattern-01 through pattern-08.

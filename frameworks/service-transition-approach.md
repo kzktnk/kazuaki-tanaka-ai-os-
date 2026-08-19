@@ -13,7 +13,7 @@ Define how to **plan and execute service transition** from client incumbent or i
 
 Transition is where most outsourcing deals fail or succeed. This framework covers **Phase 4** of `frameworks/application-outsourcing-solution-planning.md`.
 
-Do not use this file as a stand-in for **client transformation** or **solution realization**. Those are separate jobs and cost plans: `knowledge/patterns/transition-vs-transformation-vs-realization.md`. IO take-on shape (as-is vs transformed-only) is in `frameworks/infrastructure-outsourcing-solution-planning.md`.
+Do not use this file as a stand-in for **client transformation**, **solution realization**, or **service introduction** (new system into existing ops). Distinguish those jobs: `knowledge/patterns/transition-vs-transformation-vs-realization.md`. IO take-on shape is in `frameworks/infrastructure-outsourcing-solution-planning.md`. SI build-to-ops handoff is in `frameworks/delivery-leadership.md`.
 
 ---
 
@@ -23,6 +23,7 @@ Do not use this file as a stand-in for **client transformation** or **solution r
 - Contract award → delivery kickoff
 - Multi-wave take-on (legacy + new ERP modules)
 - Handover from ERP implementation partner to AMS provider
+- Contrast with **service introduction** (build team hands a new system to an already-standing support org)
 
 ---
 
@@ -174,6 +175,8 @@ Reference: `frameworks/sap-implementation-phase-model.md`, `standards/operations
 
 - `frameworks/application-outsourcing-solution-planning.md`
 - `frameworks/infrastructure-outsourcing-solution-planning.md`
+- `frameworks/systems-integration-solution-planning.md`
+- `frameworks/delivery-leadership.md`
 - `knowledge/patterns/transition-vs-transformation-vs-realization.md`
 - `frameworks/ams-services-pyramid.md`
 - `standards/ams-solution-plan-checklist.md` §Service Introduction
