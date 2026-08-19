@@ -42,7 +42,7 @@ Do not start with a large knowledge-management program. A few habits may be enou
 
 ## Standard-review signals
 
-Frequency, consistent reasoning, and recurrence across sites, taken together, may suggest that the **standard**—not the exception—deserves another look.
+Frequency, consistent reasoning, and recurrence across sites are **clues**, not a formula. When they overlap — for example the same equipment stop, for the same reason, at three sites — review may need to cover not only how the exception is handled, but whether the **standard still fits current reality**.
 
 Some exceptions should remain exceptions. Others may be telling us something about the standard.
 

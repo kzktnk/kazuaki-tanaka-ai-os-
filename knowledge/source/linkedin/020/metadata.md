@@ -36,7 +36,7 @@ tags:
 
 ## Core Theme
 
-Capture without connection produces a repository, not organizational memory. Memory requires links across similar situations, earlier reasoning, and outcomes. Recurring exceptions with consistent reasoning across sites may signal that the **standard**—not the exception—needs review.
+Capture without connection produces a repository, not organizational memory. Memory requires links across similar situations, earlier reasoning, and outcomes. Recurring exceptions with consistent reasoning across sites are a clue that both exception handling and the **standard's fit to current reality** may need review.
 
 ## Key Distinctions
 
@@ -45,7 +45,7 @@ Capture without connection produces a repository, not organizational memory. Mem
 | More exception records = more memory | Records can accumulate without becoming memory |
 | Retrieval: what do we have about this? | Memory: have we seen this? What did we decide? Why? What happened next? |
 | Turn every exception into a procedure | Connect cases, surface patterns, bring prior reasoning forward |
-| Exceptions stay exceptional | Frequency + consistent reasoning + multi-site recurrence → review the standard |
+| Exceptions stay exceptional | Frequency + consistent reasoning + multi-site recurrence → clues to review exception practice **and** whether the standard still fits |
 
 ## Connection habits (operational)
 
@@ -58,6 +58,8 @@ Capture without connection produces a repository, not organizational memory. Mem
 - Frequency of recurrence
 - Consistency of reasoning
 - Recurrence across sites
+
+These are clues. When they overlap (same exception, same reason, multiple sites), review exception handling **and** whether the standard still fits current reality.
 
 Some exceptions should remain exceptions. Others tell us about the standard.
 
@@ -80,7 +82,7 @@ No.21+ Who curates / governance of memory updates (future)
 
 ## Writing note
 
-Final text authored by Kazuaki Tanaka (lock A, 2026-08-19). Drafting used `standards/writing.md` §De-AI Writing Pass. Version B (Downloads, equipment-stop thread) was not used.
+Final text authored by Kazuaki Tanaka (lock A, EN/JA revised 2026-08-19: equipment-stop example looped into standard-review paragraph). Drafting used `standards/writing.md` §De-AI Writing Pass. Version B (Downloads EN thread) was not used as source.
 
 ## Related source
 

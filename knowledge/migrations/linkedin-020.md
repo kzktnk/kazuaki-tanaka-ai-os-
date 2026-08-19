@@ -5,8 +5,8 @@
 - English: `Organizational Memory Doesn't Scale by Accumulation`
 - Japanese: `組織の記憶は、溜め込むだけでは育たない`
 - Scheduled: 2026-09-02
-- Voice: Author final, **lock A** (chat revision, 2026-08-19)
-- Not used: Version B (`Downloads/no20_organizational_memory_en.md`, equipment-stop thread)
+- Voice: Author final, **lock A**; EN/JA aligned 2026-08-19 (equipment-stop example looped into standard-review paragraph)
+- Not used as EN source: Version B (`Downloads/no20_organizational_memory_en.md`)
 
 ## Files created
 

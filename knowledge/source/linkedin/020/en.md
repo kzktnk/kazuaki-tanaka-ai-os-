@@ -46,7 +46,9 @@ And occasionally ask:
 
 Should this still be an exception?
 
-Frequency, consistent reasoning, and recurrence across sites are useful signals. Together, they may suggest that the standard — not the exception — deserves another look.
+Frequency, consistent reasoning, and recurrence across sites are useful signals. In our equipment-stop example, all three were present: the same exception kept recurring, for the same reason, across three sites.
+
+When those signals appear together, it may be time to examine not only how the exception is being used, but whether the standard itself still fits reality.
 
 Some exceptions should remain exceptions. Others may be telling us something about the standard.
 
