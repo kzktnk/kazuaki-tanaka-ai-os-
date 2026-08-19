@@ -21,11 +21,30 @@ CX / CRM / CDP は発電と同格のセグメントではない。**小売およ
 
 発電・アセットの知見と、小売・顧客接点の知見は**混ぜない**。共通原則だけを横断節に置く。
 
-将来の分離先（厚くなったら）:
+将来の分離先（厚くなったら。**今は分割しない**）:
 
 - `domains/energy-utilities/asset-management.md`
 - `domains/energy-utilities/retail-customer.md`
+- `domains/energy-utilities/transmission-distribution.md`
 - `domains/energy-utilities/digital-ai.md`
+
+---
+
+## Scope boundary
+
+This file contains reusable domain knowledge about energy and utilities.
+
+It does not contain:
+
+- client-specific facts or decisions
+- detailed technology implementation procedures
+- product configuration guidance
+- project-specific schedules or commercial terms
+- generic consulting methods that apply across industries
+
+Generic methods belong in `frameworks/`, `playbooks/`, or `standards/`.  
+Technical implementation knowledge belongs in `technology/`.  
+Client-specific facts remain outside the reusable domain layer unless generalized first.
 
 ---
 
@@ -101,7 +120,22 @@ Technology 製品手順はここには書かない → `technology/`（未整備
 **Status:** Stub — 親ファイルに枠のみ。
 
 系統は「再エネの問題」ではなくグリッドと市場設計の問題になりやすい（`sp05`, `sp06`）。  
-運用制約・接続・レジリエンスの型は、十分な一般化材料が揃ってから書く。
+運用制約・接続・レジリエンスの型は、十分な一般化材料が揃ってから書く。空の節を埋めない。
+
+### Future knowledge areas
+
+分類枠のみ。材料が揃うまで本文を書かない。
+
+- network planning and capacity
+- connection management
+- grid operations
+- outage and restoration
+- resilience
+- distributed energy resources
+- regulatory constraints
+- field workforce
+- asset management
+- T&D data and AI use cases
 
 ---
 
@@ -117,6 +151,34 @@ Technology 製品手順はここには書かない → `technology/`（未整備
 | CRM / 統合ポータル | 接点、顧客単位の対話、セルフサービス | 料金計算をポータル側に複製する |
 | コンタクトセンター | 応対、保留、セールス、運用継続 | 「システム刷新」と「応対変革」を同一案件の目的にする |
 | CDP / マーケ基盤 | 統合、セグメント、施策、測定 | 入れただけで施策が回ると仮定する |
+
+### Principle — 顧客・契約・地点を同一視しない
+
+Utility customer data often contains multiple identities:
+
+- customer / person
+- household
+- contract
+- service point / premise
+- meter
+- member ID
+- portal ID
+- service subscription
+
+These are not interchangeable.
+
+Legacy utility data is often organized around contracts or supply points, while CRM and CX require a customer-centric view.
+
+Therefore:
+
+```text
+Contract-centric data
+        → identity resolution
+        → customer-level view
+        → relationship / household view
+```
+
+Customer 360 should not be assumed to exist merely because multiple datasets have been integrated.
 
 ### Principle — 体験から範囲を決める
 
@@ -184,6 +246,22 @@ Retail の下位能力。接点からデータを取り、個客単位でつな�
 
 Operational AI のガバナンス・権限・記憶の型は業界非依存で既にある。Domain は **どこに例外とデータ分断が積もるか** を足す。
 
+### Principle — Prediction is useful only when it changes a decision
+
+A more accurate model does not automatically create more operational value.
+
+Always ask:
+
+1. Who consumes the prediction?
+2. What decision changes because of it?
+3. How quickly can action be taken?
+4. What happens when the prediction is wrong?
+5. Is the required data available at decision time?
+
+Model accuracy should be optimized only after the decision loop is defined.
+
+料金予測、離脱予測、呼量予測、設備異常予測に共通する。精度議論は、この5問の後である。
+
 ### Common error
 
 - ダッシュボード完成を DX の完了とみなす  
@@ -242,6 +320,22 @@ DX 組織は「データ分析チーム」だけでは足りない。少なく�
 5. **制度・会計は後工程ではない。** 商品・ポイント・料金充当は経理制約で折れる。  
 6. **自動化は判断を消さない。** 一律自動化してよい業務と、人が残す確認を分ける。  
 7. **発電の型と小売の型を交換しない。** 共通なのは「現実と権限と記憶」だけである。
+
+---
+
+## Knowledge provenance
+
+This domain file is distilled from multiple utility-sector engagements and reusable knowledge assets.
+
+Generalization rule:
+
+```text
+Client-specific observation
+        → recurring pattern
+        → reusable domain principle
+```
+
+No single client example should be treated as an industry-wide fact unless independently validated.
 
 ---
 
