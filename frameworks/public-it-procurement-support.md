@@ -92,7 +92,8 @@
 | `domains/public-defense.md` | 拘束と役割 |
 | `program-phases-investigation-to-requirements.md` | 構想〜要件 |
 | `requirements-document-outline.md` | 要件書。仕様書の前 |
-| `vendor-proposal-evaluation.md` | 技術評価。精査は価格・工数 |
+| `vendor-proposal-evaluation.md` | 技術評価。精査は価格・工数。民間の選定手順は `private-it-rfp` 側 |
+| `frameworks/private-it-rfp.md` | 民間 RFP。法定調達と混ぜない |
 | `transformation-pmo.md` | プログラムガバナンスの一般論 |
 | `estimate-target-commitment.md` | 売手見積の健全性。官側精査の鏡 |
 

@@ -1,71 +1,117 @@
+---
+type: standard
+---
+
 # Vendor Proposal Evaluation Standard
 
-**Version:** v1.0  
+**Version:** v1.1  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
-**Origin:** 大規模ERP/RFP案件における提案評価設計（2003年頃）の実践を一般化
+**Origin:** 大規模民間 ERP/RFP（2002–2003）の評価シート設計・一次／二次評価・SteerComm を一般化。社名、点数実値、円、RFP 本文は登録しない。  
+**Document role:** Quality standard for evaluating vendor proposals in private-enterprise IT sourcing
 
 ---
 
 ## Purpose
 
-ベンダー提案書を**公平かつ議論可能**に評価するための標準です。
+提案評価を「採点作業」ではなく、**発注者の目的に対する理解、課題解決能力、実行信憑性、見積妥当性、契約可能性を証拠ベースで判断する行為**として実施する。
 
-目的は「点数を付けること」ではなく、**選定判断の根拠を残し、評価のばらつきを抑える**ことです。
+目的は点数を付けることではなく、**選定判断の根拠を残し、評価のばらつきを会話可能にする**こと。
 
-`standards/consulting-review.md` が資料品質を見るのに対し、本書は**複数ベンダー比較・選定プロセス**に特化します。
+`standards/consulting-review.md` が資料品質を見るのに対し、本書は**複数ベンダー比較・選定**に特化する。
+
+法定の公共調達（総合評価・公平性・抗議耐性）は `frameworks/public-it-procurement-support.md`。民間でも他社機密の漏洩や後付けルール変更はしない。
 
 ---
 
 ## When to Use
 
-- RFPに対する複数ベンダー提案の一次・二次評価
+- 民間 IT 導入の RFP に対する一次・二次評価
 - 評価シートの設計・すり合わせ
 - SteerComm / 選定会議向けの評価結果報告
 - クライアント側評価担当者との評価基準合意
 
----
-
-## Core Principles
-
-1. **評価Pointは根拠付きで設計する** — 枠（前提・実現化・体制等）に「何を見るか」を書く。ラベルだけにしない。
-2. **偶数段階評価を使う** — 0–3の4段階など。奇数段階だと真ん中に評価が集まりやすい。
-3. **主観は前提として受け入れ、プロセスで抑える** — 複数評価者＋差が大きいときすり合わせ。
-4. **領域ごとに評価項目を絞る** — 全社共通シートと領域別シートを分け、不要項目は評価しない。
-5. **付加価値を明示的に評価する** — 要件どおりだけでは差がつかない。
+実行の順番は `playbooks/private-it-rfp-vendor-selection.md`。RFP の問いの設計は `frameworks/private-it-rfp.md`。
 
 ---
 
-## Evaluation Sheet Structure
+## Evaluation model — five dimensions
 
-### 二層構成（推奨）
+| Dimension | Core question |
+|-----------|----------------|
+| Understanding | 発注者の背景・目的・スコープ・ゴールを理解しているか |
+| Proposal capability | 要件に対し、妥当な前提・実現方法・工程・体制を設計できるか |
+| Delivery credibility | 書いたことを実際に実行できる根拠があるか |
+| Estimate credibility | 要求・スコープ・工程・体制がコストに一貫して反映されているか |
+| Contractability | 契約後の重大な条件不一致を許容可能な範囲にできるか |
+
+---
+
+## Sheet design (2003 practice, still valid)
+
+### 二層構成
 
 | 層 | 目的 | 例 |
 |----|------|-----|
 | **全体評価シート** | 横断的な提案能力・アーキテクチャ | 全体アーキテクチャ、提案能力、付加価値 |
-| **領域別評価シート** | 領域固有の実現性・網羅性 | 基盤、取引会計、人事 等 |
+| **領域別評価シート** | 領域固有の実現性・網羅性 | 基盤、業務領域 等 |
 
-**重複に注意：** 「全体概要」と「全体アーキテクチャ」が同じことを評価していないか確認する。  
-領域別では**変化に強いアーキテクチャ**、**運用コスト**、**必要コンポーネントの漏れ**に焦点を当てる。
+「全体概要」と「全体アーキテクチャ」が同じことを評価していないか確認する。領域別では **変化に強いアーキテクチャ**、**運用コスト**、**必要コンポーネントの漏れ** に焦点を当てる。
 
-### 評価枠（カテゴリ）の設計
+### 評価枠
 
-各カテゴリには、評価Pointの**根拠・定義**を記述する。
+各カテゴリに、評価 Point の**根拠・定義**を書く。ラベルだけにしない。
 
 | 枠 | 記述すべき内容 |
-|----|--------------|
+|----|----------------|
 | **前提** | 何を前提に提案しているか。現実性の判断基準 |
 | **実現化** | 技術・スケジュール・移行の実現可能性の見方 |
 | **体制** | プロジェクト体制・運用体制の妥当性の見方 |
-| **工程** | スケジュール・マイルストーンの評価観点（全項目が評価基準になるとは限らない） |
+| **工程** | スケジュール・マイルストーンの評価観点（全項目が基準になるとは限らない） |
 
-**田中版の要点：** 枠は備忘録ではなく、**評価者間の認識合わせのための説明欄**として機能させる。
+枠は備忘録ではなく、**評価者間の認識合わせのための説明欄**。
 
 ---
 
-## Scoring Model
+## Principles
 
-### 推奨：4段階（0–3）
+### 1 — Understanding before solution
+
+良いソリューションに見えても、発注者の問題を理解していなければ高評価にしない。
+
+Test: 会社名を変えても別案件の RFP に成立するか。Yes なら理解不足の可能性。
+
+### 2 — Separate compliance, reasoning, and value-add
+
+- **Mandatory:** 満たすこと。addressed / complete / correct / feasible。  
+- **Reasoning-required:** どう考えたか。assumptions, options, risk, method, organization。  
+- **Value-add:** 要求されていないから加点、ではない。目的に関連し、実問題を解き、コミットでき、過剰複雑にしないこと。型は (a) 要件外だが妥当な提案 (b) 発注側の盲点。追加機能の数ではない。
+
+### 3 — Assumption, method, and delivery together
+
+前提で複雑と書き工程が短い、高度方式なのに専門家がいない、大量移行なのに見積に移行がない、は矛盾として減点する。
+
+### 4 — Confirmed vs uncertain requirements
+
+確定要件は completeness / feasibility / estimate 反映。未確定は assumption、scenario、いつ決めるか、impact。未確定に一つの断定解を出すことが必ずしも優ではない。
+
+### 5 — Credibility ≠ proposal writing quality
+
+類似規模・複雑性、指名キーパーソンの実配置、資産の**今回への適用**。全候補が満たす会社プロファイルは項目から外してよい。
+
+### 6 — Estimate is a work-model check
+
+何の作業か、量、役割、期間、除外、前提、前提が変わったら何か。Requirement ↔ Scope ↔ WP ↔ Schedule ↔ Role ↔ Effort ↔ Cost を tick-and-tie。総額比較だけにしない。`knowledge/patterns/estimate-target-commitment.md`。
+
+### 7 — Contractability is not a legal afterthought
+
+scope qualification、検収、支払、IP、瑕疵、責任、下請、キーパーソン、変更管理。重大な条件差は技術点で相殺しない。
+
+---
+
+## Scoring model
+
+**本 OS の既定:** 偶数段階 **0–3**。奇数段階の「真ん中＝わからない」を避ける。
 
 | 点 | 意味（例） |
 |----|-----------|
@@ -74,109 +120,94 @@
 | 2 | 概ね満たす／実現可能 |
 | 3 | 明確に優れている／付加価値あり |
 
-**避ける：** 5段階奇数（1–5）で「3=普通」がデフォルトになる設計。
+Good / Partial / Poor や 0 / 50 / 100 は **同じ判断の別記号**。数学的真実ではない。点差を見えるようにする。一枚のシートで尺度を混ぜない。
 
-### チーム別持ち点
+大規模ではチームごとに持ち点（ウェイト）を割り当ててよい。重みは細かく見えるためではなく、事業クリティカル・不可逆設計・移行・指名リーダー・大きなコストドライバに置く。同じ概念の重複加点と、点数設計で結論を作ることを避ける。
 
-大規模案件では、評価チームごとに**持ち点（ウェイト）**を割り当てる。
-
-例：基盤チーム → 全体評価25点＋基盤部分75点。
+See `knowledge/patterns/scoring-vs-calibration.md`.
 
 ---
 
-## 「付加価値」の定義
+## Evidence
 
-要件との一致だけでは差がつかないため、**意図的に別軸**を設ける。
+各評価に残す: judgment / score、提案参照、evidence、comment、concern、未解決の問い。
 
-| 付加価値の型 | 定義 |
-|-------------|------|
-| **要件外の妥当な提案** | 要件とは意図的に異なるが、妥当性のある提案 |
-| **発注側の盲点** | 発注側（クライアント）が気づいていなかった点を提案してきたもの |
-
-「提案能力」カテゴリに上記を評価する項目を**明示的に追加**する。
+Weak: 「体制が弱い。△」  
+Better: 移行責任者が明示されずアプリ PM 配下との記載のみ、量と cutover 制約に対し Partial。二次で専任度を確認。
 
 ---
 
-## Evaluation Process
+## Process
 
-### 1. 評価シート設計
-
-```
-評価項目ピックアップ → 必須項目の確定 → 領域別カスタマイズ → クライアントすり合わせ → FIX
-```
-
-- 不要項目は削除（例：全社が基盤構築可能なら「会社プロファイル」は不要）
-- 必須項目は評価開始前に埋める
-
-### 2. 評価実施
-
-| ルール | 内容 |
-|--------|------|
-| **複数評価者** | 1社を1人だけで評価しない |
-| **分担** | 例：3名で最低7社ずつ、10社全体をカバー |
-| **差分解消** | 評価に大きな差が出た場合はすり合わせを実施 |
-
-### 3. 結果報告
-
-- **一次評価：** 論点・懸念・差分の可視化
-- **二次評価：** 収束した評価と選定推奨の根拠
-- **SteerComm：** 決定事項・未決論点・次アクション
+1. 評価項目ピックアップ → 必須確定 → 領域別カスタマイズ → 発注者とすり合わせ → FIX。RFP 配布後に採点方法を発明しない。  
+2. 複数評価者が**独立**に評価。1社1人にしない。  
+3. 意味のある点差だけキャリブレーション。平均が目的ではない。  
+4. 一次: screening、懸念、情報不足、shortlist。契約判断まで完結させない。  
+5. 不明は即減点確定せず、再提案・質問・面接に変換してよい。`knowledge/patterns/reproposal-as-uncertainty-reduction.md`。  
+6. 二次: 「強い提案か」から「契約して実行できるか」。懸念解消、一貫性、コミット、見積、指名チーム、残リスク、契約。  
+7. キーパーソンは提案書だけでは評価しない。`standards/vendor-key-person-interview.md`。  
+8. 報告: 一次は論点と差分、二次は収束と推奨根拠、SteerComm は決定・未決・次アクション。総合点だけで説明しない。
 
 ---
 
-## Architecture Evaluation Checklist
+## Architecture evaluation checklist
 
-基盤・全体アーキテクチャ評価時の焦点：
-
-- [ ] **変化に強いアーキテクチャ**か（将来の変更・拡張への耐性）
-- [ ] **運用コスト**を考慮しているか
-- [ ] **必要コンポーネントの漏れ**がないか
-- [ ] スケジュール・移行計画との整合
+- [ ] 変化に強いアーキテクチャか  
+- [ ] 運用コストを考慮しているか  
+- [ ] 必要コンポーネントの漏れがないか  
+- [ ] スケジュール・移行計画との整合  
 
 ---
 
-## Anti-Patterns
+## Common failure patterns
 
-| 避ける | 理由 |
-|--------|------|
-| 項目の羅列だけのシート | 評価者が各自解釈 → ばらつき |
-| 全社一律の100項目 | 領域に無関係な項目でノイズ |
-| 点数だけの報告 | なぜその点数かが議論できない |
-| 1人評価 | 主観がそのまま選定理由になる |
-| 奇数段階で真ん中集中 | 差がつかず選定不能 |
+印象点（プレゼン上手＝高得点）。全案件同一シート。同じ内容の三重カウント。根拠なし点数。差を平均で消す。付加価値＝機能の数。安さを credibility の代わりにする。1人評価。項目羅列シート。
 
 ---
 
-## Relationship to Author Voice
+## Definition of done
+
+- 最終判断の前に基準が定義されている  
+- 重大判断に evidence がある  
+- 評価差がキャリブレーションされている  
+- 未解決が見える  
+- 見積とスコープが正規化されている  
+- キーパーソンが評価されている  
+- 残リスクがある  
+- 総合点なしでも推奨を説明できる  
+
+評価シート設計完了前（既存ゲート）:
+
+- [ ] 各評価 Point に根拠・定義がある  
+- [ ] 領域別に不要項目を削除した  
+- [ ] 付加価値の項目がある  
+- [ ] 複数評価者・差分解消ルールがある  
+- [ ] 偶数段階になっている  
+- [ ] 発注者と基準をすり合わせた  
+
+---
+
+## Relationship to author voice
 
 | 観点 | 本標準 | `core/author-voice.md` |
 |------|--------|------------------------|
-| 仮説 | 評価基準自体が「IBM/発注側の見方」 | IBM仮説として自分の答えを置く |
+| 仮説 | 評価基準自体が発注側の見方 | 仮説として自分の答えを置く |
 | 構造 | 内側に根拠、表側は結果と論点 | 骨格は内側、表側はストーリー |
 | 留保 | 主観性を前提にプロセスで担保 | たたき台・案として提示 |
 
 ---
 
-## Related Assets
+## Related assets
 
 | ファイル | 関係 |
 |---------|------|
-| `standards/consulting-review.md` | 資料品質レビュー |
-| `core/author-voice.md` | トーン・思考の型 |
-| `knowledge/lessons/author-voice-archetypes-legacy.md` | 提案評価・SteerCommのアーキタイプ |
-| `frameworks/program-phases-investigation-to-requirements.md` | 調査→要件プログラム全体 |
-| `frameworks/public-it-procurement-support.md` | 見積精査・総合評価基準（官側） |
-| `knowledge/patterns/buyer-vs-seller-in-public-procurement.md` | 官側支援と応札を混ぜない |
-
----
-
-## Completion Checklist
-
-評価設計完了前：
-
-- [ ] 各評価Pointに根拠・定義があるか
-- [ ] 領域別に不要項目を削除したか
-- [ ] 付加価値の評価項目があるか
-- [ ] 複数評価者・差分解消ルールが決まっているか
-- [ ] 4段階（偶数）評価になっているか
-- [ ] クライアントと評価基準をすり合わせたか
+| `frameworks/private-it-rfp.md` | RFP の問い |
+| `frameworks/vendor-delivery-model-gap-analysis.md` | 体制・工場・見積の作業モデルの食い違い |
+| `playbooks/private-it-rfp-vendor-selection.md` | 実行手順 |
+| `standards/vendor-key-person-interview.md` | 指名人材 |
+| `knowledge/patterns/scoring-vs-calibration.md` | 点差の扱い |
+| `knowledge/patterns/reproposal-as-uncertainty-reduction.md` | 一次の不明をコミットへ |
+| `standards/consulting-review.md` | 資料品質 |
+| `frameworks/program-phases-investigation-to-requirements.md` | 調査〜要件の前工程 |
+| `frameworks/public-it-procurement-support.md` | 官側。混ぜない |
+| `knowledge/lessons/author-voice-archetypes-legacy.md` | 提案評価・SteerComm の声 |

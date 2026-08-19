@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.17
+Version: v1.18
 
 ## Purpose
 
@@ -109,6 +109,10 @@ Focus:
 
 Load:
 - standards/vendor-proposal-evaluation.md
+- knowledge/patterns/scoring-vs-calibration.md
+- knowledge/patterns/reproposal-as-uncertainty-reduction.md (if first-stage gaps)
+- standards/vendor-key-person-interview.md (if named PM / key people)
+- playbooks/private-it-rfp-vendor-selection.md (if end-to-end selection)
 - standards/deliverable-archetypes.md (Archetype B)
 - standards/consulting-review.md
 - core/author-voice.md
@@ -117,16 +121,49 @@ Load:
 
 Focus:
 - Evaluation criteria design (rationale per scoring point)
-- Weighting and team assignment
+- Understanding / capability / credibility / estimate / contractability
+- Even-stage scoring; calibrate variance instead of averaging
 - Value-add definition
-- Multi-evaluator reconciliation
+- First vs second evaluation
 - Fair comparison across vendors
+
+Do not load public-procurement protest logic unless the engagement is buyer-side public sector.
 
 Outputs:
 - Evaluation sheet design
 - Scoring rationale
 - Gap / concern summary
-- Selection recommendation with evidence
+- Shortlist or selection recommendation with evidence
+
+---
+
+# Private IT RFP / Vendor Selection
+
+Load:
+- frameworks/private-it-rfp.md
+- frameworks/vendor-delivery-model-gap-analysis.md (if org / factory / estimate mismatch)
+- playbooks/private-it-rfp-vendor-selection.md
+- standards/vendor-proposal-evaluation.md
+- standards/vendor-key-person-interview.md
+- knowledge/patterns/scoring-vs-calibration.md
+- knowledge/patterns/reproposal-as-uncertainty-reduction.md
+- knowledge/patterns/estimate-target-commitment.md (if estimate integrity)
+- frameworks/program-phases-investigation-to-requirements.md (if requirement baseline is still open)
+- standards/requirements-document-outline.md (if requirement structure)
+
+Focus:
+- Buyer decisions before RFP issue
+- Confirmed vs variable vs intentionally open requirements
+- RFP questions that have an evaluation use
+- Staged uncertainty reduction, not a one-shot beauty contest
+- Re-proposal as commitment, not slide polish
+- Do not mix with statutory public procurement
+
+Outputs:
+- RFP structure / readiness gate
+- Evaluation pack
+- Shortlist, re-proposal questions, interview plan
+- Preferred-vendor recommendation without relying on total score alone
 
 ---
 

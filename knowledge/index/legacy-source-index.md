@@ -1,6 +1,6 @@
 # Legacy Source Index
 
-**Version:** v1.11  
+**Version:** v1.12  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** ローカル保管のレガシー原本と、リポジトリ内知識の対応索引。**原本の中身は含まない。**
@@ -27,8 +27,10 @@
 | `RP20030602-01_…(一次評価)結果.ppt` | 評価結果 | `vendor-proposal-evaluation.md`, Archetype B |
 | `wk20030624-06_…(二次評価)報告.ppt` | 評価報告 | `vendor-proposal-evaluation.md` §Evaluation Process |
 | `RP20030625-04_第4回SteeComm資料.ppt` | SteerComm | `deliverable-archetypes.md` Archetype C |
-| `MM20030514-01_評価シートチェック.doc` | 評価設計議事 | `vendor-proposal-evaluation.md`（全章） |
-| `RFP/RFP/RFP結合版-取引会計*.doc` | RFP本文 | **未登録**（機密）。`requirements-document-outline.md` Appendix Map のみ |
+| `MM20030514-01_評価シートチェック.doc` | 評価設計議事 | `vendor-proposal-evaluation.md`（全章）、`scoring-vs-calibration.md` |
+| `WK20030515-04_開発会社提案評価シート.xls` | 評価シート | `vendor-proposal-evaluation.md` 二層・枠定義。点数・社名は不登録 |
+| `WK20030605-04_PM面接チェックシート.xls` | PM面接 | `vendor-key-person-interview.md`。人名は不登録 |
+| `RFP/RFP/RFP結合版-取引会計*.doc` | RFP本文 | **未登録**（機密）。構造は `frameworks/private-it-rfp.md`。Appendix Map のみ `requirements-document-outline.md` |
 | `RFP/RFP/RFP結合版-人事*.doc` | RFP本文 | **未登録**（機密） |
 | `RFP/Appendices/AP_AC*.ppt/xls` | 業務Appendix | `requirements-document-outline.md` §AC category |
 | `RFP/Appendices/AP_IF*.xls` | 連携Appendix | `requirements-document-outline.md` §IF category |
@@ -330,7 +332,13 @@
 
 | 知識ファイル | 優先度 | 状態 |
 |-------------|--------|------|
-| `vendor-proposal-evaluation.md` | 高 | ✅ 登録済 |
+| `vendor-proposal-evaluation.md` | 高 | ✅ 登録済（2026-08-19 v1.1） |
+| `private-it-rfp.md` | 高 | ✅ 登録済（2026-08-19） |
+| `vendor-delivery-model-gap-analysis.md` | 中 | ✅ 登録済（2026-08-19） |
+| `private-it-rfp-vendor-selection.md` | 高 | ✅ 登録済（2026-08-19） |
+| `vendor-key-person-interview.md` | 高 | ✅ 登録済（2026-08-19） |
+| `scoring-vs-calibration.md` | 中 | ✅ 登録済（2026-08-19） |
+| `reproposal-as-uncertainty-reduction.md` | 中 | ✅ 登録済（2026-08-19） |
 | `program-phases-investigation-to-requirements.md` | 高 | ✅ 登録済 |
 | `author-voice-archetypes-legacy.md` | 高 | ✅ 登録済 |
 | `deliverable-archetypes.md` | 中 | ✅ 登録済（Archetype G 2026-08-13） |

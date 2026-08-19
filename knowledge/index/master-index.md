@@ -1,6 +1,6 @@
 # Knowledge Master Index
 
-**Version:** v1.7  
+**Version:** v1.8  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
@@ -70,15 +70,15 @@ kazuaki-tanaka-ai-os/
 ├── ARCHITECTURE.md             ← structural blueprint
 ├── CONTEXT_ROUTING.md          ← task-based context selection
 ├── core/                       ← 8 files (kernel)
-├── standards/                  ← 18 files (quality criteria)
-├── frameworks/                 ← 28 files + thinking-patterns/
-├── playbooks/                  ← 10 playbooks (+ README)
+├── standards/                  ← 19 files (quality criteria)
+├── frameworks/                 ← 30 files + thinking-patterns/
+├── playbooks/                  ← 11 playbooks (+ README)
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
-│   ├── patterns/               ← 21 distilled patterns
+│   ├── patterns/               ← 23 distilled patterns
 │   ├── lessons/                ← 5 lessons
-│   ├── migrations/             ← 17 migration reports
+│   ├── migrations/             ← 18 migration reports
 │   └── decisions/              ← 4 records
 ├── templates/                  ← 1 template
 ├── prompts/                    ← README placeholder
@@ -137,7 +137,7 @@ Do not split yet.
 
 ---
 
-## Level 3 — Standards (18)
+## Level 3 — Standards (19)
 
 Grouped by domain for navigation:
 
@@ -147,7 +147,8 @@ standards/
 │   ├── consulting-review.md
 │   ├── strategy-engagement-guide.md
 │   ├── it-strategy-engagement-guide.md
-│   └── vendor-proposal-evaluation.md
+│   ├── vendor-proposal-evaluation.md
+│   └── vendor-key-person-interview.md
 ├── Deliverables & documents
 │   ├── deliverable-archetypes.md
 │   ├── requirements-document-outline.md
@@ -171,7 +172,7 @@ standards/
 
 ---
 
-## Level 3 — Frameworks (28 + thinking patterns)
+## Level 3 — Frameworks (30 + thinking patterns)
 
 ```text
 frameworks/
@@ -213,6 +214,9 @@ frameworks/
 │   └── delivery-leadership.md
 ├── Public IT procurement (buyer)
 │   └── public-it-procurement-support.md
+├── Private IT RFP (buyer)
+│   ├── private-it-rfp.md
+│   └── vendor-delivery-model-gap-analysis.md
 ├── ERP / SAP
 │   └── sap-implementation-phase-model.md
 └── principles.md                     ← framework-layer principles
@@ -257,7 +261,8 @@ knowledge/
 │   ├── sisa-sidl-dma-2026-08.md
 │   ├── public-defense-2026-08.md
 │   ├── azure-enterprise-2026-08.md
-│   └── ai-playbooks-2026-08.md
+│   ├── ai-playbooks-2026-08.md
+│   └── private-it-rfp-2026-08.md
 └── decisions/
     ├── diagnose-from-gateway-not-client-error.md
     ├── sandbox-cost-controls-before-resources.md
@@ -265,7 +270,7 @@ knowledge/
     └── buyer-owns-ai-poc-ground-truth.md
 ```
 
-### Patterns (21)
+### Patterns (23)
 
 | Pattern | Primary themes |
 |---------|----------------|
@@ -277,6 +282,8 @@ knowledge/
 | `transition-vs-transformation-vs-realization.md` | Introduction / transition / transformation / realization |
 | `estimate-target-commitment.md` | Estimate ≠ target ≠ commitment; work is the work |
 | `buyer-vs-seller-in-public-procurement.md` | Public IT: buyer fairness vs seller bid |
+| `scoring-vs-calibration.md` | Score makes judgment visible; calibration makes it reliable |
+| `reproposal-as-uncertainty-reduction.md` | Re-proposal converts uncertainty into commitment |
 | `expertise-amplification.md` | AI amplifies experts |
 | `organizational-memory.md` | Intelligence vs organizational memory; decision context |
 | `exception-as-memory-entry.md` | Exceptions as memory entry; capture at deviation |
@@ -305,6 +312,7 @@ playbooks/
 ├── offering-review.md
 ├── responsible-ai-assessment.md
 ├── rag-structure-diagnosis.md
+├── private-it-rfp-vendor-selection.md
 ├── interim-connectivity.md
 ├── private-api-connectivity-diagnosis.md
 └── azure-sandbox-cost-guard.md
@@ -553,6 +561,26 @@ CONTEXT_ROUTING.md  →  AI Adoption, AI PoC, Offering, RAI, Technology
 
 ---
 
+### N. Private IT RFP and vendor selection (Program Line A, 2026-08 refresh)
+
+```text
+Local 2002–2003 RFP / evaluation originals + generalized MD drafts — body not archived
+        ↓ generalize (no RFP text, scores, yen, vendor names)
+frameworks/private-it-rfp.md
+frameworks/vendor-delivery-model-gap-analysis.md
+playbooks/private-it-rfp-vendor-selection.md
+standards/vendor-proposal-evaluation.md (v1.1)
+standards/vendor-key-person-interview.md
+knowledge/patterns/scoring-vs-calibration.md
+knowledge/patterns/reproposal-as-uncertainty-reduction.md
+        ↓ record
+knowledge/migrations/private-it-rfp-2026-08.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  Private IT RFP / Vendor Selection
+```
+
+---
+
 ## Level 4 — CONTEXT_ROUTING Task Map (summary)
 
 Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
@@ -570,6 +598,7 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | Responsible AI assessment | `playbooks/responsible-ai-assessment.md`, `human-oversight.md`, `decision-ownership.md` |
 | Energy / utilities | `domains/energy-utilities.md`, `operational-reality.md`, `requirements-artifact-review.md` (if requirements) |
 | Public sector / defense IT | `domains/public-defense.md`, `public-it-procurement-support.md` (if buyer), `buyer-vs-seller-in-public-procurement.md` |
+| Private IT RFP / vendor selection | `frameworks/private-it-rfp.md`, `playbooks/private-it-rfp-vendor-selection.md`, `vendor-proposal-evaluation.md`, calibration / re-proposal patterns |
 | Application outsourcing / AMS | `application-outsourcing-solution-planning.md`, `ams-services-pyramid.md`, `service-transition-approach.md`, `ams-solution-plan-checklist.md` |
 | Infrastructure outsourcing / ITO | `infrastructure-outsourcing-solution-planning.md`, `transition-vs-transformation-vs-realization.md` |
 | Systems integration / SI proposal | `systems-integration-solution-planning.md`, `estimate-target-commitment.md` |

@@ -87,6 +87,17 @@ Pairs with `knowledge/patterns/estimate-target-commitment.md`.
 
 ---
 
+## Private IT RFP (buyer)
+
+| File | Focus |
+|------|--------|
+| `private-it-rfp.md` | What the buyer must decide vs what the vendor must reason; RFP ≠ detailed spec |
+| `vendor-delivery-model-gap-analysis.md` | Proposed delivery model vs the work the estimate and constraints imply |
+
+Pairs with `playbooks/private-it-rfp-vendor-selection.md` and `standards/vendor-proposal-evaluation.md`. Do not substitute for public procurement.
+
+---
+
 ## Public sector procurement (buyer)
 
 | File | Focus |

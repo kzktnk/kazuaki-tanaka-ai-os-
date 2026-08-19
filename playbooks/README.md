@@ -5,6 +5,7 @@ Step-by-step execution methods for recurring work. See `ARCHITECTURE.md` §6.6.
 | File | Use when |
 |------|----------|
 | `wbs-design.md` | Decompose work from deliverables, not from a task list |
+| `private-it-rfp-vendor-selection.md` | Private-enterprise RFP issue through preferred vendor and contract handoff |
 | `ai-work-before-after.md` | Field story: same process left/right; humans keep the decision |
 | `ai-utilization-roadmap.md` | Multi-year AI roadmap from capability, not from a use-case list |
 | `ai-poc-quality-review.md` | Buyer-side RAG / genAI PoC: ground truth, layers, Go/No-Go |
