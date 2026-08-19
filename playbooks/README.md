@@ -5,6 +5,7 @@ Step-by-step execution methods for recurring work. See `ARCHITECTURE.md` §6.6.
 | File | Use when |
 |------|----------|
 | `wbs-design.md` | Decompose work from deliverables, not from a task list |
+| `pmo-function-standup.md` | PMO rules exist; quality/site progress are still table of contents |
 | `private-it-rfp-vendor-selection.md` | Private-enterprise RFP issue through preferred vendor and contract handoff |
 | `ai-work-before-after.md` | Field story: same process left/right; humans keep the decision |
 | `ai-utilization-roadmap.md` | Multi-year AI roadmap from capability, not from a use-case list |

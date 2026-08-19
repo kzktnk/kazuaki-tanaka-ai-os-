@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.18
+Version: v1.20
 
 ## Purpose
 
@@ -340,6 +340,7 @@ Load:
 - standards/pmo-operating-guide.md (if PMO design or assessment is in scope)
 - standards/scn-creation-guide.md (if SCN workshop or map is in scope)
 - frameworks/transformation-roadmap.md
+- knowledge/patterns/borrowed-operating-model-must-fit.md (if copying another firm's process)
 - Relevant domains
 - Relevant technology
 
@@ -357,6 +358,9 @@ Outputs:
 
 Load:
 - frameworks/transformation-pmo.md
+- playbooks/pmo-function-standup.md (if the office exists on paper but not in operation)
+- knowledge/patterns/hybrid-talent-in-transformation.md (if the program has no people who can redesign work)
+- knowledge/patterns/multi-year-transformation-sequence.md (if strategy, HR, systems, and purchasing are split across years)
 - frameworks/change-management.md (if people-side design, not only PMO ownership)
 - standards/pmo-operating-guide.md
 - knowledge/lessons/pmo-professional-principles.md
@@ -383,6 +387,65 @@ Outputs:
 - Program roadmap and scenario
 - RACI / steering structure
 - Gap summary for executive decisions
+- Standup sequence (rules → pilot → people) when the office is being created
+
+---
+
+# DX Grand Design
+
+Load:
+- frameworks/dx-grand-design.md
+- frameworks/transformation-roadmap.md
+- frameworks/change-management.md
+- knowledge/patterns/hybrid-talent-in-transformation.md (if reform will not stick)
+- domains/public-defense.md (if the sponsor is a public / research body — buyer constraints only)
+
+Focus:
+- Next-year execution needs a promotion system this year
+- Compound causes: understanding/silos, unvalued contribution, HR practice
+- Do not treat a slogan pack as a grand design
+
+Outputs:
+- Structured issues
+- Promotion operating sketch
+- Boundary of what next year will actually change
+
+---
+
+# New Venture Assessment
+
+Load:
+- frameworks/new-venture-three-track-assessment.md
+- frameworks/consulting-strategy-process.md (if problem / options are still mushy)
+- standards/strategy-engagement-guide.md (if scoping)
+
+Focus:
+- Market scenario, technology constraint, and firm-fit in parallel
+- Do not let a thick tech pack substitute for commercialization
+- Do not copy another firm's development coalition
+
+Outputs:
+- Three-track findings with unresolved contradictions kept visible
+- Conditional go / no-go language, not a single TAM slide
+
+---
+
+# B2B Sales Workflow Reform
+
+Load:
+- knowledge/patterns/sales-capacity-via-center-functions.md
+- frameworks/operating-model.md
+- frameworks/change-management.md
+- playbooks/offering-review.md (if the pitch confuses To-Be, mechanism, PMO, and change)
+
+Focus:
+- Center functions free seller time; CRM/AI sit on a workflow
+- Future-state β before program/KPI
+- Lost-bid method may be reusable; lost-bid gossip is not knowledge
+
+Outputs:
+- Center-function sketch
+- Envision → β → program outline
 
 ---
 
@@ -391,6 +454,7 @@ Outputs:
 Load:
 - frameworks/change-management.md
 - knowledge/patterns/all-at-once-vs-stepwise-change.md
+- knowledge/patterns/ai-coe-vs-pgmo-vs-change.md (if the change is AI adoption, not a system cutover)
 - standards/pmo-operating-guide.md (§Change Management Operating Standard)
 - frameworks/transformation-pmo.md (if program-owned change)
 - knowledge/patterns/platform-build-vs-enablement.md (if platform / data adoption)
@@ -458,6 +522,7 @@ Load:
 - knowledge/lessons/dual-roadmap-messaging.md (if executive audience)
 - playbooks/ai-utilization-roadmap.md (if building or reviewing the roadmap pack)
 - playbooks/ai-work-before-after.md (if field Before / After)
+- knowledge/patterns/ai-coe-vs-pgmo-vs-change.md (if CoE / PgMO / Change are being mixed)
 - standards/consulting-review.md (if deliverable review)
 
 Focus:
@@ -466,12 +531,35 @@ Focus:
 - Role × phase maturity and HR triggers
 - Authority design by phase
 - Executive vs internal messaging
+- CoE vs AI PgMO vs Change as three offices (`knowledge/patterns/ai-coe-vs-pgmo-vs-change.md`)
 
 Outputs:
 - Adoption roadmap narrative
 - Initiative prioritization and sync rules
 - Role maturity and enablement plan (draft)
 - Workshop or proposal sections on DX / AI change
+
+---
+
+# AI CoE / AI PgMO / AI Change
+
+Load:
+- knowledge/patterns/ai-coe-vs-pgmo-vs-change.md
+- frameworks/ai-management-office.md
+- frameworks/transformation-pmo.md
+- frameworks/change-management.md
+- playbooks/offering-review.md (if the three are sold as one blur)
+- playbooks/pmo-function-standup.md (if the program office is paper-only)
+
+Focus:
+- Three functions; weight shifts by phase
+- Central CoE then hybrid return to the line
+- Program value vs project QCD; strategy before a PoC portfolio
+- AI change ≠ ERP change
+
+Outputs:
+- Interface sketch among CoE, PgMO, Change
+- What not to fold into one “AI PMO”
 
 ---
 

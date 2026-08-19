@@ -1,10 +1,10 @@
 # Knowledge Master Index
 
-**Version:** v1.8  
+**Version:** v1.10  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
-**Last updated:** 2026-08-19
+**Last updated:** 2026-08-20
 
 ---
 
@@ -71,14 +71,14 @@ kazuaki-tanaka-ai-os/
 ├── CONTEXT_ROUTING.md          ← task-based context selection
 ├── core/                       ← 8 files (kernel)
 ├── standards/                  ← 19 files (quality criteria)
-├── frameworks/                 ← 30 files + thinking-patterns/
-├── playbooks/                  ← 11 playbooks (+ README)
+├── frameworks/                 ← 33 files + thinking-patterns/
+├── playbooks/                  ← 12 playbooks (+ README)
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
-│   ├── patterns/               ← 23 distilled patterns
+│   ├── patterns/               ← 28 distilled patterns
 │   ├── lessons/                ← 5 lessons
-│   ├── migrations/             ← 18 migration reports
+│   ├── migrations/             ← 20 migration reports
 │   └── decisions/              ← 4 records
 ├── templates/                  ← 1 template
 ├── prompts/                    ← README placeholder
@@ -172,7 +172,7 @@ standards/
 
 ---
 
-## Level 3 — Frameworks (30 + thinking patterns)
+## Level 3 — Frameworks (33 + thinking patterns)
 
 ```text
 frameworks/
@@ -194,13 +194,15 @@ frameworks/
 │   ├── it-strategy-foundations.md
 │   ├── strategic-capability-network.md
 │   ├── top-down-thinking.md
-│   └── decision-velocity.md
+│   ├── decision-velocity.md
+│   └── new-venture-three-track-assessment.md
 ├── Transformation & operating model
 │   ├── operating-model.md
 │   ├── capability-model.md
 │   ├── maturity-model.md
 │   ├── transformation-roadmap.md
 │   ├── transformation-pmo.md
+│   ├── dx-grand-design.md
 │   ├── change-management.md
 │   └── program-phases-investigation-to-requirements.md
 ├── Application outsourcing / AMS
@@ -237,7 +239,7 @@ knowledge/
 │       ├── 001–020/                  ← Operational AI main series
 │       ├── sp01–sp09/                ← special posts
 │       └── erf01–erf03/              ← Enterprise Redesign Framework
-├── patterns/                         ← 21 files (see table below)
+├── patterns/                         ← 28 files (see table below)
 ├── lessons/
 │   ├── governance-messaging.md
 │   ├── dual-roadmap-messaging.md
@@ -262,7 +264,9 @@ knowledge/
 │   ├── public-defense-2026-08.md
 │   ├── azure-enterprise-2026-08.md
 │   ├── ai-playbooks-2026-08.md
-│   └── private-it-rfp-2026-08.md
+│   ├── private-it-rfp-2026-08.md
+│   ├── enterprise-engagements-2013-2023-2026-08.md
+│   └── pgmo-ai-change-2026-08.md
 └── decisions/
     ├── diagnose-from-gateway-not-client-error.md
     ├── sandbox-cost-controls-before-resources.md
@@ -270,7 +274,7 @@ knowledge/
     └── buyer-owns-ai-poc-ground-truth.md
 ```
 
-### Patterns (23)
+### Patterns (28)
 
 | Pattern | Primary themes |
 |---------|----------------|
@@ -284,6 +288,11 @@ knowledge/
 | `buyer-vs-seller-in-public-procurement.md` | Public IT: buyer fairness vs seller bid |
 | `scoring-vs-calibration.md` | Score makes judgment visible; calibration makes it reliable |
 | `reproposal-as-uncertainty-reduction.md` | Re-proposal converts uncertainty into commitment |
+| `hybrid-talent-in-transformation.md` | Knowledge + design + action; train in the program |
+| `borrowed-operating-model-must-fit.md` | Peer L2 flows copy only if the business model matches |
+| `multi-year-transformation-sequence.md` | Strategy→people→system; delay ≠ missing executive information |
+| `sales-capacity-via-center-functions.md` | B2B productivity from centers, not from CRM slogans |
+| `ai-coe-vs-pgmo-vs-change.md` | CoE, AI PgMO, and Change are three offices; AI change ≠ ERP |
 | `expertise-amplification.md` | AI amplifies experts |
 | `organizational-memory.md` | Intelligence vs organizational memory; decision context |
 | `exception-as-memory-entry.md` | Exceptions as memory entry; capture at deviation |
@@ -313,6 +322,7 @@ playbooks/
 ├── responsible-ai-assessment.md
 ├── rag-structure-diagnosis.md
 ├── private-it-rfp-vendor-selection.md
+├── pmo-function-standup.md
 ├── interim-connectivity.md
 ├── private-api-connectivity-diagnosis.md
 └── azure-sandbox-cost-guard.md
@@ -581,6 +591,42 @@ CONTEXT_ROUTING.md  →  Private IT RFP / Vendor Selection
 
 ---
 
+### O. Multi-year enterprise engagements (Program Line S)
+
+```text
+Local 2013–2023 engagement folders — not archived
+        ↓ generalize (no client names, yen, specs, bid bodies, media)
+playbooks/pmo-function-standup.md
+frameworks/dx-grand-design.md
+frameworks/new-venture-three-track-assessment.md
+knowledge/patterns/hybrid-talent-in-transformation.md
+knowledge/patterns/borrowed-operating-model-must-fit.md
+knowledge/patterns/multi-year-transformation-sequence.md
+knowledge/patterns/sales-capacity-via-center-functions.md
+        ↓ record
+knowledge/migrations/enterprise-engagements-2013-2023-2026-08.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  Transformation PMO, DX Grand Design, New Venture, B2B Sales WF
+```
+
+---
+
+### P. AI CoE / PgMO / Change split (2026 method notes)
+
+```text
+Local 2026 method deck + 2016–2018 change-plan structure — not archived
+        ↓ generalize (no TCV, names, org charts, plan body)
+knowledge/patterns/ai-coe-vs-pgmo-vs-change.md
+frameworks/ai-management-office.md (v1.1)
+frameworks/change-management.md (v1.1)
+        ↓ record
+knowledge/migrations/pgmo-ai-change-2026-08.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  AI CoE / AI PgMO / AI Change, Change Management, AI Adoption
+```
+
+---
+
 ## Level 4 — CONTEXT_ROUTING Task Map (summary)
 
 Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
@@ -589,9 +635,12 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 |------|----------------|
 | Proposal review | `standards/consulting-review.md`, `deliverable-archetypes.md`, `writing.md` |
 | IT strategy | `frameworks/it-strategy-foundations.md`, `standards/it-strategy-engagement-guide.md` |
-| PMO / transformation | `frameworks/transformation-pmo.md`, `standards/pmo-operating-guide.md`, `frameworks/change-management.md` |
+| PMO / transformation | `frameworks/transformation-pmo.md`, `playbooks/pmo-function-standup.md`, `standards/pmo-operating-guide.md`, `frameworks/change-management.md` |
+| DX grand design | `frameworks/dx-grand-design.md`, change / roadmap as needed |
+| New venture assessment | `frameworks/new-venture-three-track-assessment.md` |
+| B2B sales workflow | `knowledge/patterns/sales-capacity-via-center-functions.md` |
 | Change management | `frameworks/change-management.md`, `all-at-once-vs-stepwise-change.md`, `pmo-operating-guide.md` §CM |
-| AI governance | `frameworks/ai-governability.md`, `decision-ownership.md`, `human-oversight.md`, related `patterns/` |
+| AI CoE / PgMO / Change | `knowledge/patterns/ai-coe-vs-pgmo-vs-change.md`, `ai-management-office.md`, `transformation-pmo.md`, `change-management.md` |
 | AI adoption / DX roadmap | `frameworks/ai-adoption-roadmap.md`, `playbooks/ai-utilization-roadmap.md`, `playbooks/ai-work-before-after.md` |
 | AI PoC quality (buyer) | `playbooks/ai-poc-quality-review.md`, `rag-structure-diagnosis.md`, `buyer-owns-ai-poc-ground-truth.md` |
 | Offering review | `playbooks/offering-review.md`, `change-management.md`, `transformation-pmo.md` |

@@ -11,6 +11,8 @@
 
 Define **Program Management Office (PMO)** as the governance layer that turns strategy into executed, integrated transformation — not merely project administration.
 
+Standup sequence when the office is on paper only: `playbooks/pmo-function-standup.md`.
+
 Use this framework when:
 
 - Multiple projects must deliver a single strategic outcome
@@ -228,6 +230,7 @@ Program PMO owns **enterprise-level** change; pmo often focuses on **project sta
 | `frameworks/transformation-roadmap.md` | Roadmap phases; PMO operationalizes portfolio and program timing |
 | `frameworks/operating-model.md` | Target operating model; PMO drives adoption and transition |
 | `frameworks/change-management.md` | Readiness, change strategy, commitment and communication design |
+| `knowledge/patterns/ai-coe-vs-pgmo-vs-change.md` | AI: program office is not CoE and not change |
 | `frameworks/thinking-patterns/pattern-02-as-is-gap-to-be.md` | Gap analysis feeds program planning and portfolio |
 | `knowledge/lessons/pmo-professional-principles.md` | Consultant posture and professional rules |
 

@@ -1,6 +1,6 @@
 # Legacy Source Index
 
-**Version:** v1.12  
+**Version:** v1.14  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** ローカル保管のレガシー原本と、リポジトリ内知識の対応索引。**原本の中身は含まない。**
@@ -261,6 +261,36 @@
 
 ---
 
+## Program Line S: 多年民間／公共隣接案件（2013–2023、一般化のみ）
+
+原本はローカル Downloads。社名・円・仕様・人名・現行入札本文は不登録。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| 製造業 ERP／改革の PMO 立ち上げ資料 | `playbooks/pmo-function-standup.md`, `knowledge/patterns/hybrid-talent-in-transformation.md` | 規定が目次止まり、パイロット先行、知識×発想×行動。期番号・育成件数は不登録 |
+| 公共・研究機関の DX グランドデザイン成果 | `frameworks/dx-grand-design.md` | 理解差・リソース評価・人事慣行の複合。機関名・人名不登録 |
+| 法人営業 WF 改革提案（失注） | `knowledge/patterns/sales-capacity-via-center-functions.md` | センター機能と β 先行。失注事情・社名不登録 |
+| 新規デバイス事業性／技術アセス | `frameworks/new-venture-three-track-assessment.md` | 市場シナリオ×技術×自社適合。製品仕様・他社インタビュー不登録 |
+| 収益認識／オファリング／価格・購買 WS | `knowledge/patterns/borrowed-operating-model-must-fit.md` | 事業モデル差。会計数値・参照他社フロー実体は不登録 |
+| 多年：戦略→実行→CX→コスト→人事→文化→システム→購買 | `knowledge/patterns/multi-year-transformation-sequence.md` | 順序と「遅延≠経営情報」。地域・原価比不登録 |
+| リスク管理枠組みの制度運用支援（申請・計画）公告・提案・要員計画 | **未登録** | 現行入札。`domains/public-defense.md` の原則のみ既存 |
+| 動画（`.qt`） | **未登録** | メディア。判断の一般化対象外 |
+
+---
+
+## Program Line T: PgMO / AI CoE / Change の役割分担（2026 手法＋2016–2018 計画の型）
+
+原本はローカル。パイプライン金額、社名、計画本文、組織図、人名は不登録。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| 2026 PgMO & Change 8枚（パイプライン／案件矢印） | **未登録** | 手法ではない。TCV・アカウント名を知識にしない |
+| 2026 AI CoE / AI PgMO / AI Change 方法ノート | `knowledge/patterns/ai-coe-vs-pgmo-vs-change.md`, `frameworks/ai-management-office.md` | 三機能、フェーズ比重、中央→ハイブリッド、AI CM≠ERP。統計％・事例名・連絡先不登録 |
+| 規制産業の変革推進計画（2016、本文） | `frameworks/change-management.md` §4 | 計画の位置づけとサイクルのみ。本文・組織・人数不登録 |
+| CM 手法概要＋検討会設計（2018） | 同上 §4 | 層×フェーズ課題、受容度目標つきセッション、指揮系統。適用先社名・分刻み表不登録 |
+
+---
+
 ## Program Line G: IT Strategy Foundations (legacy consulting, 2002)
 
 | ローカル原本（例） | 種別 | 抽出先（リポジトリ） |
@@ -366,7 +396,7 @@
 | `requirements-artifact-review.md` | 高 | ✅ 登録済（2026-08-19） |
 | `experience-before-scope.md` | 中 | ✅ 登録済（2026-08-19） |
 | `platform-build-vs-enablement.md` | 中 | ✅ 登録済（2026-08-19） |
-| `change-management.md` | 高 | ✅ 登録済（2026-08-19） |
+| `change-management.md` | 高 | ✅ 登録済（2026-08-19）、v1.1 計画の型（2026-08-20） |
 | `all-at-once-vs-stepwise-change.md` | 中 | ✅ 登録済（2026-08-19） |
 | `infrastructure-outsourcing-solution-planning.md` | 高 | ✅ 登録済（2026-08-19） |
 | `transition-vs-transformation-vs-realization.md` | 中 | ✅ 登録済（2026-08-19） |
@@ -390,6 +420,14 @@
 | `interim-connectivity.md` | 中 | ✅ 登録済（2026-08-19） |
 | `interim-connectivity-is-not-the-target.md` | 中 | ✅ 登録済（2026-08-19） |
 | `buyer-owns-ai-poc-ground-truth.md` | 中 | ✅ 登録済（2026-08-19） |
+| `pmo-function-standup.md` | 高 | ✅ 登録済（2026-08-20） |
+| `dx-grand-design.md` | 高 | ✅ 登録済（2026-08-20） |
+| `new-venture-three-track-assessment.md` | 中 | ✅ 登録済（2026-08-20） |
+| `hybrid-talent-in-transformation.md` | 中 | ✅ 登録済（2026-08-20） |
+| `borrowed-operating-model-must-fit.md` | 中 | ✅ 登録済（2026-08-20） |
+| `multi-year-transformation-sequence.md` | 高 | ✅ 登録済（2026-08-20） |
+| `sales-capacity-via-center-functions.md` | 中 | ✅ 登録済（2026-08-20） |
+| `ai-coe-vs-pgmo-vs-change.md` | 高 | ✅ 登録済（2026-08-20） |
 
 ---
 

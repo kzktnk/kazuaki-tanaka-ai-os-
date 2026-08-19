@@ -169,6 +169,7 @@ Generalized messaging patterns: `knowledge/lessons/dual-roadmap-messaging.md`.
 - `frameworks/ai-role-maturity.md`
 - `frameworks/ai-governability.md`
 - `frameworks/ai-management-office.md`
+- `knowledge/patterns/ai-coe-vs-pgmo-vs-change.md`
 - `knowledge/patterns/organizational-memory.md`
 - `knowledge/patterns/exception-as-memory-entry.md`
 - `knowledge/patterns/connected-organizational-memory.md`

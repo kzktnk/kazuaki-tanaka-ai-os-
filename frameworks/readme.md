@@ -16,7 +16,7 @@ Full catalog and cross-links: [`knowledge/index/master-index.md`](../knowledge/i
 | `decision-ownership.md` | Decision ownership vs execution |
 | `human-oversight.md` | Oversight aligned to authority and risk |
 | `governance-operating-model.md` | Governance as operating capability |
-| `ai-management-office.md` | AI CoE and Initiative C operating structure |
+| `ai-management-office.md` | AI CoE and Initiative C operating structure (vs PgMO vs Change: pattern) |
 
 ---
 
@@ -29,6 +29,7 @@ Full catalog and cross-links: [`knowledge/index/master-index.md`](../knowledge/i
 | `strategic-capability-network.md` | SCN / capability network |
 | `top-down-thinking.md` | Top-down problem structuring |
 | `decision-velocity.md` | Speed vs quality in decisions |
+| `new-venture-three-track-assessment.md` | Market scenario × technology × firm-fit |
 
 ---
 
@@ -41,7 +42,8 @@ Full catalog and cross-links: [`knowledge/index/master-index.md`](../knowledge/i
 | `maturity-model.md` | Maturity assessment |
 | `transformation-roadmap.md` | Transformation roadmap |
 | `transformation-pmo.md` | Transformation PMO |
-| `change-management.md` | Readiness, change strategy, commitment |
+| `dx-grand-design.md` | DX promotion system before next-year reform |
+| `change-management.md` | Readiness, change strategy, commitment; living change-plan structure |
 | `program-phases-investigation-to-requirements.md` | Program phases (investigation → requirements) |
 
 ---

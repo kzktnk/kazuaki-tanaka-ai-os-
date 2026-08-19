@@ -1,9 +1,9 @@
 # Change Management Framework
 
-**Version:** v1.0  
+**Version:** v1.1  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
-**Origin:** Generalized from legacy Strategic Change / LPD Change Management training (c. 2001–2003). Japanese slide text in source `.ppt` was not recoverable; English structure recovered. Client cases and vendor diagnostic catalogues are **not** registered.
+**Origin:** Generalized from legacy Strategic Change / LPD Change Management training (c. 2001–2003), plus later change-plan / workshop method (structure only). Japanese slide text in early `.ppt` was not recoverable; English structure recovered. Client cases, org charts, plan body, and vendor catalogues are **not** registered.
 
 ---
 
@@ -140,7 +140,65 @@ Quick wins belong in the emotional curve (confusion → discouragement → **qui
 
 ---
 
-## 4. Relationship to other OS assets
+## 4. Change plan as a living artifact (structure, not body)
+
+A **変革推進計画** is not the communication calendar. It is the file that:
+
+- sits in **project preparation**, then is updated through the program
+- is the **premise** for unit-level communication plans
+- states purpose: raise and keep **acceptance** via stakeholder management and communication, for the **whole duration**, linked to other workstreams
+
+Minimum contents (names may vary):
+
+1. Placement of this plan vs business design / system design  
+2. Purpose and non-purpose  
+3. Scope (who must understand)  
+4. How CM will run  
+5. Stakeholder management  
+6. Communication management  
+
+### Operating cycle
+
+```text
+acceptance survey → plan → execute → update / detail
+```
+
+Do not freeze the plan at kickoff. Survey is not a score to file; it feeds the next cycle.
+
+### Stakeholder then communication
+
+Stakeholder work before channel work:
+
+| Step | Stakeholder | Communication |
+|------|-------------|----------------|
+| 1 | Define and classify (org, then person) | Strategy: who needs what, given impact and opposition |
+| 2 | Analyze (influence × acceptance; culture of related units) | Plan: channel mix, owner, timing vs milestones |
+| 3 | Scenario for the critical few | Execute and evaluate |
+| 4 | Execute and evaluate | Feed back into the plan |
+
+Influence × acceptance maps belong in the working file, **not** in the OS. Named people, headcount, and org charts stay local.
+
+**Business-impact first.** Package / process issues are structured with the business integration lead; CM turns **impact that must be explained** into communications. CM does not invent the To-Be.
+
+For a sales or field organization meeting its **first package** plus a long-lived core replacement, tell **process and system together**. Process-only or system-only briefings produce rejection from current-work assumptions.
+
+Acceptance in a headquarters function often needs **top-down and bottom-up**; top-down is usually the scarce one. Equalize understanding **inside each group** before cross-group argument.
+
+### Workshop series (when the plan must be built with the line)
+
+If leaders must own the change, do not only broadcast. A multi-month series can target a **rising acceptance goal per cycle**. Each session: current → should-be → gap → **action plan**. Do not end on open discussion. Themes are for participants to **think**, not for the consultant to perform.
+
+Typical issues by **phase × layer** (conceive / plan / execute × executive / middle / field): thin crisis sense at the top; plans that do not match the field; middle treating current as correct; field left to run the project. Counter with a visible change regime, stakeholder acceptance, and barrier analysis — then the workstreams in §3.
+
+### Four headwinds
+
+Design the approach against: **inertia**, **effort / vagueness**, **emotion / threat**, **psychological push-back**. Early: small core (sponsor, opinion leaders). Then drop into the **normal line of command**. A project office cannot scale to the whole workforce by itself.
+
+AI-specific change (incomplete models, ethics, shadow tools, HITL) is `knowledge/patterns/ai-coe-vs-pgmo-vs-change.md`. Do not treat genAI rollout as another ERP cutover.
+
+---
+
+## 5. Relationship to other OS assets
 
 | Asset | Relationship |
 |-------|----------------|
@@ -150,16 +208,19 @@ Quick wins belong in the emotional curve (confusion → discouragement → **qui
 | `experience-before-scope.md` | Customer DX: experience before features — same “don’t start from the system” instinct |
 | `authority-levels.md` | Transfer of commitment requires transfer of decision rights |
 | `ai-role-maturity.md` | People roadmap is CM sequenced to technology, not a training catalogue |
+| `ai-coe-vs-pgmo-vs-change.md` | CoE, AI PgMO, and AI change are three functions; AI change ≠ ERP change |
 | `energy-utilities.md` | Group CX / plant autonomy: strategy, analysis, and decision rights must travel together |
 
 ---
 
 ## Do not register from source
 
-- Named client cases (life sciences, auto, etc.)  
+- Named client cases (life sciences, auto, utilities, etc.)  
 - Ice-breaker personality quizzes  
 - Vendor tool catalogues (culture inventories, MBTI, branded “change pro” suites)  
-- Full training-factory WBS (EPSS, train-the-trainer shops) — keep only “enablement is a workstream”
+- Full training-factory WBS (EPSS, train-the-trainer shops) — keep only “enablement is a workstream”  
+- Full 変革推進計画 body, stakeholder maps with names, unit headcount, channel calendars  
+- Vendor % claims and overnight workshop minute-by-minute schedules
 
 ---
 
@@ -167,5 +228,6 @@ Quick wins belong in the emotional curve (confusion → discouragement → **qui
 
 - `standards/pmo-operating-guide.md`
 - `frameworks/transformation-pmo.md`
-- `knowledge/index/legacy-source-index.md` Program Line L
+- `knowledge/index/legacy-source-index.md` Program Line L, Program Line T
 - `knowledge/migrations/change-management-2026-08.md`
+- `knowledge/migrations/pgmo-ai-change-2026-08.md`

@@ -1,9 +1,9 @@
 # AI Management Office Framework
 
-**Version:** v1.0  
+**Version:** v1.1  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
-**Origin:** Generalized from AI adoption foundation (Initiative C) — organization, process, and technology enablement.
+**Origin:** Generalized from AI adoption foundation (Initiative C) — organization, process, and technology enablement. CoE vs PgMO vs Change phase-shift from later method notes (no vendor catalogue).
 
 ---
 
@@ -61,6 +61,10 @@ Do not treat technology as the only pillar — Year 1 failures are usually proce
 | Typical home | Digital / IT + business sponsors | Transformation or PMO |
 
 Both may exist; clarify interfaces so AI pilots are not orphaned between project PMs and enterprise AI standards (`frameworks/transformation-pmo.md`).
+
+**Change is a third office**, not a CoE workstream and not a PgMO status slide. Weight moves: plan (CoE + PgMO) → build (PgMO) → run (Change), with CoE governance remaining. Full split: `knowledge/patterns/ai-coe-vs-pgmo-vs-change.md`.
+
+**Shape:** scarce talent → central CoE. Then return people to the line (**hybrid**). Scattered SMEs only: local speed, no enterprise view. Central forever: the line never owns the work.
 
 ---
 
