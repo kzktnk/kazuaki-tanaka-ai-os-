@@ -10,5 +10,13 @@
 outputs/
 .tmp-*
 
-# Local scripts workspace (uncomment if scripts should stay local-only)
+# Local tooling (not for repo)
+.tools/
+
+# Client-specific generators (local only; tracked scripts remain in repo)
+scripts/generate_jera_*.py
+scripts/generate_am_*.py
+scripts/transcribe_am_recordings.py
+
+# Local scripts workspace (uncomment to ignore all scripts/)
 # scripts/

@@ -80,13 +80,13 @@ kazuaki-tanaka-ai-os/
 │   ├── lessons/                ← 5 lessons
 │   ├── migrations/             ← 7 migration reports
 │   └── decisions/              ← (reserved, empty)
-├── templates/                  ← 2 templates
-├── prompts/                    ← (reserved, empty)
+├── templates/                  ← 1 template
+├── prompts/                    ← README placeholder
 ├── projects/                   ← project template structure
 ├── adapters/cursor/            ← Cursor adapter
 ├── domains/                    ← (reserved, empty)
 ├── technology/                 ← (reserved, empty)
-└── archive/                    ← (reserved, empty)
+└── archive/                    ← README placeholder
 ```
 
 **Domain indexes (Level 3 detail in separate files):**
@@ -248,8 +248,13 @@ playbooks/
 └── wbs-design.md
 
 templates/
-├── wbs-breakdown-sheet.md
-└── TEST.md
+└── wbs-breakdown-sheet.md
+
+prompts/
+└── README.md
+
+archive/
+└── README.md
 
 adapters/cursor/
 └── CURSOR.md                         ← Cursor-specific behavior + migration rules

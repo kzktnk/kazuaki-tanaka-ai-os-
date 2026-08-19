@@ -135,10 +135,10 @@ When creating a new file:
 Examples:
 
 ```text
-frameworks/ai-governability.md
-knowledge/patterns/decision-velocity.md
-playbooks/proposal-review.md
-technology/azure-api-management.md
+frameworks/decision-velocity.md
+standards/consulting-review.md
+playbooks/wbs-design.md
+knowledge/patterns/organizational-memory.md
 ```
 
 Tool-specific exceptions include:
@@ -166,15 +166,13 @@ When editing an existing file:
 - update cross-references when file names or responsibilities change
 - do not silently change architecture
 
-If a change affects repository structure or source-of-truth rules, update:
+If a change affects repository structure or source-of-truth rules, update as appropriate:
 
 - `ARCHITECTURE.md`
 - `AI_OPERATING_MANUAL.md`
 - `CONTEXT_ROUTING.md`
 - relevant directory README files
-- `CHANGELOG.md`
-
-as appropriate.
+- `CHANGELOG.md` (when present)
 
 ---
 
