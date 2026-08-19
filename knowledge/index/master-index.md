@@ -1,6 +1,6 @@
 # Knowledge Master Index
 
-**Version:** v1.4  
+**Version:** v1.5  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
@@ -71,20 +71,20 @@ kazuaki-tanaka-ai-os/
 ├── CONTEXT_ROUTING.md          ← task-based context selection
 ├── core/                       ← 8 files (kernel)
 ├── standards/                  ← 18 files (quality criteria)
-├── frameworks/                 ← 27 files + thinking-patterns/
+├── frameworks/                 ← 28 files + thinking-patterns/
 ├── playbooks/                  ← 1 playbook (+ README)
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
-│   ├── patterns/               ← 20 distilled patterns
+│   ├── patterns/               ← 21 distilled patterns
 │   ├── lessons/                ← 5 lessons
-│   ├── migrations/             ← 10 migration reports
+│   ├── migrations/             ← 11 migration reports
 │   └── decisions/              ← (reserved, empty)
 ├── templates/                  ← 1 template
 ├── prompts/                    ← README placeholder
 ├── projects/                   ← project template structure
 ├── adapters/cursor/            ← Cursor adapter
-├── domains/                    ← energy-utilities.md（親）
+├── domains/                    ← energy-utilities.md, public-defense.md
 ├── technology/                 ← (reserved, empty)
 └── archive/                    ← README placeholder
 ```
@@ -119,7 +119,8 @@ core/
 ```text
 domains/
 ├── README.md
-└── energy-utilities.md           ← parent (generation / T&D stub / retail + cross-cutting)
+├── energy-utilities.md           ← parent (generation / T&D stub / retail + cross-cutting)
+└── public-defense.md             ← parent (Japan public / defense IT; buyer vs seller)
 ```
 
 ---
@@ -158,7 +159,7 @@ standards/
 
 ---
 
-## Level 3 — Frameworks (27 + thinking patterns)
+## Level 3 — Frameworks (28 + thinking patterns)
 
 ```text
 frameworks/
@@ -198,6 +199,8 @@ frameworks/
 ├── Systems integration / delivery
 │   ├── systems-integration-solution-planning.md
 │   └── delivery-leadership.md
+├── Public IT procurement (buyer)
+│   └── public-it-procurement-support.md
 ├── ERP / SAP
 │   └── sap-implementation-phase-model.md
 └── principles.md                     ← framework-layer principles
@@ -218,7 +221,7 @@ knowledge/
 │       ├── 001–020/                  ← Operational AI main series
 │       ├── sp01–sp09/                ← special posts
 │       └── erf01–erf03/              ← Enterprise Redesign Framework
-├── patterns/                         ← 20 files (see table below)
+├── patterns/                         ← 21 files (see table below)
 ├── lessons/
 │   ├── governance-messaging.md
 │   ├── dual-roadmap-messaging.md
@@ -239,11 +242,12 @@ knowledge/
 │   ├── energy-utilities-domain-2026-08.md
 │   ├── change-management-2026-08.md
 │   ├── iosa-2026-08.md
-│   └── sisa-sidl-dma-2026-08.md
+│   ├── sisa-sidl-dma-2026-08.md
+│   └── public-defense-2026-08.md
 └── decisions/                        ← reserved
 ```
 
-### Patterns (20)
+### Patterns (21)
 
 | Pattern | Primary themes |
 |---------|----------------|
@@ -254,6 +258,7 @@ knowledge/
 | `all-at-once-vs-stepwise-change.md` | Change strategy: cutover vs sequenced steps |
 | `transition-vs-transformation-vs-realization.md` | Introduction / transition / transformation / realization |
 | `estimate-target-commitment.md` | Estimate ≠ target ≠ commitment; work is the work |
+| `buyer-vs-seller-in-public-procurement.md` | Public IT: buyer fairness vs seller bid |
 | `expertise-amplification.md` | AI amplifies experts |
 | `organizational-memory.md` | Intelligence vs organizational memory; decision context |
 | `exception-as-memory-entry.md` | Exceptions as memory entry; capture at deviation |
@@ -462,6 +467,23 @@ knowledge/migrations/sisa-sidl-dma-2026-08.md
 CONTEXT_ROUTING.md  →  Systems Integration / SI Proposal, Delivery Leadership
 ```
 
+### K. Public sector & defense IT (Program Line P)
+
+```text
+Local ministry-OA / defense-adjacent packs — not archived
+        ↓ generalize (no specs, yen, inventories)
+domains/public-defense.md
+frameworks/public-it-procurement-support.md
+knowledge/patterns/buyer-vs-seller-in-public-procurement.md
+        ↓ cross-link
+frameworks/program-phases-investigation-to-requirements.md
+standards/vendor-proposal-evaluation.md
+        ↓ record
+knowledge/migrations/public-defense-2026-08.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  Public Sector / Defense IT, Public Procurement Support (buyer)
+```
+
 ---
 
 ## Level 4 — CONTEXT_ROUTING Task Map (summary)
@@ -477,6 +499,7 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | AI governance | `frameworks/ai-governability.md`, `decision-ownership.md`, `human-oversight.md`, related `patterns/` |
 | AI adoption / DX roadmap | `frameworks/ai-adoption-roadmap.md`, `ai-role-maturity.md`, `organizational-memory.md`, `exception-as-memory-entry.md`, `connected-organizational-memory.md`, `dual-roadmap-messaging.md` |
 | Energy / utilities | `domains/energy-utilities.md`, `operational-reality.md`, `requirements-artifact-review.md` (if requirements) |
+| Public sector / defense IT | `domains/public-defense.md`, `public-it-procurement-support.md` (if buyer), `buyer-vs-seller-in-public-procurement.md` |
 | Application outsourcing / AMS | `application-outsourcing-solution-planning.md`, `ams-services-pyramid.md`, `service-transition-approach.md`, `ams-solution-plan-checklist.md` |
 | Infrastructure outsourcing / ITO | `infrastructure-outsourcing-solution-planning.md`, `transition-vs-transformation-vs-realization.md` |
 | Systems integration / SI proposal | `systems-integration-solution-planning.md`, `estimate-target-commitment.md` |

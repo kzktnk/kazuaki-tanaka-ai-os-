@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.14
+Version: v1.15
 
 ## Purpose
 
@@ -44,7 +44,7 @@ Load:
 - standards/strategy-engagement-guide.md (if scoping or logic tree review needed)
 - frameworks/operating-model.md
 - frameworks/capability-model.md
-- Relevant domain files (`domains/energy-utilities.md` if energy / utilities)
+- Relevant domain files (`domains/energy-utilities.md` if energy / utilities; `domains/public-defense.md` if public / defense)
 - Relevant project context
 
 Outputs:
@@ -527,6 +527,32 @@ Outputs:
 - Layered customer-system map (CIS / CRM / CDP / CC)
 - Scope cuts for transition
 - Requirements review notes (business bench)
+
+---
+
+# Public Sector / Defense IT
+
+Load:
+- domains/public-defense.md
+- knowledge/patterns/buyer-vs-seller-in-public-procurement.md
+- frameworks/public-it-procurement-support.md (if buyer-side procurement, scrutiny, or construction PMO)
+- frameworks/program-phases-investigation-to-requirements.md (if concept → requirements)
+- standards/vendor-proposal-evaluation.md (if technical evaluation)
+- standards/requirements-document-outline.md (if requirements document)
+- frameworks/systems-integration-solution-planning.md (if seller SI bid)
+- core/author-voice.md
+- standards/consulting-review.md (if deliverable review)
+
+Focus:
+- Buyer fairness vs seller win — do not mix on the same program
+- 適合条件 before scoring; estimate scrutiny ≠ proposal scoring
+- Officials keep authorization / risk decisions
+- No inventories, yen, or network designs in generalized output
+
+Outputs:
+- Role-clear engagement framing
+- Procurement or scrutiny workplan (buyer)
+- Evaluation-item-mapped proposal outline (seller, no confidential facts)
 
 ---
 

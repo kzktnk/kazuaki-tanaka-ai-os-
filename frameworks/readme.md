@@ -87,6 +87,16 @@ Pairs with `knowledge/patterns/estimate-target-commitment.md`.
 
 ---
 
+## Public sector procurement (buyer)
+
+| File | Focus |
+|------|--------|
+| `public-it-procurement-support.md` | 調達方式、適合条件、総合評価、見積精査、官側PMO |
+
+Pairs with `domains/public-defense.md`.
+
+---
+
 ## Thinking Patterns
 
 See [`thinking-patterns/README.md`](./thinking-patterns/README.md) — pattern-01 through pattern-08.

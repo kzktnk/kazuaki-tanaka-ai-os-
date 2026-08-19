@@ -246,6 +246,8 @@ Gapは「不満リスト」ではなく、As-Isと目指す方向の**構造的�
 | `frameworks/thinking-patterns/pattern-02-as-is-gap-to-be.md` | 300の思考 |
 | `frameworks/thinking-patterns/pattern-01-why-what-how.md` | 500のストーリー |
 | `standards/vendor-proposal-evaluation.md` | 400以降のRFP・選定 |
+| `frameworks/public-it-procurement-support.md` | 調達方式・仕様・見積精査（要件の後） |
+| `domains/public-defense.md` | 公共・防衛の拘束 |
 | `core/author-voice.md` | 資料のトーン・削減 |
 | `knowledge/lessons/author-voice-archetypes-legacy.md` | 各成果物のアーキタイプ |
 

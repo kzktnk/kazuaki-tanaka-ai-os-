@@ -165,6 +165,8 @@
 | `core/author-voice.md` | トーン・思考の型 |
 | `knowledge/lessons/author-voice-archetypes-legacy.md` | 提案評価・SteerCommのアーキタイプ |
 | `frameworks/program-phases-investigation-to-requirements.md` | 調査→要件プログラム全体 |
+| `frameworks/public-it-procurement-support.md` | 見積精査・総合評価基準（官側） |
+| `knowledge/patterns/buyer-vs-seller-in-public-procurement.md` | 官側支援と応札を混ぜない |
 
 ---
 

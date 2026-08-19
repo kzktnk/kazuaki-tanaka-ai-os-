@@ -1,6 +1,6 @@
 # Legacy Source Index
 
-**Version:** v1.8  
+**Version:** v1.9  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** ローカル保管のレガシー原本と、リポジトリ内知識の対応索引。**原本の中身は含まない。**
@@ -213,6 +213,23 @@
 | `500…/MODNW調査研究報告書_*.doc` | 500 | Phase 500 |
 | `500…/調査研究報告会資料_*.ppt` | 500 | `deliverable-archetypes.md` Archetype F |
 
+**Note:** 調査〜要件の骨格。調達仕様・見積精査の型は Program Line P。
+
+---
+
+## Program Line P: 公共／防衛IT 調達・精査・PMO・情報保証役務（〜2015、一部 2023 型）
+
+原本はローカル Downloads。府省名・系統・円・現行提案本文は不登録。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| 省OA調達支援（実施計画、調達方式、評価基準、仕様案） | `public-it-procurement-support.md`, `public-defense.md` | 官側調達ライフサイクル。仕様本文・適合実項目は不登録 |
+| 次期構想／要件検討（調査〜報告書） | 既存 Line B と同一骨格 | 索引のみ。新規フェーズは作らない |
+| 見積精査（ベースライン、ヒアリング、報告） | `public-it-procurement-support.md` §Estimate scrutiny | 手順のみ。各社見積・円は不登録 |
+| 構築PMO支援役務（仕様案・社内見積ツール） | `public-it-procurement-support.md` §Construction PMO | 官側PMOの見るもの。金額ツール不登録 |
+| 情報保証・RMF 関連の公示／応札／社内レビュー | `public-defense.md` §売手、`buyer-vs-seller-in-public-procurement.md` | 官の認可責任、分割ロット、未習熟負担。件数・予算・提案本文不登録 |
+| 立入証、名簿、NDA、契約、機器一覧 | **未登録** | 機密 |
+
 ---
 
 ## Program Line G: IT Strategy Foundations (legacy consulting, 2002)
@@ -321,6 +338,9 @@
 | `systems-integration-solution-planning.md` | 高 | ✅ 登録済（2026-08-19） |
 | `delivery-leadership.md` | 高 | ✅ 登録済（2026-08-19） |
 | `estimate-target-commitment.md` | 中 | ✅ 登録済（2026-08-19） |
+| `public-defense.md` | 高 | ✅ 登録済（2026-08-19） |
+| `public-it-procurement-support.md` | 高 | ✅ 登録済（2026-08-19） |
+| `buyer-vs-seller-in-public-procurement.md` | 中 | ✅ 登録済（2026-08-19） |
 
 ---
 
