@@ -4,7 +4,7 @@
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
-**Last updated:** 2026-08-17
+**Last updated:** 2026-08-19
 
 ---
 
@@ -76,9 +76,9 @@ kazuaki-tanaka-ai-os/
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
-│   ├── patterns/               ← 12 distilled patterns
+│   ├── patterns/               ← 13 distilled patterns
 │   ├── lessons/                ← 5 lessons
-│   ├── migrations/             ← 6 migration reports
+│   ├── migrations/             ← 7 migration reports
 │   └── decisions/              ← (reserved, empty)
 ├── templates/                  ← 2 templates
 ├── prompts/                    ← (reserved, empty)
@@ -93,7 +93,7 @@ kazuaki-tanaka-ai-os/
 
 | Index | Scope |
 |-------|--------|
-| [linkedin-series-index.md](./linkedin-series-index.md) | LinkedIn / Note sources 001–017, sp01–09, erf01–03 |
+| [linkedin-series-index.md](./linkedin-series-index.md) | LinkedIn / Note sources 001–018, sp01–09, erf01–03 |
 | [legacy-source-index.md](./legacy-source-index.md) | Local legacy PDFs → repo extraction map (Program Lines A–J) |
 
 ---
@@ -198,7 +198,7 @@ knowledge/
 │   └── legacy-source-index.md
 ├── source/
 │   └── linkedin/
-│       ├── 001–017/                  ← Operational AI main series
+│       ├── 001–018/                  ← Operational AI main series
 │       ├── sp01–sp09/                ← special posts
 │       └── erf01–erf03/              ← Enterprise Redesign Framework
 ├── patterns/                         ← 12 files (see table below)
@@ -214,18 +214,20 @@ knowledge/
 │   ├── linkedin-014.md
 │   ├── linkedin-016.md
 │   ├── linkedin-017.md
+│   ├── linkedin-018.md
 │   ├── ai-dual-roadmap-2026-08.md
 │   └── ao-sae-2026-08.md
 └── decisions/                        ← reserved
 ```
 
-### Patterns (12)
+### Patterns (13)
 
 | Pattern | Primary themes |
 |---------|----------------|
 | `operational-governance.md` | Operational AI, governance as capability |
 | `operational-reality.md` | OT / field reality vs DX narrative |
 | `expertise-amplification.md` | AI amplifies experts |
+| `organizational-memory.md` | Intelligence vs organizational memory; decision context |
 | `operating-model-advantage.md` | Competitive advantage from operating model |
 | `ai-resilience-shift.md` | Productivity → resilience |
 | `decision-ownership.md` | Execution ≠ ownership |
@@ -329,6 +331,23 @@ knowledge/migrations/ao-sae-2026-08.md
 CONTEXT_ROUTING.md  →  Application Outsourcing / AMS Proposal
 ```
 
+### F. Organizational memory (LinkedIn No.18)
+
+```text
+knowledge/source/linkedin/018/
+        ↓ extract
+knowledge/patterns/organizational-memory.md
+        ↓ cross-link
+frameworks/ai-adoption-roadmap.md (Initiative B)
+frameworks/ai-role-maturity.md
+knowledge/patterns/expertise-amplification.md
+knowledge/patterns/operational-reality.md
+        ↓ record
+knowledge/migrations/linkedin-018.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  AI Adoption / DX Roadmap
+```
+
 ---
 
 ## Level 4 — CONTEXT_ROUTING Task Map (summary)
@@ -341,7 +360,7 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | IT strategy | `frameworks/it-strategy-foundations.md`, `standards/it-strategy-engagement-guide.md` |
 | PMO / transformation | `frameworks/transformation-pmo.md`, `standards/pmo-operating-guide.md` |
 | AI governance | `frameworks/ai-governability.md`, `decision-ownership.md`, `human-oversight.md`, related `patterns/` |
-| AI adoption / DX roadmap | `frameworks/ai-adoption-roadmap.md`, `ai-role-maturity.md`, `ai-governability.md`, `dual-roadmap-messaging.md` |
+| AI adoption / DX roadmap | `frameworks/ai-adoption-roadmap.md`, `ai-role-maturity.md`, `organizational-memory.md`, `dual-roadmap-messaging.md` |
 | Application outsourcing / AMS | `application-outsourcing-solution-planning.md`, `ams-services-pyramid.md`, `service-transition-approach.md`, `ams-solution-plan-checklist.md` |
 | LinkedIn / Note writing | `standards/writing.md`, series `source/`, related `patterns/` and `frameworks/` |
 | Knowledge migration | `AI_OPERATING_MANUAL.md`, source asset, migration workflow |

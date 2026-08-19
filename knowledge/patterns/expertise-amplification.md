@@ -41,10 +41,12 @@ Use this pattern when:
 
 Initiative B (tacit → explicit knowledge) in `frameworks/ai-adoption-roadmap.md`
 peaks in **Year 2–3**: judgment types and exception libraries, not full
-manualization. User role maturity Level 3–4 aligns with expert–AI collaboration
-(`frameworks/ai-role-maturity.md`).
+manualization. See `knowledge/patterns/organizational-memory.md` for the
+strategic framing (No.18). User role maturity Level 3–4 aligns with expert–AI
+collaboration (`frameworks/ai-role-maturity.md`).
 
 ## Related patterns
 
 - `knowledge/patterns/operating-model-advantage.md`
+- `knowledge/patterns/organizational-memory.md` — institutionalize judgment context beyond individuals (No.18)
 - `knowledge/patterns/decision-ownership.md`

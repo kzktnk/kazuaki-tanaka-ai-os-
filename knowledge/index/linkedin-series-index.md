@@ -27,6 +27,7 @@ Master index of LinkedIn / Note article sources under `knowledge/source/linkedin
 | 015 | No.15 | Ownership Isn't Enough—It Must Be Verifiable | 責任者がいるだけでは足りない。「責任を証明できること」が重要になる | en, ja | `015/` |
 | 016 | No.16 | Can AI Own Risk? | AIは「リスク」を負えるのか | en, ja | `016/` |
 | 017 | No.17 | How Much Authority Should We Give AI? | AIにどこまで「権限」を与えるべきか | en, ja | `017/` |
+| 018 | No.18 | The Future of Enterprise AI May Depend on Organizational Memory, Not Just Intelligence | AI時代の競争力は「知能」ではなく「組織の記憶」から生まれる | en, ja | `018/` |
 
 **Note:** Folder `009/` is intentionally skipped. No.9 Note content is archived in `013/` with `note_number: 9`.
 
@@ -75,6 +76,13 @@ No.16  Execution ≠ risk ownership
 No.17  Capability ≠ authority
 ```
 
+## Memory / Knowledge Arc (No.18+)
+
+```
+No.18  Intelligence vs Organizational Memory
+       Operational AI preserves, connects, and enriches decision context
+```
+
 ## New Patterns from Bulk Migration
 
 | Pattern | Origin |
@@ -83,6 +91,7 @@ No.17  Capability ≠ authority
 | `knowledge/patterns/verifiable-ownership.md` | 015 |
 | `knowledge/patterns/operational-reality.md` | sp08 |
 | `knowledge/patterns/expertise-amplification.md` | 011 |
+| `knowledge/patterns/organizational-memory.md` | 018 |
 | `knowledge/patterns/operating-model-advantage.md` | 012 |
 | `knowledge/patterns/ai-resilience-shift.md` | sp01 |
 
@@ -92,4 +101,4 @@ No.17  Capability ≠ authority
 
 - Master index: [`master-index.md`](./master-index.md)
 - Bulk migration record: `knowledge/migrations/linkedin-bulk-001-015-sp-erf.md`
-- Individual migrations: `knowledge/migrations/linkedin-013.md`, `linkedin-014.md`, `linkedin-016.md`, `linkedin-017.md`
+- Individual migrations: `knowledge/migrations/linkedin-013.md`, `linkedin-014.md`, `linkedin-016.md`, `linkedin-017.md`, `linkedin-018.md`

@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.7
+Version: v1.8
 
 ## Purpose
 
@@ -335,6 +335,7 @@ Load:
 - frameworks/transformation-roadmap.md (if lifecycle overlay)
 - frameworks/transformation-pmo.md (if portfolio / PgMO)
 - knowledge/patterns/expertise-amplification.md
+- knowledge/patterns/organizational-memory.md
 - knowledge/patterns/authority-levels.md
 - knowledge/patterns/operational-reality.md
 - knowledge/lessons/dual-roadmap-messaging.md (if executive audience)

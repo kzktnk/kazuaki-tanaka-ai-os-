@@ -77,7 +77,7 @@ C (Year 1)  →  B (Year 2–3)  →  A in earnest (Year 2–5, deepening throug
 ```
 
 - **C first:** CoE, rules, data owners, skill visibility — without these, A and B stall.
-- **B parallel to early A:** Expertise amplification (`knowledge/patterns/expertise-amplification.md`) — not full manualization.
+- **B parallel to early A:** Expertise amplification (`knowledge/patterns/expertise-amplification.md`) — not full manualization. Organizational memory framing: `knowledge/patterns/organizational-memory.md` (LinkedIn No.18).
 - **Full agent autonomy:** Year 4–5 at earliest; authority design stays gradual (`knowledge/patterns/authority-levels.md`).
 
 ### Initiative C — three pillars
@@ -101,6 +101,8 @@ Typical AI use domains in asset-intensive operations:
 | Operations | Procedure lookup, anomaly first-pass | A |
 | Administration | Document summarization, comparison | A |
 | Tacit knowledge | Expert Q&A, judgment patterns | B |
+
+Initiative B implements **organizational memory** at program scale—judgment types, exception libraries, continuous enrichment (`knowledge/patterns/organizational-memory.md`, LinkedIn No.18).
 
 Design for **operational reality** (`knowledge/patterns/operational-reality.md`): exceptions and field workarounds are inputs, not blockers to defer AI indefinitely.
 
@@ -165,4 +167,5 @@ Generalized messaging patterns: `knowledge/lessons/dual-roadmap-messaging.md`.
 - `frameworks/ai-role-maturity.md`
 - `frameworks/ai-governability.md`
 - `frameworks/ai-management-office.md`
+- `knowledge/patterns/organizational-memory.md`
 - `knowledge/migrations/ai-dual-roadmap-2026-08.md`

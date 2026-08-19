@@ -75,7 +75,7 @@ Executive-facing summary — detail internally as needed.
 1. **Shift from knowledge transfer to judgment support** — expertise amplification, not replacement (`knowledge/patterns/expertise-amplification.md`).
 2. **Formalize judgment types**, not exhaustive manuals — when / what to check / what to prioritize.
 3. **Experts as reviewers** — veterans validate AI output; they do not write every artifact.
-4. **Exception libraries** — capture workarounds and edge cases; 100% codification is not the goal.
+4. **Exception libraries** — capture workarounds and edge cases; 100% codification is not the goal. This is the operational layer of **organizational memory** (`knowledge/patterns/organizational-memory.md`).
 
 Initiative B (tacit → explicit knowledge) peaks in **Year 2–3**.
 
@@ -138,5 +138,6 @@ Use both: general maturity for enterprise assessment; role maturity for AI progr
 - `frameworks/ai-management-office.md`
 - `frameworks/ai-governability.md`
 - `knowledge/patterns/expertise-amplification.md`
+- `knowledge/patterns/organizational-memory.md`
 - `knowledge/lessons/dual-roadmap-messaging.md`
 - `knowledge/migrations/ai-dual-roadmap-2026-08.md`

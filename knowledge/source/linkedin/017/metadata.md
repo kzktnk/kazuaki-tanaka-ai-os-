@@ -81,3 +81,13 @@ No.17 extends this by separating AI Capability from AI Authority, and by definin
 Combined insight:
 
 > Increasing AI capability does not automatically expand AI authority. Authority, ownership, and oversight must be designed together per decision context.
+
+## Relationship to No.18
+
+No.13–17 establish governance: accountability, ownership, risk, and authority.
+
+No.18 opens the **organizational memory** arc—preserving decision context (why, assumptions, exceptions, expert noticing) so future judgments learn from the past.
+
+Combined:
+
+> Governance designs who may decide; organizational memory ensures the next decision does not start from zero.
