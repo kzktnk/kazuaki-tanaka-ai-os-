@@ -175,6 +175,8 @@ Productivity dip: confusion → discouragement → quick wins → proficiency �
 
 Interventions: communication, quick wins, role clarity, support channels, ownership building.
 
+Full design (readiness assessment, all-at-once vs stepwise, time-phased messages): `frameworks/change-management.md`.
+
 ### Stakeholder maturity model
 
 | Stage | State | PMO action |
@@ -196,6 +198,7 @@ Before go-live:
 - [ ] Program process aligned to 4 phases
 - [ ] Benefit and risk measurement at program level
 - [ ] Change management resourced (enterprise + project)
+- [ ] Readiness assessed before communication calendar (see `change-management.md`)
 - [ ] PM standards and PMIS minimum viable visibility
 - [ ] Steering cadence and escalation paths documented
 
@@ -228,6 +231,7 @@ Before go-live:
 ## Related Files
 
 - `frameworks/transformation-pmo.md`
+- `frameworks/change-management.md`
 - `knowledge/lessons/pmo-professional-principles.md`
 - `frameworks/strategic-capability-network.md`
 - `frameworks/program-phases-investigation-to-requirements.md`

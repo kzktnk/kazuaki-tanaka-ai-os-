@@ -227,6 +227,7 @@ DX 組織は「データ分析チーム」だけでは足りない。少なく�
 
 - `frameworks/operating-model.md`
 - `frameworks/transformation-pmo.md`
+- `frameworks/change-management.md`
 - `knowledge/patterns/authority-levels.md`
 - `standards/deliverable-archetypes.md` Archetype C（SteerComm）
 
@@ -250,6 +251,6 @@ DX 組織は「データ分析チーム」だけでは足りない。少なく�
 |-------|------|
 | Domain parent | this file |
 | Standard | `standards/requirements-artifact-review.md` |
-| Patterns | `experience-before-scope.md`, `platform-build-vs-enablement.md` |
+| Patterns | `experience-before-scope.md`, `platform-build-vs-enablement.md`, `all-at-once-vs-stepwise-change.md` |
 | Index | `knowledge/index/legacy-source-index.md` Program Line K |
 | Migration | `knowledge/migrations/energy-utilities-domain-2026-08.md` |

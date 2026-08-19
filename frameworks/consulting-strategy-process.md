@@ -262,7 +262,7 @@ Score options against explicit criteria; the option meeting most criteria (with 
 | Develop logical communications | Pyramid structure; storylines from storyboard |
 | Deliver | Presentation and buy-in; link back to criteria agreed in problem definition |
 
-**Resistance pyramid:** Awareness → understanding → acceptance → ownership (aligns with change management in PMO materials).
+**Resistance pyramid:** Awareness → understanding → acceptance → ownership (see `frameworks/change-management.md`).
 
 ---
 

@@ -1,6 +1,6 @@
 # Knowledge Master Index
 
-**Version:** v1.1  
+**Version:** v1.2  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
@@ -71,14 +71,14 @@ kazuaki-tanaka-ai-os/
 ├── CONTEXT_ROUTING.md          ← task-based context selection
 ├── core/                       ← 8 files (kernel)
 ├── standards/                  ← 18 files (quality criteria)
-├── frameworks/                 ← 23 files + thinking-patterns/
+├── frameworks/                 ← 24 files + thinking-patterns/
 ├── playbooks/                  ← 1 playbook (+ README)
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
-│   ├── patterns/               ← 17 distilled patterns
+│   ├── patterns/               ← 18 distilled patterns
 │   ├── lessons/                ← 5 lessons
-│   ├── migrations/             ← 7 migration reports
+│   ├── migrations/             ← 8 migration reports
 │   └── decisions/              ← (reserved, empty)
 ├── templates/                  ← 1 template
 ├── prompts/                    ← README placeholder
@@ -158,7 +158,7 @@ standards/
 
 ---
 
-## Level 3 — Frameworks (23 + thinking patterns)
+## Level 3 — Frameworks (24 + thinking patterns)
 
 ```text
 frameworks/
@@ -187,6 +187,7 @@ frameworks/
 │   ├── maturity-model.md
 │   ├── transformation-roadmap.md
 │   ├── transformation-pmo.md
+│   ├── change-management.md
 │   └── program-phases-investigation-to-requirements.md
 ├── Application outsourcing / AMS
 │   ├── application-outsourcing-solution-planning.md
@@ -212,7 +213,7 @@ knowledge/
 │       ├── 001–020/                  ← Operational AI main series
 │       ├── sp01–sp09/                ← special posts
 │       └── erf01–erf03/              ← Enterprise Redesign Framework
-├── patterns/                         ← 17 files (see table below)
+├── patterns/                         ← 18 files (see table below)
 ├── lessons/
 │   ├── governance-messaging.md
 │   ├── dual-roadmap-messaging.md
@@ -230,11 +231,12 @@ knowledge/
 │   ├── linkedin-020.md
 │   ├── ai-dual-roadmap-2026-08.md
 │   ├── ao-sae-2026-08.md
-│   └── energy-utilities-domain-2026-08.md
+│   ├── energy-utilities-domain-2026-08.md
+│   └── change-management-2026-08.md
 └── decisions/                        ← reserved
 ```
 
-### Patterns (17)
+### Patterns (18)
 
 | Pattern | Primary themes |
 |---------|----------------|
@@ -242,6 +244,7 @@ knowledge/
 | `operational-reality.md` | OT / field reality vs DX narrative |
 | `experience-before-scope.md` | Experience → process → data → scope |
 | `platform-build-vs-enablement.md` | Platform release vs ability to run the loop |
+| `all-at-once-vs-stepwise-change.md` | Change strategy: cutover vs sequenced steps |
 | `expertise-amplification.md` | AI amplifies experts |
 | `organizational-memory.md` | Intelligence vs organizational memory; decision context |
 | `exception-as-memory-entry.md` | Exceptions as memory entry; capture at deviation |
@@ -402,6 +405,22 @@ knowledge/migrations/energy-utilities-domain-2026-08.md
 CONTEXT_ROUTING.md  →  Energy / Utilities, Proposal Review
 ```
 
+### H. Change management (Program Line L)
+
+```text
+Local CM Day1–Day2 .ppt (Downloads/CM/) — not archived
+        ↓ generalize (English structure only)
+frameworks/change-management.md
+knowledge/patterns/all-at-once-vs-stepwise-change.md
+        ↓ cross-link
+frameworks/transformation-pmo.md
+standards/pmo-operating-guide.md
+        ↓ record
+knowledge/migrations/change-management-2026-08.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  Change Management, Transformation PMO
+```
+
 ---
 
 ## Level 4 — CONTEXT_ROUTING Task Map (summary)
@@ -412,7 +431,8 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 |------|----------------|
 | Proposal review | `standards/consulting-review.md`, `deliverable-archetypes.md`, `writing.md` |
 | IT strategy | `frameworks/it-strategy-foundations.md`, `standards/it-strategy-engagement-guide.md` |
-| PMO / transformation | `frameworks/transformation-pmo.md`, `standards/pmo-operating-guide.md` |
+| PMO / transformation | `frameworks/transformation-pmo.md`, `standards/pmo-operating-guide.md`, `frameworks/change-management.md` |
+| Change management | `frameworks/change-management.md`, `all-at-once-vs-stepwise-change.md`, `pmo-operating-guide.md` §CM |
 | AI governance | `frameworks/ai-governability.md`, `decision-ownership.md`, `human-oversight.md`, related `patterns/` |
 | AI adoption / DX roadmap | `frameworks/ai-adoption-roadmap.md`, `ai-role-maturity.md`, `organizational-memory.md`, `exception-as-memory-entry.md`, `connected-organizational-memory.md`, `dual-roadmap-messaging.md` |
 | Energy / utilities | `domains/energy-utilities.md`, `operational-reality.md`, `requirements-artifact-review.md` (if requirements) |

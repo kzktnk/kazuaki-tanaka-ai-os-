@@ -1,6 +1,6 @@
 # Legacy Source Index
 
-**Version:** v1.5  
+**Version:** v1.6  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** ローカル保管のレガシー原本と、リポジトリ内知識の対応索引。**原本の中身は含まない。**
@@ -130,6 +130,22 @@
 
 ---
 
+## Program Line L: Change Management training（legacy Strategic Change / LPD CM, ~2001–2003）
+
+原本は `Downloads/CM/Day1`, `Day2`。OLE `.ppt`。日本語本文はバイナリからほぼ復元不能。英語構造のみ一般化。ケース企業・性格診断アイスブレイクは不登録。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| Change Readiness | `frameworks/change-management.md` §1 | ワークショップ成果、多次元レディネス、history/readiness/risk の区別 |
+| Change Readiness case exercise | **未登録** | クライアント調査ケース |
+| Change Strategy (Day1/Day2 重複) | `change-management.md` §2, `all-at-once-vs-stepwise-change.md` | all-at-once vs stepwise; 反復サイクル |
+| LPD CM 本編 | `change-management.md` §3 | コミットメント、抵抗、移管 |
+| LPD CM 添付 | `change-management.md` §3 | ステークホルダー行動ログ、時系列メッセージ、コミュニケーション1枚 |
+| Summary / 2日目アジェンダ | 索引のみ | |
+| 「4つの選択」アイスブレイク | **未登録** | 性格クイズ。CM方法論ではない |
+
+---
+
 ## Program Line B: 公共OA刷新（2009）
 
 | ローカル原本（例） | フェーズ | 抽出先（リポジトリ） |
@@ -250,6 +266,8 @@
 | `requirements-artifact-review.md` | 高 | ✅ 登録済（2026-08-19） |
 | `experience-before-scope.md` | 中 | ✅ 登録済（2026-08-19） |
 | `platform-build-vs-enablement.md` | 中 | ✅ 登録済（2026-08-19） |
+| `change-management.md` | 高 | ✅ 登録済（2026-08-19） |
+| `all-at-once-vs-stepwise-change.md` | 中 | ✅ 登録済（2026-08-19） |
 
 ---
 

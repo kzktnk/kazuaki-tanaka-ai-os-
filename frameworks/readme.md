@@ -41,6 +41,7 @@ Full catalog and cross-links: [`knowledge/index/master-index.md`](../knowledge/i
 | `maturity-model.md` | Maturity assessment |
 | `transformation-roadmap.md` | Transformation roadmap |
 | `transformation-pmo.md` | Transformation PMO |
+| `change-management.md` | Readiness, change strategy, commitment |
 | `program-phases-investigation-to-requirements.md` | Program phases (investigation → requirements) |
 
 ---

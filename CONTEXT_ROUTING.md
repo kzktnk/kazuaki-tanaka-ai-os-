@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.11
+Version: v1.12
 
 ## Purpose
 
@@ -270,6 +270,7 @@ Outputs:
 
 Load:
 - frameworks/transformation-pmo.md
+- frameworks/change-management.md (if people-side design, not only PMO ownership)
 - standards/pmo-operating-guide.md
 - knowledge/lessons/pmo-professional-principles.md
 - frameworks/strategic-capability-network.md (strategy-to-initiative logic)
@@ -287,7 +288,7 @@ Focus:
 - Program integration: synergy, scenario, benefit transition
 - PMO function map (portfolio, change, HCM, knowledge, integration)
 - PPM process and portfolio stop/start discipline
-- Change management: stakeholder progression (Awareness → Ownership)
+- Change management: stakeholder progression (Awareness → Ownership); readiness and strategy in `change-management.md`
 
 Outputs:
 - PMO assessment or target operating model for program office
@@ -295,6 +296,32 @@ Outputs:
 - Program roadmap and scenario
 - RACI / steering structure
 - Gap summary for executive decisions
+
+---
+
+# Change Management
+
+Load:
+- frameworks/change-management.md
+- knowledge/patterns/all-at-once-vs-stepwise-change.md
+- standards/pmo-operating-guide.md (§Change Management Operating Standard)
+- frameworks/transformation-pmo.md (if program-owned change)
+- knowledge/patterns/platform-build-vs-enablement.md (if platform / data adoption)
+- knowledge/patterns/authority-levels.md (if decision rights must transfer)
+- core/author-voice.md
+- standards/writing.md
+
+Focus:
+- Readiness before communication calendar
+- All-at-once vs stepwise configuration
+- Why / unit / me; time-phased messages; resistance as design input
+- Transfer of ownership, not only training
+
+Outputs:
+- Readiness findings and barrier actions
+- Change strategy choice and sequence
+- Stakeholder action log and message map
+- Soft-landing / hypercare communication outline
 
 ---
 
