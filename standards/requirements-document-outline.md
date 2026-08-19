@@ -219,7 +219,7 @@
 | `frameworks/program-phases-investigation-to-requirements.md` | Phase 420 |
 | `standards/deliverable-archetypes.md` | Archetype E/F |
 | `standards/document-management-standard.md` | 文書区分「要定」、表紙・承認・台帳 |
-| `standards/development-standards-framework.md` | 設計以降の開発標準体系 |
+| `standards/requirements-artifact-review.md` | 成果物レビュー観点（構築側 / 業務側） |
 | `standards/development-management-guide.md` | 進捗/仕様/品質/構成/会議（管理本編） |
 | `knowledge/lessons/author-voice-archetypes-legacy.md` | Archetype 6 |
 | `frameworks/thinking-patterns/pattern-06-strategy-org-process-system.md` | 体系思考 |

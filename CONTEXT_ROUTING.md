@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.10
+Version: v1.11
 
 ## Purpose
 
@@ -44,7 +44,7 @@ Load:
 - standards/strategy-engagement-guide.md (if scoping or logic tree review needed)
 - frameworks/operating-model.md
 - frameworks/capability-model.md
-- Relevant domain files
+- Relevant domain files (`domains/energy-utilities.md` if energy / utilities)
 - Relevant project context
 
 Outputs:
@@ -159,6 +159,7 @@ Load:
 - standards/pmo-operating-guide.md (if PMO/portfolio design applies)
 - standards/deliverable-archetypes.md
 - standards/requirements-document-outline.md
+- standards/requirements-artifact-review.md
 - standards/document-management-standard.md
 - standards/development-standards-framework.md
 - core/author-voice.md
@@ -387,6 +388,32 @@ Outputs:
 - AMS / outsourcing proposal deck (Archetype I)
 - Transition approach summary
 - Assumption and risk register
+
+---
+
+# Energy / Utilities
+
+Load:
+- domains/energy-utilities.md
+- knowledge/patterns/operational-reality.md
+- knowledge/patterns/experience-before-scope.md (if customer-facing / portal / CRM)
+- knowledge/patterns/platform-build-vs-enablement.md (if data platform / CDP / enablement)
+- standards/requirements-artifact-review.md (if requirements review)
+- frameworks/operating-model.md
+- frameworks/ai-adoption-roadmap.md (if DX / AI in operations or retail)
+- knowledge/patterns/authority-levels.md (if plant autonomy or group decision rights)
+
+Focus:
+- Do not mix generation-AM logic with retail-customer logic
+- Experience → process → data → scope (not feature lists first)
+- Continuity investment vs transformation investment
+- Build vs enablement for data platforms
+
+Outputs:
+- Domain-informed problem framing
+- Layered customer-system map (CIS / CRM / CDP / CC)
+- Scope cuts for transition
+- Requirements review notes (business bench)
 
 ---
 

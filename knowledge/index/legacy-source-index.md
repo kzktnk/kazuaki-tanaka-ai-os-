@@ -1,6 +1,6 @@
 # Legacy Source Index
 
-**Version:** v1.4  
+**Version:** v1.5  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** ローカル保管のレガシー原本と、リポジトリ内知識の対応索引。**原本の中身は含まない。**
@@ -102,6 +102,31 @@
 | `D3.04_INP_… High Level Proposal Outline.pdf` | 骨子 | `standards/deliverable-archetypes.md` Archetype I | 章立てのみ |
 
 **Note:** 原本は `Downloads/AO Materials/` 配下。Accenture 社内秘・再配布禁止。クライアント事例名・FTE・コスト・拠点・人名・社内ツール名（Alpha/CDTS/CTA）・レートカードはリポジトリに**登録しない**。
+
+---
+
+## Program Line K: Utility retail customer systems（CIS / CRM / CDP / CC / CX, 2022–2024）
+
+原本はローカル Downloads。クライアント名・金額・製品名は書かない。抽出は一般化済み Domain / 標準 / パターンのみ。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| ポータル分科会セッション資料 | `experience-before-scope.md`, `domains/energy-utilities.md` §Retail | 体験→機能→業務→データ→範囲。機能一覧は不登録 |
+| 重要顧客定義・ポータルニーズ検討 | `energy-utilities.md` §Retail | KGI/CSF/KPI の罠のみ |
+| 料金予測アルゴリズム検討 | **未登録**（手法詳細） | 索引のみ |
+| 現行業務調査・新業務一覧 / フロー | `energy-utilities.md` §Retail | As-Is 鳥瞰の必要性のみ。業務実名は不登録 |
+| CDP 要求・定例・活用提案 | `platform-build-vs-enablement.md`, `energy-utilities.md` | 構築と利用の分離問題 |
+| CDP 要件成果物の確認観点 | `standards/requirements-artifact-review.md` | 8観点（固有要件文は不登録） |
+| 分析 PoC・データ課題、DR / キャンペーン分析報告 | `energy-utilities.md` §Data | 効果の前にデータ課題 |
+| ロイヤルティ / LTV / ポイント会計 | `energy-utilities.md` §CX | 商品設計と会計制約。仕訳・按分実数は不登録 |
+| 次期コンタクトセンター役員資料・費用対効果 | `energy-utilities.md` §Operating model | 継続性 vs 変革2軸。金額は不登録 |
+| CX 立ち上げ・組織配置仮説 | `energy-utilities.md` §Operating model | 分析チームだけでは足りない |
+| システム構築と利用教育の関係 | `platform-build-vs-enablement.md` | 教育をツール講習で終わらせない |
+| CIS / CRM 工程完了・ステコミ・経営会議 | `deliverable-archetypes.md` C、索引のみ | ゲート報告の型。予実は不登録 |
+| 30分値・シミュレーション過渡期 | `energy-utilities.md` §Retail | やる／やらない／暫定を先に切る |
+| ヒアリングメモ、個人名セッション、Q&A 原表 | **未登録** | 機密 |
+
+**Note:** 定例会資料（CDP 第10回以降など）は索引1行で足りる。中身の議事進行は登録しない。
 
 ---
 
@@ -221,6 +246,10 @@
 | `environment-management-guide.md` | 低 | ✅ 登録済（2026-08-13） |
 | `release-management-guide.md` | 中 | ✅ 登録済（2026-08-13） |
 | `sap-implementation-phase-model.md` | 中 | ✅ 登録済（2026-08-14） |
+| `domains/energy-utilities.md` | 高 | ✅ 登録済（2026-08-19） |
+| `requirements-artifact-review.md` | 高 | ✅ 登録済（2026-08-19） |
+| `experience-before-scope.md` | 中 | ✅ 登録済（2026-08-19） |
+| `platform-build-vs-enablement.md` | 中 | ✅ 登録済（2026-08-19） |
 
 ---
 

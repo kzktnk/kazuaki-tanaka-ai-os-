@@ -70,13 +70,13 @@ kazuaki-tanaka-ai-os/
 ├── ARCHITECTURE.md             ← structural blueprint
 ├── CONTEXT_ROUTING.md          ← task-based context selection
 ├── core/                       ← 8 files (kernel)
-├── standards/                  ← 17 files (quality criteria)
+├── standards/                  ← 18 files (quality criteria)
 ├── frameworks/                 ← 23 files + thinking-patterns/
 ├── playbooks/                  ← 1 playbook (+ README)
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
-│   ├── patterns/               ← 15 distilled patterns
+│   ├── patterns/               ← 17 distilled patterns
 │   ├── lessons/                ← 5 lessons
 │   ├── migrations/             ← 7 migration reports
 │   └── decisions/              ← (reserved, empty)
@@ -84,7 +84,7 @@ kazuaki-tanaka-ai-os/
 ├── prompts/                    ← README placeholder
 ├── projects/                   ← project template structure
 ├── adapters/cursor/            ← Cursor adapter
-├── domains/                    ← (reserved, empty)
+├── domains/                    ← energy-utilities.md（親）
 ├── technology/                 ← (reserved, empty)
 └── archive/                    ← README placeholder
 ```
@@ -114,7 +114,17 @@ core/
 
 ---
 
-## Level 3 — Standards (17)
+## Level 3 — Domains
+
+```text
+domains/
+├── README.md
+└── energy-utilities.md           ← parent (generation / T&D stub / retail + cross-cutting)
+```
+
+---
+
+## Level 3 — Standards (18)
 
 Grouped by domain for navigation:
 
@@ -128,6 +138,7 @@ standards/
 ├── Deliverables & documents
 │   ├── deliverable-archetypes.md
 │   ├── requirements-document-outline.md
+│   ├── requirements-artifact-review.md
 │   ├── document-management-standard.md
 │   └── writing.md
 ├── Application outsourcing / AMS
@@ -201,7 +212,7 @@ knowledge/
 │       ├── 001–020/                  ← Operational AI main series
 │       ├── sp01–sp09/                ← special posts
 │       └── erf01–erf03/              ← Enterprise Redesign Framework
-├── patterns/                         ← 15 files (see table below)
+├── patterns/                         ← 17 files (see table below)
 ├── lessons/
 │   ├── governance-messaging.md
 │   ├── dual-roadmap-messaging.md
@@ -218,16 +229,19 @@ knowledge/
 │   ├── linkedin-019.md
 │   ├── linkedin-020.md
 │   ├── ai-dual-roadmap-2026-08.md
-│   └── ao-sae-2026-08.md
+│   ├── ao-sae-2026-08.md
+│   └── energy-utilities-domain-2026-08.md
 └── decisions/                        ← reserved
 ```
 
-### Patterns (15)
+### Patterns (17)
 
 | Pattern | Primary themes |
 |---------|----------------|
 | `operational-governance.md` | Operational AI, governance as capability |
 | `operational-reality.md` | OT / field reality vs DX narrative |
+| `experience-before-scope.md` | Experience → process → data → scope |
+| `platform-build-vs-enablement.md` | Platform release vs ability to run the loop |
 | `expertise-amplification.md` | AI amplifies experts |
 | `organizational-memory.md` | Intelligence vs organizational memory; decision context |
 | `exception-as-memory-entry.md` | Exceptions as memory entry; capture at deviation |
@@ -371,6 +385,23 @@ knowledge/migrations/linkedin-020.md
 CONTEXT_ROUTING.md  →  AI Adoption / DX Roadmap, LinkedIn Writing
 ```
 
+### G. Energy & utilities domain (Program Line K + existing patterns)
+
+```text
+Local retail customer program decks (Downloads/) — not archived
+        ↓ generalize
+domains/energy-utilities.md
+standards/requirements-artifact-review.md
+knowledge/patterns/experience-before-scope.md
+knowledge/patterns/platform-build-vs-enablement.md
+        ↓ existing generation/AM
+knowledge/patterns/operational-reality.md
+        ↓ record
+knowledge/migrations/energy-utilities-domain-2026-08.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  Energy / Utilities, Proposal Review
+```
+
 ---
 
 ## Level 4 — CONTEXT_ROUTING Task Map (summary)
@@ -384,6 +415,7 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | PMO / transformation | `frameworks/transformation-pmo.md`, `standards/pmo-operating-guide.md` |
 | AI governance | `frameworks/ai-governability.md`, `decision-ownership.md`, `human-oversight.md`, related `patterns/` |
 | AI adoption / DX roadmap | `frameworks/ai-adoption-roadmap.md`, `ai-role-maturity.md`, `organizational-memory.md`, `exception-as-memory-entry.md`, `connected-organizational-memory.md`, `dual-roadmap-messaging.md` |
+| Energy / utilities | `domains/energy-utilities.md`, `operational-reality.md`, `requirements-artifact-review.md` (if requirements) |
 | Application outsourcing / AMS | `application-outsourcing-solution-planning.md`, `ams-services-pyramid.md`, `service-transition-approach.md`, `ams-solution-plan-checklist.md` |
 | LinkedIn / Note writing | `standards/writing.md` (§De-AI Writing Pass), series `source/`, related `patterns/` and `frameworks/` |
 | Knowledge migration | `AI_OPERATING_MANUAL.md`, source asset, migration workflow |
