@@ -325,6 +325,19 @@
 
 ---
 
+## Program Line W: 複数ベンダー横断 PgMO 指導（2026、一般化のみ）
+
+原本はローカル `Downloads/`。匿名ラベル: **multi-vendor cross-project PgMO coaching / 2026**。社名、円、契約事実、実プログラム事実は不登録。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| Cross-Project Management Playbook（md / docx） | `playbooks/cross-project-program-management.md` | PJ 間 5 領域、Control Cycle、コーチング順序。章本文の写しは最小化 |
+| Templates.xlsx（8 シート） | 同上 Playbook 本文 / Appendix | テンプレート**クラスとフィールド**のみ。Issue Log を含む。xlsx 実体不登録 |
+
+**未登録:** xlsx ファイル本体、作成日・対象読者などの表紙メタ、演習ケースのベンダー名・日付・費用、部下の実プログラム。
+
+---
+
 ## Program Line G: IT Strategy Foundations (legacy consulting, 2002)
 
 | ローカル原本（例） | 種別 | 抽出先（リポジトリ） |
@@ -465,6 +478,7 @@
 | `shared-operator-vs-ministry-vs-municipality.md` | 高 | ✅ 登録済（2026-08-20） |
 | `public-multi-lot-construction-pmo.md` | 高 | ✅ 登録済（2026-08-20） |
 | `program-governance-cadence.md` | 高 | ✅ 登録済（2026-08-20） |
+| `cross-project-program-management.md` | 高 | ✅ 登録済（2026-08-20） |
 
 ---
 

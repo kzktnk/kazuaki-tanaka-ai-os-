@@ -268,7 +268,8 @@ knowledge/
 │   ├── enterprise-engagements-2013-2023-2026-08.md
 │   ├── pgmo-ai-change-2026-08.md
 │   ├── local-gov-shared-it-2026-08.md
-│   └── program-governance-cadence-2026-08.md
+│   ├── program-governance-cadence-2026-08.md
+│   └── cross-project-program-management-2026-08.md
 └── decisions/
     ├── diagnose-from-gateway-not-client-error.md
     ├── sandbox-cost-controls-before-resources.md
@@ -327,6 +328,7 @@ playbooks/
 ├── private-it-rfp-vendor-selection.md
 ├── pmo-function-standup.md
 ├── program-governance-cadence.md
+├── cross-project-program-management.md
 ├── public-multi-lot-construction-pmo.md
 ├── interim-connectivity.md
 ├── private-api-connectivity-diagnosis.md
@@ -641,8 +643,10 @@ CONTEXT_ROUTING.md  →  AI CoE / AI PgMO / AI Change, Change Management, AI Ado
 Local live PgMO cadence folders — not archived
         ↓ generalize (no client names, yen, minutes bodies, inspection results, plant/site names)
 playbooks/program-governance-cadence.md
+playbooks/cross-project-program-management.md
         ↓ record
 knowledge/migrations/program-governance-cadence-2026-08.md
+knowledge/migrations/cross-project-program-management-2026-08.md
         ↓ task routing
 CONTEXT_ROUTING.md  →  Transformation PMO / Program Governance
 ```
@@ -657,7 +661,7 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 |------|----------------|
 | Proposal review | `standards/consulting-review.md`, `deliverable-archetypes.md`, `writing.md` |
 | IT strategy | `frameworks/it-strategy-foundations.md`, `standards/it-strategy-engagement-guide.md` |
-| PMO / transformation | `frameworks/transformation-pmo.md`, `playbooks/pmo-function-standup.md`, `playbooks/program-governance-cadence.md`, `standards/pmo-operating-guide.md`, `frameworks/change-management.md` |
+| PMO / transformation | `frameworks/transformation-pmo.md`, `playbooks/pmo-function-standup.md`, `playbooks/program-governance-cadence.md`, `playbooks/cross-project-program-management.md`, `standards/pmo-operating-guide.md`, `frameworks/change-management.md` |
 | DX grand design | `frameworks/dx-grand-design.md`, change / roadmap as needed |
 | New venture assessment | `frameworks/new-venture-three-track-assessment.md` |
 | B2B sales workflow | `knowledge/patterns/sales-capacity-via-center-functions.md` |

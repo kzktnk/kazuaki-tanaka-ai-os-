@@ -9,7 +9,7 @@ type: playbook
 **Owner:** Kazuaki Tanaka  
 **Purpose:** 複数プロジェクトを持つプログラムで、**誰が何のために集まり、層の間で何を上げ、検査と進捗を混ぜないか**を設計する  
 **Use when:** Phase 1 でプログラム事務局（PMO / PgMO）を立ち上げたあと、定例・横断調整・プログラム会議・ステコミ・検査が同じ「報告会」に見え始めている  
-**Do not use as-is for:** 事務局そのものの立ち上げ順序（`playbooks/pmo-function-standup.md`）、共同利用の複数ロット開始判定（`playbooks/public-multi-lot-construction-pmo.md`）、官側調達設計（`frameworks/public-it-procurement-support.md`）
+**Do not use as-is for:** 事務局そのものの立ち上げ順序（`playbooks/pmo-function-standup.md`）、PJ 間の依存・整合・Hand-off 管理（`playbooks/cross-project-program-management.md`）、共同利用の複数ロット開始判定（`playbooks/public-multi-lot-construction-pmo.md`）、官側調達設計（`frameworks/public-it-procurement-support.md`）
 
 Pairs with `frameworks/transformation-pmo.md`（PMO とは何か）and `standards/pmo-operating-guide.md`（機能と PPM）。本 Playbook は **会議階層と文書クラス**。ステコミ資料の型は `standards/deliverable-archetypes.md` Archetype C。文書番号・台帳は `standards/document-management-standard.md`。
 
@@ -106,6 +106,7 @@ Pairs with `frameworks/transformation-pmo.md`（PMO とは何か）and `standard
 
 - `frameworks/transformation-pmo.md`
 - `playbooks/pmo-function-standup.md`
+- `playbooks/cross-project-program-management.md`
 - `standards/pmo-operating-guide.md`
 - `standards/deliverable-archetypes.md`（Archetype C）
 - `standards/document-management-standard.md`

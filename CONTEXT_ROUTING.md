@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.21
+Version: v1.22
 
 ## Purpose
 
@@ -360,6 +360,7 @@ Load:
 - frameworks/transformation-pmo.md
 - playbooks/pmo-function-standup.md (if the office exists on paper but not in operation)
 - playbooks/program-governance-cadence.md (if SteerComm / program board / standup / inspection are collapsing into one status meeting)
+- playbooks/cross-project-program-management.md (if PgMO is buried in vendor WBS detail; PJ間 dependency / consistency / hand-off control is missing)
 - knowledge/patterns/hybrid-talent-in-transformation.md (if the program has no people who can redesign work)
 - knowledge/patterns/multi-year-transformation-sequence.md (if strategy, HR, systems, and purchasing are split across years)
 - frameworks/change-management.md (if people-side design, not only PMO ownership)
@@ -381,6 +382,7 @@ Focus:
 - PMO function map (portfolio, change, HCM, knowledge, integration)
 - PPM process and portfolio stop/start discipline
 - Cadence stack: who meets for what; escalation between layers; inspection vs status
+- Cross-project artifacts: 5 domains (scope boundary, dependency, interface, consistency, schedule); Control Cycle; template classes
 - Phase 1 controlled document set (policy, roadmap, meeting pack) vs live minutes
 - Change management: stakeholder progression (Awareness → Ownership); readiness and strategy in `change-management.md`
 
