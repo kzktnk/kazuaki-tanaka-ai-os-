@@ -108,6 +108,8 @@ Pairs with `frameworks/transformation-pmo.md`（PMO とは何か）and `standard
 - `playbooks/pmo-function-standup.md`
 - `playbooks/cross-project-program-management.md`
 - `standards/pmo-operating-guide.md`
+- `standards/development-management-guide.md`
+- `knowledge/patterns/project-management-policy-layer.md`（プロジェクト層の方針 TOC・課題／リスク／変更境界）
 - `standards/deliverable-archetypes.md`（Archetype C）
 - `standards/document-management-standard.md`
 - `knowledge/lessons/pmo-professional-principles.md`

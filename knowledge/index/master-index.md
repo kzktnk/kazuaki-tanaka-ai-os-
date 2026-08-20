@@ -76,9 +76,9 @@ kazuaki-tanaka-ai-os/
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
-│   ├── patterns/               ← 29 distilled patterns
+│   ├── patterns/               ← 31 distilled patterns
 │   ├── lessons/                ← 5 lessons
-│   ├── migrations/             ← 22 migration reports
+│   ├── migrations/             ← 24 migration reports
 │   └── decisions/              ← 4 records
 ├── templates/                  ← 1 template
 ├── prompts/                    ← README placeholder
@@ -94,7 +94,7 @@ kazuaki-tanaka-ai-os/
 | Index | Scope |
 |-------|--------|
 | [linkedin-series-index.md](./linkedin-series-index.md) | LinkedIn / Note sources 001–020, sp01–09, erf01–03 |
-| [legacy-source-index.md](./legacy-source-index.md) | Local legacy PDFs → repo extraction map (Program Lines A–V) |
+| [legacy-source-index.md](./legacy-source-index.md) | Local legacy PDFs → repo extraction map (Program Lines A–X) |
 
 ---
 
@@ -239,7 +239,7 @@ knowledge/
 │       ├── 001–020/                  ← Operational AI main series
 │       ├── sp01–sp09/                ← special posts
 │       └── erf01–erf03/              ← Enterprise Redesign Framework
-├── patterns/                         ← 29 files (see table below)
+├── patterns/                         ← 31 files (see table below)
 ├── lessons/
 │   ├── governance-messaging.md
 │   ├── dual-roadmap-messaging.md
@@ -269,7 +269,9 @@ knowledge/
 │   ├── pgmo-ai-change-2026-08.md
 │   ├── local-gov-shared-it-2026-08.md
 │   ├── program-governance-cadence-2026-08.md
-│   └── cross-project-program-management-2026-08.md
+│   ├── cross-project-program-management-2026-08.md
+│   ├── fisc-audit-tech-ops-facility-2026-08.md
+│   └── project-management-policy-layer-2026-08.md
 └── decisions/
     ├── diagnose-from-gateway-not-client-error.md
     ├── sandbox-cost-controls-before-resources.md
@@ -277,10 +279,12 @@ knowledge/
     └── buyer-owns-ai-poc-ground-truth.md
 ```
 
-### Patterns (29)
+### Patterns (31)
 
 | Pattern | Primary themes |
 |---------|----------------|
+| `project-management-policy-layer.md` | Project-layer PM policy TOC; progress measure; issue/risk/ToDo; change vs baseline |
+| `fis-system-audit-as-assurance.md` | Industry system-audit guidance as buyer assurance, not checklist paste |
 | `operational-governance.md` | Operational AI, governance as capability |
 | `operational-reality.md` | OT / field reality vs DX narrative |
 | `experience-before-scope.md` | Experience → process → data → scope |
@@ -371,14 +375,16 @@ CONTEXT_ROUTING.md  →  AI Governance / LinkedIn Writing sections
 ### B. ERP / development standards (legacy → standards)
 
 ```text
-Local legacy (Program Line A, H, I)     ← legacy-source-index.md
+Local legacy (Program Line A, H, I, X)     ← legacy-source-index.md
         ↓ generalize
-standards/development-standards-framework.md
+standards/development-standards-framework.md  (+ tech/ops/facility layer)
 standards/development-management-guide.md
 standards/deliverable-archetypes.md
 frameworks/sap-implementation-phase-model.md
+knowledge/patterns/fis-system-audit-as-assurance.md
+knowledge/patterns/project-management-policy-layer.md
         ↓ task routing
-CONTEXT_ROUTING.md  →  Proposal Review, ERP, PMO sections
+CONTEXT_ROUTING.md  →  Development Standards / Build Phase
 ```
 
 ### C. IT strategy foundations (Program Line G)
@@ -653,6 +659,24 @@ CONTEXT_ROUTING.md  →  Transformation PMO / Program Governance
 
 ---
 
+### R. Project management policy layer (Program Line Y)
+
+```text
+Local anonymized SI proposal §PM policy (Q2C-style; PPTX not in git)
+        ↓ generalize (no client names, yen, EVM tables, tool brands, calendars)
+knowledge/patterns/project-management-policy-layer.md
+        ↓ connect
+standards/development-management-guide.md
+standards/pmo-operating-guide.md
+playbooks/program-governance-cadence.md
+        ↓ record
+knowledge/migrations/project-management-policy-layer-2026-08.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  Transformation PMO / Development Standards
+```
+
+---
+
 ## Level 4 — CONTEXT_ROUTING Task Map (summary)
 
 Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
@@ -661,7 +685,7 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 |------|----------------|
 | Proposal review | `standards/consulting-review.md`, `deliverable-archetypes.md`, `writing.md` |
 | IT strategy | `frameworks/it-strategy-foundations.md`, `standards/it-strategy-engagement-guide.md` |
-| PMO / transformation | `frameworks/transformation-pmo.md`, `playbooks/pmo-function-standup.md`, `playbooks/program-governance-cadence.md`, `playbooks/cross-project-program-management.md`, `standards/pmo-operating-guide.md`, `frameworks/change-management.md` |
+| PMO / transformation | `frameworks/transformation-pmo.md`, `playbooks/pmo-function-standup.md`, `playbooks/program-governance-cadence.md`, `playbooks/cross-project-program-management.md`, `standards/pmo-operating-guide.md`, `knowledge/patterns/project-management-policy-layer.md` (if project-layer policy TOC), `frameworks/change-management.md` |
 | DX grand design | `frameworks/dx-grand-design.md`, change / roadmap as needed |
 | New venture assessment | `frameworks/new-venture-three-track-assessment.md` |
 | B2B sales workflow | `knowledge/patterns/sales-capacity-via-center-functions.md` |
@@ -674,6 +698,7 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | Energy / utilities | `domains/energy-utilities.md`, `operational-reality.md`, `requirements-artifact-review.md` (if requirements) |
 | Public sector / defense IT | `domains/public-defense.md`, `public-it-procurement-support.md` (if buyer), `buyer-vs-seller-in-public-procurement.md`, shared-operator pattern + multi-lot construction PMO playbook if concurrent lots |
 | Private IT RFP / vendor selection | `frameworks/private-it-rfp.md`, `playbooks/private-it-rfp-vendor-selection.md`, `vendor-proposal-evaluation.md`, calibration / re-proposal patterns |
+| Development standards / build / FIS audit mapping | `development-standards-framework.md`, related build standards, `fis-system-audit-as-assurance.md` when audit guidance or tech/ops/facility criteria apply, `project-management-policy-layer.md` when vendor PM-policy chapter applies |
 | Application outsourcing / AMS | `application-outsourcing-solution-planning.md`, `ams-services-pyramid.md`, `service-transition-approach.md`, `ams-solution-plan-checklist.md` |
 | Infrastructure outsourcing / ITO | `infrastructure-outsourcing-solution-planning.md`, `transition-vs-transformation-vs-realization.md` |
 | Systems integration / SI proposal | `systems-integration-solution-planning.md`, `estimate-target-commitment.md` |

@@ -38,6 +38,8 @@
 | 5 | 構成管理 | 変更のトレーサビリティ、受入・版確定 |
 | 6 | コミュニケーション管理 | 会議体系、様式・ツールの運用 |
 
+ベンダー提案の「プロジェクト管理方針」章との境界は、本書末尾の **Project Management Policy Layer**（`project-management-policy-layer.md`）を参照。
+
 ---
 
 ## Roles and Reporting Lines
@@ -365,6 +367,22 @@ PM と PL は規模により同一人物でもよい。
 
 ---
 
+## Project Management Policy Layer (方針章との境界)
+
+ベンダー提案やキックオフの「プロジェクト管理方針」は、本書の5領域監督と**同じ平面ではない**。方針章が固定すべきは、進捗の測り方・会議の事実確認と決定の分離・課題／リスク／ToDo・変更とベースライン（QCD）・次工程阻害要因の品質追跡である。判断の型は `knowledge/patterns/project-management-policy-layer.md`。
+
+| 本書の章 | 方針章で追加確認すること |
+|---------|-------------------------|
+| 進捗 | 件数％ではなく作業量差異で遅延規模が見えるか |
+| 仕様／構成の変更 | 変更票の状態遷移と、要求・契約・WBS ベースラインへの QCD 条件 |
+| 品質 | 工程目標に加え、次工程の阻害要因を早期に消しているか |
+| コミュニケーション | 上位報告前の事実確認場があるか（決定の場と混同していないか） |
+| 問題管理（A–D） | 損失×不確実性で Risk / Issue / ToDo が切り分けられているか |
+
+プログラム層のステコミ／横断／検査は `playbooks/program-governance-cadence.md`。
+
+---
+
 ## Relationship to PMO
 
 | 本書（開発管理） | PMO（`pmo-operating-guide.md`） |
@@ -372,6 +390,7 @@ PM と PL は規模により同一人物でもよい。
 | WBS・週次進捗・問題表 | ポートフォリオ・SteerComm・Benefit |
 | 仕様確定・変更 | プログラムスコープ・変更ガバナンス |
 | 工程終了判定 | マイルストーン・統合ロードマップ |
+| 方針章との境界 | プロジェクト層 TOC vs プログラム cadence |
 
 ---
 
@@ -397,6 +416,8 @@ PM と PL は規模により同一人物でもよい。
 | `standards/document-management-standard.md` | 文書区分・台帳 |
 | `standards/requirements-document-outline.md` | 要定（要件確定前） |
 | `standards/pmo-operating-guide.md` | プログラム横串 |
+| `knowledge/patterns/project-management-policy-layer.md` | 提案・方針章の TOC／境界 |
+| `playbooks/program-governance-cadence.md` | プログラム会議階層 |
 | `standards/operations-design-guide.md` | 運用設計 |
 | `standards/operations-handover-guide.md` | 運用引継 |
 | `standards/environment-management-guide.md` | 開発/試験環境 |

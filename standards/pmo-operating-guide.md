@@ -147,6 +147,8 @@ Key operating rhythm:
 
 **PMO role in control:** Own program-level change control, benefit tracking, and cross-project impact assessment — not only collecting status slides.
 
+**Project-layer policy vs program control:** Vendor/project “management policy” chapters define measurement, registers, and fact-check cadence **inside** a project. Do not treat that TOC as a substitute for portfolio change or SteerComm rights. Boundary pattern: `knowledge/patterns/project-management-policy-layer.md`.
+
 ---
 
 ## Program Status and Visibility
@@ -234,6 +236,9 @@ Before go-live:
 - `frameworks/transformation-pmo.md`
 - `playbooks/pmo-function-standup.md`
 - `playbooks/program-governance-cadence.md`
+- `playbooks/cross-project-program-management.md`
+- `knowledge/patterns/project-management-policy-layer.md`
+- `standards/development-management-guide.md`
 - `frameworks/change-management.md`
 - `knowledge/lessons/pmo-professional-principles.md`
 - `frameworks/strategic-capability-network.md`

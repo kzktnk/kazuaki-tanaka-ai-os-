@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.22
+Version: v1.23
 
 ## Purpose
 
@@ -288,22 +288,29 @@ Load:
 - standards/release-management-guide.md (if library / PT→RT→prod release)
 - standards/requirements-document-outline.md (if upstream 要定 exists)
 - standards/pmo-operating-guide.md (if program governance overlap)
-- knowledge/index/legacy-source-index.md (Program Line H)
+- knowledge/patterns/fis-system-audit-as-assurance.md (if industry system-audit guidance / tech-ops-facility criteria / buyer assurance mapping)
+- knowledge/patterns/project-management-policy-layer.md (if reviewing vendor project-management policy chapter / proposal §PM)
+- knowledge/index/legacy-source-index.md (Program Line H / X / Y)
 - core/author-voice.md
 - standards/writing.md
 
 Focus:
 - Guideline vs regulation split and applicability by domain
+- Tech / ops / facility criteria layering when the engagement uses that split
 - Five management domains (schedule, spec, quality, config, communication)
 - Document types (要定/方概/詳設…) and control workflow
 - Tailoring and exception documentation
 - Operations design, handover, environment, and release (PT→RT→prod)
+- Audit guidance as assurance mapping — not checklist paste
+- Project management policy TOC: progress measure, issue/risk/ToDo, change vs baseline, project vs program layer
 
 Outputs:
 - Development standards applicability matrix
 - Document control rules for the program
 - Review checklist for vendor deliverables
 - Gap list vs RFP development-standard requirements
+- Optional: audit-theme → tech/ops/facility/dev-standard evidence map
+- Optional: gap list vs project-management policy chapter TOC
 
 ---
 
@@ -361,6 +368,7 @@ Load:
 - playbooks/pmo-function-standup.md (if the office exists on paper but not in operation)
 - playbooks/program-governance-cadence.md (if SteerComm / program board / standup / inspection are collapsing into one status meeting)
 - playbooks/cross-project-program-management.md (if PgMO is buried in vendor WBS detail; PJ間 dependency / consistency / hand-off control is missing)
+- knowledge/patterns/project-management-policy-layer.md (if vendor/project “management policy” TOC, progress measure, issue/risk/ToDo, or change-vs-baseline boundaries are weak)
 - knowledge/patterns/hybrid-talent-in-transformation.md (if the program has no people who can redesign work)
 - knowledge/patterns/multi-year-transformation-sequence.md (if strategy, HR, systems, and purchasing are split across years)
 - frameworks/change-management.md (if people-side design, not only PMO ownership)
@@ -384,6 +392,7 @@ Focus:
 - Cadence stack: who meets for what; escalation between layers; inspection vs status
 - Cross-project artifacts: 5 domains (scope boundary, dependency, interface, consistency, schedule); Control Cycle; template classes
 - Phase 1 controlled document set (policy, roadmap, meeting pack) vs live minutes
+- Project-layer PM policy vs program control (measurement, registers, fact-check before escalate)
 - Change management: stakeholder progression (Awareness → Ownership); readiness and strategy in `change-management.md`
 
 Outputs:

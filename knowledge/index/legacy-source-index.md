@@ -1,6 +1,6 @@
 # Legacy Source Index
 
-**Version:** v1.16  
+**Version:** v1.17  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** ローカル保管のレガシー原本と、リポジトリ内知識の対応索引。**原本の中身は含まない。**
@@ -67,6 +67,23 @@
 | `20031219/開発規約/第４–９編` | 維持/UI/DB/技法 | **未登録**（索引のみ） |
 
 **Note:** 原本は `Downloads/20031219/` 配下。クライアント名・担当者名・Z0C文書番号・実様式はリポジトリに登録しない。Program Line A の RFP 開発標準要求（AP_ST002）の**履行成果**が本 Line。
+
+**Downloads 直下の別名フォルダ（同一パック）:** `ドキュメント標準` / `運用設計ガイドライン` / `開発環境／試験環境ガイドライン` / `運用引継ガイドライン` / `開発規約` / `開発管理ガイドライン` は上記と同じ financial-institution IT standards / legacy development standards pack のコピー配置。抽出先は変更なし（差分抽出なし）。`運用設計ガイドライン/` 内に運用引継ファイルが混在する場合あり — 索引上は種別で読む。
+
+---
+
+## Program Line X: 業界システム監査指針＋技術／運用／設備基準（〜2002–2003）
+
+匿名ラベル: **financial-institution IT standards / legacy development standards pack**（監査・安全対策側）。銀行名・チェック行本文・円・人名は不登録。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| 業界「金融機関等のシステム監査指針」改訂版（`.xls`） | `knowledge/patterns/fis-system-audit-as-assurance.md` | 様式メタ（要点→リスク→コントロール→CP）、buyer/assurance の使い方、開発・運用・設備への投影。**チェックポイント行・小項目本文は未登録** |
+| 技術基準_v1.doc | `standards/development-standards-framework.md` §三基準レイヤ | 大分類のみ（災害障害／故意過失／監査機能）。項番本文未登録 |
+| 運用基準_v1.doc | 同上 | 大分類のみ（体制・入退・運用・開発変更・設備管理・教育・委託・監査）。項番本文未登録 |
+| 設備基準_v1.doc | 同上 | 大分類のみ（建物・電算室・電空・電源・空調・監視・回線）。項番本文未登録 |
+
+**Note:** 原本は `Downloads/` 直下。業界指針は著作権・再配布に注意。リポジトリは**判断とカテゴリ骨格**のみ。公共防衛の情報保証とは別（`domains/public-defense.md`）。
 
 ---
 
@@ -338,6 +355,20 @@
 
 ---
 
+## Program Line Y: 匿名レガシー大規模SI提案のプロジェクト管理方針章（一般化のみ）
+
+原本はローカル `Downloads/` のみ。匿名ラベル: **requirements-to-cash style program / project management policy chapter**。Q2C は製品ラベルとして扱い、クライアント名・円・人名・組織図・RACI 実名・WBS ID・スケジュール実績は不登録。PPTX は git に入れない。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| 提案／方針デッキ「プロジェクト管理方針」章（〜11枚） | `knowledge/patterns/project-management-policy-layer.md` | TOC、PJ vs プログラム境界、進捗測度、課題／リスク／ToDo、変更×QCD／ベースライン。表・実績・会議曜日・ツール名は不登録 |
+| 同上 → 開発管理との接続 | `standards/development-management-guide.md`（方針境界節） | 監督5領域との差分確認のみ |
+| 同上 → PMO／cadence | `standards/pmo-operating-guide.md`, `playbooks/program-governance-cadence.md` | ポインタ。会議階層の再定義はしない |
+
+**未登録:** スライドダンプ、EVM数値例、製品・リモートツール節、失敗原因リストの全文。
+
+---
+
 ## Program Line G: IT Strategy Foundations (legacy consulting, 2002)
 
 | ローカル原本（例） | 種別 | 抽出先（リポジトリ） |
@@ -431,13 +462,14 @@
 | `it-strategy-foundations.md` | 高 | ✅ 登録済 |
 | `it-strategy-engagement-guide.md` | 高 | ✅ 登録済 |
 | `jera-scn-ebitda-tree.md` | 高 | ✅ 登録済（2026-08-12） |
-| `development-standards-framework.md` | 高 | ✅ 登録済（2026-08-13） |
+| `development-standards-framework.md` | 高 | ✅ 登録済（2026-08-13）、v1.1 三基準レイヤ（2026-08-20） |
 | `document-management-standard.md` | 高 | ✅ 登録済（2026-08-13） |
 | `development-management-guide.md` | 高 | ✅ 登録済（2026-08-13） |
 | `operations-design-guide.md` | 中 | ✅ 登録済（2026-08-13） |
 | `operations-handover-guide.md` | 中 | ✅ 登録済（2026-08-13） |
 | `environment-management-guide.md` | 低 | ✅ 登録済（2026-08-13） |
 | `release-management-guide.md` | 中 | ✅ 登録済（2026-08-13） |
+| `fis-system-audit-as-assurance.md` | 中 | ✅ 登録済（2026-08-20） |
 | `sap-implementation-phase-model.md` | 中 | ✅ 登録済（2026-08-14） |
 | `domains/energy-utilities.md` | 高 | ✅ 登録済（2026-08-19） |
 | `requirements-artifact-review.md` | 高 | ✅ 登録済（2026-08-19） |
@@ -479,6 +511,7 @@
 | `public-multi-lot-construction-pmo.md` | 高 | ✅ 登録済（2026-08-20） |
 | `program-governance-cadence.md` | 高 | ✅ 登録済（2026-08-20） |
 | `cross-project-program-management.md` | 高 | ✅ 登録済（2026-08-20） |
+| `project-management-policy-layer.md` | 高 | ✅ 登録済（2026-08-20） |
 
 ---
 
