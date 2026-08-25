@@ -4,13 +4,13 @@ type: playbook
 
 # Cross-Project Program Management Playbook
 
-**Version:** v0.4  
+**Version:** v0.5  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** 複数ベンダー・複数プロジェクトの **「間（あいだ）」** を管理し、依存・境界・整合・統合スケジュール・コントロールを構造化する  
 **Use when:** PgMO が個別 PJ の WBS や進捗報告に埋もれ、PJ 間の受け渡し・整合・波及分析が弱い  
 **Do not use as-is for:** PMO 立ち上げ順序（`playbooks/pmo-function-standup.md`）、会議階層設計（`playbooks/program-governance-cadence.md`）、官側複数ロット開始判定（`playbooks/public-multi-lot-construction-pmo.md`）  
-**Source revision:** local Cross-Project Management Playbook v1.7（2026-08-25）
+**Source revision:** local Cross-Project Management Playbook v1.8（2026-08-25）
 
 Pairs with `playbooks/program-governance-cadence.md`（**誰がどの会議で何を決めるか**）and `frameworks/transformation-pmo.md`（PgMO の位置づけ）。本 Playbook は **何を PJ 間管理の対象として構造化し、どう回すか** を扱う。顧客向け週次／月次の見せ方は `standards/deliverable-archetypes.md` Archetype J。
 
@@ -26,6 +26,8 @@ Pairs with `playbooks/program-governance-cadence.md`（**誰がどの会議で�
 
 個別プロジェクトの管理（WBS・進捗管理・課題管理）はベンダーPM／PLの役割であり、本Playbookの対象外である。本Playbookが対象とするのは、**個別プロジェクトの「中」ではなく「間（あいだ）」をどう管理するか**である。
 
+**射程の明示**：本Playbookが扱うのは、Program Managementの中でも複数PJ間の統合・依存・整合・統制（Cross-Project Integration & Control）に絞った領域である。Benefits／Value Realization、Strategic Alignment、Program-level Business Case、Stakeholder／Change Management、Resource／Investment Prioritization、Program Lifecycle（Tranche）管理といった、Program Management全般に含まれる他の領域は、本Playbookの対象外である。タイトルが「Program Management Playbook」ではなく「Cross-Project Management Playbook」であるのはこのためである。
+
 ## 使い方
 
 1. Chapter 1〜2で「PgMOは何を管理するのか」という視点を作る
@@ -38,7 +40,7 @@ Pairs with `playbooks/program-governance-cadence.md`（**誰がどの会議で�
 
 ---
 
-## Chapter 1. Project Management と Program Management の違い
+## Chapter 1. Project Management と Cross-Project Program Management の違い
 
 ### 1.1 個別PJではなく「PJ間」を管理する
 
@@ -191,11 +193,42 @@ Interaction Map・Dependency Register・Consistency Matrix・Integrated Mileston
 
 この5問は、管理表を一度作って終わりにするための質問ではない。Weekly Meetingのたびに、更新された管理表に対して繰り返し当て続けるものである。特に「1. 未接続」と「2. 未確定」は初期段階で、「3. 不一致」と「5. 単一障害点」はプログラムが進むにつれて重みが増していく。5問すべてに「問題なし」と即答できる状態は、実務ではむしろ疑ってよい。どこかの観点でまだ見えていないだけの可能性が高い。
 
+### 2.6 5領域のメンタルモデル
+
+ここまでChapter 2〜6（本項執筆時点ではChapter 3〜6が今後の管理対象）で、Interaction Map・Dependency Register・Scope Boundary Matrix・Consistency Matrix・Integrated Scheduleという個別の管理表を扱ってきた。しかし管理表の名前や書式そのものは、覚えることが目的ではない。本人に持たせたいのは、その背後にある次の一枚のメンタルモデルである。
+
+```text
+                  Program Outcome
+                        │
+                 Integrated Schedule
+                        │
+        ┌───────────────┼───────────────┐
+        │                │                │
+  Scope Boundary     Dependency       Consistency
+                        │                │
+                    Interface ───────────┘
+                        │
+                   PJ-A ↔ PJ-B
+```
+
+それぞれの問いを一言で定義すると、次のようになる。
+
+| 領域 | 一言の定義 | 対応Chapter |
+|---|---|---|
+| Boundary（Scope Boundary） | 誰が担当するか | Chapter 5 |
+| Dependency | 何を、いつ、誰から誰に渡すか | Chapter 3 |
+| Interface | どう繋ぐか（項目・型・タイミングの合意） | Chapter 3.6 |
+| Consistency | 内容（要件・設計・データ）が一致しているか | Chapter 6 |
+| Schedule | 全体として期日に間に合うか | Chapter 4 |
+
+管理表の名前や書式を忘れても、この5つの問いさえ持っていれば、PgMOとして次に何を確認すべきかを自分で考えられる。Chapter 3〜6を一通り学んだ後に、この一枚に立ち返らせると定着しやすい。
+
 ### レビュー用メモ（本人との議論用）
 - [ ] Interaction Mapの矢印すべてに「何が流れるか」が書けているか
 - [ ] 矢印の抜け（実際には連携しているのに描かれていない関係）がないか、本人以外の目でも確認したか
 - [ ] 異常検知５問を、自分の担当プログラムの管理表に対して実際に当ててみたか
 - [ ] 5問すべてに即答で「問題なし」と答えていないか（本当に見えていないだけではないか）
+- [ ] Boundary／Dependency／Interface／Consistency／Scheduleの5領域を、管理表を見ずに自分の言葉で説明できるか
 
 ---
 
@@ -725,6 +758,9 @@ Dependency Register・Consistency Matrix・RAID/Decision Logは、作って終�
 4. Downstream Impactは何か
 5. Recovery Optionは何か
 6. 誰に何を決めてもらう必要があるか
+7. Steering Committeeへの説明を、Detect（検知）→ Analyze（分析）→ Recover（挽回策）→ Recommend（推奨）→ Ask（依頼）の1枚にまとめる
+
+演習はステップ6で終わらせない。Recovery Optionを考えたところで止まると、本人は「分析はできるが、決めてもらうところまで持っていけない」状態のままになる。ステップ7で、実際にSteering Committeeに何を承認してもらうのかを、1〜2文で言い切らせるところまでを演習のゴールにする。
 
 一度この2セッションを一緒にやれば、型としての感覚はかなり掴める。以後は本人に自走させ、月1回程度、Consistency Matrixとの突き合わせ結果をレビューする形にシフトする。
 
@@ -759,9 +795,18 @@ PJ-B・PJ-C・PJ-D    ─テストシナリオ─▶ PJ-E（テスト統括）
 
 この記入例のポイントは、Recovery Optionが「待つ」以外の選択肢（分割・並行化・バッファ消化）を含んでいること、および最後の行で「PgMOだけで完結する意思決定」と「相手PJの合意が要る意思決定」を切り分けていることである。本人の解答がAction止まりで終わっている場合は、この切り分けまで踏み込ませる。
 
+**Session 2（Steering Committeeへの Decision Request）の記入例**
+
+上記の分析を、Steering Committeeでそのまま話せる1枚に落とすと次のようになる。
+
+> PJ-BのAPI仕様確定が8日遅延見込みです（Detect）。現状のままでは総合テスト開始に3日波及します（Analyze）。一方、Critical項目を先行確定すれば影響を吸収できます（Recover）。PJ-C側の開発体制組替えが必要なため（Recommend）、本日はこの対応方針の承認をお願いします（Ask）。
+
+ポイントは、Detect（何が起きたか）とAnalyze（何に波及するか）だけで終わらせず、Recover（どう吸収するか）・Recommend（PgMOとしての推奨案）まで自分で組み立てたうえで、最後は必ずAsk（何を承認してほしいのか）で締めることである。これは「結論→根拠→提案→依頼」という構造化思考の型とも一致しており、Detect／Analyze／Recoverが根拠、Recommendが提案、Askが依頼にあたる。本人の解答が「現状報告」で終わっている場合、Askの一文が言えるかどうかを最後に必ず確認する。
+
 ### レビュー用メモ（本人との議論用）
 - [ ] 演習で作ったInteraction Mapを、実プログラムに置き換えられるか
 - [ ] Session 2で選んだ3件のDependencyについて、Recovery Optionを自分の言葉で説明できるか
+- [ ] Detect→Analyze→Recover→Recommend→Askの1枚を、現状報告で終わらせずAskまで言い切れているか
 
 ---
 
