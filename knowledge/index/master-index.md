@@ -1,10 +1,10 @@
 # Knowledge Master Index
 
-**Version:** v1.12  
+**Version:** v1.13  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
-**Last updated:** 2026-08-20
+**Last updated:** 2026-08-25
 
 ---
 
@@ -271,7 +271,8 @@ knowledge/
 │   ├── program-governance-cadence-2026-08.md
 │   ├── cross-project-program-management-2026-08.md
 │   ├── fisc-audit-tech-ops-facility-2026-08.md
-│   └── project-management-policy-layer-2026-08.md
+│   ├── project-management-policy-layer-2026-08.md
+│   └── customer-status-weekly-monthly-2026-08.md
 └── decisions/
     ├── diagnose-from-gateway-not-client-error.md
     ├── sandbox-cost-controls-before-resources.md
@@ -279,11 +280,12 @@ knowledge/
     └── buyer-owns-ai-poc-ground-truth.md
 ```
 
-### Patterns (31)
+### Patterns (32)
 
 | Pattern | Primary themes |
 |---------|----------------|
-| `project-management-policy-layer.md` | Project-layer PM policy TOC; progress measure; issue/risk/ToDo; change vs baseline |
+| `support-effort-classification.md` | Support effort buckets: per-PJ / between projects / cross-cutting + issue mgmt |
+| `project-management-policy-layer.md` | Project-layer PM policy TOC; progress measure; issue/risk/ToDo; change vs baseline; customer-shared open items |
 | `fis-system-audit-as-assurance.md` | Industry system-audit guidance as buyer assurance, not checklist paste |
 | `operational-governance.md` | Operational AI, governance as capability |
 | `operational-reality.md` | OT / field reality vs DX narrative |
@@ -677,6 +679,27 @@ CONTEXT_ROUTING.md  →  Transformation PMO / Development Standards
 
 ---
 
+### S. Customer weekly/monthly status (Program Line Z)
+
+```text
+Local coaching recording 2026-08-24 — content not archived
+        ↓ generalize (no client names, yen, personal names, schedule numbers, transcript)
+standards/deliverable-archetypes.md Archetype J
+knowledge/patterns/support-effort-classification.md
+        ↓ connect
+knowledge/patterns/project-management-policy-layer.md
+core/author-voice.md
+frameworks/top-down-thinking.md
+playbooks/program-governance-cadence.md (pointer only)
+playbooks/cross-project-program-management.md (pointer only)
+        ↓ record
+knowledge/migrations/customer-status-weekly-monthly-2026-08.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  Customer Status Report (Weekly / Monthly)
+```
+
+---
+
 ## Level 4 — CONTEXT_ROUTING Task Map (summary)
 
 Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
@@ -684,8 +707,9 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | Task | Primary loads |
 |------|----------------|
 | Proposal review | `standards/consulting-review.md`, `deliverable-archetypes.md`, `writing.md` |
+| Customer weekly/monthly status | `deliverable-archetypes.md` Archetype J, `author-voice.md`, `project-management-policy-layer.md`, `support-effort-classification.md`, cadence / cross-project playbooks as needed |
 | IT strategy | `frameworks/it-strategy-foundations.md`, `standards/it-strategy-engagement-guide.md` |
-| PMO / transformation | `frameworks/transformation-pmo.md`, `playbooks/pmo-function-standup.md`, `playbooks/program-governance-cadence.md`, `playbooks/cross-project-program-management.md`, `standards/pmo-operating-guide.md`, `knowledge/patterns/project-management-policy-layer.md` (if project-layer policy TOC), `frameworks/change-management.md` |
+| PMO / transformation | `frameworks/transformation-pmo.md`, `playbooks/pmo-function-standup.md`, `playbooks/program-governance-cadence.md`, `playbooks/cross-project-program-management.md`, `standards/pmo-operating-guide.md`, `knowledge/patterns/project-management-policy-layer.md` (if project-layer policy TOC), Archetype J if customer status, `frameworks/change-management.md` |
 | DX grand design | `frameworks/dx-grand-design.md`, change / roadmap as needed |
 | New venture assessment | `frameworks/new-venture-three-track-assessment.md` |
 | B2B sales workflow | `knowledge/patterns/sales-capacity-via-center-functions.md` |

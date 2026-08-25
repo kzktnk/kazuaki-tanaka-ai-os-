@@ -1,9 +1,9 @@
 # Deliverable Archetypes — Slide & Document Structure
 
-**Version:** v1.2  
+**Version:** v1.3  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
-**Origin:** レガシー成果物アーキタイプの**最小構成**テンプレ。クライアント名・固有情報なし。
+**Origin:** レガシー成果物アーキタイプの**最小構成**テンプレ。クライアント名・固有情報なし。Archetype J はコーチング録音（2026-08-24）の一般化。
 
 ---
 
@@ -356,6 +356,50 @@ C301/C302 は総合運転試験でも共用可。
 
 ---
 
+## Archetype J: 顧客向け週次／月次ステータス
+
+**目安枚数:** 週次 3–6枚（または1枚＋付録）、月次 6–10枚（Appendix除く）  
+**読者:** 顧客側キーコンタクト、プログラムオーナー（経営層の**決定依頼**が主目的なら Archetype C）  
+**適用:** 複数ベンダー／横断支援の定常報告。会議階層は `playbooks/program-governance-cadence.md`。PJ間の境界・依存は `playbooks/cross-project-program-management.md`。
+
+### 週次 vs 月次（役割差）
+
+| | 週次 | 月次 |
+|---|------|------|
+| **ジョブ** | 直近の例外・未決・依存の**事実確認と先読み** | **問題ポートフォリオの物語**（進捗羅列ではない） |
+| **深さ** | 今週動いた論点・明日までの依頼 | 評価観点の再確認 → 閉じた／残る問題の方向 → 火種と依頼 |
+| **避ける** | 月次のフルストーリーを毎週繰り返す | タスク完了％のダンプ、SteerCommの決定デッキの流用 |
+
+**Archetype C との差:** C はステコミ向けの**決定依頼**。J は定常の顧客共有（問題の継続管理）。同じデッキを使い回さない。
+
+### 月次：問題ポートフォリオ物語（推奨順）
+
+| # | スライド | 内容 |
+|---|---------|------|
+| 1 | 支援概要 | 今月何を支えたか（範囲・観点の1枚。工数自慢にしない） |
+| 2 | 評価観点の再確認 | 何をもって「良い／要対応」とするか（顧客と合意済みのレンズ） |
+| 3 | 前回問題の扱い | 閉じた／移した／継続（**完了条件を満たしたものだけ「閉じた」**） |
+| 4–5 | 残課題の方向 | 残る問題の方向更新（対策案は仮説として。詳細は口頭） |
+| 6 | 火種・リスク・依頼 | 早期リスクと、顧客／ベンダーへの具体的依頼 |
+
+**週次の最小骨格:** (1) 今週の例外・未決 (2) 依存／先読み (3) 依頼・次回確認。月次スライドの縮小版にしない。
+
+### 運用原則
+
+1. **MECE／評価枠は内側** — 表に全軸を並べなくてよい。聞かれたら Appendix。ステージ切替（深掘り／モニタリング）は口頭で説明できればよい。  
+2. **不確定は不確定として管理・共有** — 未決があること自体は可。「今ない／見えていない」ままが最悪。課題一覧は手元専用にせず顧客と合意する。  
+3. **完了条件** — 誰と、何を合意したら閉じるかを書く。「解決」「解消」は完了条件を満たすまで使わない。  
+4. **資料はトップダウン、具体は口頭** — スライドは構造を保つ。何をしたかの具体は口頭で補足（構造を崩さない）。  
+5. **表現の衛生** — 根拠なく顧客の定常業務のやり方を処方しない。文言はキーコンタクトとすり合わせる。プロジェクト外負荷の開放など、観測に基づく言い換えを使う。
+
+### Appendix（任意・求められたとき）
+
+評価軸の詳細、課題台帳抜粋、依存図、工数カテゴリ（個別／PJ間／横断＋課題管理）の内訳。
+
+**参照:** `knowledge/patterns/project-management-policy-layer.md`（顧客共有の未決・完了条件）、`knowledge/patterns/support-effort-classification.md`（支援工数の分類軸）、`core/author-voice.md` §6
+
+---
+
 ## Document Types (Non-Slide)
 
 | 種別 | 最小構成 | 参照 |
@@ -365,6 +409,7 @@ C301/C302 は総合運転試験でも共用可。
 | 要件定義書 | 10章構成 | `requirements-document-outline.md` |
 | カスタム開発成果物 | 工程別 MIN + C様式索引 | 本書 Archetype G |
 | 議事録 | 決定事項 / ToDo / 次回 | Phase 900 |
+| 顧客向け週次／月次 | Archetype J（問題ポートフォリオ物語） | 本書 Archetype J |
 
 ---
 
@@ -375,6 +420,8 @@ C301/C302 は総合運転試験でも共用可。
 | 骨子・たたき台 | 8–12枚 | Appendixへ |
 | 選定・評価報告 | 10枚 | 詳細は別紙 |
 | SteerComm | 8枚 | 論点を絞る |
+| 顧客向け月次ステータス | 6–10枚 | 台帳・評価軸はAppendix |
+| 顧客向け週次 | 3–6枚（または1枚＋付録） | 月次ストーリーを載せない |
 | 調査報告会 | 18枚 | フェーズ別Appendix |
 
 ---
@@ -385,6 +432,10 @@ C301/C302 は総合運転試験でも共用可。
 |---------|------|
 | `knowledge/lessons/author-voice-archetypes-legacy.md` | アーキタイプの意味 |
 | `core/author-voice.md` | トーン・削減原則 |
+| `playbooks/program-governance-cadence.md` | 会議階層（Archetype J の場の設計） |
+| `playbooks/cross-project-program-management.md` | PJ間境界・依存（Archetype J の中身参照先） |
+| `knowledge/patterns/project-management-policy-layer.md` | 未決共有・完了条件 |
+| `knowledge/patterns/support-effort-classification.md` | 支援工数の分類軸 |
 | `standards/consulting-review.md` | レビュー観点 |
 | `standards/requirements-document-outline.md` | 要件定義書章立て（要定） |
 | `standards/document-management-standard.md` | 文書区分・表紙・台帳 |

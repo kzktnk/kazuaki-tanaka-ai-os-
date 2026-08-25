@@ -1,6 +1,6 @@
 # Legacy Source Index
 
-**Version:** v1.17  
+**Version:** v1.18  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** ローカル保管のレガシー原本と、リポジトリ内知識の対応索引。**原本の中身は含まない。**
@@ -369,6 +369,23 @@
 
 ---
 
+## Program Line Z: 顧客向け週次／月次ステータス指導（2026-08-24、一般化のみ）
+
+原本はローカル録音（2026-08-24）。匿名ラベル: **customer-facing weekly/monthly status coaching / 2026-08-24**。**内容（音声・文字起こし）はリポジトリにアーカイブしない。** 社名、円、人名、日程・稼働数字、生トランスクリプトは不登録。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| コーチング録音（週次／月次報告レビュー） | `standards/deliverable-archetypes.md` Archetype J | 週次 vs 月次の役割、問題ポートフォリオ物語、内側の評価枠、完了条件、表現衛生。固有事実なし |
+| 同上 | `knowledge/patterns/project-management-policy-layer.md` | 顧客共有の未決・完了条件・不確定の可視化 |
+| 同上 | `core/author-voice.md` §6 | 骨格＋口頭補足、「解決」語、不用意なオペ処方 |
+| 同上 | `frameworks/top-down-thinking.md` | フレームは道具／実務から軸／抜け＝構造未完 |
+| 同上 | `knowledge/patterns/support-effort-classification.md` | 個別／PJ間／横断＋課題管理 |
+| 同上（相互参照のみ） | `playbooks/program-governance-cadence.md`, `playbooks/cross-project-program-management.md` | 薄いポインタ。本文改稿なし |
+
+**未登録:** 録音・文字起こし全文、クライアント／メンティー固有の案件事実。
+
+---
+
 ## Program Line G: IT Strategy Foundations (legacy consulting, 2002)
 
 | ローカル原本（例） | 種別 | 抽出先（リポジトリ） |
@@ -449,7 +466,9 @@
 | `reproposal-as-uncertainty-reduction.md` | 中 | ✅ 登録済（2026-08-19） |
 | `program-phases-investigation-to-requirements.md` | 高 | ✅ 登録済 |
 | `author-voice-archetypes-legacy.md` | 高 | ✅ 登録済 |
-| `deliverable-archetypes.md` | 中 | ✅ 登録済（Archetype G 2026-08-13） |
+| `deliverable-archetypes.md` | 中 | ✅ 登録済（Archetype G 2026-08-13；Archetype J 2026-08-25） |
+| `project-management-policy-layer.md` | 高 | ✅ 登録済（2026-08-20；顧客共有未決節 2026-08-25） |
+| `support-effort-classification.md` | 中 | ✅ 登録済（2026-08-25） |
 | `requirements-document-outline.md` | 中 | ✅ 登録済 |
 | `legacy-source-index.md` | 中 | ✅ 本ファイル |
 | `strategic-capability-network.md` | 高 | ✅ 登録済 |
@@ -511,7 +530,6 @@
 | `public-multi-lot-construction-pmo.md` | 高 | ✅ 登録済（2026-08-20） |
 | `program-governance-cadence.md` | 高 | ✅ 登録済（2026-08-20） |
 | `cross-project-program-management.md` | 高 | ✅ 登録済（2026-08-21 再採用） |
-| `project-management-policy-layer.md` | 高 | ✅ 登録済（2026-08-20） |
 
 ---
 

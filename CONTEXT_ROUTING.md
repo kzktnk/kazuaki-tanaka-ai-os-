@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.23
+Version: v1.24
 
 ## Purpose
 
@@ -335,6 +335,35 @@ Focus:
 
 ---
 
+# Customer Status Report (Weekly / Monthly)
+
+Load:
+- standards/deliverable-archetypes.md (Archetype J)
+- core/author-voice.md (§6 checklist: oral supplement, careful 「解決」, no unfounded ops prescriptions)
+- knowledge/patterns/project-management-policy-layer.md (customer-shared open items / completion criteria)
+- knowledge/patterns/support-effort-classification.md (if support effort buckets are muddy)
+- playbooks/program-governance-cadence.md (which meeting layer; do not collapse into SteerComm)
+- playbooks/cross-project-program-management.md (if boundary / dependency content is needed)
+- frameworks/top-down-thinking.md (frames as tools; derive axes from real work)
+- standards/writing.md
+
+Focus:
+- Weekly vs monthly job split (exceptions/lookahead vs problem-portfolio narrative)
+- MECE / evaluation frames stay internal; Appendix only if asked
+- Uncertainty visible; completion criteria before saying closed/resolved
+- Top-down slides + oral concrete detail; expression hygiene with key contacts
+
+Outputs:
+- Weekly status pack or one-pager + asks
+- Monthly problem-portfolio narrative (not a progress dump)
+- Optional Appendix: registers, evaluation axes, effort buckets
+
+Do not confuse with:
+- Archetype C (SteerComm decision request)
+- Vendor progress supervision (`development-management-guide.md`)
+
+---
+
 # Operating Model Design
 
 Load:
@@ -368,6 +397,7 @@ Load:
 - playbooks/pmo-function-standup.md (if the office exists on paper but not in operation)
 - playbooks/program-governance-cadence.md (if SteerComm / program board / standup / inspection are collapsing into one status meeting)
 - playbooks/cross-project-program-management.md (if PgMO is buried in vendor WBS detail; PJ間 dependency / consistency / hand-off control is missing)
+- standards/deliverable-archetypes.md Archetype J (if customer-facing weekly/monthly status is the deliverable—not SteerComm)
 - knowledge/patterns/project-management-policy-layer.md (if vendor/project “management policy” TOC, progress measure, issue/risk/ToDo, or change-vs-baseline boundaries are weak)
 - knowledge/patterns/hybrid-talent-in-transformation.md (if the program has no people who can redesign work)
 - knowledge/patterns/multi-year-transformation-sequence.md (if strategy, HR, systems, and purchasing are split across years)

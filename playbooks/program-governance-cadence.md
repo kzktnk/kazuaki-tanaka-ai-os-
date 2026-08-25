@@ -11,7 +11,7 @@ type: playbook
 **Use when:** Phase 1 でプログラム事務局（PMO / PgMO）を立ち上げたあと、定例・横断調整・プログラム会議・ステコミ・検査が同じ「報告会」に見え始めている  
 **Do not use as-is for:** 事務局そのものの立ち上げ順序（`playbooks/pmo-function-standup.md`）、PJ 間の依存・整合・Hand-off 管理（`playbooks/cross-project-program-management.md`）、共同利用の複数ロット開始判定（`playbooks/public-multi-lot-construction-pmo.md`）、官側調達設計（`frameworks/public-it-procurement-support.md`）
 
-Pairs with `frameworks/transformation-pmo.md`（PMO とは何か）and `standards/pmo-operating-guide.md`（機能と PPM）。本 Playbook は **会議階層と文書クラス**。ステコミ資料の型は `standards/deliverable-archetypes.md` Archetype C。文書番号・台帳は `standards/document-management-standard.md`。
+Pairs with `frameworks/transformation-pmo.md`（PMO とは何か）and `standards/pmo-operating-guide.md`（機能と PPM）。本 Playbook は **会議階層と文書クラス**。ステコミ資料の型は `standards/deliverable-archetypes.md` Archetype C。顧客向け週次／月次ステータス（問題ポートフォリオ物語）は同ファイル **Archetype J**（会議階層とは別ジョブ）。文書番号・台帳は `standards/document-management-standard.md`。
 
 ## Trigger
 
@@ -110,6 +110,6 @@ Pairs with `frameworks/transformation-pmo.md`（PMO とは何か）and `standard
 - `standards/pmo-operating-guide.md`
 - `standards/development-management-guide.md`
 - `knowledge/patterns/project-management-policy-layer.md`（プロジェクト層の方針 TOC・課題／リスク／変更境界）
-- `standards/deliverable-archetypes.md`（Archetype C）
+- `standards/deliverable-archetypes.md`（Archetype C＝SteerComm決定依頼、Archetype J＝顧客向け週次／月次）
 - `standards/document-management-standard.md`
 - `knowledge/lessons/pmo-professional-principles.md`

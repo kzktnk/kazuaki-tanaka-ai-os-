@@ -70,6 +70,19 @@
 
 リスクの報告レベルは「発生確率 × 損失の大きさ」で層（チーム／プロジェクト／プログラム）を上げる。閾値の数値は案件で決める。重要度 A–D の提示ルールは既存の問題管理表（`development-management-guide.md`）と併用してよい。
 
+## Customer-shared open items and completion criteria
+
+プロジェクト層の台帳を**手元専用**にしない。顧客と共有する未決／課題は次を固定する:
+
+| Element | Lock |
+|---------|------|
+| **Visibility** | 不確定は不確定として見せる。要件期に未決があること自体は可。「今ない／見えていない」ままが最悪 |
+| **Completion criteria** | 誰と、何を合意したら閉じるか。状態ラベルだけでは閉じない |
+| **Language** | 「解決」「解消」は完了条件を満たすまで使わない。閉じた／移した／継続を分ける |
+| **Audience** | 顧客共有リストと内部深掘りリストを分ける。評価枠・MECE 表は内側；求められたら Appendix |
+
+顧客向けの見せ方（週次／月次の物語）は `standards/deliverable-archetypes.md` Archetype J。会議の層は `program-governance-cadence.md`。
+
 ## Change control vs baseline (QCD)
 
 一度合意した事項を見直すときは、変更単位で票を起こし、状態（起票→受付→判定→影響分析→実施判定→実施→終結）を追う。
@@ -113,4 +126,5 @@
 - `playbooks/program-governance-cadence.md`
 - `playbooks/cross-project-program-management.md`
 - `frameworks/transformation-pmo.md`
+- `standards/deliverable-archetypes.md` Archetype J（顧客共有の週次／月次）
 - `knowledge/index/legacy-source-index.md` Program Line Y

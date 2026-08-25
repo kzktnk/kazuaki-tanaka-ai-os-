@@ -12,7 +12,7 @@ type: playbook
 **Do not use as-is for:** PMO 立ち上げ順序（`playbooks/pmo-function-standup.md`）、会議階層設計（`playbooks/program-governance-cadence.md`）、官側複数ロット開始判定（`playbooks/public-multi-lot-construction-pmo.md`）  
 **Source revision:** local Cross-Project Management Playbook v1.5.1（2026-08-21）
 
-Pairs with `playbooks/program-governance-cadence.md`（**誰がどの会議で何を決めるか**）and `frameworks/transformation-pmo.md`（PgMO の位置づけ）。本 Playbook は **何を PJ 間管理の対象として構造化し、どう回すか** を扱う。
+Pairs with `playbooks/program-governance-cadence.md`（**誰がどの会議で何を決めるか**）and `frameworks/transformation-pmo.md`（PgMO の位置づけ）。本 Playbook は **何を PJ 間管理の対象として構造化し、どう回すか** を扱う。顧客向け週次／月次の見せ方は `standards/deliverable-archetypes.md` Archetype J。
 
 ## 複数ベンダー・複数プロジェクトを統合管理するための実践ガイド
 

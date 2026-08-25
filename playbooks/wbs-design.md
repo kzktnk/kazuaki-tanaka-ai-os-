@@ -73,6 +73,8 @@ WBSが一度できたら、コンサルタントの役割は「作る」から�
 ## 関連テンプレート
 実際の記入は `WBS分解シート.xlsx`（STEP1完成形定義／STEP2分解の材料／STEP3実行タスク／STEP4セルフチェック）を使う。本ファイルはその「考え方」、xlsxは「作業する場所」という役割分担。
 
+横断支援の工数を個別／PJ間／横断に分ける軸は `knowledge/patterns/support-effort-classification.md`（成果物逆算WBSの代替ではない）。
+
 ---
 **レビュー用メモ（Kazuaki記入欄）**
 - [ ] トーン・粒度は既存の `thinking.md` 等と揃っているか

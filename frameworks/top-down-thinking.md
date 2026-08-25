@@ -8,7 +8,7 @@ gap_fill: "Inputs/Outputs/Limitations/Risksを新規追加。元スライドに�
 related:
   - frameworks/thinking-patterns/pattern-01-why-what-how.md
   - references/thinking-patterns-reference.md
-last_updated: 2026-08-03
+last_updated: 2026-08-25
 ---
 
 # トップダウン思考とは何か
@@ -54,6 +54,17 @@ AI時代のコンサルタントに求められる能力は、単なる知識量
 
 > フレームワーク（MECE・3C・4P・SWOT・PEST…）は、暗記すべき「答え」ではない。状況に応じて、自らその場で組み立てる「道具」である。対象に合わない分類軸を無理に当てはめない。
 
+## フレームが合わないとき：実務から軸を作る
+
+既存フレームは**道具**である。合わなければ、普段やっている仕事の塊から分類軸を導く。
+
+1. いま実際に費やしている仕事を列挙する（ラベルは後）  
+2. 似た塊をまとめ、軸に名前を付ける  
+3. どの箱にも入らない仕事が残る → **構造がまだ未完**（「その他」で隠さない）  
+4. Confirm と Follow のように負荷の質が違うものは、同じ箱に押し込めない  
+
+抜けた箱が見えること自体が、トップダウンの進捗サインである。無理に MECE 表を完成させてから動く必要はない。顧客向け報告では評価枠を内側に持ち、表に全部出さなくてよい（`standards/deliverable-archetypes.md` Archetype J）。
+
 ## AI時代にコンサルタントが辿る思考プロセス
 生成AIは100個のアイデアを出すのは得意。どう整理し、何が不足しているかを決めるのは人間。
 
@@ -86,6 +97,7 @@ AI時代のコンサルタントに求められる能力は、単なる知識量
 ## 関連ファイル
 - 実際の分類軸（箱）の型は `frameworks/thinking-patterns/` 配下のPattern 1〜8を参照
 - 早見表は `references/thinking-patterns-reference.md`
+- 支援工数の実務軸例は `knowledge/patterns/support-effort-classification.md`
 
 ---
 **レビュー用メモ（Kazuaki記入欄）**
