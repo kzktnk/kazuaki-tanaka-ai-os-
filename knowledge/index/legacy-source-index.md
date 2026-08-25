@@ -348,10 +348,10 @@
 
 | ローカル原本（種別） | 抽出先 | 登録範囲 |
 |---------------------|--------|---------|
-| Cross-Project Management Playbook（md / docx） | `playbooks/cross-project-program-management.md` | PJ 間 5 領域、Control Cycle、コーチング順序、ベンダー責任分界（5.4）。章本文の写しは最小化。2026-08-21 再採用（v1.5.1） |
+| Cross-Project Management Playbook（md / docx v1.7） | `playbooks/cross-project-program-management.md` | PJ 間 5 領域、Control Cycle、コーチング順序、ベンダー責任分界（5.4）、体制図（1.4）、兼任注意（1.5）、RAG 基準（8.2）、Consistency 再構成（6.1/6.5）。章本文の写しは最小化。2026-08-25 再採用（v1.7 → repo v0.4） |
 | Templates.xlsx（8 シート） | 同上 Playbook 本文 / Appendix | テンプレート**クラスとフィールド**のみ。Issue Log を含む。xlsx 実体不登録。本改訂でシート構成変更なし |
 
-**未登録:** xlsx ファイル本体、作成日・対象読者などの表紙メタ、著者個人の全体レビュー記入欄、演習ケースのベンダー名・日付・費用、部下の実プログラム。
+**未登録:** xlsx / docx ファイル本体、作成日・対象読者などの表紙メタ、著者個人の全体レビュー記入欄・改訂履歴ダンプ、演習ケースのベンダー名・日付・費用、部下の実プログラム。
 
 ---
 
@@ -529,7 +529,7 @@
 | `shared-operator-vs-ministry-vs-municipality.md` | 高 | ✅ 登録済（2026-08-20） |
 | `public-multi-lot-construction-pmo.md` | 高 | ✅ 登録済（2026-08-20） |
 | `program-governance-cadence.md` | 高 | ✅ 登録済（2026-08-20） |
-| `cross-project-program-management.md` | 高 | ✅ 登録済（2026-08-21 再採用） |
+| `cross-project-program-management.md` | 高 | ✅ 登録済（2026-08-25 再採用 / v1.7 → repo v0.4） |
 
 ---
 
