@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.24
+Version: v1.26
 
 ## Purpose
 
@@ -397,6 +397,9 @@ Load:
 - playbooks/pmo-function-standup.md (if the office exists on paper but not in operation)
 - playbooks/program-governance-cadence.md (if SteerComm / program board / standup / inspection are collapsing into one status meeting)
 - playbooks/cross-project-program-management.md (if PgMO is buried in vendor WBS detail; PJ間 dependency / consistency / hand-off control is missing)
+- knowledge/patterns/related-project-external-coordination-radar.md (if adjacent projects / external parties sit outside the Dependency Register)
+- knowledge/patterns/pgmo-presence-via-client-stance.md (if process pack runs but client trust / proposal value still sits with a long-trusted specialist PM)
+- knowledge/patterns/transformation-practice-case-pack.md (if packaging internal transformation practice cases / MM learning packs—not client status)
 - standards/deliverable-archetypes.md Archetype J (if customer-facing weekly/monthly status is the deliverable—not SteerComm)
 - knowledge/patterns/project-management-policy-layer.md (if vendor/project “management policy” TOC, progress measure, issue/risk/ToDo, or change-vs-baseline boundaries are weak)
 - knowledge/patterns/hybrid-talent-in-transformation.md (if the program has no people who can redesign work)
@@ -421,9 +424,12 @@ Focus:
 - PPM process and portfolio stop/start discipline
 - Cadence stack: who meets for what; escalation between layers; inspection vs status
 - Cross-project artifacts: 5 domains (scope boundary, dependency, interface, consistency, schedule); Control Cycle; template classes
+- Related-project / external-coordination radar before items enter Dependency or master risk registers
+- PgMO presence: client-side PM/PO stance; ally with trusted incumbent before client; intersection-point risk → monthly→weekly reverse tracking
 - Phase 1 controlled document set (policy, roadmap, meeting pack) vs live minutes
 - Project-layer PM policy vs program control (measurement, registers, fact-check before escalate)
 - Change management: stakeholder progression (Awareness → Ownership); readiness and strategy in `change-management.md`
+- Internal practice case packs: Role × engagement-type navigation and theme-card schema (not client deliverables)
 
 Outputs:
 - PMO assessment or target operating model for program office
@@ -758,6 +764,7 @@ Load:
 - domains/public-defense.md
 - knowledge/patterns/buyer-vs-seller-in-public-procurement.md
 - knowledge/patterns/shared-operator-vs-ministry-vs-municipality.md (if shared local-government IT, not a ministry or a single municipality)
+- knowledge/patterns/related-project-external-coordination-radar.md (if related-project radar / external stakeholder coordination templates)
 - frameworks/public-it-procurement-support.md (if buyer-side procurement, scrutiny, or construction PMO)
 - playbooks/public-multi-lot-construction-pmo.md (if concurrent lots, start-of-stage gates, ops-doc merge)
 - frameworks/program-phases-investigation-to-requirements.md (if concept → requirements)
@@ -770,6 +777,7 @@ Load:
 Focus:
 - Buyer fairness vs seller win — do not mix on the same program
 - Shared operator ≠ ministry ≠ municipality; multi-lot acceptance is one story
+- Adjacent projects / external parties: radar → confirm → promote (not a substitute for Dependency Register)
 - 適合条件 before scoring; estimate scrutiny ≠ proposal scoring
 - Officials keep authorization / risk decisions
 - No inventories, yen, or network designs in generalized output

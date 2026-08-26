@@ -87,3 +87,4 @@ Align with `core/author-voice.md`:
 - `frameworks/transformation-pmo.md`
 - `standards/pmo-operating-guide.md`
 - `core/author-voice.md`
+- `knowledge/patterns/pgmo-presence-via-client-stance.md`（多ベンダー下で既存信頼者に負けているときの姿勢・交点）

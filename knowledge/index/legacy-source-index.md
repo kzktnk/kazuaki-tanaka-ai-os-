@@ -1,6 +1,6 @@
 # Legacy Source Index
 
-**Version:** v1.18  
+**Version:** v1.19  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** ローカル保管のレガシー原本と、リポジトリ内知識の対応索引。**原本の中身は含まない。**
@@ -321,6 +321,20 @@
 | 運用手順・操作手順のマージ、構成変更台帳 | 同上。引継の一般型は既存 `operations-handover-guide.md` | 目次とマージが成果。本文・機器操作は不登録 |
 | 統合構成・設計書・環境表・セキュリティ範囲図 | **未登録** | 系統・在庫。Domain の「原本に残す」ルール |
 | 執行部向け見解資料 | 高度を分ける、の判断のみ Playbook | 製品リスクの中身不登録 |
+| 関連案件把握・対外調整支援テンプレート（`.xlsx`） | `knowledge/patterns/related-project-external-coordination-radar.md` | シート種別と列ジョブのみ。実データ・人名不登録 |
+| 共同利用プログラム経験の社内 MM 共有デッキ（`.pptx`） | **抽出スキップ**（重複） | 横断工程・対外調整・切替政治は既存 Line U / W / Z / CM。索引のみ |
+
+---
+
+## Program Line AA: Enterprise Transformation 実践事例パッケージ骨格（2019、一般化のみ）
+
+原本はローカル。匿名ラベル: **enterprise transformation case pack 2019**。事例ストーリー、クライアント識別子、人名、円、連絡先は不登録。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| 2019 ET Monthly Meeting 事例パッケージ（`.pptx`） | `knowledge/patterns/transformation-practice-case-pack.md` | パック構成、ロール×案件タイプ行列、テーマカード欄。事例本文・固有名詞不登録 |
+
+**未登録:** 各テーマの生ストーリー、参考文献の詳細書誌の写し、コンタクト先。
 
 ---
 
@@ -383,6 +397,20 @@
 | 同上（相互参照のみ） | `playbooks/program-governance-cadence.md`, `playbooks/cross-project-program-management.md` | 薄いポインタ。本文改稿なし |
 
 **未登録:** 録音・文字起こし全文、クライアント／メンティー固有の案件事実。
+
+---
+
+## Program Line AB: 複数ベンダー PgMO プレゼンス指導（Slack、2026、一般化のみ）
+
+原本はローカル `.rtf` のみ。匿名ラベル: **mentor–mentee Slack coaching / multi-vendor PgMO presence / 2026**。**スレッド全文はリポジトリにアーカイブしない。** 社名、円、人名、プログラム識別子、生 RTF は不登録。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| Mentor–mentee Slack スレッド（PgMO プレゼンス／打ち手） | `knowledge/patterns/pgmo-presence-via-client-stance.md` | クライアント側 PM／PO 姿勢、既存信頼者との同盟構図、交点リスク→状態→月次→週次逆算。固有事実なし |
+| 同上 → 関連案件の広げ方 | `knowledge/patterns/related-project-external-coordination-radar.md` | 相互参照のみ（本スレッドでは新規型なし） |
+| 同上 vs Line Z（週次／月次報告） | — | **別トピック**（重複抽出なし）。報告の見せ方は Line Z |
+
+**未登録:** RTF／スレッド全文、ハンドル、人名、クライアント／案件識別子、ベンダー入替噂の事実化、社交 Tips。
 
 ---
 
@@ -469,6 +497,7 @@
 | `deliverable-archetypes.md` | 中 | ✅ 登録済（Archetype G 2026-08-13；Archetype J 2026-08-25） |
 | `project-management-policy-layer.md` | 高 | ✅ 登録済（2026-08-20；顧客共有未決節 2026-08-25） |
 | `support-effort-classification.md` | 中 | ✅ 登録済（2026-08-25） |
+| `pgmo-presence-via-client-stance.md` | 中 | ✅ 登録済（2026-08-26） |
 | `requirements-document-outline.md` | 中 | ✅ 登録済 |
 | `legacy-source-index.md` | 中 | ✅ 本ファイル |
 | `strategic-capability-network.md` | 高 | ✅ 登録済 |

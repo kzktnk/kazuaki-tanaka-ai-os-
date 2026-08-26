@@ -1,10 +1,10 @@
 # Knowledge Master Index
 
-**Version:** v1.13  
+**Version:** v1.14  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
-**Last updated:** 2026-08-25
+**Last updated:** 2026-08-26
 
 ---
 
@@ -76,9 +76,9 @@ kazuaki-tanaka-ai-os/
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
-│   ├── patterns/               ← 31 distilled patterns
+│   ├── patterns/               ← 36 distilled patterns
 │   ├── lessons/                ← 5 lessons
-│   ├── migrations/             ← 24 migration reports
+│   ├── migrations/             ← 28 migration reports
 │   └── decisions/              ← 4 records
 ├── templates/                  ← 1 template
 ├── prompts/                    ← README placeholder
@@ -239,7 +239,7 @@ knowledge/
 │       ├── 001–020/                  ← Operational AI main series
 │       ├── sp01–sp09/                ← special posts
 │       └── erf01–erf03/              ← Enterprise Redesign Framework
-├── patterns/                         ← 31 files (see table below)
+├── patterns/                         ← 36 files (see table below)
 ├── lessons/
 │   ├── governance-messaging.md
 │   ├── dual-roadmap-messaging.md
@@ -268,6 +268,7 @@ knowledge/
 │   ├── enterprise-engagements-2013-2023-2026-08.md
 │   ├── pgmo-ai-change-2026-08.md
 │   ├── local-gov-shared-it-2026-08.md
+│   ├── related-project-radar-and-et-case-pack-2026-08.md
 │   ├── program-governance-cadence-2026-08.md
 │   ├── cross-project-program-management-2026-08.md
 │   ├── fisc-audit-tech-ops-facility-2026-08.md
@@ -280,10 +281,13 @@ knowledge/
     └── buyer-owns-ai-poc-ground-truth.md
 ```
 
-### Patterns (32)
+### Patterns (34)
 
 | Pattern | Primary themes |
 |---------|----------------|
+| `pgmo-presence-via-client-stance.md` | Client-side PM/PO stance; ally with trusted incumbent; intersection risk → monthly→weekly reverse tracking |
+| `related-project-external-coordination-radar.md` | Adjacent-project radar + external coordination; hypothesis → confirm → promote |
+| `transformation-practice-case-pack.md` | Internal ET practice case-pack anatomy; Role × type matrix; theme-card schema |
 | `support-effort-classification.md` | Support effort buckets: per-PJ / between projects / cross-cutting + issue mgmt |
 | `project-management-policy-layer.md` | Project-layer PM policy TOC; progress measure; issue/risk/ToDo; change vs baseline; customer-shared open items |
 | `fis-system-audit-as-assurance.md` | Industry system-audit guidance as buyer assurance, not checklist paste |
@@ -536,6 +540,7 @@ domains/public-defense.md
 frameworks/public-it-procurement-support.md
 knowledge/patterns/buyer-vs-seller-in-public-procurement.md
 knowledge/patterns/shared-operator-vs-ministry-vs-municipality.md
+knowledge/patterns/related-project-external-coordination-radar.md
 playbooks/public-multi-lot-construction-pmo.md
         ↓ cross-link
 frameworks/program-phases-investigation-to-requirements.md
@@ -543,8 +548,23 @@ standards/vendor-proposal-evaluation.md
         ↓ record
 knowledge/migrations/public-defense-2026-08.md
 knowledge/migrations/local-gov-shared-it-2026-08.md
+knowledge/migrations/related-project-radar-and-et-case-pack-2026-08.md (radar + Line U skip of MM deck)
         ↓ task routing
 CONTEXT_ROUTING.md  →  Public Sector / Defense IT, Public Procurement Support (buyer)
+```
+
+---
+
+### K2. Transformation practice case pack (Program Line AA)
+
+```text
+Local enterprise transformation case pack 2019 — not archived
+        ↓ generalize (structure only; no case stories / identifiers)
+knowledge/patterns/transformation-practice-case-pack.md
+        ↓ record
+knowledge/migrations/related-project-radar-and-et-case-pack-2026-08.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  Transformation PMO / Program Governance (internal practice packaging)
 ```
 
 ---
@@ -700,6 +720,24 @@ CONTEXT_ROUTING.md  →  Customer Status Report (Weekly / Monthly)
 
 ---
 
+### T. Multi-vendor PgMO presence coaching (Program Line AB)
+
+```text
+Local mentor–mentee Slack thread export (.rtf) — content not archived
+        ↓ generalize (no names, client/program IDs, yen, schedule actuals, raw dump)
+knowledge/patterns/pgmo-presence-via-client-stance.md
+        ↓ connect (no new type)
+knowledge/patterns/related-project-external-coordination-radar.md
+playbooks/cross-project-program-management.md
+knowledge/lessons/pmo-professional-principles.md
+        ↓ record
+knowledge/migrations/pgmo-presence-client-stance-2026-08.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  Transformation PMO / Program Governance
+```
+
+---
+
 ## Level 4 — CONTEXT_ROUTING Task Map (summary)
 
 Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
@@ -709,7 +747,7 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | Proposal review | `standards/consulting-review.md`, `deliverable-archetypes.md`, `writing.md` |
 | Customer weekly/monthly status | `deliverable-archetypes.md` Archetype J, `author-voice.md`, `project-management-policy-layer.md`, `support-effort-classification.md`, cadence / cross-project playbooks as needed |
 | IT strategy | `frameworks/it-strategy-foundations.md`, `standards/it-strategy-engagement-guide.md` |
-| PMO / transformation | `frameworks/transformation-pmo.md`, `playbooks/pmo-function-standup.md`, `playbooks/program-governance-cadence.md`, `playbooks/cross-project-program-management.md`, `standards/pmo-operating-guide.md`, `knowledge/patterns/project-management-policy-layer.md` (if project-layer policy TOC), Archetype J if customer status, `frameworks/change-management.md` |
+| PMO / transformation | `frameworks/transformation-pmo.md`, `playbooks/pmo-function-standup.md`, `playbooks/program-governance-cadence.md`, `playbooks/cross-project-program-management.md`, `knowledge/patterns/related-project-external-coordination-radar.md` (if adjacent/external radar), `knowledge/patterns/pgmo-presence-via-client-stance.md` (if presence lost to trusted incumbent), `knowledge/patterns/transformation-practice-case-pack.md` (if internal practice packaging), `standards/pmo-operating-guide.md`, `knowledge/patterns/project-management-policy-layer.md` (if project-layer policy TOC), Archetype J if customer status, `frameworks/change-management.md` |
 | DX grand design | `frameworks/dx-grand-design.md`, change / roadmap as needed |
 | New venture assessment | `frameworks/new-venture-three-track-assessment.md` |
 | B2B sales workflow | `knowledge/patterns/sales-capacity-via-center-functions.md` |
@@ -720,7 +758,7 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | Offering review | `playbooks/offering-review.md`, `change-management.md`, `transformation-pmo.md` |
 | Responsible AI assessment | `playbooks/responsible-ai-assessment.md`, `human-oversight.md`, `decision-ownership.md` |
 | Energy / utilities | `domains/energy-utilities.md`, `operational-reality.md`, `requirements-artifact-review.md` (if requirements) |
-| Public sector / defense IT | `domains/public-defense.md`, `public-it-procurement-support.md` (if buyer), `buyer-vs-seller-in-public-procurement.md`, shared-operator pattern + multi-lot construction PMO playbook if concurrent lots |
+| Public sector / defense IT | `domains/public-defense.md`, `public-it-procurement-support.md` (if buyer), `buyer-vs-seller-in-public-procurement.md`, shared-operator pattern + multi-lot construction PMO playbook if concurrent lots, `related-project-external-coordination-radar.md` if adjacent/external coordination |
 | Private IT RFP / vendor selection | `frameworks/private-it-rfp.md`, `playbooks/private-it-rfp-vendor-selection.md`, `vendor-proposal-evaluation.md`, calibration / re-proposal patterns |
 | Development standards / build / FIS audit mapping | `development-standards-framework.md`, related build standards, `fis-system-audit-as-assurance.md` when audit guidance or tech/ops/facility criteria apply, `project-management-policy-layer.md` when vendor PM-policy chapter applies |
 | Application outsourcing / AMS | `application-outsourcing-solution-planning.md`, `ams-services-pyramid.md`, `service-transition-approach.md`, `ams-solution-plan-checklist.md` |

@@ -47,7 +47,7 @@ Pairs with `domains/public-defense.md`（共同利用の第三アクター）and
    省／運用者／団体を混ぜない。コア、施設・拠点、チャネルなど、同時進行の塊を名前ではなく **依存** で書く。
 
 2. **PMOが見るものと請負がやるものを分ける**  
-   進捗・課題・変更・品質・保全・関連案件・対外調整は見る。設計・試験実施・移行操作は請負。受入試験は運用者の作業であり、支援は構造化まで。
+   進捗・課題・変更・品質・保全・関連案件・対外調整は見る。設計・試験実施・移行操作は請負。受入試験は運用者の作業であり、支援は構造化まで。関連案件／対外の**レーダー型**は `knowledge/patterns/related-project-external-coordination-radar.md`（Dependency Register の手前）。
 
 3. **工程ごとに「計画確認 → 結果確認」を置く**  
    結合、総合、運用試験、移行リハは、計画の妥当と結果の十分を別ゲートにする。計画レビューの観点を先に配り、結果表だけ後追いしない。
@@ -82,6 +82,7 @@ Pairs with `domains/public-defense.md`（共同利用の第三アクター）and
 
 - `domains/public-defense.md`
 - `knowledge/patterns/shared-operator-vs-ministry-vs-municipality.md`
+- `knowledge/patterns/related-project-external-coordination-radar.md`
 - `frameworks/public-it-procurement-support.md`
 - `standards/operations-handover-guide.md`（引継の型。本Playbookのマージ作業とは層が違う）
 - `frameworks/transformation-pmo.md`

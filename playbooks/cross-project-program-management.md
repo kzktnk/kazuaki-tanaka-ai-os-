@@ -9,10 +9,10 @@ type: playbook
 **Owner:** Kazuaki Tanaka  
 **Purpose:** 複数ベンダー・複数プロジェクトの **「間（あいだ）」** を管理し、依存・境界・整合・統合スケジュール・コントロールを構造化する  
 **Use when:** PgMO が個別 PJ の WBS や進捗報告に埋もれ、PJ 間の受け渡し・整合・波及分析が弱い  
-**Do not use as-is for:** PMO 立ち上げ順序（`playbooks/pmo-function-standup.md`）、会議階層設計（`playbooks/program-governance-cadence.md`）、官側複数ロット開始判定（`playbooks/public-multi-lot-construction-pmo.md`）  
+**Do not use as-is for:** PMO 立ち上げ順序（`playbooks/pmo-function-standup.md`）、会議階層設計（`playbooks/program-governance-cadence.md`）、官側複数ロット開始判定（`playbooks/public-multi-lot-construction-pmo.md`）、契約境界外の隣接案件・対外アクターの洗い出し（`knowledge/patterns/related-project-external-coordination-radar.md` — Dependency Register の手前のレーダー層）、信頼が厚い既存プレイヤー下での**プレゼンス／提案姿勢**（`knowledge/patterns/pgmo-presence-via-client-stance.md`）  
 **Source revision:** local Cross-Project Management Playbook v1.8（2026-08-25）
 
-Pairs with `playbooks/program-governance-cadence.md`（**誰がどの会議で何を決めるか**）and `frameworks/transformation-pmo.md`（PgMO の位置づけ）。本 Playbook は **何を PJ 間管理の対象として構造化し、どう回すか** を扱う。顧客向け週次／月次の見せ方は `standards/deliverable-archetypes.md` Archetype J。
+Pairs with `playbooks/program-governance-cadence.md`（**誰がどの会議で何を決めるか**）and `frameworks/transformation-pmo.md`（PgMO の位置づけ）。本 Playbook は **何を PJ 間管理の対象として構造化し、どう回すか** を扱う。顧客向け週次／月次の見せ方は `standards/deliverable-archetypes.md` Archetype J。隣接案件レーダーは本 Playbook の Dependency Register とは別層。プロセスは回っているのに「バリューが見えない」ときは `knowledge/patterns/pgmo-presence-via-client-stance.md`。
 
 ## 複数ベンダー・複数プロジェクトを統合管理するための実践ガイド
 
