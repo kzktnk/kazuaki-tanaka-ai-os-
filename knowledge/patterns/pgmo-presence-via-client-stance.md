@@ -47,7 +47,8 @@ type: pattern
 
 ## Use with
 
-- PJ 間の構造化 → `playbooks/cross-project-program-management.md`  
+- PJ 間の構造化・途中参画の指導展開 → `playbooks/cross-project-program-management.md` Chapter 1.6  
+
 - 会議階層 → `playbooks/program-governance-cadence.md`  
 - 隣接・対外のレーダー → `knowledge/patterns/related-project-external-coordination-radar.md`  
 - 顧客向け週次／月次 → `standards/deliverable-archetypes.md` Archetype J  

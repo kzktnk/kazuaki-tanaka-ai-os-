@@ -4,15 +4,15 @@ type: playbook
 
 # Cross-Project Program Management Playbook
 
-**Version:** v0.5  
+**Version:** v0.6  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** 複数ベンダー・複数プロジェクトの **「間（あいだ）」** を管理し、依存・境界・整合・統合スケジュール・コントロールを構造化する  
 **Use when:** PgMO が個別 PJ の WBS や進捗報告に埋もれ、PJ 間の受け渡し・整合・波及分析が弱い  
-**Do not use as-is for:** PMO 立ち上げ順序（`playbooks/pmo-function-standup.md`）、会議階層設計（`playbooks/program-governance-cadence.md`）、官側複数ロット開始判定（`playbooks/public-multi-lot-construction-pmo.md`）、契約境界外の隣接案件・対外アクターの洗い出し（`knowledge/patterns/related-project-external-coordination-radar.md` — Dependency Register の手前のレーダー層）、信頼が厚い既存プレイヤー下での**プレゼンス／提案姿勢**（`knowledge/patterns/pgmo-presence-via-client-stance.md`）  
-**Source revision:** local Cross-Project Management Playbook v1.8（2026-08-25）
+**Do not use as-is for:** PMO 立ち上げ順序（`playbooks/pmo-function-standup.md`）、会議階層設計（`playbooks/program-governance-cadence.md`）、官側複数ロット開始判定（`playbooks/public-multi-lot-construction-pmo.md`）、契約境界外の隣接案件・対外アクターの洗い出し（`knowledge/patterns/related-project-external-coordination-radar.md` — Dependency Register の手前のレーダー層）  
+**Source revision:** local Cross-Project Management Playbook v1.9（2026-08-26）
 
-Pairs with `playbooks/program-governance-cadence.md`（**誰がどの会議で何を決めるか**）and `frameworks/transformation-pmo.md`（PgMO の位置づけ）。本 Playbook は **何を PJ 間管理の対象として構造化し、どう回すか** を扱う。顧客向け週次／月次の見せ方は `standards/deliverable-archetypes.md` Archetype J。隣接案件レーダーは本 Playbook の Dependency Register とは別層。プロセスは回っているのに「バリューが見えない」ときは `knowledge/patterns/pgmo-presence-via-client-stance.md`。
+Pairs with `playbooks/program-governance-cadence.md`（**誰がどの会議で何を決めるか**）and `frameworks/transformation-pmo.md`（PgMO の位置づけ）。本 Playbook は **何を PJ 間管理の対象として構造化し、どう回すか** を扱う。顧客向け週次／月次の見せ方は `standards/deliverable-archetypes.md` Archetype J。隣接案件レーダーは本 Playbook の Dependency Register とは別層。途中参画でプレゼンスが弱いときは Chapter 1.6（圧縮版は `knowledge/patterns/pgmo-presence-via-client-stance.md`）。
 
 ## 複数ベンダー・複数プロジェクトを統合管理するための実践ガイド
 
@@ -37,6 +37,16 @@ Pairs with `playbooks/program-governance-cadence.md`（**誰がどの会議で�
 5. Appendixのテンプレートを、自分が実際に担当するプログラムに当てはめて埋める
 
 読むだけで終わらせず、必ずChapter 9の演習、または自分が担当する実プログラムのどちらかで手を動かすところまでをワンセットとする。
+
+### Self-study companion（メンティー向け）
+
+指導者同席を前提にした本文が正本。一人で進めるときは次だけ守る（全文の別コピーは持たない）。
+
+1. Chapter 順に読み、各章末の「レビュー用メモ」を**セルフチェック**として自分で埋める
+2. 読むだけで終わらせず、Chapter 9 か実プログラムのどちらかで手を動かす
+3. Chapter 9 は facilitator なしでも可。Session 1 → 2 の順。参考解答は先に見ない
+4. Session 2 は Detect → Analyze → Recover → Recommend → Ask まで言い切るところをゴールにする
+5. 内容改訂は常に本 Playbook 側。文体だけのセルフスタディ派生はローカルに留め、repo には本節のみ載せる
 
 ---
 
@@ -125,11 +135,37 @@ PgMOが、特定ベンダーのPJのPMO（そのPJ内のプロジェクトマネ
 
 兼任そのものが問題なのではない。**中立性は自動的に保たれるものではなく、意識して設計しなければ崩れるものである**、という前提を本人に持たせることが指導のポイントになる。
 
+### 1.6 既存プログラムへの途中参画 ―― 信頼関係が先にある中でのプレゼンス確立
+
+長年続いているプロジェクトが既に存在し、そこに他のプロジェクトが加わって規模・複雑性が増したタイミングで、PgMOとして新たに参画するケースは実務でよくある。この場合特有の難しさがあるため、1.1〜1.5とは別の観点として押さえておく必要がある。
+
+**このケースで起きやすいこと**
+
+- 顧客側には、既存プロジェクトを長年担当してきた信頼の厚いベンダー担当者（多くは10年単位の付き合い）がすでに存在し、そちらへの信頼度の方がPgMOより高く見える
+- 「複数PJを束ねるノウハウがある」という期待でPgMOが選定されたにもかかわらず、そのノウハウが顧客から見えてこない
+- PgMOチームが実務上の細々したアドミタスク（権限付与の代行、連絡調整など）に忙殺され、プログラムを大きく変えるような提案型の活動ができていない
+- 多くの意思決定プロセスが、特定の顧客キーパーソン一人を通す形に固定化されており、権限委譲を提案しても「今のやり方でよい」と却下される
+- 最悪の場合、ベンダー交代の検討にまで発展しうる
+
+これらは、本人のスキル不足というより、**新任PgMOと既存の信頼関係との間に構造的な非対称性がある**ことから生じる。着任してすぐに解消できるものではないという前提を、本人に持たせておく。
+
+**対処の型**
+
+1. **オーナーシップへの視点転換**：「自分はPMO（管理者）だ」という意識で仕事をすると、指示待ちになり後手に回りやすい。「自分が顧客側のPM／POだったら」という当事者意識で見ると、不足や課題が自然と見えてくる。それをPgMOの文脈に持っていくと、多くの場合それは「提案」として顧客に認識される
+2. **味方を作る構図**：既存の信頼関係を持つ人物（顧客側キーパーソンや長年のベンダー担当者）を、対立相手ではなく味方として位置づける。結論をいきなり顧客に提示するのではなく、その人物を巻き込んで仮説段階まで一緒に作ったうえで顧客に持っていくと、「PgMO 対 既存の信頼関係」ではなく「PgMO＋既存の信頼関係 対 顧客の課題」という構図になり、無用な対立を避けながら信頼を積み上げられる
+3. **現場の実力者との関係構築を最初の一歩にする**：いきなり顧客キーパーソンとの関係構築を狙うより、まず現場で信頼されている人物と個別に関係を作り、「〇〇さんとも相談してこれがいいと思っています」という形で顧客とコミュニケーションを取ると、「この人はちゃんと話ができる人だ」という最初の信頼につながりやすい
+4. **交点（Interface／Dependency）に注目する**：大規模・複数関係者が絡むプログラムでPgMOが最初に見るべきは、複数の関係者・PJが接する「交点」である（Chapter 3のDependency・Interfaceそのもの）。交点を洗い出し、状態を定義し、月次→週次でトラッキングする体制を確立することが、信頼される提案の土台になる
+5. **アドミタスクに埋没しない**：日々の事務作業に忙殺されると、提案型の活動に割ける時間がなくなる。ルーティン作業はできる限り委譲・簡素化し、複数PJを横断する構造的な課題の発見に時間を割り当てる
+
+このケースで持たせたい前提は、**プレゼンスは実績の蓄積でしか作れないが、構図の作り方次第で蓄積のスピードは変えられる**、ということである。姿勢の三手に圧縮した版は `knowledge/patterns/pgmo-presence-via-client-stance.md`。
+
 ### レビュー用メモ（本人との議論用）
 - [ ] 「PJの中身」と「PJの間」の違いを自分の言葉で説明できるか
 - [ ] 自分が今どちらに時間を使いすぎているか、素直に言語化できたか
 - [ ] 自分のプログラムの体制図（誰が最終判断者か、誰にエスカレーションするか）を実際に描けるか
 - [ ] 自分がPgMOとPMOを兼任している場合、利益相反が疑われる判断についてどう対処するかをあらかじめ決めているか
+- [ ] 既存の信頼関係を持つ人物を、対立相手ではなく味方として巻き込めているか
+- [ ] 日々のアドミタスクに追われて、提案型の活動に時間を割けない状態になっていないか
 
 ---
 

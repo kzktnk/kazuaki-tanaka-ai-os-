@@ -362,10 +362,11 @@
 
 | ローカル原本（種別） | 抽出先 | 登録範囲 |
 |---------------------|--------|---------|
-| Cross-Project Management Playbook（md / docx v1.8） | `playbooks/cross-project-program-management.md` | PJ 間 5 領域、Control Cycle、コーチング順序、ベンダー責任分界（5.4）、体制図（1.4）、兼任注意（1.5）、RAG 基準（8.2）、Consistency 再構成（6.1/6.5）、射程明示、5領域メンタルモデル（2.6）、Steering Decision Request（Detect→Ask）。章本文の写しは最小化。2026-08-25 再採用（v1.8 → repo v0.5） |
+| Cross-Project Management Playbook（md / docx v1.9） | `playbooks/cross-project-program-management.md` | PJ 間 5 領域、Control Cycle、コーチング順序、ベンダー責任分界（5.4）、体制図（1.4）、兼任注意（1.5）、途中参画プレゼンス（1.6）、RAG 基準（8.2）、Consistency 再構成（6.1/6.5）、射程明示、5領域メンタルモデル（2.6）、Steering Decision Request（Detect→Ask）、Self-study companion（方法のみ）。章本文の写しは最小化。2026-08-26 再採用（v1.9 → repo v0.6） |
 | Templates.xlsx（8 シート） | 同上 Playbook 本文 / Appendix | テンプレート**クラスとフィールド**のみ。Issue Log を含む。xlsx 実体不登録。本改訂でシート構成変更なし |
+| SelfStudy（md / docx） | 同上 Playbook「Self-study companion」 | 文体書き換え全文は不登録。セルフチェック順・演習の先読み禁止・正本は指導者版、のみ抽出 |
 
-**未登録:** xlsx / docx ファイル本体、作成日・対象読者などの表紙メタ、著者個人の全体レビュー記入欄・改訂履歴ダンプ、演習ケースのベンダー名・日付・費用、部下の実プログラム。
+**未登録:** xlsx / docx ファイル本体（main・SelfStudy）、SelfStudy 全文、作成日・対象読者などの表紙メタ、著者個人の全体レビュー記入欄・改訂履歴ダンプ、演習ケースのベンダー名・日付・費用、部下の実プログラム。
 
 ---
 
@@ -558,7 +559,7 @@
 | `shared-operator-vs-ministry-vs-municipality.md` | 高 | ✅ 登録済（2026-08-20） |
 | `public-multi-lot-construction-pmo.md` | 高 | ✅ 登録済（2026-08-20） |
 | `program-governance-cadence.md` | 高 | ✅ 登録済（2026-08-20） |
-| `cross-project-program-management.md` | 高 | ✅ 登録済（2026-08-25 再採用 / v1.8 → repo v0.5） |
+| `cross-project-program-management.md` | 高 | ✅ 登録済（2026-08-26 再採用 / v1.9 → repo v0.6） |
 
 ---
 
