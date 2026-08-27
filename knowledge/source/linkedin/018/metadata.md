@@ -98,7 +98,7 @@ No.18  Why memory (vs intelligence)
 No.19  Where memory begins (exceptions) + capture at deviation
 No.20  After capture — connect cases, outcomes, and standard-review signals
 No.21  Return memory to the moment of decision (timing, not retrieval)
-No.22+ Who curates / governance of memory updates (future)
+No.22  Decide whether learned exceptions should change the standard
 ```
 
 ## Related source

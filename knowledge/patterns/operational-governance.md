@@ -56,3 +56,4 @@ Governance must be embedded where AI acts—not only where policies are written.
 - `knowledge/patterns/ai-resilience-shift.md` (SP01)
 - `knowledge/patterns/operating-model-advantage.md` (No.12)
 - `knowledge/patterns/verifiable-ownership.md` (No.15)
+- `knowledge/patterns/standard-as-learned-memory.md` — changing a standard is a governed decision (No.22)

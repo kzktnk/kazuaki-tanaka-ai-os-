@@ -578,6 +578,7 @@ Load:
 - knowledge/patterns/exception-as-memory-entry.md
 - knowledge/patterns/connected-organizational-memory.md
 - knowledge/patterns/memory-at-decision.md
+- knowledge/patterns/standard-as-learned-memory.md
 - knowledge/patterns/authority-levels.md
 - knowledge/patterns/operational-reality.md
 - knowledge/lessons/dual-roadmap-messaging.md (if executive audience)
@@ -855,7 +856,7 @@ Load:
 - core/identity.md
 - core/values.md
 - Relevant framework
-- Related patterns (e.g. `organizational-memory.md`, `exception-as-memory-entry.md`, `connected-organizational-memory.md`, `memory-at-decision.md` for Memory Arc)
+- Related patterns (e.g. `organizational-memory.md`, `exception-as-memory-entry.md`, `connected-organizational-memory.md`, `memory-at-decision.md`, `standard-as-learned-memory.md` for Memory Arc)
 - Previous posts in the series
 
 Focus:

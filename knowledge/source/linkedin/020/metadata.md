@@ -63,7 +63,7 @@ These are clues. When they overlap (same exception, same reason, multiple sites)
 
 Some exceptions should remain exceptions. Others tell us about the standard.
 
-## Relationship to No.18–21
+## Relationship to No.18–22
 
 No.18: **why** memory (vs intelligence).
 
@@ -73,6 +73,8 @@ No.20: **after** capture — connection across cases, reasoning, and outcomes.
 
 No.21: **when** connected memory returns — at the next decision. Pattern: `knowledge/patterns/memory-at-decision.md`.
 
+No.22: **whether** learned exceptions should change the standard. Pattern: `knowledge/patterns/standard-as-learned-memory.md`.
+
 ## Relationship to Memory Arc
 
 ```text
@@ -80,7 +82,7 @@ No.18  Why memory (vs intelligence)
 No.19  Where memory begins (exceptions) + capture at deviation
 No.20  After capture — connect cases, outcomes, and standard-review signals
 No.21  Return memory to the moment of decision (timing, not retrieval)
-No.22+ Who curates / governance of memory updates (future)
+No.22  Decide whether learned exceptions should change the standard
 ```
 
 ## Writing note

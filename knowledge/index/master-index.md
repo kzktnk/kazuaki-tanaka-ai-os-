@@ -1,6 +1,6 @@
 # Knowledge Master Index
 
-**Version:** v1.15  
+**Version:** v1.16  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
@@ -93,7 +93,7 @@ kazuaki-tanaka-ai-os/
 
 | Index | Scope |
 |-------|--------|
-| [linkedin-series-index.md](./linkedin-series-index.md) | LinkedIn / Note sources 001–021, sp01–09, erf01–03 |
+| [linkedin-series-index.md](./linkedin-series-index.md) | LinkedIn / Note sources 001–022, sp01–09, erf01–03 |
 | [legacy-source-index.md](./legacy-source-index.md) | Local legacy PDFs → repo extraction map (Program Lines A–X) |
 
 ---
@@ -237,10 +237,10 @@ knowledge/
 │   └── legacy-source-index.md
 ├── source/
 │   └── linkedin/
-│       ├── 001–021/                  ← Operational AI main series
+│       ├── 001–022/                  ← Operational AI main series
 │       ├── sp01–sp09/                ← special posts
 │       └── erf01–erf03/              ← Enterprise Redesign Framework
-├── patterns/                         ← 37 files (see table below)
+├── patterns/                         ← 38 files (see table below)
 ├── lessons/
 │   ├── governance-messaging.md
 │   ├── dual-roadmap-messaging.md
@@ -257,6 +257,7 @@ knowledge/
 │   ├── linkedin-019.md
 │   ├── linkedin-020.md
 │   ├── linkedin-021.md
+│   ├── linkedin-022.md
 │   ├── ai-dual-roadmap-2026-08.md
 │   ├── ao-sae-2026-08.md
 │   ├── energy-utilities-domain-2026-08.md
@@ -284,7 +285,7 @@ knowledge/
     └── buyer-owns-ai-poc-ground-truth.md
 ```
 
-### Patterns (35)
+### Patterns (36)
 
 | Pattern | Primary themes |
 |---------|----------------|
@@ -315,6 +316,7 @@ knowledge/
 | `exception-as-memory-entry.md` | Exceptions as memory entry; capture at deviation |
 | `connected-organizational-memory.md` | Capture vs connection; retrieval vs memory; standard-review signals |
 | `memory-at-decision.md` | Timing vs retrieval; return memory at the decision; surfacing risks |
+| `standard-as-learned-memory.md` | Standard as compressed learning; exception → standard loop; AI visible, humans govern |
 | `operating-model-advantage.md` | Competitive advantage from operating model |
 | `ai-resilience-shift.md` | Productivity → resilience |
 | `decision-ownership.md` | Execution ≠ ownership |
@@ -440,7 +442,7 @@ knowledge/migrations/ao-sae-2026-08.md
 CONTEXT_ROUTING.md  →  Application Outsourcing / AMS Proposal
 ```
 
-### F. Organizational memory (LinkedIn No.18–21)
+### F. Organizational memory (LinkedIn No.18–22)
 
 ```text
 knowledge/source/linkedin/018/
@@ -473,6 +475,12 @@ knowledge/source/linkedin/021/
 knowledge/patterns/memory-at-decision.md
         ↓ record
 knowledge/migrations/linkedin-021.md
+        ↓ continue (No.22)
+knowledge/source/linkedin/022/
+        ↓ extract
+knowledge/patterns/standard-as-learned-memory.md
+        ↓ record
+knowledge/migrations/linkedin-022.md
         ↓ task routing
 CONTEXT_ROUTING.md  →  AI Adoption / DX Roadmap, LinkedIn Writing
 ```

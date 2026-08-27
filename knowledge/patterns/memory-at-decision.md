@@ -76,7 +76,9 @@ Use this pattern when:
 - `knowledge/patterns/organizational-memory.md` — why memory vs intelligence (No.18)
 - `knowledge/patterns/expertise-amplification.md` — AI prepares; experts decide
 - `knowledge/patterns/authority-levels.md` — AI may surface context without being given the decision
+- `knowledge/patterns/standard-as-learned-memory.md` — whether a recurring case should change the standard (No.22)
 
 ## Related source
 
 - `knowledge/source/linkedin/021/metadata.md`
+- `knowledge/source/linkedin/022/metadata.md`

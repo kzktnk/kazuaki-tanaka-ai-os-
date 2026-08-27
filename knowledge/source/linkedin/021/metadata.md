@@ -70,7 +70,7 @@ Bring the organization's prior experience into the room **before** the human dec
 
 The human still owns the decision. They should not have to make it as if the organization has never seen the situation before.
 
-## Relationship to No.18–20
+## Relationship to No.18–22
 
 No.18: **why** memory (vs intelligence).
 
@@ -80,6 +80,8 @@ No.20: **after** capture — connection across cases, reasoning, and outcomes.
 
 No.21: **when** connected memory returns — at the next decision, not in the archive.
 
+No.22: **whether** learned exceptions should change the standard. Pattern: `knowledge/patterns/standard-as-learned-memory.md`.
+
 ## Relationship to Memory Arc
 
 ```text
@@ -87,7 +89,7 @@ No.18  Why memory (vs intelligence)
 No.19  Where memory begins (exceptions) + capture at deviation
 No.20  After capture — connect cases, outcomes, and standard-review signals
 No.21  Return memory to the moment of decision (timing, not retrieval)
-No.22+ Who curates / governance of memory updates (future)
+No.22  Decide whether learned exceptions should change the standard
 ```
 
 ## Writing note
@@ -99,3 +101,4 @@ Final text authored by Kazuaki Tanaka (lock A). EN/JA archived as provided 2026-
 - Migration: `knowledge/migrations/linkedin-021.md`
 - Pattern: `knowledge/patterns/memory-at-decision.md`
 - Previous: `knowledge/source/linkedin/020/metadata.md`
+- Next: `knowledge/source/linkedin/022/metadata.md`

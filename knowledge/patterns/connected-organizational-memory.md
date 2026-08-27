@@ -54,6 +54,8 @@ Not: turn every exception into a new procedure.
 
 The **timing** of that return—before the decision, without owning it—is `knowledge/patterns/memory-at-decision.md` (No.21).
 
+Whether recurring exceptions should **change the standard**—with a human owning that change—is `knowledge/patterns/standard-as-learned-memory.md` (No.22).
+
 ## Core rule
 
 > Accumulation gives us a repository. Connection may be what turns it into memory.
@@ -72,9 +74,11 @@ Use this pattern when:
 - `knowledge/patterns/exception-as-memory-entry.md` — capture at deviation (No.19)
 - `knowledge/patterns/organizational-memory.md` — why memory vs intelligence (No.18)
 - `knowledge/patterns/memory-at-decision.md` — return connected memory at the next decision (No.21)
+- `knowledge/patterns/standard-as-learned-memory.md` — whether learned exceptions should change the standard (No.22)
 - `knowledge/patterns/operational-reality.md` — exceptions and workarounds in the field
 
 ## Related source
 
 - `knowledge/source/linkedin/020/metadata.md`
 - `knowledge/source/linkedin/021/metadata.md`
+- `knowledge/source/linkedin/022/metadata.md`

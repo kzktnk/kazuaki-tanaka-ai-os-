@@ -69,7 +69,7 @@ No.18  Why memory (vs intelligence)
 No.19  Where memory begins (exceptions) + capture at deviation
 No.20  After capture — connect cases, outcomes, and standard-review signals
 No.21  Return memory to the moment of decision (timing, not retrieval)
-No.22+ Who curates / governance of memory updates (future)
+No.22  Decide whether learned exceptions should change the standard
 ```
 
 ## Relationship to No.20
@@ -77,6 +77,8 @@ No.22+ Who curates / governance of memory updates (future)
 No.20: capture without connection produces a repository, not memory. Pattern: `knowledge/patterns/connected-organizational-memory.md`.
 
 No.21: connected memory still fails if it sits unused. Return it at the next decision. Pattern: `knowledge/patterns/memory-at-decision.md`.
+
+No.22: decide whether learned exceptions should change the standard. Pattern: `knowledge/patterns/standard-as-learned-memory.md`.
 
 ## Writing note
 
