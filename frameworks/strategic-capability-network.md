@@ -161,8 +161,10 @@ SCN supports **Findings**: structural gaps on the network (missing capability, w
 ## Related Files
 
 - `standards/scn-creation-guide.md` — Workshop, heuristics, notation, creation steps
+- `playbooks/strategy-scn.md` — Strategy → SCN → KPI → Gate 1 projectization (execution / coaching)
 - `frameworks/consulting-strategy-process.md` — Upstream strategy engagement before capability mapping
 - `standards/strategy-engagement-guide.md` — Problem scoping and analysis planning
+- `playbooks/cross-project-program-management.md` — Downstream Gate 2 / cross-project control
 - `CONTEXT_ROUTING.md` — SCN / Findings Analysis route
 - `knowledge/index/legacy-source-index.md` — Local source index (paths only)
 

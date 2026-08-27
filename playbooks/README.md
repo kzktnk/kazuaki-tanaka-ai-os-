@@ -6,7 +6,9 @@ Step-by-step execution methods for recurring work. See `ARCHITECTURE.md` §6.6.
 |------|----------|
 | `wbs-design.md` | Decompose work from deliverables, not from a task list |
 | `pmo-function-standup.md` | PMO rules exist; quality/site progress are still table of contents |
+| `strategy-scn.md` | Strategy → SCN → KPI → Gate 1 projectization (coaching sequence; not SCN notation encyclopedia) |
 | `program-governance-cadence.md` | SteerComm / program board / cross-project / standup / inspection: who meets, what escalates |
+| `strategy-scn.md` | Strategy / IT strategy → SCN → KPI → Gate 1 projectization (coaching sequence) |
 | `cross-project-program-management.md` | Multi-vendor PgMO: manage **between** projects — dependency, consistency, hand-off control |
 | `public-multi-lot-construction-pmo.md` | Shared-operator multi-lot tests/cutover: start-gates, not status minutes |
 | `private-it-rfp-vendor-selection.md` | Private-enterprise RFP issue through preferred vendor and contract handoff |

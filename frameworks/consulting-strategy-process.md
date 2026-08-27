@@ -297,6 +297,8 @@ Score options against explicit criteria; the option meeting most criteria (with 
 ## Related Files
 
 - `standards/strategy-engagement-guide.md` — operational checklists and templates
+- `playbooks/strategy-scn.md` — coaching sequence through SCN / KPI / Gate 1 (not a second definition of this framework)
+- `frameworks/strategic-capability-network.md` — capability mapping after direction is clear
 - `frameworks/sap-implementation-phase-model.md` — ERP evaluation and project preparation (Phase 0–1)
 - `CONTEXT_ROUTING.md` — Strategy Engagement route
 - `knowledge/index/legacy-source-index.md` — Program Line F (source index)

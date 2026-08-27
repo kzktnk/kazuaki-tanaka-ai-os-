@@ -177,6 +177,7 @@ Load:
 - frameworks/thinking-patterns/pattern-02-as-is-gap-to-be.md
 - frameworks/strategic-capability-network.md (if mapping to capabilities)
 - standards/scn-creation-guide.md (if SCN workshop follows strategy)
+- playbooks/strategy-scn.md (if coaching end-to-end strategy → SCN → Gate 1 projectization)
 - standards/writing.md
 - core/author-voice.md
 - Relevant project context (non-confidential)
@@ -189,6 +190,7 @@ Focus:
 - Scenario envisioning under uncertainty
 - Decision criteria and option evaluation (Diamond-E, suitability/feasibility/acceptability)
 - So-whats linking analysis to key question
+- Handoff readiness: Gate 1 vs Gate 2 (do not force WBS/vendor packing into strategy phase)
 
 Outputs:
 - Problem definition statement (4Cs & 1Q)
@@ -197,6 +199,7 @@ Outputs:
 - Strategic options and evaluation matrix
 - Scenario set and implications (when applicable)
 - Recommendation with criteria traceability
+- Gate 1 package (Charter bone / verified KPIs / project cut) when `strategy-scn` applies
 
 ---
 
@@ -208,6 +211,7 @@ Load:
 - frameworks/consulting-strategy-process.md (if business strategy/scenario context needed)
 - standards/strategy-engagement-guide.md (if general problem structuring applies)
 - frameworks/strategic-capability-network.md (if mapping IT initiatives to capabilities)
+- playbooks/strategy-scn.md (if sequencing Insight→Architecture→Investment into SCN / projectization)
 - frameworks/transformation-pmo.md (if multi-project program governance applies)
 - standards/pmo-operating-guide.md (if PMO design applies)
 - frameworks/transformation-roadmap.md (if phased delivery narrative needed)
@@ -397,6 +401,7 @@ Load:
 - playbooks/pmo-function-standup.md (if the office exists on paper but not in operation)
 - playbooks/program-governance-cadence.md (if SteerComm / program board / standup / inspection are collapsing into one status meeting)
 - playbooks/cross-project-program-management.md (if PgMO is buried in vendor WBS detail; PJ間 dependency / consistency / hand-off control is missing)
+- playbooks/strategy-scn.md (if upstream strategy → SCN → Gate 1 is weak before PgMO start)
 - knowledge/patterns/related-project-external-coordination-radar.md (if adjacent projects / external parties sit outside the Dependency Register)
 - knowledge/patterns/pgmo-presence-via-client-stance.md (if process pack runs but client trust / proposal value still sits with a long-trusted specialist PM)
 - knowledge/patterns/transformation-practice-case-pack.md (if packaging internal transformation practice cases / MM learning packs—not client status)
@@ -423,7 +428,8 @@ Focus:
 - PMO function map (portfolio, change, HCM, knowledge, integration)
 - PPM process and portfolio stop/start discipline
 - Cadence stack: who meets for what; escalation between layers; inspection vs status
-- Cross-project artifacts: 5 domains (scope boundary, dependency, interface, consistency, schedule); Control Cycle; template classes
+- Cross-project artifacts: 5 domains (scope boundary, dependency, interface, consistency, schedule); Control Cycle; template classes; pre-start checklist; dirty PJ-boundary Health Assessment
+- Gate 1 (strategy-scn) vs Gate 2 (cross-project pre-start) handoff
 - Related-project / external-coordination radar before items enter Dependency or master risk registers
 - PgMO presence: client-side PM/PO stance; ally with trusted incumbent before client; intersection-point risk → monthly→weekly reverse tracking
 - Phase 1 controlled document set (policy, roadmap, meeting pack) vs live minutes
@@ -532,6 +538,7 @@ Outputs:
 Load:
 - frameworks/strategic-capability-network.md
 - standards/scn-creation-guide.md
+- playbooks/strategy-scn.md (if end-to-end coaching: Findings → SCN → KPI → Gate 1)
 - frameworks/thinking-patterns/pattern-02-as-is-gap-to-be.md
 - frameworks/thinking-patterns/pattern-06-strategy-org-process-system.md
 - frameworks/capability-model.md
@@ -543,15 +550,17 @@ Focus:
 - Value → Capability → Enabler (KOPT) causal logic
 - As-Is vs To-Be on the same network
 - 3–5 structural Findings as gaps on the SCN (not a flat issue list)
-- KPI placement: outcome on Value, monitor on Capability
+- KPI placement: outcome on Value, monitor on Capability; Baseline / Formula / Data Source before handoff
 - Program / project mapping and cross-program integration
 - Workshop quality: notation consistency, breadth/depth, actionable enablers
+- Projectization Health Assessment (cut boundaries) and Gate 1 completion before Cross-Project
 
 Outputs:
 - SCN map (draft or reviewed)
 - Findings register tied to SCN nodes
 - Gap summary for steering / executive discussion
 - Initiative prioritization and resource allocation view
+- Program Charter骨子 and Gate 1 checklist (when projectizing)
 
 ---
 

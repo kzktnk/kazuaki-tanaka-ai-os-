@@ -204,6 +204,7 @@ Before publishing SCN:
 ## Related Files
 
 - `frameworks/strategic-capability-network.md`
+- `playbooks/strategy-scn.md` — execution sequence, Gate 1, template classes, coaching order
 - `frameworks/thinking-patterns/pattern-02-as-is-gap-to-be.md`
 - `core/author-voice.md`
 - `standards/deliverable-archetypes.md`

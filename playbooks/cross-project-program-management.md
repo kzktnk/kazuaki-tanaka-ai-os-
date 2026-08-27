@@ -4,15 +4,15 @@ type: playbook
 
 # Cross-Project Program Management Playbook
 
-**Version:** v0.6  
+**Version:** v0.7  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** 複数ベンダー・複数プロジェクトの **「間（あいだ）」** を管理し、依存・境界・整合・統合スケジュール・コントロールを構造化する  
 **Use when:** PgMO が個別 PJ の WBS や進捗報告に埋もれ、PJ 間の受け渡し・整合・波及分析が弱い  
-**Do not use as-is for:** PMO 立ち上げ順序（`playbooks/pmo-function-standup.md`）、会議階層設計（`playbooks/program-governance-cadence.md`）、官側複数ロット開始判定（`playbooks/public-multi-lot-construction-pmo.md`）、契約境界外の隣接案件・対外アクターの洗い出し（`knowledge/patterns/related-project-external-coordination-radar.md` — Dependency Register の手前のレーダー層）  
-**Source revision:** local Cross-Project Management Playbook v1.9（2026-08-26）
+**Do not use as-is for:** PMO 立ち上げ順序（`playbooks/pmo-function-standup.md`）、会議階層設計（`playbooks/program-governance-cadence.md`）、官側複数ロット開始判定（`playbooks/public-multi-lot-construction-pmo.md`）、契約境界外の隣接案件・対外アクターの洗い出し（`knowledge/patterns/related-project-external-coordination-radar.md` — Dependency Register の手前のレーダー層）、戦略立案・SCN・プロジェクト化（`playbooks/strategy-scn.md`）  
+**Source revision:** local Cross-Project Management Playbook v2.1（2026-08-27）
 
-Pairs with `playbooks/program-governance-cadence.md`（**誰がどの会議で何を決めるか**）and `frameworks/transformation-pmo.md`（PgMO の位置づけ）。本 Playbook は **何を PJ 間管理の対象として構造化し、どう回すか** を扱う。顧客向け週次／月次の見せ方は `standards/deliverable-archetypes.md` Archetype J。隣接案件レーダーは本 Playbook の Dependency Register とは別層。途中参画でプレゼンスが弱いときは Chapter 1.6（圧縮版は `knowledge/patterns/pgmo-presence-via-client-stance.md`）。
+Pairs with `playbooks/program-governance-cadence.md`（**誰がどの会議で何を決めるか**）and `frameworks/transformation-pmo.md`（PgMO の位置づけ）。本 Playbook は **何を PJ 間管理の対象として構造化し、どう回すか** を扱う。顧客向け週次／月次の見せ方は `standards/deliverable-archetypes.md` Archetype J。隣接案件レーダーは本 Playbook の Dependency Register とは別層。途中参画でプレゼンスが弱いときは Chapter 1.6（圧縮版は `knowledge/patterns/pgmo-presence-via-client-stance.md`）。上流の Gate 1 は `playbooks/strategy-scn.md`。
 
 ## 複数ベンダー・複数プロジェクトを統合管理するための実践ガイド
 
@@ -20,13 +20,30 @@ Pairs with `playbooks/program-governance-cadence.md`（**誰がどの会議で�
 
 複数ベンダー・複数プロジェクトを束ねるプログラムマネジメント（PgMO）を任された担当者が、次の3つの問いに自力で答えられるようになることを目的とする。
 
-- プロジェクト間の連携ポイントをどう整理するか
-- スケジュール・スコープ境界・内容（要件や設計など）の整合性をどう取るか
-- モニタリング＆コントロールをどう回すか
+- プロジェクト間の連携ポイントをどう整理するか（Chapter 2・3）
+- スケジュール・スコープ境界・内容（要件や設計など）の整合性をどう取るか（Chapter 4・5・6）
+- モニタリング＆コントロールをどう回すか（Chapter 7・8）
 
 個別プロジェクトの管理（WBS・進捗管理・課題管理）はベンダーPM／PLの役割であり、本Playbookの対象外である。本Playbookが対象とするのは、**個別プロジェクトの「中」ではなく「間（あいだ）」をどう管理するか**である。
 
-**射程の明示**：本Playbookが扱うのは、Program Managementの中でも複数PJ間の統合・依存・整合・統制（Cross-Project Integration & Control）に絞った領域である。Benefits／Value Realization、Strategic Alignment、Program-level Business Case、Stakeholder／Change Management、Resource／Investment Prioritization、Program Lifecycle（Tranche）管理といった、Program Management全般に含まれる他の領域は、本Playbookの対象外である。タイトルが「Program Management Playbook」ではなく「Cross-Project Management Playbook」であるのはこのためである。
+**射程の明示**：本Playbookが扱うのは、Program Managementの中でも複数PJ間の統合・依存・整合・統制（Cross-Project Integration & Control）に絞った領域である。Benefits／Value Realization、Strategic Alignment、Program-level Business Case、Stakeholder／Change Management、Resource／Investment Prioritization、Program Lifecycle（Tranche）管理といった、Program Management全般に含まれる他の領域は、本Playbookの対象外である。タイトルが「Program Management Playbook」ではなく「Cross-Project Management Playbook」であるのはこのためである。あわせて、本Playbookが扱うのは戦略の実現化工程（プロジェクト化された後の複数PJ統合管理）に限られる。IT戦略立案やSCNによる施策・KPI・プロジェクト化といった上流工程、および実現化後の運用・定着化（AMS・AI運用・インフラ運用等）といった下流工程は、いずれも本Playbookの対象外である。
+
+### Playbookシリーズにおける本書の位置づけ
+
+```text
+① 戦略立案・SCN（`playbooks/strategy-scn.md`）
+   IT戦略を含む戦略立案 → SCN → KPI → Gate 1 プロジェクト化
+                        │
+                        ▼
+② Cross-Project Management Playbook（本書）
+   複数ベンダー・複数プロジェクトを束ねる実現化工程を、統合的に管理する
+                        │
+                        ▼
+③ 運用・定着化 Playbook（仮称・別冊）
+   AMS／AI運用／インフラ運用を含む、実現化後の安定運用と定着化
+```
+
+①・③は本Playbookの対象外。③が未作成でも、②の範囲に閉じ、越境しないことを原則とする。①の Gate 1 完了後、本章の着手前チェック（Gate 2）へ接続する。
 
 ## 使い方
 
@@ -47,6 +64,7 @@ Pairs with `playbooks/program-governance-cadence.md`（**誰がどの会議で�
 3. Chapter 9 は facilitator なしでも可。Session 1 → 2 の順。参考解答は先に見ない
 4. Session 2 は Detect → Analyze → Recover → Recommend → Ask まで言い切るところをゴールにする
 5. 内容改訂は常に本 Playbook 側。文体だけのセルフスタディ派生はローカルに留め、repo には本節のみ載せる
+6. ①／③との境界（本書は実現化の「間」のみ）を先に把握してから Chapter 2 に入る
 
 ---
 
@@ -171,6 +189,30 @@ PgMOが、特定ベンダーのPJのPMO（そのPJ内のプロジェクトマネ
 
 ## Chapter 2. プログラム全体を構造化する
 
+### 着手前チェック ―― 前提条件チェックリスト
+
+Chapter 2以降の管理表は、ゼロから作れるものではない。土台となる資料が揃っていないまま管理表作成に着手させると、PgMOがプログラムのコントロールではなく、いつまでも構造化作業そのものに追われ続けることになる。着手前に、次の観点で前提資料の有無を確認させる。
+
+| 管理表／成果物 | 必須の前提資料 | あると望ましい資料 | 主な確認先 |
+|---|---|---|---|
+| Project Landscape（2.1） | プログラムに含まれるPJの一覧 | 各PJの契約概要 | Program Director、契約担当 |
+| Project Interaction Map（2.3） | 各PJの体制図、各PJのWBS（Lv3〜4程度） | スコープ定義書、マイルストン一覧 | 各PJのPM／PL |
+| Dependency Register（3.3） | Interaction Mapの完成版 | 過去の類似プログラムのDependency実績 | 各PJのPM／TL |
+| Scope Boundary Matrix（5.1） | 各PJの契約書・RFPのスコープ記載 | 過去の類似プログラムの分担実績 | 契約担当、各PJのPM |
+| Consistency Matrix（6.2） | 各PJの要件定義書・基本設計書（ドラフトで可） | データ定義書、非機能要件書 | 各PJのTech Lead |
+| Integrated Milestone Plan（4.2） | 各PJのマスタースケジュール | Lag／バッファの合意事項 | 各PJのPM |
+
+**前提資料が揃わない場合の対処**
+
+前提資料が揃わないこと自体は珍しくない。揃うまで待たせるのではなく、次のように動かせる。
+
+1. **口頭ヒアリングで暫定版を作る**：WBSや体制図が未整備の場合、各PJのPM／PLへの個別ヒアリングを設定し、聞き取りながら暫定版の管理表を作らせる。ヒアリングの過程そのものが、PJ間の関係を把握する機会にもなる
+2. **暫定であることを明示する**：ヒアリングベースで作った管理表には「未確認」「暫定」等のマークを付けさせ、後日正式な資料で裏付けが取れ次第更新させる
+3. **ワークショップで複数PJを同時に引き合わせる**：Tech Lead同士の連携など、複数PJにまたがる確認が必要な場合は、個別ヒアリングより先に関係者を一堂に集めるワークショップを設定した方が早いことが多い。特にConsistency Matrix（Chapter 6）は、各PJのTech Leadが顔を合わせて初めて整合の穴が見つかるケースが多い
+4. **足りない資料の整備自体をPgMOのタスクとして扱わせる**：体制図やWBSが存在しないこと自体が、そのプログラムの管理成熟度の低さを示す兆候である。管理表作成の前提として、資料整備そのものをPgMOのタスクリストに乗せ、着手初期のマイルストーンとして扱わせる
+
+このチェックリストは、着手時だけでなく、新しいPJがプログラムに加わるたびに再確認させる。上流①から受け取るのは Gate 1（Why／What／Project切り／KPI／Scope概要／Sponsor）まで。上表の体制図・WBS・契約スコープ等は Gate 2（本書の着手前）で確定させる領域である（`playbooks/strategy-scn.md`）。
+
 ### 2.1 Project Landscape ―― まず全体像を描く
 
 いきなり管理表を作らせない。最初にやらせるのは、プログラムに含まれるプロジェクトの一覧化と、その位置づけの整理である。
@@ -231,7 +273,7 @@ Interaction Map・Dependency Register・Consistency Matrix・Integrated Mileston
 
 ### 2.6 5領域のメンタルモデル
 
-ここまでChapter 2〜6（本項執筆時点ではChapter 3〜6が今後の管理対象）で、Interaction Map・Dependency Register・Scope Boundary Matrix・Consistency Matrix・Integrated Scheduleという個別の管理表を扱ってきた。しかし管理表の名前や書式そのものは、覚えることが目的ではない。本人に持たせたいのは、その背後にある次の一枚のメンタルモデルである。
+この後Chapter 3〜6で、Interaction Map・Dependency Register・Scope Boundary Matrix・Consistency Matrix・Integrated Scheduleという個別の管理表を順に扱っていく。しかし管理表の名前や書式そのものは、覚えることが目的ではない。本人に持たせたいのは、その背後にある次の一枚のメンタルモデルである。
 
 ```text
                   Program Outcome
@@ -259,12 +301,35 @@ Interaction Map・Dependency Register・Consistency Matrix・Integrated Mileston
 
 管理表の名前や書式を忘れても、この5つの問いさえ持っていれば、PgMOとして次に何を確認すべきかを自分で考えられる。Chapter 3〜6を一通り学んだ後に、この一枚に立ち返らせると定着しやすい。
 
+### 2.7 プログラム構造のHealth Assessment ―― PJ境界が「汚い」ケースへの対処
+
+2.1〜2.6は、契約単位・ベンダー単位のPJがそれぞれ独立した単位として切られていることを暗黙の前提にしている。しかし実務では、1つの契約・1つのPJの中に、技術的には独立した複数のサブシステムが、「共通基盤」「共通機能」といった名目の1つの契約にまとめて発注されているケースが珍しくない。
+
+この場合、Project Interaction Map（2.3）をPJ単位でそのまま描かせようとしても描けない、あるいは描けたつもりでも実態を反映しない。PJという管理単位そのものが、実質的には複数の疑似PJの寄せ集めになっているためである。ここに気づかないまま2.1〜2.6の管理表を機械的に当てはめさせると、表面上は整合しているように見えて、実際には管理の粒度が粗すぎて重要な連携漏れを見逃す、という事態が起きる。
+
+このズレは本人の描き方が悪いのではなく、プログラム構造そのものに起因する。着任後、Project Landscape（2.1）を作らせる段階で、次の観点から構造の「健全性」を確認させておくと、後になってからInteraction Mapが描けずに立ち往生する事態を防げる。
+
+| 確認観点 | 確認方法 | 「汚い」構造のサイン |
+|---|---|---|
+| 契約単位とシステム単位は一致しているか | 契約書・RFPのスコープ記載とシステム構成図を突き合わせる | 1契約の中に、独立してテスト・リリース可能な複数のサブシステムが含まれている |
+| PJ内のサブシステム間の連携は把握されているか | そのPJのベンダーPM／技術責任者にヒアリングする | 「PJ内のことなので連携図は不要」という反応が返ってくる |
+| PJ内サブシステム間の連携の密度は、他PJとの連携より高いか | Interaction Mapを試しにサブシステム単位で描いてみる | サブシステム間の矢印の本数が、PJ間の矢印の本数より明らかに多い |
+
+**「汚い」構造だと分かった場合の対処**
+
+1. **管理単位をPJ境界からシステム境界に切り替える**：Interaction Map・Dependency Register等を、契約上のPJ単位ではなく、実態に合わせたサブシステム単位で描き直させる
+2. **契約単位×システム単位のマトリクスを作らせる**：「どのサブシステムがどの契約に含まれるか」を一覧化し、契約上の責任範囲と実際の技術的な依存関係が一致しない箇所を可視化させる
+3. **契約担当と技術担当を分けて確認させる**：契約上のPJ単位の話は契約担当（ベンダーPMなど）に、サブシステム間の技術的な依存関係の話は技術責任者に、別々に確認させる。同じ人に両方を聞くと、契約上の建付けに引きずられて技術的な実態が見えなくなることがある
+
+このHealth Assessmentは、プログラム構造が「綺麗」であれば数分で終わる確認作業である。むしろ、綺麗ではないプログラムほど早期に気づかせることに価値がある。①側の Projectization Health Assessment（`playbooks/strategy-scn.md`）は同じ問題の**事前予防**；本節は**事後検知と立て直し**。
+
 ### レビュー用メモ（本人との議論用）
 - [ ] Interaction Mapの矢印すべてに「何が流れるか」が書けているか
 - [ ] 矢印の抜け（実際には連携しているのに描かれていない関係）がないか、本人以外の目でも確認したか
 - [ ] 異常検知５問を、自分の担当プログラムの管理表に対して実際に当ててみたか
 - [ ] 5問すべてに即答で「問題なし」と答えていないか（本当に見えていないだけではないか）
 - [ ] Boundary／Dependency／Interface／Consistency／Scheduleの5領域を、管理表を見ずに自分の言葉で説明できるか
+- [ ] 契約単位のPJの中に、技術的に独立した複数のサブシステムが混在していないか
 
 ---
 
@@ -692,6 +757,17 @@ Dependency Register・Integrated Milestone Plan・Consistency Issue Log・RAID L
 
 Risk（リスク）・Assumption（前提）・Issue（課題）・Dependency（依存）を一元管理する。特にAssumptionは軽視されがちだが、「前提が違っていた」ことが後工程で発覚するとほぼ確実に手戻りが発生するため、Dependency Registerと同じ重みで扱う。
 
+4つの区分は似て見えるが、問うべき観点が異なる。区分を混同したままログに書かせると、対応の緊急度もオーナーも曖昧になるため、最低限次の観点だけは押さえさせる。
+
+| 区分 | 一言の定義 | 問うべき観点 | 主な記入タイミング |
+|---|---|---|---|
+| Risk（リスク） | まだ起きていないが、起きる可能性がある将来の問題 | 発生確率は？　発生した場合の影響度は？　誰が監視するか？ | 着任時、フェーズの節目、プリモーテム実施時 |
+| Assumption（前提） | 確認せずに「そうだろう」と置いている仮定 | 何を前提にしているか？　誰がいつまでに確認・裏付けを取るか？　外れていた場合の影響は？ | 管理表・計画を作成するタイミング全般 |
+| Issue（課題） | すでに顕在化している、対応が必要な問題 | 誰がいつまでに、何を対応するか？　放置した場合の影響は？ | 発生を検知した時点で即時 |
+| Dependency（依存） | PJ間で受け渡しが必要な事項（Chapter 3で詳述） | 何を、いつ、誰から誰に渡すか？ | Interaction Map作成時、以降は変更検知時 |
+
+4区分の中で最も見落とされやすいのはAssumptionである。RiskやIssueは「問題」として意識されやすいが、Assumptionは「当然そうだろう」という思い込みの形を取るため、本人が意識的に洗い出さない限りログに乗らない。Chapter 7.6の対策3（プリモーテム）で洗い出された「予兆がまだないが可能性として否定できないもの」の受け皿は、このAssumption／Risk区分である。フェーズの節目でプリモーテムを行った際は、その場でRAID Logへの転記までを一連の作業として本人にやらせる。
+
 ### 8.4 Decision Log / Change Control
 
 PJ間にまたがる意思決定は、口頭や個別メールで済ませず、Decision Logに残す。あるPJの合意がSteering前提だったのか、PgMO内で完結してよい事項だったのかを後から追跡できるようにする。スコープや前提に影響する変更は、必ずChange Controlのプロセスを通す。
@@ -850,17 +926,19 @@ PJ-B・PJ-C・PJ-D    ─テストシナリオ─▶ PJ-E（テスト統括）
 
 以下はすべて `Cross-Project Management Playbook - Templates.xlsx`（別ファイル）に収録している。各シートの使い方は本文の該当Chapterを参照。
 
-| No. | テンプレート | 対応Chapter |
-|---|---|---|
-| 1 | Program Overview | Chapter 2 |
-| 2 | Scope Boundary Matrix | Chapter 5 |
-| 3 | Cross-Project Dependency Register | Chapter 3 |
-| 4 | Integrated Milestone Plan | Chapter 4 |
-| 5 | Consistency Matrix | Chapter 6.1〜6.3、6.5 |
-| 6 | Consistency Issue Log | Chapter 6.4〜6.5 |
-| 7 | RAID / Decision Log | Chapter 8 |
-| 8 | Weekly Dashboard | Chapter 7・8 |
+| No. | テンプレート | 対応Chapter | 主なフィールド（クラス定義） |
+|---|---|---|---|
+| 1 | Program Overview | Chapter 2 | PJ ID, PJ名, ベンダー, スコープ概要, 開始／終了予定, 受け渡し先／元PJ, 備考 |
+| 2 | Scope Boundary Matrix | Chapter 5 | 作業項目, PJ列（○／△）, Gap/Overlap判定, Owner, 備考 |
+| 3 | Cross-Project Dependency Register | Chapter 3 | ID, From/To PJ, 連携ポイント, I/O, 必要日, Owner, Status, 影響, Critical, 備考 |
+| 4 | Integrated Milestone Plan | Chapter 4 | Milestone, 関連PJ, Baseline／Current, Variance, Lag, Status, Downstream Impact, 備考 |
+| 5 | Consistency Matrix | Chapter 6.1〜6.3、6.5 | 整合性観点, PJ列（○）, 確認内容, Owner, 最終確認日 |
+| 6 | Consistency Issue Log | Chapter 6.4〜6.5 | ID, 観点, From/To成果物（版含む）, 確認ポイント, Result, Open Point, Owner, 確認日 |
+| 7 | RAID / Decision Log | Chapter 8 | ID, 種別（R/A/I/D/Decision）, 内容, 関連PJ, Owner, 起票日, 対応期限, Status, 影響, 備考 |
+| 8 | Weekly Dashboard | Chapter 7・8 | Dependency／Consistency Status集計, Control Cycleアジェンダ |
 
 テンプレートは「どの順番で、何を考えて埋めるか」がPlaybook本文側の説明と対になっている。Excelだけを渡して自走させるのではなく、必ず本文とセットで使わせること。
+
+ローカル xlsx（Cover + 8 シート）のシート数・フィールドは本改訂で変更なし。No.1〜7には記入例のサンプル行あり（案件事実は転記しない）。No.8は他シート参照の集計用。xlsx バイナリは repo に置かない。
 
 ---

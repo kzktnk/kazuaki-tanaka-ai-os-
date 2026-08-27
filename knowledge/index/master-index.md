@@ -72,13 +72,13 @@ kazuaki-tanaka-ai-os/
 ├── core/                       ← 8 files (kernel)
 ├── standards/                  ← 19 files (quality criteria)
 ├── frameworks/                 ← 33 files + thinking-patterns/
-├── playbooks/                  ← 14 playbooks (+ README)
+├── playbooks/                  ← 15 playbooks (+ README)
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
 │   ├── patterns/               ← 36 distilled patterns
 │   ├── lessons/                ← 5 lessons
-│   ├── migrations/             ← 28 migration reports
+│   ├── migrations/             ← 29 migration reports
 │   └── decisions/              ← 4 records
 ├── templates/                  ← 1 template
 ├── prompts/                    ← README placeholder
@@ -167,7 +167,8 @@ standards/
 ├── Program & PMO
 │   └── pmo-operating-guide.md
 └── Strategy consulting (SCN)
-    └── scn-creation-guide.md
+    ├── scn-creation-guide.md
+    └── (execution) playbooks/strategy-scn.md
 ```
 
 ---
@@ -271,6 +272,7 @@ knowledge/
 │   ├── related-project-radar-and-et-case-pack-2026-08.md
 │   ├── program-governance-cadence-2026-08.md
 │   ├── cross-project-program-management-2026-08.md
+│   ├── strategy-scn-2026-08.md
 │   ├── fisc-audit-tech-ops-facility-2026-08.md
 │   ├── project-management-policy-layer-2026-08.md
 │   └── customer-status-weekly-monthly-2026-08.md
@@ -338,6 +340,7 @@ playbooks/
 ├── private-it-rfp-vendor-selection.md
 ├── pmo-function-standup.md
 ├── program-governance-cadence.md
+├── strategy-scn.md
 ├── cross-project-program-management.md
 ├── public-multi-lot-construction-pmo.md
 ├── interim-connectivity.md
@@ -672,11 +675,13 @@ Local live PgMO cadence folders — not archived
         ↓ generalize (no client names, yen, minutes bodies, inspection results, plant/site names)
 playbooks/program-governance-cadence.md
 playbooks/cross-project-program-management.md
+playbooks/strategy-scn.md  (upstream Gate 1 companion; separate local Strategy-SCN pack)
         ↓ record
 knowledge/migrations/program-governance-cadence-2026-08.md
 knowledge/migrations/cross-project-program-management-2026-08.md
+knowledge/migrations/strategy-scn-2026-08.md
         ↓ task routing
-CONTEXT_ROUTING.md  →  Transformation PMO / Program Governance
+CONTEXT_ROUTING.md  →  Transformation PMO / Program Governance; Strategy Engagement / SCN
 ```
 
 ---
@@ -746,8 +751,9 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 |------|----------------|
 | Proposal review | `standards/consulting-review.md`, `deliverable-archetypes.md`, `writing.md` |
 | Customer weekly/monthly status | `deliverable-archetypes.md` Archetype J, `author-voice.md`, `project-management-policy-layer.md`, `support-effort-classification.md`, cadence / cross-project playbooks as needed |
-| IT strategy | `frameworks/it-strategy-foundations.md`, `standards/it-strategy-engagement-guide.md` |
-| PMO / transformation | `frameworks/transformation-pmo.md`, `playbooks/pmo-function-standup.md`, `playbooks/program-governance-cadence.md`, `playbooks/cross-project-program-management.md`, `knowledge/patterns/related-project-external-coordination-radar.md` (if adjacent/external radar), `knowledge/patterns/pgmo-presence-via-client-stance.md` (if presence lost to trusted incumbent), `knowledge/patterns/transformation-practice-case-pack.md` (if internal practice packaging), `standards/pmo-operating-guide.md`, `knowledge/patterns/project-management-policy-layer.md` (if project-layer policy TOC), Archetype J if customer status, `frameworks/change-management.md` |
+| IT strategy | `frameworks/it-strategy-foundations.md`, `standards/it-strategy-engagement-guide.md`, `playbooks/strategy-scn.md` (if SCN → projectization) |
+| Strategy engagement / SCN | `consulting-strategy-process.md`, `strategy-engagement-guide.md`, `strategic-capability-network.md`, `scn-creation-guide.md`, `playbooks/strategy-scn.md` (sequence / Gate 1) |
+| PMO / transformation | `frameworks/transformation-pmo.md`, `playbooks/pmo-function-standup.md`, `playbooks/program-governance-cadence.md`, `playbooks/strategy-scn.md` (upstream Gate 1), `playbooks/cross-project-program-management.md`, `knowledge/patterns/related-project-external-coordination-radar.md` (if adjacent/external radar), `knowledge/patterns/pgmo-presence-via-client-stance.md` (if presence lost to trusted incumbent), `knowledge/patterns/transformation-practice-case-pack.md` (if internal practice packaging), `standards/pmo-operating-guide.md`, `knowledge/patterns/project-management-policy-layer.md` (if project-layer policy TOC), Archetype J if customer status, `frameworks/change-management.md` |
 | DX grand design | `frameworks/dx-grand-design.md`, change / roadmap as needed |
 | New venture assessment | `frameworks/new-venture-three-track-assessment.md` |
 | B2B sales workflow | `knowledge/patterns/sales-capacity-via-center-functions.md` |
