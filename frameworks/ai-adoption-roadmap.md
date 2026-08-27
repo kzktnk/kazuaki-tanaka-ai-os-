@@ -77,7 +77,7 @@ C (Year 1)  →  B (Year 2–3)  →  A in earnest (Year 2–5, deepening throug
 ```
 
 - **C first:** CoE, rules, data owners, skill visibility — without these, A and B stall.
-- **B parallel to early A:** Expertise amplification (`knowledge/patterns/expertise-amplification.md`) — not full manualization. Organizational memory: `knowledge/patterns/organizational-memory.md` (No.18); exception capture: `knowledge/patterns/exception-as-memory-entry.md` (No.19); connection after capture: `knowledge/patterns/connected-organizational-memory.md` (No.20).
+- **B parallel to early A:** Expertise amplification (`knowledge/patterns/expertise-amplification.md`) — not full manualization. Organizational memory: `knowledge/patterns/organizational-memory.md` (No.18); exception capture: `knowledge/patterns/exception-as-memory-entry.md` (No.19); connection after capture: `knowledge/patterns/connected-organizational-memory.md` (No.20); return at the decision: `knowledge/patterns/memory-at-decision.md` (No.21).
 - **Full agent autonomy:** Year 4–5 at earliest; authority design stays gradual (`knowledge/patterns/authority-levels.md`).
 
 ### Initiative C — three pillars
@@ -102,7 +102,7 @@ Typical AI use domains in asset-intensive operations:
 | Administration | Document summarization, comparison | A |
 | Tacit knowledge | Expert Q&A, judgment patterns | B |
 
-Initiative B implements **organizational memory** at program scale—judgment types, exception libraries, continuous enrichment (`knowledge/patterns/organizational-memory.md`, No.18; capture design at deviation: `knowledge/patterns/exception-as-memory-entry.md`, No.19; connection after capture: `knowledge/patterns/connected-organizational-memory.md`, No.20).
+Initiative B implements **organizational memory** at program scale—judgment types, exception libraries, continuous enrichment (`knowledge/patterns/organizational-memory.md`, No.18; capture design at deviation: `knowledge/patterns/exception-as-memory-entry.md`, No.19; connection after capture: `knowledge/patterns/connected-organizational-memory.md`, No.20; return at the decision: `knowledge/patterns/memory-at-decision.md`, No.21).
 
 Design for **operational reality** (`knowledge/patterns/operational-reality.md`): exceptions and field workarounds are inputs, not blockers to defer AI indefinitely.
 

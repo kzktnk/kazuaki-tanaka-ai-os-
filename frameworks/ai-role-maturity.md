@@ -75,7 +75,7 @@ Executive-facing summary — detail internally as needed.
 1. **Shift from knowledge transfer to judgment support** — expertise amplification, not replacement (`knowledge/patterns/expertise-amplification.md`).
 2. **Formalize judgment types**, not exhaustive manuals — when / what to check / what to prioritize.
 3. **Experts as reviewers** — veterans validate AI output; they do not write every artifact.
-4. **Exception libraries** — capture workarounds and edge cases; 100% codification is not the goal. This is the operational layer of **organizational memory** (`knowledge/patterns/organizational-memory.md`).
+4. **Exception libraries** — capture workarounds and edge cases; 100% codification is not the goal. This is the operational layer of **organizational memory** (`knowledge/patterns/organizational-memory.md`). Libraries are useful when they return at the decision (`knowledge/patterns/memory-at-decision.md`).
 
 Initiative B (tacit → explicit knowledge) peaks in **Year 2–3**.
 

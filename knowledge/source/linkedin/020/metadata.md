@@ -63,7 +63,7 @@ These are clues. When they overlap (same exception, same reason, multiple sites)
 
 Some exceptions should remain exceptions. Others tell us about the standard.
 
-## Relationship to No.18–19
+## Relationship to No.18–21
 
 No.18: **why** memory (vs intelligence).
 
@@ -71,13 +71,16 @@ No.19: **where** memory begins (exceptions) and **what** to capture.
 
 No.20: **after** capture — connection across cases, reasoning, and outcomes.
 
+No.21: **when** connected memory returns — at the next decision. Pattern: `knowledge/patterns/memory-at-decision.md`.
+
 ## Relationship to Memory Arc
 
 ```text
 No.18  Why memory (vs intelligence)
 No.19  Where memory begins (exceptions) + capture at deviation
 No.20  After capture — connect cases, outcomes, and standard-review signals
-No.21+ Who curates / governance of memory updates (future)
+No.21  Return memory to the moment of decision (timing, not retrieval)
+No.22+ Who curates / governance of memory updates (future)
 ```
 
 ## Writing note
@@ -88,3 +91,4 @@ Final text authored by Kazuaki Tanaka (lock A, EN/JA revised 2026-08-19: equipme
 
 - Migration: `knowledge/migrations/linkedin-020.md`
 - Pattern: `knowledge/patterns/connected-organizational-memory.md`
+- Next: `knowledge/source/linkedin/021/metadata.md`

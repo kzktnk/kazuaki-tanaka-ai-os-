@@ -68,12 +68,15 @@ No.19: **where** memory begins (exceptions) and **what** to capture first (reaso
 No.18  Why memory (vs intelligence)
 No.19  Where memory begins (exceptions) + capture at deviation
 No.20  After capture — connect cases, outcomes, and standard-review signals
-No.21+ Who curates / governance of memory updates (future)
+No.21  Return memory to the moment of decision (timing, not retrieval)
+No.22+ Who curates / governance of memory updates (future)
 ```
 
 ## Relationship to No.20
 
 No.20: capture without connection produces a repository, not memory. Pattern: `knowledge/patterns/connected-organizational-memory.md`.
+
+No.21: connected memory still fails if it sits unused. Return it at the next decision. Pattern: `knowledge/patterns/memory-at-decision.md`.
 
 ## Writing note
 

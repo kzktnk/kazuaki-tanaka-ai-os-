@@ -49,7 +49,8 @@ Operational AI should:
 1. **Preserve** decision context—not only documents
 2. **Connect** exceptions, assumptions, and outcomes across time and teams
 3. **Continuously enrich** memory from live operations
-4. **Pair with governance** (No.13–17) and expert amplification (No.11)
+4. **Return memory at the moment of decision**—not only store and connect it (`knowledge/patterns/memory-at-decision.md`)
+5. **Pair with governance** (No.13–17) and expert amplification (No.11)
 
 Avoid treating organizational memory as a static archive or memory dump.
 
@@ -67,6 +68,7 @@ See also `frameworks/ai-role-maturity.md` §Education Design Principles.
 
 - `knowledge/patterns/exception-as-memory-entry.md` — where memory begins (No.19); capture at deviation
 - `knowledge/patterns/connected-organizational-memory.md` — after capture: connection, outcomes, standard-review signals (No.20)
+- `knowledge/patterns/memory-at-decision.md` — return memory at the next decision (No.21)
 - `knowledge/patterns/expertise-amplification.md` — expert judgment in the moment
 - `knowledge/patterns/operational-reality.md` — tacit knowledge and exceptions as memory content
 - `knowledge/patterns/authority-levels.md` — who may act; memory informs what was learned
@@ -77,3 +79,4 @@ See also `frameworks/ai-role-maturity.md` §Education Design Principles.
 - `knowledge/source/linkedin/018/metadata.md`
 - `knowledge/source/linkedin/019/metadata.md`
 - `knowledge/source/linkedin/020/metadata.md`
+- `knowledge/source/linkedin/021/metadata.md`

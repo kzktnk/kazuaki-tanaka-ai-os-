@@ -30,6 +30,7 @@ Master index of LinkedIn / Note article sources under `knowledge/source/linkedin
 | 018 | No.18 | The Future of Enterprise AI May Depend on Organizational Memory, Not Just Intelligence | AI時代の競争力は「知能」ではなく「組織の記憶」から生まれる | en, ja | `018/` |
 | 019 | No.19 | Exceptions Are Where Organizational Memory Begins | 組織の記憶は「例外」から始まる | en, ja | `019/` |
 | 020 | No.20 | Organizational Memory Doesn't Scale by Accumulation | 組織の記憶は、溜め込むだけでは育たない | en, ja | `020/` |
+| 021 | No.21 | Organizational Memory Matters Only If It Returns to the Moment of Decision | 組織の記憶は、「判断の瞬間」に戻ってきて初めて意味を持つ | en, ja | `021/` |
 
 **Note:** Folder `009/` is intentionally skipped. No.9 Note content is archived in `013/` with `note_number: 9`.
 
@@ -87,7 +88,9 @@ No.19  Exceptions as memory entry + capture at deviation
        Intuition as accumulated exceptions; three capture questions
 No.20  After capture — connect cases, outcomes, and standard-review signals
        Retrieval vs memory; frequency / consistent reasoning / multi-site
-No.21+ Who curates / governance of memory updates (future)
+No.21  Return memory to the moment of decision (timing, not retrieval)
+       Context questions; surfacing risks; AI brings experience, humans decide
+No.22+ Who curates / governance of memory updates (future)
 ```
 
 ## New Patterns from Bulk Migration
@@ -101,6 +104,7 @@ No.21+ Who curates / governance of memory updates (future)
 | `knowledge/patterns/organizational-memory.md` | 018 |
 | `knowledge/patterns/exception-as-memory-entry.md` | 019 |
 | `knowledge/patterns/connected-organizational-memory.md` | 020 |
+| `knowledge/patterns/memory-at-decision.md` | 021 |
 | `knowledge/patterns/operating-model-advantage.md` | 012 |
 | `knowledge/patterns/ai-resilience-shift.md` | sp01 |
 
@@ -110,4 +114,4 @@ No.21+ Who curates / governance of memory updates (future)
 
 - Master index: [`master-index.md`](./master-index.md)
 - Bulk migration record: `knowledge/migrations/linkedin-bulk-001-015-sp-erf.md`
-- Individual migrations: `knowledge/migrations/linkedin-013.md`, `linkedin-014.md`, `linkedin-016.md`, `linkedin-017.md`, `linkedin-018.md`, `linkedin-019.md`, `linkedin-020.md`
+- Individual migrations: `knowledge/migrations/linkedin-013.md`, `linkedin-014.md`, `linkedin-016.md`, `linkedin-017.md`, `linkedin-018.md`, `linkedin-019.md`, `linkedin-020.md`, `linkedin-021.md`

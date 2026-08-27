@@ -49,4 +49,5 @@ collaboration (`frameworks/ai-role-maturity.md`).
 
 - `knowledge/patterns/operating-model-advantage.md`
 - `knowledge/patterns/organizational-memory.md` — institutionalize judgment context beyond individuals (No.18)
+- `knowledge/patterns/memory-at-decision.md` — return prior experience before the human decides (No.21)
 - `knowledge/patterns/decision-ownership.md`

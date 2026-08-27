@@ -45,3 +45,4 @@ Use this pattern when:
 - `domains/energy-utilities.md` — parent domain (generation vs retail)
 - `knowledge/patterns/exception-as-memory-entry.md` — capture reasoning at intentional deviations (No.19)
 - `knowledge/patterns/connected-organizational-memory.md` — connect cases, outcomes, and standard-review signals (No.20)
+- `knowledge/patterns/memory-at-decision.md` — return prior cases at the moment of decision (No.21)
