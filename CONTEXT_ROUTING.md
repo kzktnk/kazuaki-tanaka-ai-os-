@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.26
+Version: v1.27
 
 ## Purpose
 
@@ -402,6 +402,8 @@ Load:
 - playbooks/program-governance-cadence.md (if SteerComm / program board / standup / inspection are collapsing into one status meeting)
 - playbooks/cross-project-program-management.md (if PgMO is buried in vendor WBS detail; PJ間 dependency / consistency / hand-off control is missing)
 - playbooks/strategy-scn.md (if upstream strategy → SCN → Gate 1 is weak before PgMO start)
+- playbooks/operations-transition-playbook.md (if realization is ending and ops take-on / adoption is the next job)
+- playbooks/stakeholder-activation-playbook.md (if a named person must actually act, not just be informed)
 - knowledge/patterns/related-project-external-coordination-radar.md (if adjacent projects / external parties sit outside the Dependency Register)
 - knowledge/patterns/pgmo-presence-via-client-stance.md (if process pack runs but client trust / proposal value still sits with a long-trusted specialist PM)
 - knowledge/patterns/transformation-practice-case-pack.md (if packaging internal transformation practice cases / MM learning packs—not client status)
@@ -429,7 +431,7 @@ Focus:
 - PPM process and portfolio stop/start discipline
 - Cadence stack: who meets for what; escalation between layers; inspection vs status
 - Cross-project artifacts: 5 domains (scope boundary, dependency, interface, consistency, schedule); Control Cycle; template classes; pre-start checklist; dirty PJ-boundary Health Assessment
-- Gate 1 (strategy-scn) vs Gate 2 (cross-project pre-start) handoff
+- Gate 1 (strategy-scn) vs Gate 2 (cross-project pre-start) vs Gate 3–5 (operations transition)
 - Related-project / external-coordination radar before items enter Dependency or master risk registers
 - PgMO presence: client-side PM/PO stance; ally with trusted incumbent before client; intersection-point risk → monthly→weekly reverse tracking
 - Phase 1 controlled document set (policy, roadmap, meeting pack) vs live minutes
@@ -512,6 +514,8 @@ Load:
 - frameworks/change-management.md
 - knowledge/patterns/all-at-once-vs-stepwise-change.md
 - knowledge/patterns/ai-coe-vs-pgmo-vs-change.md (if the change is AI adoption, not a system cutover)
+- playbooks/stakeholder-activation-playbook.md (if the job is moving a specific person, not designing the org-wide change process)
+- playbooks/operations-transition-playbook.md (if the change is ops take-on / adoption after realization)
 - standards/pmo-operating-guide.md (§Change Management Operating Standard)
 - frameworks/transformation-pmo.md (if program-owned change)
 - knowledge/patterns/platform-build-vs-enablement.md (if platform / data adoption)
@@ -529,6 +533,7 @@ Outputs:
 - Readiness findings and barrier actions
 - Change strategy choice and sequence
 - Stakeholder action log and message map
+- Person-level activation (Segment–Diagnose–Select–Tailor–Observe) when a named actor must move
 - Soft-landing / hypercare communication outline
 
 ---
@@ -636,6 +641,7 @@ Load:
 - frameworks/it-strategy-foundations.md (§Sourcing — if strategic fit check)
 - frameworks/sap-implementation-phase-model.md (if SAP AM / post-go-live scope)
 - frameworks/transformation-pmo.md (if large transition program)
+- playbooks/operations-transition-playbook.md (if coaching a Transition Manager through introduction / take-on / adoption)
 - standards/operations-handover-guide.md (if handover from implementation partner)
 - standards/vendor-proposal-evaluation.md (if client-side evaluation mirror)
 - frameworks/infrastructure-outsourcing-solution-planning.md (if bundled AO+IO or infra towers)
@@ -663,6 +669,7 @@ Outputs:
 Load:
 - frameworks/infrastructure-outsourcing-solution-planning.md
 - knowledge/patterns/transition-vs-transformation-vs-realization.md
+- playbooks/operations-transition-playbook.md (if coaching take-on / KT / responsibility date)
 - frameworks/service-transition-approach.md
 - frameworks/application-outsourcing-solution-planning.md (if bundled AO+IO)
 - frameworks/change-management.md (if staff transfer or operating-model change)

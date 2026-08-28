@@ -1,10 +1,10 @@
 # Knowledge Master Index
 
-**Version:** v1.16  
+**Version:** v1.17  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
-**Last updated:** 2026-08-27
+**Last updated:** 2026-08-28
 
 ---
 
@@ -275,6 +275,8 @@ knowledge/
 │   ├── program-governance-cadence-2026-08.md
 │   ├── cross-project-program-management-2026-08.md
 │   ├── strategy-scn-2026-08.md
+│   ├── operations-transition-2026-08.md
+│   ├── stakeholder-activation-2026-08.md
 │   ├── fisc-audit-tech-ops-facility-2026-08.md
 │   ├── project-management-policy-layer-2026-08.md
 │   └── customer-status-weekly-monthly-2026-08.md
@@ -346,6 +348,8 @@ playbooks/
 ├── program-governance-cadence.md
 ├── strategy-scn.md
 ├── cross-project-program-management.md
+├── operations-transition-playbook.md
+├── stakeholder-activation-playbook.md
 ├── public-multi-lot-construction-pmo.md
 ├── interim-connectivity.md
 ├── private-api-connectivity-diagnosis.md
@@ -692,10 +696,14 @@ Local live PgMO cadence folders — not archived
 playbooks/program-governance-cadence.md
 playbooks/cross-project-program-management.md
 playbooks/strategy-scn.md  (upstream Gate 1 companion; separate local Strategy-SCN pack)
+playbooks/operations-transition-playbook.md  (downstream Gate 3–5)
+playbooks/stakeholder-activation-playbook.md  (cross-cutting activation tactic)
         ↓ record
 knowledge/migrations/program-governance-cadence-2026-08.md
 knowledge/migrations/cross-project-program-management-2026-08.md
 knowledge/migrations/strategy-scn-2026-08.md
+knowledge/migrations/operations-transition-2026-08.md
+knowledge/migrations/stakeholder-activation-2026-08.md
         ↓ task routing
 CONTEXT_ROUTING.md  →  Transformation PMO / Program Governance; Strategy Engagement / SCN
 ```
@@ -769,11 +777,11 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | Customer weekly/monthly status | `deliverable-archetypes.md` Archetype J, `author-voice.md`, `project-management-policy-layer.md`, `support-effort-classification.md`, cadence / cross-project playbooks as needed |
 | IT strategy | `frameworks/it-strategy-foundations.md`, `standards/it-strategy-engagement-guide.md`, `playbooks/strategy-scn.md` (if SCN → projectization) |
 | Strategy engagement / SCN | `consulting-strategy-process.md`, `strategy-engagement-guide.md`, `strategic-capability-network.md`, `scn-creation-guide.md`, `playbooks/strategy-scn.md` (sequence / Gate 1) |
-| PMO / transformation | `frameworks/transformation-pmo.md`, `playbooks/pmo-function-standup.md`, `playbooks/program-governance-cadence.md`, `playbooks/strategy-scn.md` (upstream Gate 1), `playbooks/cross-project-program-management.md`, `knowledge/patterns/related-project-external-coordination-radar.md` (if adjacent/external radar), `knowledge/patterns/pgmo-presence-via-client-stance.md` (if presence lost to trusted incumbent), `knowledge/patterns/transformation-practice-case-pack.md` (if internal practice packaging), `standards/pmo-operating-guide.md`, `knowledge/patterns/project-management-policy-layer.md` (if project-layer policy TOC), Archetype J if customer status, `frameworks/change-management.md` |
+| PMO / transformation | `frameworks/transformation-pmo.md`, `playbooks/pmo-function-standup.md`, `playbooks/program-governance-cadence.md`, `playbooks/strategy-scn.md` (upstream Gate 1), `playbooks/cross-project-program-management.md`, `playbooks/operations-transition-playbook.md` (Gate 3–5), `playbooks/stakeholder-activation-playbook.md` (if a specific person must act), `knowledge/patterns/related-project-external-coordination-radar.md` (if adjacent/external radar), `knowledge/patterns/pgmo-presence-via-client-stance.md` (if presence lost to trusted incumbent), `knowledge/patterns/transformation-practice-case-pack.md` (if internal practice packaging), `standards/pmo-operating-guide.md`, `knowledge/patterns/project-management-policy-layer.md` (if project-layer policy TOC), Archetype J if customer status, `frameworks/change-management.md` |
 | DX grand design | `frameworks/dx-grand-design.md`, change / roadmap as needed |
 | New venture assessment | `frameworks/new-venture-three-track-assessment.md` |
 | B2B sales workflow | `knowledge/patterns/sales-capacity-via-center-functions.md` |
-| Change management | `frameworks/change-management.md`, `all-at-once-vs-stepwise-change.md`, `pmo-operating-guide.md` §CM |
+| Change management | `frameworks/change-management.md`, `all-at-once-vs-stepwise-change.md`, `pmo-operating-guide.md` §CM, `playbooks/stakeholder-activation-playbook.md` (person-level), `playbooks/operations-transition-playbook.md` Chapter 7 (ops adoption) |
 | AI CoE / PgMO / Change | `knowledge/patterns/ai-coe-vs-pgmo-vs-change.md`, `ai-management-office.md`, `transformation-pmo.md`, `change-management.md` |
 | AI adoption / DX roadmap | `frameworks/ai-adoption-roadmap.md`, `playbooks/ai-utilization-roadmap.md`, `playbooks/ai-work-before-after.md` |
 | AI PoC quality (buyer) | `playbooks/ai-poc-quality-review.md`, `rag-structure-diagnosis.md`, `buyer-owns-ai-poc-ground-truth.md` |
@@ -783,10 +791,10 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | Public sector / defense IT | `domains/public-defense.md`, `public-it-procurement-support.md` (if buyer), `buyer-vs-seller-in-public-procurement.md`, shared-operator pattern + multi-lot construction PMO playbook if concurrent lots, `related-project-external-coordination-radar.md` if adjacent/external coordination |
 | Private IT RFP / vendor selection | `frameworks/private-it-rfp.md`, `playbooks/private-it-rfp-vendor-selection.md`, `vendor-proposal-evaluation.md`, calibration / re-proposal patterns |
 | Development standards / build / FIS audit mapping | `development-standards-framework.md`, related build standards, `fis-system-audit-as-assurance.md` when audit guidance or tech/ops/facility criteria apply, `project-management-policy-layer.md` when vendor PM-policy chapter applies |
-| Application outsourcing / AMS | `application-outsourcing-solution-planning.md`, `ams-services-pyramid.md`, `service-transition-approach.md`, `ams-solution-plan-checklist.md` |
-| Infrastructure outsourcing / ITO | `infrastructure-outsourcing-solution-planning.md`, `transition-vs-transformation-vs-realization.md` |
+| Application outsourcing / AMS | `application-outsourcing-solution-planning.md`, `ams-services-pyramid.md`, `service-transition-approach.md`, `ams-solution-plan-checklist.md`, `playbooks/operations-transition-playbook.md` (if Transition Manager coaching) |
+| Infrastructure outsourcing / ITO | `infrastructure-outsourcing-solution-planning.md`, `transition-vs-transformation-vs-realization.md`, `playbooks/operations-transition-playbook.md` (if take-on coaching) |
 | Systems integration / SI proposal | `systems-integration-solution-planning.md`, `estimate-target-commitment.md` |
-| Delivery leadership | `delivery-leadership.md`, `transformation-pmo.md`, `change-management.md` |
+| Delivery leadership | `delivery-leadership.md`, `transformation-pmo.md`, `change-management.md`, `playbooks/operations-transition-playbook.md` (if service introduction / take-on) |
 | Azure / private API / sandbox cost | `technology/azure-enterprise.md`, connectivity and cost playbooks, related `decisions/` |
 | LinkedIn / Note writing | `standards/writing.md` (§De-AI Writing Pass), series `source/`, related `patterns/` and `frameworks/` |
 | Knowledge migration | `AI_OPERATING_MANUAL.md`, source asset, migration workflow |

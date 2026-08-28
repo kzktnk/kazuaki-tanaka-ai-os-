@@ -251,6 +251,8 @@ Program PMO owns **enterprise-level** change; pmo often focuses on **project sta
 - `playbooks/pmo-function-standup.md` — office exists on paper; standup sequence
 - `playbooks/program-governance-cadence.md` — SteerComm / program board / standup / inspection layers
 - `playbooks/cross-project-program-management.md` — PJ 間の 5 領域（依存・整合・Hand-off）と Control Cycle
+- `playbooks/operations-transition-playbook.md` — Gate 3–5 運用移行・定着
+- `playbooks/stakeholder-activation-playbook.md` — 特定の相手を動かす戦術
 - `frameworks/sap-implementation-phase-model.md` — P5 go-live support and benefit realization timing
 - `frameworks/change-management.md`
 - `frameworks/delivery-leadership.md` — program vs project; value scorecard; SA→DL

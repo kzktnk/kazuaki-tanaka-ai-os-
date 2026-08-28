@@ -4,13 +4,13 @@ type: playbook
 
 # Cross-Project Program Management Playbook
 
-**Version:** v0.7  
+**Version:** v0.8  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** 複数ベンダー・複数プロジェクトの **「間（あいだ）」** を管理し、依存・境界・整合・統合スケジュール・コントロールを構造化する  
 **Use when:** PgMO が個別 PJ の WBS や進捗報告に埋もれ、PJ 間の受け渡し・整合・波及分析が弱い  
-**Do not use as-is for:** PMO 立ち上げ順序（`playbooks/pmo-function-standup.md`）、会議階層設計（`playbooks/program-governance-cadence.md`）、官側複数ロット開始判定（`playbooks/public-multi-lot-construction-pmo.md`）、契約境界外の隣接案件・対外アクターの洗い出し（`knowledge/patterns/related-project-external-coordination-radar.md` — Dependency Register の手前のレーダー層）、戦略立案・SCN・プロジェクト化（`playbooks/strategy-scn.md`）  
-**Source revision:** local Cross-Project Management Playbook v2.1（2026-08-27）
+**Do not use as-is for:** PMO 立ち上げ順序（`playbooks/pmo-function-standup.md`）、会議階層設計（`playbooks/program-governance-cadence.md`）、官側複数ロット開始判定（`playbooks/public-multi-lot-construction-pmo.md`）、契約境界外の隣接案件・対外アクターの洗い出し（`knowledge/patterns/related-project-external-coordination-radar.md` — Dependency Register の手前のレーダー層）、戦略立案・SCN・プロジェクト化（`playbooks/strategy-scn.md`）、Stakeholderを実際に動かす技術（`playbooks/stakeholder-activation-playbook.md`）  
+**Source revision:** local Cross-Project Management Playbook v2.1（2026-08-28 pointer update）
 
 Pairs with `playbooks/program-governance-cadence.md`（**誰がどの会議で何を決めるか**）and `frameworks/transformation-pmo.md`（PgMO の位置づけ）。本 Playbook は **何を PJ 間管理の対象として構造化し、どう回すか** を扱う。顧客向け週次／月次の見せ方は `standards/deliverable-archetypes.md` Archetype J。隣接案件レーダーは本 Playbook の Dependency Register とは別層。途中参画でプレゼンスが弱いときは Chapter 1.6（圧縮版は `knowledge/patterns/pgmo-presence-via-client-stance.md`）。上流の Gate 1 は `playbooks/strategy-scn.md`。
 
@@ -39,11 +39,11 @@ Pairs with `playbooks/program-governance-cadence.md`（**誰がどの会議で�
    複数ベンダー・複数プロジェクトを束ねる実現化工程を、統合的に管理する
                         │
                         ▼
-③ 運用・定着化 Playbook（仮称・別冊）
-   AMS／AI運用／インフラ運用を含む、実現化後の安定運用と定着化
+③ Operations Transition Playbook（`playbooks/operations-transition-playbook.md`）
+   AMS・インフラ運用・AI運用への移行設計と、実現化後の安定運用・定着化
 ```
 
-①・③は本Playbookの対象外。③が未作成でも、②の範囲に閉じ、越境しないことを原則とする。①の Gate 1 完了後、本章の着手前チェック（Gate 2）へ接続する。
+①・③は本Playbookの対象外であり、②の範囲に閉じ、越境しないことを原則とする。①の Gate 1 完了後、本章の着手前チェック（Gate 2）へ接続する。複数の相手（Vendor PM・部門長・意思決定者等）を実際に動かす技術は、①②③共通の横串Playbook `playbooks/stakeholder-activation-playbook.md`（Stakeholder Activation Playbook）を参照する。
 
 ## 使い方
 
@@ -940,5 +940,14 @@ PJ-B・PJ-C・PJ-D    ─テストシナリオ─▶ PJ-E（テスト統括）
 テンプレートは「どの順番で、何を考えて埋めるか」がPlaybook本文側の説明と対になっている。Excelだけを渡して自走させるのではなく、必ず本文とセットで使わせること。
 
 ローカル xlsx（Cover + 8 シート）のシート数・フィールドは本改訂で変更なし。No.1〜7には記入例のサンプル行あり（案件事実は転記しない）。No.8は他シート参照の集計用。xlsx バイナリは repo に置かない。
+
+## Related
+
+- `playbooks/strategy-scn.md`（①／Gate 1）
+- `playbooks/operations-transition-playbook.md`（③／Gate 3〜5、RAID 継続）
+- `playbooks/stakeholder-activation-playbook.md`（横串／動かす技術）
+- `playbooks/program-governance-cadence.md`
+- `frameworks/transformation-pmo.md`
+- `knowledge/patterns/pgmo-presence-via-client-stance.md`
 
 ---

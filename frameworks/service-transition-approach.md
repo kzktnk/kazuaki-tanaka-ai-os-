@@ -182,4 +182,5 @@ Reference: `frameworks/sap-implementation-phase-model.md`, `standards/operations
 - `standards/ams-solution-plan-checklist.md` §Service Introduction
 - `frameworks/transformation-pmo.md`
 - `standards/operations-handover-guide.md`
+- `playbooks/operations-transition-playbook.md`
 - `knowledge/index/legacy-source-index.md` — Program Line J

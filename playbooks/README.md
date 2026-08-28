@@ -8,8 +8,9 @@ Step-by-step execution methods for recurring work. See `ARCHITECTURE.md` §6.6.
 | `pmo-function-standup.md` | PMO rules exist; quality/site progress are still table of contents |
 | `strategy-scn.md` | Strategy → SCN → KPI → Gate 1 projectization (coaching sequence; not SCN notation encyclopedia) |
 | `program-governance-cadence.md` | SteerComm / program board / cross-project / standup / inspection: who meets, what escalates |
-| `strategy-scn.md` | Strategy / IT strategy → SCN → KPI → Gate 1 projectization (coaching sequence) |
 | `cross-project-program-management.md` | Multi-vendor PgMO: manage **between** projects — dependency, consistency, hand-off control |
+| `operations-transition-playbook.md` | AMS / IO / AI ops: transition design and adoption (Gate 3–5); not day-to-day operations |
+| `stakeholder-activation-playbook.md` | Cross-cutting: move a specific person via Segment–Diagnose–Select–Tailor–Observe |
 | `public-multi-lot-construction-pmo.md` | Shared-operator multi-lot tests/cutover: start-gates, not status minutes |
 | `private-it-rfp-vendor-selection.md` | Private-enterprise RFP issue through preferred vendor and contract handoff |
 | `ai-work-before-after.md` | Field story: same process left/right; humans keep the decision |

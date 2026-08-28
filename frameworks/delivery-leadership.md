@@ -156,6 +156,7 @@ Vendor/alliance management is a program workstream when third parties sit on the
 - `frameworks/systems-integration-solution-planning.md`
 - `frameworks/transformation-pmo.md`
 - `frameworks/change-management.md`
+- `playbooks/operations-transition-playbook.md` — Transition Manager coaching (introduction / take-on / adoption)
 - `frameworks/service-transition-approach.md`
 - `knowledge/patterns/estimate-target-commitment.md`
 - `knowledge/migrations/sisa-sidl-dma-2026-08.md`

@@ -366,7 +366,35 @@
 | Templates.xlsx（Cover + 8 シート） | 同上 Playbook 本文 / Appendix | テンプレート**クラスとフィールド**のみ。Issue Log を含む。xlsx 実体不登録。本改訂でシート構成・フィールド変更なし（サンプル行注記のみ補強） |
 | SelfStudy（md / docx） | 同上 Playbook「Self-study companion」 | 文体書き換え全文は不登録。セルフチェック順・演習の先読み禁止・正本は指導者版、①／③境界の把握、のみ抽出。方法面の実質変更なし |
 
-**未登録:** xlsx / docx ファイル本体（main・SelfStudy）、SelfStudy 全文、作成日・対象読者などの表紙メタ、著者個人の全体レビュー記入欄・改訂履歴ダンプ、演習ケースのベンダー名・日付・費用、部下の実プログラム。
+**未登録:** xlsx / docx ファイル本体（main・SelfStudy）、SelfStudy 全文、作成日・対象読者などの表紙メタ、著者個人の全体レビュー記入欄・改訂履歴ダンプ、演習ケースのベンダー名・日付・費用、部下の実プログラム。2026-08-28: ③ `operations-transition-playbook.md` と横串 `stakeholder-activation-playbook.md` へのポインタ追加（repo v0.8）。
+
+---
+
+## Program Line AC: 運用移行・定着化指導（2026、一般化のみ）
+
+原本はローカル `Downloads/files 4/`・`files 5/`。匿名ラベル: **operations transition / AMS–IO–AI ops coaching / 2026**。社名、円、契約事実は不登録。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| Operations Transition Playbook（md / docx） | `playbooks/operations-transition-playbook.md` | Transition Manager 一人称。シナリオA/B、Service Introduction、take-on／KT、工数、定着、Gate 3〜5、② RAID 継続。Chapter 5・6 は Experimental。2026-08-28 初回採用（repo **v0.1**） |
+| SelfStudy（md / docx） | 同上「Self-study companion」 | 全文不登録。方法のみ |
+| Templates.xlsx | 同上 Appendix | クラスのみ。xlsx は未作成／不登録 |
+
+**未登録:** docx、SelfStudy 全文、レビュー履歴ダンプ、`ai-operations-role-design.md`（Draft・未レビュー）。
+
+---
+
+## Program Line AD: Stakeholder Activation 指導（2026、一般化のみ）
+
+原本はローカル `Downloads/files 8/`・`files 6/`。匿名ラベル: **stakeholder activation coaching / 2026**。人名付きマップは不登録。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| Stakeholder Activation Playbook（md / docx） | `playbooks/stakeholder-activation-playbook.md` | 横串。Segment→Diagnose→Select→Tailor→Observe。Channel は実行レイヤー。2026-08-28 初回採用（repo **v0.1**） |
+| Templates.xlsx（Cover + 6） | 同上 Appendix | クラスのみ。xlsx 不登録 |
+| SelfStudy（md / docx） | 同上「Self-study companion」 | 全文不登録。方法のみ |
+
+**未登録:** xlsx / docx、SelfStudy 全文、レビュー履歴ダンプ。
 
 ---
 
@@ -561,8 +589,10 @@
 | `shared-operator-vs-ministry-vs-municipality.md` | 高 | ✅ 登録済（2026-08-20） |
 | `public-multi-lot-construction-pmo.md` | 高 | ✅ 登録済（2026-08-20） |
 | `program-governance-cadence.md` | 高 | ✅ 登録済（2026-08-20） |
-| `cross-project-program-management.md` | 高 | ✅ 登録済（2026-08-27 再採用 / v2.1 → repo v0.7） |
-| `strategy-scn.md` | 高 | ✅ 登録済（2026-08-27 / local Strategy-SCN v1.2 → repo v0.1） |
+| `cross-project-program-management.md` | 高 | ✅ 登録済（2026-08-28 ポインタ更新 / v2.1 → repo v0.8） |
+| `strategy-scn.md` | 高 | ✅ 登録済（2026-08-28 ポインタ更新 / local Strategy-SCN v1.2 → repo v0.2） |
+| `operations-transition-playbook.md` | 高 | ✅ 登録済（2026-08-28 / ③ Gate 3–5 → repo v0.1） |
+| `stakeholder-activation-playbook.md` | 高 | ✅ 登録済（2026-08-28 / 横串 activation → repo v0.1） |
 
 ---
 

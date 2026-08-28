@@ -36,5 +36,6 @@ Accounting: true transformation is not the same as transition (cost to establish
 - `frameworks/systems-integration-solution-planning.md`
 - `frameworks/delivery-leadership.md`
 - `frameworks/service-transition-approach.md`
+- `playbooks/operations-transition-playbook.md`
 - `frameworks/change-management.md`
 - `knowledge/patterns/all-at-once-vs-stepwise-change.md`

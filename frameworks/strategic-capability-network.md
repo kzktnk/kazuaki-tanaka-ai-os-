@@ -165,6 +165,8 @@ SCN supports **Findings**: structural gaps on the network (missing capability, w
 - `frameworks/consulting-strategy-process.md` — Upstream strategy engagement before capability mapping
 - `standards/strategy-engagement-guide.md` — Problem scoping and analysis planning
 - `playbooks/cross-project-program-management.md` — Downstream Gate 2 / cross-project control
+- `playbooks/operations-transition-playbook.md` — Downstream Gate 3–5 / ops transition
+- `playbooks/stakeholder-activation-playbook.md` — Moving named actors (cross-cutting)
 - `CONTEXT_ROUTING.md` — SCN / Findings Analysis route
 - `knowledge/index/legacy-source-index.md` — Local source index (paths only)
 

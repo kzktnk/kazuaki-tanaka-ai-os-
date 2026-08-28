@@ -48,6 +48,7 @@ type: pattern
 ## Use with
 
 - PJ 間の構造化・途中参画の指導展開 → `playbooks/cross-project-program-management.md` Chapter 1.6  
+- 特定の相手を動かす → `playbooks/stakeholder-activation-playbook.md`  
 
 - 会議階層 → `playbooks/program-governance-cadence.md`  
 - 隣接・対外のレーダー → `knowledge/patterns/related-project-external-coordination-radar.md`  

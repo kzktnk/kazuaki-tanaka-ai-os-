@@ -126,6 +126,7 @@ For heterogeneous legacy:
 ## Related Files
 
 - `frameworks/application-outsourcing-solution-planning.md`
+- `playbooks/operations-transition-playbook.md` — Chapter 4 工数階層
 - `standards/ams-solution-plan-checklist.md`
 - `standards/deliverable-archetypes.md` (Archetype I)
 - `frameworks/sap-implementation-phase-model.md`

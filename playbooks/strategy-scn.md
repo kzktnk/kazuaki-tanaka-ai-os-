@@ -4,13 +4,13 @@ type: playbook
 
 # Strategy / SCN Playbook
 
-**Version:** v0.1  
+**Version:** v0.2  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** 戦略立案（IT戦略を含む）から SCN 構造化・KPI・プロジェクト化（Gate 1）までを、メンティーが自走できる順序でつなぐ  
 **Use when:** 経営課題／IT課題の定義→分析→SCN→KPI→Program／Project 分解までを一気通貫でコーチングするとき  
-**Do not use as-is for:** SCN 記法・WS 運営の詳細（`standards/scn-creation-guide.md`）、型の定義本体（`frameworks/consulting-strategy-process.md` / `frameworks/strategic-capability-network.md`）、複数ベンダー PJ 間統合（`playbooks/cross-project-program-management.md`）、運用・定着化  
-**Source revision:** local Strategy-SCN Playbook v1.2（2026-08-27）
+**Do not use as-is for:** SCN 記法・WS 運営の詳細（`standards/scn-creation-guide.md`）、型の定義本体（`frameworks/consulting-strategy-process.md` / `frameworks/strategic-capability-network.md`）、複数ベンダー PJ 間統合（`playbooks/cross-project-program-management.md`）、運用・定着化（`playbooks/operations-transition-playbook.md`）、Stakeholderを実際に動かす技術（`playbooks/stakeholder-activation-playbook.md`）  
+**Source revision:** local Strategy-SCN Playbook v1.2（2026-08-28 pointer update）
 
 Pairs with `frameworks/consulting-strategy-process.md`（問題設定〜提言）、`frameworks/strategic-capability-network.md`＋`standards/scn-creation-guide.md`（SCN 本体）、`frameworks/it-strategy-foundations.md`（Insight→Architecture→Investment）。下流の実行動員は `playbooks/cross-project-program-management.md`（Gate 2）。本 Playbook は **どの順序で型をつなぐか** と **Gate 1 までの引継ぎ** を扱う。
 
@@ -37,11 +37,11 @@ Pairs with `frameworks/consulting-strategy-process.md`（問題設定〜提言�
    複数ベンダー・複数PJの実現化工程
                         │
                         ▼
-③ 運用・定着化 Playbook（未作成・別冊想定）
-   AMS／AI運用／インフラ運用を含む定着化
+③ Operations Transition Playbook（`playbooks/operations-transition-playbook.md`）
+   AMS・インフラ運用・AI運用への移行設計と、実現化後の安定運用・定着化
 ```
 
-ゴールは Chapter 7.4 の **Gate 1（Strategic Projectization Complete）**。Gate 2（Execution Mobilization Ready：体制図・WBS・契約スコープ等）は②の着手前チェック側。
+ゴールは Chapter 7.4 の **Gate 1（Strategic Projectization Complete）**。Gate 2（Execution Mobilization Ready：体制図・WBS・契約スコープ等）は②の着手前チェック側。複数の相手（Sponsor・事業部等）を実際に動かす技術は、①②③共通の横串Playbook `playbooks/stakeholder-activation-playbook.md`（Stakeholder Activation Playbook）を参照する。
 
 ### 使い方
 
@@ -370,4 +370,6 @@ Gate 2 情報が①時点で未確定なのは正常。
 - `frameworks/capability-model.md`  
 - `frameworks/thinking-patterns/pattern-01-why-what-how.md`  
 - `playbooks/cross-project-program-management.md`（Gate 2／PJ間）  
+- `playbooks/operations-transition-playbook.md`（③／運用移行・定着化）  
+- `playbooks/stakeholder-activation-playbook.md`（①②③共通／Stakeholderを動かす技術）  
 - Program Line D（SCN legacy）＋本コーチングパック（2026）
