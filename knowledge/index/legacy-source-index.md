@@ -1,6 +1,6 @@
 # Legacy Source Index
 
-**Version:** v1.20  
+**Version:** v1.21  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** ローカル保管のレガシー原本と、リポジトリ内知識の対応索引。**原本の中身は含まない。**
@@ -440,6 +440,28 @@
 | 同上 vs Line Z（週次／月次報告） | — | **別トピック**（重複抽出なし）。報告の見せ方は Line Z |
 
 **未登録:** RTF／スレッド全文、ハンドル、人名、クライアント／案件識別子、ベンダー入替噂の事実化、社交 Tips。
+
+---
+
+## Program Line AE: 月次付録／チェンジ／工数／発注側ギャップ指導（2026-08-28、一般化のみ）
+
+原本はローカル録音（2026-08-28）。匿名ラベル: **customer-facing monthly appendix / change artefacts / effort sketch / buyer-side gap coaching / 2026-08-28**。**内容（音声・文字起こし）はリポジトリにアーカイブしない。** 社名、円、人名、日程・稼働数字、生トランスクリプトは不登録。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| コーチング録音（月次付録・チェンジ成果物） | `knowledge/patterns/change-agent-vs-communication-plan.md` | エージェント探索 ≠ コミュニケーション計画。計画骨格が先、サンプルはサンプル。固有事実なし |
+| 同上 → 現状工数の構造化 | `knowledge/patterns/unowned-work-in-effort-analysis.md` | 人紐づき PDC の漏れ、検討主体→実行／管理、アクチュアル ≠ WBS 再設計 |
+| 同上 → 次フェーズ体制 | `knowledge/patterns/buyer-side-gap-vs-vendor-pmo.md` | 開発側 PMO ≠ 発注側ハザマ。継続 ≠ 増分価値。月次で経路リスク |
+| 同上 → 月次衛生 | `standards/deliverable-archetypes.md` Archetype J | サンプル衛生、説明用 Appendix、選定印の基準、議題外の頭出し、稀頻度案件の火種 |
+| 同上 | `knowledge/patterns/project-management-policy-layer.md` | 選定印・入れ子 vs 独立は基準がギロになる |
+| 同上 | `frameworks/change-management.md` | エージェント vs 計画；計画が先 |
+| 同上 | `frameworks/top-down-thinking.md` | 人軸の箱では未割当が漏れる |
+| 同上 | `core/author-voice.md` §6 | サンプル衛生、並行ワークストリームの頭出し |
+| 同上（相互参照のみ） | `playbooks/stakeholder-activation-playbook.md`, `playbooks/cross-project-program-management.md` | 薄いポインタ。本文改稿なし |
+
+**未登録:** 録音・文字起こし全文、クライアント／メンティー固有の案件事実、出張・承認・私事、社内 B&P 手続き。
+
+**Line Z / AB との差:** Line Z は週次／月次の物語（Archetype J の骨格）。Line AB はプレゼンスの構図。本ラインは付録・チェンジ計画の順序、工数構造の漏れ、発注側隙間。
 
 ---
 

@@ -1,6 +1,6 @@
 # Knowledge Master Index
 
-**Version:** v1.18  
+**Version:** v1.19  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
@@ -76,9 +76,9 @@ kazuaki-tanaka-ai-os/
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
-│   ├── patterns/               ← 36 distilled patterns
+│   ├── patterns/               ← 39 distilled patterns
 │   ├── lessons/                ← 5 lessons
-│   ├── migrations/             ← 29 migration reports
+│   ├── migrations/             ← 30 migration reports
 │   └── decisions/              ← 4 records
 ├── templates/                  ← 1 template
 ├── prompts/                    ← README placeholder
@@ -240,7 +240,7 @@ knowledge/
 │       ├── 001–022/                  ← Operational AI main series
 │       ├── sp01–sp09/                ← special posts
 │       └── erf01–erf03/              ← Enterprise Redesign Framework
-├── patterns/                         ← 38 files (see table below)
+├── patterns/                         ← 41 files (see table below)
 ├── lessons/
 │   ├── governance-messaging.md
 │   ├── dual-roadmap-messaging.md
@@ -279,7 +279,8 @@ knowledge/
 │   ├── stakeholder-activation-2026-08.md
 │   ├── fisc-audit-tech-ops-facility-2026-08.md
 │   ├── project-management-policy-layer-2026-08.md
-│   └── customer-status-weekly-monthly-2026-08.md
+│   ├── customer-status-weekly-monthly-2026-08.md
+│   └── coaching-20260828-change-effort-buyer-gap-2026-08.md
 └── decisions/
     ├── diagnose-from-gateway-not-client-error.md
     ├── sandbox-cost-controls-before-resources.md
@@ -287,10 +288,13 @@ knowledge/
     └── buyer-owns-ai-poc-ground-truth.md
 ```
 
-### Patterns (36)
+### Patterns (39)
 
 | Pattern | Primary themes |
 |---------|----------------|
+| `buyer-side-gap-vs-vendor-pmo.md` | Vendor PMO ≠ buyer ハザマ; continuation ≠ next-phase value; monthly as go-live-path education |
+| `unowned-work-in-effort-analysis.md` | Person-tied PDC leaks unowned work; 検討主体 then execute/manage; actuals ≠ WBS |
+| `change-agent-vs-communication-plan.md` | Agent hunt ≠ communication plan; plan before samples |
 | `pgmo-presence-via-client-stance.md` | Client-side PM/PO stance; ally with trusted incumbent; intersection risk → monthly→weekly reverse tracking |
 | `related-project-external-coordination-radar.md` | Adjacent-project radar + external coordination; hypothesis → confirm → promote |
 | `transformation-practice-case-pack.md` | Internal ET practice case-pack anatomy; Role × type matrix; theme-card schema |
@@ -775,6 +779,30 @@ CONTEXT_ROUTING.md  →  Transformation PMO / Program Governance
 
 ---
 
+### U. Monthly status / change / effort / buyer-gap coaching (Program Line AE)
+
+```text
+Local coaching recording 2026-08-28 — content not archived
+        ↓ generalize (no client names, yen, personal names, schedule numbers, transcript)
+knowledge/patterns/change-agent-vs-communication-plan.md
+knowledge/patterns/unowned-work-in-effort-analysis.md
+knowledge/patterns/buyer-side-gap-vs-vendor-pmo.md
+        ↓ connect
+standards/deliverable-archetypes.md Archetype J
+knowledge/patterns/project-management-policy-layer.md
+frameworks/change-management.md
+frameworks/top-down-thinking.md
+core/author-voice.md
+playbooks/stakeholder-activation-playbook.md (pointer)
+playbooks/cross-project-program-management.md (pointer)
+        ↓ record
+knowledge/migrations/coaching-20260828-change-effort-buyer-gap-2026-08.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  Customer Status Report / Transformation PMO / Change Management
+```
+
+---
+
 ## Level 4 — CONTEXT_ROUTING Task Map (summary)
 
 Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
@@ -782,14 +810,14 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | Task | Primary loads |
 |------|----------------|
 | Proposal review | `standards/consulting-review.md`, `deliverable-archetypes.md`, `writing.md` |
-| Customer weekly/monthly status | `deliverable-archetypes.md` Archetype J, `author-voice.md`, `project-management-policy-layer.md`, `support-effort-classification.md`, cadence / cross-project playbooks as needed |
+| Customer weekly/monthly status | `deliverable-archetypes.md` Archetype J, `author-voice.md`, `project-management-policy-layer.md`, `support-effort-classification.md`, `change-agent-vs-communication-plan.md` / `unowned-work-in-effort-analysis.md` / `buyer-side-gap-vs-vendor-pmo.md` as needed, cadence / cross-project playbooks |
 | IT strategy | `frameworks/it-strategy-foundations.md`, `standards/it-strategy-engagement-guide.md`, `playbooks/strategy-scn.md` (if SCN → projectization) |
 | Strategy engagement / SCN | `consulting-strategy-process.md`, `strategy-engagement-guide.md`, `strategic-capability-network.md`, `scn-creation-guide.md`, `playbooks/strategy-scn.md` (sequence / Gate 1) |
-| PMO / transformation | `frameworks/transformation-pmo.md`, `playbooks/pmo-function-standup.md`, `playbooks/program-governance-cadence.md`, `playbooks/strategy-scn.md` (upstream Gate 1), `playbooks/cross-project-program-management.md`, `playbooks/operations-transition-playbook.md` (Gate 3–5), `playbooks/stakeholder-activation-playbook.md` (if a specific person must act), `knowledge/patterns/related-project-external-coordination-radar.md` (if adjacent/external radar), `knowledge/patterns/pgmo-presence-via-client-stance.md` (if presence lost to trusted incumbent), `knowledge/patterns/transformation-practice-case-pack.md` (if internal practice packaging), `standards/pmo-operating-guide.md`, `knowledge/patterns/project-management-policy-layer.md` (if project-layer policy TOC), Archetype J if customer status, `frameworks/change-management.md` |
+| PMO / transformation | `frameworks/transformation-pmo.md`, `playbooks/pmo-function-standup.md`, `playbooks/program-governance-cadence.md`, `playbooks/strategy-scn.md` (upstream Gate 1), `playbooks/cross-project-program-management.md`, `playbooks/operations-transition-playbook.md` (Gate 3–5), `playbooks/stakeholder-activation-playbook.md` (if a specific person must act), `knowledge/patterns/related-project-external-coordination-radar.md` (if adjacent/external radar), `knowledge/patterns/pgmo-presence-via-client-stance.md` (if presence lost to trusted incumbent), `knowledge/patterns/buyer-side-gap-vs-vendor-pmo.md` (if vendor PMO is treated as buyer-side gap cover), `knowledge/patterns/transformation-practice-case-pack.md` (if internal practice packaging), `standards/pmo-operating-guide.md`, `knowledge/patterns/project-management-policy-layer.md` (if project-layer policy TOC), Archetype J if customer status, `frameworks/change-management.md` |
 | DX grand design | `frameworks/dx-grand-design.md`, change / roadmap as needed |
 | New venture assessment | `frameworks/new-venture-three-track-assessment.md` |
 | B2B sales workflow | `knowledge/patterns/sales-capacity-via-center-functions.md` |
-| Change management | `frameworks/change-management.md`, `all-at-once-vs-stepwise-change.md`, `pmo-operating-guide.md` §CM, `playbooks/stakeholder-activation-playbook.md` (person-level), `playbooks/operations-transition-playbook.md` Chapter 7 (ops adoption) |
+| Change management | `frameworks/change-management.md`, `all-at-once-vs-stepwise-change.md`, `change-agent-vs-communication-plan.md` (agent hunt ≠ communication plan), `pmo-operating-guide.md` §CM, `playbooks/stakeholder-activation-playbook.md` (person-level), `playbooks/operations-transition-playbook.md` Chapter 7 (ops adoption) |
 | AI CoE / PgMO / Change | `knowledge/patterns/ai-coe-vs-pgmo-vs-change.md`, `ai-management-office.md`, `transformation-pmo.md`, `change-management.md` |
 | AI adoption / DX roadmap | `frameworks/ai-adoption-roadmap.md`, `playbooks/ai-utilization-roadmap.md`, `playbooks/ai-work-before-after.md` |
 | AI PoC quality (buyer) | `playbooks/ai-poc-quality-review.md`, `rag-structure-diagnosis.md`, `buyer-owns-ai-poc-ground-truth.md` |

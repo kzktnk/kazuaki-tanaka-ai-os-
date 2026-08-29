@@ -12,7 +12,7 @@ type: playbook
 **Do not use as-is for:** PMO 立ち上げ順序（`playbooks/pmo-function-standup.md`）、会議階層設計（`playbooks/program-governance-cadence.md`）、官側複数ロット開始判定（`playbooks/public-multi-lot-construction-pmo.md`）、契約境界外の隣接案件・対外アクターの洗い出し（`knowledge/patterns/related-project-external-coordination-radar.md` — Dependency Register の手前のレーダー層）、戦略立案・SCN・プロジェクト化（`playbooks/strategy-scn.md`）、Stakeholderを実際に動かす技術（`playbooks/stakeholder-activation-playbook.md`）  
 **Source revision:** local Cross-Project Program Management Playbook v2.1 / 2026-08-29 (Gate 3 handoff, selfstudy pair)
 
-Pairs with `playbooks/program-governance-cadence.md`（**誰がどの会議で何を決めるか**）and `frameworks/transformation-pmo.md`（PgMO の位置づけ）。本 Playbook は **何を PJ 間管理の対象として構造化し、どう回すか** を扱う。顧客向け週次／月次の見せ方は `standards/deliverable-archetypes.md` Archetype J。隣接案件レーダーは本 Playbook の Dependency Register とは別層。途中参画でプレゼンスが弱いときは Chapter 1.6（圧縮版は `knowledge/patterns/pgmo-presence-via-client-stance.md`）。上流の Gate 1 は `playbooks/strategy-scn.md`。
+Pairs with `playbooks/program-governance-cadence.md`（**誰がどの会議で何を決めるか**）and `frameworks/transformation-pmo.md`（PgMO の位置づけ）。本 Playbook は **何を PJ 間管理の対象として構造化し、どう回すか** を扱う。顧客向け週次／月次の見せ方は `standards/deliverable-archetypes.md` Archetype J。隣接案件レーダーは本 Playbook の Dependency Register とは別層。途中参画でプレゼンスが弱いときは Chapter 1.6（圧縮版は `knowledge/patterns/pgmo-presence-via-client-stance.md`）。開発側 PMO を発注側のハザマ管理と同一視しない（`knowledge/patterns/buyer-side-gap-vs-vendor-pmo.md`）。上流の Gate 1 は `playbooks/strategy-scn.md`。
 
 ## 複数ベンダー・複数プロジェクトを統合管理するための実践ガイド
 

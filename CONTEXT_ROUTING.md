@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.28
+Version: v1.29
 
 ## Purpose
 
@@ -346,6 +346,9 @@ Load:
 - core/author-voice.md (§6 checklist: oral supplement, careful 「解決」, no unfounded ops prescriptions)
 - knowledge/patterns/project-management-policy-layer.md (customer-shared open items / completion criteria)
 - knowledge/patterns/support-effort-classification.md (if support effort buckets are muddy)
+- knowledge/patterns/unowned-work-in-effort-analysis.md (if current-work / hearing structure is person-tied and may leak unowned tasks)
+- knowledge/patterns/change-agent-vs-communication-plan.md (if monthly appendix is change artefacts; agents ≠ communication plan)
+- knowledge/patterns/buyer-side-gap-vs-vendor-pmo.md (if monthly must surface go-live-path gaps the vendor PMO will not own)
 - playbooks/program-governance-cadence.md (which meeting layer; do not collapse into SteerComm)
 - playbooks/cross-project-program-management.md (if boundary / dependency content is needed)
 - frameworks/top-down-thinking.md (frames as tools; derive axes from real work)
@@ -353,9 +356,11 @@ Load:
 
 Focus:
 - Weekly vs monthly job split (exceptions/lookahead vs problem-portfolio narrative)
-- MECE / evaluation frames stay internal; Appendix only if asked
+- MECE / evaluation frames stay internal; Appendix only if asked; samples stay samples
 - Uncertainty visible; completion criteria before saying closed/resolved
 - Top-down slides + oral concrete detail; expression hygiene with key contacts
+- Short verbal head-up of parallel workstreams even when not on this agenda
+- Rare-cycle clients: mix go-live-path risks into monthly so muscle memory can form
 
 Outputs:
 - Weekly status pack or one-pager + asks
@@ -407,6 +412,7 @@ Load:
 - matching `*-selfstudy.md` instead of the coach edition if the reader is working alone (same type, second person; no `playbooks/` paths in the body)
 - knowledge/patterns/related-project-external-coordination-radar.md (if adjacent projects / external parties sit outside the Dependency Register)
 - knowledge/patterns/pgmo-presence-via-client-stance.md (if process pack runs but client trust / proposal value still sits with a long-trusted specialist PM)
+- knowledge/patterns/buyer-side-gap-vs-vendor-pmo.md (if vendor PMO coverage is being treated as buyer-side gap management)
 - knowledge/patterns/transformation-practice-case-pack.md (if packaging internal transformation practice cases / MM learning packs—not client status)
 - standards/deliverable-archetypes.md Archetype J (if customer-facing weekly/monthly status is the deliverable—not SteerComm)
 - knowledge/patterns/project-management-policy-layer.md (if vendor/project “management policy” TOC, progress measure, issue/risk/ToDo, or change-vs-baseline boundaries are weak)
@@ -435,6 +441,7 @@ Focus:
 - Gate 1 (strategy-scn) vs Gate 2 (cross-project pre-start) vs Gate 3–5 (operations transition)
 - Related-project / external-coordination radar before items enter Dependency or master risk registers
 - PgMO presence: client-side PM/PO stance; ally with trusted incumbent before client; intersection-point risk → monthly→weekly reverse tracking
+- Buyer-side gap: vendor PMO is not ハザマ management; continuation is not next-phase value; surface go-live-path risks in monthly
 - Phase 1 controlled document set (policy, roadmap, meeting pack) vs live minutes
 - Project-layer PM policy vs program control (measurement, registers, fact-check before escalate)
 - Change management: stakeholder progression (Awareness → Ownership); readiness and strategy in `change-management.md`
@@ -516,6 +523,7 @@ Load:
 - knowledge/patterns/all-at-once-vs-stepwise-change.md
 - knowledge/patterns/ai-coe-vs-pgmo-vs-change.md (if the change is AI adoption, not a system cutover)
 - playbooks/stakeholder-activation-playbook.md (if the job is moving a specific person, not designing the org-wide change process)
+- knowledge/patterns/change-agent-vs-communication-plan.md (if Champion hunt is being treated as the communication plan)
 - playbooks/operations-transition-playbook.md (if the change is ops take-on / adoption after realization)
 - standards/pmo-operating-guide.md (§Change Management Operating Standard)
 - frameworks/transformation-pmo.md (if program-owned change)
@@ -528,6 +536,7 @@ Focus:
 - Readiness before communication calendar
 - All-at-once vs stepwise configuration
 - Why / unit / me; time-phased messages; resistance as design input
+- Change agents / Champions are optional if existing flag-wavers suffice; communication plan raises commitment when it appears
 - Transfer of ownership, not only training
 
 Outputs:

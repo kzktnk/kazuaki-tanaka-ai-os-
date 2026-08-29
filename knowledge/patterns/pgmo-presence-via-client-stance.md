@@ -49,6 +49,7 @@ type: pattern
 
 - PJ 間の構造化・途中参画の指導展開 → `playbooks/cross-project-program-management.md` Chapter 1.6  
 - 特定の相手を動かす → `playbooks/stakeholder-activation-playbook.md`  
+- 発注側のハザマ vs 開発側 PMO → `knowledge/patterns/buyer-side-gap-vs-vendor-pmo.md`  
 
 - 会議階層 → `playbooks/program-governance-cadence.md`  
 - 隣接・対外のレーダー → `knowledge/patterns/related-project-external-coordination-radar.md`  

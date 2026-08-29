@@ -83,6 +83,10 @@
 
 顧客向けの見せ方（週次／月次の物語）は `standards/deliverable-archetypes.md` Archetype J。会議の層は `program-governance-cadence.md`。
 
+## Selection marks will be challenged
+
+標準の知識エリアから「今回のケースで見るもの」を ○／入れ子／対象外 で印す表は、**印の基準**が後でギロになる（開発側との課題重要度と同じ型）。コミュニケーションをステークホルダー管理の一部にするか独立させるか、も理由が要る。今の顧客が意地悪でなくても、基準を一文で書いて練習する。表自体は Appendix の説明用であり、本編の主張ではない。
+
 ## Change control vs baseline (QCD)
 
 一度合意した事項を見直すときは、変更単位で票を起こし、状態（起票→受付→判定→影響分析→実施判定→実施→終結）を追う。
@@ -127,4 +131,4 @@
 - `playbooks/cross-project-program-management.md`
 - `frameworks/transformation-pmo.md`
 - `standards/deliverable-archetypes.md` Archetype J（顧客共有の週次／月次）
-- `knowledge/index/legacy-source-index.md` Program Line Y
+- `knowledge/index/legacy-source-index.md` Program Line Y, Program Line AE

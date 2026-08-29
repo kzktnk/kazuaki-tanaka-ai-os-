@@ -65,6 +65,8 @@ AI時代のコンサルタントに求められる能力は、単なる知識量
 
 抜けた箱が見えること自体が、トップダウンの進捗サインである。無理に MECE 表を完成させてから動く必要はない。顧客向け報告では評価枠を内側に持ち、表に全部出さなくてよい（`standards/deliverable-archetypes.md` Archetype J）。
 
+**人に紐づく箱だけでは足りない。** 「誰が何時間使っているか」は拾えるが、まだ人が当たっていない仕事は漏れる。網羅とヒアリングが要るときは、検討主体を中段に置き、その下で実行と管理を分ける。現状スケッチに WBS 再設計の精度を求めない（`knowledge/patterns/unowned-work-in-effort-analysis.md`）。
+
 ## AI時代にコンサルタントが辿る思考プロセス
 生成AIは100個のアイデアを出すのは得意。どう整理し、何が不足しているかを決めるのは人間。
 
@@ -98,6 +100,7 @@ AI時代のコンサルタントに求められる能力は、単なる知識量
 - 実際の分類軸（箱）の型は `frameworks/thinking-patterns/` 配下のPattern 1〜8を参照
 - 早見表は `references/thinking-patterns-reference.md`
 - 支援工数の実務軸例は `knowledge/patterns/support-effort-classification.md`
+- 人軸で漏れる未割当仕事は `knowledge/patterns/unowned-work-in-effort-analysis.md`
 
 ---
 **レビュー用メモ（Kazuaki記入欄）**

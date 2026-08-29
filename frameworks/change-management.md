@@ -1,6 +1,6 @@
 # Change Management Framework
 
-**Version:** v1.1  
+**Version:** v1.2  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Origin:** Generalized from legacy Strategic Change / LPD Change Management training (c. 2001–2003), plus later change-plan / workshop method (structure only). Japanese slide text in early `.ppt` was not recoverable; English structure recovered. Client cases, org charts, plan body, and vendor catalogues are **not** registered.
@@ -116,6 +116,10 @@ Unawareness → Awareness → Buy-in → Ownership
 
 Lead contacts exist to **influence and pass issues both ways**. They are not gatekeepers who filter bad news.
 
+### Change agents are not the communication plan
+
+旗振り役（チェンジエージェント／Champion）を見つけることが、コミュニケーション計画の目的ではない。既存の構築メンバーがすでに旗を振っており、残りが定着の末端対象なら、新規エージェント探索は必須ではない。エージェント無しでチェンジが進むなら、作らなくてよい。計画が答えるのは、関係者の中にコミットメントが低い人が**現れたとき**どう上げるかである。人を動かす戦術は `playbooks/stakeholder-activation-playbook.md`。区別の型は `knowledge/patterns/change-agent-vs-communication-plan.md`。
+
 ### Three understandings every person needs
 
 Communications fail when only the corporate “why” is told.
@@ -147,6 +151,7 @@ A **変革推進計画** is not the communication calendar. It is the file that:
 - sits in **project preparation**, then is updated through the program
 - is the **premise** for unit-level communication plans
 - states purpose: raise and keep **acceptance** via stakeholder management and communication, for the **whole duration**, linked to other workstreams
+- is designed **before** appendix samples and knowledge-area matching tables; those artefacts are justified by the plan, not the other way around
 
 Minimum contents (names may vary):
 
@@ -210,6 +215,7 @@ AI-specific change (incomplete models, ethics, shadow tools, HITL) is `knowledge
 | `ai-role-maturity.md` | People roadmap is CM sequenced to technology, not a training catalogue |
 | `ai-coe-vs-pgmo-vs-change.md` | CoE, AI PgMO, and AI change are three functions; AI change ≠ ERP change |
 | `playbooks/stakeholder-activation-playbook.md` | Person-level activation; this file stays org-process |
+| `knowledge/patterns/change-agent-vs-communication-plan.md` | Agent hunt ≠ communication plan; plan before samples |
 | `playbooks/operations-transition-playbook.md` | Ops take-on / Adoption Definition of Done |
 | `energy-utilities.md` | Group CX / plant autonomy: strategy, analysis, and decision rights must travel together |
 
@@ -232,6 +238,7 @@ AI-specific change (incomplete models, ethics, shadow tools, HITL) is `knowledge
 - `frameworks/transformation-pmo.md`
 - `playbooks/stakeholder-activation-playbook.md`
 - `playbooks/operations-transition-playbook.md`
-- `knowledge/index/legacy-source-index.md` Program Line L, Program Line T
+- `knowledge/index/legacy-source-index.md` Program Line L, Program Line T, Program Line AE
+- `knowledge/patterns/change-agent-vs-communication-plan.md`
 - `knowledge/migrations/change-management-2026-08.md`
 - `knowledge/migrations/pgmo-ai-change-2026-08.md`

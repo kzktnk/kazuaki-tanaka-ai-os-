@@ -1,9 +1,9 @@
 # Deliverable Archetypes — Slide & Document Structure
 
-**Version:** v1.3  
+**Version:** v1.4  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
-**Origin:** レガシー成果物アーキタイプの**最小構成**テンプレ。クライアント名・固有情報なし。Archetype J はコーチング録音（2026-08-24）の一般化。
+**Origin:** レガシー成果物アーキタイプの**最小構成**テンプレ。クライアント名・固有情報なし。Archetype J はコーチング録音（2026-08-24／2026-08-28）の一般化。
 
 ---
 
@@ -391,12 +391,17 @@ C301/C302 は総合運転試験でも共用可。
 3. **完了条件** — 誰と、何を合意したら閉じるかを書く。「解決」「解消」は完了条件を満たすまで使わない。  
 4. **資料はトップダウン、具体は口頭** — スライドは構造を保つ。何をしたかの具体は口頭で補足（構造を崩さない）。  
 5. **表現の衛生** — 根拠なく顧客の定常業務のやり方を処方しない。文言はキーコンタクトとすり合わせる。プロジェクト外負荷の開放など、観測に基づく言い換えを使う。
+6. **サンプルはサンプル** — 付録の記入例は「だいたいこんな感じ」で止める。実データまで描くと事例になり、次工程で情報が取れるかの確認に使えない。過去事例は今回の顧客に合わせてよい。
+7. **議題外の頭出し** — 本会議のアジェンダに無い並行ワークストリームでも、口頭の短い合図は沈黙よりよい（顧客側は内部で話している）。ドラフトを載せなくてよい。
+8. **十年に一度の仕事** — 基幹刷新など顧客が稀にしかやらない経路の火種は、月次に折り混ぜて理解を積む。進捗％だけでは筋の記憶が付かない。
 
 ### Appendix（任意・求められたとき）
 
-評価軸の詳細、課題台帳抜粋、依存図、工数カテゴリ（個別／PJ間／横断＋課題管理）の内訳。
+評価軸の詳細、課題台帳抜粋、依存図、工数カテゴリ（個別／PJ間／横断＋課題管理）の内訳。標準知識エリアから「今回見るもの」を選んだ理由のマッチング表は、**本編では説明しない・聞かれたときの説明用**。含める／ネストする／外すの印（○ や入れ子）には基準を書く。基準は後でギロになる（`knowledge/patterns/project-management-policy-layer.md`）。
 
-**参照:** `knowledge/patterns/project-management-policy-layer.md`（顧客共有の未決・完了条件）、`knowledge/patterns/support-effort-classification.md`（支援工数の分類軸）、`core/author-voice.md` §6
+チェンジの付録は、変革推進計画の骨格のあとで必要性が決まる（`knowledge/patterns/change-agent-vs-communication-plan.md`）。エージェント探索表をコミュニケーション計画の代わりにしない。
+
+**参照:** `knowledge/patterns/project-management-policy-layer.md`（顧客共有の未決・完了条件、選定印の基準）、`knowledge/patterns/support-effort-classification.md`（支援工数の分類軸）、`knowledge/patterns/buyer-side-gap-vs-vendor-pmo.md`（カットオーバー経路の隙間）、`core/author-voice.md` §6
 
 ---
 
@@ -434,8 +439,10 @@ C301/C302 は総合運転試験でも共用可。
 | `core/author-voice.md` | トーン・削減原則 |
 | `playbooks/program-governance-cadence.md` | 会議階層（Archetype J の場の設計） |
 | `playbooks/cross-project-program-management.md` | PJ間境界・依存（Archetype J の中身参照先） |
-| `knowledge/patterns/project-management-policy-layer.md` | 未決共有・完了条件 |
+| `knowledge/patterns/project-management-policy-layer.md` | 未決共有・完了条件・選定印の基準 |
 | `knowledge/patterns/support-effort-classification.md` | 支援工数の分類軸 |
+| `knowledge/patterns/change-agent-vs-communication-plan.md` | 付録サンプルとチェンジ計画の順序 |
+| `knowledge/patterns/buyer-side-gap-vs-vendor-pmo.md` | 月次に折り混ぜる発注側隙間・経路リスク |
 | `standards/consulting-review.md` | レビュー観点 |
 | `standards/requirements-document-outline.md` | 要件定義書章立て（要定） |
 | `standards/document-management-standard.md` | 文書区分・表紙・台帳 |

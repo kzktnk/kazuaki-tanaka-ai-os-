@@ -30,3 +30,4 @@
 - `knowledge/patterns/project-management-policy-layer.md`  
 - `playbooks/cross-project-program-management.md`  
 - `frameworks/top-down-thinking.md`  
+- `knowledge/patterns/unowned-work-in-effort-analysis.md`  
