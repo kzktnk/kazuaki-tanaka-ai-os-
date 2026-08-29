@@ -1,6 +1,6 @@
 # Legacy Source Index
 
-**Version:** v1.19  
+**Version:** v1.20  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** ローカル保管のレガシー原本と、リポジトリ内知識の対応索引。**原本の中身は含まない。**
@@ -362,39 +362,39 @@
 
 | ローカル原本（種別） | 抽出先 | 登録範囲 |
 |---------------------|--------|---------|
-| Cross-Project Management Playbook（md / docx **v2.1**） | `playbooks/cross-project-program-management.md` | PJ 間 5 領域、Control Cycle、コーチング順序、ベンダー責任分界（5.4）、体制図（1.4）、兼任注意（1.5）、途中参画プレゼンス（1.6）、**着手前チェック**、**2.7 プログラム構造 Health Assessment**、RAID 区分表（8.3）、シリーズ位置づけ①SCN→②本書→③運用、射程の上下流対称、RAG 基準（8.2）、Consistency 再構成（6.1/6.5）、5領域メンタルモデル（2.6）、Steering Decision Request（Detect→Ask）、Self-study companion（方法のみ）。章本文の写しは最小化。2026-08-27 再採用（v2.1 → repo **v0.7**） |
-| Templates.xlsx（Cover + 8 シート） | 同上 Playbook 本文 / Appendix | テンプレート**クラスとフィールド**のみ。Issue Log を含む。xlsx 実体不登録。本改訂でシート構成・フィールド変更なし（サンプル行注記のみ補強） |
-| SelfStudy（md / docx） | 同上 Playbook「Self-study companion」 | 文体書き換え全文は不登録。セルフチェック順・演習の先読み禁止・正本は指導者版、①／③境界の把握、のみ抽出。方法面の実質変更なし |
+| Cross-Project Management Playbook（md / docx **v2.1**／2026-08-29 系列揃え） | `playbooks/cross-project-program-management.md` | PJ 間 5 領域、Control Cycle、Gate 2→Gate 3 引き渡し（Register / Matrix / RAID）、Health Assessment、①②③＋横串。2026-08-29 再採用（repo **v0.9**） |
+| Templates.xlsx（Cover + 8 シート） | 同上 Playbook 本文 / Appendix | テンプレート**クラスとフィールド**のみ。xlsx 実体不登録 |
+| SelfStudy（md / docx） | `playbooks/cross-project-program-management-selfstudy.md` | 本編と同一の型・表・演習。語りを二人称に。docx 不登録 |
 
-**未登録:** xlsx / docx ファイル本体（main・SelfStudy）、SelfStudy 全文、作成日・対象読者などの表紙メタ、著者個人の全体レビュー記入欄・改訂履歴ダンプ、演習ケースのベンダー名・日付・費用、部下の実プログラム。2026-08-28: ③ `operations-transition-playbook.md` と横串 `stakeholder-activation-playbook.md` へのポインタ追加（repo v0.8）。
+**未登録:** xlsx / docx ファイル本体（main・SelfStudy）、作成日・対象読者などの表紙メタ、著者個人の全体レビュー記入欄・改訂履歴ダンプ、演習ケースのベンダー名・日付・費用、部下の実プログラム。
 
 ---
 
 ## Program Line AC: 運用移行・定着化指導（2026、一般化のみ）
 
-原本はローカル `Downloads/files 4/`・`files 5/`。匿名ラベル: **operations transition / AMS–IO–AI ops coaching / 2026**。社名、円、契約事実は不登録。
+原本はローカル `Downloads/20260829_1227/`・`Downloads/20260829_1309/`（docx）。匿名ラベル: **operations transition / AMS–IO–AI ops coaching / 2026**。社名、円、契約事実は不登録。
 
 | ローカル原本（種別） | 抽出先 | 登録範囲 |
 |---------------------|--------|---------|
-| Operations Transition Playbook（md / docx） | `playbooks/operations-transition-playbook.md` | Transition Manager 一人称。シナリオA/B、Service Introduction、take-on／KT、工数、定着、Gate 3〜5、② RAID 継続。Chapter 5・6 は Experimental。2026-08-28 初回採用（repo **v0.1**） |
-| SelfStudy（md / docx） | 同上「Self-study companion」 | 全文不登録。方法のみ |
+| Operations Transition Playbook（md / docx） | `playbooks/operations-transition-playbook.md` | Transition Manager 一人称。シナリオA/B、Gate 3〜5、Core vs Experimental（Ch 5・6）。YAML・仮称・著者レビューダンプは除外。2026-08-29 再採用（repo **v0.2**） |
+| SelfStudy（md / docx） | `playbooks/operations-transition-playbook-selfstudy.md` | 本編と同一。語りを二人称に。本文から repo パスを外した版。docx 不登録 |
 | Templates.xlsx | 同上 Appendix | クラスのみ。xlsx は未作成／不登録 |
 
-**未登録:** docx、SelfStudy 全文、レビュー履歴ダンプ、`ai-operations-role-design.md`（Draft・未レビュー）。
+**未登録:** docx、xlsx、`ai-operations-role-design.md`（Draft・未レビュー）。
 
 ---
 
 ## Program Line AD: Stakeholder Activation 指導（2026、一般化のみ）
 
-原本はローカル `Downloads/files 8/`・`files 6/`。匿名ラベル: **stakeholder activation coaching / 2026**。人名付きマップは不登録。
+原本はローカル `Downloads/20260829_1227/`・`Downloads/20260829_1309/`（docx）。匿名ラベル: **stakeholder activation coaching / 2026**。人名付きマップは不登録。
 
 | ローカル原本（種別） | 抽出先 | 登録範囲 |
 |---------------------|--------|---------|
-| Stakeholder Activation Playbook（md / docx） | `playbooks/stakeholder-activation-playbook.md` | 横串。Segment→Diagnose→Select→Tailor→Observe。Channel は実行レイヤー。2026-08-28 初回採用（repo **v0.1**） |
+| Stakeholder Activation Playbook（md / docx） | `playbooks/stakeholder-activation-playbook.md` | 横串。Segment→Diagnose→Select→Tailor→Observe。YAML・草案メモ除外。2026-08-29 再採用（repo **v0.2**） |
 | Templates.xlsx（Cover + 6） | 同上 Appendix | クラスのみ。xlsx 不登録 |
-| SelfStudy（md / docx） | 同上「Self-study companion」 | 全文不登録。方法のみ |
+| SelfStudy（md / docx） | `playbooks/stakeholder-activation-playbook-selfstudy.md` | 本編と同一。語りを二人称に。docx 不登録 |
 
-**未登録:** xlsx / docx、SelfStudy 全文、レビュー履歴ダンプ。
+**未登録:** xlsx / docx、人名付きマップ。
 
 ---
 
@@ -494,7 +494,8 @@
 | `SCN概要(KM).pdf` | 概要・定義・KOPT・KPI・事例 | `frameworks/strategic-capability-network.md` |
 | `SCN作成についての補足資料-SCN作成の勘どころ　-.pdf` | 作成勘どころ・As-Is/To-Be・広がり/深さ | `standards/scn-creation-guide.md` §Breadth/Depth, §Workflow |
 | `SCN作成のポイント.pdf` | 記述ルール・WS運営・Q&A | `standards/scn-creation-guide.md` §Notation, §Prerequisites |
-| `Strategy-SCN-Playbook.docx`（v1.2） | 戦略→SCN→Gate 1 実行・指導 | `playbooks/strategy-scn.md`（net-new のみ；定義・記法は既存へ） |
+| `Strategy-SCN-Playbook.docx`／`strategy-scn.md`（2026-08-29） | 戦略→SCN→Gate 1、Gate 1〜5 図、通し演習 | `playbooks/strategy-scn.md`（repo **v0.3**） |
+| `strategy-scn-selfstudy.md`／docx | 自己学習版 | `playbooks/strategy-scn-selfstudy.md`（repo **v0.3**） |
 | `Strategy-SCN-Playbook-Templates.xlsx` | テンプレ9クラス＋Optional | 同上 Appendix（フィールドのみ；xlsx 不登録） |
 
 **Note:** 旧 `.ppt` は日本語抽出不可。PDF版を原本とする。IBM/client名・X社事例・円・演習 Data Pack 全文はリポジトリには一般化のみ／不登録。Strategy-SCN 原本はローカル `Downloads/` のみ。
@@ -589,10 +590,14 @@
 | `shared-operator-vs-ministry-vs-municipality.md` | 高 | ✅ 登録済（2026-08-20） |
 | `public-multi-lot-construction-pmo.md` | 高 | ✅ 登録済（2026-08-20） |
 | `program-governance-cadence.md` | 高 | ✅ 登録済（2026-08-20） |
-| `cross-project-program-management.md` | 高 | ✅ 登録済（2026-08-28 ポインタ更新 / v2.1 → repo v0.8） |
-| `strategy-scn.md` | 高 | ✅ 登録済（2026-08-28 ポインタ更新 / local Strategy-SCN v1.2 → repo v0.2） |
-| `operations-transition-playbook.md` | 高 | ✅ 登録済（2026-08-28 / ③ Gate 3–5 → repo v0.1） |
-| `stakeholder-activation-playbook.md` | 高 | ✅ 登録済（2026-08-28 / 横串 activation → repo v0.1） |
+| `cross-project-program-management.md` | 高 | ✅ 登録済（2026-08-29 / v2.1 → repo v0.9） |
+| `cross-project-program-management-selfstudy.md` | 高 | ✅ 登録済（2026-08-29 / ②自己学習 → repo v0.9） |
+| `strategy-scn.md` | 高 | ✅ 登録済（2026-08-29 / Gate 1〜5・通し演習 → repo v0.3） |
+| `strategy-scn-selfstudy.md` | 高 | ✅ 登録済（2026-08-29 / ①自己学習 → repo v0.3） |
+| `operations-transition-playbook.md` | 高 | ✅ 登録済（2026-08-29 / ③ → repo v0.2） |
+| `operations-transition-playbook-selfstudy.md` | 高 | ✅ 登録済（2026-08-29 / ③自己学習 → repo v0.2） |
+| `stakeholder-activation-playbook.md` | 高 | ✅ 登録済（2026-08-29 / 横串 → repo v0.2） |
+| `stakeholder-activation-playbook-selfstudy.md` | 高 | ✅ 登録済（2026-08-29 / 横串自己学習 → repo v0.2） |
 
 ---
 

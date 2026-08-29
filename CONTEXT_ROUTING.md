@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.27
+Version: v1.28
 
 ## Purpose
 
@@ -404,6 +404,7 @@ Load:
 - playbooks/strategy-scn.md (if upstream strategy → SCN → Gate 1 is weak before PgMO start)
 - playbooks/operations-transition-playbook.md (if realization is ending and ops take-on / adoption is the next job)
 - playbooks/stakeholder-activation-playbook.md (if a named person must actually act, not just be informed)
+- matching `*-selfstudy.md` instead of the coach edition if the reader is working alone (same type, second person; no `playbooks/` paths in the body)
 - knowledge/patterns/related-project-external-coordination-radar.md (if adjacent projects / external parties sit outside the Dependency Register)
 - knowledge/patterns/pgmo-presence-via-client-stance.md (if process pack runs but client trust / proposal value still sits with a long-trusted specialist PM)
 - knowledge/patterns/transformation-practice-case-pack.md (if packaging internal transformation practice cases / MM learning packs—not client status)

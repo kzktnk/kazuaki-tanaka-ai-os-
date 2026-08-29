@@ -6,11 +6,15 @@ Step-by-step execution methods for recurring work. See `ARCHITECTURE.md` §6.6.
 |------|----------|
 | `wbs-design.md` | Decompose work from deliverables, not from a task list |
 | `pmo-function-standup.md` | PMO rules exist; quality/site progress are still table of contents |
-| `strategy-scn.md` | Strategy → SCN → KPI → Gate 1 projectization (coaching sequence; not SCN notation encyclopedia) |
+| `strategy-scn.md` | Strategy → SCN → KPI → Gate 1 projectization (coach edition; not SCN notation encyclopedia) |
+| `strategy-scn-selfstudy.md` | Same as `strategy-scn.md`, second person (mentee alone) |
 | `program-governance-cadence.md` | SteerComm / program board / cross-project / standup / inspection: who meets, what escalates |
 | `cross-project-program-management.md` | Multi-vendor PgMO: manage **between** projects — dependency, consistency, hand-off control |
+| `cross-project-program-management-selfstudy.md` | Same as `cross-project-program-management.md`, second person |
 | `operations-transition-playbook.md` | AMS / IO / AI ops: transition design and adoption (Gate 3–5); not day-to-day operations |
+| `operations-transition-playbook-selfstudy.md` | Same as `operations-transition-playbook.md`, second person |
 | `stakeholder-activation-playbook.md` | Cross-cutting: move a specific person via Segment–Diagnose–Select–Tailor–Observe |
+| `stakeholder-activation-playbook-selfstudy.md` | Same as `stakeholder-activation-playbook.md`, second person |
 | `public-multi-lot-construction-pmo.md` | Shared-operator multi-lot tests/cutover: start-gates, not status minutes |
 | `private-it-rfp-vendor-selection.md` | Private-enterprise RFP issue through preferred vendor and contract handoff |
 | `ai-work-before-after.md` | Field story: same process left/right; humans keep the decision |

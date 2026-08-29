@@ -2,17 +2,17 @@
 type: playbook
 ---
 
-# Strategy / SCN Playbook
+# Strategy / SCN Playbook【自己学習版】
 
 **Version:** v0.3  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
-**Purpose:** 戦略立案（IT戦略を含む）から SCN 構造化・KPI・プロジェクト化（Gate 1）までを、メンティーが自走できる順序でつなぐ  
-**Use when:** 経営課題／IT課題の定義→分析→SCN→KPI→Program／Project 分解までを一気通貫でコーチングするとき  
-**Do not use as-is for:** SCN 記法・WS 運営の詳細（`standards/scn-creation-guide.md`）、型の定義本体（`frameworks/consulting-strategy-process.md` / `frameworks/strategic-capability-network.md`）、複数ベンダー PJ 間統合（`playbooks/cross-project-program-management.md`）、運用・定着化（`playbooks/operations-transition-playbook.md`）、Stakeholderを実際に動かす技術（`playbooks/stakeholder-activation-playbook.md`）  
-**Source revision:** local Strategy-SCN Playbook 2026-08-29 (series alignment)
+**Purpose:** 戦略立案（IT戦略を含む）から SCN 構造化・KPI・プロジェクト化（Gate 1）までを、一人で読み進めながら自走できる順序でつなぐ  
+**Use when:** 経営課題／IT課題の定義→分析→SCN→KPI→Program／Project 分解までを一気通貫で、自分の案件に当てはめるとき  
+**Do not use as-is for:** SCN 記法・WS 運営の詳細（別紙の記法ガイド）、型の定義本体（原典フレームワーク）、複数ベンダー PJ 間統合（②）、運用・定着化（③）、Stakeholder を実際に動かす技術（横串）  
+**Source:** ①本編（`playbooks/strategy-scn.md`）の自己学習版。2026-08-29。主張・型・表・演習は本編と同一。
 
-Pairs with `frameworks/consulting-strategy-process.md`（問題設定〜提言）、`frameworks/strategic-capability-network.md`＋`standards/scn-creation-guide.md`（SCN 本体）、`frameworks/it-strategy-foundations.md`（Insight→Architecture→Investment）。下流の実行動員は `playbooks/cross-project-program-management.md`（Gate 2）。本 Playbook は **どの順序で型をつなぐか** と **Gate 1 までの引継ぎ** を扱う。
+本 Playbook は、SCN の記法や型の定義そのもの（原典）ではなく、**どの順序で型をつなぐか**と**Gate 1 までの引継ぎ**を扱う。下流の実行動員は②（Gate 2）。
 
 ## このPlaybookの目的
 
@@ -33,11 +33,11 @@ Pairs with `frameworks/consulting-strategy-process.md`（問題設定〜提言�
    戦略立案 → SCN → KPI → プロジェクト化（Gate 1）
                         │
                         ▼
-② Cross-Project Program Management（`cross-project-program-management.md`）
+② Cross-Project Program Management
    複数ベンダー・複数PJの実現化工程
                         │
                         ▼
-③ Operations Transition Playbook（`playbooks/operations-transition-playbook.md`）
+③ Operations Transition Playbook
    AMS・インフラ運用・AI運用への移行設計と、実現化後の安定運用・定着化
 ```
 
@@ -51,7 +51,7 @@ Complete          Ready
   (①完了)          (②着手)             (②③並走開始)          (③へ責任移転)          (③終了)
 ```
 
-ゴールは Chapter 7.4 の **Gate 1（Strategic Projectization Complete）**。Gate 2（Execution Mobilization Ready：体制図・WBS・契約スコープ等）は②の着手前チェック側。①②だけを読むとシリーズが Gate 2 で終わるように見えるが、実際は②③が Gate 3 から並走し、Gate 5 まで続く。複数の相手（Sponsor・事業部等）を実際に動かす技術は、①②③共通の横串Playbook `playbooks/stakeholder-activation-playbook.md`（Stakeholder Activation Playbook）を参照する。
+ゴールは Chapter 7.4 の **Gate 1（Strategic Projectization Complete）**。Gate 2（Execution Mobilization Ready：体制図・WBS・契約スコープ等）は②の着手前チェック側。①②だけを読むとシリーズが Gate 2 で終わるように見えるが、実際は②③が Gate 3 から並走し、Gate 5 まで続く。複数の相手（Sponsor・事業部等）を実際に動かす技術は、①②③共通の横串Playbook（Stakeholder Activation Playbook）を参照する。
 
 ### 使い方
 
@@ -62,14 +62,14 @@ Complete          Ready
 5. Chapter 8 で工程横断の失敗パターンを確認  
 6. Chapter 9 か実案件のどちらかで手を動かす（必須）
 
-読むだけで終わらせない。一人で進める場合は `playbooks/strategy-scn-selfstudy.md`（自己学習版）を使う。本編は指導者同席を前提に repo 参照（`playbooks/`・`frameworks/`等）を残しているが、自己学習版では冊名・章番号の参照に置き換えている。
+読むだけで終わらせない。各Chapter末の振り返りメモは、指導者に問われて答えるものではなく、自分自身に問いかけるものとして使う。答えに詰まった項目があれば、そこが理解の甘い場所である。一人で判断がつかない場合は、無理に自己完結させず、先輩・上司に短く相談してよい。
 
 ---
 
 ## Trigger
 
 - IT／業務変革の「戦略資料はあるが Capability／Enabler／KPI／Project 単位まで落ちていない」
-- メンティーがツールから手を動かし、Key Question に戻らない
+- ツールから手を動かしてしまい、Key Question に戻れていない
 - ②着手時に「何のための Project か／KPI が仮置き」で手戻りが出ている
 
 ## Objective
@@ -79,7 +79,7 @@ Gate 1 完了条件を満たす状態（Charter 骨子・Project 切り・検証
 ## Prerequisites
 
 - 承認済みまたは合意可能な戦略／中計／プログラム意図がある（戦略そのものの再訴訟は本 Playbook の主務ではない）
-- 担当者は SCN・4Cs の記法を最低限知っている（未習なら `scn-creation-guide.md` を先に）
+- 担当者は SCN・4Cs の記法を最低限知っている（未習なら別紙の記法ガイドを先に）
 
 ## Required inputs
 
@@ -121,9 +121,9 @@ IT戦略に別プロセスがあるわけではない。4Cs・ロジックツリ
 | What | 何を実現するか（Value／Capability） | Chapter 4 |
 | How | どう実現するか（Enabler／Project） | Chapter 5〜7 |
 
-How（Enabler／Technology）から始めない。Pattern 1（`frameworks/thinking-patterns/pattern-01-why-what-how.md`）と一貫させる。
+How（Enabler／Technology）から始めない。Why→What→How の思考パターンと一貫させる。
 
-### レビュー用メモ
+### 振り返りメモ（自己学習用）
 
 - [ ] Consulting Strategy Process の3段階を自分の言葉で言えるか  
 - [ ] 今の案件がどの段階か言えるか  
@@ -145,7 +145,7 @@ MECE に論点分解。Deductive／Hypothesis／Issue Map を習熟度と論点�
 
 論点ごとに「どんな分析が・何のために・いつまでに」。End Product・担当・期限を先に決める。ストーリーボードと Work Plan まで合意すると分析が収束する。**Tool-first**（手元の枠から手を動かす）を禁止。
 
-### レビュー用メモ
+### 振り返りメモ（自己学習用）
 
 - [ ] Key Question を1文で言えるか  
 - [ ] Criteria／Constraints を分析前に合意したか  
@@ -157,7 +157,7 @@ MECE に論点分解。Deductive／Hypothesis／Issue Map を習熟度と論点�
 
 ### 3.1 ツール地図
 
-内部／外部／策定・評価の3局面でツールを使い分ける（型の詳細は `standards/strategy-engagement-guide.md`）。
+内部／外部／策定・評価の3局面でツールを使い分ける（型の詳細は原典・指導者を参照）。
 
 | 局面 | 主なツール | 見るもの |
 |---|---|---|
@@ -177,13 +177,13 @@ MECE に論点分解。Deductive／Hypothesis／Issue Map を習熟度と論点�
 | ハードデータ補完 | 定量分析だけでは埋まらない実態確認 |
 | 視点検証 | 提言前の抜け・盲点・政治的実現性の確認 |
 
-インタビュー順は、経営層 → 実務・営業層 → 業界専門家 → 顧客 → 販売代理店 → 代替品提供者 → 競合 → サプライヤーが基本形（`standards/strategy-engagement-guide.md`）。
+インタビュー順は、経営層 → 実務・営業層 → 業界専門家 → 顧客 → 販売代理店 → 代替品提供者 → 競合 → サプライヤーが基本形。
 
 **よくある失敗**：目的を決めずに「とりあえず聞く」。後から「これは仮説生成だったのか検証だったのか」が本人にも分からなくなり、聞いた内容を Findings（3.4）に落とせない。
 
 ### 3.3 シナリオ
 
-業界・市場の変化が中〜大きいときだけ使う（静的市場に無理に作らない）。10ステップの詳細は `standards/strategy-engagement-guide.md`。
+業界・市場の変化が中〜大きいときだけ使う（静的市場に無理に作らない）。10ステップの詳細は原典を参照。
 
 **よくある失敗**：シナリオを「当たる未来を1つ予測するもの」として扱う（Chapter 8 参照）。シナリオの目的は単一予測ではなく、複数の未来それぞれでオプションが機能するかをテストすることである（Chapter 6 のオプション評価と接続）。
 
@@ -198,7 +198,7 @@ MECE に論点分解。Deductive／Hypothesis／Issue Map を習熟度と論点�
 3. 数値・固有名詞・引用は裏取り  
 4. 機密を外部 AI に入れない（匿名化）
 
-### レビュー用メモ
+### 振り返りメモ（自己学習用）
 
 - [ ] ツールありきになっていないか  
 - [ ] インタビューの目的（仮説生成／ハードデータ／視点検証）を先に決めてから設計したか  
@@ -210,7 +210,7 @@ MECE に論点分解。Deductive／Hypothesis／Issue Map を習熟度と論点�
 
 ## Chapter 4. SCN 構築
 
-記法・WS・広がり／深さの詳細は `strategic-capability-network.md` / `scn-creation-guide.md`。ここではつなぎと失敗だけ。
+記法・WS・広がり／深さの詳細は原典フレームワーク・記法ガイドを参照。ここではつなぎと失敗だけ。
 
 ### 4.1 層の全体像
 
@@ -244,7 +244,7 @@ Knowledge／Organization／Process／Technology の4種で分解する。施策�
 - 単一プログラムで完結し Enterprise integration を怠る  
 - Findings が観察の羅列で因果がない  
 
-### レビュー用メモ
+### 振り返りメモ（自己学習用）
 
 - [ ] Value から書けているか  
 - [ ] Value・Capability の粒度が SCN 全体で揃っているか  
@@ -273,7 +273,7 @@ Baseline・Formula・Data Source が空ならまだ言葉の段階。財務評�
 - Needs vs Benefits；Diamond-E（環境／リソース／組織／経営意向／戦略）  
 - オプションを Suitability／Feasibility／Acceptability で評価（都合の悪い制約も隠さない）  
 - 実行テーマは重要度×実現可能性で優先順位  
-- ステークホルダー：Unawareness → Awareness → Buy-in → Ownership（`frameworks/change-management.md`と共通の Commitment 段階。②③横串とも同じ4段階を使う）。Gate 1 で必要なのは Sponsor の Buy-in までの進行合意であり、Ownership（自分ごと化）まで揃うのは通常②③以降である。全員 Acceptance 待ちにしない；未合意は Risk／Assumption として記録してから進む（Gate 1 と同趣旨）
+- ステークホルダー：Unawareness → Awareness → Buy-in → Ownership（業界のチェンジマネジメント標準と共通の Commitment 段階。②③横串とも同じ4段階を使う）。Gate 1 で必要なのは Sponsor の Buy-in までの進行合意であり、Ownership（自分ごと化）まで揃うのは通常②③以降である。全員 Acceptance 待ちにしない；未合意は Risk／Assumption として記録してから進む（Gate 1 と同趣旨）
 
 ---
 
@@ -355,7 +355,7 @@ Gate 2 情報が①時点で未確定なのは正常。
 
 ## Chapter 9. 実践演習
 
-**ケース**：老朽化した基幹システムの刷新。20年以上稼働し、担当者の高齢化とブラックボックス化が進んでいる。外部連携は個別I/F実装の積み重ねで保守コストが増加。複数事業のデータが基幹・周辺システムに分散し、経営判断に必要な統合データがすぐに得られない。周辺システムの一部は、既存ベンダーX社が長年個別に運用している。売上高・社名・固有事実は案件ごとに差し替え（金額は repo に載せない）。
+**ケース**：老朽化した基幹システムの刷新。20年以上稼働し、担当者の高齢化とブラックボックス化が進んでいる。外部連携は個別I/F実装の積み重ねで保守コストが増加。複数事業のデータが基幹・周辺システムに分散し、経営判断に必要な統合データがすぐに得られない。周辺システムの一部は、既存ベンダーX社が長年個別に運用している。売上高・社名・固有事実は案件ごとに差し替え（金額は伏せる）。
 
 **Data Pack（断片情報の型）**：基幹システムの保守コスト推移（5年で1.4倍）、外部連携I/Fの数と個別対応履歴（32本、うち20本がこの3年で追加）、システム構成の暫定棚卸し（基幹システム＋周辺システム6本、うち1本はX社が個別運用）、基幹システム有識者の年齢構成（主要担当者3名中2名が55歳以上）、経営層コメント要約（「今のシステムで次の中計は支えられるのか」）。
 
@@ -427,7 +427,7 @@ Gate 1 完了後、この Charter がそのまま②Chapter 9 の演習ケース
 
 ---
 
-## Sequence（コーチング要約）
+## Sequence（要約）
 
 1. Key Question（4Cs＆1Q）を合意する  
 2. ロジックツリーで論点を MECE 化する  
@@ -490,13 +490,8 @@ Gate 1 完了後、この Charter がそのまま②Chapter 9 の演習ケース
 
 ## Related
 
-- `frameworks/consulting-strategy-process.md`  
-- `frameworks/strategic-capability-network.md`  
-- `standards/scn-creation-guide.md`  
-- `frameworks/it-strategy-foundations.md`  
-- `frameworks/capability-model.md`  
-- `frameworks/thinking-patterns/pattern-01-why-what-how.md`  
-- `playbooks/cross-project-program-management.md`（Gate 2／PJ間）  
-- `playbooks/operations-transition-playbook.md`（③／運用移行・定着化）  
-- `playbooks/stakeholder-activation-playbook.md`（①②③共通／Stakeholderを動かす技術）  
-- Program Line D（SCN legacy）＋本コーチングパック（2026）
+- 戦略プロセスの原典フレームワーク（問題設定〜提言）
+- SCN 本体の原典フレームワークと記法ガイド
+- ②（Cross-Project Program Management Playbook／Gate 2・PJ間）
+- ③（Operations Transition Playbook／運用移行・定着化）
+- 横串（Stakeholder Activation Playbook／①②③共通）

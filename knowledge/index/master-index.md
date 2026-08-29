@@ -1,10 +1,10 @@
 # Knowledge Master Index
 
-**Version:** v1.17  
+**Version:** v1.18  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
-**Last updated:** 2026-08-28
+**Last updated:** 2026-08-29
 
 ---
 
@@ -72,7 +72,7 @@ kazuaki-tanaka-ai-os/
 ├── core/                       ← 8 files (kernel)
 ├── standards/                  ← 19 files (quality criteria)
 ├── frameworks/                 ← 33 files + thinking-patterns/
-├── playbooks/                  ← 15 playbooks (+ README)
+├── playbooks/                  ← 23 playbooks (+ README)
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
@@ -347,9 +347,13 @@ playbooks/
 ├── pmo-function-standup.md
 ├── program-governance-cadence.md
 ├── strategy-scn.md
+├── strategy-scn-selfstudy.md
 ├── cross-project-program-management.md
+├── cross-project-program-management-selfstudy.md
 ├── operations-transition-playbook.md
+├── operations-transition-playbook-selfstudy.md
 ├── stakeholder-activation-playbook.md
+├── stakeholder-activation-playbook-selfstudy.md
 ├── public-multi-lot-construction-pmo.md
 ├── interim-connectivity.md
 ├── private-api-connectivity-diagnosis.md
@@ -695,9 +699,13 @@ Local live PgMO cadence folders — not archived
         ↓ generalize (no client names, yen, minutes bodies, inspection results, plant/site names)
 playbooks/program-governance-cadence.md
 playbooks/cross-project-program-management.md
-playbooks/strategy-scn.md  (upstream Gate 1 companion; separate local Strategy-SCN pack)
+playbooks/cross-project-program-management-selfstudy.md
+playbooks/strategy-scn.md  (upstream Gate 1 companion; coach edition)
+playbooks/strategy-scn-selfstudy.md
 playbooks/operations-transition-playbook.md  (downstream Gate 3–5)
+playbooks/operations-transition-playbook-selfstudy.md
 playbooks/stakeholder-activation-playbook.md  (cross-cutting activation tactic)
+playbooks/stakeholder-activation-playbook-selfstudy.md
         ↓ record
 knowledge/migrations/program-governance-cadence-2026-08.md
 knowledge/migrations/cross-project-program-management-2026-08.md

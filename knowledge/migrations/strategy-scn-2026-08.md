@@ -2,37 +2,27 @@
 
 ## Source (not stored in repo)
 
-- `Downloads/Strategy-SCN-Playbook.docx`（v1.2 Pilot coaching draft, 2026-08-27）
-- `Downloads/files/Strategy-SCN-Playbook-Templates.xlsx`（Cover + 9 sheets; Optional Scenario Canvas noted in text）
+- `Downloads/20260829_1434/strategy-scn.md` / `strategy-scn-selfstudy.md`（2026-08-29 最終）
+- `Downloads/20260829_1309/strategy-scn.docx` / `strategy-scn-selfstudy.docx`（構造パリティ。バイナリ不登録）
 
 Anonymous label: **strategy–SCN coaching playbook / 2026**. Originals stay local; binaries not committed.
 
-## Disposition
+## Files adopted
 
-| Asset | Action |
-|-------|--------|
-| SCN definition / KOPT / KPI placement / As-Is–To-Be | Already in `frameworks/strategic-capability-network.md` — **skipped** (pointer only) |
-| Workshop / notation / breadth-depth / creation steps | Already in `standards/scn-creation-guide.md` — **skipped** (Related link added) |
-| 4Cs / logic trees / analysis plan detail | Already in consulting-strategy-process / strategy-engagement-guide — **skipped** (sequence only) |
-| Execution sequence, Gate 1/2, Projectization Health Assessment, KPI verifiability fields, cross-cutting failures, coaching order, template classes | **New** `playbooks/strategy-scn.md` v0.1 |
-| Exercise Data Pack / sample answers / yen / personal review checklist / revision dump | **Excluded** |
+- `playbooks/strategy-scn.md` — repo **v0.3**（coach）
+- `playbooks/strategy-scn-selfstudy.md` — repo **v0.3**（mentee; same types, second person, no `playbooks/` paths in body）
 
-## Architecture choice
+## What was registered (2026-08-29)
 
-Playbook = how to execute. Framework + creation guide keep “what / how to draw.” High overlap on SCN body → prefer **one new playbook** rather than extending creation guide.
+Gate 1〜5 のシリーズ図、①演習を②③横串と同じ基幹刷新ケースに接続、Commitment 4段階（Gate 1 は Sponsor の Buy-in まで）、7.2 と② 2.7 の Health Assessment 対応表。定義・記法は既存 framework / creation guide へ。
 
-## Template classes registered (fields only)
+## Excluded
 
-4Cs＆1Q; Logic Tree; Analysis Plan; Finding Sheet; Value Worksheet; SCN Canvas; KPI Design; Option Evaluation; Program Charter. Optional: Scenario Canvas.
-
-## Housekeeping
-
-- `CONTEXT_ROUTING.md` — Strategy Engagement / IT Strategy / SCN / Transformation PMO
-- `knowledge/index/master-index.md`, `legacy-source-index.md` Program Line D
-- Cross-link from SCN framework / creation guide / Cross-Project Playbook
+- docx / xlsx
+- 金額・社名・演習 Data Pack の固有事実
 
 ## Suggested commit message
 
 ```text
-add(playbooks): strategy-SCN coaching playbook (Gate 1) from local v1.2
+update(playbooks): strategy-SCN v0.3 with selfstudy pair and Gate 1–5 map
 ```

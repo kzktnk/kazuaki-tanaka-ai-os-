@@ -2,17 +2,17 @@
 type: playbook
 ---
 
-# Operations Transition Playbook
+# Operations Transition Playbook【自己学習版】
 
 **Version:** v0.2  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
-**Purpose:** AMS・インフラ運用・AI運用への **移行設計** と、運用開始後の **定着化** を Transition Manager 一人称で進める  
-**Use when:** 実現化工程の後半から運用へ渡す、他社運用の take-on、定着が「説明した」で止まっている  
-**Do not use as-is for:** 日々の運用実務そのもの、PJ 間の統合管理（`playbooks/cross-project-program-management.md`）、戦略〜Gate 1（`playbooks/strategy-scn.md`）、個々の相手を動かす技術（`playbooks/stakeholder-activation-playbook.md`）、全社 AI ガバナンス（`frameworks/ai-governability.md`）  
-**Source revision:** local Operations Transition Playbook 2026-08-29（Gate 3–5 / Core vs Experimental / selfstudy pair）
+**Purpose:** AMS・インフラ運用・AI運用への **移行設計** と定着化を、一人で読み進めながら Transition Manager として進める  
+**Use when:** 実現化工程の後半から運用へ渡す、他社運用の take-on、定着が「説明した」で止まっている（指導者なし）  
+**Do not use as-is for:** 日々の運用実務そのもの、②の PJ 間統合、①の戦略〜Gate 1、個々の相手を動かす技術（横串）、全社 AI ガバナンス  
+**Source:** ③本編（`playbooks/operations-transition-playbook.md`）の自己学習版。2026-08-29。主張・型・表・演習は本編と同一。パス参照は冊名・章番号に置き換え。
 
-Pairs with `frameworks/delivery-leadership.md`（service introduction）、`frameworks/service-transition-approach.md`（take-on）、`frameworks/ams-services-pyramid.md` / `frameworks/application-outsourcing-solution-planning.md`（工数）、`frameworks/infrastructure-outsourcing-solution-planning.md`、`frameworks/change-management.md`（定着）。上流②の Gate 2 のあと、Gate 3〜5 で接続する。相手を実際に動かす技術は `playbooks/stakeholder-activation-playbook.md`。Chapter 5・6 は Experimental（`ai-operations-role-design.md` 未登録）。一人で読むときは `playbooks/operations-transition-playbook-selfstudy.md`。
+Chapter 5・6 は Experimental。AI 運用を伴わない案件では読み飛ばしてよい。
 
 ## このPlaybookの目的
 
@@ -24,31 +24,31 @@ Pairs with `frameworks/delivery-leadership.md`（service introduction）、`fram
 
 AMS・インフラ運用・AI運用の日々の運用実務そのもの（インシデント対応、監視、保守作業など）は、各運用チーム・ベンダーの役割であり、本Playbookの対象外である。本Playbookが対象とするのは、**運用が始まる前の「移行設計」と、運用が始まった後の「定着」**である。
 
-**成熟度**：Chapter 1〜4・7〜8は複数回の外部レビューを経た Core である。Chapter 5・6（AI運用のタスク・役割・スキル設計）は、姉妹framework `ai-operations-role-design.md` の確定待ちの **Experimental** であり、AI運用を伴わない案件を担当する場合はChapter 5・6を読み飛ばしてよい（詳細はChapter 5・6冒頭にも個別に明示）。
+**成熟度**：Chapter 1〜4・7〜8は複数回の外部レビューを経た Core である。Chapter 5・6（AI運用のタスク・役割・スキル設計）は、姉妹framework（AI運用ロール設計）の確定待ちの **Experimental** であり、AI運用を伴わない案件を担当する場合はChapter 5・6を読み飛ばしてよい（詳細はChapter 5・6冒頭にも個別に明示）。
 
 **射程の明示**：本Playbookは、次の既存frameworkの内容を土台に、Transition Manager一人称の実務手順として再構成した実務Playbookである。各frameworkの理論的背景・他資産とのnetwork上の位置づけは、それぞれの原典を参照されたい。
 
 | 本Playbookが扱う実務 | 土台とする既存framework |
 |---|---|
-| 自PJからの運用引き継ぎ（Chapter 2） | `frameworks/delivery-leadership.md`「Service introduction」 |
-| 他社からのTransition（Chapter 3） | `frameworks/service-transition-approach.md`、`frameworks/delivery-leadership.md`「Service transition」 |
-| 工数見積もり（Chapter 4） | `frameworks/application-outsourcing-solution-planning.md` Phase 3「Size & source」、`frameworks/ams-services-pyramid.md` |
-| インフラ運用固有の論点（Chapter 3・4内） | `frameworks/infrastructure-outsourcing-solution-planning.md` |
-| 定着化・チェンジマネジメント（Chapter 7） | `frameworks/change-management.md` |
+| 自PJからの運用引き継ぎ（Chapter 2） | Delivery Leadership の Service introduction |
+| 他社からのTransition（Chapter 3） | Service Transition Approach、Delivery Leadership の Service transition |
+| 工数見積もり（Chapter 4） | Application Outsourcing Solution Planning の Size & source、AMS Services Pyramid |
+| インフラ運用固有の論点（Chapter 3・4内） | Infrastructure Outsourcing Solution Planning |
+| 定着化・チェンジマネジメント（Chapter 7） | チェンジマネジメントの原典フレームワーク |
 
-一方、AI運用のタスク・役割・責任・スキルレベル設計（Chapter 5・6）は既存frameworkが手薄な領域である。本Playbookは、姉妹framework `frameworks/ai-operations-role-design.md`（`frameworks/ai-role-maturity.md`と対になる位置づけ）を参照し、Transition Managerがそれをどう実務に適用するかを扱う。
+一方、AI運用のタスク・役割・責任・スキルレベル設計（Chapter 5・6）は既存frameworkが手薄な領域である。本Playbookは、姉妹framework（AI運用ロール設計。全社的なAI活用浸透ロール設計と対になる位置づけ）を参照し、Transition Managerがそれをどう実務に適用するかを扱う。
 
 また、次の既存資産とは次の理由で棲み分ける。
 
-- `frameworks/ai-governability.md`／`frameworks/ai-management-office.md`／`knowledge/patterns/ai-coe-vs-pgmo-vs-change.md`：AI活用全体のガバナンス・CoE設計を扱う全社レベルの資産である。本Playbookは特定プログラムにおける移行実務に絞る点で異なる。
-- `frameworks/ai-role-maturity.md`：全社的なAI活用浸透の5ロール（User／Manager／Governor／Developer／Executive）を扱う。本PlaybookのAI運用チーム自体のロール設計（`ai-operations-role-design.md`で扱う）とは対象が異なる。
+- AI活用全体のガバナンス・CoE設計を扱う全社レベルの資産（別紙）とは、本Playbookが特定プログラムの移行実務に絞る点で異なる。
+- 全社的なAI活用浸透の5ロール（User／Manager／Governor／Developer／Executive）を扱う資産（別紙）とは、本PlaybookのAI運用チーム自体のロール設計とは対象が異なる。
 
 ### Playbookシリーズにおける本書の位置づけ
 
 本Playbookは単独で完結するものではなく、次の3段階からなるコンサルティング業務の一連の流れのうち、最後（実現化後の安定運用・定着化）を担うものと位置づけている。
 
 ```text
-① 戦略立案・SCN Playbook（`playbooks/strategy-scn.md`）
+① 戦略立案・SCN Playbook
    IT戦略を含む戦略立案 → SCNによるCapability／Enablerへの分解 → KPI設定 → Gate 1 プロジェクト化
                         │
                         ▼
@@ -62,16 +62,18 @@ AMS・インフラ運用・AI運用の日々の運用実務そのもの（イン
 
 ②から③への引き継ぎ地点は、単一のタイミングではなくGate構造で1.3に定義する。①はGate 1（Strategic Projectization Complete）を経て②に接続し、②はGate 2（Execution Mobilization Ready）から着手する。本Playbookは②の範囲を前提としつつ、実現化工程そのもの（②の対象）には立ち入らないことを原則とする。
 
-## 使い方
+## 使い方（自己学習版について）
+
+本書は、③本編（指導者同席前提）を、一人で読み進める自己学習者向けに再構成した版である。内容・型・図表は本編と同一であり、要約や省略は行っていない。Chapter 8の演習も、指導者との対話ではなく、自分のペースで、自分で参考解答と照らし合わせながら進める前提に変更している。
 
 1. Chapter 1で「Transition Managerは何を管理するのか」という視点を作る
 2. Chapter 2〜4で、運用への移行（自PJからの引き継ぎ／他社からのTransition／工数見積もり）を設計する型を学ぶ
-3. Chapter 5〜6で、AI運用のタスク・役割・責任・スキル・教育ロードマップを設計する型を学ぶ（`ai-operations-role-design.md`と対で使う）
+3. Chapter 5〜6で、AI運用のタスク・役割・責任・スキル・教育ロードマップを設計する型を学ぶ（姉妹framework「AI運用ロール設計」と対で使う）
 4. Chapter 7で、定着化をチェンジマネジメントとして進める型を学ぶ
 5. Chapter 8の演習で、実在に近いケースを使って一通り自分の手で作ってみる
 6. Appendixのテンプレートを、自分が実際に担当するプログラムに当てはめて埋める
 
-読むだけで終わらせず、必ずChapter 8の演習、または自分が担当する実プログラムのどちらかで手を動かすところまでをワンセットとする。一人で進める場合は `playbooks/operations-transition-playbook-selfstudy.md`（自己学習版）を使う。本編は指導者同席を前提に repo 参照を残しているが、自己学習版では冊名・章番号の参照に置き換えている。
+読むだけで終わらせず、必ずChapter 8の演習、または自分が担当する実プログラムのどちらかで手を動かすところまでをワンセットとする。各Chapter末の振り返りメモは、指導者に問われて答えるものではなく、自分自身に問いかけるものとして使う。答えに詰まった項目があれば、そこが理解の甘い場所である。一人で判断がつかない場合は、無理に自己完結させず、先輩・上司に短く相談してよい。
 
 ---
 
@@ -107,14 +109,14 @@ AI活用の役割・スキル計画  →  AI運用チームの役割設計      
 | 移行設計（Transition Plan・KT計画） | 一次責任 | 計画への協力・KTの実行 |
 | デューデリジェンス（他社引き継ぎ時） | 一次責任 | 既存ベンダーとしての開示協力（該当する場合） |
 | 工数見積もり・体制設計 | 統合責任／成立性確認責任（作成自体はService Lead等が担う場合もある） | 見積りの作成、前提となる実態情報の提供 |
-| AI運用の役割・スキル設計 | 統合責任／成立性確認責任（`ai-operations-role-design.md`を用いる） | 設計の作成・協力、現場実態のフィードバック |
+| AI運用の役割・スキル設計 | 統合責任／成立性確認責任（姉妹framework「AI運用ロール設計」を用いる） | 設計の作成・協力、現場実態のフィードバック |
 | 定着化のモニタリング | 一次責任 | 新しい運用への適応・フィードバック |
 
 工数見積もり・体制設計とAI運用の役割・スキル設計は、案件によってはService Delivery Manager・Solution Architect・AMS Solution Lead・Infrastructure Lead・AI Product Ownerなどが作成の一次責任を持つ場合がある。その場合もTransition Managerは、Transition前提（デューデリジェンスの結果、Wave計画、Ramp-upのタイミング）と整合しているかを確認する統合責任を持つ。本Playbookでどこまでの責任をTransition Managerに持たせるかは、育成対象・組織構造に応じて調整してよい。
 
 ### 1.3 ②（PgMO）との接続点 ―― Gate構造による橋渡し
 
-①はGate 1（Strategic Projectization Complete）を経て②へ接続し、②はGate 2（Execution Mobilization Ready）から着手する（`playbooks/strategy-scn.md`、`playbooks/cross-project-program-management.md`）。②から③への接続も、同じ考え方でGateを置く。
+①はGate 1（Strategic Projectization Complete）を経て②へ接続し、②はGate 2（Execution Mobilization Ready）から着手する（①、②）。②から③への接続も、同じ考え方でGateを置く。
 
 > ②から③への引き継ぎ地点は「Steady Stateに入るタイミング」ではない。Transition Planの設計は②の実現化工程が完了に近づく段階から並行して始まるため、引き継ぎはもっと早い時点から段階的に進む。
 
@@ -194,7 +196,7 @@ PgMOとTransition Managerは、1.3で述べた通り一時期並走する。両�
 
 実務では、この2つが1つのプログラムの中で同時に発生することも珍しくない（例：新規開発部分は自PJからの引き継ぎ、既存の周辺システムは他社からのTransition）。その場合は、対象システムごとに「運用実態が既知か、発見が必要か」でどちらのシナリオに当たるかを最初に仕分けることが、Chapter 2・3を使う前提になる。
 
-### レビュー用メモ（本人との議論用）
+### 振り返りメモ（自己学習用）
 - [ ] 「運用実務そのものではなく移行設計と定着を管理する」を自分の言葉で説明できるか
 - [ ] 自分のプログラムでPgMOとTransition Managerが同一人物か別人か、整理できているか
 - [ ] 担当する対象システムが、シナリオA（自PJ引き継ぎ）とシナリオB（他社Transition）のどちらに当たるか、システムごとに仕分けられているか
@@ -250,7 +252,7 @@ Service Introductionで最も誤解されやすいのがWarranty（保証）期�
 
 自PJからの引き継ぎでは、開発チームが「自分たちには当たり前すぎて、わざわざ説明するまでもない」と感じている情報ほど、実は運用チームにとって最も欠けている情報であることが多い。これは他社から引き継ぐ場合には（お互い前提が違うことが明白なため）むしろ起きにくく、自PJ引き継ぎに特有のリスクである。KT実施前に、開発チームに「運用チームに聞かれて即答できなかったこと」を振り返らせる、または実際に運用チームに一次対応させてみて詰まった箇所を洗い出す、といった形で、暗黙化した前提を意図的に掘り起こす必要がある。
 
-### レビュー用メモ（本人との議論用）
+### 振り返りメモ（自己学習用）
 - [ ] 担当システムのGo/No-Go基準を、移行日直前ではなく今の時点で明文化できているか
 - [ ] Warrantyの対象範囲・期間・体制の3点を、運用チームと合意できているか
 - [ ] 開発チームに「当たり前すぎて説明していないこと」を意識的に振り返らせたか
@@ -380,7 +382,7 @@ ERP導入プロジェクトの後にAMSが立ち上がる場合、次のパタ�
 
 このパターンでは、シナリオA（自PJ引き継ぎ、Chapter 2）とシナリオB（他社Transition、Chapter 3）が同時並行で発生する。導入パートナー自身がAMSも担う場合はシナリオAに近づき、別会社がAMSを担う場合はシナリオBの要素が強くなる。
 
-### レビュー用メモ（本人との議論用）
+### 振り返りメモ（自己学習用）
 - [ ] デューデリジェンスの5観点（ドキュメント・属人化・チケット履歴・環境アクセス・契約）を、Transition Plan着手前に確認したか
 - [ ] Waveに分けるべき理由が、担当プログラムにあるかどうかを判断できたか
 - [ ] Sign-offの基準を「セッションを受けた」ではなく「独力で対応できる」で設計できているか
@@ -396,7 +398,7 @@ ERP導入プロジェクトの後にAMSが立ち上がる場合、次のパタ�
 1. デューデリジェンス（Chapter 3.1）で把握した「実態」（As-Is）
 2. To-Beの運用モデル（誰が、どのレベルで、何を担うか）
 
-この構造は、Pattern 2（As-Is → Gap → To-Be、`frameworks/thinking-patterns/pattern-02-as-is-gap-to-be.md`）そのものである。As-Isを飛ばしてTo-Beと見積もりを先に進めると、Gapの根拠がないまま数字だけが独り歩きする。
+この構造は、「As-Is → Gap → To-Be」という思考パターンそのものである。As-Isを飛ばしてTo-Beと見積もりを先に進めると、Gapの根拠がないまま数字だけが独り歩きする。
 
 なお、見積もりの作成自体はService Delivery ManagerやSolution Architectが担う案件もある。その場合もTransition Managerは、1.2で述べた統合責任として、見積もりがデューデリジェンスの結果・Wave計画・移行期のRamp-upと整合しているかを確認する。
 
@@ -477,7 +479,7 @@ ERP導入プロジェクトの後にAMSが立ち上がる場合、次のパタ�
 | 前提を書かずに数字だけ提示する | 4.5のAssumption明文化を徹底する |
 | 移行期の工数を定常運用と同じ前提で見積もる | 4.4のシニア層厚めの移行期設計を織り込む |
 
-### レビュー用メモ（本人との議論用）
+### 振り返りメモ（自己学習用）
 - [ ] デューデリジェンスとTo-Be運用モデルの両方が固まってから見積もりに着手しているか
 - [ ] スコープ階層（L1〜L3）と運用階層（L1〜L3）を区別して会話できているか
 - [ ] 見積もりの前提（Assumption）を、後から検証できる形で書き残しているか
@@ -486,7 +488,7 @@ ERP導入プロジェクトの後にAMSが立ち上がる場合、次のパタ�
 
 ## Chapter 5. AI運用のタスク・役割・責任設計
 
-> **成熟度：Experimental（Pending framework validation）** ―― 本Chapterは`frameworks/ai-operations-role-design.md`（Status: Draft）を土台にしている。同frameworkがレビューされ確定するまで、4ロール構成・社内外の切り分けなどの記述は暫定として扱うこと。Chapter 2〜4・7（比較的成熟）とは扱いを分ける。
+> **成熟度：Experimental（Pending framework validation）** ―― 本Chapterは姉妹framework（AI運用ロール設計、Status: Draft）を土台にしている。同frameworkがレビューされ確定するまで、4ロール構成・社内外の切り分けなどの記述は暫定として扱うこと。Chapter 2〜4・7（比較的成熟）とは扱いを分ける。
 
 ### 5.1 いつAI運用の設計を始めるか ―― AMS・インフラ運用との違い
 
@@ -494,11 +496,11 @@ Chapter 2・3で扱ったAMS・インフラ運用の移行には、必ず「引�
 
 > AI運用の体制設計は、Transition Planの実行段階ではなく、対象AIシステムのスコープが固まった時点から始める。
 
-AMS・インフラ運用の引き継ぎがTransition Plan（Chapter 3）の実行フェーズで具体化するのに対し、AI運用は体制そのものをゼロから設計する必要があるため、着手のタイミングを早める。目安として、②の実現化工程でAIシステムの要件が固まった段階（本番稼働の3〜6か月前が目安になることが多い）で、`frameworks/ai-operations-role-design.md`を使ったタスクの棚卸しに着手する。
+AMS・インフラ運用の引き継ぎがTransition Plan（Chapter 3）の実行フェーズで具体化するのに対し、AI運用は体制そのものをゼロから設計する必要があるため、着手のタイミングを早める。目安として、②の実現化工程でAIシステムの要件が固まった段階（本番稼働の3〜6か月前が目安になることが多い）で、AI運用ロール設計の姉妹frameworkを使ったタスクの棚卸しに着手する。
 
 ### 5.2 タスクの棚卸し ―― 6カテゴリを対象システムに当てはめる
 
-`ai-operations-role-design.md`が定義する6つのタスクカテゴリ（モデル・品質監視／プロンプト・モデル管理／Human-in-the-Loopの運用／再学習・更新サイクル／フィードバックとナレッジ化／コスト・利用状況モニタリング）は、すべてのAIシステムに同じ重みで当てはまるわけではない。対象システムごとに、次のように棚卸しする。
+姉妹framework「AI運用ロール設計」が定義する6つのタスクカテゴリ（モデル・品質監視／プロンプト・モデル管理／Human-in-the-Loopの運用／再学習・更新サイクル／フィードバックとナレッジ化／コスト・利用状況モニタリング）は、すべてのAIシステムに同じ重みで当てはまるわけではない。対象システムごとに、次のように棚卸しする。
 
 | カテゴリ | 確認する問い |
 |---|---|
@@ -513,7 +515,7 @@ AMS・インフラ運用の引き継ぎがTransition Plan（Chapter 3）の実�
 
 ### 5.3 体制の初期設計 ―― 4ロールを何人でどう埋めるか
 
-小規模なプログラムでは、`ai-operations-role-design.md`が定義する4ロール（AI Ops Monitor／Engineer／HITL Reviewer／Lead）を、4人の専任者で埋められるとは限らない。実務でよくある組み方は次の通りである。
+小規模なプログラムでは、姉妹framework「AI運用ロール設計」が定義する4ロール（AI Ops Monitor／Engineer／HITL Reviewer／Lead）を、4人の専任者で埋められるとは限らない。実務でよくある組み方は次の通りである。
 
 - 立ち上げ期は、Monitor役とEngineer役を1名が兼任することが多い（タスク量が少ないため）
 - HITL Reviewerは、多くの場合専任ではなく、業務部門のドメインエキスパートが稼働の一部を割く形になる
@@ -530,18 +532,18 @@ AMS・インフラ運用の引き継ぎがTransition Plan（Chapter 3）の実�
 | 日次アラートへの一次対応 | AI Ops Monitor | ― | ― |
 | モデル・プロンプトの変更 | AI Ops Engineer | HITL Reviewer | AI Ops Lead |
 | フラグの立った個別判断の上書き | HITL Reviewer | ― | ― |
-| 再学習の実施判断 | AI Ops Lead | AI Ops Engineer、HITL Reviewer | Governor（`ai-role-maturity.md`） |
+| 再学習の実施判断 | AI Ops Lead | AI Ops Engineer、HITL Reviewer | Governor（全社AI活用浸透ロールの原典） |
 | AI運用の停止・縮退判断 | AI Ops Lead | Transition Manager | Governor、Executive |
 
-「再学習の実施判断」「停止・縮退判断」は、`ai-governability.md`のRisk Ownership原則に沿い、AI Ops Lead単独ではなくGovernorへのエスカレーションを経由する設計とする。
+「再学習の実施判断」「停止・縮退判断」は、AIガバナンスの原典が定めるRisk Ownership原則に沿い、AI Ops Lead単独ではなくGovernorへのエスカレーションを経由する設計とする。
 
 ### 5.5 社内外判断を体制・契約に落とす
 
-`ai-operations-role-design.md`の社内外の切り分けは、実際の体制設計では次の順序で適用する。
+姉妹framework「AI運用ロール設計」の社内外の切り分けは、実際の体制設計では次の順序で適用する。
 
 1. 立ち上げ期は、4ロールすべてを内製で立ち上げる（外部化前提で設計すると、5.2で洗い出したタスクの重み付けが検証できないまま契約してしまう）
 2. Hypercare終了後、実績とRunbookが十分に蓄積されたタスクから、AI Ops Monitorの外部化を検討する
-3. Engineer・HITL Reviewer・Leadは、原則として内製を維持する（`ai-operations-role-design.md`の判断基準通り）
+3. Engineer・HITL Reviewer・Leadは、原則として内製を維持する（姉妹framework「AI運用ロール設計」の判断基準通り）
 
 外部化を検討する際も、AI Ops Engineerの技術的な窓口機能（プロンプト・モデルの変更判断）は自社に残す。これは、Chapter 3.2のTransition Planの原則（責任移転の前にKTを完了させる）と同じ考え方で、外部化する場合もKTに相当する引き継ぎ期間を設ける。
 
@@ -555,7 +557,7 @@ AI運用の体制設計は、Chapter 3のTransition Lifecycleと並行して進�
 | AI運用体制確定（4ロールの割当） | Transition Kickoffと同時期 |
 | HITLレビュープロセスの試行運用開始 | Pilot／並行run開始と同時期 |
 
-### レビュー用メモ（本人との議論用）
+### 振り返りメモ（自己学習用）
 - [ ] 担当するAIシステムについて、5.2の6カテゴリ棚卸しを実施できたか
 - [ ] 4ロールの立ち上げ期の組み方（兼任パターン）を、実際の体制に当てはめられたか
 - [ ] 「再学習」「停止・縮退」の判断がGovernorへのエスカレーションを経由する設計になっているか
@@ -564,11 +566,11 @@ AI運用の体制設計は、Chapter 3のTransition Lifecycleと並行して進�
 
 ## Chapter 6. AI運用のスキル・レベル・教育ロードマップ
 
-> **成熟度：Experimental（Pending framework validation）** ―― Chapter 5と同じ理由により、本Chapterも`frameworks/ai-operations-role-design.md`のレビュー確定まで暫定として扱うこと。
+> **成熟度：Experimental（Pending framework validation）** ―― Chapter 5と同じ理由により、本Chapterも姉妹framework（AI運用ロール設計）のレビュー確定まで暫定として扱うこと。
 
 ### 6.1 現在地を測る ―― 誰がどのレベルにいるか
 
-`ai-operations-role-design.md`のRole × Maturity Levelを使って、まず現在のメンバーがどのレベルにいるかを可視化する。自己申告だけに頼らず、次のような具体的な証跡で判断する。
+姉妹framework「AI運用ロール設計」のRole × Maturity Levelを使って、まず現在のメンバーがどのレベルにいるかを可視化する。自己申告だけに頼らず、次のような具体的な証跡で判断する。
 
 - Level 1〜2の判定：既知のインシデント種別について、Runbookなしで対応手順を説明できるか
 - Level 3の判定：過去3か月で、モニタリング閾値やRunbookの改善を1件以上提案した実績があるか
@@ -578,7 +580,7 @@ AI運用の体制設計は、Chapter 3のTransition Lifecycleと並行して進�
 
 ### 6.2 教育ロードマップを組み立てる
 
-`ai-operations-role-design.md`のCore／Domain／Missionの3層に沿って、次の順で教育計画を組み立てる。
+姉妹framework「AI運用ロール設計」のCore／Domain／Missionの3層に沿って、次の順で教育計画を組み立てる。
 
 1. **Core（年次）**：全メンバー共通。監視ツールの操作、Runbookの理解、インシデント対応の基本。立ち上げ期は、ここを最優先で固める
 2. **Domain（四半期）**：担当するユースケース群に共通するモデル知識。既存のAMS運用者にAI運用を追加する場合、ここが最大のギャップになりやすい
@@ -594,9 +596,9 @@ AI運用は新しい機能であることが多く、プログラム開始時点
 |---|---|
 | 外部人材の期間限定招聘 | 早期にLevel 3以上の判断が必要で、社内育成を待てない場合 |
 | 外部ベンダーとの伴走型契約 | AI Ops Engineerの技術面を、契約期間中に併走しながら内製化していく場合 |
-| Governor・Developer（`ai-role-maturity.md`）からの一時的な支援 | 全社的にAI活用を推進する体制が既にあり、そこから応援を受けられる場合 |
+| Governor・Developer（全社AI活用浸透ロール）からの一時的な支援 | 全社的にAI活用を推進する体制が既にあり、そこから応援を受けられる場合 |
 
-いずれの場合も、最終的にはLevel 3以上を内製で持つことを目標とする（`ai-operations-role-design.md`の社内外の切り分けで、Engineer・Lead は内製が基本とされているため）。外部人材・ベンダーの活用は、内製化までの橋渡しと位置づける。
+いずれの場合も、最終的にはLevel 3以上を内製で持つことを目標とする（姉妹framework「AI運用ロール設計」の社内外の切り分けで、Engineer・Lead は内製が基本とされているため）。外部人材・ベンダーの活用は、内製化までの橋渡しと位置づける。
 
 ### 6.4 Transition Planとの時間関係
 
@@ -622,7 +624,7 @@ Chapter 7.6で定義した定着化のモニタリング指標に、AI運用チ�
 
 レベル分布は一度作って終わりにせず、Chapter 7.6の他の定着化指標と同じタイミングでSteering Committeeへ報告し、教育計画の進捗として扱う。
 
-### レビュー用メモ（本人との議論用）
+### 振り返りメモ（自己学習用）
 - [ ] 6.1の判定基準で、担当チームのメンバーを実際にレベル分けできたか
 - [ ] 社内にLevel 3以上の人材がいない場合、6.3のどの選択肢が現実的か判断できたか
 - [ ] Core層教育の完了を、Pilot／並行run開始前のGo/No-Go基準（Chapter 2.2と同様の考え方）に組み込めているか
@@ -641,7 +643,7 @@ Transition Managerは、Transition Close（技術的な完了）と定着化（�
 
 ### 7.2 Readiness ―― 定着化の準備は移行設計と同時に始める
 
-`frameworks/change-management.md`のチェンジマネジメントの原則は、コミュニケーション計画を立てる前に、まずReadiness（組織がこの変化を吸収できるか）を確認することを求めている。運用移行においても同様で、Transition Plan（Chapter 3）の設計と並行して、次を確認しておく。
+チェンジマネジメントの原則は、コミュニケーション計画を立てる前に、まずReadiness（組織がこの変化を吸収できるか）を確認することを求めている。運用移行においても同様で、Transition Plan（Chapter 3）の設計と並行して、次を確認しておく。
 
 - 過去に運用ベンダー・運用チームが交代した経験があるか。あった場合、その時の受け止められ方はどうだったか
 - 現場が最も抵抗を示しそうな変化は何か（窓口が変わること自体か、対応スピードへの不安か、旧担当者との関係が切れることへの寂しさか）
@@ -677,7 +679,7 @@ Wave計画を技術的な観点だけで決めてしまうと、この変化面�
 
 現場に伝えるべきことは、次の3点に集約できる。**なぜ運用者が変わるのか／それが自分たちの部署にとって何を意味するのか／自分は具体的に何をどう変える必要があるのか**。この3点目（自分ごと）まで届いていない案内は、現場にとって「お知らせ」でしかなく、行動は変わらない。
 
-> 現場が今どの段階にいるかはここで分かる。そこから実際に相手を動かす具体的な技術は、`playbooks/stakeholder-activation-playbook.md`（Stakeholder Activation Playbook）に譲る。要点は7.8にまとめている。
+> 現場が今どの段階にいるかはここで分かる。そこから実際に相手を動かす具体的な技術は、横串Playbook（Stakeholder Activation Playbook）に譲る。要点は7.8にまとめている。
 
 ### 7.5 移行後のトーン変化 ―― Soft Landingとその先
 
@@ -715,7 +717,7 @@ Adoption Definition of Doneは、Transition Closeの報告とは別に、Steerin
 
 ### 7.8 Stakeholder Activationへの接続 ―― 状態を見た後、どう動かすか
 
-7.4で見た「相手が今どの段階（Unawareness〜Ownership）にいるか」は、あくまで現在地の診断である。そこから相手を実際に動かす具体的な技術は、姉妹Playbook `playbooks/stakeholder-activation-playbook.md`（①②③共通で参照する横串Playbook）に譲る。要点だけ示すと、次の5ステップである。
+7.4で見た「相手が今どの段階（Unawareness〜Ownership）にいるか」は、あくまで現在地の診断である。そこから相手を実際に動かす具体的な技術は、姉妹Playbook（①②③共通で参照する横串Playbook）に譲る。要点だけ示すと、次の5ステップである。
 
 1. **Segment**：全員を同じ熱量で説得せず、動きそう度×影響力で仕分ける
 2. **Diagnose**：動かない理由をLogic／Emotion／Ability／Incentive-Environmentで診断する
@@ -725,7 +727,7 @@ Adoption Definition of Doneは、Transition Closeの報告とは別に、Steerin
 
 Transition Managerが7.4のCommitment段階で現場を動かせず足踏みしている場合、次に見るべきはこのStakeholder Activation Playbookである。
 
-### レビュー用メモ（本人との議論用）
+### 振り返りメモ（自己学習用）
 - [ ] Transition Close（技術的完了）と定着化（実質的完了）を、別のマイルストーンとして扱えているか
 - [ ] 担当プログラムのWave設計（Chapter 3.4）に、変化面の判断が織り込まれているか
 - [ ] 7.6の指標を、実際にどう測るか（データソース）を具体化できているか
@@ -765,9 +767,9 @@ Transition Managerが7.4のCommitment段階で現場を動かせず足踏みし�
 9. 追加されたAI機能について、6カテゴリのタスク棚卸しを実施する（Chapter 5.2）
 10. AI運用の初期体制・責任分担・教育ロードマップを設計する（Chapter 5.3〜5.6、Chapter 6）
 
-### 進め方（90分×4回を推奨。Session 1〜3をCore、Session 4をAdvancedとして分けてもよい）
+### 進め方（目安：90分×4回。自分のペースで進めてよい）
 
-Session 1〜3（仕分け・Transition Plan・定着化）は、AMS・インフラ運用の移行を担うすべてのTransition Manager候補が対象になる。Session 4（AI運用）は、AI運用を伴うプログラムを担当する場合に限定してよい。AI案件を担当しない候補者にまでSession 4を必須にすると、本Playbook全体が「AI運用の教材」であるかのように誤解されるおそれがある。
+Session 1〜3（仕分け・Transition Plan・定着化）は、AMS・インフラ運用の移行を担うすべてのTransition Manager候補に共通する。Session 4（AI運用）は、AI運用を伴うプログラムを担当する場合に取り組めばよい。AI案件を担当しない場合にまでSession 4を無理に進める必要はない。
 
 **Session 1：仕分けとデューデリジェンス（90分）**
 
@@ -803,7 +805,7 @@ Session 1〜3（仕分け・Transition Plan・定着化）は、AMS・インフ�
 
 ### 演習の参考解答（例）
 
-指導者側が答え合わせに使うための記入例。本人の解答をそのまま置き換えさせるのではなく、「観点が抜けていないか」を照らし合わせる目的で使う。
+自分の解答と照らし合わせるための記入例である。そのまま正解として書き写すのではなく、「自分の解答に抜けている観点はないか」を確認する目的で使う。
 
 **Session 1（仕分けとデューデリジェンス）の記入例**
 
@@ -860,7 +862,7 @@ Wave設計への変化面の追加：周辺システムのTransitionは、既存
 
 Level 3以上の人材確保の例：PJ-B開発チームにLLM運用経験者がいない場合、Chapter 6.3の「外部ベンダーとの伴走型契約」を選び、Hypercare期間中に技術面を併走しながら内製化する計画とする。Core層教育の完了目標は、Pilot／並行run開始（Chapter 3.3）の1か月前に設定する。
 
-### レビュー用メモ（本人との議論用）
+### 振り返りメモ（自己学習用）
 - [ ] シナリオA・Bの仕分けを、実プログラムの対象システムに置き換えられるか
 - [ ] デューデリジェンスで最もリスクが高い観点を、根拠とともに説明できるか
 - [ ] AI機能のタスク棚卸し（Session 4）で、6カテゴリの該当・非該当を適切に判断できたか
@@ -892,3 +894,11 @@ No.1〜8・12は、AMS・インフラ運用の移行を担うすべてのプロ�
 ②のRAID Log（②Chapter 8.3）をTransition Category付きで③でも継続利用するため（Chapter 1.3）、③独自のRAIDテンプレートは持たない。
 
 テンプレートは「どの順番で、何を考えて埋めるか」が本文の説明と対になっている。Excelだけを見て進めるのではなく、必ず本文とセットで使うこと。No.6（Estimating Worksheet）は、②のRAID／Decision Logと同様の考え方でAssumption列を持たせ、後から検証できる形にする。
+
+---
+
+## この自己学習版について
+
+本書は、③本編（指導者同席前提）と、内容・型・図表を共有する自己学習版である。一人で読み進め、Chapter 8の演習を自分のペースで解き、分からない箇所があれば先輩・上司に相談しながら学ぶことを想定している。
+
+改訂・外部レビューの経緯など、本書の成立過程に関する記録は本編側に集約している。内容について疑問があれば、本編とあわせて確認してほしい。
