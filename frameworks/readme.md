@@ -38,7 +38,8 @@ Full catalog and cross-links: [`knowledge/index/master-index.md`](../knowledge/i
 | File | Focus |
 |------|--------|
 | `operating-model.md` | Operating model design |
-| `capability-model.md` | Capability mapping |
+| `capability-model.md` | Capability mapping (client organization; not consultant skill) |
+| `consultant-capability-skill-model.md` | Consultant L0–L4 map; which playbook to hand (draft; ≠ SCN capability) |
 | `maturity-model.md` | Maturity assessment |
 | `transformation-roadmap.md` | Transformation roadmap |
 | `transformation-pmo.md` | Transformation PMO |

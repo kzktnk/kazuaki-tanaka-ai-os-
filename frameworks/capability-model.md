@@ -38,3 +38,6 @@ For workforce planning tied to AI adoption, prefer **Capability × role × phase
 over job-title skill inventories (`frameworks/ai-role-maturity.md`,
 `frameworks/ai-adoption-roadmap.md`). SCN gap nodes can trigger HR updates when
 role maturity lags planned use cases.
+
+Consultant (person) skill and which playbook to hand next is
+`frameworks/consultant-capability-skill-model.md`. Do not merge that map into this file.

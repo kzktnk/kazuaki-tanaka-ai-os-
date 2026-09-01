@@ -7,7 +7,8 @@ extracted: true
 gap_fill: "元xlsxのSheet1(WBS分解シート)STEP1・STEP3に入っていた実案件と思われる記入内容（業務フロー作成、東邦ガス関係者への言及等）は案件情報のため除外し、空欄テンプレートのみ反映。使用例はSheet3(記入例)の「検証計画策定」（案件名を含まない汎用例）をそのまま採用。"
 related:
   - playbooks/wbs-design.md
-last_updated: 2026-08-03
+  - playbooks/wbs-design-selfstudy.md
+last_updated: 2026-09-01
 ---
 
 # WBS分解シート｜上位タスクの詳細化テンプレート

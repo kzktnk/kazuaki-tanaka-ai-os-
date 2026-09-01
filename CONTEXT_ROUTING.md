@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.32
+Version: v1.33
 
 ## Purpose
 
@@ -585,6 +585,28 @@ Outputs:
 - Gap summary for steering / executive discussion
 - Initiative prioritization and resource allocation view
 - Program Charter骨子 and Gate 1 checklist (when projectizing)
+
+---
+
+# Consultant Enablement / Skill Map
+
+Load:
+- frameworks/consultant-capability-skill-model.md
+- frameworks/capability-model.md (client-organization layers only — do not merge into the consultant map)
+- playbooks/wbs-design.md (if L1 / coaching WBS from deliverables)
+- playbooks/wbs-design-selfstudy.md (if L2 / working alone)
+- matching series `*-selfstudy.md` if mapping Capability B–E to L2
+
+Focus:
+- One L0–L4 scale across skills
+- L1 = coach edition; L2 = selfstudy
+- Client capability ≠ consultant skill
+- Hand the next file; do not assign a playbook as a reading list without a level
+
+Outputs:
+- Which capability / skill / level the person is in
+- Which file to hand next
+- Gaps in L3–L4 materials (do not invent independent review playbooks unless asked)
 
 ---
 
