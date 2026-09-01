@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.33
+Version: v1.34
 
 ## Purpose
 
@@ -592,21 +592,26 @@ Outputs:
 
 Load:
 - frameworks/consultant-capability-skill-model.md
+- frameworks/consultant-role-responsibility-model.md (if Role / Responsibility / Required Level)
+- frameworks/pilot-assessment-strategy-consultant.md (if assessing a real person)
+- frameworks/consultant-learning-map-example.md (if generating a person-level Learning Map)
 - frameworks/capability-model.md (client-organization layers only — do not merge into the consultant map)
-- playbooks/wbs-design.md (if L1 / coaching WBS from deliverables)
-- playbooks/wbs-design-selfstudy.md (if L2 / working alone)
-- matching series `*-selfstudy.md` if mapping Capability B–E to L2
+- matching playbook / selfstudy pair for the Skill being developed (e.g. wbs-design.md / wbs-design-selfstudy.md)
 
 Focus:
-- One L0–L4 scale across skills
-- L1 = coach edition; L2 = selfstudy
+- Four Capabilities, 24 Skills; one L0–L4 scale; Evidence is Skill-specific
+- Role sets Required Level; Skill definitions always go to L4
+- Knowledge is Prerequisite (Pass / Not Yet), not a second Level axis
+- AI is a cross-cutting axis, not a Skill
 - Client capability ≠ consultant skill
-- Hand the next file; do not assign a playbook as a reading list without a level
+- For Strategy Consultant, Capability II is L0 (out of scope); other Roles will invert this
+- Next step = Capability Model × Current Level × Assignment (soft Prerequisite)
 
 Outputs:
-- Which capability / skill / level the person is in
-- Which file to hand next
-- Gaps in L3–L4 materials (do not invent independent review playbooks unless asked)
+- Current Level + Assessment Status (Confirmed / Provisional)
+- Role Required Level Gap
+- Learning Map for the next 1–2 Skills
+- Next OJT
 
 ---
 

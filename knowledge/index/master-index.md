@@ -1,10 +1,10 @@
 # Knowledge Master Index
 
-**Version:** v1.22  
+**Version:** v1.23  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
-**Last updated:** 2026-09-01
+**Last updated:** 2026-09-02
 
 ---
 
@@ -71,14 +71,14 @@ kazuaki-tanaka-ai-os/
 ├── CONTEXT_ROUTING.md          ← task-based context selection
 ├── core/                       ← 8 files (kernel)
 ├── standards/                  ← 19 files (quality criteria)
-├── frameworks/                 ← 34 files + thinking-patterns/
+├── frameworks/                 ← 37 files + thinking-patterns/
 ├── playbooks/                  ← 24 playbooks (+ README)
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
 │   ├── patterns/               ← 41 distilled patterns
 │   ├── lessons/                ← 6 lessons
-│   ├── migrations/             ← 33 migration reports
+│   ├── migrations/             ← 34 migration reports
 │   └── decisions/              ← 4 records
 ├── templates/                  ← 1 template
 ├── prompts/                    ← README placeholder
@@ -202,6 +202,9 @@ frameworks/
 │   ├── operating-model.md
 │   ├── capability-model.md
 │   ├── consultant-capability-skill-model.md
+│   ├── consultant-role-responsibility-model.md
+│   ├── consultant-learning-map-example.md
+│   ├── pilot-assessment-strategy-consultant.md
 │   ├── maturity-model.md
 │   ├── transformation-roadmap.md
 │   ├── transformation-pmo.md
@@ -286,7 +289,8 @@ knowledge/
 │   ├── coaching-20260828-change-effort-buyer-gap-2026-08.md
 │   ├── claude-foundations-and-logical-unity-2026-09.md
 │   ├── who-vs-lever-family-2026-09.md
-│   └── wbs-selfstudy-consultant-skill-map-2026-09.md
+│   ├── wbs-selfstudy-consultant-skill-map-2026-09.md
+│   └── consultant-skill-model-v06-2026-09.md
 └── decisions/
     ├── diagnose-from-gateway-not-client-error.md
     ├── sandbox-cost-controls-before-resources.md
@@ -877,6 +881,27 @@ CONTEXT_ROUTING.md  →  Consultant Enablement / Skill Map
 
 ---
 
+### Y. Consultant skill model v0.6 and Role / Pilot (2026-09)
+
+```text
+Local S&T Cons Capa pack — md only; docx not archived
+        ↓ replace v0.1 draft; add Role + Learning Map + Pilot worksheet
+frameworks/consultant-capability-skill-model.md (v0.6, 4 Capability / 24 Skill)
+frameworks/consultant-role-responsibility-model.md (v0.3)
+frameworks/consultant-learning-map-example.md
+frameworks/pilot-assessment-strategy-consultant.md
+        ↓ connect
+frameworks/capability-model.md
+playbooks/operations-transition-playbook.md
+playbooks/stakeholder-activation-playbook.md
+        ↓ record
+knowledge/migrations/consultant-skill-model-v06-2026-09.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  Consultant Enablement / Skill Map
+```
+
+---
+
 ## Level 4 — CONTEXT_ROUTING Task Map (summary)
 
 Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
@@ -887,7 +912,7 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | Customer weekly/monthly status | `deliverable-archetypes.md` Archetype J, `author-voice.md`, `project-management-policy-layer.md`, `support-effort-classification.md`, `change-agent-vs-communication-plan.md` / `unowned-work-in-effort-analysis.md` / `buyer-side-gap-vs-vendor-pmo.md` as needed, cadence / cross-project playbooks |
 | IT strategy | `frameworks/it-strategy-foundations.md`, `standards/it-strategy-engagement-guide.md`, `playbooks/strategy-scn.md` (if SCN → projectization) |
 | Strategy engagement / SCN | `consulting-strategy-process.md`, `strategy-engagement-guide.md`, `strategic-capability-network.md`, `scn-creation-guide.md`, `playbooks/strategy-scn.md` (sequence / Gate 1), `wbs-design.md` if Gate 2 WBS |
-| Consultant enablement / skill map | `frameworks/consultant-capability-skill-model.md`, `capability-model.md` (client org — do not merge), `wbs-design.md` / `wbs-design-selfstudy.md` for L1 / L2 |
+| Consultant enablement / skill map | `frameworks/consultant-capability-skill-model.md` (v0.6), `consultant-role-responsibility-model.md` (Required Level), `pilot-assessment-strategy-consultant.md` if assessing a person, `consultant-learning-map-example.md` if generating a map, `capability-model.md` (client org — do not merge) |
 | PMO / transformation | `frameworks/transformation-pmo.md`, `playbooks/pmo-function-standup.md`, `playbooks/program-governance-cadence.md`, `playbooks/strategy-scn.md` (upstream Gate 1), `playbooks/cross-project-program-management.md`, `playbooks/operations-transition-playbook.md` (Gate 3–5), `playbooks/stakeholder-activation-playbook.md` (if a specific person must act), `knowledge/patterns/related-project-external-coordination-radar.md` (if adjacent/external radar), `knowledge/patterns/pgmo-presence-via-client-stance.md` (if presence lost to trusted incumbent), `knowledge/patterns/buyer-side-gap-vs-vendor-pmo.md` (if vendor PMO is treated as buyer-side gap cover), `knowledge/patterns/transformation-practice-case-pack.md` (if internal practice packaging), `standards/pmo-operating-guide.md`, `knowledge/patterns/project-management-policy-layer.md` (if project-layer policy TOC), Archetype J if customer status, `frameworks/change-management.md` |
 | DX grand design | `frameworks/dx-grand-design.md`, change / roadmap as needed |
 | New venture assessment | `frameworks/new-venture-three-track-assessment.md` |

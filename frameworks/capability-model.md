@@ -40,4 +40,5 @@ over job-title skill inventories (`frameworks/ai-role-maturity.md`,
 role maturity lags planned use cases.
 
 Consultant (person) skill and which playbook to hand next is
-`frameworks/consultant-capability-skill-model.md`. Do not merge that map into this file.
+`frameworks/consultant-capability-skill-model.md`. Role / Required Level is
+`frameworks/consultant-role-responsibility-model.md`. Do not merge those maps into this file.
