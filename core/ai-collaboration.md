@@ -19,7 +19,7 @@ last_updated: 2026-08-03
 AIとの協働において、「答えを聞く」のではなく「自ら考えるためにAIを使う」という基本姿勢を定義する。最終的な妥当性判断は常に人間が担う、という原則を `core/reasoning.md` の推論システムと接続する。
 
 ## Scope
-AIへの依頼の設計、依頼のレベル分け、AIの回答の検証、人とAIの役割分担に適用する。個別ツール（Claude／ChatGPT等）固有の操作方法は対象外（`adapters/` を参照）。
+AIへの依頼の設計、依頼のレベル分け、AIの回答の検証、人とAIの役割分担に適用する。個別ツール（Claude／ChatGPT等）固有の操作方法は対象外（`adapters/claude/CLAUDE.md` 等を参照）。出力の失敗分類は `knowledge/lessons/ai-output-evaluation-terms.md`。
 
 ## Intended Use
 新しい依頼をAIにする前、またはAIの回答をレビューする前に参照する。特にLevel 3（レビュー・批判的検討）としての使い方に迷ったときに立ち返る。
@@ -71,6 +71,8 @@ AIは「選択肢を広げる道具」。最終的な意思決定と妥当性の
 - `core/reasoning.md`（Partner review mode、Suggested Reasoning Rule）
 - `playbooks/wbs-design.md`（Step 5：AIの使い方）
 - `exercises/exercise-05-spotting-plausible-ai-errors.md`
+- `knowledge/lessons/ai-output-evaluation-terms.md`（Accuracy / Completeness / Groundedness）
+- `adapters/claude/CLAUDE.md`（Claude 機能の使い分け）
 
 ---
 **レビュー用メモ（Kazuaki記入欄）**

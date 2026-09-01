@@ -1,10 +1,10 @@
 # Knowledge Master Index
 
-**Version:** v1.19  
+**Version:** v1.20  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
-**Last updated:** 2026-08-29
+**Last updated:** 2026-09-01
 
 ---
 
@@ -76,14 +76,15 @@ kazuaki-tanaka-ai-os/
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
-│   ├── patterns/               ← 39 distilled patterns
-│   ├── lessons/                ← 5 lessons
-│   ├── migrations/             ← 30 migration reports
+│   ├── patterns/               ← 40 distilled patterns
+│   ├── lessons/                ← 6 lessons
+│   ├── migrations/             ← 31 migration reports
 │   └── decisions/              ← 4 records
 ├── templates/                  ← 1 template
 ├── prompts/                    ← README placeholder
 ├── projects/                   ← project template structure
 ├── adapters/cursor/            ← Cursor adapter
+├── adapters/claude/            ← Claude adapter (CLAUDE.md)
 ├── domains/                    ← energy-utilities.md, public-defense.md
 ├── technology/                 ← azure-enterprise.md (parent)
 └── archive/                    ← README placeholder
@@ -246,7 +247,8 @@ knowledge/
 │   ├── dual-roadmap-messaging.md
 │   ├── pmo-professional-principles.md
 │   ├── author-voice-archetypes-legacy.md
-│   └── client-deliverable-voice-jera-2026-08.md
+│   ├── client-deliverable-voice-jera-2026-08.md
+│   └── ai-output-evaluation-terms.md
 ├── migrations/
 │   ├── linkedin-bulk-001-015-sp-erf.md
 │   ├── linkedin-013.md
@@ -280,7 +282,8 @@ knowledge/
 │   ├── fisc-audit-tech-ops-facility-2026-08.md
 │   ├── project-management-policy-layer-2026-08.md
 │   ├── customer-status-weekly-monthly-2026-08.md
-│   └── coaching-20260828-change-effort-buyer-gap-2026-08.md
+│   ├── coaching-20260828-change-effort-buyer-gap-2026-08.md
+│   └── claude-foundations-and-logical-unity-2026-09.md
 └── decisions/
     ├── diagnose-from-gateway-not-client-error.md
     ├── sandbox-cost-controls-before-resources.md
@@ -288,7 +291,7 @@ knowledge/
     └── buyer-owns-ai-poc-ground-truth.md
 ```
 
-### Patterns (39)
+### Patterns (40)
 
 | Pattern | Primary themes |
 |---------|----------------|
@@ -332,6 +335,7 @@ knowledge/
 | `ai-capability-vs-authority.md` | Capability ≠ authority |
 | `authority-levels.md` | Graduated authority design |
 | `jera-scn-ebitda-tree.md` | SCN / EBITDA tree (client voice lesson) |
+| `logical-vs-physical-document-unity.md` | Physical store ≠ logical AI corpus; governance first |
 
 ---
 
@@ -374,6 +378,9 @@ archive/
 
 adapters/cursor/
 └── CURSOR.md                         ← Cursor-specific behavior + migration rules
+
+adapters/claude/
+└── CLAUDE.md                         ← Claude feature differentiation; not a knowledge silo
 ```
 
 ---
@@ -803,6 +810,30 @@ CONTEXT_ROUTING.md  →  Customer Status Report / Transformation PMO / Change Ma
 
 ---
 
+### V. Claude Foundations distillation and logical document unity (2026-09)
+
+```text
+Local CCAO-F post-exam notes + policy-discussion deck — not archived
+        ↓ generalize (no credential, score, client names, schedules, architecture)
+adapters/claude/CLAUDE.md
+knowledge/lessons/ai-output-evaluation-terms.md
+knowledge/patterns/logical-vs-physical-document-unity.md
+        ↓ connect
+core/ai-collaboration.md
+standards/document-management-standard.md
+knowledge/patterns/organizational-memory.md
+knowledge/patterns/connected-organizational-memory.md
+playbooks/ai-poc-quality-review.md
+playbooks/rag-structure-diagnosis.md
+playbooks/responsible-ai-assessment.md
+        ↓ record
+knowledge/migrations/claude-foundations-and-logical-unity-2026-09.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  AI PoC, Responsible AI, AI Adoption, Investigation / Requirements
+```
+
+---
+
 ## Level 4 — CONTEXT_ROUTING Task Map (summary)
 
 Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
@@ -819,10 +850,10 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | B2B sales workflow | `knowledge/patterns/sales-capacity-via-center-functions.md` |
 | Change management | `frameworks/change-management.md`, `all-at-once-vs-stepwise-change.md`, `change-agent-vs-communication-plan.md` (agent hunt ≠ communication plan), `pmo-operating-guide.md` §CM, `playbooks/stakeholder-activation-playbook.md` (person-level), `playbooks/operations-transition-playbook.md` Chapter 7 (ops adoption) |
 | AI CoE / PgMO / Change | `knowledge/patterns/ai-coe-vs-pgmo-vs-change.md`, `ai-management-office.md`, `transformation-pmo.md`, `change-management.md` |
-| AI adoption / DX roadmap | `frameworks/ai-adoption-roadmap.md`, `playbooks/ai-utilization-roadmap.md`, `playbooks/ai-work-before-after.md` |
-| AI PoC quality (buyer) | `playbooks/ai-poc-quality-review.md`, `rag-structure-diagnosis.md`, `buyer-owns-ai-poc-ground-truth.md` |
+| AI adoption / DX roadmap | `frameworks/ai-adoption-roadmap.md`, `playbooks/ai-utilization-roadmap.md`, `playbooks/ai-work-before-after.md`, `logical-vs-physical-document-unity.md` if document unification is the AI enabler |
+| AI PoC quality (buyer) | `playbooks/ai-poc-quality-review.md`, `rag-structure-diagnosis.md`, `buyer-owns-ai-poc-ground-truth.md`, `ai-output-evaluation-terms.md` if scoring an answer, `logical-vs-physical-document-unity.md` if corpus / store strategy is open |
 | Offering review | `playbooks/offering-review.md`, `change-management.md`, `transformation-pmo.md` |
-| Responsible AI assessment | `playbooks/responsible-ai-assessment.md`, `human-oversight.md`, `decision-ownership.md` |
+| Responsible AI assessment | `playbooks/responsible-ai-assessment.md`, `human-oversight.md`, `decision-ownership.md`, `ai-output-evaluation-terms.md` if classifying output failures |
 | Energy / utilities | `domains/energy-utilities.md`, `operational-reality.md`, `requirements-artifact-review.md` (if requirements) |
 | Public sector / defense IT | `domains/public-defense.md`, `public-it-procurement-support.md` (if buyer), `buyer-vs-seller-in-public-procurement.md`, shared-operator pattern + multi-lot construction PMO playbook if concurrent lots, `related-project-external-coordination-radar.md` if adjacent/external coordination |
 | Private IT RFP / vendor selection | `frameworks/private-it-rfp.md`, `playbooks/private-it-rfp-vendor-selection.md`, `vendor-proposal-evaluation.md`, calibration / re-proposal patterns |

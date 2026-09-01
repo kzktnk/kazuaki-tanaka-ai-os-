@@ -76,6 +76,7 @@ Use this pattern when:
 - `knowledge/patterns/memory-at-decision.md` — return connected memory at the next decision (No.21)
 - `knowledge/patterns/standard-as-learned-memory.md` — whether learned exceptions should change the standard (No.22)
 - `knowledge/patterns/operational-reality.md` — exceptions and workarounds in the field
+- `knowledge/patterns/logical-vs-physical-document-unity.md` — one store is not logical unity; governance is
 
 ## Related source
 

@@ -57,4 +57,5 @@ Stop: 「この案件で何を確認すれば満たしたと言えるか」が�
 - `frameworks/human-oversight.md`  
 - `frameworks/decision-ownership.md`  
 - `knowledge/patterns/risk-ownership.md`  
+- `knowledge/lessons/ai-output-evaluation-terms.md`  
 - `domains/public-defense.md` (Assurance & evidence)  

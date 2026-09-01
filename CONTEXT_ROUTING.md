@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.29
+Version: v1.30
 
 ## Purpose
 
@@ -62,6 +62,8 @@ Load:
 - knowledge/decisions/buyer-owns-ai-poc-ground-truth.md
 - playbooks/rag-structure-diagnosis.md (if retrieval vs table/structure)
 - playbooks/responsible-ai-assessment.md (if principles / accountability)
+- knowledge/lessons/ai-output-evaluation-terms.md (if scoring a single answer: accuracy vs completeness vs groundedness)
+- knowledge/patterns/logical-vs-physical-document-unity.md (if the AI corpus / document-store strategy is still open)
 - standards/vendor-proposal-evaluation.md (if scoring-sheet design, not AI metrics)
 - standards/consulting-review.md
 
@@ -97,6 +99,7 @@ Load:
 - frameworks/ai-governability.md
 - domains/public-defense.md (if authorization / evidence)
 - domains/energy-utilities.md (if operational reality)
+- knowledge/lessons/ai-output-evaluation-terms.md (if classifying output failures or bias vs accuracy)
 
 Focus:
 - Accountability first, then failure impact, data, transparency, fairness
@@ -252,6 +255,7 @@ Load:
 - standards/requirements-document-outline.md
 - standards/requirements-artifact-review.md
 - standards/document-management-standard.md
+- knowledge/patterns/logical-vs-physical-document-unity.md (if AI reference corpus vs document-administration program)
 - standards/development-standards-framework.md
 - core/author-voice.md
 - knowledge/lessons/author-voice-archetypes-legacy.md (Archetypes 4–7)
@@ -594,6 +598,7 @@ Load:
 - knowledge/patterns/connected-organizational-memory.md
 - knowledge/patterns/memory-at-decision.md
 - knowledge/patterns/standard-as-learned-memory.md
+- knowledge/patterns/logical-vs-physical-document-unity.md (if document unification is treated as the AI enabler)
 - knowledge/patterns/authority-levels.md
 - knowledge/patterns/operational-reality.md
 - knowledge/lessons/dual-roadmap-messaging.md (if executive audience)

@@ -47,3 +47,5 @@ related:
 
 - `playbooks/ai-poc-quality-review.md`  
 - `technology/azure-enterprise.md`  
+- `knowledge/lessons/ai-output-evaluation-terms.md`  
+- `knowledge/patterns/logical-vs-physical-document-unity.md`  

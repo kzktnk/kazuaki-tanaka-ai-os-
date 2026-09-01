@@ -75,6 +75,7 @@ See also `frameworks/ai-role-maturity.md` §Education Design Principles.
 - `knowledge/patterns/operational-reality.md` — tacit knowledge and exceptions as memory content
 - `knowledge/patterns/authority-levels.md` — who may act; memory informs what was learned
 - `knowledge/patterns/decision-ownership.md` — ownership without memory loses institutional learning
+- `knowledge/patterns/logical-vs-physical-document-unity.md` — unifying the store is not the same as a usable AI corpus
 
 ## Related source
 

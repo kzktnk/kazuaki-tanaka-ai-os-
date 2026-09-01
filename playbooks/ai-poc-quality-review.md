@@ -73,4 +73,6 @@ related:
 
 - `knowledge/decisions/buyer-owns-ai-poc-ground-truth.md`  
 - `playbooks/rag-structure-diagnosis.md`  
-- `playbooks/responsible-ai-assessment.md`  
+- `playbooks/responsible-ai-assessment.md`
+- `knowledge/lessons/ai-output-evaluation-terms.md`
+- `knowledge/patterns/logical-vs-physical-document-unity.md`  

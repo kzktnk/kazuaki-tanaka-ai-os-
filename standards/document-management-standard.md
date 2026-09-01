@@ -292,6 +292,7 @@
 | `standards/deliverable-archetypes.md` | 報告・提案系 + Archetype G |
 | `standards/operations-handover-guide.md` | 運説（運用引継説明書） |
 | `knowledge/index/legacy-source-index.md` | Program Line H |
+| `knowledge/patterns/logical-vs-physical-document-unity.md` | 企業文書をAIが参照するときの論理／物理。本書の番号・承認とは別問 |
 
 ---
 
