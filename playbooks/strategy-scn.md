@@ -9,7 +9,7 @@ type: playbook
 **Owner:** Kazuaki Tanaka  
 **Purpose:** 戦略立案（IT戦略を含む）から SCN 構造化・KPI・プロジェクト化（Gate 1）までを、メンティーが自走できる順序でつなぐ  
 **Use when:** 経営課題／IT課題の定義→分析→SCN→KPI→Program／Project 分解までを一気通貫でコーチングするとき  
-**Do not use as-is for:** SCN 記法・WS 運営の詳細（`standards/scn-creation-guide.md`）、型の定義本体（`frameworks/consulting-strategy-process.md` / `frameworks/strategic-capability-network.md`）、複数ベンダー PJ 間統合（`playbooks/cross-project-program-management.md`）、運用・定着化（`playbooks/operations-transition-playbook.md`）、Stakeholderを実際に動かす技術（`playbooks/stakeholder-activation-playbook.md`）  
+**Do not use as-is for:** SCN 記法・WS 運営の詳細（`standards/scn-creation-guide.md`）、型の定義本体（`frameworks/consulting-strategy-process.md` / `frameworks/strategic-capability-network.md`）、複数ベンダー PJ 間統合（`playbooks/cross-project-program-management.md`）、個別 PJ の WBS 設計・詳細化（`playbooks/wbs-design.md`）、運用・定着化（`playbooks/operations-transition-playbook.md`）、Stakeholderを実際に動かす技術（`playbooks/stakeholder-activation-playbook.md`）  
 **Source revision:** local Strategy-SCN Playbook 2026-08-29 (series alignment)
 
 Pairs with `frameworks/consulting-strategy-process.md`（問題設定〜提言）、`frameworks/strategic-capability-network.md`＋`standards/scn-creation-guide.md`（SCN 本体）、`frameworks/it-strategy-foundations.md`（Insight→Architecture→Investment）。下流の実行動員は `playbooks/cross-project-program-management.md`（Gate 2）。本 Playbook は **どの順序で型をつなぐか** と **Gate 1 までの引継ぎ** を扱う。
@@ -324,6 +324,8 @@ Outcome／Ownership／Capability／Change の4軸は主に業務・組織側の�
 | **Gate 1** Strategic Projectization Complete | なぜ／何を／どの Project に分けるか／KPI／Scope 概要／Sponsor・Owner | ①（本書） |
 | **Gate 2** Execution Mobilization Ready | ベンダー／体制図／WBS／契約スコープ／マスタースケジュール | ②着手前チェック |
 
+Gate 2 の WBS（成果物からの逆算・詳細化）の作り方は `playbooks/wbs-design.md` を参照。本 Playbook は Gate 1 までを扱うため、作成手順そのものは持たない。
+
 **Gate 1 完了条件**
 
 - [ ] Charter 5項目が埋まっている  
@@ -497,6 +499,7 @@ Gate 1 完了後、この Charter がそのまま②Chapter 9 の演習ケース
 - `frameworks/capability-model.md`  
 - `frameworks/thinking-patterns/pattern-01-why-what-how.md`  
 - `playbooks/cross-project-program-management.md`（Gate 2／PJ間）  
+- `playbooks/wbs-design.md`（Gate 2 の WBS 詳細化）  
 - `playbooks/operations-transition-playbook.md`（③／運用移行・定着化）  
 - `playbooks/stakeholder-activation-playbook.md`（①②③共通／Stakeholderを動かす技術）  
 - Program Line D（SCN legacy）＋本コーチングパック（2026）

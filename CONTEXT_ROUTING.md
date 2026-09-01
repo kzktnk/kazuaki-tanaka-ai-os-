@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.31
+Version: v1.32
 
 ## Purpose
 
@@ -181,6 +181,7 @@ Load:
 - frameworks/strategic-capability-network.md (if mapping to capabilities)
 - standards/scn-creation-guide.md (if SCN workshop follows strategy)
 - playbooks/strategy-scn.md (if coaching end-to-end strategy → SCN → Gate 1 projectization)
+- playbooks/wbs-design.md (if Gate 2 WBS detailing is being pulled into the strategy phase)
 - standards/writing.md
 - core/author-voice.md
 - Relevant project context (non-confidential)
@@ -410,6 +411,7 @@ Load:
 - playbooks/pmo-function-standup.md (if the office exists on paper but not in operation)
 - playbooks/program-governance-cadence.md (if SteerComm / program board / standup / inspection are collapsing into one status meeting)
 - playbooks/cross-project-program-management.md (if PgMO is buried in vendor WBS detail; PJ間 dependency / consistency / hand-off control is missing)
+- playbooks/wbs-design.md (if individual PJ WBS detailing is being treated as PgMO work)
 - playbooks/strategy-scn.md (if upstream strategy → SCN → Gate 1 is weak before PgMO start)
 - playbooks/operations-transition-playbook.md (if realization is ending and ops take-on / adoption is the next job)
 - playbooks/stakeholder-activation-playbook.md (if a named person must actually act, not just be informed)
@@ -560,6 +562,7 @@ Load:
 - frameworks/strategic-capability-network.md
 - standards/scn-creation-guide.md
 - playbooks/strategy-scn.md (if end-to-end coaching: Findings → SCN → KPI → Gate 1)
+- playbooks/wbs-design.md (if Gate 2 WBS is being written inside the SCN / Gate 1 pack)
 - frameworks/thinking-patterns/pattern-02-as-is-gap-to-be.md
 - frameworks/thinking-patterns/pattern-06-strategy-org-process-system.md
 - frameworks/capability-model.md

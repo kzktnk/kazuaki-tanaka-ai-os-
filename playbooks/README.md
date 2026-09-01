@@ -4,7 +4,7 @@ Step-by-step execution methods for recurring work. See `ARCHITECTURE.md` §6.6.
 
 | File | Use when |
 |------|----------|
-| `wbs-design.md` | Decompose work from deliverables, not from a task list |
+| `wbs-design.md` | Decompose work from deliverables; Gate 2 WBS detailing (not PgMO between-PJ) |
 | `pmo-function-standup.md` | PMO rules exist; quality/site progress are still table of contents |
 | `strategy-scn.md` | Strategy → SCN → KPI → Gate 1 projectization (coach edition; not SCN notation encyclopedia) |
 | `strategy-scn-selfstudy.md` | Same as `strategy-scn.md`, second person (mentee alone) |

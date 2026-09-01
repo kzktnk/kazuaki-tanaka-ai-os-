@@ -7,7 +7,9 @@ extracted: true
 gap_fill: "見出し構成と接続文のみ編集。内容はCh3スライドからの抽出"
 related:
   - templates/WBS分解シート.xlsx
-last_updated: 2026-08-03
+  - playbooks/strategy-scn.md（Gate 2 の WBS 詳細化元）
+  - playbooks/cross-project-program-management.md（個別PJ WBSの位置づけ元）
+last_updated: 2026-09-01
 ---
 
 # WBS設計プレイブック｜成果物からの逆算

@@ -9,7 +9,7 @@ type: playbook
 **Owner:** Kazuaki Tanaka  
 **Purpose:** 複数ベンダー・複数プロジェクトの **「間（あいだ）」** を管理し、依存・境界・整合・統合スケジュール・コントロールを構造化する  
 **Use when:** PgMO が個別 PJ の WBS や進捗報告に埋もれ、PJ 間の受け渡し・整合・波及分析が弱い  
-**Do not use as-is for:** PMO 立ち上げ順序（`playbooks/pmo-function-standup.md`）、会議階層設計（`playbooks/program-governance-cadence.md`）、官側複数ロット開始判定（`playbooks/public-multi-lot-construction-pmo.md`）、契約境界外の隣接案件・対外アクターの洗い出し（`knowledge/patterns/related-project-external-coordination-radar.md` — Dependency Register の手前のレーダー層）、戦略立案・SCN・プロジェクト化（`playbooks/strategy-scn.md`）、Stakeholderを実際に動かす技術（`playbooks/stakeholder-activation-playbook.md`）  
+**Do not use as-is for:** PMO 立ち上げ順序（`playbooks/pmo-function-standup.md`）、会議階層設計（`playbooks/program-governance-cadence.md`）、官側複数ロット開始判定（`playbooks/public-multi-lot-construction-pmo.md`）、契約境界外の隣接案件・対外アクターの洗い出し（`knowledge/patterns/related-project-external-coordination-radar.md` — Dependency Register の手前のレーダー層）、戦略立案・SCN・プロジェクト化（`playbooks/strategy-scn.md`）、個別 PJ の WBS 設計・詳細化（`playbooks/wbs-design.md`）、Stakeholderを実際に動かす技術（`playbooks/stakeholder-activation-playbook.md`）  
 **Source revision:** local Cross-Project Program Management Playbook v2.1 / 2026-08-29 (Gate 3 handoff, selfstudy pair)
 
 Pairs with `playbooks/program-governance-cadence.md`（**誰がどの会議で何を決めるか**）and `frameworks/transformation-pmo.md`（PgMO の位置づけ）。本 Playbook は **何を PJ 間管理の対象として構造化し、どう回すか** を扱う。顧客向け週次／月次の見せ方は `standards/deliverable-archetypes.md` Archetype J。隣接案件レーダーは本 Playbook の Dependency Register とは別層。途中参画でプレゼンスが弱いときは Chapter 1.6（圧縮版は `knowledge/patterns/pgmo-presence-via-client-stance.md`）。開発側 PMO を発注側のハザマ管理と同一視しない（`knowledge/patterns/buyer-side-gap-vs-vendor-pmo.md`）。上流の Gate 1 は `playbooks/strategy-scn.md`。
@@ -24,7 +24,7 @@ Pairs with `playbooks/program-governance-cadence.md`（**誰がどの会議で�
 - スケジュール・スコープ境界・内容（要件や設計など）の整合性をどう取るか（Chapter 4・5・6）
 - モニタリング＆コントロールをどう回すか（Chapter 7・8）
 
-個別プロジェクトの管理（WBS・進捗管理・課題管理）はベンダーPM／PLの役割であり、本Playbookの対象外である。本Playbookが対象とするのは、**個別プロジェクトの「中」ではなく「間（あいだ）」をどう管理するか**である。
+個別プロジェクトの管理（WBS・進捗管理・課題管理）はベンダーPM／PLの役割であり、本Playbookの対象外である（WBSの作り方自体は `playbooks/wbs-design.md` を参照）。本Playbookが対象とするのは、**個別プロジェクトの「中」ではなく「間（あいだ）」をどう管理するか**である。
 
 **射程の明示**：本Playbookが扱うのは、Program Managementの中でも複数PJ間の統合・依存・整合・統制（Cross-Project Integration & Control）に絞った領域である。Benefits／Value Realization、Strategic Alignment、Program-level Business Case、Stakeholder／Change Management、Resource／Investment Prioritization、Program Lifecycle（Tranche）管理といった、Program Management全般に含まれる他の領域は、本Playbookの対象外である。タイトルが単純な「Program Management Playbook」ではなく「Cross-Project Program Management Playbook」であるのはこのためである。あわせて、本Playbookが扱うのは戦略の実現化工程（プロジェクト化された後の複数PJ統合管理）に限られる。IT戦略立案やSCNによる施策・KPI・プロジェクト化といった上流工程、および実現化後の運用・定着化（AMS・AI運用・インフラ運用等）といった下流工程は、いずれも本Playbookの対象外である。
 

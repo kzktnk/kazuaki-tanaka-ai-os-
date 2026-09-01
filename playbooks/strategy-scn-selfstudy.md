@@ -9,7 +9,7 @@ type: playbook
 **Owner:** Kazuaki Tanaka  
 **Purpose:** 戦略立案（IT戦略を含む）から SCN 構造化・KPI・プロジェクト化（Gate 1）までを、一人で読み進めながら自走できる順序でつなぐ  
 **Use when:** 経営課題／IT課題の定義→分析→SCN→KPI→Program／Project 分解までを一気通貫で、自分の案件に当てはめるとき  
-**Do not use as-is for:** SCN 記法・WS 運営の詳細（別紙の記法ガイド）、型の定義本体（原典フレームワーク）、複数ベンダー PJ 間統合（②）、運用・定着化（③）、Stakeholder を実際に動かす技術（横串）  
+**Do not use as-is for:** SCN 記法・WS 運営の詳細（別紙の記法ガイド）、型の定義本体（原典フレームワーク）、複数ベンダー PJ 間統合（②）、個別 PJ の WBS 設計・詳細化、運用・定着化（③）、Stakeholder を実際に動かす技術（横串）  
 **Source:** ①本編（`playbooks/strategy-scn.md`）の自己学習版。2026-08-29。主張・型・表・演習は本編と同一。
 
 本 Playbook は、SCN の記法や型の定義そのもの（原典）ではなく、**どの順序で型をつなぐか**と**Gate 1 までの引継ぎ**を扱う。下流の実行動員は②（Gate 2）。
@@ -324,6 +324,8 @@ Outcome／Ownership／Capability／Change の4軸は主に業務・組織側の�
 | **Gate 1** Strategic Projectization Complete | なぜ／何を／どの Project に分けるか／KPI／Scope 概要／Sponsor・Owner | ①（本書） |
 | **Gate 2** Execution Mobilization Ready | ベンダー／体制図／WBS／契約スコープ／マスタースケジュール | ②着手前チェック |
 
+Gate 2 の WBS（成果物からの逆算・詳細化）の作り方は、別紙の WBS 設計プレイブックを参照。本 Playbook は Gate 1 までを扱うため、作成手順そのものは持たない。
+
 **Gate 1 完了条件**
 
 - [ ] Charter 5項目が埋まっている  
@@ -493,5 +495,6 @@ Gate 1 完了後、この Charter がそのまま②Chapter 9 の演習ケース
 - 戦略プロセスの原典フレームワーク（問題設定〜提言）
 - SCN 本体の原典フレームワークと記法ガイド
 - ②（Cross-Project Program Management Playbook／Gate 2・PJ間）
+- WBS 設計プレイブック（Gate 2 の WBS 詳細化）
 - ③（Operations Transition Playbook／運用移行・定着化）
 - 横串（Stakeholder Activation Playbook／①②③共通）
