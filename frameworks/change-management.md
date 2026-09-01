@@ -215,6 +215,7 @@ AI-specific change (incomplete models, ethics, shadow tools, HITL) is `knowledge
 | `ai-role-maturity.md` | People roadmap is CM sequenced to technology, not a training catalogue |
 | `ai-coe-vs-pgmo-vs-change.md` | CoE, AI PgMO, and AI change are three functions; AI change ≠ ERP change |
 | `playbooks/stakeholder-activation-playbook.md` | Person-level activation; this file stays org-process |
+| `knowledge/patterns/who-vs-lever-family.md` | Who to invest in ≠ logic/emotion × pull/push |
 | `knowledge/patterns/change-agent-vs-communication-plan.md` | Agent hunt ≠ communication plan; plan before samples |
 | `playbooks/operations-transition-playbook.md` | Ops take-on / Adoption Definition of Done |
 | `energy-utilities.md` | Group CX / plant autonomy: strategy, analysis, and decision rights must travel together |
@@ -237,6 +238,7 @@ AI-specific change (incomplete models, ethics, shadow tools, HITL) is `knowledge
 - `standards/pmo-operating-guide.md`
 - `frameworks/transformation-pmo.md`
 - `playbooks/stakeholder-activation-playbook.md`
+- `knowledge/patterns/who-vs-lever-family.md`
 - `playbooks/operations-transition-playbook.md`
 - `knowledge/index/legacy-source-index.md` Program Line L, Program Line T, Program Line AE
 - `knowledge/patterns/change-agent-vs-communication-plan.md`

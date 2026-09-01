@@ -13,7 +13,7 @@ Step-by-step execution methods for recurring work. See `ARCHITECTURE.md` §6.6.
 | `cross-project-program-management-selfstudy.md` | Same as `cross-project-program-management.md`, second person |
 | `operations-transition-playbook.md` | AMS / IO / AI ops: transition design and adoption (Gate 3–5); not day-to-day operations |
 | `operations-transition-playbook-selfstudy.md` | Same as `operations-transition-playbook.md`, second person |
-| `stakeholder-activation-playbook.md` | Cross-cutting: move a specific person via Segment–Diagnose–Select–Tailor–Observe |
+| `stakeholder-activation-playbook.md` | Cross-cutting: move a specific person via Segment–Diagnose–Select–Tailor–Observe; who ≠ lever family (Ch. 3.4) |
 | `stakeholder-activation-playbook-selfstudy.md` | Same as `stakeholder-activation-playbook.md`, second person |
 | `public-multi-lot-construction-pmo.md` | Shared-operator multi-lot tests/cutover: start-gates, not status minutes |
 | `private-it-rfp-vendor-selection.md` | Private-enterprise RFP issue through preferred vendor and contract handoff |

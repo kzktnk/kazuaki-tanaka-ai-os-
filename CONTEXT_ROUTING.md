@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.30
+Version: v1.31
 
 ## Purpose
 
@@ -413,6 +413,7 @@ Load:
 - playbooks/strategy-scn.md (if upstream strategy → SCN → Gate 1 is weak before PgMO start)
 - playbooks/operations-transition-playbook.md (if realization is ending and ops take-on / adoption is the next job)
 - playbooks/stakeholder-activation-playbook.md (if a named person must actually act, not just be informed)
+- knowledge/patterns/who-vs-lever-family.md (if Segment is right but the push/pull or logic/emotion landing is wrong)
 - matching `*-selfstudy.md` instead of the coach edition if the reader is working alone (same type, second person; no `playbooks/` paths in the body)
 - knowledge/patterns/related-project-external-coordination-radar.md (if adjacent projects / external parties sit outside the Dependency Register)
 - knowledge/patterns/pgmo-presence-via-client-stance.md (if process pack runs but client trust / proposal value still sits with a long-trusted specialist PM)
@@ -527,6 +528,7 @@ Load:
 - knowledge/patterns/all-at-once-vs-stepwise-change.md
 - knowledge/patterns/ai-coe-vs-pgmo-vs-change.md (if the change is AI adoption, not a system cutover)
 - playbooks/stakeholder-activation-playbook.md (if the job is moving a specific person, not designing the org-wide change process)
+- knowledge/patterns/who-vs-lever-family.md (if the person is right but the lever is push/fear or logic-only)
 - knowledge/patterns/change-agent-vs-communication-plan.md (if Champion hunt is being treated as the communication plan)
 - playbooks/operations-transition-playbook.md (if the change is ops take-on / adoption after realization)
 - standards/pmo-operating-guide.md (§Change Management Operating Standard)

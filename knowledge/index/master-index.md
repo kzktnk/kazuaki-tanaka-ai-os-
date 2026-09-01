@@ -1,6 +1,6 @@
 # Knowledge Master Index
 
-**Version:** v1.20  
+**Version:** v1.21  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
@@ -76,9 +76,9 @@ kazuaki-tanaka-ai-os/
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
-│   ├── patterns/               ← 40 distilled patterns
+│   ├── patterns/               ← 41 distilled patterns
 │   ├── lessons/                ← 6 lessons
-│   ├── migrations/             ← 31 migration reports
+│   ├── migrations/             ← 32 migration reports
 │   └── decisions/              ← 4 records
 ├── templates/                  ← 1 template
 ├── prompts/                    ← README placeholder
@@ -283,7 +283,8 @@ knowledge/
 │   ├── project-management-policy-layer-2026-08.md
 │   ├── customer-status-weekly-monthly-2026-08.md
 │   ├── coaching-20260828-change-effort-buyer-gap-2026-08.md
-│   └── claude-foundations-and-logical-unity-2026-09.md
+│   ├── claude-foundations-and-logical-unity-2026-09.md
+│   └── who-vs-lever-family-2026-09.md
 └── decisions/
     ├── diagnose-from-gateway-not-client-error.md
     ├── sandbox-cost-controls-before-resources.md
@@ -291,7 +292,7 @@ knowledge/
     └── buyer-owns-ai-poc-ground-truth.md
 ```
 
-### Patterns (40)
+### Patterns (41)
 
 | Pattern | Primary themes |
 |---------|----------------|
@@ -336,6 +337,7 @@ knowledge/
 | `authority-levels.md` | Graduated authority design |
 | `jera-scn-ebitda-tree.md` | SCN / EBITDA tree (client voice lesson) |
 | `logical-vs-physical-document-unity.md` | Physical store ≠ logical AI corpus; governance first |
+| `who-vs-lever-family.md` | Who to invest in ≠ logic/emotion × pull/push landing |
 
 ---
 
@@ -834,6 +836,25 @@ CONTEXT_ROUTING.md  →  AI PoC, Responsible AI, AI Adoption, Investigation / Re
 
 ---
 
+### W. Who vs lever family (2026-09)
+
+```text
+Local methodology deck on moving people — not archived
+        ↓ generalize (no assessment product, questionnaire, site scores)
+knowledge/patterns/who-vs-lever-family.md
+playbooks/stakeholder-activation-playbook.md (v0.3 Chapter 3.4)
+playbooks/stakeholder-activation-playbook-selfstudy.md
+        ↓ connect
+frameworks/change-management.md
+knowledge/patterns/change-agent-vs-communication-plan.md
+        ↓ record
+knowledge/migrations/who-vs-lever-family-2026-09.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  Change Management, Transformation PMO
+```
+
+---
+
 ## Level 4 — CONTEXT_ROUTING Task Map (summary)
 
 Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
@@ -848,7 +869,7 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | DX grand design | `frameworks/dx-grand-design.md`, change / roadmap as needed |
 | New venture assessment | `frameworks/new-venture-three-track-assessment.md` |
 | B2B sales workflow | `knowledge/patterns/sales-capacity-via-center-functions.md` |
-| Change management | `frameworks/change-management.md`, `all-at-once-vs-stepwise-change.md`, `change-agent-vs-communication-plan.md` (agent hunt ≠ communication plan), `pmo-operating-guide.md` §CM, `playbooks/stakeholder-activation-playbook.md` (person-level), `playbooks/operations-transition-playbook.md` Chapter 7 (ops adoption) |
+| Change management | `frameworks/change-management.md`, `all-at-once-vs-stepwise-change.md`, `change-agent-vs-communication-plan.md` (agent hunt ≠ communication plan), `who-vs-lever-family.md` (who ≠ lever family), `pmo-operating-guide.md` §CM, `playbooks/stakeholder-activation-playbook.md` (person-level), `playbooks/operations-transition-playbook.md` Chapter 7 (ops adoption) |
 | AI CoE / PgMO / Change | `knowledge/patterns/ai-coe-vs-pgmo-vs-change.md`, `ai-management-office.md`, `transformation-pmo.md`, `change-management.md` |
 | AI adoption / DX roadmap | `frameworks/ai-adoption-roadmap.md`, `playbooks/ai-utilization-roadmap.md`, `playbooks/ai-work-before-after.md`, `logical-vs-physical-document-unity.md` if document unification is the AI enabler |
 | AI PoC quality (buyer) | `playbooks/ai-poc-quality-review.md`, `rag-structure-diagnosis.md`, `buyer-owns-ai-poc-ground-truth.md`, `ai-output-evaluation-terms.md` if scoring an answer, `logical-vs-physical-document-unity.md` if corpus / store strategy is open |

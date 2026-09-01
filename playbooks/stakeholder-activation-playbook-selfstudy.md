@@ -4,13 +4,13 @@ type: playbook
 
 # Stakeholder Activation Playbook【自己学習版】
 
-**Version:** v0.2  
+**Version:** v0.3  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** 特定の相手（個人／少人数）を、説得ではなく **行動変容の設計** で動かす  
 **Use when:** 正しい説明をしているのに人が動かない、誰から動かすかが決まっていない、説明したことを進捗と誤認している（指導者なし）  
 **Do not use as-is for:** 組織全体のチェンジプロセス設計、操作・欺瞞、①の戦略構造化、②の PJ 間統制、③の移行設計そのもの  
-**Source:** 横串本編（`playbooks/stakeholder-activation-playbook.md`）の自己学習版。2026-08-29。主張・型・表・演習は本編と同一。パス参照は冊名・章番号に置き換え。
+**Source:** 横串本編（`playbooks/stakeholder-activation-playbook.md`）の自己学習版。本編 v0.3 と同一の型。パス参照は冊名・章番号に置き換え。誰に時間を使うか（Chapter 2）とレバー族（Chapter 3.4）は別の 2×2。
 
 ## このPlaybookの目的
 
@@ -176,9 +176,26 @@ Abilityは「やり方が分からない・できない」に限定して狭く�
 
 によって、次に選ぶ打ち手（Chapter 4）はまったく違う。診断を飛ばして「もっと説明する」を選ぶと、Logic以外の障壁を持つ相手には響かない。
 
+### 3.4 誰を動かすかと、レバー族は別である
+
+Chapter 2 の 2×2 は **誰に時間を使うか**（動きそう度 × 影響力）である。打ち手を選ぶ直前に、もう一つの切り口を置く。**論理か感情か、本人が選ぶ形（能動）か外から押す形（受動）か**。
+
+| | 論理 | 感情 |
+|---|---|---|
+| **能動**（本人が選ぶ） | 自分で使える標準・点検・蓄積 | 価値観の共有、信頼、認め |
+| **受動**（外から押す） | ノルマ、会議での指摘 | 比較・競争、罰や恥への回避 |
+
+これは、現場で人が手を伸ばしがちなレバーの地図である。推奨カタログではない。Chapter 1.4 のとおり、不安を煽る・恥をかかせる受動×感情は Select しない。
+
+4つの障壁（3.2）は **なぜ動かないか**。レバー族は **どう届けるかの質**。Logic が障壁でも、能動の説明と受動の指摘では効きが違う。Emotion が障壁の相手に受動の比較を足すと、かえって固まることがある。Ability と Incentive／Environment はこの 2×2 に載らない。だから障壁の診断をレバー族で置き換えない。
+
+製品化された適性検査や動機の長いリストから Reason to Act を先に決めない。観察と対話で取る（Chapter 5）。型の切り分けは、本編が参照する Who vs Lever Family のパターンと同じである。
+
 ### 振り返りメモ（自己学習用）
 - [ ] 今動かせずにいる相手について、4つの障壁のどれに当たるか、仮説を立てられるか
 - [ ] その仮説は、相手に確認していない「自分の推測」のままになっていないか
+- [ ] その相手に、能動で届けるか受動で押すか、仮説を言えるか
+- [ ] 罰・比較・会議での指摘で動かそうとしていないか
 
 ---
 
@@ -193,7 +210,7 @@ Abilityは「やり方が分からない・できない」に限定して狭く�
 | Ability | Training、Template、伴走、最初の1回を一緒にやる |
 | Incentive／Environment | Enabling Sponsorの関与、役割の明確化、評価指標への組み込み、時間の確保 |
 
-打ち手は、診断した障壁に対応するものを選ぶ。Emotionが障壁の相手にFactを重ねても響かず、Abilityが障壁の相手に危機感を煽っても行動にはつながらない。
+打ち手は、診断した障壁に対応するものを選ぶ。Emotionが障壁の相手にFactを重ねても響かず、Abilityが障壁の相手に危機感を煽っても行動にはつながらない。選ぶ直前に Chapter 3.4 のレバー族を一度見る。障壁が合っていても、受動（指摘・比較・ノルマ）で届けると壊れることがある。
 
 Incentive／Environmentの打ち手にある「Sponsorの関与」は、役割・時間・評価基準を整えるためにSponsorの力を借りる**Enabling Sponsor**であり、早期から普通に使ってよい。これは、Key Blockerを頭越しに動かす**Escalation to Sponsor**（Chapter 7.4、8.5）とは別物である。Enabling SponsorとEscalationを混同すると、「Sponsorは最後の手段」という原則（Chapter 7.4）と矛盾しているように見えるので、両者を区別しておく。
 
@@ -208,6 +225,7 @@ Incentive／Environmentの打ち手にある「Sponsorの関与」は、役割�
 ### 振り返りメモ（自己学習用）
 - [ ] 障壁の診断（Chapter 3）と、選んだ打ち手が対応しているか
 - [ ] Logicの打ち手に偏っていないか、一度立ち止まって確認したか
+- [ ] 選んだ打ち手は、能動で届くか。受動で押すなら、Chapter 1.4 に触れていないか
 
 ---
 
@@ -469,7 +487,7 @@ Sponsor経由には性質の異なる2種類がある。
 |---|---|---|
 | 1 | Stakeholder Segmentation Map（動きそう度×影響力の2×2仕分け表） | Chapter 2 |
 | 2 | Diagnose Worksheet（4障壁ごとの仮説記入シート） | Chapter 3 |
-| 3 | Select & Tailor Planner（打ち手・Common Core・Reason to Actの設計シート） | Chapter 4・5 |
+| 3 | Select & Tailor Planner（打ち手・レバー族・Common Core・Reason to Actの設計シート） | Chapter 3.4・4・5 |
 | 4 | Observable Behavior Log（行動変容の観察記録） | Chapter 6 |
 | 5 | Champion / Key Blocker Tracker（選定基準・ステップ・進捗の記録） | Chapter 7 |
 | 6 | Channel Plan（Enabling／Escalationの区別を含むチャネル選択記録） | Chapter 8 |
