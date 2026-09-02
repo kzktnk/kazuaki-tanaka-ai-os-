@@ -2,15 +2,14 @@
 
 ## Source (not stored in repo)
 
-- Local `Downloads/IOSA/` — IO SA Intermediate course (~2014–2017)
-- Local `Downloads/IOSA_Advanced/` — IO SA Advanced / AVA (~2014–2016)
+- Infrastructure outsourcing solution-architect training (Intermediate / Advanced, ~2014–2017)
 - Materials are firm-confidential. **Originals not archived.**
 
 ## Files created
 
 - `frameworks/infrastructure-outsourcing-solution-planning.md`
 - `knowledge/patterns/transition-vs-transformation-vs-realization.md`
-- `knowledge/migrations/iosa-2026-08.md`
+- `knowledge/migrations/infrastructure-outsourcing-2026-08.md`
 
 ## Files updated
 
@@ -45,12 +44,6 @@
 | Price-to-win | Not lowest price; cost-price alignment |
 | Inflation / FX | Multi-year risk split; invoice vs cost currency |
 | Prime/sub vs ops mgmt | Accountability follows contract |
-| CASA-class discipline | Contract ↔ approved solution two-way |
+| Contract ↔ approved solution | Two-way discipline |
 | DD types | Pre / reverse / post; not a solutioning workshop |
 | T vs T vs R | Separate jobs, costs, sequence |
-
-## Suggested commit message
-
-```text
-feat(knowledge): add infrastructure-outsourcing solution planning from IO SA training
-```

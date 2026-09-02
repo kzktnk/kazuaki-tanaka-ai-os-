@@ -1,10 +1,9 @@
-# Migration Report — Application Outsourcing SAE (2026-08)
+# Migration Report — Application Outsourcing / AMS (2026-08)
 
 ## Source (not stored in repo)
 
-- Accenture internal **Application Outsourcing SAE (AOSAE)** training materials (~2015)
-- Local path: `Downloads/AO Materials/` (Day 1–3 PDFs)
-- Materials marked not for external distribution — **PDFs not archived**
+- Legacy application-outsourcing / AMS solution-planning training (~2015)
+- Originals remain local. **PDFs not archived.**
 
 ## Files created
 
@@ -24,10 +23,10 @@
 
 ## Excluded from repo
 
-- Accenture PDF / PPTX originals
-- Client case study names, FTE, costs, locations, schedules (Abrasive Products pattern)
-- GDN marketing one-pagers (site catalogs)
-- Internal tool names (Alpha, CDTS, CTA, rate cards, TGP)
+- Training PDF / PPTX originals
+- Client case study names, FTE, costs, locations, schedules
+- Site catalogs
+- Internal tool names and rate cards
 
 ## Generalization rules applied
 

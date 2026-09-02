@@ -202,13 +202,13 @@
 
 ## Cross-Archetype: 一貫する声
 
-| 観点 | レガシーでの現れ | JERA 2026での現れ |
-|------|-----------------|------------------|
-| 出発点 | RFP/調査のFact | 8/5ヒアリングのFact |
+| 観点 | レガシーでの現れ | 近年の定義・仮説デックでの現れ |
+|------|-----------------|-------------------------------|
+| 出発点 | RFP/調査のFact | ヒアリングのFact |
 | 仮説 | 推奨方式、付加価値提案 | IBM仮説（現場CEO型） |
 | 構造 | 評価Pointの根拠、方式比較表 | 骨格は内側、10枚前後 |
 | 順序 | 課題→方式→要件 | 定義→How（体制） |
-| 削減 | 必須項目だけの評価シート | v0.6で表・脚注削除 |
+| 削減 | 必須項目だけの評価シート | 最終化で表・脚注を削除 |
 | 留保 | 案、推奨、すり合わせ前提 | 仮説、たたき台 |
 
 ---
@@ -234,7 +234,6 @@
 | `standards/requirements-document-outline.md` | Archetype 6 章立て |
 | `frameworks/program-phases-investigation-to-requirements.md` | Archetype 4–7 のフェーズ文脈 |
 | `knowledge/index/legacy-source-index.md` | 原本との対応（索引のみ） |
-| `knowledge/lessons/client-deliverable-voice-jera-2026-08.md` | 同一声の最新事例 |
 
 ---
 

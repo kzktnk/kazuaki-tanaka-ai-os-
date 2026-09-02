@@ -17,7 +17,7 @@ Anonymous label: **financial-institution IT standards / legacy development stand
 - Bank / institution names  
 - Verbatim proprietary checklist rows (risk / control / checkpoint text)  
 - Yen amounts, personal names, client IDs  
-- Z0C form bodies already marked 未登録 in Line H  
+- Original engagement form bodies already marked 未登録 in Line H  
 - Facility / ops / tech **item body** text (thresholds, room specs, procedure prose)
 
 ## Already covered (no re-extract)

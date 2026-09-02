@@ -292,6 +292,7 @@ Load:
 - frameworks/sap-implementation-phase-model.md (if ERP/SAP program phase map or test gates apply)
 - standards/development-standards-framework.md
 - standards/document-management-standard.md
+- standards/document-id-registry.md (if assigning AIOS-REC / AIOS-COV / AIOS-BLD IDs)
 - standards/development-management-guide.md
 - standards/deliverable-archetypes.md (Archetype G for build deliverables)
 - standards/operations-design-guide.md (if ops design / monitoring / backup)

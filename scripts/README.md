@@ -1,43 +1,17 @@
-# Scripts — Deliverable Generators
+# Scripts
 
-PPTX generators for **plant autonomy / operating-model** client deliverables (anonymized).
+Source-generation helpers. Client-specific deck generators stay local and untracked.
 
-## Setup
-
-```bash
-python3 -m venv .venv-pptx
-source .venv-pptx/bin/activate
-pip install python-pptx
-```
-
-## Run
-
-Output is written to `outputs/` at the repo root (gitignored).
+## LinkedIn bulk sources
 
 ```bash
-source .venv-pptx/bin/activate
-python scripts/generate_plant_autonomy_draft_v6_1.py
+python3 scripts/generate_linkedin_bulk_sources.py
 ```
 
-## Files
-
-| Script | Version | Notes |
-|--------|---------|-------|
-| `generate_plant_autonomy_draft_v3.py` | v3 | Full deck from scratch |
-| `generate_plant_autonomy_draft_v5_2.py` | v5.2 | Requires `outputs/plant-autonomy_operating-model_draft_v5.1.pptx` as input |
-| `generate_plant_autonomy_draft_v6.py` | v6 | Definition-first (9 slides) |
-| `generate_plant_autonomy_draft_v6_1.py` | v6.2 | Fact→Issue→IBM hypothesis |
-
-## Anonymization
-
-- Client name → `クライアント様`
-- Personal names → roles (PO, プロジェクトオーナー, etc.)
-- Internal program codes → generic labels (推進体制案, AMプログラム, トラックA/B)
-- Meeting dates → generic phases (初回ヒアリング, 経営層ディスカッション)
-- Paths → repo-relative `outputs/`
-- See `core/identity.md` Confidentiality Boundary
+See `knowledge/source/linkedin/` and `knowledge/index/linkedin-series-index.md`.
 
 ## Related
 
 - `core/author-voice.md`
 - `standards/deliverable-archetypes.md`
+- `core/identity.md` Confidentiality Boundary

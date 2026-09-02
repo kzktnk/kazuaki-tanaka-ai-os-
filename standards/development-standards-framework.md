@@ -209,7 +209,7 @@
 | 候補 | 出力先案 | 状態 |
 |------|---------|------|
 | 管理本編（進捗・仕様・品質・構成） | `development-management-guide.md` | ✅ 登録済 |
-| カスタム開発手順 + C様式 | `deliverable-archetypes.md` Archetype G | ✅ 登録済 |
+| カスタム開発手順 + 成果物様式 | `deliverable-archetypes.md` Archetype G | ✅ 登録済 |
 | 運用設計 / 引継 | `operations-design-guide.md`, `operations-handover-guide.md` | ✅ 登録済 |
 | 環境管理 | `environment-management-guide.md` | ✅ 登録済 |
 | リリース管理 | `release-management-guide.md` | ✅ 登録済 |

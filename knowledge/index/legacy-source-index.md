@@ -1,6 +1,6 @@
 # Legacy Source Index
 
-**Version:** v1.21  
+**Version:** v1.22  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** ローカル保管のレガシー原本と、リポジトリ内知識の対応索引。**原本の中身は含まない。**
@@ -20,53 +20,55 @@
 
 ## Program Line A: 大規模ERP/RFP（2002–2003）
 
-| ローカル原本（例） | 種別 | 抽出先（リポジトリ） |
-|-------------------|------|---------------------|
-| `020829_提案書_全般_v4.5.ppt` | 提案書 | `deliverable-archetypes.md` Archetype A |
-| `20020809最終報告_ver12(1).ppt` | 最終報告 | `author-voice-archetypes-legacy.md` Archetype 7（報告系） |
-| `RP20030602-01_…(一次評価)結果.ppt` | 評価結果 | `vendor-proposal-evaluation.md`, Archetype B |
-| `wk20030624-06_…(二次評価)報告.ppt` | 評価報告 | `vendor-proposal-evaluation.md` §Evaluation Process |
-| `RP20030625-04_第4回SteeComm資料.ppt` | SteerComm | `deliverable-archetypes.md` Archetype C |
-| `MM20030514-01_評価シートチェック.doc` | 評価設計議事 | `vendor-proposal-evaluation.md`（全章）、`scoring-vs-calibration.md` |
-| `WK20030515-04_開発会社提案評価シート.xls` | 評価シート | `vendor-proposal-evaluation.md` 二層・枠定義。点数・社名は不登録 |
-| `WK20030605-04_PM面接チェックシート.xls` | PM面接 | `vendor-key-person-interview.md`。人名は不登録 |
-| `RFP/RFP/RFP結合版-取引会計*.doc` | RFP本文 | **未登録**（機密）。構造は `frameworks/private-it-rfp.md`。Appendix Map のみ `requirements-document-outline.md` |
-| `RFP/RFP/RFP結合版-人事*.doc` | RFP本文 | **未登録**（機密） |
-| `RFP/Appendices/AP_AC*.ppt/xls` | 業務Appendix | `requirements-document-outline.md` §AC category |
-| `RFP/Appendices/AP_IF*.xls` | 連携Appendix | `requirements-document-outline.md` §IF category |
-| `RFP/Appendices/AP_BS*.xls` | 帳票Appendix | `requirements-document-outline.md` §BS category |
-| `RFP/Appendices/AP_ST*.ppt/xls` | 基盤Appendix | `requirements-document-outline.md` §ST category |
-| `RFP/Appendices/AP_ST002_開発標準要件定義書.xls` | 開発標準要求 | Program Line H 相互参照 |
-| `RFP/Appendices/Appendices_Index.xls` | 索引 | `requirements-document-outline.md` §RFP Appendix Category Map |
+原本ファイル名と案件文書番号は索引に書かない。抽出先は本リポジトリの知識ファイル。
+
+| 原本の種別 | 抽出先（リポジトリ） |
+|-----------|---------------------|
+| 提案書 | `deliverable-archetypes.md` Archetype A |
+| 最終報告 | `author-voice-archetypes-legacy.md` Archetype 7（報告系） |
+| 一次評価結果 | `vendor-proposal-evaluation.md`, Archetype B |
+| 二次評価報告 | `vendor-proposal-evaluation.md` §Evaluation Process |
+| SteerComm 資料 | `deliverable-archetypes.md` Archetype C |
+| 評価設計議事 | `vendor-proposal-evaluation.md`（全章）、`scoring-vs-calibration.md` |
+| 提案評価シート | `vendor-proposal-evaluation.md` 二層・枠定義。点数・社名は不登録 |
+| PM面接チェック | `vendor-key-person-interview.md`。人名は不登録 |
+| RFP本文 | **未登録**（機密）。構造は `frameworks/private-it-rfp.md`。Appendix Map のみ `requirements-document-outline.md` |
+| 業務 Appendix | `requirements-document-outline.md` §AC category |
+| 連携 Appendix | `requirements-document-outline.md` §IF category |
+| 帳票 Appendix | `requirements-document-outline.md` §BS category |
+| 基盤 Appendix | `requirements-document-outline.md` §ST category |
+| 開発標準要求（RFP別添） | Program Line H 相互参照 |
+| Appendix 索引 | `requirements-document-outline.md` §RFP Appendix Category Map |
 
 ---
 
 ## Program Line H: 開発標準（2003/12）
 
-| ローカル原本（例） | 種別 | 抽出先（リポジトリ） |
-|-------------------|------|---------------------|
-| `20031219/開発標準の位置づけ.doc` | 全体位置づけ | `development-standards-framework.md` |
-| `20031219/開発標準目次.xls` | 目次 | 本索引（Program Line H） |
-| `20031219/ドキュメント分類.ppt` | 文書分類図 | **未登録**（`.ppt` 抽出困難）。`document-management-standard.md` §Document Types |
-| `20031219/開発管理ガイドライン/01Z0C-第１編…` | 管理概要 | `development-management-guide.md` §Overview（Phase 3） |
-| `20031219/開発管理ガイドライン/02Z0C-第２編…` | 管理本編 | `development-management-guide.md`（全章） |
-| `20031219/開発管理ガイドライン/02Z0C-第２編　管理本編.pdf` | 管理本編（PDF原本） | 同上 |
-| `20031219/開発管理ガイドライン/03Z0C-第３編…` | カスタム手順 | `deliverable-archetypes.md` Archetype G |
-| `20031219/…/02_カスタム開発手順編様式/様式目次.doc` | C様式索引 | 同上 |
-| `20031219/開発管理ガイドライン/04–05Z0C-*` | PS/SAP手順 | **未登録**（パッケージ固有） |
-| `20031219/開発管理ガイドライン/…/Z0C-様式-M*.xls/doc` | 管理様式 | **未登録**（実様式）。`document-management-standard.md` §Form Archetypes |
-| `20031219/開発管理ガイドライン/…/Z0C-様式-C*.xls/vsd` | 設計様式 | **未登録**（Phase 4 索引予定） |
-| `20031219/ドキュメント標準/01Z0C-…` | 文書管理・作成基準 | `document-management-standard.md` |
-| `20031219/ドキュメント標準/02Z0C-付録1-1　文書区分.doc` | 文書区分 | `document-management-standard.md` §Document Types |
-| `20031219/ドキュメント標準/…/Z0C-様式-D101–D104` | 表紙・台帳様式 | **未登録**（実様式）。`document-management-standard.md` §Form Archetypes |
-| `20031219/開発環境／試験環境ガイドライン/01–02Z0C-*` | 環境管理 | `environment-management-guide.md` |
-| `20031219/運用設計ガイドライン/01Z0C-…` | 運用設計 | `operations-design-guide.md` |
-| `20031219/運用引継ガイドライン/01Z0C-…` | 運用引継 | `operations-handover-guide.md` |
-| `20031219/開発規約/第１–２編` | 命名・コード | **未登録**（クライアント固有ID）。`development-standards-framework.md` §規約系 |
-| `20031219/開発規約/第３編` | リリース管理 | `release-management-guide.md` |
-| `20031219/開発規約/第４–９編` | 維持/UI/DB/技法 | **未登録**（索引のみ） |
+原本ファイル名と案件文書番号は索引に書かない。様式 ID は `standards/document-id-registry.md` が払い出す。
 
-**Note:** 原本は `Downloads/20031219/` 配下。クライアント名・担当者名・Z0C文書番号・実様式はリポジトリに登録しない。Program Line A の RFP 開発標準要求（AP_ST002）の**履行成果**が本 Line。
+| 原本の種別 | 抽出先（リポジトリ） |
+|-----------|---------------------|
+| 開発標準の位置づけ | `development-standards-framework.md` |
+| 開発標準目次 | 本索引（Program Line H） |
+| ドキュメント分類図 | **未登録**（抽出困難）。`document-management-standard.md` §Document Types |
+| 開発管理ガイドライン 管理概要 | `development-management-guide.md` §Overview（Phase 3） |
+| 開発管理ガイドライン 管理本編 | `development-management-guide.md`（全章） |
+| カスタム開発手順 | `deliverable-archetypes.md` Archetype G |
+| 成果物様式目次 | 同上。ID は `AIOS-BLD-*` |
+| パッケージ手順（PS/SAP） | **未登録**（パッケージ固有） |
+| 記録類様式 | **未登録**（実様式）。用途は `AIOS-REC-*` |
+| 設計様式 | **未登録**（実様式）。用途は `AIOS-BLD-*` |
+| 文書管理・作成基準 | `document-management-standard.md` |
+| 文書区分 | `document-management-standard.md` §Document Types |
+| 表紙・台帳様式 | **未登録**（実様式）。用途は `AIOS-COV-*` |
+| 環境管理 | `environment-management-guide.md` |
+| 運用設計 | `operations-design-guide.md` |
+| 運用引継 | `operations-handover-guide.md` |
+| 命名・コード規約 | **未登録**（クライアント固有ID）。`development-standards-framework.md` §規約系 |
+| リリース管理 | `release-management-guide.md` |
+| 維持/UI/DB/技法 | **未登録**（索引のみ） |
+
+**Note:** 原本はローカルのみ。クライアント名・担当者名・原本の文書番号・実様式はリポジトリに登録しない。Program Line A の開発標準要求（RFP別添）の**履行成果**が本 Line。
 
 **Downloads 直下の別名フォルダ（同一パック）:** `ドキュメント標準` / `運用設計ガイドライン` / `開発環境／試験環境ガイドライン` / `運用引継ガイドライン` / `開発規約` / `開発管理ガイドライン` は上記と同じ financial-institution IT standards / legacy development standards pack のコピー配置。抽出先は変更なし（差分抽出なし）。`運用設計ガイドライン/` 内に運用引継ファイルが混在する場合あり — 索引上は種別で読む。
 
@@ -87,46 +89,44 @@
 
 ---
 
-## Program Line I: SAP Implementation Phase Model（Ascendant SAP）
+## Program Line I: SAP Implementation Phase Model
 
-| ローカル原本（例） | 種別 | 抽出先（リポジトリ） | 登録範囲 |
-|-------------------|------|---------------------|---------|
-| `Downloads/AsendantSAP/ascendantsap overview_ver3_0.pdf` | クライアント向け方法論概説 | `frameworks/sap-implementation-phase-model.md` | Phase 0–6、Activity Group、試験体系、WBS/WP概念（一般化のみ） |
-| `Downloads/AsendantSAP/AscendantTraining_for_ChinaGDC_Day1PM_v0.2.pdf` | 内部研修 | 同上 §Tailoring Principle | 構想フェーズ前提と実案件の差異・応用適用（p6相当） |
-| `Downloads/AsendantSAP/AscendantTraining_for_ChinaGDC_Day1AM_v0.2.pdf` | 内部研修 | **未登録** | 索引のみ（比喩・Team Building・overview と重複） |
-| `Downloads/AsendantSAP/AscendantTraining_for_ChinaGDC_Day2AM_v0.2.pdf` | 内部研修 | **未登録** | 索引のみ（P3 は overview と重複） |
-| `Downloads/AsendantSAP/AscendantTraining_for_ChinaGDC_Day2PM_v0.2.pdf` | 内部研修 | **未登録** | 索引のみ（P4–6 は overview と重複） |
+| 原本の種別 | 抽出先（リポジトリ） | 登録範囲 |
+|-----------|---------------------|---------|
+| クライアント向け方法論概説 | `frameworks/sap-implementation-phase-model.md` | Phase 0–6、Activity Group、試験体系、WBS/WP概念（一般化のみ） |
+| 内部研修（構想フェーズのテーラリング） | 同上 §Tailoring Principle | 構想フェーズ前提と実案件の差異・応用適用 |
+| 内部研修（重複分） | **未登録** | 索引のみ |
 
-**Note:** 原本は `Downloads/AsendantSAP/` 配下。Task ID・Work Product 番号・サンプル様式・Route Map 詳細・提案書事例はリポジトリに**登録しない**。ベンダー商標・クライアント名は一般化。
+**Note:** 原本はローカルのみ。Task ID・Work Product 番号・サンプル様式・Route Map 詳細・提案書事例はリポジトリに**登録しない**。ベンダー商標・クライアント名は一般化。
 
 ---
 
-## Program Line J: Application Outsourcing SAE (AOSAE, ~2015)
+## Program Line J: Application Outsourcing / AMS（~2015）
 
-| ローカル原本（例） | 種別 | 抽出先（リポジトリ） | 登録範囲 |
-|-------------------|------|---------------------|---------|
-| `Downloads/AO Materials/Day 1/D1_AOSAE.pdf` | コース Day1 | `frameworks/application-outsourcing-solution-planning.md` | Course Map、SA 役割、As-Is/To-Be（一般化のみ） |
-| `Downloads/AO Materials/Day 2/D2 00_AOSAE.pdf` | コース Day2 | 同上 + `frameworks/service-transition-approach.md` | Risk、Estimating、Sourcing、Pyramid、Transition 概念 |
-| `Downloads/AO Materials/Day 3/D3.00_AOSAE.pdf` | コース Day3 | 同上 | Solution model、レビューゲート（ツール固有名除外） |
-| `D1.01_INP_Services Pyramid Template.pdf` | テンプレ | `frameworks/ams-services-pyramid.md` | L1/L2/L3 階層モデルのみ |
-| `D1.04_SS_Services Pyramid.pdf` | 事例 SS | 同上 + `application-outsourcing-solution-planning.md` | Solution Plan TOC のみ |
-| `D1.10_SAP Project Overview 2015.pdf` | 事例背景 | `sap-implementation-phase-model.md` 参照 | Post-go-live AM 文脈（1段落相当） |
-| `D1.15_INP_GDN OnePagers SM.pdf` | マーケ | **未登録** | マルチロケーション原則のみ（`ao-solution-planning` §Location） |
-| `D1.16_SS_To Be Mode.pdf` | 事例 SS | `application-outsourcing-solution-planning.md` | To-Be 構成要素のみ |
-| `D2.05_SS_… Estimating.pdf` | 事例 SS | `application-outsourcing-solution-planning.md` §Estimating | 因子名のみ（FTE/時間数除外） |
-| `D2.06_SS_… Sourcing.pdf` | 事例 SS | 同上 §Location Strategy | ロケーション決定軸のみ |
-| `D2.09_SS_… Pyramids CT_EP Mix.pdf` | 事例 SS | 同上 §Pyramid | 概念のみ |
-| `D2.11_… Transition Approach v1.pdf` | 事例 | `frameworks/service-transition-approach.md` | 原則・WS・マイルストーン型 |
-| `D3.02_INP_Solution Plan and Assumptions Checklist.pdf` | チェックリスト | `standards/ams-solution-plan-checklist.md` | 全章（一般化） |
-| `D3.04_INP_… High Level Proposal Outline.pdf` | 骨子 | `standards/deliverable-archetypes.md` Archetype I | 章立てのみ |
+| 原本の種別 | 抽出先（リポジトリ） | 登録範囲 |
+|-----------|---------------------|---------|
+| コース Day1 | `frameworks/application-outsourcing-solution-planning.md` | Course Map、SA 役割、As-Is/To-Be（一般化のみ） |
+| コース Day2 | 同上 + `frameworks/service-transition-approach.md` | Risk、Estimating、Sourcing、Pyramid、Transition 概念 |
+| コース Day3 | 同上 | Solution model、レビューゲート（ツール固有名除外） |
+| Services Pyramid テンプレ | `frameworks/ams-services-pyramid.md` | L1/L2/L3 階層モデルのみ |
+| Pyramid 事例 | 同上 + `application-outsourcing-solution-planning.md` | Solution Plan TOC のみ |
+| SAP 案件概説（AM 文脈） | `sap-implementation-phase-model.md` 参照 | Post-go-live AM 文脈（1段落相当） |
+| ロケーション販促資料 | **未登録** | マルチロケーション原則のみ（`ao-solution-planning` §Location） |
+| To-Be 事例 | `application-outsourcing-solution-planning.md` | To-Be 構成要素のみ |
+| Estimating 事例 | `application-outsourcing-solution-planning.md` §Estimating | 因子名のみ（FTE/時間数除外） |
+| Sourcing 事例 | 同上 §Location Strategy | ロケーション決定軸のみ |
+| Pyramid ミックス事例 | 同上 §Pyramid | 概念のみ |
+| Transition Approach | `frameworks/service-transition-approach.md` | 原則・WS・マイルストーン型 |
+| Solution Plan チェックリスト | `standards/ams-solution-plan-checklist.md` | 全章（一般化） |
+| 提案骨子 | `standards/deliverable-archetypes.md` Archetype I | 章立てのみ |
 
-**Note:** 原本は `Downloads/AO Materials/` 配下。Accenture 社内秘・再配布禁止。クライアント事例名・FTE・コスト・拠点・人名・社内ツール名（Alpha/CDTS/CTA）・レートカードはリポジトリに**登録しない**。
+**Note:** 原本はローカルのみ。社内秘・再配布禁止。クライアント事例名・FTE・コスト・拠点・人名・社内ツール名・レートカードはリポジトリに**登録しない**。
 
 ---
 
-## Program Line M: Infrastructure Outsourcing SA（IO SA Intermediate / Advanced, ~2014–2016）
+## Program Line M: Infrastructure Outsourcing SA（Intermediate / Advanced, ~2014–2016）
 
-原本は `Downloads/IOSA/`, `Downloads/IOSA_Advanced/`。社内秘。ケース企業・原価ツール・レートカードは不登録。
+原本はローカルのみ。社内秘。ケース企業・原価ツール・レートカードは不登録。
 
 | ローカル原本（種別） | 抽出先 | 登録範囲 |
 |---------------------|--------|---------|
@@ -135,40 +135,40 @@
 | Intermediate Day3 — multi-tower, risk, mobilization, TPA, financials | 同上 | ESA、動員、価格形態、ARC/RRC、インフレ/FX の存在 |
 | Intermediate Day4 — price-to-win, response, orals, DD, negotiation, contracting, implementation | 同上 | 契約と承認解の双方向、DD 種別、口頭提案の型 |
 | Intermediate ケース（架空 RFP） | **未登録** | 演習ケース |
-| IOSM / サービス別原価ブック / Workbench | **未登録** | ツール・マスタ |
+| 原価ブック / Workbench | **未登録** | ツール・マスタ |
 | Inflation / Currency 解説 ppt | 同上 § commercials | リスク分担の考え方のみ。数値・社内ポリシー番号は不登録 |
 | Advanced — transformational IO, modeling, network/DC, third party, SLA, pricing, realization | 同上 | as-is vs transformed-only、prime/sub vs ops mgmt、realization は署名後も SA |
-| Advanced AVA クライアントケース、RFP、SOW、Orals | **未登録** | 実名・契約原本 |
+| Advanced クライアントケース、RFP、SOW、Orals | **未登録** | 実名・契約原本 |
 | SA Certification Guide / 認定プレイブック | **未登録** | 社内認定 |
 
-**Note:** Accenture / Avanade 資料。再配布禁止。個人メールは索引にも載せない。
+**Note:** 社内秘・再配布禁止。個人メールは索引にも載せない。
 
 ---
 
-## Program Line N: Systems Integration SA / SI Delivery Lead（SISA / SIDL, ~FY16）
+## Program Line N: Systems Integration SA / SI Delivery Lead（~FY16）
 
-原本は `Downloads/SISA_SIDL/`。社内秘。ケース RFP・契約改訂・認定ツールは不登録。
+原本はローカルのみ。社内秘。ケース RFP・契約改訂・認定ツールは不登録。
 
 | ローカル原本（種別） | 抽出先 | 登録範囲 |
 |---------------------|--------|---------|
-| SISA FY16 Day1–2 / Prep | `systems-integration-solution-planning.md`, `estimate-target-commitment.md` | 見積≠目標≠約束、Solution Plan 質問、ブループリント、Vモデル、2種コンティンジェンシー、tick-and-tie |
-| SIDL Day1–2 | `delivery-leadership.md` | SA→DL、契約 vs 期待、ODE/EAC、動員、変更管理 |
+| SI SA Day1–2 / Prep | `systems-integration-solution-planning.md`, `estimate-target-commitment.md` | 見積≠目標≠約束、Solution Plan 質問、ブループリント、Vモデル、2種コンティンジェンシー、tick-and-tie |
+| SI Delivery Lead Day1–2 | `delivery-leadership.md` | SA→DL、契約 vs 期待、ODE/EAC、動員、変更管理 |
 | Solution Plan / Blueprint / ケース RFP・契約 | **未登録** | クライアント演習・実契約 |
 | ロジスティクス、認定ガイド | **未登録** | |
 
 ---
 
-## Program Line O: Delivery Management Academy（DMA II–III, ~2014–2015）
+## Program Line O: Delivery Management training（~2014–2015）
 
-原本は `Downloads/DMAⅡ/`, `Downloads/DMAⅢ/`。
+原本はローカルのみ。
 
 | ローカル原本（種別） | 抽出先 | 登録範囲 |
 |---------------------|--------|---------|
-| DMA III Days 1–5 講義 | `delivery-leadership.md` | プロジェクト vs プログラム、価値スコアカード、リリース、期待管理、商業ライフサイクル |
-| DMA II Module 9 サービス管理 | `delivery-leadership.md`, `transition-vs-transformation-vs-realization.md` | Introduction vs Transition、Warranty≠運用 |
-| FutureTech / Client メモ、レッスン学び発表 | **未登録** | ケース |
-| Playbook PDF、ソーシャルスタイル | **未登録** | ブランド方法論・アイスブレイク |
-| KT テンプレ実ファイル | **未登録** | 様式 |
+| マルチタワー・プログラム配信講義 | `delivery-leadership.md` | プロジェクト vs プログラム、価値スコアカード、リリース、期待管理、商業ライフサイクル |
+| サービス管理モジュール | `delivery-leadership.md`, `transition-vs-transformation-vs-realization.md` | Introduction vs Transition、Warranty≠運用 |
+| ケースメモ、レッスン学び発表 | **未登録** | ケース |
+| ブランド方法論・アイスブレイク | **未登録** | |
+| 個人テンプレ実ファイル | **未登録** | 様式 |
 
 ---
 
@@ -362,7 +362,7 @@
 
 | ローカル原本（種別） | 抽出先 | 登録範囲 |
 |---------------------|--------|---------|
-| Cross-Project Management Playbook（md / docx **v2.1**／2026-08-29 系列揃え） | `playbooks/cross-project-program-management.md` | PJ 間 5 領域、Control Cycle、Gate 2→Gate 3 引き渡し（Register / Matrix / RAID）、Health Assessment、①②③＋横串。2026-08-29 再採用（repo **v0.9**） |
+| Cross-Project Management Playbook（md / docx **v2.1**／2026-08-29 系列揃え） | `playbooks/cross-project-program-management.md` | PJ 間 5 領域、Control Cycle、Gate 2→Gate 3 引き渡し（Register / Matrix / RAID）、Health Assessment、①②③＋横串。2026-08-29 再採用（repo **v0.9.1**：図は位相／質問先行） |
 | Templates.xlsx（Cover + 8 シート） | 同上 Playbook 本文 / Appendix | テンプレート**クラスとフィールド**のみ。xlsx 実体不登録 |
 | SelfStudy（md / docx） | `playbooks/cross-project-program-management-selfstudy.md` | 本編と同一の型・表・演習。語りを二人称に。docx 不登録 |
 
@@ -516,22 +516,11 @@
 | `SCN概要(KM).pdf` | 概要・定義・KOPT・KPI・事例 | `frameworks/strategic-capability-network.md` |
 | `SCN作成についての補足資料-SCN作成の勘どころ　-.pdf` | 作成勘どころ・As-Is/To-Be・広がり/深さ | `standards/scn-creation-guide.md` §Breadth/Depth, §Workflow |
 | `SCN作成のポイント.pdf` | 記述ルール・WS運営・Q&A | `standards/scn-creation-guide.md` §Notation, §Prerequisites |
-| `Strategy-SCN-Playbook.docx`／`strategy-scn.md`（2026-08-29） | 戦略→SCN→Gate 1、Gate 1〜5 図、通し演習 | `playbooks/strategy-scn.md`（repo **v0.3**） |
-| `strategy-scn-selfstudy.md`／docx | 自己学習版 | `playbooks/strategy-scn-selfstudy.md`（repo **v0.3**） |
+| `Strategy-SCN-Playbook.docx`／`strategy-scn.md`（2026-08-29） | 戦略→SCN→Gate 1、Gate 1〜5 図、通し演習 | `playbooks/strategy-scn.md`（repo **v0.3.1**／Landscape 用途を失敗例に追加） |
+| `strategy-scn-selfstudy.md`／docx | 自己学習版 | `playbooks/strategy-scn-selfstudy.md`（repo **v0.3.1**） |
 | `Strategy-SCN-Playbook-Templates.xlsx` | テンプレ9クラス＋Optional | 同上 Appendix（フィールドのみ；xlsx 不登録） |
 
-**Note:** 旧 `.ppt` は日本語抽出不可。PDF版を原本とする。IBM/client名・X社事例・円・演習 Data Pack 全文はリポジトリには一般化のみ／不登録。Strategy-SCN 原本はローカル `Downloads/` のみ。
-
----
-
-## Program Line C: JERA（2026）— リポジトリ内参照
-
-| 原本 | 状態 | 抽出先 |
-|------|------|--------|
-| 発電所自立経営 v0.2–v0.6 | ローカル/Downloads | `client-deliverable-voice-jera-2026-08.md`, `author-voice.md` |
-| McKinsey 6/29 DX戦略ディスカッション（メモ・事前送付 p.7 等） | ローカル/Downloads | `knowledge/patterns/jera-scn-ebitda-tree.md` |
-| 7/2 DX戦略論点_fix、AMP rev009、DGD 第2版 | ローカル/Downloads | 同上 §出典 |
-| `scripts/generate_jera_draft_*.py` | 未コミット（任意） | — |
+**Note:** 旧 `.ppt` は日本語抽出不可。PDF版を原本とする。研修元・クライアント名・事例・円・演習 Data Pack 全文はリポジトリには一般化のみ／不登録。Strategy-SCN 原本はローカルのみ。
 
 ---
 
@@ -563,7 +552,6 @@
 | `strategy-engagement-guide.md` | 高 | ✅ 登録済 |
 | `it-strategy-foundations.md` | 高 | ✅ 登録済 |
 | `it-strategy-engagement-guide.md` | 高 | ✅ 登録済 |
-| `jera-scn-ebitda-tree.md` | 高 | ✅ 登録済（2026-08-12） |
 | `development-standards-framework.md` | 高 | ✅ 登録済（2026-08-13）、v1.1 三基準レイヤ（2026-08-20） |
 | `document-management-standard.md` | 高 | ✅ 登録済（2026-08-13） |
 | `development-management-guide.md` | 高 | ✅ 登録済（2026-08-13） |
@@ -612,14 +600,29 @@
 | `shared-operator-vs-ministry-vs-municipality.md` | 高 | ✅ 登録済（2026-08-20） |
 | `public-multi-lot-construction-pmo.md` | 高 | ✅ 登録済（2026-08-20） |
 | `program-governance-cadence.md` | 高 | ✅ 登録済（2026-08-20） |
-| `cross-project-program-management.md` | 高 | ✅ 登録済（2026-08-29 / v2.1 → repo v0.9） |
-| `cross-project-program-management-selfstudy.md` | 高 | ✅ 登録済（2026-08-29 / ②自己学習 → repo v0.9） |
-| `strategy-scn.md` | 高 | ✅ 登録済（2026-08-29 / Gate 1〜5・通し演習 → repo v0.3） |
-| `strategy-scn-selfstudy.md` | 高 | ✅ 登録済（2026-08-29 / ①自己学習 → repo v0.3） |
+| `cross-project-program-management.md` | 高 | ✅ 登録済（2026-08-29 / v2.1 → repo v0.9.1） |
+| `cross-project-program-management-selfstudy.md` | 高 | ✅ 登録済（2026-08-29 / ②自己学習 → repo v0.9.1） |
+| `strategy-scn.md` | 高 | ✅ 登録済（2026-08-29 / Gate 1〜5・通し演習 → repo v0.3.1） |
+| `strategy-scn-selfstudy.md` | 高 | ✅ 登録済（2026-08-29 / ①自己学習 → repo v0.3.1） |
 | `operations-transition-playbook.md` | 高 | ✅ 登録済（2026-08-29 / ③ → repo v0.2） |
 | `operations-transition-playbook-selfstudy.md` | 高 | ✅ 登録済（2026-08-29 / ③自己学習 → repo v0.2） |
 | `stakeholder-activation-playbook.md` | 高 | ✅ 登録済（2026-08-29 / 横串 → repo v0.2） |
 | `stakeholder-activation-playbook-selfstudy.md` | 高 | ✅ 登録済（2026-08-29 / 横串自己学習 → repo v0.2） |
+
+---
+
+## Program Line AF: 稼働中マルチ PJ の配置図／課題表（2026-09、一般化のみ）
+
+原本はローカル週次パック（事前資料・wrap-up・議事）。匿名ラベル: **running multi-project landscape / between-PJ issues / 2026-09**。社名、発電所名、製品名を識別子として使ったもの、議事本文、録音は不登録。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| 週次検討会の wrap-up・口頭補足 | `knowledge/patterns/scn-as-landscape-not-completeness.md` | SCN を配置図として使う。MECE・新規立ち上げではない |
+| 同上 | `knowledge/patterns/topology-map-vs-issue-log.md` | 図は位相、表は課題。質問先行。5領域は②既存 |
+| 同上（チェンマネ論点） | `knowledge/patterns/formulation-comms-vs-adoption-comms.md` | 策定の場 vs 定着の場。キック条件が先 |
+| レビュー／思考の型 | `standards/consulting-review.md`、`core/author-voice.md` | 成果物の仕事を先に名指す |
+
+**未登録:** 事前デック、wrap-up 本体、議事録、録音、記入済みマトリクス、ヒアリング票。
 
 ---
 
@@ -633,7 +636,7 @@
 | 各案評価シートの評価軸一覧 | xlrd | `vendor-proposal-evaluation.md` 付録 |
 | 200/900 フォルダ成果物 | ユーザー提供時 | Phase 200/900 詳細 |
 | 開発管理本編 `.doc` 本文 | LibreOffice/PDF→txt | `development-management-guide.md` ✅ |
-| カスタム開発 C様式目次 | xlrd / 様式目次.doc | `deliverable-archetypes.md` Archetype G ✅ |
+| 開発成果物様式目次 | 抽出済み | `deliverable-archetypes.md` Archetype G ✅ |
 
 ---
 

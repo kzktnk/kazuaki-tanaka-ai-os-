@@ -3,7 +3,7 @@
 **Version:** v1.0  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
-**Origin:** Generalized from Systems Integration Solution Architect (SISA) training (~FY16). No client cases, rate cards, estimating tools, or firm approval matrices.
+**Origin:** Generalized from systems-integration solution-architect training (~FY16). No client cases, rate cards, estimating tools, or firm approval matrices.
 
 ---
 
@@ -59,7 +59,7 @@ Supports: proposal, orals, negotiation, pricing, mobilization approach. Does not
 2. Estimate, schedule, work plan, sourcing against that baseline; uncertainty captured as assumptions  
 3. Standard Solution Plan as one composite  
 4. Delivery involved in QA of the opportunity  
-5. SA visible to the client; GDN / delivery-center SA involved if they will execute  
+5. SA visible to the client; delivery-center SA involved if they will execute  
 6. Cost-to-serve optimized without hiding delivery risk  
 7. Shared objectives between sales, solution, and delivery teams  
 
@@ -167,4 +167,4 @@ If Lead SA ≠ Delivery Lead, the Delivery Lead must **agree** the documented so
 - `frameworks/delivery-leadership.md`
 - `frameworks/infrastructure-outsourcing-solution-planning.md`
 - `frameworks/application-outsourcing-solution-planning.md`
-- `knowledge/migrations/sisa-sidl-dma-2026-08.md`
+- `knowledge/migrations/si-delivery-leadership-2026-08.md`

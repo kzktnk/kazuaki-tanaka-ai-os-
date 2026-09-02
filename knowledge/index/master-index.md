@@ -1,6 +1,6 @@
 # Knowledge Master Index
 
-**Version:** v1.26  
+**Version:** v1.27  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
@@ -70,14 +70,14 @@ kazuaki-tanaka-ai-os/
 ├── ARCHITECTURE.md             ← structural blueprint
 ├── CONTEXT_ROUTING.md          ← task-based context selection
 ├── core/                       ← 8 files (kernel)
-├── standards/                  ← 19 files (quality criteria)
+├── standards/                  ← 20 files (quality criteria)
 ├── frameworks/                 ← 37 files + thinking-patterns/
 ├── playbooks/                  ← 24 playbooks (+ README)
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
-│   ├── patterns/               ← 41 distilled patterns
-│   ├── lessons/                ← 6 lessons
+│   ├── patterns/               ← 43 distilled patterns
+│   ├── lessons/                ← 5 lessons
 │   ├── migrations/             ← 37 migration reports
 │   └── decisions/              ← 4 records
 ├── templates/                  ← 1 template
@@ -138,7 +138,7 @@ Do not split yet.
 
 ---
 
-## Level 3 — Standards (19)
+## Level 3 — Standards (20)
 
 Grouped by domain for navigation:
 
@@ -155,6 +155,7 @@ standards/
 │   ├── requirements-document-outline.md
 │   ├── requirements-artifact-review.md
 │   ├── document-management-standard.md
+│   ├── document-id-registry.md
 │   └── writing.md
 ├── Application outsourcing / AMS
 │   └── ams-solution-plan-checklist.md
@@ -247,13 +248,12 @@ knowledge/
 │       ├── 001–022/                  ← Operational AI main series
 │       ├── sp01–sp09/                ← special posts
 │       └── erf01–erf03/              ← Enterprise Redesign Framework
-├── patterns/                         ← 44 files (see table below)
+├── patterns/                         ← 43 files (see table below)
 ├── lessons/
 │   ├── governance-messaging.md
 │   ├── dual-roadmap-messaging.md
 │   ├── pmo-professional-principles.md
 │   ├── author-voice-archetypes-legacy.md
-│   ├── client-deliverable-voice-jera-2026-08.md
 │   └── ai-output-evaluation-terms.md
 ├── migrations/
 │   ├── linkedin-bulk-001-015-sp-erf.md
@@ -267,11 +267,11 @@ knowledge/
 │   ├── linkedin-021.md
 │   ├── linkedin-022.md
 │   ├── ai-dual-roadmap-2026-08.md
-│   ├── ao-sae-2026-08.md
+│   ├── application-outsourcing-2026-08.md
 │   ├── energy-utilities-domain-2026-08.md
 │   ├── change-management-2026-08.md
-│   ├── iosa-2026-08.md
-│   ├── sisa-sidl-dma-2026-08.md
+│   ├── infrastructure-outsourcing-2026-08.md
+│   ├── si-delivery-leadership-2026-08.md
 │   ├── public-defense-2026-08.md
 │   ├── azure-enterprise-2026-08.md
 │   ├── ai-playbooks-2026-08.md
@@ -303,7 +303,7 @@ knowledge/
     └── buyer-owns-ai-poc-ground-truth.md
 ```
 
-### Patterns (44)
+### Patterns (43)
 
 | Pattern | Primary themes |
 |---------|----------------|
@@ -346,7 +346,6 @@ knowledge/
 | `risk-ownership.md` | Work delegation ≠ risk accountability |
 | `ai-capability-vs-authority.md` | Capability ≠ authority |
 | `authority-levels.md` | Graduated authority design |
-| `jera-scn-ebitda-tree.md` | SCN / EBITDA tree (client voice lesson) |
 | `logical-vs-physical-document-unity.md` | Physical store ≠ logical AI corpus; governance first |
 | `who-vs-lever-family.md` | Who to invest in ≠ logic/emotion × pull/push landing |
 | `scn-as-landscape-not-completeness.md` | Overlay running PJs on SCN; not MECE completeness or new projectization |
@@ -462,10 +461,10 @@ CONTEXT_ROUTING.md  →  AI Adoption / DX Roadmap
 
 ---
 
-### E. Application outsourcing SAE (Program Line J, 2026-08)
+### E. Application outsourcing (Program Line J, 2026-08)
 
 ```text
-Local AOSAE PDFs (Downloads/AO Materials/) — not archived
+Local AO PDFs — not archived
         ↓ generalize
 frameworks/application-outsourcing-solution-planning.md
 frameworks/ams-services-pyramid.md
@@ -473,7 +472,7 @@ frameworks/service-transition-approach.md
 standards/ams-solution-plan-checklist.md
 standards/deliverable-archetypes.md (Archetype I)
         ↓ record
-knowledge/migrations/ao-sae-2026-08.md
+knowledge/migrations/application-outsourcing-2026-08.md
         ↓ task routing
 CONTEXT_ROUTING.md  →  Application Outsourcing / AMS Proposal
 ```
@@ -554,10 +553,10 @@ knowledge/migrations/change-management-2026-08.md
 CONTEXT_ROUTING.md  →  Change Management, Transformation PMO
 ```
 
-### I. Infrastructure outsourcing SA (Program Line M)
+### I. Infrastructure outsourcing (Program Line M)
 
 ```text
-Local IO SA Intermediate / Advanced (Downloads/IOSA/) — not archived
+Local ITO materials — not archived
         ↓ generalize
 frameworks/infrastructure-outsourcing-solution-planning.md
 knowledge/patterns/transition-vs-transformation-vs-realization.md
@@ -565,7 +564,7 @@ knowledge/patterns/transition-vs-transformation-vs-realization.md
 frameworks/application-outsourcing-solution-planning.md
 frameworks/service-transition-approach.md
         ↓ record
-knowledge/migrations/iosa-2026-08.md
+knowledge/migrations/infrastructure-outsourcing-2026-08.md
         ↓ task routing
 CONTEXT_ROUTING.md  →  Infrastructure Outsourcing / ITO Proposal
 ```
@@ -573,7 +572,7 @@ CONTEXT_ROUTING.md  →  Infrastructure Outsourcing / ITO Proposal
 ### J. SI solution planning & delivery leadership (Program Lines N–O)
 
 ```text
-Local SISA/SIDL and DMA II–III — not archived
+Local SI solution / delivery-leadership and delivery-management training — not archived
         ↓ generalize
 frameworks/systems-integration-solution-planning.md
 frameworks/delivery-leadership.md
@@ -581,7 +580,7 @@ knowledge/patterns/estimate-target-commitment.md
         ↓ extend
 knowledge/patterns/transition-vs-transformation-vs-realization.md
         ↓ record
-knowledge/migrations/sisa-sidl-dma-2026-08.md
+knowledge/migrations/si-delivery-leadership-2026-08.md
         ↓ task routing
 CONTEXT_ROUTING.md  →  Systems Integration / SI Proposal, Delivery Leadership
 ```
@@ -994,7 +993,7 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | Energy / utilities | `domains/energy-utilities.md`, `operational-reality.md`, `requirements-artifact-review.md` (if requirements) |
 | Public sector / defense IT | `domains/public-defense.md`, `public-it-procurement-support.md` (if buyer), `buyer-vs-seller-in-public-procurement.md`, shared-operator pattern + multi-lot construction PMO playbook if concurrent lots, `related-project-external-coordination-radar.md` if adjacent/external coordination |
 | Private IT RFP / vendor selection | `frameworks/private-it-rfp.md`, `playbooks/private-it-rfp-vendor-selection.md`, `vendor-proposal-evaluation.md`, calibration / re-proposal patterns |
-| Development standards / build / FIS audit mapping | `development-standards-framework.md`, related build standards, `fis-system-audit-as-assurance.md` when audit guidance or tech/ops/facility criteria apply, `project-management-policy-layer.md` when vendor PM-policy chapter applies |
+| Development standards / build / FIS audit mapping | `development-standards-framework.md`, related build standards, `document-id-registry.md` when assigning AIOS-REC/COV/BLD IDs, `fis-system-audit-as-assurance.md` when audit guidance or tech/ops/facility criteria apply, `project-management-policy-layer.md` when vendor PM-policy chapter applies |
 | Application outsourcing / AMS | `application-outsourcing-solution-planning.md`, `ams-services-pyramid.md`, `service-transition-approach.md`, `ams-solution-plan-checklist.md`, `playbooks/operations-transition-playbook.md` (if Transition Manager coaching) |
 | Infrastructure outsourcing / ITO | `infrastructure-outsourcing-solution-planning.md`, `transition-vs-transformation-vs-realization.md`, `playbooks/operations-transition-playbook.md` (if take-on coaching) |
 | Systems integration / SI proposal | `systems-integration-solution-planning.md`, `estimate-target-commitment.md` |

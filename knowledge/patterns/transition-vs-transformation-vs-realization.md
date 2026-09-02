@@ -1,7 +1,7 @@
 # Pattern: Transition vs Transformation vs Realization
 
 **Status:** Active  
-**Origin:** Infrastructure outsourcing SA training (Program Line M); Service Introduction vs Transition from DMA II (Program Line O)
+**Origin:** Infrastructure outsourcing SA training (Program Line M); Service Introduction vs Transition from delivery-management training (Program Line O)
 
 ## Pattern statement
 

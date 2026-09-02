@@ -3,7 +3,7 @@
 **Version:** v1.0  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
-**Origin:** Generalized from Infrastructure Outsourcing Solution Architect (IO SA) Intermediate and Advanced training (~2014–2016). No client names, rate cards, costing tools, delivery-center catalogs, or firm-specific approval policies.
+**Origin:** Generalized from infrastructure-outsourcing solution-architect training (~2014–2016). No client names, rate cards, costing tools, delivery-center catalogs, or firm-specific approval policies.
 
 ---
 
@@ -242,5 +242,5 @@ After signature the SA is not finished: **solution realization** is the early-de
 ## Related files
 
 - `knowledge/patterns/transition-vs-transformation-vs-realization.md`
-- `knowledge/migrations/iosa-2026-08.md`
+- `knowledge/migrations/infrastructure-outsourcing-2026-08.md`
 - `frameworks/application-outsourcing-solution-planning.md`

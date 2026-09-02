@@ -1,10 +1,9 @@
-# Migration Report — SISA / SIDL / DMA (2026-08)
+# Migration Report — SI solution planning & delivery leadership (2026-08)
 
 ## Source (not stored in repo)
 
-- `Downloads/SISA_SIDL/` — Systems Integration Solution Architect (SISA FY16) and SI Delivery Lead (SIDL)
-- `Downloads/DMAⅡ/` — Delivery Management Academy II (Service Management module)
-- `Downloads/DMAⅢ/` — Delivery Management Academy III (multi-tower program delivery)
+- Systems integration solution-architect and delivery-lead training (~FY16)
+- Multi-tower delivery-management training (~2014–2015)
 
 Firm-confidential. **Originals not archived.**
 
@@ -13,7 +12,7 @@ Firm-confidential. **Originals not archived.**
 - `frameworks/systems-integration-solution-planning.md`
 - `frameworks/delivery-leadership.md`
 - `knowledge/patterns/estimate-target-commitment.md`
-- `knowledge/migrations/sisa-sidl-dma-2026-08.md`
+- `knowledge/migrations/si-delivery-leadership-2026-08.md`
 
 ## Files updated
 
@@ -28,9 +27,9 @@ Firm-confidential. **Originals not archived.**
 
 ## Excluded from repo
 
-- Client RFPs, solution plans, contract amendments, case memos (including utility / energy training cases)
+- Client RFPs, solution plans, contract amendments, case memos
 - Estimating and pricing tools, certification systems, attendee/logistics decks
-- Internal policy IDs, SLA numeric tables from training, social-style icebreakers
+- Internal policy IDs, SLA numeric tables from training, icebreakers
 
 ## Knowledge extracted
 
@@ -46,9 +45,3 @@ Firm-confidential. **Originals not archived.**
 | Release | Absorbable incremental value |
 | Introduction vs transition | New system into existing ops vs new run org |
 | Warranty | Defect window ≠ incident management |
-
-## Suggested commit message
-
-```text
-feat(knowledge): add SI solution planning and delivery-leadership from SISA/SIDL/DMA
-```

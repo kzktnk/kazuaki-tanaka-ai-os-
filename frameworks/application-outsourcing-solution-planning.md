@@ -3,7 +3,7 @@
 **Version:** v1.0  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
-**Origin:** Application Outsourcing SAE (AOSAE) course structure (~2015), generalized. No client names, vendor tool names, rate cards, or proprietary case numbers.
+**Origin:** Application outsourcing / AMS solution-planning training (~2015), generalized. No client names, vendor tool names, rate cards, or proprietary case numbers.
 
 ---
 

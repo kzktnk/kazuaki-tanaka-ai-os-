@@ -73,6 +73,8 @@
 
 クライアント固有の ID（システムID・業務ID）は案件ごとに定義する。リポジトリには**パターンのみ**記載する。
 
+本リポジトリ自身が払い出す様式 ID は [`document-id-registry.md`](./document-id-registry.md)（`AIOS-REC-*` / `AIOS-COV-*` / `AIOS-BLD-*`）。案件原本の番号は使わない。
+
 ### 記録類
 
 - 文書番号管理は行わない
@@ -250,12 +252,12 @@
 
 | ID | 用途 |
 |----|------|
-| **D101** | 表紙 |
-| **D102** | 変更履歴 |
-| **D103** | 文書履歴管理台帳 |
-| **D104** | 文書配布管理台帳 |
+| **AIOS-COV-01** | 表紙 |
+| **AIOS-COV-02** | 変更履歴 |
+| **AIOS-COV-03** | 文書履歴管理台帳 |
+| **AIOS-COV-04** | 文書配布管理台帳 |
 
-開発管理様式（M101 議事録、M104 進捗管理表等）は `development-management-guide.md` §Tool Catalog を参照。
+開発管理様式（AIOS-REC-01 議事録、AIOS-REC-03 進捗管理表等）は `development-management-guide.md` §Tool Catalog を参照。
 
 ---
 
@@ -289,6 +291,7 @@
 |---------|------|
 | `standards/development-standards-framework.md` | 開発標準全体・ガイドライン/規約 |
 | `standards/requirements-document-outline.md` | 「要定」章立て |
+| `standards/document-id-registry.md` | 本リポジトリが払い出す様式 ID |
 | `standards/deliverable-archetypes.md` | 報告・提案系 + Archetype G |
 | `standards/operations-handover-guide.md` | 運説（運用引継説明書） |
 | `knowledge/index/legacy-source-index.md` | Program Line H |
@@ -300,5 +303,5 @@
 
 | 候補 | 出力先 |
 |------|--------|
-| 管理本編の記録類様式（M101–M116） | `development-management-guide.md` |
-| カスタム開発 C様式（C101–C301） | `deliverable-archetypes.md` Archetype G | ✅ 登録済 |
+| 管理本編の記録類様式（AIOS-REC-01–12） | `development-management-guide.md` |
+| カスタム開発 成果物様式（AIOS-BLD-01–31） | `deliverable-archetypes.md` Archetype G | ✅ 登録済 |

@@ -3,7 +3,7 @@
 **Version:** v1.0  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
-**Origin:** Generalized from SI Delivery Lead (SIDL) and Delivery Management Academy (DMA II–III) training (~2014–2015). No client cases, internal policy IDs, or tool names.
+**Origin:** Generalized from SI delivery-lead and multi-tower delivery-management training (~2014–2015). No client cases, internal policy IDs, or tool names.
 
 ---
 
@@ -159,4 +159,4 @@ Vendor/alliance management is a program workstream when third parties sit on the
 - `playbooks/operations-transition-playbook.md` — Transition Manager coaching (introduction / take-on / adoption)
 - `frameworks/service-transition-approach.md`
 - `knowledge/patterns/estimate-target-commitment.md`
-- `knowledge/migrations/sisa-sidl-dma-2026-08.md`
+- `knowledge/migrations/si-delivery-leadership-2026-08.md`
