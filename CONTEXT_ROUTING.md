@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.34
+Version: v1.35
 
 ## Purpose
 
@@ -605,10 +605,12 @@ Focus:
 - AI is a cross-cutting axis, not a Skill
 - Client capability ≠ consultant skill
 - For Strategy Consultant, Capability II is L0 (out of scope); other Roles will invert this
+- Capability Model is Manager / 育成担当 Source of Truth; do not hand it as the junior's first read
+- Assessment is Assessor-owned (1on1 diagnostic). Do not ask the junior to fill the sheet alone
 - Next step = Capability Model × Current Level × Assignment (soft Prerequisite)
 
 Outputs:
-- Current Level + Assessment Status (Confirmed / Provisional)
+- Current Level + Assessment Status (Confirmed / Provisional), recorded by Assessor
 - Role Required Level Gap
 - Learning Map for the next 1–2 Skills
 - Next OJT

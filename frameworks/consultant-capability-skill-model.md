@@ -1,14 +1,13 @@
 ---
 type: framework
-title: "コンサルタント Capability／スキル／レベル モデル（v0.6 ― Capability IV統合・24 Skill）"
-source: "v0.1パイロットへのレビュー（2026-09-01）を反映して全面改訂（v0.2）。③受領で事実関係を更新（v0.2.1）。v0.2.1へのレビューを反映しSkill粒度原則等を統合（v0.3）。v0.3へのレビューで構造設計を確定、Recommended Prerequisiteを追加し全Skillを展開（v0.4）。v0.4へのレビューで全18 SkillのEvidence均質性QC（v0.5）。Role／Responsibility層の検討（frameworks/consultant-role-responsibility-model.md）から導出されたCapability IV（Business/Management Literacy、6 Skill）をPrerequisite Knowledge付きで統合（v0.6）。"
+title: "コンサルタント Capability／スキル／レベル モデル"
+source: "コンサルタント本人・チームメンバーのスキル・習熟度を、Capability→Skill→Level→Evidenceの4層で定義する。"
 status: draft
 extracted: false
 gap_fill: "frameworks/capability-model.md（クライアント組織のCapability階層＝SCN用）とは別物。本ファイルはコンサルタント本人／チームメンバーのスキル・習熟度を扱う。名称の衝突に注意。Role／Responsibility層とRequired Levelの一覧はframeworks/consultant-role-responsibility-model.md側で管理する。"
 related:
+  - frameworks/skill-playbook-directory.md（読むものだけ探すならこちら）
   - frameworks/consultant-role-responsibility-model.md（Role／Responsibility層、Required Level一覧）
-  - frameworks/consultant-learning-map-example.md
-  - frameworks/pilot-assessment-strategy-consultant.md
   - frameworks/top-down-thinking.md
   - frameworks/thinking-patterns/
   - playbooks/wbs-design.md
@@ -19,33 +18,19 @@ related:
   - core/author-voice.md
   - standards/scn-creation-guide.md
   - playbooks/program-governance-cadence.md
-last_updated: 2026-09-01
+last_updated: 2026-09-03
 ---
 
 # コンサルタント Capability／スキル／レベル モデル
-## ― 若手配布を前提にした育成マップ（v0.6 ― Capability IV統合・24 Skill） ―
+## ― 育成担当・Manager向け Source of Truth ―
 
-**Status:** Draft（4 Capability・24 SkillともEvidence QC完了。次は実在メンバー1名での運用検証、§6）
+このモデルは、誰が・何を・どこまでできればよいかを定義するための、育成担当・マネージャー向けのSource of Truthです。若手本人が最初に見るものとしては重すぎるので、代わりに次を渡してください。
 
-## 0. 変更履歴
+- **読むものだけ探しているとき**：`frameworks/skill-playbook-directory.md`（1ページの早見表）
+- **特定のSkillについて、次に何をすればよいか伝えるとき**：`frameworks/consultant-learning-map-example.md`の形式で1枚作る
+- **評価そのものを行うとき**：`frameworks/pilot-assessment-strategy-consultant.md`
 
-**v0.1→v0.2**（前回レビュー反映）：Capabilityの切り方をPlaybook逆算から独立layerへ、Level定義を状態描写からCurrent→Target→Learning/OJT→Evidenceの遷移へ、教材を「到達者への配布物」から「Learning Intervention」へ、Learn→OJT→Evidence→Review→Level upループの明示、AIを独立Skillから横断軸へ。
-
-**v0.2→v0.2.1**：③受領によりCapability IIのTransition行の事実関係を更新。
-
-**v0.2.1→v0.3**：Skillの粒度原則を明文化しTransitionを3分割・Ch7をCapability IIIへ再配置、Level定義を共通化しEvidenceと分離、再現性の原則を追加、判定者を個人名から役職名へ、横串を受領し3本目のSkill「Stakeholder Diagnosis」を展開、「仮説を作る」の教材マッピングを検証。
-
-**v0.3→v0.4**：Recommended Prerequisite（推奨学習順序）を追加、Consultant Learning Mapのプロトタイプを別ファイルで作成、残り15 Skillを展開し3 Capability・18 Skillを埋めた。
-
-**v0.4→v0.5**：全18 SkillのEvidence均質性QC、Learning MapへのAssessment Status追加、評価・意思決定するL1例の修正。
-
-**v0.5→v0.6**（今回）：
-
-1. **Capability IV｜Business / Management Literacyを新設・統合**：Role／Responsibility層の検討（`consultant-role-responsibility-model.md`）で、Strategy ConsultantのResponsibility「R7：分析・提言を事業実態に照らして妥当にする」がCapability I〜IIIでカバーされないGapとして特定され、その解として6 Skillを追加した（Company／Financial Analysis、Business Model／Economics、Investment／Business Case、Corporate Governance／Management、Commercial／Contract Literacy、Regulatory／Risk Literacy）
-2. **各SkillにPrerequisite Knowledge（Pass／Not Yet）を付与**：KnowledgeはLevelを持たず、Skill本体のみ既存共通Level定義でL0〜L4を判定する
-3. **「RoleがRequired Levelを決める」原則を明示**：SkillはL0〜L4まで常に定義し、Strategy Consultantとしてどこまで必要かはRole側（別ファイル）が指定する。Commercial／Contract LiteracyとRegulatory／Risk Literacyは、「法的判断はScope外」という範囲の狭さと「Levelの高さ」を混同していたのを修正し、Required LevelをL2とした（詳細は`consultant-role-responsibility-model.md`）
-4. 新設した6 Skillも既存18 Skillと同じEvidence QC（L2＝自力実施＋主要判断理由の説明、L3＝問題発見＋なぜ問題か＋修正方向、L4＝非標準適応＋判断理由＋他者指導）を最初から適用し、24 Skill全体でギャップ0件を確認した
-5. §1.5のRecommended Prerequisiteに6 Skill分を追加
+**読み終えると分かること**：①4つのCapability（Thinking／Delivery／Stakeholder／Business Literacy）と24のSkillが何か、②各Skillについて、L0（未着手）からL4（教えられる）までの到達基準（Evidence）、③そのEvidenceを満たすための教材（Learning／OJT）。
 
 ---
 
@@ -55,7 +40,7 @@ Playbookが増えてもCapability自体は増減しない状態を目指し、�
 
 ### Skillの粒度原則
 
-**Skillとは、単独でL0→L4を評価できる最小の実務能力単位**とする。1つのPlaybook全体を1つのSkillに対応させない（Playbookは複数Skillにまたがる教材の束であってよい）。この原則により、v0.2の「Transition」（③1冊分をそのまま1 Skillにしていた）を見直した。
+**Skillとは、単独でL0→L4を評価できる最小の実務能力単位**とする。1つのPlaybook全体を1つのSkillに対応させない（Playbookは複数Skillにまたがる教材の束であってよい）。たとえばTransitionは、③1冊分をまとめて1 Skillにするのではなく、「Due Diligence／Planning」「Knowledge Transfer」「工数見積もり」に分けている。
 
 ### Capability I｜Thinking / Problem Solving
 
@@ -76,9 +61,9 @@ Playbookが増えてもCapability自体は増減しない状態を目指し、�
 | Schedule Integration | 複数PJのスケジュールを統合する | `playbooks/cross-project-program-management.md` Ch4 |
 | Scope／Responsibility | スコープ境界と責任分界を管理する | `playbooks/cross-project-program-management.md` Ch5 |
 | Risk／Issue Management | RAID・エスカレーションを運用する | `playbooks/cross-project-program-management.md` Ch8 |
-| Transition Due Diligence／Planning | 引き継ぎ前提（Operability・Warranty）を検証し、移行計画を設計する | `playbooks/operations-transition-playbook.md`（Ch2・Ch3.1〜3.4） |
-| Knowledge Transfer | 暗黙知を運用チームへ移転する | `playbooks/operations-transition-playbook.md`（Ch2.5・Ch3.5） |
-| Transition工数見積もり | 移行工数を前提条件付きで見積もる | `playbooks/operations-transition-playbook.md`（Ch4） |
+| Transition Due Diligence／Planning | 引き継ぎ前提（Operability・Warranty）を検証し、移行計画を設計する | `playbooks/operations-transition-playbook.md`（③ Ch2・Ch3.1〜3.4） |
+| Knowledge Transfer | 暗黙知を運用チームへ移転する | `playbooks/operations-transition-playbook.md`（③ Ch2.5・Ch3.5） |
+| Transition工数見積もり | 移行工数を前提条件付きで見積もる | `playbooks/operations-transition-playbook.md`（③ Ch4） |
 
 ③のChapter 7「定着化とチェンジマネジメント」は、内容的にはTransitionという作業ではなく**人の行動が変わるかどうか**を扱っているため、Capability IIではなくCapability IIIの「Influence／Activation」の教材として整理し直した（下表）。
 
@@ -89,7 +74,7 @@ Playbookが増えてもCapability自体は増減しない状態を目指し、�
 | Stakeholder Diagnosis | Segment（誰から動かすか）とDiagnose（なぜ動かないか）で見立てる | `playbooks/stakeholder-activation-playbook.md`（横串 Ch2・Ch3） |
 | Communication | 意思決定者向けに構造化して伝える | `core/author-voice.md` §3〜4 |
 | Facilitation | ワークショップ・レビューを回す | `standards/scn-creation-guide.md` §Workshop |
-| Influence／Activation | 原因に応じた打ち手を選び、個別化し、行動が変わったかを観察する | `playbooks/stakeholder-activation-playbook.md`（Ch4〜8）、`playbooks/operations-transition-playbook.md`（Ch7、定着化の文脈） |
+| Influence／Activation | 原因に応じた打ち手を選び、個別化し、行動が変わったかを観察する | `playbooks/stakeholder-activation-playbook.md`（横串 Ch4〜8）、`playbooks/operations-transition-playbook.md`（③ Ch7、定着化の文脈） |
 | Governance／Escalation | Steering等への報告・エスカレーションを設計する | `playbooks/cross-project-program-management.md` Ch8.5、`playbooks/program-governance-cadence.md` |
 
 ### AIの扱い（独立Skillにしない）
@@ -283,7 +268,7 @@ RAGステータス判定基準、RAID、Decision Log／Change Control、Steering
 
 #### Transition Due Diligence／Planning
 
-自PJからのService Introduction（Operability・Warranty）、他社からのTransitionにおけるデューデリジェンスが教材（`playbooks/operations-transition-playbook.md` Ch2・Ch3.1〜3.4）。
+自PJからのService Introduction（Operability・Warranty）、他社からのTransitionにおけるデューデリジェンスが教材（`playbooks/operations-transition-playbook.md` ③ Ch2・Ch3.1〜3.4）。
 
 | Current | Target | Learning／OJT | Evidence | 判定者 |
 |---|---|---|---|---|
@@ -294,7 +279,7 @@ RAGステータス判定基準、RAID、Decision Log／Change Control、Steering
 
 #### Knowledge Transfer
 
-暗黙知の運用チームへの移転設計（自PJ・他社共通、`playbooks/operations-transition-playbook.md` Ch2.5・Ch3.5）が教材。
+暗黙知の運用チームへの移転設計（自PJ・他社共通、`playbooks/operations-transition-playbook.md` ③ Ch2.5・Ch3.5）が教材。
 
 | Current | Target | Learning／OJT | Evidence | 判定者 |
 |---|---|---|---|---|
@@ -305,7 +290,7 @@ RAGステータス判定基準、RAID、Decision Log／Change Control、Steering
 
 #### Transition工数見積もり
 
-前提条件を明示した工数見積もり（`playbooks/operations-transition-playbook.md` Ch4）が教材。
+前提条件を明示した工数見積もり（`playbooks/operations-transition-playbook.md` ③ Ch4）が教材。
 
 | Current | Target | Learning／OJT | Evidence | 判定者 |
 |---|---|---|---|---|
@@ -355,7 +340,7 @@ AIとの協働：Segment・Diagnoseの一次仮説をAIに作らせることは�
 
 #### Influence／Activation
 
-原因（Diagnose結果）に応じた打ち手の選定（Select）、共通コアと個別化されたReason to Act（Tailor）、行動変化の観察（Observe）、Champion／Key Blocker対応、チャネル選定が教材（`playbooks/stakeholder-activation-playbook.md` Ch4〜8）。定着化のモニタリング（`playbooks/operations-transition-playbook.md` Ch7）も同じ文脈で扱う。
+原因（Diagnose結果）に応じた打ち手の選定（Select）、共通コアと個別化されたReason to Act（Tailor）、行動変化の観察（Observe）、Champion／Key Blocker対応、チャネル選定が教材（`playbooks/stakeholder-activation-playbook.md` Ch4〜8）。定着化のモニタリング（`playbooks/operations-transition-playbook.md` ③ Ch7）も同じ文脈で扱う。
 
 | Current | Target | Learning／OJT | Evidence | 判定者 |
 |---|---|---|---|---|
@@ -451,21 +436,17 @@ Capability I〜IIIが「型（プロセス・技法）」であるのに対し�
 
 ---
 
-## 4. Source of Truthの状態（更新）
+## 4. 教材の出典についての注意
 
-**③ Operations Transition**：`playbooks/operations-transition-playbook.md`（本編）と `playbooks/operations-transition-playbook-selfstudy.md`（自習版）がリポジトリにある。Capability IIに反映済み（§1）。
+**③ Operations Transition** は `playbooks/operations-transition-playbook.md`（本編）と `playbooks/operations-transition-playbook-selfstudy.md`（自習版）がリポジトリにある。**横串 Stakeholder Activation** は `playbooks/stakeholder-activation-playbook.md`（本編）と `playbooks/stakeholder-activation-playbook-selfstudy.md`（自習版）がリポジトリにある。
 
-**横串 Stakeholder Activation**：`playbooks/stakeholder-activation-playbook.md`（本編）と `playbooks/stakeholder-activation-playbook-selfstudy.md`（自習版）がリポジトリにある。Ch2 Segment・Ch3 DiagnoseをStakeholder Diagnosisの教材とし、Ch4〜8 Select／Tailor／Observe／Champion対応／チャネルはInfluence／Activationの教材として展開した（§1・§3.3）。
-
-**「仮説を作る」の教材マッピング検証**：`core/author-voice.md`の中身を確認した。§1.1「思考の型」が Fact → Issue → 仮説 → To-Be → Approach そのものであり、One-Line Summaryも「クライアントのファクトから自分の仮説を立て」から始まっている。したがって仮説構築の教材として妥当と判断し、そのまま残した。ただし同ファイルは§3以降で文章表現・トーンも扱っているため、Communicationの教材としても併記した（§1のCapability III表）。1教材が複数Skillにまたがる例として、本ファイル冒頭の設計原則通りの扱いである。
-
-**③のChapter 6「AI運用のスキル・レベル・教育ロードマップ」**は、`frameworks/ai-operations-role-design.md`（Experimental、確定待ち）に基づく**クライアント側AI運用チームのRole×Maturity Levelモデル**であり、本ファイルが扱う**コンサルタント本人のCapability／Skill／Level**とは対象が異なる別物である。判定を自己申告に頼らず観察可能な証跡（例：「過去3か月で改善提案を1件以上」）で行う方式は、§2のEvidence方式の社内先行事例として参考にした。
+**③のChapter 6「AI運用のスキル・レベル・教育ロードマップ」と本ファイルは別物である。** 前者は`frameworks/ai-operations-role-design.md`に基づく、クライアント側AI運用チームのRole×Maturity Levelモデル。本ファイルはコンサルタント本人のCapability／Skill／Levelを扱う。名前が似ているため混同しないこと。
 
 ---
 
 ## 5. 配布物の分離
 
-本ファイルは**Capability Model本体**として、育成担当・マネージャー側のSource of Truthに位置づける。若手本人に渡すのは、ここから生成する**Consultant Learning Map**に分ける。
+本ファイルは**Capability Model本体**として、育成担当・マネージャー側のSource of Truthに位置づける。若手が日常的に使う入口は`frameworks/skill-playbook-directory.md`（読むものの早見表）であり、本ファイルではない。**Consultant Learning Map**は、特定のSkillについて「次に何をやるべきか」を個別に伝えるときの指示メモであり、最初に渡す配布物ではない。
 
 ### 設計原則の更新
 
@@ -489,18 +470,29 @@ Capability I〜IIIが「型（プロセス・技法）」であるのに対し�
 
 ---
 
-## 6. 次に必要なもの
+## 6. Pilotの使い方
 
-構造設計・4 Capability・24 SkillのEvidence QC・Learning Mapプロトタイプまで完了した。**24 SkillのLevel表は「運用検証前」**として扱う。机上のレビューだけでは、実データを判定したときに出る問題（Evidenceだけでは L1/L2 が決めきれない、案件経験がないSkillの扱い、Prerequisite Knowledgeの確認方法、質の低い2件はどうするか、Prerequisite未達のまま次に進んでいる場合の扱い、Evidence／Knowledgeの保管者は誰か等）が見えないため。
+このモデルはまだ「運用検証前」である。24 Skillを机上で作った通りに実際の評価へ使うと、想定していなかった問題が出るはずである。実在メンバー1名を対象に、次の2つを並行して見る。
 
-次のステップとして、実在メンバー1名について次を通しで試行する（Capability IVを含む24 Skill対象）。
+- **Manager UX Pilot**：`frameworks/pilot-assessment-strategy-consultant.md`を使い、ManagerがCapability I→III→IVの順に本人と1on1で評価できるか
+- **Learner UX Pilot**：`frameworks/skill-playbook-directory.md`だけを本人に渡し、「今困っていることに対して何を読めばいいか」「読んだ後、何ができればいいか」が迷わず分かるか
 
-1. 24 Skill全部のCurrent Level Assessment（自己申告＋Evidence確認）
-2. Capability IVについてはPrerequisite Knowledge（Pass／Not Yet）の確認も併せて行う
-3. Evidence確認（Confirmed／Provisionalの判定）
-4. §1.5 Prerequisiteとの照合（Prerequisite未達のまま先行しているSkillがないか）
-5. Assignmentとの照合
-6. Learning Map生成（§5の形式で）
-7. 次のOJTの決定
+問題が解消してから、他Role（PgMO、Transition Manager等）への展開に進む。
 
-これを一度通し、運用上の問題が出なければ「Round 1 Operationally Validated」として確定する。その後で、他Role（PgMO、Transition Manager等）のRole／Responsibility定義へ展開する。1名の試行に使うメンバーの選定と、Evidence／Prerequisite Knowledge確認をどこに記録するかは、着手前に決めておきたい。
+**次の教材開発優先領域**：Capability IVの6 Skillは、Required Levelは決まりEvidenceも定義済みだが、Learning Intervention（読んで身につける教材）がまだない（`skill-playbook-directory.md`が正直に「読むべきPlaybookがない」と明記している）。「できていないと判定はできるが、どう学べばいいかは分からない」状態なので、Pilotと並行して着手を検討する。
+
+---
+
+## 変更履歴
+
+| version | 変更点 |
+|---|---|
+| v0.1 | パイロット版として、①②③のPlaybookに沿った3 Capability・6 Skillの叩き台を作成 |
+| v0.2 | CapabilityをPlaybook非依存の3系統（Thinking／Delivery／Stakeholder）に再構成。LevelをCurrent→Target→Learning/OJT→Evidenceの遷移として定義し直した |
+| v0.2.1 | ③受領によりCapability IIのTransition行の教材を実ファイルで更新 |
+| v0.3 | Skillの粒度原則を明文化しTransitionを分割。Level共通定義とEvidenceを分離。再現性の原則を追加。判定者を役職名に統一。横串を受領し「Stakeholder Diagnosis」を追加 |
+| v0.4 | Recommended Prerequisiteを追加。残り15 Skillを展開し3 Capability・18 Skillを完成 |
+| v0.5 | 全18 SkillのEvidenceを共通Level定義に対して均質化。Learning MapにAssessment Statusを追加 |
+| v0.6 | Capability IV（Business／Management Literacy、6 Skill）をPrerequisite Knowledge付きで追加し、4 Capability・24 Skillに |
+| v0.6.1 | 現場フィードバックを受け、変更履歴・進行メモを本文から分離。`skill-playbook-directory.md`（早見表）を新設 |
+| v0.6.2 | 次のステップをManager UX／Learner UXの2トラックPilotに整理。Capability IVの教材未整備を次の優先領域として明記 |

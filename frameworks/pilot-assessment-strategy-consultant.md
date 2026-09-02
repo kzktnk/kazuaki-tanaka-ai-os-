@@ -8,24 +8,28 @@ gap_fill: "Current Level・Evidence・Prerequisite Knowledgeの列は空欄。�
 related:
   - frameworks/consultant-capability-skill-model.md
   - frameworks/consultant-role-responsibility-model.md
-last_updated: 2026-09-01
+last_updated: 2026-09-03
 ---
 
 # Pilot Assessment Worksheet｜Strategy Consultant
 
+**これは試験ではなく、育成1on1の診断カルテです。** 本人に渡して「埋めておいて」と依頼するものではありません。1on1やOJTの振り返りの中で、Assessor（指導者・マネージャー）が本人に問いかけながら、**Assessor側が記入します**（例：「構造化は最近どこでやった？」「その資料見せてもらえる？」「じゃあ今はL1 Confirmed、L2はProvisionalだね」）。本人はEvidenceになりそうな実績を持ってくることはあっても、24 Skillの記入事務そのものを担うわけではありません。
+
+24 Skill全部を一度に終わらせる必要もありません。Capabilityごと（5〜8 Skillずつ）に分けて、数回の1on1に分けて進めてください。「Not Yet」や「Provisional」が多くても、それは今の到達点が分かっただけのことで、悪い結果ではありません。
+
 **対象者：** （氏名）
 **Role：** Strategy Consultant
 **現在のAssignment：** （案件・アサイン内容）
-**Assessment実施日：** （日付）
+**Assessment実施日：** （日付。複数回に分けた場合は都度追記）
 **Assessor（Evidence確認者）：** （氏名・役職）
 
 ---
 
-## 記入方法
+## 記入方法（Assessorが記入する）
 
-1. 「Current Level」に自己申告のLevelを記入する（L0〜L4）
-2. 「Evidence／根拠」に、そのLevelだと判断した具体的な実績（案件名・アウトプット・時期）を記入する。書けなければProvisionalのまま次に進む
-3. 「Status」にConfirmed（Assessorが確認済み）かProvisional（自己申告のみ）を記入する
+1. 1on1で聞きながら、「Current Level」にAssessorが判断したLevelを記入する（L0〜L4）
+2. 「Evidence／根拠」に、そう判断した具体的な実績（案件名・アウトプット・時期。本人に見せてもらった資料など）を記入する。書けなければProvisionalのまま次に進む
+3. 「Status」にConfirmed（Evidenceを確認できた）かProvisional（本人の申告のみで、まだ確認できていない）を記入する
 4. Capability IVは先に「Prerequisite Knowledge」欄をPass／Not Yetで埋めてから、Skillの記入に進む
 5. 全部埋め終わったら「Gap」列（Required Level − Current Level）を計算し、末尾のGap集計に転記する
 

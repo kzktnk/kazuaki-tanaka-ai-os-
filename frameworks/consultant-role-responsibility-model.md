@@ -1,38 +1,30 @@
 ---
 type: framework
-title: "Strategy Consultant Role Model ― Role／Responsibility層（v0.3 ― 構造確定・Pilot移行）"
-source: "frameworks/consultant-capability-skill-model.md（v0.6、Capability IVを統合済み）の上位層。v0.1へのレビューを反映しv0.2化（Legal/Regulatory L2化、Skill/Knowledge原則修正）。v0.2へのレビューを反映し、Governance/ManagementのRequired LevelをL2に修正、Capability I〜IIIのRequired Levelを補完、v0.5世代の残存表記を整合（v0.3）。"
+title: "Strategy Consultant Role Model ― Role／Responsibility層"
+source: "frameworks/consultant-capability-skill-model.md（Capability I〜IVを扱う）の上位層。Role→Responsibility→Capability→Skill／Knowledgeの4層構造を定義する。"
 status: draft
 extracted: false
-gap_fill: "Capability IVの6 Skill本体（Prerequisite Knowledge・L0→L4 Evidence・Learning/OJT）はframeworks/consultant-capability-skill-model.md（v0.6）側に統合。本ファイルはRole／Responsibility層とRequired Levelの一覧に特化する。構造検討はv0.3で終了し、以降はPilotで発生した運用上の問題のみを入力とする。"
+gap_fill: "Capability IVの6 Skill本体（Prerequisite Knowledge・L0→L4 Evidence・Learning/OJT）はconsultant-capability-skill-model.md側に統合。本ファイルはRole／Responsibility層とRequired Levelの一覧に特化する。"
 related:
-  - frameworks/consultant-capability-skill-model.md（v0.6、Capability IV統合済み）
+  - frameworks/consultant-capability-skill-model.md
+  - frameworks/skill-playbook-directory.md（読むものを探すならこちら）
   - frameworks/pilot-assessment-strategy-consultant.md（Pilot実施用ワークシート）
   - playbooks/strategy-scn.md
-last_updated: 2026-09-01
+last_updated: 2026-09-03
 ---
 
 # Strategy Consultant Role Model
-## ― Role／Responsibility層（v0.3 ― 構造確定・Pilot移行） ―
+## ― Role／Responsibility層 ―
 
-**Status:** 構造検討は終了。次は実在メンバー1名によるPilot（24 Skill、`frameworks/pilot-assessment-strategy-consultant.md`使用）。以降はPilotで発生した運用上の問題のみを次版への入力とする
+Strategy ConsultantというRoleが「何を果たすべきか（Responsibility）」を、`consultant-capability-skill-model.md`の Capability／Skill と結びつけるための文書です。
 
-## 変更履歴
-
-**v0.2→v0.3**（今回）：
-
-1. **Corporate Governance／ManagementのRequired LevelをL1→L2に修正**：「Governance／Escalationと重複するから軽くする」という判断を撤回した。両者は問い自体が異なる（Corporate Governance／Management＝実際に誰が・なぜ決めるのか＝Business Literacy、Governance／Escalation＝その人へどう決裁・エスカレーションを流すか＝Delivery／Stakeholder Skill）。この結果、Capability IVの6項目は全てRequired Level L2で揃った（§5.3）
-2. **Capability I〜IIIのRequired Levelを補完**（§5.4）：Pilotの「Role Required Level Gap」ステップを実際に計算可能にするため、既存18 SkillについてもStrategy ConsultantとしてのRequired Levelを指定した。Capability II（Delivery／Execution）はほぼ全滅L0（対象外）――Gate 1までを担うStrategy Consultantには、個別PJ実行管理のSkillは不要という判断
-3. **v0.5世代の残存表記を整合**：`consultant-capability-skill-model.md`側の「3系統」「18 Skill、全展開」を「4系統」「24 Skill、全展開」に修正（v0.5→v0.6統合時の残骸）
-4. **構造検討ラウンドを終了**：これ以上机上でSkillを追加せず、Pilotで見つかった運用上の問題だけを次版のインプットにする
-
-**v0.1→v0.2**：Role→Responsibility→Capability構造を確定、Skill／Knowledgeの二重Level管理をやめてPrerequisite Knowledge方式へ、「Skillは常にL0〜L4・RoleがRequired Levelを決める」原則を明示、Commercial／Contract LiteracyとRegulatory／Risk LiteracyのRequired LevelをL1→L2に修正、Capability IVの6 Skillをフル展開して`consultant-capability-skill-model.md`（v0.6）に統合。
+**読み終えると分かること**：①Strategy ConsultantのMissionと8つのResponsibility、②それぞれがどのCapability／Skillでカバーされているか、③既存のCapability I〜IIIだけでは埋まらなかった領域（Business／Management Literacy）が何か、④その領域に含めた6項目と、Strategy Consultantとして必要な水準（Required Level）。
 
 ---
 
 ## 0. 位置づけ
 
-`frameworks/consultant-capability-skill-model.md`（v0.5）は、Capability I〜III・18 Skillまでを扱う。今回はその**上位**に、次の4層構造を検証する。
+`frameworks/consultant-capability-skill-model.md`は、Capability I〜IVとSkillを扱う。本ファイルはその**上位**に位置し、次の4層構造を持つ。
 
 ```text
 Role（Mission・Responsibility）
@@ -44,10 +36,10 @@ Capability（I〜III、必要ならIV）
 Skill／Knowledge
         │
         ▼
-Level／Evidence（既存18 Skillはv0.5のまま。新設分はこの段階では作らない）
+Level／Evidence（`consultant-capability-skill-model.md`側で定義）
 ```
 
-v0.5の18 Skill・Level・Evidenceはベースラインとして**一切変更していない**。本ファイルは新しいレイヤーの追加提案であり、既存部分への変更ではない。
+既存Capability I〜IIIのSkill・Level・Evidenceはベースラインであり、本ファイルはその上に新しいレイヤーを追加する。
 
 ---
 
@@ -101,11 +93,11 @@ Capability I〜IIIは、**考え方・進め方の型（プロセス・技法）
 
 ---
 
-## 4. 「Skill」と「Prerequisite Knowledge」の関係（v0.1から修正）
+## 4. 「Skill」と「Prerequisite Knowledge」の関係
 
-v0.1では Skill と Knowledge を並列の二軸でLevel管理する案を出したが、レビューで指摘の通りこれは管理が複雑になりすぎる。修正後の原則は次の通り。
+Levelを持つのはSkillだけとする。Knowledgeを並列にLevel管理すると複雑になりすぎるため、次の原則にする。
 
-- **Levelを持つのはSkillだけ**：L0〜L4は既存18 Skillと共通の定義（`consultant-capability-skill-model.md` §2）をそのまま使う
+- **Levelを持つのはSkillだけ**：L0〜L4はCapability I〜IIIと共通の定義（`consultant-capability-skill-model.md` §2）をそのまま使う
 - **Knowledgeは各SkillのPrerequisite**として位置づけ、Pass／Not Yetの二値で管理する（Level化しない）。例：Company／Financial Analysisという1つのSkillに対し、「PL／BS／CFの構造を知っているか」「三表のつながりを説明できるか」といったPrerequisite Knowledgeの一覧を持たせ、それが一通りPassしていることをL0→L1の前提とする
 - **SkillはL0〜L4まで常に定義可能**。「このSkillはL2までしか要らない」という判断は、Skillの定義を削るのではなく、**Role側がRequired Levelとして指定する**ことで表現する。これにより、将来別のRole（例：M&A Strategy）が同じFinancial Analysis SkillにL3を要求する、といった拡張が構造を壊さずにできる
 
@@ -120,16 +112,16 @@ Capability IVの6 Skillの本体（Prerequisite Knowledge・L0→L4 Evidence・L
 - **法律領域**：専門家として法的判断を下すことは範囲外とする。論点を発見し、Business Impactを考え、Legal等の専門家に確認すべきQuestionへ変換できることを中心に置く
 - **財務領域**：深い財務分析・モデリングの専門性ではなく、経営層との会話が成立し、経営課題の仮説形成に使える実務能力として扱う
 
-### 5.2 6候補の評価（v0.2 ― Required Level修正版）
+### 5.2 6候補の評価
 
-法律・規制系の2項目について、v0.1では「範囲が狭い（法的判断はしない）」ことを理由にRequired LevelをL1としたが、これは誤りだった。**範囲の狭さとLevelの高さは別軸である。** 「論点を自力で発見し、Business Impactを整理し、専門家へのQuestionとして自分の力でまとめる」のは、指導下（L1）ではなく自走（L2）の定義そのものに該当する。「法的結論を出す」ことは全Levelを通じてScope外のままだが、「論点を発見する」ことはL2を要求する。
+**範囲の狭さとLevelの高さは別の軸である。** 法律・規制まわりは「法的結論を出すことはScope外」という範囲の制約があるが、それは「論点を自力で発見し、Business Impactを整理し、専門家へのQuestionとして自分の力でまとめる」ことまでL2を要求しない理由にはならない。これは指導下（L1）ではなく自走（L2）の定義そのものに該当する。
 
 | # | 候補 | ①Capabilityとして必要か | ②構成 | ③Strategy ConsultantのRequired Level |
 |---|---|---|---|---|
 | 1 | Company／Financial Analysis | 必要。ほぼ全案件でクライアントの財務状況を踏まえた会話が発生する | Skill＋Prerequisite Knowledge（PL/BS/CF構造、三表のつながり、主要指標等） | **L2** |
 | 2 | Business Model／Economics | 必要。SCNのValue／Capability層の精度は、事業経済性の理解に直結する | Skill＋Prerequisite Knowledge（収益モデル類型、コスト構造、Unit Economics等） | **L2** |
 | 3 | Investment／Business Case | 必要。Program Charter骨子のKPI・投資ロジックが、この理解なしでは絵に描いた餅になる（`strategy-scn.md` Ch5の既知の前提） | Skill＋Prerequisite Knowledge（NPV/IRR/Payback、投資指標とPDCA用KPIの違い等） | **L2** |
-| 4 | Corporate Governance／Management | 必要。**L1から修正**：Skill本体のL2定義（真のSponsor・decision makerと権限範囲を自力で特定）は、Strategy ConsultantのR6（提言をOwnershipまで導く）・R8（Gate 1を成立させる）に照らして必要である。「Governance／Escalationと重複するから軽くする」という前回の判断は誤りだった。両者は問いが違う：Corporate Governance／Management＝「実際に誰が・なぜ決めるのか」（Business Literacy）、Governance／Escalation＝「その人へどう決裁・エスカレーションを流すか」（Delivery／Stakeholder Skill）。重複ではなく相互補完のため、深さを妥協する理由がない | Skill＋Prerequisite Knowledge（取締役会・執行役員構造、権限委譲パターン等） | **L2**（修正） |
+| 4 | Corporate Governance／Management | 必要。Skill本体のL2定義（真のSponsor・decision makerと権限範囲を自力で特定）は、Strategy ConsultantのR6（提言をOwnershipまで導く）・R8（Gate 1を成立させる）に照らして必要である。Governance／Escalationとは問いが違う：Corporate Governance／Management＝「実際に誰が・なぜ決めるのか」（Business Literacy）、Governance／Escalation＝「その人へどう決裁・エスカレーションを流すか」（Delivery／Stakeholder Skill）。相互補完であり、重複ではない | Skill＋Prerequisite Knowledge（取締役会・執行役員構造、権限委譲パターン等） | **L2** |
 | 5 | Commercial／Contract Literacy | 必要。範囲は「専門家として契約書を扱う」ではなく「論点を発見し、Legalへの質問に変換する」に限定 | Skill＋Prerequisite Knowledge（契約基本構造、典型的リスクポイント等） | **L2**：契約・責任分界・知財・検収等の潜在論点を自力で発見し、Business Impactを説明した上でLegalへのQuestionとして整理できる水準。法的判断はL2でも範囲外のまま |
 | 6 | Regulatory／Risk Literacy | 必要。範囲は5と同様、専門的な法解釈ではなく論点発見と質問への変換 | Skill＋Prerequisite Knowledge（業界別規制カテゴリ、規制論点の典型的な経営影響パターン等） | **L2**：Cross-border、Data、業規制等の潜在的規制論点を自力で発見し、Business Impactと専門家確認事項を整理できる水準。法的判断はL2でも範囲外のまま |
 
@@ -139,18 +131,18 @@ L3・L4も他のSkill同様に定義してある（本体は`consultant-capabili
 
 ### 5.3 確定：Capability IV「Business / Management Literacy」
 
-上記6候補を、**Capability IV｜Business / Management Literacy**として新設した（v0.1では提案段階、今回で確定）。Capability I〜IIIとは性質が異なる点を明示する位置づけは維持する。
+上記6候補を、**Capability IV｜Business / Management Literacy**として新設した。Capability I〜IIIとは性質が異なる点を明示する位置づけとする。
 
 - Capability I〜III＝「型（プロセス・技法）」。業界・クライアントを問わず適用できる
 - Capability IV＝「実務知識・literacy」。型を具体的なクライアントに正しく当てはめるための事業理解
 
-Capability IVの6項目は、すべて他の18 Skillと同じ形式（Prerequisite Knowledge・L0→L4 Evidence・Learning／OJT・判定者）で`consultant-capability-skill-model.md`（v0.6）に統合した。
+Capability IVの6項目は、すべて他のCapabilityと同じ形式（Prerequisite Knowledge・L0→L4 Evidence・Learning／OJT・判定者）で`consultant-capability-skill-model.md`に統合した。ただし6項目とも、参照すべき教材（Playbook）自体はまだない（`skill-playbook-directory.md`参照）。
 
-前回レビュー（v0.3〜v0.4）で「Consulting Skill ModelをPresentation／Leadership／Negotiation……と一般的なCompetency Frameworkに広げるとモデルの強みが失われる」という指摘があった。Capability IVはこの懸念に対する回答として、**「教えられる教材があり、実際に判定できるSkillだけを置く」という原則は維持しつつ、「型を現実のクライアントに正しく当てはめるための実務知識」という、Capability I〜IIIでは埋まらない領域**として切り分けている。Presentation・Negotiationのような汎用ビジネススキル一般には広げていない。
+Consulting Skill Modelは、Presentation／Leadership／Negotiation……といった一般的なCompetency Frameworkには広げていない。Capability IVも、**「Evidenceで実際に判定できるSkillだけを置く」という原則の範囲内**にある（教材が先に揃っていることは条件にしていない。教材は後から追いつかせるものであり、Evidenceで判定できることが先にあってよい）。「型を現実のクライアントに正しく当てはめるための実務知識」という、Capability I〜IIIでは埋まらない領域として切り分けたものである。
 
 ### 5.4 Capability I〜IIIのRequired Level（Pilotに必要な補完）
 
-Pilot（§7）でRole Required Level Gapを見るには、Capability IVだけでなく既存18 Skillについても、Strategy ConsultantとしてのRequired Levelが要る。Skillの新規追加ではなく、既存Skillに対するRole側の「必要な水準」の指定であり、机上でSkillを新たに増やす作業ではない。
+Pilot（§6）でRole Required Level Gapを見るには、Capability IVだけでなくCapability I〜IIIについても、Strategy ConsultantとしてのRequired Levelが要る。Skillの新規追加ではなく、既存Skillに対するRole側の「必要な水準」の指定であり、机上でSkillを新たに増やす作業ではない。
 
 R1〜R8のマッピング（§2）に基づく。
 
@@ -179,32 +171,34 @@ Capability IIが軒並みL0（対象外）なのは意図的である。Strategy
 
 ---
 
-## 6. 構造検討は終了。ここから先はPilotの入力のみ
+## 理解確認（本ファイルの読者＝Manager・育成担当向け）
 
-**今回までに展開したもの**（`consultant-capability-skill-model.md` v0.6側）：Capability IVの6 Skillについて、Prerequisite Knowledge・L0→L4 Evidence・Learning／OJT・判定者を、既存18 Skillと同じ形式・同じ厳密さで作成した。Capability I〜IIIを含む24 Skill全部にStrategy ConsultantのRequired Levelを設定した（§5.4）。
+読み終えたら、次の3問に自分の言葉で答えられるか確認してください。全部Yesなら十分です。試験ではなく、読了確認です。
 
-**もう机上ではやらないこと**：
-
-- 「他にSkillはないか」を探す追加のCapability／Skill探索
-- Capability IVのLearning Map化（Pilotで実際に必要になった時点で作成する）
-- 他Role（PgMO、Transition Manager等）のRole／Responsibility定義（Strategy ConsultantでのPilot後）
-
-構造設計としてはここで一区切りとする。以降の変更は、次章のPilotで実際に発生した運用上の問題だけを入力とする。
+- Strategy ConsultantのMissionを、Gate 1との関係を含めて説明できますか？
+- R7が、Capability I〜IIIだけではカバーされない理由を説明できますか？
+- Strategy ConsultantにとってCapability II（Delivery／Execution）がRequired L0（対象外）である理由を説明できますか？
 
 ---
 
-## 7. 次に必要なもの：実在メンバー1名によるPilot
+## 6. 次のステップ
 
-構造検討は終了。次は`frameworks/pilot-assessment-strategy-consultant.md`（本Roundで新規作成）を使い、実在メンバー1名について次を通しで実施する。
+評価するときは`frameworks/pilot-assessment-strategy-consultant.md`（Manager・指導者が本人との1on1で埋める診断シート。本人に埋めさせるものではない）を使う。読むものだけを探しているなら`frameworks/skill-playbook-directory.md`のほうが早い。
 
-1. 24 Skill全部のCurrent Level Assessment（自己申告→Evidence確認）
-2. Capability IVはPrerequisite Knowledge（Pass／Not Yet）も確認
-3. Assessment Status（Confirmed／Provisional）の判定
-4. §1.5（`consultant-capability-skill-model.md`）のPrerequisiteとの整合確認
-5. §5.4の Required Level と Current Level の Gap 算出
-6. Learning Map生成
-7. 次のOJT決定
+現在はPilot段階。次の2つを並行して見る。
 
-Pilotを通して見るべきは、モデルの美しさではなく実際に人を評価できるかである。特に、EvidenceがないSkillの扱い、「未経験」と「能力不足」の区別、Provisionalの確定方法、Knowledge Not YetのままSkill Evidenceがある場合の扱い、24 Skill評価の負荷が現実的か、Required L2に対するGapが大量に出た場合の優先順位づけ、Evidence／Knowledgeの保存場所――これらはPilotをやらなければ見えない。
+- **Manager側の使い勝手**：ManagerがAssessment Worksheetを使って、本人と1on1でCapability I→III→IVを無理なく評価できるか
+- **若手側の使い勝手**：`skill-playbook-directory.md`だけを渡した若手が、「今困っていることに対して何を読めばいいか」「読んだ後、何ができればいいか」「もっと詳しく知りたいときCapability Modelまで辿れるか」を、迷わずできるか
 
-Pilotの対象者、実施時期、Evidence／Knowledgeの記録方法（誰が・どこに）をご指定いただければ、`pilot-assessment-strategy-consultant.md`に沿って一緒に埋めていく。
+Capability IVの6 Skillは、Required Levelは決まっているがLearning Intervention（教材）がまだない（`skill-playbook-directory.md`参照）。次の教材開発の優先領域として認識しているが、Pilotを止める理由にはしない。
+
+---
+
+## 変更履歴
+
+| version | 変更点 |
+|---|---|
+| v0.1 | Role／Responsibility層を新規作成。Capability IVをGapとして特定 |
+| v0.2 | Legal／Regulatory系のRequired LevelをL2に修正。Skill／Knowledgeの二重Level管理をやめ、Knowledge＝Prerequisiteに整理 |
+| v0.3 | Corporate Governance／ManagementのRequired LevelをL2に修正（Capability IVが全項目L2で統一）。Capability I〜IIIのRequired Levelを補完。現場フィードバックを受け、変更履歴・進行メモを本文から分離 |
+| v0.3.1 | 末尾に理解確認（3問）を追加。次のステップをManager UX／Learner UXの2トラックPilotに整理 |
