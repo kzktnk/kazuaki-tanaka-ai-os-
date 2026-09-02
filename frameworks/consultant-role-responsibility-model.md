@@ -8,9 +8,10 @@ gap_fill: "Capability IVの6 Skill本体（Prerequisite Knowledge・L0→L4 Evid
 related:
   - frameworks/consultant-capability-skill-model.md
   - frameworks/skill-playbook-directory.md（読むものを探すならこちら）
+  - frameworks/financial-analysis-for-consultants.md（Capability IV入口）
   - frameworks/pilot-assessment-strategy-consultant.md（Pilot実施用ワークシート）
   - playbooks/strategy-scn.md
-last_updated: 2026-09-03
+last_updated: 2026-09-02
 ---
 
 # Strategy Consultant Role Model
@@ -136,7 +137,7 @@ L3・L4も他のSkill同様に定義してある（本体は`consultant-capabili
 - Capability I〜III＝「型（プロセス・技法）」。業界・クライアントを問わず適用できる
 - Capability IV＝「実務知識・literacy」。型を具体的なクライアントに正しく当てはめるための事業理解
 
-Capability IVの6項目は、すべて他のCapabilityと同じ形式（Prerequisite Knowledge・L0→L4 Evidence・Learning／OJT・判定者）で`consultant-capability-skill-model.md`に統合した。ただし6項目とも、参照すべき教材（Playbook）自体はまだない（`skill-playbook-directory.md`参照）。
+Capability IVの6項目は、すべて他のCapabilityと同じ形式（Prerequisite Knowledge・L0→L4 Evidence・Learning／OJT・判定者）で`consultant-capability-skill-model.md`に統合した。入口教材があるのは Company／Financial Analysis（`frameworks/financial-analysis-for-consultants.md`）だけである。残り5項目は、参照すべき教材がまだない（`skill-playbook-directory.md`参照）。
 
 Consulting Skill Modelは、Presentation／Leadership／Negotiation……といった一般的なCompetency Frameworkには広げていない。Capability IVも、**「Evidenceで実際に判定できるSkillだけを置く」という原則の範囲内**にある（教材が先に揃っていることは条件にしていない。教材は後から追いつかせるものであり、Evidenceで判定できることが先にあってよい）。「型を現実のクライアントに正しく当てはめるための実務知識」という、Capability I〜IIIでは埋まらない領域として切り分けたものである。
 
@@ -190,7 +191,7 @@ Capability IIが軒並みL0（対象外）なのは意図的である。Strategy
 - **Manager側の使い勝手**：ManagerがAssessment Worksheetを使って、本人と1on1でCapability I→III→IVを無理なく評価できるか
 - **若手側の使い勝手**：`skill-playbook-directory.md`だけを渡した若手が、「今困っていることに対して何を読めばいいか」「読んだ後、何ができればいいか」「もっと詳しく知りたいときCapability Modelまで辿れるか」を、迷わずできるか
 
-Capability IVの6 Skillは、Required Levelは決まっているがLearning Intervention（教材）がまだない（`skill-playbook-directory.md`参照）。次の教材開発の優先領域として認識しているが、Pilotを止める理由にはしない。
+Capability IVは Required Level が決まっており、Company／Financial Analysis だけ入口教材がある。残り5 SkillのLearning Interventionはまだない。次点は Business Model／Economics。Pilotを止める理由にはしない。
 
 ---
 
@@ -202,3 +203,4 @@ Capability IVの6 Skillは、Required Levelは決まっているがLearning Inte
 | v0.2 | Legal／Regulatory系のRequired LevelをL2に修正。Skill／Knowledgeの二重Level管理をやめ、Knowledge＝Prerequisiteに整理 |
 | v0.3 | Corporate Governance／ManagementのRequired LevelをL2に修正（Capability IVが全項目L2で統一）。Capability I〜IIIのRequired Levelを補完。現場フィードバックを受け、変更履歴・進行メモを本文から分離 |
 | v0.3.1 | 末尾に理解確認（3問）を追加。次のステップをManager UX／Learner UXの2トラックPilotに整理 |
+| v0.3.2 | Capability IVの入口教材（Financial Analysis）をDirectory・次のステップから参照。残り5 Skillは未教材 |

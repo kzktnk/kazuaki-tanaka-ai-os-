@@ -1,10 +1,10 @@
 # Knowledge Master Index
 
-**Version:** v1.24  
+**Version:** v1.26  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
-**Last updated:** 2026-09-03
+**Last updated:** 2026-09-02
 
 ---
 
@@ -78,7 +78,7 @@ kazuaki-tanaka-ai-os/
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
 │   ├── patterns/               ← 41 distilled patterns
 │   ├── lessons/                ← 6 lessons
-│   ├── migrations/             ← 35 migration reports
+│   ├── migrations/             ← 37 migration reports
 │   └── decisions/              ← 4 records
 ├── templates/                  ← 1 template
 ├── prompts/                    ← README placeholder
@@ -204,6 +204,8 @@ frameworks/
 │   ├── consultant-capability-skill-model.md
 │   ├── consultant-role-responsibility-model.md
 │   ├── consultant-learning-map-example.md
+│   ├── skill-playbook-directory.md
+│   ├── financial-analysis-for-consultants.md
 │   ├── pilot-assessment-strategy-consultant.md
 │   ├── maturity-model.md
 │   ├── transformation-roadmap.md
@@ -245,7 +247,7 @@ knowledge/
 │       ├── 001–022/                  ← Operational AI main series
 │       ├── sp01–sp09/                ← special posts
 │       └── erf01–erf03/              ← Enterprise Redesign Framework
-├── patterns/                         ← 41 files (see table below)
+├── patterns/                         ← 44 files (see table below)
 ├── lessons/
 │   ├── governance-messaging.md
 │   ├── dual-roadmap-messaging.md
@@ -291,7 +293,9 @@ knowledge/
 │   ├── who-vs-lever-family-2026-09.md
 │   ├── wbs-selfstudy-consultant-skill-map-2026-09.md
 │   ├── consultant-skill-model-v06-2026-09.md
-│   └── consultant-skill-model-ux-2026-09.md
+│   ├── consultant-skill-model-ux-2026-09.md
+│   ├── pj-between-review-viewpoints-2026-09.md
+│   └── consultant-skill-directory-financial-2026-09.md
 └── decisions/
     ├── diagnose-from-gateway-not-client-error.md
     ├── sandbox-cost-controls-before-resources.md
@@ -299,7 +303,7 @@ knowledge/
     └── buyer-owns-ai-poc-ground-truth.md
 ```
 
-### Patterns (41)
+### Patterns (44)
 
 | Pattern | Primary themes |
 |---------|----------------|
@@ -345,6 +349,9 @@ knowledge/
 | `jera-scn-ebitda-tree.md` | SCN / EBITDA tree (client voice lesson) |
 | `logical-vs-physical-document-unity.md` | Physical store ≠ logical AI corpus; governance first |
 | `who-vs-lever-family.md` | Who to invest in ≠ logic/emotion × pull/push landing |
+| `scn-as-landscape-not-completeness.md` | Overlay running PJs on SCN; not MECE completeness or new projectization |
+| `topology-map-vs-issue-log.md` | Diagram is connections; issues live in 5-view table; questions before hearing |
+| `formulation-comms-vs-adoption-comms.md` | Roadmap-formulation comms ≠ adoption comms; kick conditions before field-team dispatch |
 
 ---
 
@@ -922,22 +929,63 @@ CONTEXT_ROUTING.md  →  Consultant Enablement / Skill Map
 
 ---
 
+### AA. Between-PJ review viewpoints (2026-09)
+
+```text
+Local weekly working pack on a running multi-project program — not archived
+        ↓ generalize (no client / plant / product IDs, transcript, filled matrices)
+knowledge/patterns/scn-as-landscape-not-completeness.md
+knowledge/patterns/topology-map-vs-issue-log.md
+knowledge/patterns/formulation-comms-vs-adoption-comms.md
+        ↓ connect
+playbooks/strategy-scn.md
+playbooks/cross-project-program-management.md
+frameworks/strategic-capability-network.md
+frameworks/change-management.md
+standards/consulting-review.md
+core/author-voice.md
+        ↓ record
+knowledge/migrations/pj-between-review-viewpoints-2026-09.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  SCN / Findings, Transformation PMO, Change Management, Proposal Review
+```
+
+---
+
+### AB. Skill Directory and Financial Analysis entry (2026-09)
+
+```text
+Local pack ALL_260902_2335 — md only; docx not archived
+        ↓ register Directory (previously pointer-only) + IV entry material
+frameworks/skill-playbook-directory.md
+frameworks/financial-analysis-for-consultants.md
+frameworks/consultant-capability-skill-model.md (v0.6.3)
+frameworks/consultant-role-responsibility-model.md (v0.3.2)
+frameworks/pilot-assessment-strategy-consultant.md
+        ↓ record
+knowledge/migrations/consultant-skill-directory-financial-2026-09.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  Consultant Enablement / Skill Map
+```
+
+---
+
 ## Level 4 — CONTEXT_ROUTING Task Map (summary)
 
 Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 
 | Task | Primary loads |
 |------|----------------|
-| Proposal review | `standards/consulting-review.md`, `deliverable-archetypes.md`, `writing.md` |
+| Proposal review | `standards/consulting-review.md` (artifact job before MECE), `deliverable-archetypes.md`, `writing.md` |
 | Customer weekly/monthly status | `deliverable-archetypes.md` Archetype J, `author-voice.md`, `project-management-policy-layer.md`, `support-effort-classification.md`, `change-agent-vs-communication-plan.md` / `unowned-work-in-effort-analysis.md` / `buyer-side-gap-vs-vendor-pmo.md` as needed, cadence / cross-project playbooks |
 | IT strategy | `frameworks/it-strategy-foundations.md`, `standards/it-strategy-engagement-guide.md`, `playbooks/strategy-scn.md` (if SCN → projectization) |
-| Strategy engagement / SCN | `consulting-strategy-process.md`, `strategy-engagement-guide.md`, `strategic-capability-network.md`, `scn-creation-guide.md`, `playbooks/strategy-scn.md` (sequence / Gate 1), `wbs-design.md` if Gate 2 WBS |
-| Consultant enablement / skill map | `frameworks/consultant-capability-skill-model.md` (v0.6.2, Manager SoT), `consultant-role-responsibility-model.md` (Required Level), `pilot-assessment-strategy-consultant.md` if Assessor 1on1, `consultant-learning-map-example.md` if generating a map, `capability-model.md` (client org — do not merge) |
-| PMO / transformation | `frameworks/transformation-pmo.md`, `playbooks/pmo-function-standup.md`, `playbooks/program-governance-cadence.md`, `playbooks/strategy-scn.md` (upstream Gate 1), `playbooks/cross-project-program-management.md`, `playbooks/operations-transition-playbook.md` (Gate 3–5), `playbooks/stakeholder-activation-playbook.md` (if a specific person must act), `knowledge/patterns/related-project-external-coordination-radar.md` (if adjacent/external radar), `knowledge/patterns/pgmo-presence-via-client-stance.md` (if presence lost to trusted incumbent), `knowledge/patterns/buyer-side-gap-vs-vendor-pmo.md` (if vendor PMO is treated as buyer-side gap cover), `knowledge/patterns/transformation-practice-case-pack.md` (if internal practice packaging), `standards/pmo-operating-guide.md`, `knowledge/patterns/project-management-policy-layer.md` (if project-layer policy TOC), Archetype J if customer status, `frameworks/change-management.md` |
+| Strategy engagement / SCN | `consulting-strategy-process.md`, `strategy-engagement-guide.md`, `strategic-capability-network.md`, `scn-creation-guide.md`, `playbooks/strategy-scn.md` (sequence / Gate 1), `wbs-design.md` if Gate 2 WBS, `scn-as-landscape-not-completeness.md` if overlaying running PJs |
+| Consultant enablement / skill map | `skill-playbook-directory.md` (learner first read), `consultant-capability-skill-model.md` (v0.6.3, Manager SoT), `consultant-role-responsibility-model.md` (Required Level), `pilot-assessment-strategy-consultant.md` if Assessor 1on1, `financial-analysis-for-consultants.md` if Company／Financial Analysis, `consultant-learning-map-example.md` if generating a map, `capability-model.md` (client org — do not merge) |
+| PMO / transformation | `frameworks/transformation-pmo.md`, `playbooks/pmo-function-standup.md`, `playbooks/program-governance-cadence.md`, `playbooks/strategy-scn.md` (upstream Gate 1), `playbooks/cross-project-program-management.md`, `playbooks/operations-transition-playbook.md` (Gate 3–5), `playbooks/stakeholder-activation-playbook.md` (if a specific person must act), `knowledge/patterns/related-project-external-coordination-radar.md` (if adjacent/external radar), `knowledge/patterns/topology-map-vs-issue-log.md` (if diagram is asked to carry issues), `knowledge/patterns/pgmo-presence-via-client-stance.md` (if presence lost to trusted incumbent), `knowledge/patterns/buyer-side-gap-vs-vendor-pmo.md` (if vendor PMO is treated as buyer-side gap cover), `knowledge/patterns/transformation-practice-case-pack.md` (if internal practice packaging), `standards/pmo-operating-guide.md`, `knowledge/patterns/project-management-policy-layer.md` (if project-layer policy TOC), Archetype J if customer status, `frameworks/change-management.md` |
 | DX grand design | `frameworks/dx-grand-design.md`, change / roadmap as needed |
 | New venture assessment | `frameworks/new-venture-three-track-assessment.md` |
 | B2B sales workflow | `knowledge/patterns/sales-capacity-via-center-functions.md` |
-| Change management | `frameworks/change-management.md`, `all-at-once-vs-stepwise-change.md`, `change-agent-vs-communication-plan.md` (agent hunt ≠ communication plan), `who-vs-lever-family.md` (who ≠ lever family), `pmo-operating-guide.md` §CM, `playbooks/stakeholder-activation-playbook.md` (person-level), `playbooks/operations-transition-playbook.md` Chapter 7 (ops adoption) |
+| Change management | `frameworks/change-management.md`, `all-at-once-vs-stepwise-change.md`, `change-agent-vs-communication-plan.md` (agent hunt ≠ communication plan), `formulation-comms-vs-adoption-comms.md` (formulation vs adoption; kick conditions first), `who-vs-lever-family.md` (who ≠ lever family), `pmo-operating-guide.md` §CM, `playbooks/stakeholder-activation-playbook.md` (person-level), `playbooks/operations-transition-playbook.md` Chapter 7 (ops adoption) |
 | AI CoE / PgMO / Change | `knowledge/patterns/ai-coe-vs-pgmo-vs-change.md`, `ai-management-office.md`, `transformation-pmo.md`, `change-management.md` |
 | AI adoption / DX roadmap | `frameworks/ai-adoption-roadmap.md`, `playbooks/ai-utilization-roadmap.md`, `playbooks/ai-work-before-after.md`, `logical-vs-physical-document-unity.md` if document unification is the AI enabler |
 | AI PoC quality (buyer) | `playbooks/ai-poc-quality-review.md`, `rag-structure-diagnosis.md`, `buyer-owns-ai-poc-ground-truth.md`, `ai-output-evaluation-terms.md` if scoring an answer, `logical-vs-physical-document-unity.md` if corpus / store strategy is open |

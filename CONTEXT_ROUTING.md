@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.35
+Version: v1.37
 
 ## Purpose
 
@@ -46,6 +46,9 @@ Load:
 - frameworks/capability-model.md
 - Relevant domain files (`domains/energy-utilities.md` if energy / utilities; `domains/public-defense.md` if public / defense)
 - Relevant project context
+
+Focus:
+- Artifact job before MECE / completeness (landscape ≠ issue log ≠ hearing request)
 
 Outputs:
 - Executive assessment
@@ -418,6 +421,8 @@ Load:
 - knowledge/patterns/who-vs-lever-family.md (if Segment is right but the push/pull or logic/emotion landing is wrong)
 - matching `*-selfstudy.md` instead of the coach edition if the reader is working alone (same type, second person; no `playbooks/` paths in the body)
 - knowledge/patterns/related-project-external-coordination-radar.md (if adjacent projects / external parties sit outside the Dependency Register)
+- knowledge/patterns/topology-map-vs-issue-log.md (if a relationship diagram is being asked to carry issues, or a hearing is requested before questions are locked)
+- knowledge/patterns/scn-as-landscape-not-completeness.md (if an SCN of running projects is being scored as MECE completeness)
 - knowledge/patterns/pgmo-presence-via-client-stance.md (if process pack runs but client trust / proposal value still sits with a long-trusted specialist PM)
 - knowledge/patterns/buyer-side-gap-vs-vendor-pmo.md (if vendor PMO coverage is being treated as buyer-side gap management)
 - knowledge/patterns/transformation-practice-case-pack.md (if packaging internal transformation practice cases / MM learning packs—not client status)
@@ -445,6 +450,7 @@ Focus:
 - PPM process and portfolio stop/start discipline
 - Cadence stack: who meets for what; escalation between layers; inspection vs status
 - Cross-project artifacts: 5 domains (scope boundary, dependency, interface, consistency, schedule); Control Cycle; template classes; pre-start checklist; dirty PJ-boundary Health Assessment
+- Topology map vs issue log: the diagram is connections; issues live in the 5-view table; questions before hearing
 - Gate 1 (strategy-scn) vs Gate 2 (cross-project pre-start) vs Gate 3–5 (operations transition)
 - Related-project / external-coordination radar before items enter Dependency or master risk registers
 - PgMO presence: client-side PM/PO stance; ally with trusted incumbent before client; intersection-point risk → monthly→weekly reverse tracking
@@ -532,6 +538,7 @@ Load:
 - playbooks/stakeholder-activation-playbook.md (if the job is moving a specific person, not designing the org-wide change process)
 - knowledge/patterns/who-vs-lever-family.md (if the person is right but the lever is push/fear or logic-only)
 - knowledge/patterns/change-agent-vs-communication-plan.md (if Champion hunt is being treated as the communication plan)
+- knowledge/patterns/formulation-comms-vs-adoption-comms.md (if roadmap-formulation sessions are collapsed into an adoption communication plan, or a field team is planned before kick conditions)
 - playbooks/operations-transition-playbook.md (if the change is ops take-on / adoption after realization)
 - standards/pmo-operating-guide.md (§Change Management Operating Standard)
 - frameworks/transformation-pmo.md (if program-owned change)
@@ -545,6 +552,7 @@ Focus:
 - All-at-once vs stepwise configuration
 - Why / unit / me; time-phased messages; resistance as design input
 - Change agents / Champions are optional if existing flag-wavers suffice; communication plan raises commitment when it appears
+- Formulation comms (lock requirements / use cases / kick conditions) vs adoption comms (move people to a target state)
 - Transfer of ownership, not only training
 
 Outputs:
@@ -568,6 +576,7 @@ Load:
 - frameworks/capability-model.md
 - core/author-voice.md
 - standards/writing.md
+- knowledge/patterns/scn-as-landscape-not-completeness.md (if the SCN is overlaying already-running projects rather than projectizing)
 - Relevant project context (non-confidential)
 
 Focus:
@@ -578,6 +587,7 @@ Focus:
 - Program / project mapping and cross-program integration
 - Workshop quality: notation consistency, breadth/depth, actionable enablers
 - Projectization Health Assessment (cut boundaries) and Gate 1 completion before Cross-Project
+- Landscape overlay: do not score MECE completeness or spawn new projects
 
 Outputs:
 - SCN map (draft or reviewed)
@@ -591,10 +601,12 @@ Outputs:
 # Consultant Enablement / Skill Map
 
 Load:
+- frameworks/skill-playbook-directory.md (if the reader is looking for what to read — learner first file)
 - frameworks/consultant-capability-skill-model.md
 - frameworks/consultant-role-responsibility-model.md (if Role / Responsibility / Required Level)
 - frameworks/pilot-assessment-strategy-consultant.md (if assessing a real person)
 - frameworks/consultant-learning-map-example.md (if generating a person-level Learning Map)
+- frameworks/financial-analysis-for-consultants.md (if developing Company／Financial Analysis)
 - frameworks/capability-model.md (client-organization layers only — do not merge into the consultant map)
 - matching playbook / selfstudy pair for the Skill being developed (e.g. wbs-design.md / wbs-design-selfstudy.md)
 
@@ -606,7 +618,8 @@ Focus:
 - Client capability ≠ consultant skill
 - For Strategy Consultant, Capability II is L0 (out of scope); other Roles will invert this
 - Capability Model is Manager / 育成担当 Source of Truth; do not hand it as the junior's first read
-- Assessment is Assessor-owned (1on1 diagnostic). Do not ask the junior to fill the sheet alone
+- Junior first read is the Directory; Assessment is Assessor-owned (1on1 diagnostic). Do not ask the junior to fill the sheet alone
+- Capability IV entry material exists only for Company／Financial Analysis; remaining five Skills have Evidence without a learning pack
 - Next step = Capability Model × Current Level × Assignment (soft Prerequisite)
 
 Outputs:

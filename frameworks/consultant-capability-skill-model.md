@@ -7,6 +7,7 @@ extracted: false
 gap_fill: "frameworks/capability-model.md（クライアント組織のCapability階層＝SCN用）とは別物。本ファイルはコンサルタント本人／チームメンバーのスキル・習熟度を扱う。名称の衝突に注意。Role／Responsibility層とRequired Levelの一覧はframeworks/consultant-role-responsibility-model.md側で管理する。"
 related:
   - frameworks/skill-playbook-directory.md（読むものだけ探すならこちら）
+  - frameworks/financial-analysis-for-consultants.md（Capability IVの入口教材）
   - frameworks/consultant-role-responsibility-model.md（Role／Responsibility層、Required Level一覧）
   - frameworks/top-down-thinking.md
   - frameworks/thinking-patterns/
@@ -18,7 +19,7 @@ related:
   - core/author-voice.md
   - standards/scn-creation-guide.md
   - playbooks/program-governance-cadence.md
-last_updated: 2026-09-03
+last_updated: 2026-09-02
 ---
 
 # コンサルタント Capability／スキル／レベル モデル
@@ -366,12 +367,14 @@ Capability I〜IIIが「型（プロセス・技法）」であるのに対し�
 
 #### Company／Financial Analysis
 
+**教材：** `frameworks/financial-analysis-for-consultants.md`（Capability IVで唯一、教材が揃っているSkill。Step1〜5＋確信度の測り方）
+
 **Prerequisite Knowledge**（Pass／Not Yet）：PL／BS／CFの構造／三表のつながり／Revenue・EBITDA・EBIT等の主要指標／Working Capital／CAPEX／Cash Flow／ROIC等の投資効率指標
 
 | Current | Target | Learning／OJT | Evidence | 判定者 |
 |---|---|---|---|---|
-| L0 | L1 | Prerequisite Knowledgeを一通り学び、指導者と一緒に実在企業1社の開示資料を読む | PL／BS／CFの構造と三表のつながりを自分の言葉で説明でき、指導者同席で1社を読める | 指導者 |
-| L1 | L2 | 条件の異なる実在企業2社以上の開示資料を自分で読む | 2社以上で、開示資料を自力で読み、Business Model・収益構造・財務状態・主要Riskを整理し、そこから経営課題の仮説を形成して、なぜその仮説に至ったかを説明できる | 指導者→OJT先PM |
+| L0 | L1 | `frameworks/financial-analysis-for-consultants.md`のStep1〜2を読み、指導者と一緒に実在企業1社の開示資料を読む | PL／BS／CFの構造と三表のつながりを自分の言葉で説明でき、指導者同席で1社を読める | 指導者 |
+| L1 | L2 | 同教材のStep3〜4を使い、条件の異なる実在企業2社以上の開示資料を自分で読む | 2社以上で、開示資料を自力で読み、Business Model・収益構造・財務状態・主要Riskを整理し、そこから経営課題の仮説を（確信度つきで）形成して、なぜその仮説に至ったかを説明できる | 指導者→OJT先PM |
 | L2 | L3 | 他者の企業・財務分析をレビューする | 複数の他者分析で、誤りや見落とし（指標の読み違い、Working Capitalの見落とし等）を発見し、なぜ問題か・どう直すべきかを示せる | Capability IVの認定L4 Reviewer（Bootstrap期はCapability Owner） |
 | L3 | L4 | 財務的に特殊な状況（債務超過、複雑なホールディング構造、海外子会社等）の企業を複数経験する | 複数の非標準企業で分析アプローチを適応させ、判断理由を説明して他者に教えられる | Capability Owner |
 
@@ -479,7 +482,7 @@ Capability I〜IIIが「型（プロセス・技法）」であるのに対し�
 
 問題が解消してから、他Role（PgMO、Transition Manager等）への展開に進む。
 
-**次の教材開発優先領域**：Capability IVの6 Skillは、Required Levelは決まりEvidenceも定義済みだが、Learning Intervention（読んで身につける教材）がまだない（`skill-playbook-directory.md`が正直に「読むべきPlaybookがない」と明記している）。「できていないと判定はできるが、どう学べばいいかは分からない」状態なので、Pilotと並行して着手を検討する。
+**教材開発の進捗**：Capability IVの6 Skillは、Required Levelは決まりEvidenceも定義済みだが、Learning Interventionが揃っていなかった。入口として Company／Financial Analysis の教材（`frameworks/financial-analysis-for-consultants.md`）を作成した。残り5 Skill（Business Model／Economics、Investment／Business Case、Corporate Governance／Management、Commercial／Contract Literacy、Regulatory／Risk Literacy）はまだ教材がない。§1.5のRecommended Prerequisiteの順（Financial Analysis→Business Model→Investment／Business Case）で、次点の候補は Business Model／Economics になる。
 
 ---
 
@@ -496,3 +499,4 @@ Capability I〜IIIが「型（プロセス・技法）」であるのに対し�
 | v0.6 | Capability IV（Business／Management Literacy、6 Skill）をPrerequisite Knowledge付きで追加し、4 Capability・24 Skillに |
 | v0.6.1 | 現場フィードバックを受け、変更履歴・進行メモを本文から分離。`skill-playbook-directory.md`（早見表）を新設 |
 | v0.6.2 | 次のステップをManager UX／Learner UXの2トラックPilotに整理。Capability IVの教材未整備を次の優先領域として明記 |
+| v0.6.3 | Capability IVの入口教材「Company／Financial Analysis」（`financial-analysis-for-consultants.md`）を作成し、Directory・Skill定義から参照。Directory をリポジトリに登録 |

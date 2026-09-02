@@ -40,4 +40,5 @@ BPR／定着の現場では、既存の構築メンバーがすでに旗を振�
 - `playbooks/stakeholder-activation-playbook.md`  
 - `knowledge/patterns/who-vs-lever-family.md` — who to invest in ≠ how the lever lands  
 - `playbooks/operations-transition-playbook.md`（定着は末端の対象になりやすい）  
+- `knowledge/patterns/formulation-comms-vs-adoption-comms.md` — ロードマップを作るための場と、定着のための場は別ジョブ  
 - `knowledge/migrations/coaching-20260828-change-effort-buyer-gap-2026-08.md`  

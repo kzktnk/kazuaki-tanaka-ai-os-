@@ -1,6 +1,6 @@
 # Change Management Framework
 
-**Version:** v1.2  
+**Version:** v1.3  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Origin:** Generalized from legacy Strategic Change / LPD Change Management training (c. 2001–2003), plus later change-plan / workshop method (structure only). Japanese slide text in early `.ppt` was not recoverable; English structure recovered. Client cases, org charts, plan body, and vendor catalogues are **not** registered.
@@ -120,6 +120,15 @@ Lead contacts exist to **influence and pass issues both ways**. They are not gat
 
 旗振り役（チェンジエージェント／Champion）を見つけることが、コミュニケーション計画の目的ではない。既存の構築メンバーがすでに旗を振っており、残りが定着の末端対象なら、新規エージェント探索は必須ではない。エージェント無しでチェンジが進むなら、作らなくてよい。計画が答えるのは、関係者の中にコミットメントが低い人が**現れたとき**どう上げるかである。人を動かす戦術は `playbooks/stakeholder-activation-playbook.md`。区別の型は `knowledge/patterns/change-agent-vs-communication-plan.md`。
 
+### Formulation communication is not adoption communication
+
+コミュニケーション計画は一つに見えて、仕事が二つある。
+
+1. **定着** — 関係者をめざす状態に動かす  
+2. **策定** — ロードマップを作るために場を使う（要件・ユースケース・キック条件）
+
+主線が策定なら、ステークホルダーの目指す状態は必要条件だが、成果物の主語ではない。現場へクイック検証チームを送る話が出たときは、チームの呼び名より先に **何が揃えばキックできるか** を書く。大きい投資案件の巻き込みと現場クイック検証は、同じ計画に無自覚に載せない。型は `knowledge/patterns/formulation-comms-vs-adoption-comms.md`。
+
 ### Three understandings every person needs
 
 Communications fail when only the corporate “why” is told.
@@ -217,6 +226,7 @@ AI-specific change (incomplete models, ethics, shadow tools, HITL) is `knowledge
 | `playbooks/stakeholder-activation-playbook.md` | Person-level activation; this file stays org-process |
 | `knowledge/patterns/who-vs-lever-family.md` | Who to invest in ≠ logic/emotion × pull/push |
 | `knowledge/patterns/change-agent-vs-communication-plan.md` | Agent hunt ≠ communication plan; plan before samples |
+| `knowledge/patterns/formulation-comms-vs-adoption-comms.md` | Roadmap-formulation comms ≠ adoption comms; kick conditions before field-team dispatch |
 | `playbooks/operations-transition-playbook.md` | Ops take-on / Adoption Definition of Done |
 | `energy-utilities.md` | Group CX / plant autonomy: strategy, analysis, and decision rights must travel together |
 
@@ -242,5 +252,6 @@ AI-specific change (incomplete models, ethics, shadow tools, HITL) is `knowledge
 - `playbooks/operations-transition-playbook.md`
 - `knowledge/index/legacy-source-index.md` Program Line L, Program Line T, Program Line AE
 - `knowledge/patterns/change-agent-vs-communication-plan.md`
+- `knowledge/patterns/formulation-comms-vs-adoption-comms.md`
 - `knowledge/migrations/change-management-2026-08.md`
 - `knowledge/migrations/pgmo-ai-change-2026-08.md`

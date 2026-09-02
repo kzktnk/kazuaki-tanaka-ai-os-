@@ -8,7 +8,9 @@ gap_fill: "Current Level・Evidence・Prerequisite Knowledgeの列は空欄。�
 related:
   - frameworks/consultant-capability-skill-model.md
   - frameworks/consultant-role-responsibility-model.md
-last_updated: 2026-09-03
+  - frameworks/financial-analysis-for-consultants.md
+  - frameworks/skill-playbook-directory.md
+last_updated: 2026-09-02
 ---
 
 # Pilot Assessment Worksheet｜Strategy Consultant
@@ -16,6 +18,8 @@ last_updated: 2026-09-03
 **これは試験ではなく、育成1on1の診断カルテです。** 本人に渡して「埋めておいて」と依頼するものではありません。1on1やOJTの振り返りの中で、Assessor（指導者・マネージャー）が本人に問いかけながら、**Assessor側が記入します**（例：「構造化は最近どこでやった？」「その資料見せてもらえる？」「じゃあ今はL1 Confirmed、L2はProvisionalだね」）。本人はEvidenceになりそうな実績を持ってくることはあっても、24 Skillの記入事務そのものを担うわけではありません。
 
 24 Skill全部を一度に終わらせる必要もありません。Capabilityごと（5〜8 Skillずつ）に分けて、数回の1on1に分けて進めてください。「Not Yet」や「Provisional」が多くても、それは今の到達点が分かっただけのことで、悪い結果ではありません。
+
+**初回セッションの始め方**：いきなり24 Skillを聞かない。Capability I（Thinking／Problem Solving、5 Skill）から始める。「最近担当した案件で、論点を立てるところから関わった？」のように、具体的な仕事の話から入り、そこにどのSkillが表れていたかを後から当てはめる方が、本人も答えやすい。Capability IVは Financial Analysis だけ教材があるので（`frameworks/financial-analysis-for-consultants.md`）、そこから聞き始めるとよい。他5 Skillは教材がまだないため、「経験があるか」の確認にとどめ、Gapとして厳しく問い詰めない。
 
 **対象者：** （氏名）
 **Role：** Strategy Consultant

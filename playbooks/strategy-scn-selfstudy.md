@@ -4,7 +4,7 @@ type: playbook
 
 # Strategy / SCN Playbook【自己学習版】
 
-**Version:** v0.3  
+**Version:** v0.3.1  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** 戦略立案（IT戦略を含む）から SCN 構造化・KPI・プロジェクト化（Gate 1）までを、一人で読み進めながら自走できる順序でつなぐ  
@@ -243,6 +243,7 @@ Knowledge／Organization／Process／Technology の4種で分解する。施策�
 - SCN を作って終わり（PDCA 背骨にしない）  
 - 単一プログラムで完結し Enterprise integration を怠る  
 - Findings が観察の羅列で因果がない  
+- **既存プログラムがすでに満杯のときに、SCN を MECE 完成度テストや新規プロジェクト化のエンジンとして使う**（Gate 1 の本来用途と、走っている PJ の配置図としての用途を混ぜる）
 
 ### 振り返りメモ（自己学習用）
 
@@ -250,6 +251,7 @@ Knowledge／Organization／Process／Technology の4種で分解する。施策�
 - [ ] Value・Capability の粒度が SCN 全体で揃っているか  
 - [ ] Enabler の詳細まで早期に描き込んでいないか  
 - [ ] As-Is→To-Be ギャップから Findings を言い切れるか  
+- [ ] 今回の SCN の仕事は「抜け洗い出し／プロジェクト化」か「既存 PJ の配置俯瞰」か、先に言い切れているか  
 
 ---
 

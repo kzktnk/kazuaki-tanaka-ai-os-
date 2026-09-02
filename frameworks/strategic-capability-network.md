@@ -1,6 +1,6 @@
 # Strategic Capability Network (SCN)
 
-**Version:** v1.0  
+**Version:** v1.1  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Source:** Legacy IBM consulting training materials (2003–2005), generalized and anonymized. Original PDFs remain local; not committed.
@@ -47,6 +47,8 @@ Relationships:
 2. **Gap check** — Verify missing initiatives before execution planning.
 3. **Enterprise integration** — Cross-program SCN makes consolidation and resource allocation easier.
 4. **PDCA tracking** — Use SCN as a backbone for outcome tracking and action decisions.
+
+A fifth use is **not** one of the four. When projects are already running and the organization is full, SCN can overlay those projects onto Value / Capability / Enabler so adjacency is visible. That is a **landscape**, not Use 2 and not projectization. Do not score MECE completeness. Capability depth (“how far must this node be filled”) is a different job. See `knowledge/patterns/scn-as-landscape-not-completeness.md`.
 
 ---
 
@@ -155,6 +157,7 @@ SCN supports **Findings**: structural gaps on the network (missing capability, w
 - SCN shows **intent and alignment** of initiatives to value; it is not a substitute for detailed process design, data models, or application architecture.
 - IT-specific defects (security, usability, ops) → annotate on SCN as callouts or map separately to application landscape.
 - Do not over-specify enablers in early strategy phases; match depth to engagement scope (see `standards/scn-creation-guide.md`).
+- Do not treat a landscape overlay of running projects as a completeness test or a reason to stand up new projects (`knowledge/patterns/scn-as-landscape-not-completeness.md`).
 
 ---
 
@@ -165,6 +168,7 @@ SCN supports **Findings**: structural gaps on the network (missing capability, w
 - `frameworks/consulting-strategy-process.md` — Upstream strategy engagement before capability mapping
 - `standards/strategy-engagement-guide.md` — Problem scoping and analysis planning
 - `playbooks/cross-project-program-management.md` — Downstream Gate 2 / cross-project control
+- `knowledge/patterns/scn-as-landscape-not-completeness.md` — Overlay running projects; not Gate 1
 - `playbooks/operations-transition-playbook.md` — Downstream Gate 3–5 / ops transition
 - `playbooks/stakeholder-activation-playbook.md` — Moving named actors (cross-cutting)
 - `CONTEXT_ROUTING.md` — SCN / Findings Analysis route

@@ -1,6 +1,6 @@
 # Consulting Review Standard
 
-Version: v0.9 Bootstrap
+Version: v0.10 Bootstrap
 
 ## Purpose
 
@@ -27,7 +27,7 @@ The objective is to maximize decision quality, not simply improve document appea
 - Is there a clear "so what"?
 
 ## 2. Logical Consistency
-- MECE where appropriate
+- MECE **when the job of the page is completeness**. A landscape overlay or topology map is not scored as a MECE inventory
 - No contradictions
 - Clear assumptions
 - Clear conclusions
@@ -66,6 +66,19 @@ The review should identify:
 - Alternatives
 - Decision criteria
 
+## 7. Artifact Job
+Name the job of the page **before** scoring completeness, MECE, or hearing readiness:
+
+| Job | Passes when | Fails when |
+|-----|-------------|------------|
+| Landscape / overlay | Running work is placed against the aim | Reviewed as a gap-finding or new-projectization engine |
+| Topology map | Connections (and what flows) are visible | Asked to exhaust issues by itself |
+| Issue log | Between-unit breaks are listed in named views | Intra-unit known problems and topology share one picture |
+| Information request | Questions are locked; method (hearing / form / sponsor-answered) comes after | “Please let us hear from everyone” precedes the questions |
+| Change communication | Adoption vs roadmap-formulation is named; kick conditions precede field-team dispatch | Sample stakeholder lists are the first thick artifact |
+
+For multi-project packs, default views for the issue log are Boundary / Dependency / Interface / Consistency / Schedule (`playbooks/cross-project-program-management.md`). Patterns: `knowledge/patterns/scn-as-landscape-not-completeness.md`, `knowledge/patterns/topology-map-vs-issue-log.md`, `knowledge/patterns/formulation-comms-vs-adoption-comms.md`.
+
 ---
 
 # Review Output Format
@@ -99,7 +112,8 @@ Before considering a deliverable complete:
 - Clear business objective
 - Executive-ready storyline
 - Logical flow
-- MECE where applicable
+- Artifact job named (landscape ≠ completeness ≠ issue log ≠ hearing request)
+- MECE where the job is completeness
 - No unsupported claims
 - Risks addressed
 - Recommendations prioritized
@@ -123,5 +137,5 @@ A strong consulting deliverable should:
 Prompt example:
 
 > Review this document using `standards/consulting-review.md`.
-Focus on strategic alignment, logical consistency, executive communication,
+Focus on artifact job, strategic alignment, logical consistency, executive communication,
 completeness, and actionable recommendations.

@@ -39,9 +39,11 @@ Full catalog and cross-links: [`knowledge/index/master-index.md`](../knowledge/i
 |------|--------|
 | `operating-model.md` | Operating model design |
 | `capability-model.md` | Capability mapping (client organization; not consultant skill) |
-| `consultant-capability-skill-model.md` | Consultant 4 Capability / 24 Skill / L0–L4 + Evidence (draft v0.6.2; Manager Source of Truth; ≠ SCN capability) |
-| `consultant-role-responsibility-model.md` | Strategy Consultant Role / Responsibility / Required Level (draft v0.3.1) |
+| `consultant-capability-skill-model.md` | Consultant 4 Capability / 24 Skill / L0–L4 + Evidence (draft v0.6.3; Manager Source of Truth; ≠ SCN capability) |
+| `consultant-role-responsibility-model.md` | Strategy Consultant Role / Responsibility / Required Level (draft v0.3.2) |
 | `consultant-learning-map-example.md` | Person-level Learning Map prototype (構造化する L1→L2) |
+| `skill-playbook-directory.md` | Learner first read: Skill → what to read (not Level judgment) |
+| `financial-analysis-for-consultants.md` | Capability IV entry: statements → management-issue hypothesis |
 | `pilot-assessment-strategy-consultant.md` | 24 Skill Pilot worksheet; Assessor fills in 1on1 (not a take-home test) |
 | `maturity-model.md` | Maturity assessment |
 | `transformation-roadmap.md` | Transformation roadmap |
@@ -56,7 +58,7 @@ Full catalog and cross-links: [`knowledge/index/master-index.md`](../knowledge/i
 
 | File | Focus |
 |------|--------|
-| `sap-implementation-phase-model.md` | Ascendant SAP phase model (generalized) |
+| `sap-implementation-phase-model.md` | SAP implementation phase model (generalized) |
 
 ---
 

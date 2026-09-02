@@ -1,6 +1,6 @@
 # SCN Creation Guide
 
-**Version:** v1.0  
+**Version:** v1.1  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Framework:** `frameworks/strategic-capability-network.md`
@@ -183,6 +183,7 @@ Depth level depends on engagement phase; do not over-detail enablers in early st
 - Too many themes in one session → pre-research filter  
 - Discussion expands without “visible action” test → refocus on measure → capability chain  
 - IT detail (I/O flows) on SCN → move to application map; use callouts on SCN only for business-relevant gaps  
+- Scoring MECE completeness when the SCN is only overlaying already-running projects → name the job first; landscape is not Gate 1 (`knowledge/patterns/scn-as-landscape-not-completeness.md`)  
 
 ---
 
@@ -205,6 +206,7 @@ Before publishing SCN:
 
 - `frameworks/strategic-capability-network.md`
 - `playbooks/strategy-scn.md` — execution sequence, Gate 1, template classes, coaching order
+- `knowledge/patterns/scn-as-landscape-not-completeness.md` — when the map places running projects, not when it projectizes
 - `frameworks/thinking-patterns/pattern-02-as-is-gap-to-be.md`
 - `core/author-voice.md`
 - `standards/deliverable-archetypes.md`
