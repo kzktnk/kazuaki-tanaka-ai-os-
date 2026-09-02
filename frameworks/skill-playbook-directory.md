@@ -1,7 +1,7 @@
 ---
 type: reference
 title: "スキル別 参照Playbook 早見表"
-source: "frameworks/consultant-capability-skill-model.md（v0.6.3）の教材マッピングとL2 Evidenceから、評価の型を外して作った早見表。現場Managerフィードバックへの対応として新規作成。"
+source: "frameworks/consultant-capability-skill-model.md（v0.6.4）の教材マッピングとL2 Evidenceから、評価の型を外して作った早見表。現場Managerフィードバックへの対応として新規作成。"
 status: draft
 related:
   - frameworks/consultant-capability-skill-model.md

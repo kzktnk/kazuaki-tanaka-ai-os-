@@ -441,7 +441,7 @@ Capability I〜IIIが「型（プロセス・技法）」であるのに対し�
 
 ## 4. 教材の出典についての注意
 
-**③ Operations Transition** は `playbooks/operations-transition-playbook.md`（本編）と `playbooks/operations-transition-playbook-selfstudy.md`（自習版）がリポジトリにある。**横串 Stakeholder Activation** は `playbooks/stakeholder-activation-playbook.md`（本編）と `playbooks/stakeholder-activation-playbook-selfstudy.md`（自習版）がリポジトリにある。
+**③ Operations Transition** は `playbooks/operations-transition-playbook.md`（本編）と `playbooks/operations-transition-playbook-selfstudy.md`（自習版）がリポジトリにある。**横串 Stakeholder Activation** は `playbooks/stakeholder-activation-playbook.md`（本編）と `playbooks/stakeholder-activation-playbook-selfstudy.md`（自習版）がリポジトリにある。探していたパスが誤っていた場合の正しい名前は、末尾に `-playbook` が付く形である（`operations-transition.md` ではない）。①②・`wbs-design.md` の自習版も登録済み。
 
 **③のChapter 6「AI運用のスキル・レベル・教育ロードマップ」と本ファイルは別物である。** 前者は`frameworks/ai-operations-role-design.md`に基づく、クライアント側AI運用チームのRole×Maturity Levelモデル。本ファイルはコンサルタント本人のCapability／Skill／Levelを扱う。名前が似ているため混同しないこと。
 
@@ -482,7 +482,7 @@ Capability I〜IIIが「型（プロセス・技法）」であるのに対し�
 
 問題が解消してから、他Role（PgMO、Transition Manager等）への展開に進む。
 
-**教材開発の進捗**：Capability IVの6 Skillは、Required Levelは決まりEvidenceも定義済みだが、Learning Interventionが揃っていなかった。入口として Company／Financial Analysis の教材（`frameworks/financial-analysis-for-consultants.md`）を作成した。残り5 Skill（Business Model／Economics、Investment／Business Case、Corporate Governance／Management、Commercial／Contract Literacy、Regulatory／Risk Literacy）はまだ教材がない。§1.5のRecommended Prerequisiteの順（Financial Analysis→Business Model→Investment／Business Case）で、次点の候補は Business Model／Economics になる。
+**教材開発の進捗**：Capability IVの6 Skillは、Required Levelは決まりEvidenceも定義済みだが、Learning Intervention（読んで身につける教材）が揃っていなかった。入口として Company／Financial Analysis の教材（`frameworks/financial-analysis-for-consultants.md`）を作成した。残り5 Skill（Business Model／Economics、Investment／Business Case、Corporate Governance／Management、Commercial／Contract Literacy、Regulatory／Risk Literacy）はまだ教材がない。§1.5のRecommended Prerequisiteの順（Financial Analysis→Business Model→Investment／Business Case）で、次点の候補は Business Model／Economics になる。
 
 ---
 
@@ -500,3 +500,4 @@ Capability I〜IIIが「型（プロセス・技法）」であるのに対し�
 | v0.6.1 | 現場フィードバックを受け、変更履歴・進行メモを本文から分離。`skill-playbook-directory.md`（早見表）を新設 |
 | v0.6.2 | 次のステップをManager UX／Learner UXの2トラックPilotに整理。Capability IVの教材未整備を次の優先領域として明記 |
 | v0.6.3 | Capability IVの入口教材「Company／Financial Analysis」（`financial-analysis-for-consultants.md`）を作成し、Directory・Skill定義から参照。Directory をリポジトリに登録 |
+| v0.6.4 | ③・横串の正しいパスは末尾 `-playbook`。探していた `operations-transition.md` は誤名 |

@@ -39,7 +39,7 @@ Full catalog and cross-links: [`knowledge/index/master-index.md`](../knowledge/i
 |------|--------|
 | `operating-model.md` | Operating model design |
 | `capability-model.md` | Capability mapping (client organization; not consultant skill) |
-| `consultant-capability-skill-model.md` | Consultant 4 Capability / 24 Skill / L0–L4 + Evidence (draft v0.6.3; Manager Source of Truth; ≠ SCN capability) |
+| `consultant-capability-skill-model.md` | Consultant 4 Capability / 24 Skill / L0–L4 + Evidence (draft v0.6.4; Manager Source of Truth; ≠ SCN capability) |
 | `consultant-role-responsibility-model.md` | Strategy Consultant Role / Responsibility / Required Level (draft v0.3.2) |
 | `consultant-learning-map-example.md` | Person-level Learning Map prototype (構造化する L1→L2) |
 | `skill-playbook-directory.md` | Learner first read: Skill → what to read (not Level judgment) |
