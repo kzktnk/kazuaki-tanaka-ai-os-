@@ -66,6 +66,8 @@ Whenever possible, preserve:
 
 The model-independent repository content is the source of truth.
 
+**Canonical remote:** `https://github.com/kzktnk/kazuaki-tanaka-ai-os-` (trailing hyphen). A near-homonym `kazuaki-tanaka-ai-os` (no hyphen) is a stale first-commit snapshot. Before concluding a file is missing, confirm `origin` character-for-character, then the filename (③ is `playbooks/operations-transition-playbook.md`, not `operations-transition.md`).
+
 Priority order:
 
 1. `core/`

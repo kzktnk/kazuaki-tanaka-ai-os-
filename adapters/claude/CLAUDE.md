@@ -42,6 +42,8 @@ Claude 固有の機能を、仕事の種類に合わせて選ぶ。機能名の�
 
 このリポジトリでは、モデル非依存の判断は AI OS 側に置く。Claude の Project knowledge に案件原本を複製して第二の source-of-truth を作らない。
 
+正の remote は `https://github.com/kzktnk/kazuaki-tanaka-ai-os-`（末尾ハイフンあり）。ハイフンなしの `kazuaki-tanaka-ai-os` は最初のコミットで止まったスナップショット。ファイルが見つからないと結論する前に、URL を1文字単位で確認する。③は `playbooks/operations-transition-playbook.md`。
+
 ---
 
 ## Diagnosis order

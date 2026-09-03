@@ -499,6 +499,7 @@ Do not hide ambiguity.
 Cursor should:
 
 - inspect the actual repository before proposing changes
+- before concluding a file is missing, confirm `origin` is `kzktnk/kazuaki-tanaka-ai-os-` (trailing hyphen) and that the look-up name is exact
 - distinguish Ask Mode from Agent Mode
 - avoid claiming execution while in Ask Mode
 - use repository-aware search before generating new files

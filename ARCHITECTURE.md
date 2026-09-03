@@ -173,6 +173,8 @@ kazuaki-tanaka-ai-os/
 └── archive/
 ```
 
+GitHub remote is `kzktnk/kazuaki-tanaka-ai-os-` (trailing hyphen). The tree label above is the local folder shape, not the clone URL.
+
 Not all directories need to be fully populated during v0.9.
 
 The architecture defines the intended structure; implementation may proceed incrementally.

@@ -13,6 +13,8 @@ Model-independent knowledge and judgment system for consistent AI-assisted consu
 | **What to load for a task** (AI / practical execution) | [`CONTEXT_ROUTING.md`](./CONTEXT_ROUTING.md) |
 | **How AI should operate** | [`AI_OPERATING_MANUAL.md`](./AI_OPERATING_MANUAL.md) |
 
+**Canonical remote:** [`kzktnk/kazuaki-tanaka-ai-os-`](https://github.com/kzktnk/kazuaki-tanaka-ai-os-) (trailing hyphen). Do not clone `kazuaki-tanaka-ai-os` — that name is a stale first-commit snapshot. Confirm `origin` before concluding a file is missing.
+
 **Quick rule:** Use `master-index.md` to see *where* knowledge lives. Use `CONTEXT_ROUTING.md` to decide *what to read* for the task at hand. Expanded sources in `knowledge/source/` are archived for migration and continuity—not loaded in full during normal work.
 
 ---

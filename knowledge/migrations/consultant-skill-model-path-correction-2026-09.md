@@ -20,6 +20,8 @@ Pack Directory was an older snapshot (no selfstudy line, no financial-analysis /
 
 Pack Pilot §6 still listed Markdown化 of ③／横串 as a next step. Did **not** restore that; files are already in the repo.
 
+Later confirmed a second cause: Claude had cloned `kazuaki-tanaka-ai-os` (no trailing hyphen), a stale first-commit snapshot. Canonical remote is `kzktnk/kazuaki-tanaka-ai-os-`. Standing note is in `AI_OPERATING_MANUAL.md` §4, `README.md`, and the Claude / Cursor adapters.
+
 ## Excluded
 
 - docx (`consultant-capability-skill-model.docx`, `skill-playbook-directory.docx`)

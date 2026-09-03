@@ -964,6 +964,8 @@ Load:
 - Related frameworks
 - Related standards
 
+Before concluding a source or playbook is missing: `origin` must be `kzktnk/kazuaki-tanaka-ai-os-` (trailing hyphen). Then check the filename (`operations-transition-playbook.md`, not `operations-transition.md`).
+
 Workflow:
 1. Source
 2. Extract
