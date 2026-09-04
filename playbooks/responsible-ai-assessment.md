@@ -7,6 +7,8 @@ related:
   - frameworks/human-oversight.md
   - frameworks/decision-ownership.md
   - frameworks/ai-governability.md
+  - knowledge/patterns/workflow-vs-agent-vs-human.md
+  - knowledge/patterns/mcp-as-integration-not-authority.md
 ---
 
 # Responsible AI assessment

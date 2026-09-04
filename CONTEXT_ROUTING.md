@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.37
+Version: v1.38
 
 ## Purpose
 
@@ -103,6 +103,8 @@ Load:
 - domains/public-defense.md (if authorization / evidence)
 - domains/energy-utilities.md (if operational reality)
 - knowledge/lessons/ai-output-evaluation-terms.md (if classifying output failures or bias vs accuracy)
+- knowledge/patterns/workflow-vs-agent-vs-human.md (if autonomy, stop/retry, or HITL thresholds)
+- knowledge/patterns/mcp-as-integration-not-authority.md (if live tools / data access)
 
 Focus:
 - Accountability first, then failure impact, data, transparency, fairness
@@ -881,6 +883,7 @@ Load:
 - knowledge/patterns/decision-ownership.md
 - knowledge/patterns/verifiable-ownership.md
 - knowledge/patterns/risk-ownership.md
+- knowledge/patterns/workflow-vs-agent-vs-human.md (if agent vs workflow vs HITL)
 - knowledge/lessons/governance-messaging.md (if executive messaging)
 - domains/enterprise-ai.md (if available)
 - standards/consulting-review.md
@@ -892,6 +895,26 @@ Focus:
 - Human oversight
 - KPI
 - Maturity
+
+---
+
+# Agent / MCP / Subagent Design
+
+Load:
+- knowledge/patterns/workflow-vs-agent-vs-human.md
+- knowledge/patterns/mcp-as-integration-not-authority.md (if live data or external tools)
+- knowledge/patterns/subagent-when-isolation-justifies-cost.md (if splitting work across agents)
+- knowledge/patterns/authority-levels.md
+- knowledge/patterns/ai-capability-vs-authority.md
+- frameworks/human-oversight.md
+- frameworks/decision-ownership.md
+- adapters/claude/CLAUDE.md (if Claude / Claude Code / Connector)
+
+Focus:
+- Known path → Workflow; unknown path + clear goal → Agent; consequential → Human
+- MCP standardizes connection; it does not replace security or authority
+- Subagent only when specialization / isolation / permission split pays for orchestration
+- Bounded retry, stop, least privilege; do not let the agent decide its own high-impact approvals
 
 ---
 

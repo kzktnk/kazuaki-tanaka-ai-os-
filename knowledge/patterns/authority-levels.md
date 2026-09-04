@@ -92,3 +92,5 @@ Phase sets the default ceiling; Decision × Risk × Context still governs each d
 - `knowledge/patterns/decision-ownership.md`
 - `knowledge/patterns/memory-at-decision.md` — AI may return prior experience without being given the decision (No.21)
 - `knowledge/patterns/standard-as-learned-memory.md` — AI may surface evidence without authority to rewrite the standard (No.22)
+- `knowledge/patterns/workflow-vs-agent-vs-human.md` — bounded autonomy for observation-dependent paths
+- `knowledge/patterns/mcp-as-integration-not-authority.md` — connectivity does not imply authority

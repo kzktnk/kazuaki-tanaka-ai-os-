@@ -65,3 +65,5 @@ Same AI agent. Different authority per decision.
 - `knowledge/patterns/authority-levels.md`
 - `knowledge/patterns/decision-ownership.md`
 - `knowledge/patterns/decision-delegation.md`
+- `knowledge/patterns/workflow-vs-agent-vs-human.md` — 経路の型と bounded autonomy
+- `knowledge/patterns/mcp-as-integration-not-authority.md` — 接続 ≠ 権限

@@ -2,7 +2,7 @@
 
 # Claude Adapter
 
-**Version:** v1.0  
+**Version:** v1.1  
 **Status:** Active  
 **Applies to:** Claude (Projects, Artifacts, Skills, Claude Code, connectors)  
 **Document role:** Tool-specific operating card. Does not replace `AI_OPERATING_MANUAL.md`, `CONTEXT_ROUTING.md`, or files under `core/`, `standards/`, `frameworks/`, or `knowledge/`.
@@ -43,6 +43,22 @@ Claude 固有の機能を、仕事の種類に合わせて選ぶ。機能名の�
 このリポジトリでは、モデル非依存の判断は AI OS 側に置く。Claude の Project knowledge に案件原本を複製して第二の source-of-truth を作らない。
 
 正の remote は `https://github.com/kzktnk/kazuaki-tanaka-ai-os-`（末尾ハイフンあり）。ハイフンなしの `kazuaki-tanaka-ai-os` は最初のコミットで止まったスナップショット。ファイルが見つからないと結論する前に、URL を1文字単位で確認する。③は `playbooks/operations-transition-playbook.md`。
+
+---
+
+## Knowledge vs MCP vs Agent vs Subagent
+
+機能名ではなく、仕事の型で選ぶ。判断の本体は patterns。
+
+| 仕事 | こちら | ではない |
+|---|---|---|
+| 毎回ほぼ同じ静的参照 | Project knowledge / この adapter | ライブデータを CLAUDE.md に貼る |
+| 頻繁に変わる外部データ / 外部 Action | Connector / MCP | MCP があれば認証不要、という読み |
+| 手順が事前に書ける | Workflow（Skill / 固定手順） | ステップ数が多いから Agent |
+| Goal は明確、次の一手が観察依存 | Agent（Claude Code 等） | Plan があるから検証不要 |
+| 専門・context 隔離・権限分離の便益が orchestration を上回る | Subagent | 工程数や複雑さだけで分割 |
+
+MCP は接続レイヤであり、Agent でも Security でもない。権限・停止・Retry・HITL は `knowledge/patterns/workflow-vs-agent-vs-human.md`。接続 ≠ 権限は `knowledge/patterns/mcp-as-integration-not-authority.md`。分ける条件は `knowledge/patterns/subagent-when-isolation-justifies-cost.md`。
 
 ---
 
@@ -118,3 +134,6 @@ Claude 固有の機能を、仕事の種類に合わせて選ぶ。機能名の�
 - `knowledge/patterns/logical-vs-physical-document-unity.md`（参照コーパスの置き場所議論）
 - `playbooks/ai-poc-quality-review.md`
 - `frameworks/human-oversight.md`
+- `knowledge/patterns/workflow-vs-agent-vs-human.md`
+- `knowledge/patterns/mcp-as-integration-not-authority.md`
+- `knowledge/patterns/subagent-when-isolation-justifies-cost.md`

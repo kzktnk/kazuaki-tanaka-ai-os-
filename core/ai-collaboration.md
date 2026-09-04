@@ -73,6 +73,7 @@ AIは「選択肢を広げる道具」。最終的な意思決定と妥当性の
 - `exercises/exercise-05-spotting-plausible-ai-errors.md`
 - `knowledge/lessons/ai-output-evaluation-terms.md`（Accuracy / Completeness / Groundedness）
 - `adapters/claude/CLAUDE.md`（Claude 機能の使い分け）
+- `knowledge/patterns/workflow-vs-agent-vs-human.md`（経路の型。ステップ数だけでは Agent にしない）
 
 ---
 **レビュー用メモ（Kazuaki記入欄）**
