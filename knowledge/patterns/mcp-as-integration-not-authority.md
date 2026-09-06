@@ -1,7 +1,7 @@
 # Pattern: MCP as Integration, Not Authority
 
 **Status:** Active  
-**Origin:** Generalized from MCP Part 1 study notes (2026-09). Exam items, scores, and credential materials are **not** stored here.
+**Origin:** Generalized from MCP Part 1–2 study notes (2026-09). Exam items, scores, and credential materials are **not** stored here.
 
 ## Pattern statement
 
@@ -54,6 +54,43 @@ MCP = integration layer. Agent = decision / orchestration pattern. 混ぜない�
 
 高影響 Action（設備停止等）は、状態取得 → 推奨 → 実行要否で Human approval、が先。接続できても自動実行してよいとは限らない。権限の段階は `knowledge/patterns/authority-levels.md`。
 
+接続できるだけでは足りない。契約・権限・失敗処理・高影響の制御までが MCP 設計である。
+
+## Tool / Resource / Prompt
+
+同じ MCP でも役割が違う。混ぜない。
+
+| 要素 | 役割 | 例 |
+|---|---|---|
+| **Tool** | Do something（外部 Action） | `create_ticket`、`restart_service` |
+| **Resource** | Read something（参照データ / context） | 規程、顧客プロファイル、設備状態 |
+| **Prompt** | 再利用可能な聞き方 / 対話の型 | インシデントレビューの章立て |
+
+Prompt は Tool ではない。外部 Action を実行しない。モデルを fine-tune しない。System instruction を必ず上書きするものでもない。
+
+既存 API があっても、MCP は AI 向けの共通 Interface として載ることがある。API を置き換える必要はない。
+
+## Tool contract
+
+名前・説明・Schema が曖昧だと、誤選択・誤実行が増える。`update_data` ではなく、何を・どの ID で・副作用は何か、まで契約にする。
+
+良い定義に含めるもの: 明確な名前、説明、必須パラメータと型、期待出力、副作用、エラー条件、権限境界。
+
+似た名前の Tool を並べない（`update_customer` / `edit_customer` / `modify_customer`）。重なりを減らし、不要な Tool は公開しない。Tool 面が広いほど選択も曖昧になり、blast radius も広がる。
+
+> **Ambiguous tool contract → ambiguous model behavior. Warning text is not a security control.**
+
+「慎重に使え」と説明文に書くだけでは、高影響 Tool の制御にならない。Authorization、承認ゲート、権限境界、監査、Escalation を先に置く。
+
+## Authentication vs Authorization
+
+- **Authentication:** Who are you?（身元）  
+- **Authorization:** What are you allowed to do?（操作範囲）  
+
+認証済みでも全 Tool が使えるわけではない。同じ MCP Server でも、読み取りと破壊的操作は Control を変える。
+
+失敗は前提にする。Timeout / 権限拒否 / 部分結果 / Rate limit は、構造化したエラーで返し、bounded retry → 代替 → 安全に止めて Escalate。無制限 Retry は設計不良（`knowledge/patterns/workflow-vs-agent-vs-human.md`）。
+
 ## Signals
 
 - MCP があるので Authentication は不要  
@@ -62,10 +99,14 @@ MCP = integration layer. Agent = decision / orchestration pattern. 混ぜない�
 - Tool を増やすほど柔軟で良い  
 - MCP 経由なら外部データは正しい  
 - 静的参照を毎回 MCP で取りに行く / ライブデータを CLAUDE.md に貼る  
+- Authentication 済みだから全 Tool 利用可  
+- Tool 説明の警告文で高影響操作を制御する  
+- MCP Prompt を Tool / 外部 Action と同一視する  
+- 似た Tool を増やして柔軟だと考える  
 
 ## Core rule
 
-> MCP standardizes access. It does not replace security, validation, or authority design. Retrieve frequently changing data at runtime.
+> MCP standardizes access. It does not replace security, validation, or authority design. Retrieve frequently changing data at runtime. Tool / Resource / Prompt are different contracts; authentication is not authorization; warning text is not a control.
 
 ## Related
 

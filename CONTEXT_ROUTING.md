@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.38
+Version: v1.39
 
 ## Purpose
 
@@ -913,6 +913,7 @@ Load:
 Focus:
 - Known path → Workflow; unknown path + clear goal → Agent; consequential → Human
 - MCP standardizes connection; it does not replace security or authority
+- Tool ≠ Resource ≠ Prompt; authentication ≠ authorization; warning text is not a control
 - Subagent only when specialization / isolation / permission split pays for orchestration
 - Bounded retry, stop, least privilege; do not let the agent decide its own high-impact approvals
 
