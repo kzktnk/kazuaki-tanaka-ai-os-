@@ -127,7 +127,7 @@ Lead contacts exist to **influence and pass issues both ways**. They are not gat
 1. **定着** — 関係者をめざす状態に動かす  
 2. **策定** — ロードマップを作るために場を使う（要件・ユースケース・キック条件）
 
-主線が策定なら、ステークホルダーの目指す状態は必要条件だが、成果物の主語ではない。現場へクイック検証チームを送る話が出たときは、チームの呼び名より先に **何が揃えばキックできるか** を書く。大きい投資案件の巻き込みと現場クイック検証は、同じ計画に無自覚に載せない。型は `knowledge/patterns/formulation-comms-vs-adoption-comms.md`。
+主線が策定なら、ステークホルダーの目指す状態は必要条件だが、成果物の主語ではない。現場へクイック検証チームを送る話が出たときは、チームの呼び名より先に **何が揃えばキックできるか** を書く。大きい投資案件の巻き込みと現場クイック検証は、同じ計画に無自覚に載せない。型は `knowledge/patterns/formulation-comms-vs-adoption-comms.md`。本社だけで閉じる仕事と現場主体の仕分け、検証テーマ先行、役割先行は `knowledge/patterns/activation-first-for-site-led-work.md`。
 
 ### Three understandings every person needs
 
@@ -227,6 +227,7 @@ AI-specific change (incomplete models, ethics, shadow tools, HITL) is `knowledge
 | `knowledge/patterns/who-vs-lever-family.md` | Who to invest in ≠ logic/emotion × pull/push |
 | `knowledge/patterns/change-agent-vs-communication-plan.md` | Agent hunt ≠ communication plan; plan before samples |
 | `knowledge/patterns/formulation-comms-vs-adoption-comms.md` | Roadmap-formulation comms ≠ adoption comms; kick conditions before field-team dispatch |
+| `knowledge/patterns/activation-first-for-site-led-work.md` | Sort HQ-closable vs site-led first; theme before site; roles before names |
 | `playbooks/operations-transition-playbook.md` | Ops take-on / Adoption Definition of Done |
 | `energy-utilities.md` | Group CX / plant autonomy: strategy, analysis, and decision rights must travel together |
 
@@ -253,5 +254,6 @@ AI-specific change (incomplete models, ethics, shadow tools, HITL) is `knowledge
 - `knowledge/index/legacy-source-index.md` Program Line L, Program Line T, Program Line AE
 - `knowledge/patterns/change-agent-vs-communication-plan.md`
 - `knowledge/patterns/formulation-comms-vs-adoption-comms.md`
+- `knowledge/patterns/activation-first-for-site-led-work.md`
 - `knowledge/migrations/change-management-2026-08.md`
 - `knowledge/migrations/pgmo-ai-change-2026-08.md`

@@ -620,9 +620,10 @@
 | 週次検討会の wrap-up・口頭補足 | `knowledge/patterns/scn-as-landscape-not-completeness.md` | SCN を配置図として使う。MECE・新規立ち上げではない |
 | 同上 | `knowledge/patterns/topology-map-vs-issue-log.md` | 図は位相、表は課題。質問先行。5領域は②既存 |
 | 同上（チェンマネ論点） | `knowledge/patterns/formulation-comms-vs-adoption-comms.md` | 策定の場 vs 定着の場。キック条件が先 |
+| 個別検討会（チェンマネ／ステークホルダー、2026-09-04） | `knowledge/patterns/activation-first-for-site-led-work.md` | 現場主体は Activation が入口。テーマ先行、役割先行 |
 | レビュー／思考の型 | `standards/consulting-review.md`、`core/author-voice.md` | 成果物の仕事を先に名指す |
 
-**未登録:** 事前デック、wrap-up 本体、議事録、録音、記入済みマトリクス、ヒアリング票。
+**未登録:** 事前デック、wrap-up 本体、議事録、録音、記入済みマトリクス、ヒアリング票、組織再編案、個人名欄。
 
 ---
 

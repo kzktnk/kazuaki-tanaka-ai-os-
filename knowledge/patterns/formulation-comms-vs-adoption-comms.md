@@ -54,7 +54,8 @@ type: pattern
 1. **二つの仕事を名指す** — 定着か、策定か。両方やるなら成果物を分けるか、主線を一つにする。  
 2. **キック条件から書く** — 現場派遣・クイック検証があるなら、先に「始められる条件」。  
 3. **サンプルはサンプルのまま** — 名簿の型は、計画の骨格のあと。  
-4. **本社だけで足りる話は本社で閉じる** — 現場が主体の施策にだけ、現場を入れる場を設計する。  
+4. **本社だけで足りる話は本社で閉じる** — 現場が主体の施策にだけ、現場を入れる場を設計する。仕分け自体が Activation の入口になるときは `knowledge/patterns/activation-first-for-site-led-work.md`。  
+5. **テーマがサイトを決める** — 検証テーマが空のままモデルサイトを先に決めない。現場チーム派遣の前に、何を整備するかを書く。  
 
 ---
 
@@ -76,4 +77,5 @@ type: pattern
 ## Related
 
 - `knowledge/patterns/who-vs-lever-family.md`  
+- `knowledge/patterns/activation-first-for-site-led-work.md` — 現場主体の仕分け、テーマ先行、役割先行  
 - `knowledge/migrations/pj-between-review-viewpoints-2026-09.md`  

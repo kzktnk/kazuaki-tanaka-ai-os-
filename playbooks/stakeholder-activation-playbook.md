@@ -12,7 +12,7 @@ type: playbook
 **Do not use as-is for:** 組織全体のチェンジプロセス設計（`frameworks/change-management.md`）、操作・欺瞞、①の戦略構造化、②の PJ 間統制、③の移行設計そのもの  
 **Source revision:** local Stakeholder Activation Playbook 2026-08-29（selfstudy pair）; lever-family cut 2026-09
 
-Pairs with `frameworks/change-management.md`（Readiness／Strategy／Commitment の組織層）。本 Playbook はその中の **戦術層**：Segment → Diagnose → Select → Tailor → Observe。①②③すべてから参照する横串。Channel は 6 ステップ目ではなく Tailor と Observe の間の実行レイヤー。誰に時間を使うか（Chapter 2）とレバー族（Chapter 3.4）は別の 2×2（`knowledge/patterns/who-vs-lever-family.md`）。一人で読むときは `playbooks/stakeholder-activation-playbook-selfstudy.md`。
+Pairs with `frameworks/change-management.md`（Readiness／Strategy／Commitment の組織層）。本 Playbook はその中の **戦術層**：Segment → Diagnose → Select → Tailor → Observe。①②③すべてから参照する横串。Channel は 6 ステップ目ではなく Tailor と Observe の間の実行レイヤー。誰に時間を使うか（Chapter 2）とレバー族（Chapter 3.4）は別の 2×2（`knowledge/patterns/who-vs-lever-family.md`）。現場主体の仕事があるのに名簿やモデルサイトから入っているときは `knowledge/patterns/activation-first-for-site-led-work.md`。一人で読むときは `playbooks/stakeholder-activation-playbook-selfstudy.md`。
 
 ## このPlaybookの目的
 

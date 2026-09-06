@@ -55,6 +55,7 @@
 | 図は位相、表は課題 | 関係図に課題を載せ、図で洗い出しきれるかを問われているとき | `knowledge/patterns/topology-map-vs-issue-log.md` |
 | 質問を先に固定する | ヒアリング依頼が、確認したい問いより先に立つとき | 同上 |
 | 策定の場 vs 定着の場 | チェンマネ計画が名簿サンプルから厚くなるとき | `knowledge/patterns/formulation-comms-vs-adoption-comms.md` |
+| 現場主体は Activation が入口 | 名簿・モデルサイトから入り、本社だけで閉じる仕事と混ざっているとき | `knowledge/patterns/activation-first-for-site-led-work.md` |
 
 ### 1.3 成果物アーキタイプ（レガシー由来）
 

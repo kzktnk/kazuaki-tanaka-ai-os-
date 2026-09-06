@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.39
+Version: v1.40
 
 ## Purpose
 
@@ -542,6 +542,7 @@ Load:
 - knowledge/patterns/who-vs-lever-family.md (if the person is right but the lever is push/fear or logic-only)
 - knowledge/patterns/change-agent-vs-communication-plan.md (if Champion hunt is being treated as the communication plan)
 - knowledge/patterns/formulation-comms-vs-adoption-comms.md (if roadmap-formulation sessions are collapsed into an adoption communication plan, or a field team is planned before kick conditions)
+- knowledge/patterns/activation-first-for-site-led-work.md (if a named-person roster or model site is being filled before HQ-vs-site-led sort and verification theme)
 - playbooks/operations-transition-playbook.md (if the change is ops take-on / adoption after realization)
 - standards/pmo-operating-guide.md (§Change Management Operating Standard)
 - frameworks/transformation-pmo.md (if program-owned change)

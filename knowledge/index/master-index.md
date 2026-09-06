@@ -1,6 +1,6 @@
 # Knowledge Master Index
 
-**Version:** v1.30  
+**Version:** v1.31  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
@@ -76,9 +76,9 @@ kazuaki-tanaka-ai-os/
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
-│   ├── patterns/               ← 47 distilled patterns
+│   ├── patterns/               ← 48 distilled patterns
 │   ├── lessons/                ← 5 lessons
-│   ├── migrations/             ← 40 migration reports
+│   ├── migrations/             ← 41 migration reports
 │   └── decisions/              ← 4 records
 ├── templates/                  ← 1 template
 ├── prompts/                    ← README placeholder
@@ -248,7 +248,7 @@ knowledge/
 │       ├── 001–022/                  ← Operational AI main series
 │       ├── sp01–sp09/                ← special posts
 │       └── erf01–erf03/              ← Enterprise Redesign Framework
-├── patterns/                         ← 47 files (see table below)
+├── patterns/                         ← 48 files (see table below)
 ├── lessons/
 │   ├── governance-messaging.md
 │   ├── dual-roadmap-messaging.md
@@ -298,7 +298,8 @@ knowledge/
 │   ├── consultant-skill-directory-financial-2026-09.md
 │   ├── consultant-skill-model-path-correction-2026-09.md
 │   ├── ccar-agentic-mcp-subagents-2026-09.md
-│   └── ccar-mcp-part2-2026-09.md
+│   ├── ccar-mcp-part2-2026-09.md
+│   └── site-led-activation-first-2026-09.md
 └── decisions/
     ├── diagnose-from-gateway-not-client-error.md
     ├── sandbox-cost-controls-before-resources.md
@@ -306,7 +307,7 @@ knowledge/
     └── buyer-owns-ai-poc-ground-truth.md
 ```
 
-### Patterns (47)
+### Patterns (48)
 
 | Pattern | Primary themes |
 |---------|----------------|
@@ -357,6 +358,7 @@ knowledge/
 | `workflow-vs-agent-vs-human.md` | Known path → Workflow; observation-dependent path → Agent; consequential → Human |
 | `mcp-as-integration-not-authority.md` | MCP standardizes connection; Tool ≠ Resource ≠ Prompt; authn ≠ authz; warning ≠ control |
 | `subagent-when-isolation-justifies-cost.md` | Split only when specialization / isolation / permissions pay for orchestration |
+| `activation-first-for-site-led-work.md` | Sort HQ-closable vs site-led first; theme before site; roles before names |
 
 ---
 
@@ -1027,6 +1029,24 @@ CONTEXT_ROUTING.md  →  Agent / MCP / Subagent Design
 
 ---
 
+### AF. Site-led activation first (2026-09)
+
+```text
+Local CM working deck 2026-09-04 — recording not archived; no transcript
+        ↓ generalize (no client / site / org-redesign / named people)
+knowledge/patterns/activation-first-for-site-led-work.md
+        ↓ connect
+knowledge/patterns/formulation-comms-vs-adoption-comms.md
+playbooks/stakeholder-activation-playbook.md
+frameworks/change-management.md
+        ↓ record
+knowledge/migrations/site-led-activation-first-2026-09.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  Change Management
+```
+
+---
+
 ## Level 4 — CONTEXT_ROUTING Task Map (summary)
 
 Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
@@ -1042,7 +1062,7 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | DX grand design | `frameworks/dx-grand-design.md`, change / roadmap as needed |
 | New venture assessment | `frameworks/new-venture-three-track-assessment.md` |
 | B2B sales workflow | `knowledge/patterns/sales-capacity-via-center-functions.md` |
-| Change management | `frameworks/change-management.md`, `all-at-once-vs-stepwise-change.md`, `change-agent-vs-communication-plan.md` (agent hunt ≠ communication plan), `formulation-comms-vs-adoption-comms.md` (formulation vs adoption; kick conditions first), `who-vs-lever-family.md` (who ≠ lever family), `pmo-operating-guide.md` §CM, `playbooks/stakeholder-activation-playbook.md` (person-level), `playbooks/operations-transition-playbook.md` Chapter 7 (ops adoption) |
+| Change management | `frameworks/change-management.md`, `all-at-once-vs-stepwise-change.md`, `change-agent-vs-communication-plan.md` (agent hunt ≠ communication plan), `formulation-comms-vs-adoption-comms.md` (formulation vs adoption; kick conditions first), `activation-first-for-site-led-work.md` (HQ-closable vs site-led; theme before site; roles before names), `who-vs-lever-family.md` (who ≠ lever family), `pmo-operating-guide.md` §CM, `playbooks/stakeholder-activation-playbook.md` (person-level), `playbooks/operations-transition-playbook.md` Chapter 7 (ops adoption) |
 | AI CoE / PgMO / Change | `knowledge/patterns/ai-coe-vs-pgmo-vs-change.md`, `ai-management-office.md`, `transformation-pmo.md`, `change-management.md` |
 | AI adoption / DX roadmap | `frameworks/ai-adoption-roadmap.md`, `playbooks/ai-utilization-roadmap.md`, `playbooks/ai-work-before-after.md`, `logical-vs-physical-document-unity.md` if document unification is the AI enabler |
 | AI PoC quality (buyer) | `playbooks/ai-poc-quality-review.md`, `rag-structure-diagnosis.md`, `buyer-owns-ai-poc-ground-truth.md`, `ai-output-evaluation-terms.md` if scoring an answer, `logical-vs-physical-document-unity.md` if corpus / store strategy is open |
