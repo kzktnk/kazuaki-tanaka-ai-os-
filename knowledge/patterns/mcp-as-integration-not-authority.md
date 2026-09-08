@@ -112,6 +112,7 @@ Prompt は Tool ではない。外部 Action を実行しない。モデルを f
 
 - `knowledge/patterns/workflow-vs-agent-vs-human.md` — MCP は両方を支えうる  
 - `knowledge/patterns/ai-capability-vs-authority.md` — できること ≠ してよいこと  
+- `knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md` — API / アプリ境界  
 - `knowledge/patterns/logical-vs-physical-document-unity.md` — 静的コーパスの置き方  
 - `frameworks/human-oversight.md`  
 - `adapters/claude/CLAUDE.md` — Connector / MCP vs Project knowledge  

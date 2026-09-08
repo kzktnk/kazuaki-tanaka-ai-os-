@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.40
+Version: v1.41
 
 ## Purpose
 
@@ -66,6 +66,7 @@ Load:
 - playbooks/rag-structure-diagnosis.md (if retrieval vs table/structure)
 - playbooks/responsible-ai-assessment.md (if principles / accountability)
 - knowledge/lessons/ai-output-evaluation-terms.md (if scoring a single answer: accuracy vs completeness vs groundedness)
+- knowledge/patterns/define-success-before-prompt-change.md (if prompts are being tuned without success criteria, edge cases, or regression checks)
 - knowledge/patterns/logical-vs-physical-document-unity.md (if the AI corpus / document-store strategy is still open)
 - standards/vendor-proposal-evaluation.md (if scoring-sheet design, not AI metrics)
 - standards/consulting-review.md
@@ -105,6 +106,8 @@ Load:
 - knowledge/lessons/ai-output-evaluation-terms.md (if classifying output failures or bias vs accuracy)
 - knowledge/patterns/workflow-vs-agent-vs-human.md (if autonomy, stop/retry, or HITL thresholds)
 - knowledge/patterns/mcp-as-integration-not-authority.md (if live tools / data access)
+- knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md (if the model is being asked to authorize or execute)
+- knowledge/patterns/define-success-before-prompt-change.md (if prompt tuning is treated as quality assurance)
 
 Focus:
 - Accountability first, then failure impact, data, transparency, fairness
@@ -907,6 +910,8 @@ Load:
 - knowledge/patterns/subagent-when-isolation-justifies-cost.md (if splitting work across agents)
 - knowledge/patterns/authority-levels.md
 - knowledge/patterns/ai-capability-vs-authority.md
+- knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md (if API / app boundary or the model is asked to authorize)
+- knowledge/patterns/define-success-before-prompt-change.md (if prompts are being tuned)
 - frameworks/human-oversight.md
 - frameworks/decision-ownership.md
 - adapters/claude/CLAUDE.md (if Claude / Claude Code / Connector)
@@ -915,6 +920,7 @@ Focus:
 - Known path → Workflow; unknown path + clear goal → Agent; consequential → Human
 - MCP standardizes connection; it does not replace security or authority
 - Tool ≠ Resource ≠ Prompt; authentication ≠ authorization; warning text is not a control
+- LLM recommends; application enforces. Secrets stay outside model context
 - Subagent only when specialization / isolation / permission split pays for orchestration
 - Bounded retry, stop, least privilege; do not let the agent decide its own high-impact approvals
 

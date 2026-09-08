@@ -72,6 +72,8 @@ AIは「選択肢を広げる道具」。最終的な意思決定と妥当性の
 - `playbooks/wbs-design.md`（Step 5：AIの使い方）
 - `exercises/exercise-05-spotting-plausible-ai-errors.md`
 - `knowledge/lessons/ai-output-evaluation-terms.md`（Accuracy / Completeness / Groundedness）
+- `knowledge/patterns/define-success-before-prompt-change.md`（Prompt を直す前に成功条件）
+- `knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md`（判断は LLM、執行はアプリ）
 - `adapters/claude/CLAUDE.md`（Claude 機能の使い分け）
 - `knowledge/patterns/workflow-vs-agent-vs-human.md`（経路の型。ステップ数だけでは Agent にしない）
 
