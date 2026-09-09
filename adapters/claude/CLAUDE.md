@@ -2,7 +2,7 @@
 
 # Claude Adapter
 
-**Version:** v1.3  
+**Version:** v1.4  
 **Status:** Active  
 **Applies to:** Claude (Projects, Artifacts, Skills, Claude Code, connectors)  
 **Document role:** Tool-specific operating card. Does not replace `AI_OPERATING_MANUAL.md`, `CONTEXT_ROUTING.md`, or files under `core/`, `standards/`, `frameworks/`, or `knowledge/`.
@@ -13,7 +13,7 @@
 
 Claude 固有の機能を、仕事の種類に合わせて選ぶ。機能名の暗記ではなく、**何を知っているか / どう振る舞うか / どう進めるか / 何を作るか / 何に繋ぐか**を分ける。
 
-評価語（Accuracy / Completeness / Groundedness 等）は `knowledge/lessons/ai-output-evaluation-terms.md`。Prompt を直す前の成功定義は `knowledge/patterns/define-success-before-prompt-change.md`。API 境界（判断はモデル、執行はアプリ）は `knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md`。ガバナンス・監督は `frameworks/`。
+評価語（Accuracy / Completeness / Groundedness 等）は `knowledge/lessons/ai-output-evaluation-terms.md`。Prompt を直す前の成功定義は `knowledge/patterns/define-success-before-prompt-change.md`。明示してから長くするのは `knowledge/patterns/explicit-before-elaborate-prompt.md`。API 境界（判断はモデル、執行はアプリ）は `knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md`。ガバナンス・監督は `frameworks/`。
 
 ---
 
@@ -76,7 +76,7 @@ MCP は接続レイヤであり、Agent でも Security でもない。権限・
 6. Knowledge conflict？ → source-of-truth を curate
 7. 能力不足？ → 評価してから model 変更
 
-原則: **Knowledge 問題を Prompt で誤魔化ししない。**
+原則: **Knowledge 問題を Prompt で誤魔化ししない。** 長くする前に明示する（`knowledge/patterns/explicit-before-elaborate-prompt.md`）。失敗の種類を見て打ち手を1つ選ぶ。Role や Examples の量では指示の曖昧さを埋めない。
 
 衝突・陳腐化した参照は、指示を足す前に整理する。文脈は多いほど良い、ではない。
 
@@ -140,4 +140,5 @@ MCP は接続レイヤであり、Agent でも Security でもない。権限・
 - `knowledge/patterns/mcp-as-integration-not-authority.md`
 - `knowledge/patterns/subagent-when-isolation-justifies-cost.md`
 - `knowledge/patterns/define-success-before-prompt-change.md`
+- `knowledge/patterns/explicit-before-elaborate-prompt.md`
 - `knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md`

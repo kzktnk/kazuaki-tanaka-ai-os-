@@ -49,4 +49,5 @@ LLM-as-a-Judge は流暢さを過大評価し、根拠のない主張を見逃�
 - `knowledge/decisions/buyer-owns-ai-poc-ground-truth.md`  
 - `playbooks/ai-poc-quality-review.md`  
 - `knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md`  
+- `knowledge/patterns/explicit-before-elaborate-prompt.md` — 介入。失敗の種類で打ち手を選ぶ  
 - `adapters/claude/CLAUDE.md`  

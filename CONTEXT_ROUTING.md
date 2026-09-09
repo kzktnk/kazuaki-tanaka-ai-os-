@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.41
+Version: v1.42
 
 ## Purpose
 
@@ -67,6 +67,7 @@ Load:
 - playbooks/responsible-ai-assessment.md (if principles / accountability)
 - knowledge/lessons/ai-output-evaluation-terms.md (if scoring a single answer: accuracy vs completeness vs groundedness)
 - knowledge/patterns/define-success-before-prompt-change.md (if prompts are being tuned without success criteria, edge cases, or regression checks)
+- knowledge/patterns/explicit-before-elaborate-prompt.md (if the prompt is being lengthened before the task/output is explicit)
 - knowledge/patterns/logical-vs-physical-document-unity.md (if the AI corpus / document-store strategy is still open)
 - standards/vendor-proposal-evaluation.md (if scoring-sheet design, not AI metrics)
 - standards/consulting-review.md
@@ -912,6 +913,7 @@ Load:
 - knowledge/patterns/ai-capability-vs-authority.md
 - knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md (if API / app boundary or the model is asked to authorize)
 - knowledge/patterns/define-success-before-prompt-change.md (if prompts are being tuned)
+- knowledge/patterns/explicit-before-elaborate-prompt.md (if the fix is a longer prompt rather than a clearer one)
 - frameworks/human-oversight.md
 - frameworks/decision-ownership.md
 - adapters/claude/CLAUDE.md (if Claude / Claude Code / Connector)
