@@ -39,11 +39,12 @@ Full catalog and cross-links: [`knowledge/index/master-index.md`](../knowledge/i
 |------|--------|
 | `operating-model.md` | Operating model design |
 | `capability-model.md` | Capability mapping (client organization; not consultant skill) |
-| `consultant-capability-skill-model.md` | Consultant 4 Capability / 24 Skill / L0–L4 + Evidence (draft v0.6.4; Manager Source of Truth; ≠ SCN capability) |
+| `consultant-capability-skill-model.md` | Consultant 4 Capability / 24 Skill / L0–L4 + Evidence (draft v0.6.5; Manager Source of Truth; ≠ SCN capability) |
 | `consultant-role-responsibility-model.md` | Strategy Consultant Role / Responsibility / Required Level (draft v0.3.2) |
 | `consultant-learning-map-example.md` | Person-level Learning Map prototype (構造化する L1→L2) |
 | `skill-playbook-directory.md` | Learner first read: Skill → what to read (not Level judgment) |
 | `financial-analysis-for-consultants.md` | Capability IV entry: statements → management-issue hypothesis |
+| `si-project-literacy.md` | Capability II prerequisite (draft): SI lifecycle → blast radius → PgMO questions before ② |
 | `pilot-assessment-strategy-consultant.md` | 24 Skill Pilot worksheet; Assessor fills in 1on1 (not a take-home test) |
 | `maturity-model.md` | Maturity assessment |
 | `transformation-roadmap.md` | Transformation roadmap |
@@ -90,6 +91,7 @@ Pairs with `knowledge/patterns/transition-vs-transformation-vs-realization.md`.
 |------|--------|
 | `systems-integration-solution-planning.md` | SI SA: estimate integrity, blueprint, V-model, two contingencies, tick-and-tie |
 | `delivery-leadership.md` | SA→DL handoff, program vs project, EAC, expectations, introduction vs transition |
+| `si-project-literacy.md` | Also listed under Transformation: SI未経験 PgMO 向けの工程解像度（②の前提） |
 
 Pairs with `knowledge/patterns/estimate-target-commitment.md`.
 

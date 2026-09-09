@@ -1,7 +1,7 @@
 ---
 type: reference
 title: "スキル別 参照Playbook 早見表"
-source: "frameworks/consultant-capability-skill-model.md（v0.6.4）の教材マッピングとL2 Evidenceから、評価の型を外して作った早見表。現場Managerフィードバックへの対応として新規作成。"
+source: "frameworks/consultant-capability-skill-model.md（v0.6.5）の教材マッピングとL2 Evidenceから、評価の型を外して作った早見表。現場Managerフィードバックへの対応として新規作成。"
 status: draft
 related:
   - frameworks/consultant-capability-skill-model.md
@@ -30,15 +30,15 @@ last_updated: 2026-09-02
 
 ## Delivery / Execution（実行を回す力）
 
-②（複数PJ統合管理）や③（運用移行）のフェーズで必要になります。Strategy Consultantとして①フェーズを主に担当する人は、今すぐ全部読む必要はありません。
+②（複数PJ統合管理）や③（運用移行）のフェーズで必要になります。Strategy Consultantとして①フェーズを主に担当する人は、今すぐ全部読む必要はありません。SI未経験で②に入る場合は、先に `frameworks/si-project-literacy.md` を1周する（②の前提知識。個別PJのPM実務そのものではない）。
 
 | スキル | 読むもの | 自走できてくると、こんな感じ |
 |---|---|---|
 | Work Planning／WBS | `playbooks/wbs-design.md`（自習版あり） | 成果物から逆算して、タスクに分解できる |
-| Dependency Management | `playbooks/cross-project-program-management.md` Ch3（自習版あり） | PJ間の受け渡しで、何が重要かを見極められる |
-| Schedule Integration | 同上 Ch4 | 日付が揃っているだけでなく、前提が噛み合っているか確認できる |
-| Scope／Responsibility | 同上 Ch5 | 「どっちの仕事か」があいまいなところを見つけて埋められる |
-| Risk／Issue Management | 同上 Ch8 | 感覚でなく数字で、赤黄緑を判定できる |
+| Dependency Management | `playbooks/cross-project-program-management.md` Ch3（自習版あり）。SI未経験なら先に `frameworks/si-project-literacy.md` | PJ間の受け渡しで、何が重要かを見極められる |
+| Schedule Integration | 同上 Ch4（同上、SI未経験なら先に Literacy） | 日付が揃っているだけでなく、前提が噛み合っているか確認できる |
+| Scope／Responsibility | 同上 Ch5（同上） | 「どっちの仕事か」があいまいなところを見つけて埋められる |
+| Risk／Issue Management | 同上 Ch8（同上） | 感覚でなく数字で、赤黄緑を判定できる |
 | Transition Due Diligence／Planning | `playbooks/operations-transition-playbook.md` Ch2・Ch3（自習版あり） | 移行してよいか・まだ危ないかを判断できる |
 | Knowledge Transfer | 同上 Ch2.5・Ch3.5 | 「当たり前すぎて言わなかったこと」を引き出せる |
 | Transition工数見積もり | 同上 Ch4 | 前提を書き残した見積もりを作れる |

@@ -47,6 +47,8 @@ Pairs with `playbooks/program-governance-cadence.md`（**誰がどの会議で�
 
 ## 使い方
 
+SIプロジェクトの経験が薄い（またはない）学習者には、本編に入る前に `frameworks/si-project-literacy.md` を1周させる。報告を聞いて後工程への波及と確認質問を自力で組み立てるための前提知識であり、本Playbookの型の代わりにはならない。
+
 1. Chapter 1〜2で「PgMOは何を管理するのか」という視点を作る
 2. Chapter 3〜6で管理対象を5領域（Scope Boundary / Dependency / Interface / Consistency / Schedule）に分解する型を学ぶ
 3. Chapter 7〜8でモニタリング＆コントロールとガバナンスの回し方を学ぶ

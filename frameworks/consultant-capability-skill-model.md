@@ -8,6 +8,7 @@ gap_fill: "frameworks/capability-model.md（クライアント組織のCapabilit
 related:
   - frameworks/skill-playbook-directory.md（読むものだけ探すならこちら）
   - frameworks/financial-analysis-for-consultants.md（Capability IVの入口教材）
+  - frameworks/si-project-literacy.md（Capability II共通Prerequisite候補・draft。Pilot後にPass／Not Yet化）
   - frameworks/consultant-role-responsibility-model.md（Role／Responsibility層、Required Level一覧）
   - frameworks/top-down-thinking.md
   - frameworks/thinking-patterns/
@@ -19,7 +20,7 @@ related:
   - core/author-voice.md
   - standards/scn-creation-guide.md
   - playbooks/program-governance-cadence.md
-last_updated: 2026-09-02
+last_updated: 2026-09-09
 ---
 
 # コンサルタント Capability／スキル／レベル モデル
@@ -211,6 +212,8 @@ Suitability／Feasibility／Acceptability評価、重要度×実現可能性の�
 | L3 | L4 | 関係者間の利害が本質的に対立する非標準ケースを複数経験する | 複数の非標準ケースで評価の進め方自体を設計し、判断理由を説明して他者に教えられる | Capability Owner |
 
 ### 3.2 Capability II｜Delivery / Execution
+
+②を教材とする Dependency Management／Schedule Integration／Scope／Responsibility／Risk／Issue Management の4 Skillは、SI経験者が暗黙に持つ工程解像度を前提にしている。SI未経験の学習者向けに、共通Prerequisite Knowledgeの候補を `frameworks/si-project-literacy.md`（draft v0.6）に置いた。Pass／Not Yetの正式追加と各Skill表への埋め込みは、Literacy の Pilot（Fact→波及と質問を自力で出せるか）通過後に行う。Required Level（PgMO Role）の確定は Role 側定義を待つ。
 
 #### Work Planning／WBS
 
@@ -501,3 +504,4 @@ Capability I〜IIIが「型（プロセス・技法）」であるのに対し�
 | v0.6.2 | 次のステップをManager UX／Learner UXの2トラックPilotに整理。Capability IVの教材未整備を次の優先領域として明記 |
 | v0.6.3 | Capability IVの入口教材「Company／Financial Analysis」（`financial-analysis-for-consultants.md`）を作成し、Directory・Skill定義から参照。Directory をリポジトリに登録 |
 | v0.6.4 | ③・横串の正しいパスは末尾 `-playbook`。探していた `operations-transition.md` は誤名 |
+| v0.6.5 | Capability II共通Prerequisite候補として `si-project-literacy.md` を登録（draft。Pilot後にPass／Not Yet化）。Directory・②本編／selfstudyから導線 |

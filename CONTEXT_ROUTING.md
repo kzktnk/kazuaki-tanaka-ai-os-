@@ -421,6 +421,7 @@ Load:
 - playbooks/pmo-function-standup.md (if the office exists on paper but not in operation)
 - playbooks/program-governance-cadence.md (if SteerComm / program board / standup / inspection are collapsing into one status meeting)
 - playbooks/cross-project-program-management.md (if PgMO is buried in vendor WBS detail; PJ間 dependency / consistency / hand-off control is missing)
+- frameworks/si-project-literacy.md (if the PgMO reader lacks SI delivery experience and cannot turn a status Fact into blast radius + questions before using ②)
 - playbooks/wbs-design.md (if individual PJ WBS detailing is being treated as PgMO work)
 - playbooks/strategy-scn.md (if upstream strategy → SCN → Gate 1 is weak before PgMO start)
 - playbooks/operations-transition-playbook.md (if realization is ending and ops take-on / adoption is the next job)
@@ -615,6 +616,7 @@ Load:
 - frameworks/pilot-assessment-strategy-consultant.md (if assessing a real person)
 - frameworks/consultant-learning-map-example.md (if generating a person-level Learning Map)
 - frameworks/financial-analysis-for-consultants.md (if developing Company／Financial Analysis)
+- frameworks/si-project-literacy.md (if developing Capability II Skills that use ② and the learner lacks SI delivery experience — draft Prerequisite until Pilot)
 - frameworks/capability-model.md (client-organization layers only — do not merge into the consultant map)
 - matching playbook / selfstudy pair for the Skill being developed (e.g. wbs-design.md / wbs-design-selfstudy.md)
 
@@ -628,6 +630,7 @@ Focus:
 - Capability Model is Manager / 育成担当 Source of Truth; do not hand it as the junior's first read
 - Junior first read is the Directory; Assessment is Assessor-owned (1on1 diagnostic). Do not ask the junior to fill the sheet alone
 - Capability IV entry material exists only for Company／Financial Analysis; remaining five Skills have Evidence without a learning pack
+- Capability II shared Prerequisite candidate for ② Skills is `si-project-literacy.md` (draft until Pilot Pass／Not Yet)
 - Next step = Capability Model × Current Level × Assignment (soft Prerequisite)
 
 Outputs:
