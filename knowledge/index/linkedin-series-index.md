@@ -32,8 +32,10 @@ Master index of LinkedIn / Note article sources under `knowledge/source/linkedin
 | 020 | No.20 | Organizational Memory Doesn't Scale by Accumulation | 組織の記憶は、溜め込むだけでは育たない | en, ja | `020/` |
 | 021 | No.21 | Organizational Memory Matters Only If It Returns to the Moment of Decision | 組織の記憶は、「判断の瞬間」に戻ってきて初めて意味を持つ | en, ja | `021/` |
 | 022 | No.22 | A Standard Should Be the Memory of What We Have Learned | 標準とは、組織が学んだことの記憶である | en, ja | `022/` |
+| — | No.23 *(draft pattern only)* | Human Reserved — Authority Rationale | — | — | see `human-reserved-two-rationales.md` |
+| — | No.24 *(draft pattern only)* | Human Reserved — Development Rationale | — | — | see `human-reserved-two-rationales.md` |
 
-**Note:** Folder `009/` is intentionally skipped. No.9 Note content is archived in `013/` with `note_number: 9`.
+**Note:** Folder `009/` is intentionally skipped. No.9 Note content is archived in `013/` with `note_number: 9`. No.23 / No.24 source folders are **not** archived yet; pattern `knowledge/patterns/human-reserved-two-rationales.md` is draft until publication + migration.
 
 ---
 
@@ -95,6 +97,15 @@ No.22  Decide whether learned exceptions should change the standard
        Standard as compressed memory; Exception → reasoning → outcome → pattern → standard
 ```
 
+## Human Reserved Arc (No.23–24) — draft
+
+```
+No.23  Authority Rationale — capability ≠ permission to decide (decision-level)
+No.24  Development Rationale — doing the work is how judgment is formed
+       Pattern (draft, both): knowledge/patterns/human-reserved-two-rationales.md
+       Source archive: pending publication
+```
+
 ## New Patterns from Bulk Migration
 
 | Pattern | Origin |
@@ -108,6 +119,7 @@ No.22  Decide whether learned exceptions should change the standard
 | `knowledge/patterns/connected-organizational-memory.md` | 020 |
 | `knowledge/patterns/memory-at-decision.md` | 021 |
 | `knowledge/patterns/standard-as-learned-memory.md` | 022 |
+| `knowledge/patterns/human-reserved-two-rationales.md` | 023–024 (draft; source pending) |
 | `knowledge/patterns/operating-model-advantage.md` | 012 |
 | `knowledge/patterns/ai-resilience-shift.md` | sp01 |
 
@@ -118,3 +130,4 @@ No.22  Decide whether learned exceptions should change the standard
 - Master index: [`master-index.md`](./master-index.md)
 - Bulk migration record: `knowledge/migrations/linkedin-bulk-001-015-sp-erf.md`
 - Individual migrations: `knowledge/migrations/linkedin-013.md`, `linkedin-014.md`, `linkedin-016.md`, `linkedin-017.md`, `linkedin-018.md`, `linkedin-019.md`, `linkedin-020.md`, `linkedin-021.md`, `linkedin-022.md`
+- Draft pre-publication: `knowledge/migrations/human-reserved-two-rationales-draft-2026-09.md`

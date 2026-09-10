@@ -68,3 +68,4 @@ Same AI agent. Different authority per decision.
 - `knowledge/patterns/workflow-vs-agent-vs-human.md` — 経路の型と bounded autonomy
 - `knowledge/patterns/mcp-as-integration-not-authority.md` — 接続 ≠ 権限
 - `knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md` — 判断は LLM、執行はアプリ
+- `knowledge/patterns/human-reserved-two-rationales.md` — Authority vs Development reasons to keep a decision/task human (No.23–24, draft)

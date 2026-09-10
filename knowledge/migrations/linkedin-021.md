@@ -4,7 +4,7 @@
 
 - English: `Organizational Memory Matters Only If It Returns to the Moment of Decision`
 - Japanese: `組織の記憶は、「判断の瞬間」に戻ってきて初めて意味を持つ`
-- Scheduled: 2026-09-09
+- Published: 2026-09-08
 - Voice: Author final, **lock A**; EN/JA archived as provided 2026-08-27
 
 ## Files created

@@ -58,6 +58,7 @@ Use this pattern when:
 - `knowledge/patterns/standard-as-learned-memory.md` — whether learned exceptions should change the standard (No.22)
 - `knowledge/patterns/operational-reality.md` — exceptions and workarounds in the field
 - `knowledge/patterns/expertise-amplification.md` — expert judgment in the moment
+- `knowledge/patterns/human-reserved-two-rationales.md` — Development Rationale: intuition needs exposure that AI may otherwise absorb (No.24, draft)
 
 ## Related source
 

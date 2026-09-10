@@ -94,3 +94,4 @@ Phase sets the default ceiling; Decision × Risk × Context still governs each d
 - `knowledge/patterns/standard-as-learned-memory.md` — AI may surface evidence without authority to rewrite the standard (No.22)
 - `knowledge/patterns/workflow-vs-agent-vs-human.md` — bounded autonomy for observation-dependent paths
 - `knowledge/patterns/mcp-as-integration-not-authority.md` — connectivity does not imply authority
+- `knowledge/patterns/human-reserved-two-rationales.md` — Authority Rationale at decision level; separate from Development (No.23–24, draft)

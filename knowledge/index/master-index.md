@@ -1,10 +1,10 @@
 # Knowledge Master Index
 
-**Version:** v1.34  
+**Version:** v1.35  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
-**Last updated:** 2026-09-09
+**Last updated:** 2026-09-10
 
 ---
 
@@ -76,9 +76,9 @@ kazuaki-tanaka-ai-os/
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
-│   ├── patterns/               ← 51 distilled patterns
+│   ├── patterns/               ← 53 distilled patterns
 │   ├── lessons/                ← 5 lessons
-│   ├── migrations/             ← 48 migration reports
+│   ├── migrations/             ← 49 migration reports
 │   └── decisions/              ← 4 records
 ├── templates/                  ← 1 template
 ├── prompts/                    ← README placeholder
@@ -250,7 +250,7 @@ knowledge/
 │       ├── 001–022/                  ← Operational AI main series
 │       ├── sp01–sp09/                ← special posts
 │       └── erf01–erf03/              ← Enterprise Redesign Framework
-├── patterns/                         ← 51 files (see table below)
+├── patterns/                         ← 53 files (see table below)
 ├── lessons/
 │   ├── governance-messaging.md
 │   ├── dual-roadmap-messaging.md
@@ -304,7 +304,8 @@ knowledge/
 │   ├── site-led-activation-first-2026-09.md
 │   ├── ccar-prompt-eval-and-api-2026-09.md
 │   ├── ccar-prompt-engineering-2026-09.md
-│   └── si-project-literacy-2026-09.md
+│   ├── si-project-literacy-2026-09.md
+│   └── human-reserved-two-rationales-draft-2026-09.md
 └── decisions/
     ├── diagnose-from-gateway-not-client-error.md
     ├── sandbox-cost-controls-before-resources.md
@@ -312,10 +313,11 @@ knowledge/
     └── buyer-owns-ai-poc-ground-truth.md
 ```
 
-### Patterns (51)
+### Patterns (53)
 
 | Pattern | Primary themes |
 |---------|----------------|
+| `human-reserved-two-rationales.md` | Authority vs Development reasons to keep work/decisions human (No.23–24, draft) |
 | `buyer-side-gap-vs-vendor-pmo.md` | Vendor PMO ≠ buyer ハザマ; continuation ≠ next-phase value; monthly as go-live-path education |
 | `unowned-work-in-effort-analysis.md` | Person-tied PDC leaks unowned work; 検討主体 then execute/manage; actuals ≠ WBS |
 | `change-agent-vs-communication-plan.md` | Agent hunt ≠ communication plan; plan before samples |
@@ -1109,6 +1111,26 @@ CONTEXT_ROUTING.md  →  Transformation PMO, Consultant Enablement
 
 ---
 
+### AJ. Human Reserved two rationales — draft (2026-09)
+
+```text
+Author draft pattern for LinkedIn No.23–24 — source not yet published/archived
+        ↓ register draft pattern
+knowledge/patterns/human-reserved-two-rationales.md
+        ↓ connect
+knowledge/patterns/ai-capability-vs-authority.md
+knowledge/patterns/authority-levels.md
+knowledge/patterns/expertise-amplification.md
+knowledge/patterns/exception-as-memory-entry.md
+knowledge/index/linkedin-series-index.md (Human Reserved Arc placeholder)
+        ↓ record
+knowledge/migrations/human-reserved-two-rationales-draft-2026-09.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  AI Governance, AI Adoption, Responsible AI
+```
+
+---
+
 ## Level 4 — CONTEXT_ROUTING Task Map (summary)
 
 Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
@@ -1126,10 +1148,10 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | B2B sales workflow | `knowledge/patterns/sales-capacity-via-center-functions.md` |
 | Change management | `frameworks/change-management.md`, `all-at-once-vs-stepwise-change.md`, `change-agent-vs-communication-plan.md` (agent hunt ≠ communication plan), `formulation-comms-vs-adoption-comms.md` (formulation vs adoption; kick conditions first), `activation-first-for-site-led-work.md` (HQ-closable vs site-led; theme before site; roles before names), `who-vs-lever-family.md` (who ≠ lever family), `pmo-operating-guide.md` §CM, `playbooks/stakeholder-activation-playbook.md` (person-level), `playbooks/operations-transition-playbook.md` Chapter 7 (ops adoption) |
 | AI CoE / PgMO / Change | `knowledge/patterns/ai-coe-vs-pgmo-vs-change.md`, `ai-management-office.md`, `transformation-pmo.md`, `change-management.md` |
-| AI adoption / DX roadmap | `frameworks/ai-adoption-roadmap.md`, `playbooks/ai-utilization-roadmap.md`, `playbooks/ai-work-before-after.md`, `logical-vs-physical-document-unity.md` if document unification is the AI enabler |
+| AI adoption / DX roadmap | `frameworks/ai-adoption-roadmap.md`, `playbooks/ai-utilization-roadmap.md`, `playbooks/ai-work-before-after.md`, `logical-vs-physical-document-unity.md` if document unification is the AI enabler, `human-reserved-two-rationales.md` if junior training-ground work is being automated (draft) |
 | AI PoC quality (buyer) | `playbooks/ai-poc-quality-review.md`, `rag-structure-diagnosis.md`, `buyer-owns-ai-poc-ground-truth.md`, `ai-output-evaluation-terms.md` if scoring an answer, `define-success-before-prompt-change.md` if prompts are being tuned, `explicit-before-elaborate-prompt.md` if the prompt is being lengthened before the task is clear, `logical-vs-physical-document-unity.md` if corpus / store strategy is open |
 | Offering review | `playbooks/offering-review.md`, `change-management.md`, `transformation-pmo.md` |
-| Responsible AI assessment | `playbooks/responsible-ai-assessment.md`, `human-oversight.md`, `decision-ownership.md`, `ai-output-evaluation-terms.md` if classifying output failures, `workflow-vs-agent-vs-human.md` / `mcp-as-integration-not-authority.md` if autonomy or live tools, `llm-judgment-vs-deterministic-enforcement.md` if the model is asked to authorize |
+| Responsible AI assessment | `playbooks/responsible-ai-assessment.md`, `human-oversight.md`, `decision-ownership.md`, `ai-output-evaluation-terms.md` if classifying output failures, `workflow-vs-agent-vs-human.md` / `mcp-as-integration-not-authority.md` if autonomy or live tools, `llm-judgment-vs-deterministic-enforcement.md` if the model is asked to authorize, `human-reserved-two-rationales.md` if HITL is treated as one category (draft) |
 | Agent / MCP / Subagent design | `workflow-vs-agent-vs-human.md`, `mcp-as-integration-not-authority.md` if live tools or tool contracts, `llm-judgment-vs-deterministic-enforcement.md` if API / app boundary, `define-success-before-prompt-change.md` if prompts are being tuned, `explicit-before-elaborate-prompt.md` if the fix is a longer prompt rather than a clearer one, `subagent-when-isolation-justifies-cost.md` if splitting agents, `authority-levels.md`, `human-oversight.md`, `adapters/claude/CLAUDE.md` if Claude |
 | Energy / utilities | `domains/energy-utilities.md`, `operational-reality.md`, `requirements-artifact-review.md` (if requirements) |
 | Public sector / defense IT | `domains/public-defense.md`, `public-it-procurement-support.md` (if buyer), `buyer-vs-seller-in-public-procurement.md`, shared-operator pattern + multi-lot construction PMO playbook if concurrent lots, `related-project-external-coordination-radar.md` if adjacent/external coordination |

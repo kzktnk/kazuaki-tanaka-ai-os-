@@ -51,3 +51,4 @@ collaboration (`frameworks/ai-role-maturity.md`).
 - `knowledge/patterns/organizational-memory.md` — institutionalize judgment context beyond individuals (No.18)
 - `knowledge/patterns/memory-at-decision.md` — return prior experience before the human decides (No.21)
 - `knowledge/patterns/decision-ownership.md`
+- `knowledge/patterns/human-reserved-two-rationales.md` — Development Rationale: how juniors still form judgment when AI absorbs exposure work (No.24, draft)

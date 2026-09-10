@@ -9,7 +9,7 @@ title:
 series:
   name: "Operational AI"
 languages: [en, ja]
-published_date: "2026-09-16"
+published_date: "2026-09-15"
 status: migrated
 author_voice: author-final
 lock: A

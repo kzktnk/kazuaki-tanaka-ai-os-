@@ -4,7 +4,7 @@
 
 - English: `A Standard Should Be the Memory of What We Have Learned`
 - Japanese: `標準とは、組織が学んだことの記憶である`
-- Scheduled: 2026-09-16
+- Published: 2026-09-15
 - Voice: Author final, **lock A**; EN/JA archived as provided 2026-08-27
 
 ## Files created

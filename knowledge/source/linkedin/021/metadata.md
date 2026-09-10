@@ -9,7 +9,7 @@ title:
 series:
   name: "Operational AI"
 languages: [en, ja]
-published_date: "2026-09-09"
+published_date: "2026-09-08"
 status: migrated
 author_voice: author-final
 lock: A
@@ -94,7 +94,7 @@ No.22  Decide whether learned exceptions should change the standard
 
 ## Writing note
 
-Final text authored by Kazuaki Tanaka (lock A). EN/JA archived as provided 2026-08-27. Japanese includes an explicit close that context (similarity, difference, outcome, validity) is what makes the result memory, not retrieval.
+Final text authored by Kazuaki Tanaka (lock A). EN/JA archived as provided 2026-08-27; published 2026-09-08. Japanese includes an explicit close that context (similarity, difference, outcome, validity) is what makes the result memory, not retrieval.
 
 ## Related source
 
