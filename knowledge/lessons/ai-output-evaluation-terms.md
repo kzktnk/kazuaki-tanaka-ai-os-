@@ -33,7 +33,7 @@ Claude 自身の confidence は根拠にしない。authoritative source で検�
 
 平均 Accuracy が高いことと、自動化してよいかは別である。Completeness や Bias の失敗は、平均点では見えにくい。
 
-PoC の層別（Retrieval / Answer / Business / Operational）は `playbooks/ai-poc-quality-review.md`。こちらは**1件の出力を切る語彙**。Prompt を変える仕事の順序（成功条件が先、代表ケース、回帰、grader の評価、平均点だけでは採用しない）は `knowledge/patterns/define-success-before-prompt-change.md`。
+PoC の層別（Retrieval / Answer / Business / Operational）は `playbooks/ai-poc-quality-review.md`。こちらは**1件の出力を切る語彙**。Prompt を変える仕事の順序（成功条件が先、代表ケース、回帰、grader の評価、平均点だけでは採用しない）は `knowledge/patterns/define-success-before-prompt-change.md`。静的 / RAG / ライブ / Agentic Search の選び方は `knowledge/patterns/choose-access-by-volatility.md`。
 
 ## Prompt / knowledge の切り方
 
@@ -62,3 +62,4 @@ Knowledge の衝突は、指示を足す前に source-of-truth を決める。�
 - `knowledge/patterns/logical-vs-physical-document-unity.md`
 - `knowledge/decisions/buyer-owns-ai-poc-ground-truth.md`
 - `knowledge/patterns/define-success-before-prompt-change.md`
+- `knowledge/patterns/choose-access-by-volatility.md`

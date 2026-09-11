@@ -1,6 +1,6 @@
 # Knowledge Master Index
 
-**Version:** v1.36  
+**Version:** v1.37  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
@@ -76,9 +76,9 @@ kazuaki-tanaka-ai-os/
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
-│   ├── patterns/               ← 54 distilled patterns
+│   ├── patterns/               ← 55 distilled patterns
 │   ├── lessons/                ← 5 lessons
-│   ├── migrations/             ← 50 migration reports
+│   ├── migrations/             ← 51 migration reports
 │   └── decisions/              ← 4 records
 ├── templates/                  ← 1 template
 ├── prompts/                    ← README placeholder
@@ -250,7 +250,7 @@ knowledge/
 │       ├── 001–022/                  ← Operational AI main series
 │       ├── sp01–sp09/                ← special posts
 │       └── erf01–erf03/              ← Enterprise Redesign Framework
-├── patterns/                         ← 54 files (see table below)
+├── patterns/                         ← 55 files (see table below)
 ├── lessons/
 │   ├── governance-messaging.md
 │   ├── dual-roadmap-messaging.md
@@ -306,7 +306,8 @@ knowledge/
 │   ├── ccar-prompt-engineering-2026-09.md
 │   ├── si-project-literacy-2026-09.md
 │   ├── human-reserved-two-rationales-draft-2026-09.md
-│   └── ccar-tool-use-2026-09.md
+│   ├── ccar-tool-use-2026-09.md
+│   └── ccar-rag-agentic-search-2026-09.md
 └── decisions/
     ├── diagnose-from-gateway-not-client-error.md
     ├── sandbox-cost-controls-before-resources.md
@@ -314,7 +315,7 @@ knowledge/
     └── buyer-owns-ai-poc-ground-truth.md
 ```
 
-### Patterns (54)
+### Patterns (55)
 
 | Pattern | Primary themes |
 |---------|----------------|
@@ -371,6 +372,7 @@ knowledge/
 | `llm-judgment-vs-deterministic-enforcement.md` | LLM recommends; application enforces; secrets stay outside model context |
 | `explicit-before-elaborate-prompt.md` | Clarify task/output before lengthening; match the fix to the failure |
 | `tool-output-as-untrusted-data.md` | Tool / resource output is data, not a trusted instruction |
+| `choose-access-by-volatility.md` | Stable → context; changing corpus → RAG; current state → live; iterate only when search is observational |
 
 ---
 
@@ -1151,6 +1153,24 @@ CONTEXT_ROUTING.md  →  Agent / MCP, Responsible AI
 
 ---
 
+### AL. CCAR RAG and Agentic Search (2026-09)
+
+```text
+Local CCAR cheat sheet 2026-09-11 — not archived (no exam items / scores)
+        ↓ generalize (static vs live already in MCP pattern; table diagnosis already in rag playbook)
+knowledge/patterns/choose-access-by-volatility.md
+        ↓ connect
+knowledge/patterns/mcp-as-integration-not-authority.md
+playbooks/rag-structure-diagnosis.md
+adapters/claude/CLAUDE.md (v1.6)
+        ↓ record
+knowledge/migrations/ccar-rag-agentic-search-2026-09.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  AI PoC, Agent / MCP, Energy / Utilities
+```
+
+---
+
 ## Level 4 — CONTEXT_ROUTING Task Map (summary)
 
 Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
@@ -1169,11 +1189,11 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | Change management | `frameworks/change-management.md`, `all-at-once-vs-stepwise-change.md`, `change-agent-vs-communication-plan.md` (agent hunt ≠ communication plan), `formulation-comms-vs-adoption-comms.md` (formulation vs adoption; kick conditions first), `activation-first-for-site-led-work.md` (HQ-closable vs site-led; theme before site; roles before names), `who-vs-lever-family.md` (who ≠ lever family), `pmo-operating-guide.md` §CM, `playbooks/stakeholder-activation-playbook.md` (person-level), `playbooks/operations-transition-playbook.md` Chapter 7 (ops adoption) |
 | AI CoE / PgMO / Change | `knowledge/patterns/ai-coe-vs-pgmo-vs-change.md`, `ai-management-office.md`, `transformation-pmo.md`, `change-management.md` |
 | AI adoption / DX roadmap | `frameworks/ai-adoption-roadmap.md`, `playbooks/ai-utilization-roadmap.md`, `playbooks/ai-work-before-after.md`, `logical-vs-physical-document-unity.md` if document unification is the AI enabler, `human-reserved-two-rationales.md` if junior training-ground work is being automated (draft) |
-| AI PoC quality (buyer) | `playbooks/ai-poc-quality-review.md`, `rag-structure-diagnosis.md`, `buyer-owns-ai-poc-ground-truth.md`, `ai-output-evaluation-terms.md` if scoring an answer, `define-success-before-prompt-change.md` if prompts are being tuned, `explicit-before-elaborate-prompt.md` if the prompt is being lengthened before the task is clear, `logical-vs-physical-document-unity.md` if corpus / store strategy is open |
+| AI PoC quality (buyer) | `playbooks/ai-poc-quality-review.md`, `rag-structure-diagnosis.md`, `buyer-owns-ai-poc-ground-truth.md`, `ai-output-evaluation-terms.md` if scoring an answer, `define-success-before-prompt-change.md` if prompts are being tuned, `explicit-before-elaborate-prompt.md` if the prompt is being lengthened before the task is clear, `logical-vs-physical-document-unity.md` if corpus / store strategy is open, `choose-access-by-volatility.md` if static vs RAG vs live vs agentic search is open |
 | Offering review | `playbooks/offering-review.md`, `change-management.md`, `transformation-pmo.md` |
-| Responsible AI assessment | `playbooks/responsible-ai-assessment.md`, `human-oversight.md`, `decision-ownership.md`, `ai-output-evaluation-terms.md` if classifying output failures, `workflow-vs-agent-vs-human.md` / `mcp-as-integration-not-authority.md` if autonomy or live tools, `llm-judgment-vs-deterministic-enforcement.md` if the model is asked to authorize, `tool-output-as-untrusted-data.md` if tool results could contain instructions, `human-reserved-two-rationales.md` if HITL is treated as one category (draft) |
-| Agent / MCP / Subagent design | `workflow-vs-agent-vs-human.md`, `mcp-as-integration-not-authority.md` if live tools or tool contracts, `llm-judgment-vs-deterministic-enforcement.md` if API / app boundary, `tool-output-as-untrusted-data.md` if tool results could contain instructions, `define-success-before-prompt-change.md` if prompts are being tuned, `explicit-before-elaborate-prompt.md` if the fix is a longer prompt rather than a clearer one, `subagent-when-isolation-justifies-cost.md` if splitting agents, `authority-levels.md`, `human-oversight.md`, `adapters/claude/CLAUDE.md` if Claude |
-| Energy / utilities | `domains/energy-utilities.md`, `operational-reality.md`, `requirements-artifact-review.md` (if requirements) |
+| Responsible AI assessment | `playbooks/responsible-ai-assessment.md`, `human-oversight.md`, `decision-ownership.md`, `ai-output-evaluation-terms.md` if classifying output failures, `workflow-vs-agent-vs-human.md` / `mcp-as-integration-not-authority.md` if autonomy or live tools, `llm-judgment-vs-deterministic-enforcement.md` if the model is asked to authorize, `tool-output-as-untrusted-data.md` if tool results could contain instructions, `choose-access-by-volatility.md` if RAG is treated as live, `human-reserved-two-rationales.md` if HITL is treated as one category (draft) |
+| Agent / MCP / Subagent design | `workflow-vs-agent-vs-human.md`, `mcp-as-integration-not-authority.md` if live tools or tool contracts, `choose-access-by-volatility.md` if static vs RAG vs live vs agentic search, `llm-judgment-vs-deterministic-enforcement.md` if API / app boundary, `tool-output-as-untrusted-data.md` if tool results could contain instructions, `define-success-before-prompt-change.md` if prompts are being tuned, `explicit-before-elaborate-prompt.md` if the fix is a longer prompt rather than a clearer one, `subagent-when-isolation-justifies-cost.md` if splitting agents, `authority-levels.md`, `human-oversight.md`, `adapters/claude/CLAUDE.md` if Claude |
+| Energy / utilities | `domains/energy-utilities.md`, `operational-reality.md`, `requirements-artifact-review.md` (if requirements), `choose-access-by-volatility.md` if manuals vs live equipment state |
 | Public sector / defense IT | `domains/public-defense.md`, `public-it-procurement-support.md` (if buyer), `buyer-vs-seller-in-public-procurement.md`, shared-operator pattern + multi-lot construction PMO playbook if concurrent lots, `related-project-external-coordination-radar.md` if adjacent/external coordination |
 | Private IT RFP / vendor selection | `frameworks/private-it-rfp.md`, `playbooks/private-it-rfp-vendor-selection.md`, `vendor-proposal-evaluation.md`, calibration / re-proposal patterns |
 | Development standards / build / FIS audit mapping | `development-standards-framework.md`, related build standards, `document-id-registry.md` when assigning AIOS-REC/COV/BLD IDs, `fis-system-audit-as-assurance.md` when audit guidance or tech/ops/facility criteria apply, `project-management-policy-layer.md` when vendor PM-policy chapter applies |

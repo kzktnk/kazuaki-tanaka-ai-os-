@@ -9,6 +9,7 @@ related:
   - playbooks/rag-structure-diagnosis.md
   - knowledge/lessons/ai-output-evaluation-terms.md
   - knowledge/patterns/define-success-before-prompt-change.md
+  - knowledge/patterns/choose-access-by-volatility.md
 ---
 
 # AI PoC quality review (buyer side)
@@ -27,7 +28,7 @@ related:
 4. 業務適合性  
 5. 次アクションが決められるか  
 
-精度（検索・Faithfulness 等）と業務適合（使えるか、続けたいか）を混ぜない。
+精度（検索・Faithfulness 等）と業務適合（使えるか、続けたいか）を混ぜない。Retrieval と Answer も混ぜない。RAG したことと最新であること、正しいことも混ぜない（`knowledge/patterns/choose-access-by-volatility.md`）。
 
 ## Sequence
 
@@ -78,4 +79,5 @@ related:
 - `playbooks/responsible-ai-assessment.md`
 - `knowledge/lessons/ai-output-evaluation-terms.md`
 - `knowledge/patterns/define-success-before-prompt-change.md`
+- `knowledge/patterns/choose-access-by-volatility.md`
 - `knowledge/patterns/logical-vs-physical-document-unity.md`  

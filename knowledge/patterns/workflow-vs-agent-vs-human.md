@@ -33,6 +33,7 @@ Planning は正しさを保証しない。次を一緒に設計する。
 - **Stop:** Goal 達成 / 最大反復 / 同一失敗の反復 / 情報不足 / 高リスク / 承認待ち
 - **Retry:** 上限 → 代替があれば試す → なければ Stop / Escalate。無制限 Retry は設計不良
 - **HITL:** 低リスク・可逆は自動化してよい。高リスク・不可逆は事前の閾値で承認。全件レビューは必須ではない
+- **Search:** 1回の確定クエリで足りるなら Agentic Search にしない。情報要求が観察依存のときだけ反復し、最大回数・証拠閾値・新規情報なしで止める（`knowledge/patterns/choose-access-by-volatility.md`）
 
 自律レベルの目安:
 
@@ -50,6 +51,7 @@ Appropriate autonomy
 - Plan があるので Verification は不要  
 - 使うかもしれないから全 Tool を渡す  
 - 同じ失敗 Tool を止めずに繰り返す  
+- 1回の Retrieval で足りる探索を Agentic Search にする  
 - 高額返金・本番操作の要否を Agent 自身が決める  
 - 例外も含めて全部 Agent にする  
 
@@ -61,6 +63,7 @@ Appropriate autonomy
 
 - `knowledge/patterns/subagent-when-isolation-justifies-cost.md` — 分ける理由は複雑さではない  
 - `knowledge/patterns/mcp-as-integration-not-authority.md` — MCP ≠ Agent  
+- `knowledge/patterns/choose-access-by-volatility.md` — 探索は揮発性で選ぶ。停止条件を先に置く  
 - `knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md` — 判断は LLM、執行はアプリ  
 - `knowledge/patterns/tool-output-as-untrusted-data.md` — Tool 戻り値は命令ではない  
 - `knowledge/patterns/authority-levels.md` — 権限は段階  

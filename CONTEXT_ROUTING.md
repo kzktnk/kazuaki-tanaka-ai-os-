@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.43
+Version: v1.44
 
 ## Purpose
 
@@ -69,6 +69,7 @@ Load:
 - knowledge/patterns/define-success-before-prompt-change.md (if prompts are being tuned without success criteria, edge cases, or regression checks)
 - knowledge/patterns/explicit-before-elaborate-prompt.md (if the prompt is being lengthened before the task/output is explicit)
 - knowledge/patterns/logical-vs-physical-document-unity.md (if the AI corpus / document-store strategy is still open)
+- knowledge/patterns/choose-access-by-volatility.md (if choosing static vs RAG vs live vs agentic search)
 - standards/vendor-proposal-evaluation.md (if scoring-sheet design, not AI metrics)
 - standards/consulting-review.md
 
@@ -77,6 +78,7 @@ Focus:
 - Ground truth owned by the business
 - Retrieval vs answer vs business vs operations
 - Go / Conditional Go / No-Go, not “it ran”
+- RAG is not live data; match access path to volatility
 
 ---
 
@@ -107,6 +109,7 @@ Load:
 - knowledge/lessons/ai-output-evaluation-terms.md (if classifying output failures or bias vs accuracy)
 - knowledge/patterns/workflow-vs-agent-vs-human.md (if autonomy, stop/retry, or HITL thresholds)
 - knowledge/patterns/mcp-as-integration-not-authority.md (if live tools / data access)
+- knowledge/patterns/choose-access-by-volatility.md (if RAG is treated as live, or static snapshots answer current state)
 - knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md (if the model is being asked to authorize or execute)
 - knowledge/patterns/tool-output-as-untrusted-data.md (if tool results, resources, or external content could contain instructions)
 - knowledge/patterns/human-reserved-two-rationales.md (if HITL is treated as one category — Authority vs Development; draft until No.23–24)
@@ -838,12 +841,14 @@ Load:
 - frameworks/operating-model.md
 - frameworks/ai-adoption-roadmap.md (if DX / AI in operations or retail)
 - knowledge/patterns/authority-levels.md (if plant autonomy or group decision rights)
+- knowledge/patterns/choose-access-by-volatility.md (if manuals vs live equipment state vs agentic troubleshooting)
 
 Focus:
 - Do not mix generation-AM logic with retail-customer logic
 - Experience → process → data → scope (not feature lists first)
 - Continuity investment vs transformation investment
 - Build vs enablement for data platforms
+- Manuals ≠ live equipment state; RAG is not current operations
 
 Outputs:
 - Domain-informed problem framing
@@ -916,6 +921,7 @@ Focus:
 Load:
 - knowledge/patterns/workflow-vs-agent-vs-human.md
 - knowledge/patterns/mcp-as-integration-not-authority.md (if live data or external tools)
+- knowledge/patterns/choose-access-by-volatility.md (if choosing static vs RAG vs live vs agentic search)
 - knowledge/patterns/subagent-when-isolation-justifies-cost.md (if splitting work across agents)
 - knowledge/patterns/authority-levels.md
 - knowledge/patterns/ai-capability-vs-authority.md
@@ -933,6 +939,7 @@ Focus:
 - Tool ≠ Resource ≠ Prompt; authentication ≠ authorization; warning text is not a control
 - LLM recommends; application enforces. Secrets stay outside model context
 - Tool Use is how the model uses tools; MCP is how tools are exposed; the application validates and authorizes
+- Match access to volatility: stable → context; changing corpus → RAG; current state → live; iterative need → bounded Agentic Search
 - Tool output is untrusted data, not a trusted instruction
 - Subagent only when specialization / isolation / permission split pays for orchestration
 - Bounded retry, stop, least privilege; do not let the agent decide its own high-impact approvals
@@ -946,6 +953,7 @@ Load:
 - `playbooks/private-api-connectivity-diagnosis.md` (if 502/500, APIM, private path, environment switch)
 - `playbooks/interim-connectivity.md` (if target path blocked; gateway / outbound looks like auth)
 - `playbooks/rag-structure-diagnosis.md` (if search hits but table/KPI answer is wrong)
+- `knowledge/patterns/choose-access-by-volatility.md` (if RAG is asked to answer current state, or static vs retrieval vs live is open)
 - `playbooks/azure-sandbox-cost-guard.md` (if PoC / sandbox / unexpected Azure cost)
 - `knowledge/decisions/diagnose-from-gateway-not-client-error.md` (if diagnosing the chain)
 - `knowledge/decisions/interim-connectivity-is-not-the-target.md` (if choosing an interim path)

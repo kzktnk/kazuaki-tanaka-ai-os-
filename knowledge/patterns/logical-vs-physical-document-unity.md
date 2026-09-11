@@ -25,7 +25,7 @@
 2. 共通のメタデータ・分類  
 3. 権限・機密区分の継承  
 4. AI利用区分（渡す／渡さない／要約のみ 等）  
-5. 最新版管理と、廃止・改訂時の更新  
+5. 最新版管理と、廃止・改訂時の更新。最新が常に正本とは限らない。発効日・権威・廃止文書の扱いを先に決める  
 
 逆に、箱を1つにしてもガバナンスがなければ、あるべき姿には到達しない。
 
@@ -43,7 +43,8 @@
 - 法令対応の文書管理と、AI参照要件が同じプロジェクトに無批判に載っている  
 - 置き場所の製品選定が先で、ガバナンス主体と対象スコープが後回し  
 - 格納は統合済みだが、権限・最新版・AI利用区分が部署ごとに違う  
-- 検索は当たるが、根拠にできない文書が混ざる（評価は `knowledge/lessons/ai-output-evaluation-terms.md`）
+- 検索は当たるが、根拠にできない文書が混ざる（評価は `knowledge/lessons/ai-output-evaluation-terms.md`）  
+- 矛盾する版をモデルに選ばせ、解けない衝突を隠す
 
 ## Design response
 
@@ -73,6 +74,7 @@
 - `standards/document-management-standard.md` — SDLC 文書の版・承認・台帳  
 - `knowledge/patterns/connected-organizational-memory.md` — 溜めることと繋ぐこと  
 - `knowledge/patterns/organizational-memory.md` — 検索と組織記憶  
+- `knowledge/patterns/choose-access-by-volatility.md` — 安定コーパスとライブ状態を混ぜない  
 - `knowledge/lessons/ai-output-evaluation-terms.md` — 根拠のない生成を切る語彙  
 - `knowledge/decisions/buyer-owns-ai-poc-ground-truth.md`  
 - `playbooks/rag-structure-diagnosis.md`  

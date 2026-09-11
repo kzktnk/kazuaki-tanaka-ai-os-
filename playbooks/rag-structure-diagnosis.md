@@ -6,11 +6,12 @@ last_updated: 2026-08-19
 related:
   - technology/azure-enterprise.md
   - playbooks/ai-poc-quality-review.md
+  - knowledge/patterns/choose-access-by-volatility.md
 ---
 
 # RAG structure diagnosis
 
-検索は当たっているのに回答が誤るとき、検索・取得・構造化・生成のどこかを切る。製品のクリック手順ではない。表・KPI など行列が意味を持つ文書で特に使う。
+検索は当たっているのに回答が誤るとき、検索・取得・構造化・生成のどこかを切る。製品のクリック手順ではない。表・KPI など行列が意味を持つ文書で特に使う。経路そのもの（静的 / RAG / ライブ / Agentic Search）は `knowledge/patterns/choose-access-by-volatility.md`。
 
 ## Trigger
 
@@ -23,8 +24,9 @@ related:
 
 1. 回答だけ見て原因を推測しない。  
    **回答 → トレース → 取得クエリ／文書 → 検索単体 → Chunk → 元文書**  
-2. 検索失敗と構造化失敗を分ける。正しい Chunk が取れているなら、最初に Embedding を疑わない。  
+2. 検索失敗と構造化失敗を分ける。正しい Chunk が取れているなら、最初に Embedding を疑わない。関連ヒットと、問いに答える Evidence は別である。  
 3. 表は通常テキストと同じ Chunk にしない。値だけでなく行・列見出しの対応が意味である。  
+4. Retrieval と Generation を分けて評価する。Evidence 不足なら作らない。鮮度はソース依存であり、RAG したことでは保証しない。  
 
 ## Sequence
 
@@ -46,6 +48,7 @@ related:
 ## Related
 
 - `playbooks/ai-poc-quality-review.md`  
+- `knowledge/patterns/choose-access-by-volatility.md`  
 - `technology/azure-enterprise.md`  
 - `knowledge/lessons/ai-output-evaluation-terms.md`  
 - `knowledge/patterns/logical-vs-physical-document-unity.md`  

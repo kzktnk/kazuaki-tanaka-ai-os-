@@ -27,13 +27,17 @@ Prompt / Project Knowledge が向くもの:
 
 MCP が向くもの:
 
-- 頻繁に変わる外部データ（在庫、Ticket、設備状態）
+- いまの状態（設備、在庫、センサ）
 - 実行時の取得
 - Tool execution / 業務システムとの Interaction
 
+変化するコーパス（保全履歴、大量文書）は Retrieval / RAG。ライブ状態と混ぜない。経路の選び方は `knowledge/patterns/choose-access-by-volatility.md`。
+
 ```text
-Static knowledge → Context / Knowledge
+Static knowledge              → Context / Knowledge
+Changing corpus               → Retrieval / RAG
 Live or actionable capability → MCP
+Iterative information need    → Agentic Search (bounded)
 ```
 
 MCP は Context Window を増やす仕組みではない。裏側で API を使うこともあり、API を不要にはしない。Agent 専用でもない。
@@ -59,7 +63,7 @@ MCP = integration layer. Agent = decision / orchestration pattern. 混ぜない�
 > **Give only the capability needed for the task. Narrow tool surface reduces blast radius.**
 > **Broad permissions are not a reliability feature.**
 
-頻繁に変わるデータを月次 CSV や会話記憶から推測させない。実行時に取る。
+現在の状態を月次 CSV・会話記憶・静的スナップショットから推測させない。ライブで取る。変化するコーパスは Retrieval。小さく安定した参照は managed context のままにする。
 
 高影響 Action（設備停止等）は、状態取得 → 推奨 → 実行要否で Human approval、が先。接続できても自動実行してよいとは限らない。権限の段階は `knowledge/patterns/authority-levels.md`。
 
@@ -109,6 +113,8 @@ Prompt は Tool ではない。外部 Action を実行しない。モデルを f
 - Tool を増やすほど柔軟で良い  
 - MCP 経由なら外部データは正しい  
 - 静的参照を毎回 MCP で取りに行く / ライブデータを CLAUDE.md に貼る  
+- 現在の状態を RAG やスナップショットで代用する  
+- 変化するコーパスとライブ状態を同じ経路にする  
 - Authentication 済みだから全 Tool 利用可  
 - Tool 説明の警告文で高影響操作を制御する  
 - MCP Prompt を Tool / 外部 Action と同一視する  
@@ -119,13 +125,14 @@ Prompt は Tool ではない。外部 Action を実行しない。モデルを f
 
 ## Core rule
 
-> MCP standardizes access. It does not replace security, validation, or authority design. Retrieve frequently changing data at runtime. Tool / Resource / Prompt are different contracts; authentication is not authorization; warning text is not a control. MCP connects; the model decides; the application controls.
+> MCP standardizes access. It does not replace security, validation, or authority design. Changing corpora go through retrieval; current state is read live. Tool / Resource / Prompt are different contracts; authentication is not authorization; warning text is not a control. MCP connects; the model decides; the application controls.
 
 ## Related
 
 - `knowledge/patterns/workflow-vs-agent-vs-human.md` — MCP は両方を支えうる  
 - `knowledge/patterns/ai-capability-vs-authority.md` — できること ≠ してよいこと  
 - `knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md` — API / アプリ境界  
+- `knowledge/patterns/choose-access-by-volatility.md` — 安定 / 変化 / ライブ / 探索  
 - `knowledge/patterns/tool-output-as-untrusted-data.md` — 戻り値は命令ではない  
 - `knowledge/patterns/logical-vs-physical-document-unity.md` — 静的コーパスの置き方  
 - `frameworks/human-oversight.md`  
