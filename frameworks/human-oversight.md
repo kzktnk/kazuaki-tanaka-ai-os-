@@ -77,6 +77,6 @@ The design question is not only *where humans remain in the loop* but *what auth
 
 ### Risk-based HITL for agents
 
-全 Action を Human review にする必要はない。低リスク・可逆は Agent が実行してよい。高リスク・不可逆は事前の閾値で承認する。不確実な例外は Escalate する。要否を Agent 自身に決めさせない。
+全 Action を Human review にする必要はない。低リスク・可逆は Agent が実行してよい。高リスク・不可逆は事前の閾値で承認する。不確実な例外は Escalate する。要否を Agent 自身に決めさせない。承認は警告文ではなく制御である。
 
-経路が既知か観察依存か、自律をどこまで縛るかは `knowledge/patterns/workflow-vs-agent-vs-human.md`。接続できることと実行してよいことは `knowledge/patterns/mcp-as-integration-not-authority.md`。
+経路が既知か観察依存か、自律をどこまで縛るかは `knowledge/patterns/workflow-vs-agent-vs-human.md`。接続できることと実行してよいことは `knowledge/patterns/mcp-as-integration-not-authority.md`。判断と執行の境界は `knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md`。

@@ -61,6 +61,8 @@ Appropriate autonomy
 
 - `knowledge/patterns/subagent-when-isolation-justifies-cost.md` — 分ける理由は複雑さではない  
 - `knowledge/patterns/mcp-as-integration-not-authority.md` — MCP ≠ Agent  
+- `knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md` — 判断は LLM、執行はアプリ  
+- `knowledge/patterns/tool-output-as-untrusted-data.md` — Tool 戻り値は命令ではない  
 - `knowledge/patterns/authority-levels.md` — 権限は段階  
 - `knowledge/patterns/ai-capability-vs-authority.md` — 能力 ≠ 権限  
 - `frameworks/human-oversight.md` — 監督は説明責任のため  

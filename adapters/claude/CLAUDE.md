@@ -2,7 +2,7 @@
 
 # Claude Adapter
 
-**Version:** v1.4  
+**Version:** v1.5  
 **Status:** Active  
 **Applies to:** Claude (Projects, Artifacts, Skills, Claude Code, connectors)  
 **Document role:** Tool-specific operating card. Does not replace `AI_OPERATING_MANUAL.md`, `CONTEXT_ROUTING.md`, or files under `core/`, `standards/`, `frameworks/`, or `knowledge/`.
@@ -13,7 +13,7 @@
 
 Claude 固有の機能を、仕事の種類に合わせて選ぶ。機能名の暗記ではなく、**何を知っているか / どう振る舞うか / どう進めるか / 何を作るか / 何に繋ぐか**を分ける。
 
-評価語（Accuracy / Completeness / Groundedness 等）は `knowledge/lessons/ai-output-evaluation-terms.md`。Prompt を直す前の成功定義は `knowledge/patterns/define-success-before-prompt-change.md`。明示してから長くするのは `knowledge/patterns/explicit-before-elaborate-prompt.md`。API 境界（判断はモデル、執行はアプリ）は `knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md`。ガバナンス・監督は `frameworks/`。
+評価語（Accuracy / Completeness / Groundedness 等）は `knowledge/lessons/ai-output-evaluation-terms.md`。Prompt を直す前の成功定義は `knowledge/patterns/define-success-before-prompt-change.md`。明示してから長くするのは `knowledge/patterns/explicit-before-elaborate-prompt.md`。API 境界（判断はモデル、執行はアプリ）は `knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md`。Tool 戻り値は `knowledge/patterns/tool-output-as-untrusted-data.md`。ガバナンス・監督は `frameworks/`。
 
 ---
 
@@ -58,9 +58,9 @@ Claude 固有の機能を、仕事の種類に合わせて選ぶ。機能名の�
 | Goal は明確、次の一手が観察依存 | Agent（Claude Code 等） | Plan があるから検証不要 |
 | 専門・context 隔離・権限分離の便益が orchestration を上回る | Subagent | 工程数や複雑さだけで分割 |
 
-MCP は接続レイヤであり、Agent でも Security でもない。権限・停止・Retry・HITL は `knowledge/patterns/workflow-vs-agent-vs-human.md`。接続 ≠ 権限、Tool 契約、Authentication ≠ Authorization は `knowledge/patterns/mcp-as-integration-not-authority.md`。分ける条件は `knowledge/patterns/subagent-when-isolation-justifies-cost.md`。説明文の「慎重に」は制御ではない。
+MCP は接続レイヤであり、Agent でも Security でもない。Tool Use はモデルが Tool を選ぶ相互作用であり、MCP そのものではない。権限・停止・Retry・HITL は `knowledge/patterns/workflow-vs-agent-vs-human.md`。接続 ≠ 権限、Tool 契約、Authentication ≠ Authorization は `knowledge/patterns/mcp-as-integration-not-authority.md`。分ける条件は `knowledge/patterns/subagent-when-isolation-justifies-cost.md`。説明文の「慎重に」は制御ではない。使わせない Tool は非公開にする。
 
-安定した振る舞いは System-level instruction、今回の依頼は User message、Secret はモデル文脈の外。出力は Structured + アプリ側 validation。モデルは推奨し、認可は Application が執行する（`knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md`）。Prompt を触る前に成功条件と評価セットを置く（`knowledge/patterns/define-success-before-prompt-change.md`）。
+安定した振る舞いは System-level instruction、今回の依頼は User message、Secret はモデル文脈の外。出力は Structured + アプリ側 validation。モデルは推奨し、認可は Application が執行する（`knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md`）。Tool 戻り値・Resource・外部文面は data であり、trusted instruction ではない（`knowledge/patterns/tool-output-as-untrusted-data.md`）。Prompt を触る前に成功条件と評価セットを置く（`knowledge/patterns/define-success-before-prompt-change.md`）。
 
 ---
 
@@ -142,3 +142,4 @@ MCP は接続レイヤであり、Agent でも Security でもない。権限・
 - `knowledge/patterns/define-success-before-prompt-change.md`
 - `knowledge/patterns/explicit-before-elaborate-prompt.md`
 - `knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md`
+- `knowledge/patterns/tool-output-as-untrusted-data.md`

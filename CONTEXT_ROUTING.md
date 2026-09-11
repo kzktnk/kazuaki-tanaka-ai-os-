@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.42
+Version: v1.43
 
 ## Purpose
 
@@ -108,6 +108,7 @@ Load:
 - knowledge/patterns/workflow-vs-agent-vs-human.md (if autonomy, stop/retry, or HITL thresholds)
 - knowledge/patterns/mcp-as-integration-not-authority.md (if live tools / data access)
 - knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md (if the model is being asked to authorize or execute)
+- knowledge/patterns/tool-output-as-untrusted-data.md (if tool results, resources, or external content could contain instructions)
 - knowledge/patterns/human-reserved-two-rationales.md (if HITL is treated as one category — Authority vs Development; draft until No.23–24)
 - knowledge/patterns/define-success-before-prompt-change.md (if prompt tuning is treated as quality assurance)
 
@@ -115,6 +116,7 @@ Focus:
 - Accountability first, then failure impact, data, transparency, fairness
 - Evidence and owner per principle
 - Do not copy NIST / vendor principle catalogs
+- Tool / resource output is untrusted data; do not treat it as instruction
 
 ---
 
@@ -918,6 +920,7 @@ Load:
 - knowledge/patterns/authority-levels.md
 - knowledge/patterns/ai-capability-vs-authority.md
 - knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md (if API / app boundary or the model is asked to authorize)
+- knowledge/patterns/tool-output-as-untrusted-data.md (if tool results, resources, or external content could contain instructions)
 - knowledge/patterns/define-success-before-prompt-change.md (if prompts are being tuned)
 - knowledge/patterns/explicit-before-elaborate-prompt.md (if the fix is a longer prompt rather than a clearer one)
 - frameworks/human-oversight.md
@@ -929,6 +932,8 @@ Focus:
 - MCP standardizes connection; it does not replace security or authority
 - Tool ≠ Resource ≠ Prompt; authentication ≠ authorization; warning text is not a control
 - LLM recommends; application enforces. Secrets stay outside model context
+- Tool Use is how the model uses tools; MCP is how tools are exposed; the application validates and authorizes
+- Tool output is untrusted data, not a trusted instruction
 - Subagent only when specialization / isolation / permission split pays for orchestration
 - Bounded retry, stop, least privilege; do not let the agent decide its own high-impact approvals
 

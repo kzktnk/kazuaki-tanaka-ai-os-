@@ -9,6 +9,8 @@ related:
   - frameworks/ai-governability.md
   - knowledge/patterns/workflow-vs-agent-vs-human.md
   - knowledge/patterns/mcp-as-integration-not-authority.md
+  - knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md
+  - knowledge/patterns/tool-output-as-untrusted-data.md
 ---
 
 # Responsible AI assessment
@@ -60,4 +62,7 @@ Stop: 「この案件で何を確認すれば満たしたと言えるか」が�
 - `frameworks/decision-ownership.md`  
 - `knowledge/patterns/risk-ownership.md`  
 - `knowledge/lessons/ai-output-evaluation-terms.md`  
+- `knowledge/patterns/mcp-as-integration-not-authority.md`  
+- `knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md`  
+- `knowledge/patterns/tool-output-as-untrusted-data.md`  
 - `domains/public-defense.md` (Assurance & evidence)  

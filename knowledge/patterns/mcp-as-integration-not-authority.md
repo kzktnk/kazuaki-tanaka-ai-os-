@@ -1,13 +1,21 @@
 # Pattern: MCP as Integration, Not Authority
 
 **Status:** Active  
-**Origin:** Generalized from MCP Part 1–2 study notes (2026-09). Exam items, scores, and credential materials are **not** stored here.
+**Origin:** Generalized from MCP Part 1–2 and Tool Use study notes (2026-09). Exam items, scores, and credential materials are **not** stored here.
 
 ## Pattern statement
 
 > **MCP は外部 Tools / Data への接続を標準化する層である。認証・認可・監査・検証の代替ではなく、Agent アーキテクチャそのものでもない。**
 
 Standardized connection ≠ trusted connection. Connectivity does not imply authority.
+
+```text
+MCP            = how tools / data are exposed
+Tool Use       = how the model selects and uses a tool
+Application    = validation + authorization + enforcement
+```
+
+> **MCP connects. Claude decides. Application controls.**
 
 ## Core distinction
 
@@ -46,9 +54,10 @@ MCP = integration layer. Agent = decision / orchestration pattern. 混ぜない�
 - Secrets management  
 - Human approval（高影響操作）  
 
-分析なのに DBA、読み取りなのに Write、検索なのに本番操作、は設計不良。公開する Tool を増やすほど blast radius（誤判断時の影響範囲）と Prompt Injection の到達範囲が広がる。
+分析なのに DBA、読み取りなのに Write、検索なのに本番操作、は設計不良。公開する Tool を増やすほど blast radius（誤判断時の影響範囲）と Prompt Injection の到達範囲が広がる。使わせたくない Tool を公開したまま Prompt で「使うな」と書くのは制御ではない。非公開にする。
 
 > **Give only the capability needed for the task. Narrow tool surface reduces blast radius.**
+> **Broad permissions are not a reliability feature.**
 
 頻繁に変わるデータを月次 CSV や会話記憶から推測させない。実行時に取る。
 
@@ -72,13 +81,14 @@ Prompt は Tool ではない。外部 Action を実行しない。モデルを f
 
 ## Tool contract
 
-名前・説明・Schema が曖昧だと、誤選択・誤実行が増える。`update_data` ではなく、何を・どの ID で・副作用は何か、まで契約にする。
+名前・説明・Schema が曖昧だと、誤選択・誤実行が増える。`update_data` ではなく、何を・どの ID で・副作用は何か、まで契約にする。説明には、いつ使うか、何をするか、何をしないか、副作用、を書く。責任は1 Tool に1つ。
 
 良い定義に含めるもの: 明確な名前、説明、必須パラメータと型、期待出力、副作用、エラー条件、権限境界。
 
-似た名前の Tool を並べない（`update_customer` / `edit_customer` / `modify_customer`）。重なりを減らし、不要な Tool は公開しない。Tool 面が広いほど選択も曖昧になり、blast radius も広がる。
+似た名前の Tool を並べない（`update_customer` / `edit_customer` / `modify_customer`）。重なりを減らし、不要な Tool は公開しない。Tool 面が広いほど選択も曖昧になり、blast radius も広がる。万能 Tool にまとめるのも誤り。選択ミスの多くは Interface 設計の問題である。
 
 > **Ambiguous tool contract → ambiguous model behavior. Warning text is not a security control.**
+> **Tool-selection errors are often interface-design errors.**
 
 「慎重に使え」と説明文に書くだけでは、高影響 Tool の制御にならない。Authorization、承認ゲート、権限境界、監査、Escalation を先に置く。
 
@@ -103,16 +113,20 @@ Prompt は Tool ではない。外部 Action を実行しない。モデルを f
 - Tool 説明の警告文で高影響操作を制御する  
 - MCP Prompt を Tool / 外部 Action と同一視する  
 - 似た Tool を増やして柔軟だと考える  
+- 広い権限の方が失敗が減る、と考える  
+- 使わせない Tool を公開したまま Prompt で禁止する  
+- Tool Use と MCP を同一視する  
 
 ## Core rule
 
-> MCP standardizes access. It does not replace security, validation, or authority design. Retrieve frequently changing data at runtime. Tool / Resource / Prompt are different contracts; authentication is not authorization; warning text is not a control.
+> MCP standardizes access. It does not replace security, validation, or authority design. Retrieve frequently changing data at runtime. Tool / Resource / Prompt are different contracts; authentication is not authorization; warning text is not a control. MCP connects; the model decides; the application controls.
 
 ## Related
 
 - `knowledge/patterns/workflow-vs-agent-vs-human.md` — MCP は両方を支えうる  
 - `knowledge/patterns/ai-capability-vs-authority.md` — できること ≠ してよいこと  
 - `knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md` — API / アプリ境界  
+- `knowledge/patterns/tool-output-as-untrusted-data.md` — 戻り値は命令ではない  
 - `knowledge/patterns/logical-vs-physical-document-unity.md` — 静的コーパスの置き方  
 - `frameworks/human-oversight.md`  
 - `adapters/claude/CLAUDE.md` — Connector / MCP vs Project knowledge  

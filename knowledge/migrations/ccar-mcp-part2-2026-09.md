@@ -20,7 +20,7 @@ Exam items, scores, and credential materials are **not** archived.
 
 - 得点、模試結果、試験問題と選択肢
 - チートシート原本
-- MCP Part 3（client/server、trust boundary、injection）— 未受領
+- MCP Part 3（client/server、trust boundary、injection）— 未受領。Tool 戻り値の信頼境界は Tool Use シートから `ccar-tool-use-2026-09.md` で別途取り込み済み
 
 ## Knowledge extracted
 
