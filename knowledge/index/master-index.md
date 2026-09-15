@@ -1,10 +1,10 @@
 # Knowledge Master Index
 
-**Version:** v1.37  
+**Version:** v1.38  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
-**Last updated:** 2026-09-11
+**Last updated:** 2026-09-16
 
 ---
 
@@ -76,9 +76,9 @@ kazuaki-tanaka-ai-os/
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
-│   ├── patterns/               ← 55 distilled patterns
+│   ├── patterns/               ← 56 distilled patterns
 │   ├── lessons/                ← 5 lessons
-│   ├── migrations/             ← 51 migration reports
+│   ├── migrations/             ← 52 migration reports
 │   └── decisions/              ← 4 records
 ├── templates/                  ← 1 template
 ├── prompts/                    ← README placeholder
@@ -250,7 +250,7 @@ knowledge/
 │       ├── 001–022/                  ← Operational AI main series
 │       ├── sp01–sp09/                ← special posts
 │       └── erf01–erf03/              ← Enterprise Redesign Framework
-├── patterns/                         ← 55 files (see table below)
+├── patterns/                         ← 56 files (see table below)
 ├── lessons/
 │   ├── governance-messaging.md
 │   ├── dual-roadmap-messaging.md
@@ -307,7 +307,8 @@ knowledge/
 │   ├── si-project-literacy-2026-09.md
 │   ├── human-reserved-two-rationales-draft-2026-09.md
 │   ├── ccar-tool-use-2026-09.md
-│   └── ccar-rag-agentic-search-2026-09.md
+│   ├── ccar-rag-agentic-search-2026-09.md
+│   └── interim-as-confirmation-set-2026-09.md
 └── decisions/
     ├── diagnose-from-gateway-not-client-error.md
     ├── sandbox-cost-controls-before-resources.md
@@ -315,7 +316,7 @@ knowledge/
     └── buyer-owns-ai-poc-ground-truth.md
 ```
 
-### Patterns (55)
+### Patterns (56)
 
 | Pattern | Primary themes |
 |---------|----------------|
@@ -373,6 +374,7 @@ knowledge/
 | `explicit-before-elaborate-prompt.md` | Clarify task/output before lengthening; match the fix to the failure |
 | `tool-output-as-untrusted-data.md` | Tool / resource output is data, not a trusted instruction |
 | `choose-access-by-volatility.md` | Stable → context; changing corpus → RAG; current state → live; iterate only when search is observational |
+| `interim-as-confirmation-set.md` | Interim confirms a filtered set against premises; working extraction stays working paper |
 
 ---
 
@@ -1171,22 +1173,40 @@ CONTEXT_ROUTING.md  →  AI PoC, Agent / MCP, Energy / Utilities
 
 ---
 
+### AM. Interim as confirmation set (2026-09)
+
+```text
+Local interim-report pack 2026-09-14/15 — not archived (no client IDs / filled rows / recordings)
+        ↓ generalize (between-PJ extraction and site-led activation already ingested)
+knowledge/patterns/interim-as-confirmation-set.md
+        ↓ connect
+standards/consulting-review.md (v0.11)
+standards/deliverable-archetypes.md (v1.5)
+core/author-voice.md
+        ↓ record
+knowledge/migrations/interim-as-confirmation-set-2026-09.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  Proposal review, Transformation PMO, Change Management
+```
+
+---
+
 ## Level 4 — CONTEXT_ROUTING Task Map (summary)
 
 Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 
 | Task | Primary loads |
 |------|----------------|
-| Proposal review | `standards/consulting-review.md` (artifact job before MECE), `deliverable-archetypes.md`, `writing.md` |
+| Proposal review | `standards/consulting-review.md` (artifact job before MECE), `deliverable-archetypes.md`, `writing.md`, `interim-as-confirmation-set.md` if an interim pack is the working extraction |
 | Customer weekly/monthly status | `deliverable-archetypes.md` Archetype J, `author-voice.md`, `project-management-policy-layer.md`, `support-effort-classification.md`, `change-agent-vs-communication-plan.md` / `unowned-work-in-effort-analysis.md` / `buyer-side-gap-vs-vendor-pmo.md` as needed, cadence / cross-project playbooks |
 | IT strategy | `frameworks/it-strategy-foundations.md`, `standards/it-strategy-engagement-guide.md`, `playbooks/strategy-scn.md` (if SCN → projectization) |
 | Strategy engagement / SCN | `consulting-strategy-process.md`, `strategy-engagement-guide.md`, `strategic-capability-network.md`, `scn-creation-guide.md`, `playbooks/strategy-scn.md` (sequence / Gate 1), `wbs-design.md` if Gate 2 WBS, `scn-as-landscape-not-completeness.md` if overlaying running PJs |
 | Consultant enablement / skill map | `skill-playbook-directory.md` (learner first read), `consultant-capability-skill-model.md` (v0.6.5, Manager SoT), `consultant-role-responsibility-model.md` (Required Level), `pilot-assessment-strategy-consultant.md` if Assessor 1on1, `financial-analysis-for-consultants.md` if Company／Financial Analysis, `si-project-literacy.md` if Cap II / ② and learner lacks SI experience (draft Prerequisite), `consultant-learning-map-example.md` if generating a map, `capability-model.md` (client org — do not merge) |
-| PMO / transformation | `frameworks/transformation-pmo.md`, `playbooks/pmo-function-standup.md`, `playbooks/program-governance-cadence.md`, `playbooks/strategy-scn.md` (upstream Gate 1), `playbooks/cross-project-program-management.md`, `frameworks/si-project-literacy.md` (if SI未経験 and ② facts cannot yet become blast-radius questions), `playbooks/operations-transition-playbook.md` (Gate 3–5), `playbooks/stakeholder-activation-playbook.md` (if a specific person must act), `knowledge/patterns/related-project-external-coordination-radar.md` (if adjacent/external radar), `knowledge/patterns/topology-map-vs-issue-log.md` (if diagram is asked to carry issues), `knowledge/patterns/pgmo-presence-via-client-stance.md` (if presence lost to trusted incumbent), `knowledge/patterns/buyer-side-gap-vs-vendor-pmo.md` (if vendor PMO is treated as buyer-side gap cover), `knowledge/patterns/transformation-practice-case-pack.md` (if internal practice packaging), `standards/pmo-operating-guide.md`, `knowledge/patterns/project-management-policy-layer.md` (if project-layer policy TOC), Archetype J if customer status, `frameworks/change-management.md` |
+| PMO / transformation | `frameworks/transformation-pmo.md`, `playbooks/pmo-function-standup.md`, `playbooks/program-governance-cadence.md`, `playbooks/strategy-scn.md` (upstream Gate 1), `playbooks/cross-project-program-management.md`, `frameworks/si-project-literacy.md` (if SI未経験 and ② facts cannot yet become blast-radius questions), `playbooks/operations-transition-playbook.md` (Gate 3–5), `playbooks/stakeholder-activation-playbook.md` (if a specific person must act), `knowledge/patterns/related-project-external-coordination-radar.md` (if adjacent/external radar), `knowledge/patterns/topology-map-vs-issue-log.md` (if diagram is asked to carry issues), `knowledge/patterns/interim-as-confirmation-set.md` (if interim walks every extracted row), `knowledge/patterns/pgmo-presence-via-client-stance.md` (if presence lost to trusted incumbent), `knowledge/patterns/buyer-side-gap-vs-vendor-pmo.md` (if vendor PMO is treated as buyer-side gap cover), `knowledge/patterns/transformation-practice-case-pack.md` (if internal practice packaging), `standards/pmo-operating-guide.md`, `knowledge/patterns/project-management-policy-layer.md` (if project-layer policy TOC), Archetype J if customer status, `frameworks/change-management.md` |
 | DX grand design | `frameworks/dx-grand-design.md`, change / roadmap as needed |
 | New venture assessment | `frameworks/new-venture-three-track-assessment.md` |
 | B2B sales workflow | `knowledge/patterns/sales-capacity-via-center-functions.md` |
-| Change management | `frameworks/change-management.md`, `all-at-once-vs-stepwise-change.md`, `change-agent-vs-communication-plan.md` (agent hunt ≠ communication plan), `formulation-comms-vs-adoption-comms.md` (formulation vs adoption; kick conditions first), `activation-first-for-site-led-work.md` (HQ-closable vs site-led; theme before site; roles before names), `who-vs-lever-family.md` (who ≠ lever family), `pmo-operating-guide.md` §CM, `playbooks/stakeholder-activation-playbook.md` (person-level), `playbooks/operations-transition-playbook.md` Chapter 7 (ops adoption) |
+| Change management | `frameworks/change-management.md`, `all-at-once-vs-stepwise-change.md`, `change-agent-vs-communication-plan.md` (agent hunt ≠ communication plan), `formulation-comms-vs-adoption-comms.md` (formulation vs adoption; kick conditions first), `activation-first-for-site-led-work.md` (HQ-closable vs site-led; theme before site; roles before names), `who-vs-lever-family.md` (who ≠ lever family), `interim-as-confirmation-set.md` if involvement vs calendar is silently traded, `pmo-operating-guide.md` §CM, `playbooks/stakeholder-activation-playbook.md` (person-level), `playbooks/operations-transition-playbook.md` Chapter 7 (ops adoption) |
 | AI CoE / PgMO / Change | `knowledge/patterns/ai-coe-vs-pgmo-vs-change.md`, `ai-management-office.md`, `transformation-pmo.md`, `change-management.md` |
 | AI adoption / DX roadmap | `frameworks/ai-adoption-roadmap.md`, `playbooks/ai-utilization-roadmap.md`, `playbooks/ai-work-before-after.md`, `logical-vs-physical-document-unity.md` if document unification is the AI enabler, `human-reserved-two-rationales.md` if junior training-ground work is being automated (draft) |
 | AI PoC quality (buyer) | `playbooks/ai-poc-quality-review.md`, `rag-structure-diagnosis.md`, `buyer-owns-ai-poc-ground-truth.md`, `ai-output-evaluation-terms.md` if scoring an answer, `define-success-before-prompt-change.md` if prompts are being tuned, `explicit-before-elaborate-prompt.md` if the prompt is being lengthened before the task is clear, `logical-vs-physical-document-unity.md` if corpus / store strategy is open, `choose-access-by-volatility.md` if static vs RAG vs live vs agentic search is open |

@@ -93,4 +93,5 @@ type: pattern
 ## Related
 
 - `knowledge/patterns/unowned-work-in-effort-analysis.md` — 間に落ちた仕事の別断面  
+- `knowledge/patterns/interim-as-confirmation-set.md` — 抽出表は作業紙。中間報告は確認セット  
 - `knowledge/migrations/pj-between-review-viewpoints-2026-09.md`  

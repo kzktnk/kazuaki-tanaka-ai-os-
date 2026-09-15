@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.44
+Version: v1.45
 
 ## Purpose
 
@@ -48,7 +48,7 @@ Load:
 - Relevant project context
 
 Focus:
-- Artifact job before MECE / completeness (landscape ≠ issue log ≠ hearing request)
+- Artifact job before MECE / completeness (landscape ≠ issue log ≠ hearing request ≠ interim confirmation set)
 
 Outputs:
 - Executive assessment
@@ -436,6 +436,7 @@ Load:
 - matching `*-selfstudy.md` instead of the coach edition if the reader is working alone (same type, second person; no `playbooks/` paths in the body)
 - knowledge/patterns/related-project-external-coordination-radar.md (if adjacent projects / external parties sit outside the Dependency Register)
 - knowledge/patterns/topology-map-vs-issue-log.md (if a relationship diagram is being asked to carry issues, or a hearing is requested before questions are locked)
+- knowledge/patterns/interim-as-confirmation-set.md (if an interim pack walks every extracted row, or proposes a new master schedule before mapping issues onto the current one)
 - knowledge/patterns/scn-as-landscape-not-completeness.md (if an SCN of running projects is being scored as MECE completeness)
 - knowledge/patterns/pgmo-presence-via-client-stance.md (if process pack runs but client trust / proposal value still sits with a long-trusted specialist PM)
 - knowledge/patterns/buyer-side-gap-vs-vendor-pmo.md (if vendor PMO coverage is being treated as buyer-side gap management)
@@ -554,6 +555,7 @@ Load:
 - knowledge/patterns/change-agent-vs-communication-plan.md (if Champion hunt is being treated as the communication plan)
 - knowledge/patterns/formulation-comms-vs-adoption-comms.md (if roadmap-formulation sessions are collapsed into an adoption communication plan, or a field team is planned before kick conditions)
 - knowledge/patterns/activation-first-for-site-led-work.md (if a named-person roster or model site is being filled before HQ-vs-site-led sort and verification theme)
+- knowledge/patterns/interim-as-confirmation-set.md (if involvement vs calendar is being resolved by silently thinning the field, or an interim deck dumps the working extraction)
 - playbooks/operations-transition-playbook.md (if the change is ops take-on / adoption after realization)
 - standards/pmo-operating-guide.md (§Change Management Operating Standard)
 - frameworks/transformation-pmo.md (if program-owned change)
@@ -568,6 +570,7 @@ Focus:
 - Why / unit / me; time-phased messages; resistance as design input
 - Change agents / Champions are optional if existing flag-wavers suffice; communication plan raises commitment when it appears
 - Formulation comms (lock requirements / use cases / kick conditions) vs adoption comms (move people to a target state)
+- Interim confirms a filtered set; do not trade involvement for the calendar in silence
 - Transfer of ownership, not only training
 
 Outputs:

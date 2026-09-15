@@ -21,7 +21,7 @@
 
 現場主体の施策で「クイックに AI 検証する」だけが決まっているなら、入口はもっと手前である。検証テーマの選定方法、現場が始められる条件、本社提案 vs 現場起案のどちらで姿を書くか、が先。
 
-個人レベルの表は、影響力と受容が本線を左右する相手に限る。組織マップの空欄を氏名で埋める作業を、当日の主成果にしない。
+個人レベルの表は、影響力と受容が本線を左右する相手に限る。組織マップの空欄を氏名で埋める作業を、当日の主成果にしない。期待する関与は、部門・職位の層で先に仮置きする。
 
 ## Signals
 
@@ -41,4 +41,5 @@
 - `knowledge/patterns/who-vs-lever-family.md` — 誰に時間を使うか  
 - `knowledge/patterns/change-agent-vs-communication-plan.md`  
 - `playbooks/stakeholder-activation-playbook.md`  
+- `knowledge/patterns/interim-as-confirmation-set.md` — 確認の場に名簿の厚みを持ち込まない  
 - `frameworks/change-management.md`  

@@ -1,6 +1,6 @@
 # Consulting Review Standard
 
-Version: v0.10 Bootstrap
+Version: v0.11 Bootstrap
 
 ## Purpose
 
@@ -76,8 +76,9 @@ Name the job of the page **before** scoring completeness, MECE, or hearing readi
 | Issue log | Between-unit breaks are listed in named views | Intra-unit known problems and topology share one picture |
 | Information request | Questions are locked; method (hearing / form / sponsor-answered) comes after | “Please let us hear from everyone” precedes the questions |
 | Change communication | Adoption vs roadmap-formulation is named; kick conditions precede field-team dispatch | Sample stakeholder lists are the first thick artifact |
+| Interim confirmation | Shared premises + this-period Critical/High confirmation set; working extraction stays appendix | Walks every From–To row as if completeness were the job |
 
-For multi-project packs, default views for the issue log are Boundary / Dependency / Interface / Consistency / Schedule (`playbooks/cross-project-program-management.md`). Patterns: `knowledge/patterns/scn-as-landscape-not-completeness.md`, `knowledge/patterns/topology-map-vs-issue-log.md`, `knowledge/patterns/formulation-comms-vs-adoption-comms.md`.
+For multi-project packs, default views for the issue log are Boundary / Dependency / Interface / Consistency / Schedule (`playbooks/cross-project-program-management.md`). Patterns: `knowledge/patterns/scn-as-landscape-not-completeness.md`, `knowledge/patterns/topology-map-vs-issue-log.md`, `knowledge/patterns/formulation-comms-vs-adoption-comms.md`, `knowledge/patterns/interim-as-confirmation-set.md`.
 
 ---
 
@@ -112,7 +113,7 @@ Before considering a deliverable complete:
 - Clear business objective
 - Executive-ready storyline
 - Logical flow
-- Artifact job named (landscape ≠ completeness ≠ issue log ≠ hearing request)
+- Artifact job named (landscape ≠ completeness ≠ issue log ≠ hearing request ≠ interim confirmation set)
 - MECE where the job is completeness
 - No unsupported claims
 - Risks addressed

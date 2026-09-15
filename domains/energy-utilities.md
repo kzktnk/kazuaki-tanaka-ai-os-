@@ -85,7 +85,7 @@ Technology 製品手順はここには書かない → `technology/azure-enterpr
 
 ## Generation & asset management
 
-材料の主座は既存パターン。今回の顧客系資料からの新規は薄い。
+材料の主座は既存パターン。中間報告の載せ方は `knowledge/patterns/interim-as-confirmation-set.md`。
 
 ### Principle
 
@@ -95,7 +95,9 @@ Technology 製品手順はここには書かない → `technology/azure-enterpr
 
 現場の例外・回避策・暗黙の判断を消す前に、それがなぜ残っているかを見る。
 
-発電所の「自立」は、KPI を現場に投げれば成立しない。**誰が指標を設計し、誰が達成責任を持ち、どこまで決めてよいか**が揃って初めて、自律と統制が同時に立つ。
+発電所の「自立」は、KPI を現場に投げれば成立しない。**誰が指標を設計し、誰が達成責任を持ち、どこまで決めてよいか**が揃って初めて、自律と統制が同時に立つ。本社と現場がライフサイクル価値の PDCA を回す、が先。システム高度化はその手段である。
+
+複数 PJ の間の課題を中間報告に載せるときは、目指す姿・推進体制・今期施策を共有前提にしてからマップへ入る（`knowledge/patterns/interim-as-confirmation-set.md`）。
 
 ### Common error
 
@@ -110,6 +112,7 @@ Technology 製品手順はここには書かない → `technology/azure-enterpr
 - `knowledge/patterns/exception-as-memory-entry.md`
 - `knowledge/patterns/connected-organizational-memory.md`
 - `knowledge/patterns/authority-levels.md`
+- `knowledge/patterns/interim-as-confirmation-set.md`
 - `frameworks/ai-adoption-roadmap.md` Initiative B
 - `frameworks/capability-model.md` / `strategic-capability-network.md`
 
