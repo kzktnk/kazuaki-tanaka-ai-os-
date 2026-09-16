@@ -1,6 +1,6 @@
 # Legacy Source Index
 
-**Version:** v1.23  
+**Version:** v1.24  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** ローカル保管のレガシー原本と、リポジトリ内知識の対応索引。**原本の中身は含まない。**
@@ -622,9 +622,10 @@
 | 同上（チェンマネ論点） | `knowledge/patterns/formulation-comms-vs-adoption-comms.md` | 策定の場 vs 定着の場。キック条件が先 |
 | 個別検討会（チェンマネ／ステークホルダー、2026-09-04） | `knowledge/patterns/activation-first-for-site-led-work.md` | 現場主体は Activation が入口。テーマ先行、役割先行 |
 | 中間報告パック（事前確認デック → 確認デック、2026-09-14/15） | `knowledge/patterns/interim-as-confirmation-set.md` | 作業紙 ≠ 確認セット。今期 Critical/High。スケジュールは現行→載せ→更新案。巻き込み vs 期限はオプション |
+| 検討会（最終報告前、2026-09-16） | `knowledge/patterns/stay-then-repropose-on-handover.md` | 持ち主交代は断面を渡して再提案。オプションは線表＋決定リストが先。モデルサイトは選定基準 |
 | レビュー／思考の型 | `standards/consulting-review.md`、`core/author-voice.md` | 成果物の仕事を先に名指す |
 
-**未登録:** 事前デック、wrap-up 本体、中間報告デック、議事録、録音、記入済みマトリクス、ヒアリング票、組織再編案、個人名欄。
+**未登録:** 事前デック、wrap-up 本体、中間報告デック、検討会デック、議事録、録音、記入済みマトリクス、ヒアリング票、組織再編案、個人名欄。
 
 ---
 

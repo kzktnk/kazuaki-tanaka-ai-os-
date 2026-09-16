@@ -1,9 +1,9 @@
 # Author Voice — Kazuaki Tanaka
 
-**Version:** v1.5  
+**Version:** v1.6  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
-**Origin:** 発電ユーティリティ案件の定義・仮説デック実践（2026年8月）＋レガシー成果物アーキタイプ（2002–2009年頃）の一般化＋顧客向けステータス表現（2026-08-24／2026-08-28）＋複数PJ間の配置図／課題表の切り分け（2026-09）＋中間報告の確認セット（2026-09）
+**Origin:** 発電ユーティリティ案件の定義・仮説デック実践（2026年8月）＋レガシー成果物アーキタイプ（2002–2009年頃）の一般化＋顧客向けステータス表現（2026-08-24／2026-08-28）＋複数PJ間の配置図／課題表の切り分け（2026-09）＋中間報告の確認セット（2026-09）＋持ち主交代のステイ→再提案（2026-09）
 
 ---
 
@@ -57,6 +57,7 @@
 | 策定の場 vs 定着の場 | チェンマネ計画が名簿サンプルから厚くなるとき | `knowledge/patterns/formulation-comms-vs-adoption-comms.md` |
 | 現場主体は Activation が入口 | 名簿・モデルサイトから入り、本社だけで閉じる仕事と混ざっているとき | `knowledge/patterns/activation-first-for-site-led-work.md` |
 | 中間報告は確認セット | 抽出表の全件ウォークが、その場のゴールになっているとき | `knowledge/patterns/interim-as-confirmation-set.md` |
+| 持ち主交代はステイして再提案 | 異動前の側で次契約・オプションを決めようとしているとき | `knowledge/patterns/stay-then-repropose-on-handover.md` |
 
 ### 1.3 成果物アーキタイプ（レガシー由来）
 

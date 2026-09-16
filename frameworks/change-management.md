@@ -227,7 +227,8 @@ AI-specific change (incomplete models, ethics, shadow tools, HITL) is `knowledge
 | `knowledge/patterns/who-vs-lever-family.md` | Who to invest in ≠ logic/emotion × pull/push |
 | `knowledge/patterns/change-agent-vs-communication-plan.md` | Agent hunt ≠ communication plan; plan before samples |
 | `knowledge/patterns/formulation-comms-vs-adoption-comms.md` | Roadmap-formulation comms ≠ adoption comms; kick conditions before field-team dispatch |
-| `knowledge/patterns/activation-first-for-site-led-work.md` | Sort HQ-closable vs site-led first; theme before site; roles before names |
+| `knowledge/patterns/activation-first-for-site-led-work.md` | Sort HQ-closable vs site-led first; theme before site; selection criteria before site name |
+| `knowledge/patterns/stay-then-repropose-on-handover.md` | Finish the current cut; brief incoming owner; then re-propose |
 | `playbooks/operations-transition-playbook.md` | Ops take-on / Adoption Definition of Done |
 | `energy-utilities.md` | Group CX / plant autonomy: strategy, analysis, and decision rights must travel together |
 
@@ -255,5 +256,6 @@ AI-specific change (incomplete models, ethics, shadow tools, HITL) is `knowledge
 - `knowledge/patterns/change-agent-vs-communication-plan.md`
 - `knowledge/patterns/formulation-comms-vs-adoption-comms.md`
 - `knowledge/patterns/activation-first-for-site-led-work.md`
+- `knowledge/patterns/stay-then-repropose-on-handover.md`
 - `knowledge/migrations/change-management-2026-08.md`
 - `knowledge/migrations/pgmo-ai-change-2026-08.md`

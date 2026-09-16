@@ -57,6 +57,7 @@ type: pattern
 4. **本社だけで足りる話は本社で閉じる** — 現場が主体の施策にだけ、現場を入れる場を設計する。仕分け自体が Activation の入口になるときは `knowledge/patterns/activation-first-for-site-led-work.md`。  
 5. **テーマがサイトを決める** — 検証テーマが空のままモデルサイトを先に決めない。現場チーム派遣の前に、何を整備するかを書く。  
 6. **巻き込みと期限が両立しないならオプションを出す** — 現場を広く入れると策定期限に届かないとき、黙って巻き込みを削らない。短期トップダウン / ハイブリッド / 現場協働のトレードオフを先に置く（`knowledge/patterns/interim-as-confirmation-set.md`）。  
+7. **オプションは線表と決定リストが揃うまで選択ではない** — 各回で何を決めるかと、案ごとのスケジュールが出るまで、型を選ばせない。ゴール（多年ロードマップ）は型が違っても同じことが多い。持ち主交代では outgoing に選ばせない（`knowledge/patterns/stay-then-repropose-on-handover.md`）。  
 
 ---
 
@@ -80,4 +81,5 @@ type: pattern
 - `knowledge/patterns/who-vs-lever-family.md`  
 - `knowledge/patterns/activation-first-for-site-led-work.md` — 現場主体の仕分け、テーマ先行、役割先行  
 - `knowledge/patterns/interim-as-confirmation-set.md` — 中間報告は確認セット。巻き込み vs 期限はオプション化  
+- `knowledge/patterns/stay-then-repropose-on-handover.md` — 持ち主交代ではオプション選択を outgoing に求めない  
 - `knowledge/migrations/pj-between-review-viewpoints-2026-09.md`  

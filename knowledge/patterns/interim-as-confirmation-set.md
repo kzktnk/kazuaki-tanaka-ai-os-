@@ -30,6 +30,8 @@
 | ハイブリッド | 上位の方向付け＋重点テーマだけ共同検討 | テーマを絞る必要がある |
 | 現場協働 | 実態を反映した詳細 | 期間と並行リソースが要る |
 
+オプションカードを出しただけでは、選択を求められない。各案について、各回で何を決めるかのリストと線表が先である。ゴール（多年ロードマップ）は、どの型でも同じことが多い。持ち主が替わる局面では、outgoing 側で型を選ばせない（`knowledge/patterns/stay-then-repropose-on-handover.md`）。
+
 ワークショップはテーマごとに呼び分ける。名簿を先に厚くしない（`knowledge/patterns/activation-first-for-site-led-work.md`）。策定の場と定着の場は混ぜない（`knowledge/patterns/formulation-comms-vs-adoption-comms.md`）。
 
 ## Signals
@@ -39,6 +41,7 @@
 - 「詳細は会後に読んでください」が、その場のゴールになっている  
 - 統合スケジュールの更新案を、現行と課題載せより先に出している  
 - 巻き込みを厚くすると期限に届かないのに、オプションを出さず日程だけ守ろうとしている  
+- オプションカードだけ出して、各回の決定事項と線表が無いのに選択を求めている  
 - Critical / High の定義はあるが、今日確認する集合が切られていない  
 
 ## Core rule
@@ -51,6 +54,7 @@
 - `knowledge/patterns/scn-as-landscape-not-completeness.md` — 配置図は網羅ではない  
 - `knowledge/patterns/formulation-comms-vs-adoption-comms.md` — 策定の場 vs 定着の場  
 - `knowledge/patterns/activation-first-for-site-led-work.md` — 役割先行、名簿は後  
+- `knowledge/patterns/stay-then-repropose-on-handover.md` — 持ち主交代ではオプション選択を outgoing に求めない  
 - `standards/consulting-review.md` — Artifact Job  
 - `standards/deliverable-archetypes.md` — Archetype C / F  
 - `core/author-voice.md`  

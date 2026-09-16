@@ -11,6 +11,8 @@
 
 いまの契約スコープはいまの契約である。無理に今フェーズへ広げなくてよい。ただしプログラムが進むと現場入りと交点管理は増える。現行期間のあとで隙間が見え始める、というのが次フェーズの会話になる。
 
+スポンサー／PMO の持ち主が替わるときは、outgoing 側でその会話を閉じない。断面を渡してから再提案する（`knowledge/patterns/stay-then-repropose-on-handover.md`）。
+
 ## Continuation is not incremental value
 
 次フェーズの体制を「今の延長」「月次で現地に出ているから安く聞ける」で正当化すると弱い。継続は当たり前と見られ、増分が見えない。規模を盛るのも不可。要るのは、**規模と確度の両方**が説明できる隙間の物語である。
@@ -25,6 +27,7 @@
 - 次フェーズ根拠が継続・月次同席・ロビーコストになっている  
 - 月次が進捗％で、カットオーバー経路のリスクが語られていない  
 - 今契約に仕事を足せば足りる、で次の体制議論を先送りしている  
+- 持ち主が替わるのに、outgoing の最終週で連続延長を決めようとしている  
 
 ## Tests
 
@@ -42,6 +45,7 @@
 ## Related
 
 - `knowledge/patterns/pgmo-presence-via-client-stance.md`  
+- `knowledge/patterns/stay-then-repropose-on-handover.md` — 持ち主交代では継続を outgoing で決めない  
 - `knowledge/patterns/risk-ownership.md`  
 - `playbooks/cross-project-program-management.md`  
 - `frameworks/transformation-pmo.md`  

@@ -1,6 +1,6 @@
 # Consulting Review Standard
 
-Version: v0.11 Bootstrap
+Version: v0.12 Bootstrap
 
 ## Purpose
 
@@ -77,8 +77,9 @@ Name the job of the page **before** scoring completeness, MECE, or hearing readi
 | Information request | Questions are locked; method (hearing / form / sponsor-answered) comes after | “Please let us hear from everyone” precedes the questions |
 | Change communication | Adoption vs roadmap-formulation is named; kick conditions precede field-team dispatch | Sample stakeholder lists are the first thick artifact |
 | Interim confirmation | Shared premises + this-period Critical/High confirmation set; working extraction stays appendix | Walks every From–To row as if completeness were the job |
+| Next-phase at handover | Current cut finished; incoming owner briefed before continuation is locked | Outgoing seat selects the next contract, workshop option, or site |
 
-For multi-project packs, default views for the issue log are Boundary / Dependency / Interface / Consistency / Schedule (`playbooks/cross-project-program-management.md`). Patterns: `knowledge/patterns/scn-as-landscape-not-completeness.md`, `knowledge/patterns/topology-map-vs-issue-log.md`, `knowledge/patterns/formulation-comms-vs-adoption-comms.md`, `knowledge/patterns/interim-as-confirmation-set.md`.
+For multi-project packs, default views for the issue log are Boundary / Dependency / Interface / Consistency / Schedule (`playbooks/cross-project-program-management.md`). Patterns: `knowledge/patterns/scn-as-landscape-not-completeness.md`, `knowledge/patterns/topology-map-vs-issue-log.md`, `knowledge/patterns/formulation-comms-vs-adoption-comms.md`, `knowledge/patterns/interim-as-confirmation-set.md`, `knowledge/patterns/stay-then-repropose-on-handover.md`.
 
 ---
 

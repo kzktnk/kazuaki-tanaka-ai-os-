@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.45
+Version: v1.46
 
 ## Purpose
 
@@ -440,6 +440,7 @@ Load:
 - knowledge/patterns/scn-as-landscape-not-completeness.md (if an SCN of running projects is being scored as MECE completeness)
 - knowledge/patterns/pgmo-presence-via-client-stance.md (if process pack runs but client trust / proposal value still sits with a long-trusted specialist PM)
 - knowledge/patterns/buyer-side-gap-vs-vendor-pmo.md (if vendor PMO coverage is being treated as buyer-side gap management)
+- knowledge/patterns/stay-then-repropose-on-handover.md (if sponsor / PMO owner is changing and the next phase is being locked from the outgoing seat)
 - knowledge/patterns/transformation-practice-case-pack.md (if packaging internal transformation practice cases / MM learning packs—not client status)
 - standards/deliverable-archetypes.md Archetype J (if customer-facing weekly/monthly status is the deliverable—not SteerComm)
 - knowledge/patterns/project-management-policy-layer.md (if vendor/project “management policy” TOC, progress measure, issue/risk/ToDo, or change-vs-baseline boundaries are weak)
@@ -470,6 +471,7 @@ Focus:
 - Related-project / external-coordination radar before items enter Dependency or master risk registers
 - PgMO presence: client-side PM/PO stance; ally with trusted incumbent before client; intersection-point risk → monthly→weekly reverse tracking
 - Buyer-side gap: vendor PMO is not ハザマ management; continuation is not next-phase value; surface go-live-path risks in monthly
+- Handover stay: finish the current cut, brief the incoming owner, then re-propose; budget remaining is not allocated work
 - Phase 1 controlled document set (policy, roadmap, meeting pack) vs live minutes
 - Project-layer PM policy vs program control (measurement, registers, fact-check before escalate)
 - Change management: stakeholder progression (Awareness → Ownership); readiness and strategy in `change-management.md`
@@ -493,6 +495,8 @@ Load:
 - frameworks/transformation-roadmap.md
 - frameworks/change-management.md
 - knowledge/patterns/hybrid-talent-in-transformation.md (if reform will not stick)
+- knowledge/patterns/formulation-comms-vs-adoption-comms.md (if roadmap workshops are collapsed into adoption comms)
+- knowledge/patterns/stay-then-repropose-on-handover.md (if the DX owner is changing and workshop options are being locked outgoing)
 - domains/public-defense.md (if the sponsor is a public / research body — buyer constraints only)
 
 Focus:
@@ -554,8 +558,9 @@ Load:
 - knowledge/patterns/who-vs-lever-family.md (if the person is right but the lever is push/fear or logic-only)
 - knowledge/patterns/change-agent-vs-communication-plan.md (if Champion hunt is being treated as the communication plan)
 - knowledge/patterns/formulation-comms-vs-adoption-comms.md (if roadmap-formulation sessions are collapsed into an adoption communication plan, or a field team is planned before kick conditions)
-- knowledge/patterns/activation-first-for-site-led-work.md (if a named-person roster or model site is being filled before HQ-vs-site-led sort and verification theme)
+- knowledge/patterns/activation-first-for-site-led-work.md (if a named-person roster or model site is being filled before HQ-vs-site-led sort, verification theme, or selection criteria)
 - knowledge/patterns/interim-as-confirmation-set.md (if involvement vs calendar is being resolved by silently thinning the field, or an interim deck dumps the working extraction)
+- knowledge/patterns/stay-then-repropose-on-handover.md (if workshop options or October accompaniment are being locked by the outgoing owner)
 - playbooks/operations-transition-playbook.md (if the change is ops take-on / adoption after realization)
 - standards/pmo-operating-guide.md (§Change Management Operating Standard)
 - frameworks/transformation-pmo.md (if program-owned change)
@@ -570,7 +575,9 @@ Focus:
 - Why / unit / me; time-phased messages; resistance as design input
 - Change agents / Champions are optional if existing flag-wavers suffice; communication plan raises commitment when it appears
 - Formulation comms (lock requirements / use cases / kick conditions) vs adoption comms (move people to a target state)
+- Option cards are not a decision until each session’s decision list and timeline exist; the multi-year goal can stay invariant
 - Interim confirms a filtered set; do not trade involvement for the calendar in silence
+- Model-site work is selection criteria that survive initiative choice, not the site name
 - Transfer of ownership, not only training
 
 Outputs:

@@ -99,6 +99,10 @@ Technology 製品手順はここには書かない → `technology/azure-enterpr
 
 複数 PJ の間の課題を中間報告に載せるときは、目指す姿・推進体制・今期施策を共有前提にしてからマップへ入る（`knowledge/patterns/interim-as-confirmation-set.md`）。
 
+モデルサイトはサイト名ではなく、施策が変わっても使える選定基準である（`knowledge/patterns/activation-first-for-site-led-work.md`）。スポンサー／PMO の持ち主が替わるときは、outgoing で継続を決めない（`knowledge/patterns/stay-then-repropose-on-handover.md`）。
+
+標準機能に合わせる範囲はスローガンではない。複数系統を束ねるときの Boundary / Consistency のケースとして、誰が最終判断するかを先に置く（`knowledge/patterns/topology-map-vs-issue-log.md`）。
+
 ### Common error
 
 - きれいな To-Be プロセスを先に描き、Operational Reality をノイズ扱いする  
@@ -113,6 +117,9 @@ Technology 製品手順はここには書かない → `technology/azure-enterpr
 - `knowledge/patterns/connected-organizational-memory.md`
 - `knowledge/patterns/authority-levels.md`
 - `knowledge/patterns/interim-as-confirmation-set.md`
+- `knowledge/patterns/activation-first-for-site-led-work.md`
+- `knowledge/patterns/stay-then-repropose-on-handover.md`
+- `knowledge/patterns/topology-map-vs-issue-log.md`
 - `frameworks/ai-adoption-roadmap.md` Initiative B
 - `frameworks/capability-model.md` / `strategic-capability-network.md`
 
