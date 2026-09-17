@@ -7,7 +7,7 @@
 
 > **情報へのアクセス手段は、揮発性・権威・検索の複雑さで選ぶ。小さく安定なら managed context。大きく変わるなら Retrieval。現在の状態なら live source。探索が観察依存なら Agentic Search。**
 
-接続の標準化は `knowledge/patterns/mcp-as-integration-not-authority.md`。経路の型は `knowledge/patterns/workflow-vs-agent-vs-human.md`。本パターンは **何をどの経路で取るか** である。
+どの層に何を置くかは `knowledge/patterns/match-capability-to-context-job.md`。接続の標準化は `knowledge/patterns/mcp-as-integration-not-authority.md`。経路の型は `knowledge/patterns/workflow-vs-agent-vs-human.md`。本パターンは **何をどの経路で取るか** である。
 
 ## Core distinction
 
@@ -30,7 +30,9 @@ RAG は Retrieve → Evidence を渡す → Grounded に生成、である。検
 > **Freshness depends on the source, not on the fact that retrieval occurred.**
 > **RAG does not guarantee correctness.**
 
-現在の状態を静的スナップショットやコーパス検索で代用しない。小さく安定した参照を毎回 Retrieval しない。
+現在の状態を静的スナップショットやコーパス検索で代用しない。小さく安定した参照を毎回 Retrieval しない。同じ長い文書を毎回全文投入しない。永続知識か Retrieval かを、関連性・鮮度・版・権威で選ぶ。大量ファイルを全部入れない。今の仕事に必要な分だけ（Relevant context > maximum context）。
+
+永続コンテキストは安定した再利用知の置き場である。秘密・いまの運用状態・認可ロジックは、そこに置けることと置いてよいことは別である。
 
 ## Retrieval vs generation
 
@@ -68,6 +70,8 @@ Topical に近い Chunk と、問いに答える Evidence は別。Evidence 外�
 - RAG を使っているので最新だとする  
 - 現在の状態を静的スナップショットや文書検索で答える  
 - 小さく安定した文書を毎回 Retrieval する  
+- 同じ長い参照を毎回全文投入する、またはファイル全量をコンテキストに入れる  
+- 永続コンテキストに秘密・ライブ状態・認可を置いている  
 - 関連文書が当たったので Evidence 十分だとする  
 - Evidence を渡せば Grounding される、とする  
 - Agentic Search は通常 RAG より常に優れる、とする  
@@ -80,6 +84,7 @@ Topical に近い Chunk と、問いに答える Evidence は別。Evidence 外�
 
 ## Related
 
+- `knowledge/patterns/match-capability-to-context-job.md` — 層の選び方。永続 ≠ 信頼  
 - `knowledge/patterns/mcp-as-integration-not-authority.md` — ライブ接続 ≠ 権限  
 - `knowledge/patterns/workflow-vs-agent-vs-human.md` — 探索を無制限にしない  
 - `knowledge/patterns/logical-vs-physical-document-unity.md` — 正本・版・メタデータ  

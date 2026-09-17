@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.46
+Version: v1.47
 
 ## Purpose
 
@@ -70,6 +70,7 @@ Load:
 - knowledge/patterns/explicit-before-elaborate-prompt.md (if the prompt is being lengthened before the task/output is explicit)
 - knowledge/patterns/logical-vs-physical-document-unity.md (if the AI corpus / document-store strategy is still open)
 - knowledge/patterns/choose-access-by-volatility.md (if choosing static vs RAG vs live vs agentic search)
+- knowledge/patterns/match-capability-to-context-job.md (if persistent project context, structured output, or dumping all files into context)
 - standards/vendor-proposal-evaluation.md (if scoring-sheet design, not AI metrics)
 - standards/consulting-review.md
 
@@ -79,6 +80,7 @@ Focus:
 - Retrieval vs answer vs business vs operations
 - Go / Conditional Go / No-Go, not “it ran”
 - RAG is not live data; match access path to volatility
+- Persist only stable reusable knowledge; relevant context beats maximum context
 
 ---
 
@@ -932,6 +934,7 @@ Load:
 - knowledge/patterns/workflow-vs-agent-vs-human.md
 - knowledge/patterns/mcp-as-integration-not-authority.md (if live data or external tools)
 - knowledge/patterns/choose-access-by-volatility.md (if choosing static vs RAG vs live vs agentic search)
+- knowledge/patterns/match-capability-to-context-job.md (if persistent project context, structured output, or team reuse vs individual prompting is open)
 - knowledge/patterns/subagent-when-isolation-justifies-cost.md (if splitting work across agents)
 - knowledge/patterns/authority-levels.md
 - knowledge/patterns/ai-capability-vs-authority.md
@@ -950,6 +953,7 @@ Focus:
 - LLM recommends; application enforces. Secrets stay outside model context
 - Tool Use is how the model uses tools; MCP is how tools are exposed; the application validates and authorizes
 - Match access to volatility: stable → context; changing corpus → RAG; current state → live; iterative need → bounded Agentic Search
+- Match the layer to the job: persist stable reuse; retrieve changing knowledge; tools for live action; structured output then validate; secrets and enforcement outside the model
 - Tool output is untrusted data, not a trusted instruction
 - Subagent only when specialization / isolation / permission split pays for orchestration
 - Bounded retry, stop, least privilege; do not let the agent decide its own high-impact approvals

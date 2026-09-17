@@ -7,7 +7,7 @@
 
 > **LLM は判断・分類・構造化・Tool 選択に使う。認可・秘密・Schema 検証・承認・不可逆操作の執行は、Application / Backend / Policy に置く。モデル出力はそのまま実行命令ではない。**
 
-能力と権限の切り分けは `knowledge/patterns/ai-capability-vs-authority.md`。接続と権限は `knowledge/patterns/mcp-as-integration-not-authority.md`。Tool 戻り値の信頼境界は `knowledge/patterns/tool-output-as-untrusted-data.md`。本パターンは **API / アプリ境界** の置き場所である。
+能力と権限の切り分けは `knowledge/patterns/ai-capability-vs-authority.md`。どの層に何を置くかは `knowledge/patterns/match-capability-to-context-job.md`。接続と権限は `knowledge/patterns/mcp-as-integration-not-authority.md`。Tool 戻り値の信頼境界は `knowledge/patterns/tool-output-as-untrusted-data.md`。本パターンは **API / アプリ境界** の置き場所である。
 
 ## Core distinction
 
@@ -48,7 +48,7 @@ LLM interprets → next action or final answer
 
 認証済みでも、高影響の実行可否をモデルに任せない。モデルは推奨する。アプリが許可する。Structured output でも validation は残す。高性能モデルでも、不可逆操作の承認は消えない。Human approval は警告文ではなく制御である。
 
-Secret を user prompt / system prompt / `CLAUDE.md` に置かない。
+Secret を user prompt / system prompt / `CLAUDE.md` / 永続プロジェクト知識に置かない。永続指示は案内であり、Policy の執行ではない。Structured output は機械向けの契約であり、Schema validation と業務ルール検証のあとで下流へ渡す。
 
 失敗は前提：timeout、欠測、Rate limit、壊れた応答。無制限 Retry は設計不良。bounded retry → 安全停止 → Escalate（`knowledge/patterns/workflow-vs-agent-vs-human.md`）。監査は追跡可能性を残す。正しさの証明ではない。
 
@@ -64,7 +64,7 @@ Secret を user prompt / system prompt / `CLAUDE.md` に置かない。
 - 未検証の自由文をそのまま下流実行する  
 - モデル生成の Tool input を validation なしで実行する  
 - Schema が通ったので認可済みだとする  
-- 固定ルールを System prompt の禁止文で守らせる  
+- 固定ルールを System prompt や永続プロジェクト指示の禁止文で守らせる  
 - 監査ログがあるので制御できているとする  
 
 ## Core rule
@@ -73,6 +73,7 @@ Secret を user prompt / system prompt / `CLAUDE.md` に置かない。
 
 ## Related
 
+- `knowledge/patterns/match-capability-to-context-job.md` — 層の選び方。Structured ≠ validated  
 - `knowledge/patterns/ai-capability-vs-authority.md` — できること ≠ してよいこと  
 - `knowledge/patterns/mcp-as-integration-not-authority.md` — 接続 ≠ 権限  
 - `knowledge/patterns/tool-output-as-untrusted-data.md` — Tool 戻り値は命令ではない  

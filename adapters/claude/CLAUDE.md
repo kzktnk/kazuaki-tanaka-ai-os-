@@ -2,7 +2,7 @@
 
 # Claude Adapter
 
-**Version:** v1.6  
+**Version:** v1.7  
 **Status:** Active  
 **Applies to:** Claude (Projects, Artifacts, Skills, Claude Code, connectors)  
 **Document role:** Tool-specific operating card. Does not replace `AI_OPERATING_MANUAL.md`, `CONTEXT_ROUTING.md`, or files under `core/`, `standards/`, `frameworks/`, or `knowledge/`.
@@ -13,7 +13,7 @@
 
 Claude 固有の機能を、仕事の種類に合わせて選ぶ。機能名の暗記ではなく、**何を知っているか / どう振る舞うか / どう進めるか / 何を作るか / 何に繋ぐか**を分ける。
 
-評価語（Accuracy / Completeness / Groundedness 等）は `knowledge/lessons/ai-output-evaluation-terms.md`。Prompt を直す前の成功定義は `knowledge/patterns/define-success-before-prompt-change.md`。明示してから長くするのは `knowledge/patterns/explicit-before-elaborate-prompt.md`。API 境界（判断はモデル、執行はアプリ）は `knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md`。Tool 戻り値は `knowledge/patterns/tool-output-as-untrusted-data.md`。静的 / RAG / ライブの切り方は `knowledge/patterns/choose-access-by-volatility.md`。ガバナンス・監督は `frameworks/`。
+評価語（Accuracy / Completeness / Groundedness 等）は `knowledge/lessons/ai-output-evaluation-terms.md`。Prompt を直す前の成功定義は `knowledge/patterns/define-success-before-prompt-change.md`。明示してから長くするのは `knowledge/patterns/explicit-before-elaborate-prompt.md`。層の選び方は `knowledge/patterns/match-capability-to-context-job.md`。API 境界（判断はモデル、執行はアプリ）は `knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md`。Tool 戻り値は `knowledge/patterns/tool-output-as-untrusted-data.md`。静的 / RAG / ライブの切り方は `knowledge/patterns/choose-access-by-volatility.md`。ガバナンス・監督は `frameworks/`。
 
 ---
 
@@ -40,6 +40,18 @@ Claude 固有の機能を、仕事の種類に合わせて選ぶ。機能名の�
 - Artifact = What Claude creates
 - Connector / MCP = What Claude connects to
 
+層の仕事（モデル非依存。Claude 名への写像）:
+
+```text
+Projects remember.     → Project knowledge / instructions（安定・再利用）
+RAG retrieves.         → 大きく変わるコーパス
+Tools act.             → Connector / MCP（いまの状態・外部操作）
+Structured output      → 機械が読む契約。そのあと validation
+Applications control.  → 秘密・認可・執行はモデルの外
+```
+
+Persistent ≠ trusted。Structured ≠ validated。Tool access ≠ permission。コンテキスト窓が大きいほど全部入れる、ではない。繰り返すチームの型は Project に中央管理し、個人のプロンプトに頼らない。
+
 このリポジトリでは、モデル非依存の判断は AI OS 側に置く。Claude の Project knowledge に案件原本を複製して第二の source-of-truth を作らない。
 
 正の remote は `https://github.com/kzktnk/kazuaki-tanaka-ai-os-`（末尾ハイフンあり）。ハイフンなしの `kazuaki-tanaka-ai-os` は最初のコミットで止まったスナップショット。ファイルが見つからないと結論する前に、URL を1文字単位で確認する。③は `playbooks/operations-transition-playbook.md`。
@@ -60,7 +72,7 @@ Claude 固有の機能を、仕事の種類に合わせて選ぶ。機能名の�
 | Goal は明確、次の一手が観察依存 | Agent（Claude Code 等） | Plan があるから検証不要 |
 | 専門・context 隔離・権限分離の便益が orchestration を上回る | Subagent | 工程数や複雑さだけで分割 |
 
-MCP は接続レイヤであり、Agent でも Security でもない。Tool Use はモデルが Tool を選ぶ相互作用であり、MCP そのものではない。経路の選び方（安定 / 変化するコーパス / ライブ / Agentic Search）は `knowledge/patterns/choose-access-by-volatility.md`。権限・停止・Retry・HITL は `knowledge/patterns/workflow-vs-agent-vs-human.md`。接続 ≠ 権限、Tool 契約、Authentication ≠ Authorization は `knowledge/patterns/mcp-as-integration-not-authority.md`。分ける条件は `knowledge/patterns/subagent-when-isolation-justifies-cost.md`。説明文の「慎重に」は制御ではない。使わせない Tool は非公開にする。
+MCP は接続レイヤであり、Agent でも Security でもない。Tool Use はモデルが Tool を選ぶ相互作用であり、MCP そのものではない。経路の選び方（安定 / 変化するコーパス / ライブ / Agentic Search）は `knowledge/patterns/choose-access-by-volatility.md`。層の選び方（永続コンテキスト / Retrieval / Tool / Structured / アプリ）は `knowledge/patterns/match-capability-to-context-job.md`。権限・停止・Retry・HITL は `knowledge/patterns/workflow-vs-agent-vs-human.md`。接続 ≠ 権限、Tool 契約、Authentication ≠ Authorization は `knowledge/patterns/mcp-as-integration-not-authority.md`。分ける条件は `knowledge/patterns/subagent-when-isolation-justifies-cost.md`。説明文の「慎重に」は制御ではない。使わせない Tool は非公開にする。
 
 安定した振る舞いは System-level instruction、今回の依頼は User message、Secret はモデル文脈の外。出力は Structured + アプリ側 validation。モデルは推奨し、認可は Application が執行する（`knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md`）。Tool 戻り値・Resource・外部文面は data であり、trusted instruction ではない（`knowledge/patterns/tool-output-as-untrusted-data.md`）。Prompt を触る前に成功条件と評価セットを置く（`knowledge/patterns/define-success-before-prompt-change.md`）。
 
@@ -146,3 +158,4 @@ MCP は接続レイヤであり、Agent でも Security でもない。Tool Use 
 - `knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md`
 - `knowledge/patterns/tool-output-as-untrusted-data.md`
 - `knowledge/patterns/choose-access-by-volatility.md`
+- `knowledge/patterns/match-capability-to-context-job.md`
