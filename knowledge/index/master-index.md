@@ -1,10 +1,10 @@
 # Knowledge Master Index
 
-**Version:** v1.40  
+**Version:** v1.41  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
-**Last updated:** 2026-09-17
+**Last updated:** 2026-09-24
 
 ---
 
@@ -78,7 +78,7 @@ kazuaki-tanaka-ai-os/
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
 │   ├── patterns/               ← 58 distilled patterns
 │   ├── lessons/                ← 5 lessons
-│   ├── migrations/             ← 54 migration reports
+│   ├── migrations/             ← 55 migration reports
 │   └── decisions/              ← 4 records
 ├── templates/                  ← 1 template
 ├── prompts/                    ← README placeholder
@@ -310,7 +310,8 @@ knowledge/
 │   ├── ccar-rag-agentic-search-2026-09.md
 │   ├── interim-as-confirmation-set-2026-09.md
 │   ├── stay-then-repropose-on-handover-2026-09.md
-│   └── ccar-features-of-claude-2026-09.md
+│   ├── ccar-features-of-claude-2026-09.md
+│   └── cross-project-issue-response-review-2026-09.md
 └── decisions/
     ├── diagnose-from-gateway-not-client-error.md
     ├── sandbox-cost-controls-before-resources.md
@@ -1232,18 +1233,36 @@ CONTEXT_ROUTING.md  →  Agent / MCP, AI PoC
 
 ---
 
+### AP. Cross-project issue-list response-plan review (2026-09)
+
+```text
+Local review notes on an AI-drafted cross-project issue list — content not archived
+        ↓ generalize (no client names, subcommittee/program IDs, personal names, dates, yen)
+playbooks/cross-project-program-management.md §8.8
+standards/consulting-review.md §AI-Drafted Content Check
+        ↓ connect
+knowledge/patterns/pgmo-presence-via-client-stance.md
+standards/writing.md §De-AI Writing Pass
+        ↓ record
+knowledge/migrations/cross-project-issue-response-review-2026-09.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  Transformation PMO / Program Governance; Proposal Review
+```
+
+---
+
 ## Level 4 — CONTEXT_ROUTING Task Map (summary)
 
 Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 
 | Task | Primary loads |
 |------|----------------|
-| Proposal review | `standards/consulting-review.md` (artifact job before MECE), `deliverable-archetypes.md`, `writing.md`, `interim-as-confirmation-set.md` if an interim pack is the working extraction |
+| Proposal review | `standards/consulting-review.md` (artifact job before MECE; §AI-Drafted Content Check if AI-written), `deliverable-archetypes.md`, `writing.md`, `interim-as-confirmation-set.md` if an interim pack is the working extraction |
 | Customer weekly/monthly status | `deliverable-archetypes.md` Archetype J, `author-voice.md`, `project-management-policy-layer.md`, `support-effort-classification.md`, `change-agent-vs-communication-plan.md` / `unowned-work-in-effort-analysis.md` / `buyer-side-gap-vs-vendor-pmo.md` as needed, cadence / cross-project playbooks |
 | IT strategy | `frameworks/it-strategy-foundations.md`, `standards/it-strategy-engagement-guide.md`, `playbooks/strategy-scn.md` (if SCN → projectization) |
 | Strategy engagement / SCN | `consulting-strategy-process.md`, `strategy-engagement-guide.md`, `strategic-capability-network.md`, `scn-creation-guide.md`, `playbooks/strategy-scn.md` (sequence / Gate 1), `wbs-design.md` if Gate 2 WBS, `scn-as-landscape-not-completeness.md` if overlaying running PJs |
 | Consultant enablement / skill map | `skill-playbook-directory.md` (learner first read), `consultant-capability-skill-model.md` (v0.6.5, Manager SoT), `consultant-role-responsibility-model.md` (Required Level), `pilot-assessment-strategy-consultant.md` if Assessor 1on1, `financial-analysis-for-consultants.md` if Company／Financial Analysis, `si-project-literacy.md` if Cap II / ② and learner lacks SI experience (draft Prerequisite), `consultant-learning-map-example.md` if generating a map, `capability-model.md` (client org — do not merge) |
-| PMO / transformation | `frameworks/transformation-pmo.md`, `playbooks/pmo-function-standup.md`, `playbooks/program-governance-cadence.md`, `playbooks/strategy-scn.md` (upstream Gate 1), `playbooks/cross-project-program-management.md`, `frameworks/si-project-literacy.md` (if SI未経験 and ② facts cannot yet become blast-radius questions), `playbooks/operations-transition-playbook.md` (Gate 3–5), `playbooks/stakeholder-activation-playbook.md` (if a specific person must act), `knowledge/patterns/related-project-external-coordination-radar.md` (if adjacent/external radar), `knowledge/patterns/topology-map-vs-issue-log.md` (if diagram is asked to carry issues), `knowledge/patterns/interim-as-confirmation-set.md` (if interim walks every extracted row), `knowledge/patterns/stay-then-repropose-on-handover.md` (if sponsor / PMO owner is changing and continuation is being locked outgoing), `knowledge/patterns/pgmo-presence-via-client-stance.md` (if presence lost to trusted incumbent), `knowledge/patterns/buyer-side-gap-vs-vendor-pmo.md` (if vendor PMO is treated as buyer-side gap cover), `knowledge/patterns/transformation-practice-case-pack.md` (if internal practice packaging), `standards/pmo-operating-guide.md`, `knowledge/patterns/project-management-policy-layer.md` (if project-layer policy TOC), Archetype J if customer status, `frameworks/change-management.md` |
+| PMO / transformation | `frameworks/transformation-pmo.md`, `playbooks/pmo-function-standup.md`, `playbooks/program-governance-cadence.md`, `playbooks/strategy-scn.md` (upstream Gate 1), `playbooks/cross-project-program-management.md` (§8.8 if reviewing issue-list response plans), `frameworks/si-project-literacy.md` (if SI未経験 and ② facts cannot yet become blast-radius questions), `playbooks/operations-transition-playbook.md` (Gate 3–5), `playbooks/stakeholder-activation-playbook.md` (if a specific person must act), `knowledge/patterns/related-project-external-coordination-radar.md` (if adjacent/external radar), `knowledge/patterns/topology-map-vs-issue-log.md` (if diagram is asked to carry issues), `knowledge/patterns/interim-as-confirmation-set.md` (if interim walks every extracted row), `knowledge/patterns/stay-then-repropose-on-handover.md` (if sponsor / PMO owner is changing and continuation is being locked outgoing), `knowledge/patterns/pgmo-presence-via-client-stance.md` (if presence lost to trusted incumbent), `knowledge/patterns/buyer-side-gap-vs-vendor-pmo.md` (if vendor PMO is treated as buyer-side gap cover), `knowledge/patterns/transformation-practice-case-pack.md` (if internal practice packaging), `standards/pmo-operating-guide.md`, `knowledge/patterns/project-management-policy-layer.md` (if project-layer policy TOC), Archetype J if customer status, `frameworks/change-management.md` |
 | DX grand design | `frameworks/dx-grand-design.md`, change / roadmap as needed |
 | New venture assessment | `frameworks/new-venture-three-track-assessment.md` |
 | B2B sales workflow | `knowledge/patterns/sales-capacity-via-center-functions.md` |

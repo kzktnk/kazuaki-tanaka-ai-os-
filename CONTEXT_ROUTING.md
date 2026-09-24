@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.47
+Version: v1.48
 
 ## Purpose
 
@@ -35,7 +35,7 @@ Load:
 # Proposal Review
 
 Load:
-- standards/consulting-review.md
+- standards/consulting-review.md (incl. §AI-Drafted Content Check if the draft was AI-written)
 - standards/deliverable-archetypes.md
 - standards/writing.md
 - core/author-voice.md
@@ -429,6 +429,7 @@ Load:
 - playbooks/pmo-function-standup.md (if the office exists on paper but not in operation)
 - playbooks/program-governance-cadence.md (if SteerComm / program board / standup / inspection are collapsing into one status meeting)
 - playbooks/cross-project-program-management.md (if PgMO is buried in vendor WBS detail; PJ間 dependency / consistency / hand-off control is missing)
+- playbooks/cross-project-program-management.md §8.8 + standards/consulting-review.md §AI-Drafted Content Check (if reviewing response plans added to a cross-project issue list, especially AI-drafted ones)
 - frameworks/si-project-literacy.md (if the PgMO reader lacks SI delivery experience and cannot turn a status Fact into blast radius + questions before using ②)
 - playbooks/wbs-design.md (if individual PJ WBS detailing is being treated as PgMO work)
 - playbooks/strategy-scn.md (if upstream strategy → SCN → Gate 1 is weak before PgMO start)
@@ -471,6 +472,7 @@ Focus:
 - Topology map vs issue log: the diagram is connections; issues live in the 5-view table; questions before hearing
 - Gate 1 (strategy-scn) vs Gate 2 (cross-project pre-start) vs Gate 3–5 (operations transition)
 - Related-project / external-coordination radar before items enter Dependency or master risk registers
+- Issue-list response plans: body confirmed before plans; bundle rows into decisions; branch on open questions; no per-issue WG sprawl; diff review on each revision
 - PgMO presence: client-side PM/PO stance; ally with trusted incumbent before client; intersection-point risk → monthly→weekly reverse tracking
 - Buyer-side gap: vendor PMO is not ハザマ management; continuation is not next-phase value; surface go-live-path risks in monthly
 - Handover stay: finish the current cut, brief the incoming owner, then re-propose; budget remaining is not allocated work

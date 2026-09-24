@@ -1,6 +1,6 @@
 # Consulting Review Standard
 
-Version: v0.12 Bootstrap
+Version: v0.13 Bootstrap
 
 ## Purpose
 
@@ -131,6 +131,22 @@ A strong consulting deliverable should:
 - Enable action
 - Demonstrate structured thinking
 - Balance strategic vision with execution realism
+
+---
+
+# AI-Drafted Content Check
+
+When a deliverable (or a column in it, such as response plans in an issue list) was drafted by AI, check the **substance** before style. `standards/writing.md` §De-AI Writing Pass covers prose; this section covers whether the content can be trusted.
+
+- **Date freshness** — No deadlines already in the past; no "have X join phase Y" when phase Y has already started; no conflicting deadlines for the same decision
+- **Governance bodies that exist** — No "executive level", "sponsor approval", or named committees that the client does not actually have; escalation targets reflect announced org changes
+- **Open questions left open** — Where the document lists items still to be confirmed, the AI draft must not answer them; branch instead ("if A, then X; if B, then Y")
+- **No artifact sprawl** — One new working group, log, or document per issue is a symptom; bundle issues into a few decisions and manage them in existing registers
+- **Facts vs inference** — Specific numbers, dates, and product names carry a source or are marked as inference
+- **Actor clarity** — Says what our side (consultant / PMO) will do, not only what the client should do
+- **Client vocabulary** — Replace generic consulting or engineering jargon the client does not use
+
+For cross-project issue lists, apply `playbooks/cross-project-program-management.md` §8.8 as well.
 
 ---
 
