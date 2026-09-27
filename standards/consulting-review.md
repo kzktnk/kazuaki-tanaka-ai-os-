@@ -1,6 +1,6 @@
 # Consulting Review Standard
 
-Version: v0.13 Bootstrap
+Version: v0.14 Bootstrap
 
 ## Purpose
 
@@ -78,8 +78,9 @@ Name the job of the page **before** scoring completeness, MECE, or hearing readi
 | Change communication | Adoption vs roadmap-formulation is named; kick conditions precede field-team dispatch | Sample stakeholder lists are the first thick artifact |
 | Interim confirmation | Shared premises + this-period Critical/High confirmation set; working extraction stays appendix | Walks every From–To row as if completeness were the job |
 | Next-phase at handover | Current cut finished; incoming owner briefed before continuation is locked | Outgoing seat selects the next contract, workshop option, or site |
+| Slide page | Title is a standalone claim; left is premise, right is implication; table rows match the axis | Title is a topic label; POINT banner at the bottom; cards instead of an axis table |
 
-For multi-project packs, default views for the issue log are Boundary / Dependency / Interface / Consistency / Schedule (`playbooks/cross-project-program-management.md`). Patterns: `knowledge/patterns/scn-as-landscape-not-completeness.md`, `knowledge/patterns/topology-map-vs-issue-log.md`, `knowledge/patterns/formulation-comms-vs-adoption-comms.md`, `knowledge/patterns/interim-as-confirmation-set.md`, `knowledge/patterns/stay-then-repropose-on-handover.md`.
+For multi-project packs, default views for the issue log are Boundary / Dependency / Interface / Consistency / Schedule (`playbooks/cross-project-program-management.md`). Patterns: `knowledge/patterns/scn-as-landscape-not-completeness.md`, `knowledge/patterns/topology-map-vs-issue-log.md`, `knowledge/patterns/formulation-comms-vs-adoption-comms.md`, `knowledge/patterns/interim-as-confirmation-set.md`, `knowledge/patterns/stay-then-repropose-on-handover.md`. Slide page construction: `standards/slide-design.md` (draft trial).
 
 ---
 

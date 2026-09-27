@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.48
+Version: v1.49
 
 ## Purpose
 
@@ -38,6 +38,7 @@ Load:
 - standards/consulting-review.md (incl. §AI-Drafted Content Check if the draft was AI-written)
 - standards/deliverable-archetypes.md
 - standards/writing.md
+- standards/slide-design.md (if drafting or reviewing slide pages — title wording, left-to-right layout, table axes; draft trial)
 - core/author-voice.md
 - knowledge/lessons/author-voice-archetypes-legacy.md (Archetype 1: Proposal)
 - frameworks/consulting-strategy-process.md (if problem definition or approach is weak)
@@ -636,12 +637,13 @@ Load:
 - frameworks/pilot-assessment-strategy-consultant.md (if assessing a real person)
 - frameworks/consultant-learning-map-example.md (if generating a person-level Learning Map)
 - frameworks/financial-analysis-for-consultants.md (if developing Company／Financial Analysis)
-- frameworks/si-project-literacy.md (if developing Capability II Skills that use ② and the learner lacks SI delivery experience — draft Prerequisite until Pilot)
+- frameworks/si-project-literacy.md (if developing Capability II Skills that use ② and the learner lacks SI delivery experience — teaching material for the candidate Skill SI Project Literacy)
+- standards/slide-design.md (if developing Communication — candidate Evidence until the trial deck)
 - frameworks/capability-model.md (client-organization layers only — do not merge into the consultant map)
 - matching playbook / selfstudy pair for the Skill being developed (e.g. wbs-design.md / wbs-design-selfstudy.md)
 
 Focus:
-- Four Capabilities, 24 Skills; one L0–L4 scale; Evidence is Skill-specific
+- Four Capabilities, 24 Skills (+ candidates marked 〔候補〕, §1.6 — not counted until formalized); one L0–L4 scale; Evidence is Skill-specific
 - Role sets Required Level; Skill definitions always go to L4
 - Knowledge is Prerequisite (Pass / Not Yet), not a second Level axis
 - AI is a cross-cutting axis, not a Skill
@@ -650,7 +652,7 @@ Focus:
 - Capability Model is Manager / 育成担当 Source of Truth; do not hand it as the junior's first read
 - Junior first read is the Directory; Assessment is Assessor-owned (1on1 diagnostic). Do not ask the junior to fill the sheet alone
 - Capability IV entry material exists only for Company／Financial Analysis; remaining five Skills have Evidence without a learning pack
-- Capability II shared Prerequisite candidate for ② Skills is `si-project-literacy.md` (draft until Pilot Pass／Not Yet)
+- SI Project Literacy is a candidate Capability II Skill (Option B, v0.7): knowledge = Pass／Not Yet, judgment = L0–L4; linked to ② Skills via soft Prerequisite for SI未経験者 only. Chapter 5 Pilot = its L1→L2 check
 - Next step = Capability Model × Current Level × Assignment (soft Prerequisite)
 
 Outputs:

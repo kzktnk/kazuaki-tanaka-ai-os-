@@ -8,7 +8,8 @@ gap_fill: "frameworks/capability-model.md（クライアント組織のCapabilit
 related:
   - frameworks/skill-playbook-directory.md（読むものだけ探すならこちら）
   - frameworks/financial-analysis-for-consultants.md（Capability IVの入口教材）
-  - frameworks/si-project-literacy.md（Capability II共通Prerequisite候補・draft。Pilot後にPass／Not Yet化）
+  - frameworks/si-project-literacy.md（Capability IIの候補Skill「SI Project Literacy」の教材・draft。Chapter 5 Pilot後に正式化）
+  - standards/slide-design.md（Communicationの候補Evidenceの教材・draft。試行後に正式化）
   - frameworks/consultant-role-responsibility-model.md（Role／Responsibility層、Required Level一覧）
   - frameworks/top-down-thinking.md
   - frameworks/thinking-patterns/
@@ -20,7 +21,7 @@ related:
   - core/author-voice.md
   - standards/scn-creation-guide.md
   - playbooks/program-governance-cadence.md
-last_updated: 2026-09-09
+last_updated: 2026-09-27
 ---
 
 # コンサルタント Capability／スキル／レベル モデル
@@ -59,6 +60,7 @@ Playbookが増えてもCapability自体は増減しない状態を目指し、�
 | Skill | 内容 | 対応教材（現状） |
 |---|---|---|
 | Work Planning／WBS | 成果物から逆算し、詳細タスクへ分解する | `playbooks/wbs-design.md` |
+| SI Project Literacy〔候補〕 | 現場の報告（Fact）から後工程への波及を読み、PgMOとして確認すべき質問を組み立てる | `frameworks/si-project-literacy.md`（draft） |
 | Dependency Management | PJ間の受け渡し・依存を管理する | `playbooks/cross-project-program-management.md` Ch3 |
 | Schedule Integration | 複数PJのスケジュールを統合する | `playbooks/cross-project-program-management.md` Ch4 |
 | Scope／Responsibility | スコープ境界と責任分界を管理する | `playbooks/cross-project-program-management.md` Ch5 |
@@ -95,10 +97,11 @@ Skillは横並びで管理するが、実務上は習得しやすい順序があ
 | 分析する | 問いを立てる L1、構造化する L1 |
 | 評価・意思決定する | 分析する L2、仮説を作る L2 |
 | Work Planning／WBS | 構造化する L1 |
-| Dependency Management | ―（入口） |
-| Schedule Integration | Dependency Management L1 |
-| Scope／Responsibility | ―（入口） |
-| Risk／Issue Management | Dependency Management L1、Scope／Responsibility L1 |
+| SI Project Literacy〔候補〕 | ―（入口。SI経験者は初回判定でL2以上になる想定） |
+| Dependency Management | ―（入口。SI未経験者は SI Project Literacy L1） |
+| Schedule Integration | Dependency Management L1（SI未経験者は SI Project Literacy L1 も） |
+| Scope／Responsibility | ―（入口。SI未経験者は SI Project Literacy L1） |
+| Risk／Issue Management | Dependency Management L1、Scope／Responsibility L1（SI未経験者は SI Project Literacy L1 も） |
 | Transition Due Diligence／Planning | Scope／Responsibility L2 |
 | Knowledge Transfer | Transition Due Diligence／Planning L1 |
 | Transition工数見積もり | Work Planning／WBS L2、Transition Due Diligence／Planning L1 |
@@ -115,6 +118,21 @@ Skillは横並びで管理するが、実務上は習得しやすい順序があ
 | Regulatory／Risk Literacy | ―（入口。Commercial／Contract Literacy L1と並行が望ましい） |
 
 Learning Map（§5）では、本人のCurrent LevelとこのPrerequisite表を突き合わせ、「次にどのSkillへ進むのが自然か」を機械的に示唆する。ただし本人のRole／Assignment（今アサインされている案件で何が必要か）が優先されるべき場面もあるため、あくまで推奨であり強制はしない。
+
+### 1.6 候補（Candidate）の扱い
+
+draftの教材を根拠にするSkill・Evidenceは、本文に〔候補〕と明示して置き、**教材側の試行（Pilot）を通ってから正式化する**。教材が試行前のまま評価基準だけを確定させると、教材の欠陥がそのまま評価の欠陥になるためである。
+
+- 〔候補〕のSkill・Evidenceは、正式化まで24 Skillの数、`frameworks/pilot-assessment-strategy-consultant.md`、Role側のRequired Level（`consultant-role-responsibility-model.md`）に数えない
+- 育成の場では使ってよい。ただし〔候補〕のEvidenceで判定したLevelは、Assessment StatusをProvisionalとする（§5）
+- 正式化の条件は候補ごとに書く。正式化したら〔候補〕を外し、上記の関連ファイルに反映する
+
+現在の候補は次の2件。
+
+| 候補 | 教材 | 正式化の条件 |
+|---|---|---|
+| Capability II「SI Project Literacy」（Skill） | `frameworks/si-project-literacy.md`（draft v0.6.1） | Chapter 5 PilotでSI未経験者1名がL1→L2のEvidence（Factから波及と質問を自力で出す）を満たすか判定し、Ownerが正式化を判断する |
+| Capability III「Communication」の追加Evidence | `standards/slide-design.md`（draft v0.1） | 実案件のデッキ1本で試行し、Ownerが本書のActive化を判断する |
 
 ---
 
@@ -213,7 +231,22 @@ Suitability／Feasibility／Acceptability評価、重要度×実現可能性の�
 
 ### 3.2 Capability II｜Delivery / Execution
 
-②を教材とする Dependency Management／Schedule Integration／Scope／Responsibility／Risk／Issue Management の4 Skillは、SI経験者が暗黙に持つ工程解像度を前提にしている。SI未経験の学習者向けに、共通Prerequisite Knowledgeの候補を `frameworks/si-project-literacy.md`（draft v0.6）に置いた。Pass／Not Yetの正式追加と各Skill表への埋め込みは、Literacy の Pilot（Fact→波及と質問を自力で出せるか）通過後に行う。Required Level（PgMO Role）の確定は Role 側定義を待つ。
+②を教材とする Dependency Management／Schedule Integration／Scope／Responsibility／Risk／Issue Management の4 Skillは、SI経験者が暗黙に持つ工程解像度を前提にしている。SI未経験の学習者向けに、この解像度を独立の候補Skill「SI Project Literacy」として置いた（§1.6）。4 Skillとの関係は、§1.5のRecommended Prerequisite（SI未経験者のみ）で表す。Required Level（PgMO Role）の確定は Role 側定義を待つ。
+
+#### SI Project Literacy〔候補〕
+
+現場から上がる報告（Fact）を、Fact→What it means→What happens next→What PgMO should askの型で読み、後工程への波及とPgMOとして確認すべき質問を組み立てる能力（`frameworks/si-project-literacy.md`）。4 Skill共通の前提を、Pass／Not YetのPrerequisite Knowledgeではなく独立のSkillとして置いた理由は、到達目標のうち3項目（波及を挙げる・質問を組み立てる・Risk／Issueの優先度を判断する）が知識ではなく判断であり、「自力で出せるか」というPilotの合格条件がL2（自走できる）の定義そのものだからである。Pass／Not Yetの前提にすると、L0→L1の入口条件がL2相当の自走を要求する逆転が起きる。知識として二値で測れる2項目だけをPrerequisite Knowledgeに残した。
+
+**Prerequisite Knowledge**（Pass／Not Yet）：SIライフサイクル（要件→設計→開発→テスト→移行→稼働）の各工程が何を確認して次に進むか／工程間の主要な受け渡し物（成果物）
+
+**範囲の明示**：個別PJのPMとしてSIを回す実務、個別PJの品質管理を引き取ることは、L0からL4まで一貫してScope外である（教材各Chapter冒頭のガードと同じ）。
+
+| Current | Target | Learning／OJT | Evidence | 判定者 |
+|---|---|---|---|---|
+| L0 | L1 | `frameworks/si-project-literacy.md` Ch1・Ch2・Ch5を読み、指導者と一緒に現場報告のFact 1件を型に沿って読み解く | Fact→What it means→What happens next→What PgMO should askの4段を自分の言葉で説明でき、指導者同席でFact 1件から後工程への典型的な波及を1つ以上挙げられる | 指導者 |
+| L1 | L2 | Ch9（症状から引く）・Ch10（6つの問い）を手元に置き、担当プログラムの定例報告を自分で読み解く | 工程の異なる2件以上のFactで、波及とPgMOとして確認すべき質問を自力で出し、RiskかIssueかの区別とImpact・Urgency（RiskならLikelihoodも）による優先度を説明できる。質問を頭の中で終わらせず、②のDependency Register／RAIDに書き込める（Chapter 5 Pilotの合格条件はこの行に当たる） | 指導者→OJT先PM |
+| L2 | L3 | SI未経験の他者の読み解き・質問をレビューする | 複数の他者アウトプットで、波及の見落とし、個別PJの品質管理を引き取ってしまう質問、Risk／Issueの誤区別を発見し、なぜ問題か・どう直すべきかを示せる | Capability IIの認定L4 Reviewer（Bootstrap期はCapability Owner） |
+| L3 | L4 | Agile・ハイブリッドなど、工程名や進め方が標準と異なる案件を複数経験する | 複数の非標準案件で、受け渡しと仮置きの連鎖（Ch1.1）から読み解きの観点を組み替え、判断理由を説明して他者に教えられる | Capability Owner |
 
 #### Work Planning／WBS
 
@@ -322,7 +355,7 @@ AIとの協働：Segment・Diagnoseの一次仮説をAIに作らせることは�
 
 #### Communication
 
-意思決定者向けに構造化して伝える型（`core/author-voice.md` §3〜4：使う／避ける言葉、1スライド1メッセージ、削る勇気、読者別の説明チェーン）が教材。
+意思決定者向けに構造化して伝える型（`core/author-voice.md` §3〜4：使う／避ける言葉、1スライド1メッセージ、削る勇気、読者別の説明チェーン）が教材。1枚の中身の作り方（タイトル・配置・表）は `standards/slide-design.md`（draft）を〔候補〕の教材とする（表の下を参照）。
 
 | Current | Target | Learning／OJT | Evidence | 判定者 |
 |---|---|---|---|---|
@@ -330,6 +363,13 @@ AIとの協働：Segment・Diagnoseの一次仮説をAIに作らせることは�
 | L1 | L2 | 条件の異なる2件以上でクライアント向け資料を自分で作る | 2件以上で、なぜそのトーン・構成にしたかを説明でき、§3〜4の避けるパターンを踏まず、読者（作成者／PO／役員）に応じた説明チェーンに沿った資料を作れる | 指導者→OJT先PM |
 | L2 | L3 | 他者のドラフトをレビューする | 複数の他者ドラフトで、「AIっぽい」パターン（author-voice.mdが名指しする回避対象）を発見し、なぜ問題か・どう直すべきかを示せる | Capability IIIの認定L4 Reviewer（Bootstrap期はCapability Owner） |
 | L3 | L4 | 想定外の読者層・場面での資料作成を複数経験する | 複数の非標準の読者・場面向けにトーンを設計し、判断理由を説明して他者に教えられる | Capability Owner |
+
+**〔候補〕追加Evidence**（`standards/slide-design.md` 試行後に上の表へ統合する。§1.6）
+
+| 遷移 | 追加するEvidence | 教材 |
+|---|---|---|
+| L1→L2 | 2件以上の資料で、タイトルだけを抜き出して通し読みすると1本のストーリーになっており、各タイトルが切り出しても結論として読める | slide-design §1.1・§1.4 |
+| L2→L3 | 複数の他者ドラフトで、タイトルと本文の数の食い違い、前提と帰結の左右逆転、軸の定義に当てはまらない表の行を発見し、なぜ問題か・どう直すべきかを示せる | slide-design §1.3・§2.1・§3.2 |
 
 #### Facilitation
 
@@ -487,6 +527,8 @@ Capability I〜IIIが「型（プロセス・技法）」であるのに対し�
 
 **教材開発の進捗**：Capability IVの6 Skillは、Required Levelは決まりEvidenceも定義済みだが、Learning Intervention（読んで身につける教材）が揃っていなかった。入口として Company／Financial Analysis の教材（`frameworks/financial-analysis-for-consultants.md`）を作成した。残り5 Skill（Business Model／Economics、Investment／Business Case、Corporate Governance／Management、Commercial／Contract Literacy、Regulatory／Risk Literacy）はまだ教材がない。§1.5のRecommended Prerequisiteの順（Financial Analysis→Business Model→Investment／Business Case）で、次点の候補は Business Model／Economics になる。
 
+**候補の試行**：§1.6の2件は、この2トラックPilotとは別に回してよい。SI Project LiteracyはChapter 5 Pilotがそのまま L1→L2 Evidence の判定になり、Communicationの追加Evidenceは `slide-design.md` の試行デッキの作成者とレビュー者で確かめる。
+
 ---
 
 ## 変更履歴
@@ -505,3 +547,4 @@ Capability I〜IIIが「型（プロセス・技法）」であるのに対し�
 | v0.6.3 | Capability IVの入口教材「Company／Financial Analysis」（`financial-analysis-for-consultants.md`）を作成し、Directory・Skill定義から参照。Directory をリポジトリに登録 |
 | v0.6.4 | ③・横串の正しいパスは末尾 `-playbook`。探していた `operations-transition.md` は誤名 |
 | v0.6.5 | Capability II共通Prerequisite候補として `si-project-literacy.md` を登録（draft。Pilot後にPass／Not Yet化）。Directory・②本編／selfstudyから導線 |
+| v0.7 | §1.6「候補（Candidate）の扱い」を新設し、draft教材に依存するSkill・Evidenceは〔候補〕として置き、教材の試行後に正式化するルールにした。SI Project LiteracyをB案で接続（2026-09-27 Owner判断。独立Skill。知識2項目はPrerequisite Knowledge、判断3項目はL0〜L4 Evidence）。4 Skillとの関係は§1.5の推奨順序（SI未経験者のみ）で表す。Communicationに `standards/slide-design.md` 由来の〔候補〕Evidenceを追加。正式化までSkill数は24のまま |

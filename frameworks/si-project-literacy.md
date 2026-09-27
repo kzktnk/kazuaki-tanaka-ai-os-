@@ -10,12 +10,12 @@ related:
   - frameworks/consultant-role-responsibility-model.md
   - playbooks/cross-project-program-management.md
   - playbooks/cross-project-program-management-selfstudy.md
-last_updated: 2026-09-09
+last_updated: 2026-09-27
 ---
 
 # SI Project Literacy
 
-**Version:** v0.6
+**Version:** v0.6.1
 **Status:** Draft
 **Owner:** Kazuaki Tanaka
 **Purpose:** SI未経験のPgMO担当者が、現場から上がってくる報告を聞いて後工程への典型的な波及を推測し、確認すべき質問を自分で組み立てられるようになるための前提知識を提供する
@@ -23,7 +23,7 @@ last_updated: 2026-09-09
 **Do not use as-is for:** 個別PJのPMとしてSIを回す実務そのもの、②が扱うPJ間統合管理の型
 **Source revision:** なし（新規作成）
 
-Pairs with `frameworks/consultant-capability-skill-model.md`（Capability II のPrerequisite Knowledgeとして接続）。本Frameworkは②を実行するための前提知識を扱うものであり、②の代わりにはならない。
+Pairs with `frameworks/consultant-capability-skill-model.md`（Capability II の候補Skill「SI Project Literacy」の教材として接続。v0.7 §1.6・§3.2）。本Frameworkは②を実行するための前提知識を扱うものであり、②の代わりにはならない。
 
 ## SI未経験のPgMO担当者が「中で何が起きているか」を理解するための最低限の解像度
 
@@ -750,27 +750,31 @@ Chapter 1〜8の「What PgMO should ask」を、Chapter別ではなく質問の�
 
 ---
 
-## Appendix：Capability Modelへの接続（案）
+## Appendix：Capability Modelへの接続
 
-`frameworks/consultant-capability-skill-model.md` のCapability II（Delivery／Execution）のうち、②を教材としている次の4 Skillには、現時点でPrerequisite Knowledgeの節がない。
+`frameworks/consultant-capability-skill-model.md` v0.7で、本Frameworkを**Capability IIの独立した候補Skill「SI Project Literacy」**として接続した（B案。2026-09-27にOwnerが採用を決定）。Skill定義（Prerequisite Knowledge・L0〜L4 Evidence・判定者）の正本はCapability Model §3.2であり、ここには接続の判断理由だけを残す。
 
-- Dependency Management（教材：② Ch3）
-- Schedule Integration（教材：② Ch4）
-- Scope／Responsibility（教材：② Ch5）
-- Risk／Issue Management（教材：② Ch7〜8）
+**A案とB案**
 
-Risk／Issue ManagementはReview Round 1で追加した。SI経験がないと、「IF Open Pointが10件あります」「テスト消化率は順調です」といった報告を聞いても、それがRiskかIssueか、Severityがどの程度か、いつ上げるべきかを判断できない。SI Project LiteracyなしにRisk／Issue Managementの型だけを持っていても、RAG判定の入力そのものが作れない。
+| | A案：②系4 Skill共通のPrerequisite Knowledge | B案：独立Skill（採用） |
+|---|---|---|
+| 形 | Dependency Management／Schedule Integration／Scope／Responsibility／Risk／Issue Managementの前にPass／Not Yetの5項目を置く | Skill 1つとしてL0〜L4を持つ。知識2項目だけPrerequisite Knowledgeに残す |
+| 良い点 | Skill数が変わらず、Worksheet・Role側への波及が小さい | 判断の3項目を段階で測れる。L3（他者の質問のレビュー）・L4（非標準案件）が自然に定義できる |
+| 問題 | 5項目のうち3項目（波及を挙げる・質問を組み立てる・Risk／Issueの優先度を判断する）は判断であり、Pass／Not Yetでは測れない。Pilotの合格条件「自力で出せるか」はL2の定義そのもので、入口条件がL2相当になる逆転が起きる | 正式化するとSkill数が25になり、Worksheet・Role側・索引に波及する |
 
-本Frameworkの到達目標を、Capability Modelの既存ルール（Prerequisite KnowledgeはLevel化せずPass／Not Yetの二値、§4）に合わせて次の5項目に集約する。Capability IVのようにSkillごとに異なる知識領域を挙げるのではなく、4 Skill共通のPrerequisite Knowledgeとして扱うことを想定している（SI Project Literacyは分割できる知識領域の集合ではなく、1つの一体的な解像度であるため）。
+B案の波及は、Capability Model §1.6の〔候補〕ルールで正式化まで抑える。4 Skillとの関係は、§1.5のRecommended Prerequisite（SI未経験者のみ「SI Project Literacy L1」）で表す。
 
-**Prerequisite Knowledge（Pass／Not Yet）**
-- SIライフサイクル（要件→設計→開発→テスト→移行→稼働）の各工程が何を確認して次に進むかを説明できる
-- 工程間の主要な受け渡し物（成果物）を挙げられる
-- 兆候を1つ聞いて、後工程への典型的な波及を1つ以上挙げられる
-- その兆候に対して、PgMOとして確認すべき質問を組み立てられる
-- 未発生の不確実事象はRisk、既に発生している問題はIssueとして区別できる。Impact・Urgency、Riskの場合はLikelihoodも踏まえて、対応優先度／Severityを判断できる
+**旧5項目の行き先**
 
-Required Levelは、Strategy Consultant RoleではCapability II自体が対象外（L0基準）のため適用されない。PgMO Role側の`consultant-role-responsibility-model.md`相当の定義がまだないため、Required Levelの確定はそちらの整備を待つ。Skill本体へのPrerequisite Knowledge追加自体は、Role定義を待たずに反映できる。
+| 旧Prerequisite Knowledge項目 | 行き先 |
+|---|---|
+| 各工程が何を確認して次に進むかを説明できる | Prerequisite Knowledge（Pass／Not Yet） |
+| 工程間の主要な受け渡し物を挙げられる | Prerequisite Knowledge（Pass／Not Yet） |
+| 兆候を1つ聞いて、後工程への典型的な波及を挙げられる | L0→L1（指導下で1つ）、L1→L2（工程の異なる2件以上で自力） |
+| PgMOとして確認すべき質問を組み立てられる | L1→L2 |
+| Risk／Issueを区別し、優先度／Severityを判断できる | L1→L2 |
+
+Required Levelは、Strategy Consultant RoleではCapability II自体が対象外（L0基準）のため適用されない。PgMO Role側の定義がまだないため、Required Levelの確定はそちらの整備を待つ。
 
 ---
 
@@ -784,8 +788,8 @@ Required Levelは、Strategy Consultant RoleではCapability II自体が対象�
 - draft維持：全文完成とPilot通過は別ゲート。Pilot結果が出るまではdraftのまま
 
 **残っているアクション**
-- [ ] Chapter 5を使ったPilot（SI未経験者1名）を実施する
-- [ ] Pilotの結果を見て、statusを次の段階へ進めるか判断する
+- [ ] Chapter 5を使ったPilot（SI未経験者1名）を実施する。判定はCapability Model §3.2「SI Project Literacy〔候補〕」のL1→L2行で行う
+- [ ] Pilotの結果を見て、statusを次の段階へ進めるか判断する。進める場合はCapability Modelの〔候補〕を外し、Worksheet・Role側・Directory・索引に反映する（Skill数は25になる）
 - [x] ②のselfstudy／本編「使い方」と Directory／Capability Model から本Frameworkへ導線を追加（repo登録時）
 
 **改訂履歴**
@@ -795,3 +799,4 @@ Required Levelは、Strategy Consultant RoleではCapability II自体が対象�
 - v0.4：Review Round 3（ChatGPT）を反映。①Chapter 7例1の「どちらの仮定が正しいかは結合するまで分からない」を、「仮定を突き合わせないと食い違いが結合まで顕在化しない可能性がある」に修正（PgMOが結合前に発見できるという教材の狙いに合わせた） ②Chapter 2.3早見表の「実質的に未完了の部分が隠れている」を本文（2.1）と揃え「未確定事項がOpen Point／Riskとして管理されていない可能性」に修正 ③Source revision欄がVersionの現在値と紛らわしかったため、外部ソースを持たない新規作成である旨を明記。構造はここで固定。Fact→What it means→What happens next→What PgMO should askの型のまま、Chapter 3（要件・設計）・4（開発・品質）・6（データ移行）・8（Environment／Infrastructure）を新規に本文化。残るCh9・10は新規Chapterではなく1〜8の再編集
 - v0.5：Review Round 4（ChatGPT）を反映。①Chapter 4例2のFactを「単体テストの不具合件数増加」（検出力向上の可能性もあり曖昧）から「後工程での不具合発見割合の増加」（明確な流出シグナル）に修正し、What it means／早見表も整合させた。②Chapter 9を、Chapter順の再掲ではなく症状カテゴリ（A〜H）から疑うべきこと・確認先へ直接ジャンプできる横断索引として新規に本文化 ③Chapter 10を、Chapter別の質問集ではなく質問の目的別（前提を暴く／Ownerを特定する／期限を確認する／影響範囲を広げる／代替策・Risk受容を確認する）の5分類とし、冒頭に再利用可能な6つの問い（何が未確定か／誰が決めるか／いつ決めるか／今は何を仮定しているか／変わったらどこまで影響するか／間に合わなければどうするか）を明記。これにより全10 Chapterの本文が完成。Chapter 5のPilotはFramework完成を待たず並行実施可
 - v0.6：Review Round 5（ChatGPT）を反映。①本文中のChapter掲載順を番号順（1→2→3→4→5→6→7→8→9→10）に並べ替え。執筆順（Ch5→Ch1→Ch2→Ch7→Ch3／4／6／8→Ch9→Ch10）と読み順は別であり、Ch9・Ch10からの「Ch5.2」等の参照を迷わず辿れるよう読み順を優先した ②Chapter 1〜8の各冒頭に共通ガード「これらの質問は、間への波及があるかを見るためであり、個別PJの品質管理を引き取るためではない」を追加し、未経験PgMOが個別PJの品質管理を引き取ってしまう誤読を防止 ③Chapter 9に症状カテゴリI「スケジュール上はつながっているが中身が違う（Consistency）」を追加 ④Chapter 1.1に「工程名は案件で異なり、見るべきは受け渡しと仮置きの連鎖である」旨を追加し、Agile／ハイブリッド案件でも使える地図であることを明示 ⑤Chapter 10冒頭に、6つの問いが②のDependency Register／RAIDへの入力である旨を明記 ⑥ヘッダのVersion／Source revisionから執筆履歴の記述を削除し、履歴は本欄の改訂履歴のみに一元化。レビュー用メモの確認事項を、Round 5での回答を反映して確定事項に更新
+- v0.6.1：Capability Modelへの接続をB案（独立の候補Skill）に変更（2026-09-27 Owner決定）。旧Prerequisite Knowledge 5項目を、知識2項目（Pass／Not Yet）と判断3項目（L0〜L4 Evidence）に分けた。Appendixに A案／B案の比較と旧5項目の行き先を記録

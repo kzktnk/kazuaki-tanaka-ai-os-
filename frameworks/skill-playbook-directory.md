@@ -48,7 +48,7 @@ last_updated: 2026-09-02
 | スキル | 読むもの | 自走できてくると、こんな感じ |
 |---|---|---|
 | Stakeholder Diagnosis | `playbooks/stakeholder-activation-playbook.md` Ch2・Ch3（自習版あり） | 「なぜこの人は動かないのか」を、思い込みでなく本人確認まで含めて言える |
-| Communication | `core/author-voice.md` §3〜4 | 相手（役員／PO等）に合わせて、伝え方を変えられる |
+| Communication | `core/author-voice.md` §3〜4。1枚の中身は `standards/slide-design.md`（試行） | 相手（役員／PO等）に合わせて、伝え方を変えられる |
 | Facilitation | `standards/scn-creation-guide.md` | 議論が広がりすぎたとき、引き戻せる |
 | Influence／Activation | `playbooks/stakeholder-activation-playbook.md` Ch4〜8 | 打ち手を届けて終わりでなく、実際に行動が変わったか確認できる |
 | Governance／Escalation | `playbooks/cross-project-program-management.md` Ch8.5、`playbooks/program-governance-cadence.md` | 何でも上に持っていかず、上げる基準を先に決められる |

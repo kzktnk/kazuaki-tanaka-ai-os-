@@ -84,6 +84,8 @@ Rules:
 - Avoid paragraphs
 - Visuals clarify decisions
 
+How to build the page itself (title wording, left-to-right layout, table axes): `standards/slide-design.md` (draft, trial).
+
 ---
 
 # Email Writing
