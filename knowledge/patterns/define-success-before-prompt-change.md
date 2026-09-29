@@ -36,6 +36,7 @@ LLM-as-a-Judge は流暢さを過大評価し、根拠のない主張を見逃�
 - Easy cases だけ高得点で、例外・高リスクが測られていない  
 - 平均点は高いが、重大失敗が残っている案を採用しようとしている  
 - 修正後に1例だけ見て「直った」としている  
+- 現場検証を1波だけで終え、同じ問いで再確認していない  
 - LLM grader の点数を、人の校正なしに採用している  
 - Accuracy だけ上がり、Latency / Cost / Risk を見ていない  
 
@@ -48,6 +49,7 @@ LLM-as-a-Judge は流暢さを過大評価し、根拠のない主張を見逃�
 - `knowledge/lessons/ai-output-evaluation-terms.md` — 1件の切り方  
 - `knowledge/decisions/buyer-owns-ai-poc-ground-truth.md`  
 - `playbooks/ai-poc-quality-review.md`  
+- `knowledge/patterns/field-practitioner-eval-before-uat.md`  
 - `knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md`  
 - `knowledge/patterns/explicit-before-elaborate-prompt.md` — 介入。失敗の種類で打ち手を選ぶ  
 - `adapters/claude/CLAUDE.md`  

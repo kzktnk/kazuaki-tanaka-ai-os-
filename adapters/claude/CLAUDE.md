@@ -2,7 +2,7 @@
 
 # Claude Adapter
 
-**Version:** v1.7  
+**Version:** v1.8  
 **Status:** Active  
 **Applies to:** Claude (Projects, Artifacts, Skills, Claude Code, connectors)  
 **Document role:** Tool-specific operating card. Does not replace `AI_OPERATING_MANUAL.md`, `CONTEXT_ROUTING.md`, or files under `core/`, `standards/`, `frameworks/`, or `knowledge/`.
@@ -13,7 +13,7 @@
 
 Claude 固有の機能を、仕事の種類に合わせて選ぶ。機能名の暗記ではなく、**何を知っているか / どう振る舞うか / どう進めるか / 何を作るか / 何に繋ぐか**を分ける。
 
-評価語（Accuracy / Completeness / Groundedness 等）は `knowledge/lessons/ai-output-evaluation-terms.md`。Prompt を直す前の成功定義は `knowledge/patterns/define-success-before-prompt-change.md`。明示してから長くするのは `knowledge/patterns/explicit-before-elaborate-prompt.md`。層の選び方は `knowledge/patterns/match-capability-to-context-job.md`。API 境界（判断はモデル、執行はアプリ）は `knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md`。Tool 戻り値は `knowledge/patterns/tool-output-as-untrusted-data.md`。静的 / RAG / ライブの切り方は `knowledge/patterns/choose-access-by-volatility.md`。ガバナンス・監督は `frameworks/`。
+評価語（Accuracy / Completeness / Groundedness 等）は `knowledge/lessons/ai-output-evaluation-terms.md`。Prompt を直す前の成功定義は `knowledge/patterns/define-success-before-prompt-change.md`。明示してから長くするのは `knowledge/patterns/explicit-before-elaborate-prompt.md`。層の選び方は `knowledge/patterns/match-capability-to-context-job.md`。入口は手順を持たない（`knowledge/patterns/skills-point-to-rules-not-source.md`）。API 境界（判断はモデル、執行はアプリ）は `knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md`。Tool 戻り値は `knowledge/patterns/tool-output-as-untrusted-data.md`。静的 / RAG / ライブの切り方は `knowledge/patterns/choose-access-by-volatility.md`。ガバナンス・監督は `frameworks/`。
 
 ---
 
@@ -159,3 +159,4 @@ MCP は接続レイヤであり、Agent でも Security でもない。Tool Use 
 - `knowledge/patterns/tool-output-as-untrusted-data.md`
 - `knowledge/patterns/choose-access-by-volatility.md`
 - `knowledge/patterns/match-capability-to-context-job.md`
+- `knowledge/patterns/skills-point-to-rules-not-source.md`

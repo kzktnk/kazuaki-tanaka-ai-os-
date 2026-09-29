@@ -52,6 +52,7 @@ Recommended next step:
 - 工程が 5 つあるから 5 Agents  
 - 精度が上がるはずだから Subagent  
 - 並列化できるから分ける（依存を見ていない）  
+- 入口・手順・原典の3箱より先に Subagent を組んでいる  
 - Role 名が違うだけで分ける（context / tool / workflow の便益を見ていない）  
 - Subagent が結論だけ返し、根拠と不確実性がない  
 
@@ -62,5 +63,6 @@ Recommended next step:
 ## Related
 
 - `knowledge/patterns/workflow-vs-agent-vs-human.md` — 先に Workflow vs Agent を決める  
+- `knowledge/patterns/skills-point-to-rules-not-source.md` — 3箱が先。並列は後  
 - `knowledge/patterns/mcp-as-integration-not-authority.md` — Tool 面は最小権限  
 - `adapters/claude/CLAUDE.md`  

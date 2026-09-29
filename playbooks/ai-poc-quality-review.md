@@ -2,7 +2,7 @@
 type: playbook
 title: "AI PoC quality review (buyer side)"
 status: active
-last_updated: 2026-08-19
+last_updated: 2026-09-29
 related:
   - standards/vendor-proposal-evaluation.md
   - knowledge/decisions/buyer-owns-ai-poc-ground-truth.md
@@ -11,6 +11,7 @@ related:
   - knowledge/patterns/define-success-before-prompt-change.md
   - knowledge/patterns/choose-access-by-volatility.md
   - knowledge/patterns/match-capability-to-context-job.md
+  - knowledge/patterns/field-practitioner-eval-before-uat.md
 ---
 
 # AI PoC quality review (buyer side)
@@ -26,7 +27,7 @@ related:
 1. 要求との整合  
 2. 評価可能性（入力・期待・指標・判定が事前にあるか）  
 3. 再現可能な客観性  
-4. 業務適合性  
+4. 業務適合性（UAT 前の現場実務者検証を含む）  
 5. 次アクションが決められるか  
 
 精度（検索・Faithfulness 等）と業務適合（使えるか、続けたいか）を混ぜない。Retrieval と Answer も混ぜない。RAG したことと最新であること、正しいことも混ぜない（`knowledge/patterns/choose-access-by-volatility.md`）。安定知識を毎回全文投入したり、ファイル全量をコンテキストに入れたりしない（`knowledge/patterns/match-capability-to-context-job.md`）。
@@ -49,7 +50,7 @@ related:
 
 必須が空なら止める: 対象外、データセット、Ground Truth、定量／定性、件数、評価者、Baseline、再評価、Go 判定、本番への引継ぎ。
 
-「指標を測る」と「未達時に何をするか」を分ける。
+「指標を測る」と「未達時に何をするか」を分ける。UAT の前に現場実務者がプロトタイプを試す仕事は、正解率ではなく現場適合である（`knowledge/patterns/field-practitioner-eval-before-uat.md`）。
 
 ## Evaluation layers
 
@@ -82,4 +83,5 @@ related:
 - `knowledge/patterns/define-success-before-prompt-change.md`
 - `knowledge/patterns/choose-access-by-volatility.md`
 - `knowledge/patterns/match-capability-to-context-job.md`
+- `knowledge/patterns/field-practitioner-eval-before-uat.md`
 - `knowledge/patterns/logical-vs-physical-document-unity.md`  

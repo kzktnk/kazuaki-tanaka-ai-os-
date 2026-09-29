@@ -59,4 +59,5 @@ Relevant context > maximum context
 - `knowledge/patterns/mcp-as-integration-not-authority.md`  
 - `knowledge/patterns/tool-output-as-untrusted-data.md`  
 - `knowledge/patterns/logical-vs-physical-document-unity.md` — 版・権威・AI利用区分  
+- `knowledge/patterns/skills-point-to-rules-not-source.md` — 入口は手順を持たない。原典は毎回読ませない  
 - `adapters/claude/CLAUDE.md` — Claude の Project / Connector 名への写像  

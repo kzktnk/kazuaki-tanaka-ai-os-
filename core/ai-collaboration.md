@@ -44,7 +44,7 @@ Level 3（レビュー相手としての活用）が、最もコンサルタン�
 
 例（RAGの評価について）：「翻訳評価用のBLEUを使うべきです」→ 一般論としては正しくても、案件の文脈や技術要件に合致しない提案。
 
-AIは「選択肢を広げる道具」。最終的な意思決定と妥当性の担保は、常に人間が担う。
+AIは「選択肢を広げる道具」。最終的な意思決定と妥当性の担保は、常に人間が担う。現状と目的は人が入れる。丸投げした足場は、速い感覚と進んだ量をずらす（`knowledge/patterns/skills-point-to-rules-not-source.md`）。
 
 ### 人とAIの役割分担マトリクス
 
@@ -77,6 +77,7 @@ AIは「選択肢を広げる道具」。最終的な意思決定と妥当性の
 - `knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md`（判断は LLM、執行はアプリ）
 - `adapters/claude/CLAUDE.md`（Claude 機能の使い分け）
 - `knowledge/patterns/workflow-vs-agent-vs-human.md`（経路の型。ステップ数だけでは Agent にしない）
+- `knowledge/patterns/skills-point-to-rules-not-source.md`（入口は手順を持たない。人は足場と見極め）
 
 ---
 **レビュー用メモ（Kazuaki記入欄）**

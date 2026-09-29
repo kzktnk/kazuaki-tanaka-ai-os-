@@ -30,10 +30,11 @@ Only the operator knows which miss is operationally unacceptable. Improvement mu
 
 ## Consequences
 
-PoC start includes a ground-truth set and evaluation owner. “It ran” is not a decision.
+PoC start includes a ground-truth set and evaluation owner. “It ran” is not a decision. When field practitioners try a prototype before UAT, ground truth is the expected answer plus the document that should have been retrieved (`knowledge/patterns/field-practitioner-eval-before-uat.md`).
 
 ## Related
 
 - `playbooks/ai-poc-quality-review.md`  
+- `knowledge/patterns/field-practitioner-eval-before-uat.md`  
 - `playbooks/rag-structure-diagnosis.md`  
 - `standards/vendor-proposal-evaluation.md`  

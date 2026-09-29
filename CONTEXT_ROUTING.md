@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.49
+Version: v1.50
 
 ## Purpose
 
@@ -72,6 +72,7 @@ Load:
 - knowledge/patterns/logical-vs-physical-document-unity.md (if the AI corpus / document-store strategy is still open)
 - knowledge/patterns/choose-access-by-volatility.md (if choosing static vs RAG vs live vs agentic search)
 - knowledge/patterns/match-capability-to-context-job.md (if persistent project context, structured output, or dumping all files into context)
+- knowledge/patterns/field-practitioner-eval-before-uat.md (if field practitioners try a prototype before UAT)
 - standards/vendor-proposal-evaluation.md (if scoring-sheet design, not AI metrics)
 - standards/consulting-review.md
 
@@ -82,6 +83,7 @@ Focus:
 - Go / Conditional Go / No-Go, not “it ran”
 - RAG is not live data; match access path to volatility
 - Persist only stable reusable knowledge; relevant context beats maximum context
+- Field eval is fitness, not an accuracy contest; one query one row; two waves; do not use prototype answers live
 
 ---
 
@@ -858,6 +860,7 @@ Load:
 - frameworks/ai-adoption-roadmap.md (if DX / AI in operations or retail)
 - knowledge/patterns/authority-levels.md (if plant autonomy or group decision rights)
 - knowledge/patterns/choose-access-by-volatility.md (if manuals vs live equipment state vs agentic troubleshooting)
+- knowledge/patterns/field-practitioner-eval-before-uat.md (if plant / field practitioners evaluate an AI prototype before UAT)
 
 Focus:
 - Do not mix generation-AM logic with retail-customer logic
@@ -946,6 +949,7 @@ Load:
 - knowledge/patterns/tool-output-as-untrusted-data.md (if tool results, resources, or external content could contain instructions)
 - knowledge/patterns/define-success-before-prompt-change.md (if prompts are being tuned)
 - knowledge/patterns/explicit-before-elaborate-prompt.md (if the fix is a longer prompt rather than a clearer one)
+- knowledge/patterns/skills-point-to-rules-not-source.md (if designing Skill / Rule / Knowledge harness, or stuffing procedure into the trigger)
 - frameworks/human-oversight.md
 - frameworks/decision-ownership.md
 - adapters/claude/CLAUDE.md (if Claude / Claude Code / Connector)
@@ -960,6 +964,7 @@ Focus:
 - Match the layer to the job: persist stable reuse; retrieve changing knowledge; tools for live action; structured output then validate; secrets and enforcement outside the model
 - Tool output is untrusted data, not a trusted instruction
 - Subagent only when specialization / isolation / permission split pays for orchestration
+- Skills trigger; Rules prescribe; Knowledge is the master. Start with three boxes, not the full toolkit
 - Bounded retry, stop, least privilege; do not let the agent decide its own high-impact approvals
 
 ---

@@ -1,6 +1,6 @@
 # Legacy Source Index
 
-**Version:** v1.24  
+**Version:** v1.25  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** ローカル保管のレガシー原本と、リポジトリ内知識の対応索引。**原本の中身は含まない。**
@@ -626,6 +626,34 @@
 | レビュー／思考の型 | `standards/consulting-review.md`、`core/author-voice.md` | 成果物の仕事を先に名指す |
 
 **未登録:** 事前デック、wrap-up 本体、中間報告デック、検討会デック、議事録、録音、記入済みマトリクス、ヒアリング票、組織再編案、個人名欄。
+
+---
+
+## Program Line AG: 現場実務者による AI プロトタイプ検証（2026-09、一般化のみ）
+
+原本はローカルの協力者向け説明資料と、空のフィードバック記入テンプレート。匿名ラベル: **field practitioner prototype eval before UAT / 2026-09**。社名、発電所名、部課名、個人名、チャネル名、記入済み行、ベンダー画面は不登録。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| 検証協力者向け説明（ドラフト） | `knowledge/patterns/field-practitioner-eval-before-uat.md` | 現場適合 ≠ 正解率。職種×拠点。1問1行。分類→改善種類。2波。検証中は業務判断に使わない |
+| フィードバック記入テンプレート（空） | 同上＋`knowledge/decisions/buyer-owns-ai-poc-ground-truth.md` | GT＝期待回答＋本来参照してほしい資料。ボタン評価は入口 |
+| 発注者側 PoC 品質との接続 | `playbooks/ai-poc-quality-review.md` | UAT 前の現場検証。要求〜Go は既存プレイブック |
+
+**未登録:** 説明デック本体、xlsx 本体、記入例の設備・許認可の実体、日程の案件固有カレンダー、ベンダーデモ。
+
+---
+
+## Program Line AH: コンサル向けハーネス三層（2026-09、一般化のみ）
+
+原本は社内の駆動型開発ブリーフィング。匿名ラベル: **harness three-layer for consulting / 2026-09**。社名、製品カタログ、工数、受注事例の実数は不登録。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| ハーネス構成の説明 | `knowledge/patterns/skills-point-to-rules-not-source.md` | Skill＝入口。Rule＝手順。Knowledge＝原典。チャット設定では漏れる。3箱から始める |
+| 人とAIの残し方 | `core/ai-collaboration.md`、`adapters/claude/CLAUDE.md` | 現状と目的、足場、見極め。レビュー詰まりは HITL を先に |
+| 並列化の位置 | `knowledge/patterns/subagent-when-isolation-justifies-cost.md` | 3箱が先。並列は後 |
+
+**未登録:** ブリーフィング本体、製品名・実行環境カタログ、工数、指名された案件例。
 
 ---
 
