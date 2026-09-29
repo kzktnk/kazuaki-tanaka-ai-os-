@@ -4,7 +4,7 @@ type: playbook
 
 # Cross-Project Program Management Playbook
 
-**Version:** v0.9.2  
+**Version:** v0.9.3  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** 複数ベンダー・複数プロジェクトの **「間（あいだ）」** を管理し、依存・境界・整合・統合スケジュール・コントロールを構造化する  
@@ -859,6 +859,10 @@ Dependency Register・Consistency Issue Log・RAID Logから抽出した重要�
 - ②・③によって**前提が崩れた対応方針**を洗い出す。対応方針の文章が変わっていなくても、前提が変われば書き直しの対象になる
 - レビュー担当が付いていない範囲（コメントが1件も入っていない行のまとまり）を明示する
 
+**最終報告での出し方**
+
+本編は決定論点（誰が何を決めれば複数行が同時に解消するか）。行は別紙。1行が複数論点にまたがってよい（件数は延べ）。事実が揃わない観点には対応方針を書かない。横断の場は既存の Control Cycle に載せる。「行ごとの WG」に読める文は出さない。条件付き推奨は選択ではない（`knowledge/patterns/final-cut-hands-over-decision-themes.md`）。
+
 ### レビュー用メモ（本人との議論用）
 - [ ] 直近のWeekly Meetingのアジェンダが、進捗報告会になっていないか
 - [ ] Green/Amber/Redの判定基準を、Varianceの日数など具体的な数値で決めているか
@@ -868,6 +872,7 @@ Dependency Register・Consistency Issue Log・RAID Logから抽出した重要�
 - [ ] 対応方針に、過去日付や実在しない会議体が残っていないか（8.8）
 - [ ] 対応方針が課題1件ごとのWG新設になっておらず、決定論点に束ねられているか（8.8）
 - [ ] 改版時に、事実の訂正や取り下げで前提が崩れた対応方針を洗い出したか（8.8）
+- [ ] 最終本編が決定論点になっており、行ウォークや方式の選択になっていないか（8.8）
 
 ---
 

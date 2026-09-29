@@ -101,7 +101,7 @@ Technology 製品手順はここには書かない → `technology/azure-enterpr
 
 モデルサイトはサイト名ではなく、施策が変わっても使える選定基準である（`knowledge/patterns/activation-first-for-site-led-work.md`）。スポンサー／PMO の持ち主が替わるときは、outgoing で継続を決めない（`knowledge/patterns/stay-then-repropose-on-handover.md`）。
 
-現場が AI プロトタイプを試すときは、正解率ではなく現場適合である。職種・拠点の実務者が問いを入れ、根拠を原本で確かめ、失敗の分類を改善の種類に落とす。UAT の前の仕事である（`knowledge/patterns/field-practitioner-eval-before-uat.md`）。
+現場が AI プロトタイプを試すときは、正解率ではなく現場適合である。職種・拠点の実務者が問いを入れ、根拠を原本で確かめ、失敗の分類を改善の種類に落とす。UAT の前の仕事である（`knowledge/patterns/field-practitioner-eval-before-uat.md`）。複数 PJ の最終報告では、抽出行ではなく決定論点を渡し、次の方式はオプションのまま残す（`knowledge/patterns/final-cut-hands-over-decision-themes.md`）。
 
 標準機能に合わせる範囲はスローガンではない。複数系統を束ねるときの Boundary / Consistency のケースとして、誰が最終判断するかを先に置く（`knowledge/patterns/topology-map-vs-issue-log.md`）。
 
@@ -122,6 +122,7 @@ Technology 製品手順はここには書かない → `technology/azure-enterpr
 - `knowledge/patterns/activation-first-for-site-led-work.md`
 - `knowledge/patterns/stay-then-repropose-on-handover.md`
 - `knowledge/patterns/field-practitioner-eval-before-uat.md`
+- `knowledge/patterns/final-cut-hands-over-decision-themes.md`
 - `knowledge/patterns/topology-map-vs-issue-log.md`
 - `frameworks/ai-adoption-roadmap.md` Initiative B
 - `frameworks/capability-model.md` / `strategic-capability-network.md`

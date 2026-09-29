@@ -34,6 +34,8 @@ type: pattern
 
 「A のアウトプットを B がインプットとして受け取るには用事が足りない」は Dependency と Consistency の境目に出やすい。カテゴリを先に完璧にしなくてよい。行を先に書く。
 
+プログラムの能力マップ（SCN の Capability / Enabler）は、**今見ている範囲に関連するか**のフィルタである。課題の型は5領域のまま。ノード名で行を分類し始めない。最終で本編に載せるのは行ではなく決定論点（`knowledge/patterns/final-cut-hands-over-decision-themes.md`）。事実が揃わない観点（例: Interface の現行仕様が未把握）は、対応方針を書かず残す。
+
 線が増えて図が読みにくくなったら、線は残し、**線ごとに何が流れるか**は別表にする。その表が Dependency Register である。
 
 ---
@@ -87,6 +89,7 @@ type: pattern
 
 - 管理表の本体 → `playbooks/cross-project-program-management.md` Chapter 2–6  
 - SCN を配置図として使ったあと → `knowledge/patterns/scn-as-landscape-not-completeness.md`  
+- 最終報告で行を畳むとき → `knowledge/patterns/final-cut-hands-over-decision-themes.md`  
 - まだ認識されていない隣接案件 → `knowledge/patterns/related-project-external-coordination-radar.md`  
 - レビュー → `standards/consulting-review.md`  
 

@@ -20,7 +20,7 @@
 
 予算が残っていても、業務への配分が未決なら、継続判断はできない。「対応策までやり切る」なら継続の材料になるが、それも incoming の課題感を見たあとである。一度切って報告し、再提案する。
 
-認識合わせの会議は Fix ではない。Fix できないものを、outgoing の最終週に決めさせない。
+認識合わせの会議は Fix ではない。Fix できないものを、outgoing の最終週に決めさせない。最終報告は今契約の断面を渡す場である。決定論点と別紙、スケジュール更新案、条件付き推奨までが仕事。ワークショップ方式の選択とサイト名は incoming（`knowledge/patterns/final-cut-hands-over-decision-themes.md`）。
 
 ## Signals
 
@@ -38,6 +38,7 @@
 
 - `knowledge/patterns/buyer-side-gap-vs-vendor-pmo.md` — 継続 ≠ 増分価値  
 - `knowledge/patterns/interim-as-confirmation-set.md` — 確認セット。オプションはまだ決定ではない  
+- `knowledge/patterns/final-cut-hands-over-decision-themes.md` — 最終は論点を渡す。選択は incoming  
 - `knowledge/patterns/reproposal-as-uncertainty-reduction.md` — 選定の再提案（不確実性→コミット）。本パターンは持ち主交代のあとに仕事を取り直すこと  
 - `knowledge/patterns/pgmo-presence-via-client-stance.md` — 姿勢はクライアント側に置く  
 - `knowledge/patterns/decision-ownership.md`  

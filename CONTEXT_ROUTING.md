@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.50
+Version: v1.51
 
 ## Purpose
 
@@ -447,6 +447,7 @@ Load:
 - knowledge/patterns/pgmo-presence-via-client-stance.md (if process pack runs but client trust / proposal value still sits with a long-trusted specialist PM)
 - knowledge/patterns/buyer-side-gap-vs-vendor-pmo.md (if vendor PMO coverage is being treated as buyer-side gap management)
 - knowledge/patterns/stay-then-repropose-on-handover.md (if sponsor / PMO owner is changing and the next phase is being locked from the outgoing seat)
+- knowledge/patterns/final-cut-hands-over-decision-themes.md (if a final report walks issue rows, or treats a schedule update / workshop option as locked)
 - knowledge/patterns/transformation-practice-case-pack.md (if packaging internal transformation practice cases / MM learning packs—not client status)
 - standards/deliverable-archetypes.md Archetype J (if customer-facing weekly/monthly status is the deliverable—not SteerComm)
 - knowledge/patterns/project-management-policy-layer.md (if vendor/project “management policy” TOC, progress measure, issue/risk/ToDo, or change-vs-baseline boundaries are weak)
@@ -479,6 +480,7 @@ Focus:
 - PgMO presence: client-side PM/PO stance; ally with trusted incumbent before client; intersection-point risk → monthly→weekly reverse tracking
 - Buyer-side gap: vendor PMO is not ハザマ management; continuation is not next-phase value; surface go-live-path risks in monthly
 - Handover stay: finish the current cut, brief the incoming owner, then re-propose; budget remaining is not allocated work
+- Final cut: hand over decision themes, not the extraction; schedule update is a proposal; next-mode options stay options
 - Phase 1 controlled document set (policy, roadmap, meeting pack) vs live minutes
 - Project-layer PM policy vs program control (measurement, registers, fact-check before escalate)
 - Change management: stakeholder progression (Awareness → Ownership); readiness and strategy in `change-management.md`
@@ -504,6 +506,7 @@ Load:
 - knowledge/patterns/hybrid-talent-in-transformation.md (if reform will not stick)
 - knowledge/patterns/formulation-comms-vs-adoption-comms.md (if roadmap workshops are collapsed into adoption comms)
 - knowledge/patterns/stay-then-repropose-on-handover.md (if the DX owner is changing and workshop options are being locked outgoing)
+- knowledge/patterns/final-cut-hands-over-decision-themes.md (if a closing pack walks issue rows or picks the workshop mode)
 - domains/public-defense.md (if the sponsor is a public / research body — buyer constraints only)
 
 Focus:
@@ -568,6 +571,7 @@ Load:
 - knowledge/patterns/activation-first-for-site-led-work.md (if a named-person roster or model site is being filled before HQ-vs-site-led sort, verification theme, or selection criteria)
 - knowledge/patterns/interim-as-confirmation-set.md (if involvement vs calendar is being resolved by silently thinning the field, or an interim deck dumps the working extraction)
 - knowledge/patterns/stay-then-repropose-on-handover.md (if workshop options or October accompaniment are being locked by the outgoing owner)
+- knowledge/patterns/final-cut-hands-over-decision-themes.md (if a final CM pack treats workshop mode or site name as decided)
 - playbooks/operations-transition-playbook.md (if the change is ops take-on / adoption after realization)
 - standards/pmo-operating-guide.md (§Change Management Operating Standard)
 - frameworks/transformation-pmo.md (if program-owned change)

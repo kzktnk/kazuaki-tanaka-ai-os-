@@ -30,7 +30,7 @@
 | ハイブリッド | 上位の方向付け＋重点テーマだけ共同検討 | テーマを絞る必要がある |
 | 現場協働 | 実態を反映した詳細 | 期間と並行リソースが要る |
 
-オプションカードを出しただけでは、選択を求められない。各案について、各回で何を決めるかのリストと線表が先である。ゴール（多年ロードマップ）は、どの型でも同じことが多い。持ち主が替わる局面では、outgoing 側で型を選ばせない（`knowledge/patterns/stay-then-repropose-on-handover.md`）。
+オプションカードを出しただけでは、選択を求められない。各案について、各回で何を決めるかのリストと線表が先である。ゴール（多年ロードマップ）は、どの型でも同じことが多い。持ち主が替わる局面では、outgoing 側で型を選ばせない（`knowledge/patterns/stay-then-repropose-on-handover.md`）。最終報告では、確認セットを決定論点へ畳み、行は別紙に残す（`knowledge/patterns/final-cut-hands-over-decision-themes.md`）。
 
 ワークショップはテーマごとに呼び分ける。名簿を先に厚くしない（`knowledge/patterns/activation-first-for-site-led-work.md`）。策定の場と定着の場は混ぜない（`knowledge/patterns/formulation-comms-vs-adoption-comms.md`）。
 
@@ -55,6 +55,7 @@
 - `knowledge/patterns/formulation-comms-vs-adoption-comms.md` — 策定の場 vs 定着の場  
 - `knowledge/patterns/activation-first-for-site-led-work.md` — 役割先行、名簿は後  
 - `knowledge/patterns/stay-then-repropose-on-handover.md` — 持ち主交代ではオプション選択を outgoing に求めない  
+- `knowledge/patterns/final-cut-hands-over-decision-themes.md` — 最終は決定論点。行は別紙  
 - `standards/consulting-review.md` — Artifact Job  
 - `standards/deliverable-archetypes.md` — Archetype C / F  
 - `core/author-voice.md`  
