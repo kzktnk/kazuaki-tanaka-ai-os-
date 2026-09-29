@@ -34,6 +34,8 @@ last_updated: 2026-08-03
 
 順序を逆にしない。Howから始めると、目的なきツール導入（「とりあえずAIを入れる」）になりやすい。
 
+顧客の問いが How から始まっているときは、How を Key Question にしない。What を問い、How は仮説の枝に置く。採用した読みは冒頭1行で残す（`knowledge/patterns/issue-structuring-reserves-three-judgments.md`）。前回頓挫した打ち手から検証を始めない。
+
 ## Inputs
 - 対象テーマ（施策・提案・構想の対象）
 - なぜそれが必要とされているかの背景情報（環境変化、課題感など）
@@ -48,7 +50,7 @@ Whyについて複数のステークホルダー間で合意が取れていな�
 Howから書き始めてWhyを後付けすると、目的なきツール導入を正当化するための「見た目だけの構造化」になる。
 
 ## 関連ファイル
-AIプロンプト例・AIレビュー観点は `references/thinking-patterns-reference.md` のPattern 1行を参照。
+AIプロンプト例・AIレビュー観点は `references/thinking-patterns-reference.md` のPattern 1行を参照。How 先行の読み方は `knowledge/patterns/issue-structuring-reserves-three-judgments.md`。
 
 ---
 **レビュー用メモ（Kazuaki記入欄）**

@@ -52,7 +52,7 @@ Skill 本文に制約や長い手順を書くと、発動のたびに全体が�
 
 調査では、支持する事実と支持しない事実の両方を取る。平均点や賛成材料だけでは仮説を固めない。
 
-始め方: 入口・手順・原典の3箱。並列化・MCP・検証ループは余力ができてから。
+始め方: 入口・手順・原典の3箱。並列化・MCP・検証ループは余力ができてから。最初の入口の実体は `.cursor/skills/issue-structuring/SKILL.md`（手順は `standards/strategy-engagement-guide.md`）。人が残す3点は `knowledge/patterns/issue-structuring-reserves-three-judgments.md`。
 
 ## Signals
 
@@ -76,3 +76,5 @@ Skill 本文に制約や長い手順を書くと、発動のたびに全体が�
 - `core/ai-collaboration.md` — 人は判断を残す  
 - `adapters/claude/CLAUDE.md`  
 - `CONTEXT_ROUTING.md`  
+- `knowledge/patterns/issue-structuring-reserves-three-judgments.md` — 論点整理で人が残す3点  
+- `.cursor/skills/issue-structuring/SKILL.md` — 最初の入口の実体  

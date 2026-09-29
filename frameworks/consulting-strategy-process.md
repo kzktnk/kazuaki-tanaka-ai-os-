@@ -1,6 +1,6 @@
 # Consulting Strategy Process (COS Tools & Techniques)
 
-**Version:** v1.0  
+**Version:** v1.1  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Source:** Legacy consulting strategy training materials (2001), generalized and anonymized. Original PDFs remain local; not committed.
@@ -290,6 +290,8 @@ Score options against explicit criteria; the option meeting most criteria (with 
 | Tool-first consulting | Framework slides without so-whats | Every analysis ends in "so what for the key question" |
 | Analysis paralysis | Scope creep, no end product | Analysis plan with end products and storyboard early |
 | Criteria after the fact | Recommendations client won't adopt | Capture Criteria in 4Cs before deep analysis |
+| How-first question | The named tool or offering becomes the key question | Adopt a What reading; park How on a hypothesis branch |
+| Criteria inferred as fact | AI locks an unstated decision axis | Leave Criteria as `【要判断】` until the decision maker names it |
 | Scenario as prediction | Single future assumed | Multiple scenarios; test strategies across them |
 
 ---
@@ -302,3 +304,4 @@ Score options against explicit criteria; the option meeting most criteria (with 
 - `frameworks/sap-implementation-phase-model.md` — ERP evaluation and project preparation (Phase 0–1)
 - `CONTEXT_ROUTING.md` — Strategy Engagement route
 - `knowledge/index/legacy-source-index.md` — Program Line F (source index)
+- `knowledge/patterns/issue-structuring-reserves-three-judgments.md` — AI 論点整理で人が残す点

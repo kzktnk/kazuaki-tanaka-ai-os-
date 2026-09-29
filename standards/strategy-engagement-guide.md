@@ -1,6 +1,6 @@
 # Strategy Engagement Guide
 
-**Version:** v1.0  
+**Version:** v1.1  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Framework:** `frameworks/consulting-strategy-process.md`
@@ -44,10 +44,10 @@ Operational standard for **running strategy consulting engagements** — problem
 **Template (blank):**
 
 ```
-Context:
-Client:
-Criteria:
-Constraints:
+Context:      [事実 / 仮定 / 不明]  出典:
+Client:       [事実 / 仮定 / 不明]  出典:
+Criteria:     [事実 / 仮定 / 不明]  出典:
+Constraints:  [事実 / 仮定 / 不明]  出典:
 Question:
 ```
 
@@ -57,6 +57,8 @@ Question:
 - [ ] Criteria reflect how the client will actually decide
 - [ ] Client = decision maker, not only sponsor or project manager
 - [ ] Reviewed iteratively with key stakeholders
+
+**AI-assisted first pass:** Key Question の一文、実際の Criteria、検証の着手順は人が決める。候補は `【要判断】` に残す。ユーザー不在でも止まらず、採用した読みを冒頭1行で書く。顧客の問いが打ち手先行なら、How は仮説の枝に置く（`knowledge/patterns/issue-structuring-reserves-three-judgments.md`）。Cursor の入口は `.cursor/skills/issue-structuring/SKILL.md`。
 
 ---
 
@@ -104,12 +106,12 @@ Question:
 | **Hypothesis** | Likely resolution and rationale |
 | **Analysis** | Models/analyses to test hypothesis |
 | **Information source** | Where data comes from |
-| **End product** | Graphic or exhibit showing the "so what" |
+| **End product** | Graphic or exhibit showing the "so what" — 「どの図で、何が言えるか」まで書く |
 
 **Derived artifacts (in order):**
 
 1. **Analysis plan** — consensus on what proves/disproves each issue
-2. **Storyboard** — storyline chapters (each readable standalone)
+2. **Storyboard** — 各章のメッセージ1文（章タイトル）。この工程ではスライド化しない
 3. **Work plan** — tasks, timing, responsibility (include client vs consultant ownership)
 4. **Formal agreement** — scope, deliverables, staffing, timing, contingencies
 
@@ -327,7 +329,7 @@ Before final delivery:
 - [ ] 4Cs & 1Q signed off (iteratively) with client
 - [ ] Logic tree MECE and linked to key question
 - [ ] Analysis plan with end products and storyboard draft
-- [ ] Work plan with client/consultant responsibilities
+- [ ] Work plan with client/consultant responsibilities（論点整理の入口工程では範囲外・次工程でよい）
 
 **Mid-engagement:**
 
@@ -350,3 +352,5 @@ Before final delivery:
 - `frameworks/program-phases-investigation-to-requirements.md` — phased public-sector style investigations
 - `standards/writing.md` — executive communication
 - `standards/consulting-review.md` — document review lens
+- `knowledge/patterns/issue-structuring-reserves-three-judgments.md` — 人が残す3点。打ち手先行の読み
+- `.cursor/skills/issue-structuring/SKILL.md` — Cursor の入口

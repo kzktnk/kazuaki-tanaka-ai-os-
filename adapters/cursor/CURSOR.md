@@ -2,7 +2,7 @@
 
 # Cursor Adapter
 
-**Version:** v0.9 Bootstrap  
+**Version:** v0.10  
 **Status:** Active  
 **Applies to:** Cursor Desktop and repository-aware Cursor agents  
 **Document role:** Tool-specific execution instructions for using the Kazuaki Tanaka AI OS in Cursor
@@ -509,6 +509,8 @@ Cursor should:
 - avoid uncontrolled repository-wide rewrites
 - explain why a file should be created, changed, merged, or removed
 - identify when a task creates migration candidates
+
+Project skills live in `.cursor/skills/`. They are triggers, not a second source of truth. The first Skill is issue structuring (`.cursor/skills/issue-structuring/SKILL.md`): load `standards/strategy-engagement-guide.md` Step 1–3; reserve Key Question, Criteria, and verification order for the human (`knowledge/patterns/issue-structuring-reserves-three-judgments.md`). Do not paste procedure into the Skill body.
 
 ---
 

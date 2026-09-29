@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.51
+Version: v1.52
 
 ## Purpose
 
@@ -204,10 +204,13 @@ Load:
 - playbooks/wbs-design.md (if Gate 2 WBS detailing is being pulled into the strategy phase)
 - standards/writing.md
 - core/author-voice.md
+- knowledge/patterns/issue-structuring-reserves-three-judgments.md (if scoping, first-pass trees, or a How-first client question)
+- .cursor/skills/issue-structuring/SKILL.md (if the task is to produce the issue-structuring memo)
 - Relevant project context (non-confidential)
 
 Focus:
 - 4Cs & 1Q problem definition (iterative, stakeholder-aligned)
+- Reserve Key Question, Criteria, and verification order; name the adopted reading; put How on a hypothesis branch
 - MECE logic trees (deductive, hypothesis, issue map)
 - Analysis plan → storyboard → work plan chain
 - Strategy situation assessment (3-Cs, internal/external)

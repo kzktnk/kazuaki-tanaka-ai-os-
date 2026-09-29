@@ -1,6 +1,6 @@
 # Legacy Source Index
 
-**Version:** v1.26  
+**Version:** v1.27  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** ローカル保管のレガシー原本と、リポジトリ内知識の対応索引。**原本の中身は含まない。**
@@ -655,6 +655,19 @@
 | 並列化の位置 | `knowledge/patterns/subagent-when-isolation-justifies-cost.md` | 3箱が先。並列は後 |
 
 **未登録:** ブリーフィング本体、製品名・実行環境カタログ、工数、指名された案件例。
+
+---
+
+## Program Line AI: 論点整理スキル試験（2026-09、一般化のみ）
+
+原本は Cursor Skill 草案と、架空事例の第一稿。匿名ラベル: **issue-structuring skill / 2026-09**。架空社の数値・競合ラベル・役職読み、試験出力本体は不登録。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| Skill 草案 | `.cursor/skills/issue-structuring/SKILL.md` | 入口のみ。手順は engagement guide。人が残す3点 |
+| 架空第一稿（試験） | `knowledge/patterns/issue-structuring-reserves-three-judgments.md` | 採用した読みを冒頭1行。How は仮説の枝。支持と反証。未確認を空欄にしない |
+
+**未登録:** 試験出力本体、面談メモ、架空事例の数量。
 
 ---
 
