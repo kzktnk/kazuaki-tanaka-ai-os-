@@ -9,7 +9,7 @@ type: playbook
 **Owner:** Kazuaki Tanaka  
 **Purpose:** AMS・インフラ運用・AI運用への **移行設計** と、運用開始後の **定着化** を Transition Manager 一人称で進める  
 **Use when:** 実現化工程の後半から運用へ渡す、他社運用の take-on、定着が「説明した」で止まっている  
-**Do not use as-is for:** 日々の運用実務そのもの、PJ 間の統合管理（`playbooks/cross-project-program-management.md`）、戦略〜Gate 1（`playbooks/strategy-scn.md`）、個々の相手を動かす技術（`playbooks/stakeholder-activation-playbook.md`）、全社 AI ガバナンス（`frameworks/ai-governability.md`）  
+**Do not use as-is for:** 日々の運用実務そのもの、PJ 間の統合管理（`playbooks/cross-project-program-management.md`）、戦略〜Gate 1（`playbooks/strategy-scn.md`）、個々の相手を動かす技術（`playbooks/stakeholder-activation-playbook.md`）、全社 AI ガバナンス（`frameworks/ai-governability.md`）、アプリケーション／データのカットオーバー（`knowledge/patterns/cutover-risk-families-then-four-controls.md`）  
 **Source revision:** local Operations Transition Playbook 2026-08-29（Gate 3–5 / Core vs Experimental / selfstudy pair）
 
 Pairs with `frameworks/delivery-leadership.md`（service introduction）、`frameworks/service-transition-approach.md`（take-on）、`frameworks/ams-services-pyramid.md` / `frameworks/application-outsourcing-solution-planning.md`（工数）、`frameworks/infrastructure-outsourcing-solution-planning.md`、`frameworks/change-management.md`（定着）。上流②の Gate 2 のあと、Gate 3〜5 で接続する。相手を実際に動かす技術は `playbooks/stakeholder-activation-playbook.md`。Chapter 5・6 は Experimental（`ai-operations-role-design.md` 未登録）。一人で読むときは `playbooks/operations-transition-playbook-selfstudy.md`。

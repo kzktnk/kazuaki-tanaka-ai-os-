@@ -1,10 +1,10 @@
 # Knowledge Master Index
 
-**Version:** v1.45  
+**Version:** v1.46  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
-**Last updated:** 2026-09-29
+**Last updated:** 2026-10-02
 
 ---
 
@@ -76,9 +76,9 @@ kazuaki-tanaka-ai-os/
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
-│   ├── patterns/               ← 61 distilled patterns
+│   ├── patterns/               ← 62 distilled patterns
 │   ├── lessons/                ← 5 lessons
-│   ├── migrations/             ← 59 migration reports
+│   ├── migrations/             ← 60 migration reports
 │   └── decisions/              ← 4 records
 ├── templates/                  ← 1 template
 ├── prompts/                    ← README placeholder
@@ -251,7 +251,7 @@ knowledge/
 │       ├── 001–022/                  ← Operational AI main series
 │       ├── sp01–sp09/                ← special posts
 │       └── erf01–erf03/              ← Enterprise Redesign Framework
-├── patterns/                         ← 61 files (see table below)
+├── patterns/                         ← 62 files (see table below)
 ├── lessons/
 │   ├── governance-messaging.md
 │   ├── dual-roadmap-messaging.md
@@ -316,7 +316,8 @@ knowledge/
 │   ├── slide-design-and-candidate-skills-2026-09.md
 │   ├── field-eval-and-harness-three-layer-2026-09.md
 │   ├── final-cut-decision-themes-2026-09.md
-│   └── issue-structuring-skill-2026-09.md
+│   ├── issue-structuring-skill-2026-09.md
+│   └── cutover-risk-governance-2026-10.md
 └── decisions/
     ├── diagnose-from-gateway-not-client-error.md
     ├── sandbox-cost-controls-before-resources.md
@@ -324,7 +325,7 @@ knowledge/
     └── buyer-owns-ai-poc-ground-truth.md
 ```
 
-### Patterns (61)
+### Patterns (62)
 
 | Pattern | Primary themes |
 |---------|----------------|
@@ -389,6 +390,7 @@ knowledge/
 | `skills-point-to-rules-not-source.md` | Skill triggers; Rule prescribes; Knowledge is master; chat settings leak; start with 3 boxes |
 | `final-cut-hands-over-decision-themes.md` | Final cut hands over decision themes, not rows; schedule update is a proposal; next-mode options stay options |
 | `issue-structuring-reserves-three-judgments.md` | Reserve Key Question, Criteria, and verification order; adopt a reading; put How on a hypothesis branch |
+| `cutover-risk-families-then-four-controls.md` | Cutover ≠ take-on; five risk families; choose among pilot / rollback / parallel / test; no second PMO |
 
 ---
 
@@ -1359,6 +1361,25 @@ CONTEXT_ROUTING.md  →  Strategy Engagement
 
 ---
 
+### AV. Cutover risk families then four controls (2026-10)
+
+```text
+Local generic migration-risk brief — PDF not archived
+        ↓ generalize (take-on, introduction vs transition, stepwise change, RAID already ingested)
+knowledge/patterns/cutover-risk-families-then-four-controls.md
+        ↓ connect
+knowledge/patterns/transition-vs-transformation-vs-realization.md
+knowledge/patterns/all-at-once-vs-stepwise-change.md
+frameworks/service-transition-approach.md
+playbooks/operations-transition-playbook.md
+        ↓ record
+knowledge/migrations/cutover-risk-governance-2026-10.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  SI Proposal; Delivery Leadership; AMS
+```
+
+---
+
 ## Level 4 — CONTEXT_ROUTING Task Map (summary)
 
 Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
@@ -1385,10 +1406,10 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | Public sector / defense IT | `domains/public-defense.md`, `public-it-procurement-support.md` (if buyer), `buyer-vs-seller-in-public-procurement.md`, shared-operator pattern + multi-lot construction PMO playbook if concurrent lots, `related-project-external-coordination-radar.md` if adjacent/external coordination |
 | Private IT RFP / vendor selection | `frameworks/private-it-rfp.md`, `playbooks/private-it-rfp-vendor-selection.md`, `vendor-proposal-evaluation.md`, calibration / re-proposal patterns |
 | Development standards / build / FIS audit mapping | `development-standards-framework.md`, related build standards, `document-id-registry.md` when assigning AIOS-REC/COV/BLD IDs, `fis-system-audit-as-assurance.md` when audit guidance or tech/ops/facility criteria apply, `project-management-policy-layer.md` when vendor PM-policy chapter applies |
-| Application outsourcing / AMS | `application-outsourcing-solution-planning.md`, `ams-services-pyramid.md`, `service-transition-approach.md`, `ams-solution-plan-checklist.md`, `playbooks/operations-transition-playbook.md` (if Transition Manager coaching) |
+| Application outsourcing / AMS | `application-outsourcing-solution-planning.md`, `ams-services-pyramid.md`, `service-transition-approach.md`, `ams-solution-plan-checklist.md`, `playbooks/operations-transition-playbook.md` (if Transition Manager coaching), `cutover-risk-families-then-four-controls.md` if the work is moving applications / data not taking on run |
 | Infrastructure outsourcing / ITO | `infrastructure-outsourcing-solution-planning.md`, `transition-vs-transformation-vs-realization.md`, `playbooks/operations-transition-playbook.md` (if take-on coaching) |
-| Systems integration / SI proposal | `systems-integration-solution-planning.md`, `estimate-target-commitment.md` |
-| Delivery leadership | `delivery-leadership.md`, `transformation-pmo.md`, `change-management.md`, `playbooks/operations-transition-playbook.md` (if service introduction / take-on) |
+| Systems integration / SI proposal | `systems-integration-solution-planning.md`, `estimate-target-commitment.md`, `cutover-risk-families-then-four-controls.md` if the program is moving applications / data |
+| Delivery leadership | `delivery-leadership.md`, `transformation-pmo.md`, `change-management.md`, `playbooks/operations-transition-playbook.md` (if service introduction / take-on), `cutover-risk-families-then-four-controls.md` if cutover risk is collapsed into one row or a second Migration PMO is proposed |
 | Azure / private API / sandbox cost | `technology/azure-enterprise.md`, connectivity and cost playbooks, related `decisions/` |
 | LinkedIn / Note writing | `standards/writing.md` (§De-AI Writing Pass), series `source/`, related `patterns/` and `frameworks/` |
 | Knowledge migration | `AI_OPERATING_MANUAL.md`, source asset, migration workflow |

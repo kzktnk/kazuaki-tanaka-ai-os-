@@ -9,7 +9,7 @@ type: playbook
 **Owner:** Kazuaki Tanaka  
 **Purpose:** AMS・インフラ運用・AI運用への **移行設計** と定着化を、一人で読み進めながら Transition Manager として進める  
 **Use when:** 実現化工程の後半から運用へ渡す、他社運用の take-on、定着が「説明した」で止まっている（指導者なし）  
-**Do not use as-is for:** 日々の運用実務そのもの、②の PJ 間統合、①の戦略〜Gate 1、個々の相手を動かす技術（横串）、全社 AI ガバナンス  
+**Do not use as-is for:** 日々の運用実務そのもの、②の PJ 間統合、①の戦略〜Gate 1、個々の相手を動かす技術（横串）、全社 AI ガバナンス、アプリケーション／データのカットオーバー（本編の対応パターンを見る）  
 **Source:** ③本編（`playbooks/operations-transition-playbook.md`）の自己学習版。2026-08-29。主張・型・表・演習は本編と同一。パス参照は冊名・章番号に置き換え。
 
 Chapter 5・6 は Experimental。AI 運用を伴わない案件では読み飛ばしてよい。

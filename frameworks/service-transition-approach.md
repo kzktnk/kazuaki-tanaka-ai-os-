@@ -13,7 +13,7 @@ Define how to **plan and execute service transition** from client incumbent or i
 
 Transition is where most outsourcing deals fail or succeed. This framework covers **Phase 4** of `frameworks/application-outsourcing-solution-planning.md`.
 
-Do not use this file as a stand-in for **client transformation**, **solution realization**, or **service introduction** (new system into existing ops). Distinguish those jobs: `knowledge/patterns/transition-vs-transformation-vs-realization.md`. IO take-on shape is in `frameworks/infrastructure-outsourcing-solution-planning.md`. SI build-to-ops handoff is in `frameworks/delivery-leadership.md`.
+Do not use this file as a stand-in for **client transformation**, **solution realization**, or **service introduction** (new system into existing ops). Distinguish those jobs: `knowledge/patterns/transition-vs-transformation-vs-realization.md`. Application / data **cutover** (moving systems, not standing up run) is `knowledge/patterns/cutover-risk-families-then-four-controls.md`. IO take-on shape is in `frameworks/infrastructure-outsourcing-solution-planning.md`. SI build-to-ops handoff is in `frameworks/delivery-leadership.md`.
 
 ---
 

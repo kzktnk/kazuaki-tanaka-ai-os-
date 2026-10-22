@@ -118,7 +118,7 @@ Poor mobilization is a root cause of delivery failure. Detect gaps vs solution a
 
 **Service transition** (stand up run): new operating unit, processes, catalog, possible staff transfer. Deliverables include service/operating model, KT sign-off, readiness checklist, 30–60–90, exit criteria.
 
-Do not staff warranty like run, or introduction like a full outsourcing take-on.
+Do not staff warranty like run, or introduction like a full outsourcing take-on. Application / data cutover risk is five families and four controls, not a second PMO (`knowledge/patterns/cutover-risk-families-then-four-controls.md`).
 
 ---
 
@@ -158,5 +158,6 @@ Vendor/alliance management is a program workstream when third parties sit on the
 - `frameworks/change-management.md`
 - `playbooks/operations-transition-playbook.md` — Transition Manager coaching (introduction / take-on / adoption)
 - `frameworks/service-transition-approach.md`
+- `knowledge/patterns/cutover-risk-families-then-four-controls.md`
 - `knowledge/patterns/estimate-target-commitment.md`
 - `knowledge/migrations/si-delivery-leadership-2026-08.md`

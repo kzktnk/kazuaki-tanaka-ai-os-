@@ -1,6 +1,6 @@
 # Legacy Source Index
 
-**Version:** v1.27  
+**Version:** v1.28  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** ローカル保管のレガシー原本と、リポジトリ内知識の対応索引。**原本の中身は含まない。**
@@ -668,6 +668,18 @@
 | 架空第一稿（試験） | `knowledge/patterns/issue-structuring-reserves-three-judgments.md` | 採用した読みを冒頭1行。How は仮説の枝。支持と反証。未確認を空欄にしない |
 
 **未登録:** 試験出力本体、面談メモ、架空事例の数量。
+
+---
+
+## Program Line AJ: 大規模IT移行のリスク／ガバナンス概説（2026-10、一般化のみ）
+
+原本はローカル PDF。匿名ラベル: **cutover risk families / four controls / 2026-10**。社名、記入済み登録、点数は不登録。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| 移行リスク／ガバナンス概説 | `knowledge/patterns/cutover-risk-families-then-four-controls.md` | カットオーバー ≠ take-on。5家族。Pilot / Rollback / Parallel / Test は選択。第二 PMO を作らない |
+
+**未登録:** PDF 本体、サンプル登録の行。
 
 ---
 

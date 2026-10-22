@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.52
+Version: v1.53
 
 ## Purpose
 
@@ -747,6 +747,7 @@ Load:
 - frameworks/sap-implementation-phase-model.md (if SAP AM / post-go-live scope)
 - frameworks/transformation-pmo.md (if large transition program)
 - playbooks/operations-transition-playbook.md (if coaching a Transition Manager through introduction / take-on / adoption)
+- knowledge/patterns/cutover-risk-families-then-four-controls.md (if the work is moving applications / data, not taking on run)
 - standards/operations-handover-guide.md (if handover from implementation partner)
 - standards/vendor-proposal-evaluation.md (if client-side evaluation mirror)
 - frameworks/infrastructure-outsourcing-solution-planning.md (if bundled AO+IO or infra towers)
@@ -807,6 +808,7 @@ Load:
 - knowledge/patterns/estimate-target-commitment.md
 - frameworks/delivery-leadership.md (if handoff or post-signature)
 - knowledge/patterns/transition-vs-transformation-vs-realization.md (if go-live support / warranty)
+- knowledge/patterns/cutover-risk-families-then-four-controls.md (if the program is moving applications / data, not standing up run)
 - frameworks/application-outsourcing-solution-planning.md (if AM after build)
 - frameworks/infrastructure-outsourcing-solution-planning.md (if infra towers bundled)
 - core/author-voice.md
@@ -819,6 +821,7 @@ Focus:
 - Negotiation vs solution contingency; contract relief not eaten by contingency
 - Tick and tie: estimate, commercial, SOW, Solution Plan
 - Deliverable = thing not action
+- Application / data cutover ≠ ops take-on; five risk families; choose four controls; no second Migration PMO
 
 Outputs:
 - SI Solution Plan
@@ -836,6 +839,7 @@ Load:
 - frameworks/transformation-pmo.md
 - frameworks/change-management.md
 - knowledge/patterns/transition-vs-transformation-vs-realization.md
+- knowledge/patterns/cutover-risk-families-then-four-controls.md (if application / data cutover risk or a second Migration PMO is being stood up)
 - frameworks/service-transition-approach.md (if outsourcing take-on)
 - core/author-voice.md
 - standards/pmo-operating-guide.md (if program office)
@@ -846,6 +850,7 @@ Focus:
 - ODE vs EAC; no surprises in transition
 - Introduction vs transition vs warranty
 - Release at a rate the organization can absorb
+- Cutover risk is families then controls; do not stand up a second PMO to track the move
 
 Outputs:
 - Mobilization and expectation plan

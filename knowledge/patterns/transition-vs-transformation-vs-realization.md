@@ -20,6 +20,8 @@ Outsourcing and SI programs fail when **different jobs share one plan and one bu
 
 Transition on a **moving** estate (transformation in flight) multiplies delivery risk. Realization **during** transition does the same. Introduction into an unready support org fails silently after the build team leaves.
 
+Estate / application / data **cutover** is usually introduction plus SI execution, not take-on. Do not put the data move and the run-org stand-up on one plan and one budget. Risk families and the four controls (pilot / rollback / parallel / test) are `knowledge/patterns/cutover-risk-families-then-four-controls.md`.
+
 Accounting: true transformation is not the same as transition (cost to establish run). Do not relabel to dress the P&L. Introduction is a build workstream, not an outsourcing take-on.
 
 ## Tests
@@ -39,3 +41,4 @@ Accounting: true transformation is not the same as transition (cost to establish
 - `playbooks/operations-transition-playbook.md`
 - `frameworks/change-management.md`
 - `knowledge/patterns/all-at-once-vs-stepwise-change.md`
+- `knowledge/patterns/cutover-risk-families-then-four-controls.md`

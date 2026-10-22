@@ -23,7 +23,10 @@ Use when commitment and skill must be earned, or value can be released in slices
 - Does each step transfer **ownership**, or only install software?  
 - Is “temporary” dual running time-boxed with a kill date?
 
+アプリケーション／データのカットオーバーでは、一度きり／段階の選択に、Pilot・Rollback・Parallel・Test のどれを使うかを添える。四つを貼って対策済みとしない（`knowledge/patterns/cutover-risk-families-then-four-controls.md`）。
+
 ## Related
 
 - `frameworks/change-management.md`
 - `domains/energy-utilities.md` (continuity vs transformation investments — related but not the same cut)
+- `knowledge/patterns/cutover-risk-families-then-four-controls.md`
