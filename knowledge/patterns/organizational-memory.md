@@ -72,6 +72,8 @@ See also `frameworks/ai-role-maturity.md` §Education Design Principles.
 - `knowledge/patterns/memory-at-decision.md` — return memory at the next decision (No.21)
 - `knowledge/patterns/standard-as-learned-memory.md` — whether learned exceptions should change the standard (No.22)
 - `knowledge/patterns/expertise-amplification.md` — expert judgment in the moment
+- `knowledge/patterns/human-reserved-two-rationales.md` — Authority vs Development; who still decides, and who still learns (No.23–24, draft)
+- `knowledge/patterns/experience-preserving-ai-workflow.md` — how juniors still meet the evidence that becomes memory (No.25, draft)
 - `knowledge/patterns/operational-reality.md` — tacit knowledge and exceptions as memory content
 - `knowledge/patterns/authority-levels.md` — who may act; memory informs what was learned
 - `knowledge/patterns/decision-ownership.md` — ownership without memory loses institutional learning

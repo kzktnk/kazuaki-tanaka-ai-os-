@@ -139,6 +139,7 @@ Use both: general maturity for enterprise assessment; role maturity for AI progr
 - `frameworks/ai-governability.md`
 - `knowledge/patterns/expertise-amplification.md`
 - `knowledge/patterns/human-reserved-two-rationales.md` — Development Rationale for filling future-scarce judgment roles (No.24, draft)
+- `knowledge/patterns/experience-preserving-ai-workflow.md` — workflow that develops those roles while AI compresses effort (No.25, draft)
 - `knowledge/patterns/organizational-memory.md`
 - `knowledge/lessons/dual-roadmap-messaging.md`
 - `knowledge/migrations/ai-dual-roadmap-2026-08.md`

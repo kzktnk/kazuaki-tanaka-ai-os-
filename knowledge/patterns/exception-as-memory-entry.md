@@ -59,6 +59,7 @@ Use this pattern when:
 - `knowledge/patterns/operational-reality.md` — exceptions and workarounds in the field
 - `knowledge/patterns/expertise-amplification.md` — expert judgment in the moment
 - `knowledge/patterns/human-reserved-two-rationales.md` — Development Rationale: intuition needs exposure that AI may otherwise absorb (No.24, draft)
+- `knowledge/patterns/experience-preserving-ai-workflow.md` — keep exposure to exceptions when AI compresses the effort (No.25, draft)
 
 ## Related source
 

@@ -40,7 +40,7 @@ Some work must remain human — at least in part — because **doing it is how j
 | Applies to | Consequential, often irreversible decisions | Recurring, learnable tasks |
 | Failure mode if ignored | Accountability gap | Expertise gap |
 | Resolved by AI getting better? | No — authority is a governance choice, not a capability threshold | No — the more AI absorbs the task, the fewer natural learning opportunities remain |
-| Design lever | Authority ladder per decision (`authority-levels.md`) | Sequencing of when/how AI's output reaches the junior |
+| Design lever | Authority ladder per decision (`authority-levels.md`) | Sequencing of when/how AI's output reaches the junior. Full workflow: `experience-preserving-ai-workflow.md` (No.25, draft) |
 
 ## Signals
 
@@ -68,6 +68,7 @@ For a given task or decision:
    - AI drafts the recommendation; the junior must state what evidence would change it.
    - AI finds candidate precedents/cases; the junior decides which analogy actually holds.
    - The junior makes a first judgment before seeing AI's output, then compares.
+   - For the full sequence — raw contact before any AI summary, AI organizes, independent judgment, compare, retrospect — see `experience-preserving-ai-workflow.md` (No.25, draft).
 3. Treat Authority and Development as **independent axes**, not one sliding scale. A task can be automated for productivity and still need a human-in-the-path for either reason, and the two require different fixes (an approval workflow vs. a sequencing/exposure design).
 
 ## Core rule
@@ -76,6 +77,7 @@ For a given task or decision:
 
 ## Related patterns
 
+- `knowledge/patterns/experience-preserving-ai-workflow.md` (No.25, draft) — design response for the Development Rationale
 - `knowledge/patterns/ai-capability-vs-authority.md` (No.17)
 - `knowledge/patterns/authority-levels.md` (No.17)
 - `knowledge/patterns/decision-ownership.md` (No.14 / 17)
@@ -91,4 +93,4 @@ For a given task or decision:
 
 ## Status note
 
-Drafted from No.23 / No.24 article content ahead of formal publication. When both posts are published, run the Knowledge Migration workflow to: archive `en.md` / `ja.md` / `metadata.md` for No.23 and No.24; cross-link from `frameworks/decision-ownership.md` and `frameworks/ai-governability.md` if not already done; promote this pattern to Active; and complete the Human Reserved Arc entry in `knowledge/index/linkedin-series-index.md`.
+Drafted from No.23 / No.24 article content ahead of formal publication. The Development design response is drafted in `experience-preserving-ai-workflow.md` (No.25). When No.23 and No.24 are published, run the Knowledge Migration workflow to: archive `en.md` / `ja.md` / `metadata.md` for No.23 and No.24; cross-link from `frameworks/decision-ownership.md` and `frameworks/ai-governability.md` if not already done; promote this pattern to Active; and complete the Human Reserved Arc entry in `knowledge/index/linkedin-series-index.md`. When No.25 is published, promote its pattern and mark `knowledge/source/linkedin/025/` migrated.

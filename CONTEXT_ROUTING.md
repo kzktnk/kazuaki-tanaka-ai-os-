@@ -118,6 +118,7 @@ Load:
 - knowledge/patterns/llm-judgment-vs-deterministic-enforcement.md (if the model is being asked to authorize or execute)
 - knowledge/patterns/tool-output-as-untrusted-data.md (if tool results, resources, or external content could contain instructions)
 - knowledge/patterns/human-reserved-two-rationales.md (if HITL is treated as one category — Authority vs Development; draft until No.23–24)
+- knowledge/patterns/experience-preserving-ai-workflow.md (if the proposed fix is review of finished AI output, or junior learning is being designed; draft until No.25)
 - knowledge/patterns/define-success-before-prompt-change.md (if prompt tuning is treated as quality assurance)
 
 Focus:
@@ -683,6 +684,7 @@ Load:
 - frameworks/transformation-pmo.md (if portfolio / PgMO)
 - knowledge/patterns/expertise-amplification.md
 - knowledge/patterns/human-reserved-two-rationales.md (if automating junior training-ground work, or conflating approval gates with learning design; draft until No.23–24)
+- knowledge/patterns/experience-preserving-ai-workflow.md (if AI is compressing the work juniors used to learn from; draft until No.25)
 - knowledge/patterns/organizational-memory.md
 - knowledge/patterns/exception-as-memory-entry.md
 - knowledge/patterns/connected-organizational-memory.md
@@ -929,6 +931,7 @@ Load:
 - knowledge/patterns/ai-capability-vs-authority.md (if authority design)
 - knowledge/patterns/authority-levels.md (if authority design)
 - knowledge/patterns/human-reserved-two-rationales.md (if automating a task and the only question is capability — Authority vs Development; draft until No.23–24 published)
+- knowledge/patterns/experience-preserving-ai-workflow.md (if the Development Rationale needs a workflow, not only an approval gate; draft until No.25)
 - knowledge/patterns/decision-ownership.md
 - knowledge/patterns/verifiable-ownership.md
 - knowledge/patterns/risk-ownership.md

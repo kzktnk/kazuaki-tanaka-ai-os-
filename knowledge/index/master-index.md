@@ -1,10 +1,10 @@
 # Knowledge Master Index
 
-**Version:** v1.46  
+**Version:** v1.47  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
-**Last updated:** 2026-10-02
+**Last updated:** 2026-10-26
 
 ---
 
@@ -249,9 +249,10 @@ knowledge/
 ├── source/
 │   └── linkedin/
 │       ├── 001–022/                  ← Operational AI main series
+│       ├── 025/                      ← No.25 draft (archived, not published)
 │       ├── sp01–sp09/                ← special posts
 │       └── erf01–erf03/              ← Enterprise Redesign Framework
-├── patterns/                         ← 62 files (see table below)
+├── patterns/                         ← 63 files (see table below)
 ├── lessons/
 │   ├── governance-messaging.md
 │   ├── dual-roadmap-messaging.md
@@ -307,6 +308,7 @@ knowledge/
 │   ├── ccar-prompt-engineering-2026-09.md
 │   ├── si-project-literacy-2026-09.md
 │   ├── human-reserved-two-rationales-draft-2026-09.md
+│   ├── experience-preserving-ai-workflow-draft-2026-10.md
 │   ├── ccar-tool-use-2026-09.md
 │   ├── ccar-rag-agentic-search-2026-09.md
 │   ├── interim-as-confirmation-set-2026-09.md
@@ -325,10 +327,11 @@ knowledge/
     └── buyer-owns-ai-poc-ground-truth.md
 ```
 
-### Patterns (62)
+### Patterns (63)
 
 | Pattern | Primary themes |
 |---------|----------------|
+| `experience-preserving-ai-workflow.md` | Compress effort, keep exposure; five-step junior workflow (No.25, draft) |
 | `human-reserved-two-rationales.md` | Authority vs Development reasons to keep work/decisions human (No.23–24, draft) |
 | `buyer-side-gap-vs-vendor-pmo.md` | Vendor PMO ≠ buyer ハザマ; continuation ≠ next-phase value; monthly as go-live-path education |
 | `unowned-work-in-effort-analysis.md` | Person-tied PDC leaks unowned work; 検討主体 then execute/manage; actuals ≠ WBS |
@@ -1380,6 +1383,28 @@ CONTEXT_ROUTING.md  →  SI Proposal; Delivery Leadership; AMS
 
 ---
 
+### AW. Experience-preserving AI workflow — draft (2026-10)
+
+```text
+No.25 final-candidate EN/JA — archived as draft, not published
+        ↓ extract (second practitioner note folded in; not a second pattern)
+knowledge/patterns/experience-preserving-ai-workflow.md
+knowledge/source/linkedin/025/
+        ↓ connect
+knowledge/patterns/human-reserved-two-rationales.md
+knowledge/patterns/expertise-amplification.md
+knowledge/patterns/exception-as-memory-entry.md
+knowledge/patterns/organizational-memory.md
+frameworks/ai-role-maturity.md
+knowledge/index/linkedin-series-index.md (Human Reserved Arc No.23–25, draft)
+        ↓ record
+knowledge/migrations/experience-preserving-ai-workflow-draft-2026-10.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  AI Governance, AI Adoption, Responsible AI
+```
+
+---
+
 ## Level 4 — CONTEXT_ROUTING Task Map (summary)
 
 Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
@@ -1397,10 +1422,10 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | B2B sales workflow | `knowledge/patterns/sales-capacity-via-center-functions.md` |
 | Change management | `frameworks/change-management.md`, `all-at-once-vs-stepwise-change.md`, `change-agent-vs-communication-plan.md` (agent hunt ≠ communication plan), `formulation-comms-vs-adoption-comms.md` (formulation vs adoption; kick conditions first), `activation-first-for-site-led-work.md` (HQ-closable vs site-led; theme before site; criteria before site name), `who-vs-lever-family.md` (who ≠ lever family), `interim-as-confirmation-set.md` if involvement vs calendar is silently traded, `stay-then-repropose-on-handover.md` if workshop options are being locked by the outgoing owner, `final-cut-hands-over-decision-themes.md` if a closing CM pack treats workshop mode or site name as decided, `pmo-operating-guide.md` §CM, `playbooks/stakeholder-activation-playbook.md` (person-level), `playbooks/operations-transition-playbook.md` Chapter 7 (ops adoption) |
 | AI CoE / PgMO / Change | `knowledge/patterns/ai-coe-vs-pgmo-vs-change.md`, `ai-management-office.md`, `transformation-pmo.md`, `change-management.md` |
-| AI adoption / DX roadmap | `frameworks/ai-adoption-roadmap.md`, `playbooks/ai-utilization-roadmap.md`, `playbooks/ai-work-before-after.md`, `logical-vs-physical-document-unity.md` if document unification is the AI enabler, `human-reserved-two-rationales.md` if junior training-ground work is being automated (draft) |
+| AI adoption / DX roadmap | `frameworks/ai-adoption-roadmap.md`, `playbooks/ai-utilization-roadmap.md`, `playbooks/ai-work-before-after.md`, `logical-vs-physical-document-unity.md` if document unification is the AI enabler, `human-reserved-two-rationales.md` if junior training-ground work is being automated (draft), `experience-preserving-ai-workflow.md` if AI is compressing the work juniors used to learn from (draft) |
 | AI PoC quality (buyer) | `playbooks/ai-poc-quality-review.md`, `rag-structure-diagnosis.md`, `buyer-owns-ai-poc-ground-truth.md`, `ai-output-evaluation-terms.md` if scoring an answer, `define-success-before-prompt-change.md` if prompts are being tuned, `explicit-before-elaborate-prompt.md` if the prompt is being lengthened before the task is clear, `logical-vs-physical-document-unity.md` if corpus / store strategy is open, `choose-access-by-volatility.md` if static vs RAG vs live vs agentic search is open, `match-capability-to-context-job.md` if persistent context or dumping all files is open, `field-practitioner-eval-before-uat.md` if field practitioners try a prototype before UAT |
 | Offering review | `playbooks/offering-review.md`, `change-management.md`, `transformation-pmo.md` |
-| Responsible AI assessment | `playbooks/responsible-ai-assessment.md`, `human-oversight.md`, `decision-ownership.md`, `ai-output-evaluation-terms.md` if classifying output failures, `workflow-vs-agent-vs-human.md` / `mcp-as-integration-not-authority.md` if autonomy or live tools, `llm-judgment-vs-deterministic-enforcement.md` if the model is asked to authorize, `tool-output-as-untrusted-data.md` if tool results could contain instructions, `choose-access-by-volatility.md` if RAG is treated as live, `human-reserved-two-rationales.md` if HITL is treated as one category (draft) |
+| Responsible AI assessment | `playbooks/responsible-ai-assessment.md`, `human-oversight.md`, `decision-ownership.md`, `ai-output-evaluation-terms.md` if classifying output failures, `workflow-vs-agent-vs-human.md` / `mcp-as-integration-not-authority.md` if autonomy or live tools, `llm-judgment-vs-deterministic-enforcement.md` if the model is asked to authorize, `tool-output-as-untrusted-data.md` if tool results could contain instructions, `choose-access-by-volatility.md` if RAG is treated as live, `human-reserved-two-rationales.md` if HITL is treated as one category (draft), `experience-preserving-ai-workflow.md` if the proposed fix is review of finished AI output (draft) |
 | Agent / MCP / Subagent design | `workflow-vs-agent-vs-human.md`, `mcp-as-integration-not-authority.md` if live tools or tool contracts, `choose-access-by-volatility.md` if static vs RAG vs live vs agentic search, `match-capability-to-context-job.md` if persistent context vs retrieval vs tools vs structured output is open, `skills-point-to-rules-not-source.md` if Skill / Rule / Knowledge harness or stuffing procedure into the trigger, `llm-judgment-vs-deterministic-enforcement.md` if API / app boundary, `tool-output-as-untrusted-data.md` if tool results could contain instructions, `define-success-before-prompt-change.md` if prompts are being tuned, `explicit-before-elaborate-prompt.md` if the fix is a longer prompt rather than a clearer one, `subagent-when-isolation-justifies-cost.md` if splitting agents, `authority-levels.md`, `human-oversight.md`, `adapters/claude/CLAUDE.md` if Claude |
 | Energy / utilities | `domains/energy-utilities.md`, `operational-reality.md`, `requirements-artifact-review.md` (if requirements), `choose-access-by-volatility.md` if manuals vs live equipment state, `field-practitioner-eval-before-uat.md` if field practitioners evaluate an AI prototype, `final-cut-hands-over-decision-themes.md` if a multi-PJ closing pack walks rows |
 | Public sector / defense IT | `domains/public-defense.md`, `public-it-procurement-support.md` (if buyer), `buyer-vs-seller-in-public-procurement.md`, shared-operator pattern + multi-lot construction PMO playbook if concurrent lots, `related-project-external-coordination-radar.md` if adjacent/external coordination |
