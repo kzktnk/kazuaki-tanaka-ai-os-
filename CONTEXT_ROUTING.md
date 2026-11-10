@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.53
+Version: v1.54
 
 ## Purpose
 
@@ -648,6 +648,7 @@ Load:
 - frameworks/consultant-learning-map-example.md (if generating a person-level Learning Map)
 - frameworks/financial-analysis-for-consultants.md (if developing Company／Financial Analysis)
 - frameworks/si-project-literacy.md (if developing Capability II Skills that use ② and the learner lacks SI delivery experience — teaching material for the candidate Skill SI Project Literacy)
+- frameworks/client-advisor.md (if developing the candidate Skill Client Advisor — role, agenda, three questions; not counted in the 24 until formalized)
 - standards/slide-design.md (if developing Communication — candidate Evidence until the trial deck)
 - frameworks/capability-model.md (client-organization layers only — do not merge into the consultant map)
 - matching playbook / selfstudy pair for the Skill being developed (e.g. wbs-design.md / wbs-design-selfstudy.md)
@@ -663,6 +664,7 @@ Focus:
 - Junior first read is the Directory; Assessment is Assessor-owned (1on1 diagnostic). Do not ask the junior to fill the sheet alone
 - Capability IV entry material exists only for Company／Financial Analysis; remaining five Skills have Evidence without a learning pack
 - SI Project Literacy is a candidate Capability II Skill (Option B, v0.7): knowledge = Pass／Not Yet, judgment = L0–L4; linked to ② Skills via soft Prerequisite for SI未経験者 only. Chapter 5 Pilot = its L1→L2 check
+- Client Advisor is a candidate Capability III Skill (v0.7.1): pre-meeting card is role, the client's 3–5 priorities, and three questions. Formalization is two real executive debriefs. Memorizing a question bank is not the check. Not counted in the 24
 - Next step = Capability Model × Current Level × Assignment (soft Prerequisite)
 
 Outputs:
@@ -1032,6 +1034,31 @@ Outputs:
 
 ---
 
+# Client Meeting / Advisor Conversation
+
+Load:
+- frameworks/client-advisor.md
+- knowledge/patterns/walk-in-as-peer.md
+- knowledge/patterns/agenda-is-not-the-project.md
+- knowledge/patterns/three-questions-per-meeting.md
+- playbooks/stakeholder-activation-playbook.md (only if the issue is why a person will not act on a change)
+- frameworks/financial-analysis-for-consultants.md (if the gap is the client's financials)
+- standards/strategy-engagement-guide.md (if the meeting is to scope an engagement, not to set the relationship agenda)
+
+Focus:
+- Role before content. Expertise stays. The vendor entrance does not
+- Agenda is the client's three to five priorities, professional and personal, not project status
+- Three questions, in more than one quadrant, written for this person
+- Do not paste or invent a stand-in for the copyrighted question bank
+- A step-back meeting states that purpose first. It is not a status review with a new title
+
+Outputs:
+- Pre-meeting card: role, agenda gap, three questions
+- Post-meeting contrast against advisor vs expert behavior
+- Relationship placement only in the conversation. No client names in tracked files
+
+---
+
 # Executive Email
 
 Load:
@@ -1042,6 +1069,7 @@ Focus:
 - Clear purpose
 - Brevity
 - Action request
+- If the email asks for a step-back conversation, load `# Client Meeting / Advisor Conversation` and state that purpose first
 - Professional tone
 
 ---

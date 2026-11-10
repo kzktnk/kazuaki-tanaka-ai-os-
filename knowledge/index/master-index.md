@@ -1,10 +1,10 @@
 # Knowledge Master Index
 
-**Version:** v1.47  
+**Version:** v1.48  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
-**Last updated:** 2026-10-26
+**Last updated:** 2026-10-27
 
 ---
 
@@ -71,14 +71,14 @@ kazuaki-tanaka-ai-os/
 ├── CONTEXT_ROUTING.md          ← task-based context selection
 ├── core/                       ← 8 files (kernel)
 ├── standards/                  ← 21 files (quality criteria)
-├── frameworks/                 ← 37 files + thinking-patterns/
+├── frameworks/                 ← 38 files + thinking-patterns/
 ├── playbooks/                  ← 24 playbooks (+ README)
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
-│   ├── patterns/               ← 62 distilled patterns
+│   ├── patterns/               ← 66 distilled patterns
 │   ├── lessons/                ← 5 lessons
-│   ├── migrations/             ← 60 migration reports
+│   ├── migrations/             ← 62 migration reports
 │   └── decisions/              ← 4 records
 ├── templates/                  ← 1 template
 ├── prompts/                    ← README placeholder
@@ -195,6 +195,7 @@ frameworks/
 │   └── ai-management-office.md
 ├── Strategy & consulting
 │   ├── consulting-strategy-process.md
+│   ├── client-advisor.md
 │   ├── it-strategy-foundations.md
 │   ├── strategic-capability-network.md
 │   ├── top-down-thinking.md
@@ -252,7 +253,7 @@ knowledge/
 │       ├── 025/                      ← No.25 draft (archived, not published)
 │       ├── sp01–sp09/                ← special posts
 │       └── erf01–erf03/              ← Enterprise Redesign Framework
-├── patterns/                         ← 63 files (see table below)
+├── patterns/                         ← 66 files (see table below)
 ├── lessons/
 │   ├── governance-messaging.md
 │   ├── dual-roadmap-messaging.md
@@ -319,7 +320,8 @@ knowledge/
 │   ├── field-eval-and-harness-three-layer-2026-09.md
 │   ├── final-cut-decision-themes-2026-09.md
 │   ├── issue-structuring-skill-2026-09.md
-│   └── cutover-risk-governance-2026-10.md
+│   ├── cutover-risk-governance-2026-10.md
+│   └── client-advisor-masterclass-2026-10.md
 └── decisions/
     ├── diagnose-from-gateway-not-client-error.md
     ├── sandbox-cost-controls-before-resources.md
@@ -327,7 +329,7 @@ knowledge/
     └── buyer-owns-ai-poc-ground-truth.md
 ```
 
-### Patterns (63)
+### Patterns (66)
 
 | Pattern | Primary themes |
 |---------|----------------|
@@ -394,6 +396,9 @@ knowledge/
 | `final-cut-hands-over-decision-themes.md` | Final cut hands over decision themes, not rows; schedule update is a proposal; next-mode options stay options |
 | `issue-structuring-reserves-three-judgments.md` | Reserve Key Question, Criteria, and verification order; adopt a reading; put How on a hypothesis branch |
 | `cutover-risk-families-then-four-controls.md` | Cutover ≠ take-on; five risk families; choose among pilot / rollback / parallel / test; no second PMO |
+| `walk-in-as-peer.md` | Decide expert vs advisor before the meeting; role × breadth; keep expertise, drop the vendor entrance |
+| `agenda-is-not-the-project.md` | Agenda is the client's 3–5 priorities, not project status; react → sense → set |
+| `three-questions-per-meeting.md` | Three questions, more than one quadrant; no question bank; retire clichés |
 
 ---
 
@@ -1405,6 +1410,26 @@ CONTEXT_ROUTING.md  →  AI Governance, AI Adoption, Responsible AI
 
 ---
 
+### AX. Client Advisor — role, agenda, three questions (2026-10)
+
+```text
+Local Sobel Client Advisor Masterclass 2021–2022 — PDFs not archived
+        ↓ generalize (question bank, invitation text, and worksheets excluded)
+frameworks/client-advisor.md
+knowledge/patterns/walk-in-as-peer.md
+knowledge/patterns/agenda-is-not-the-project.md
+knowledge/patterns/three-questions-per-meeting.md
+        ↓ connect
+frameworks/consultant-capability-skill-model.md (v0.7.1, 〔候補〕, not in the 24)
+frameworks/skill-playbook-directory.md
+        ↓ record
+knowledge/migrations/client-advisor-masterclass-2026-10.md
+        ↓ task routing
+CONTEXT_ROUTING.md  →  Client Meeting; Consultant Enablement
+```
+
+---
+
 ## Level 4 — CONTEXT_ROUTING Task Map (summary)
 
 Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
@@ -1415,7 +1440,8 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | Customer weekly/monthly status | `deliverable-archetypes.md` Archetype J, `author-voice.md`, `project-management-policy-layer.md`, `support-effort-classification.md`, `change-agent-vs-communication-plan.md` / `unowned-work-in-effort-analysis.md` / `buyer-side-gap-vs-vendor-pmo.md` as needed, cadence / cross-project playbooks |
 | IT strategy | `frameworks/it-strategy-foundations.md`, `standards/it-strategy-engagement-guide.md`, `playbooks/strategy-scn.md` (if SCN → projectization) |
 | Strategy engagement / SCN | `consulting-strategy-process.md`, `strategy-engagement-guide.md`, `strategic-capability-network.md`, `scn-creation-guide.md`, `playbooks/strategy-scn.md` (sequence / Gate 1), `wbs-design.md` if Gate 2 WBS, `scn-as-landscape-not-completeness.md` if overlaying running PJs, `issue-structuring-reserves-three-judgments.md` if first-pass scoping or a How-first question, `.cursor/skills/issue-structuring/SKILL.md` if producing the memo |
-| Consultant enablement / skill map | `skill-playbook-directory.md` (learner first read), `consultant-capability-skill-model.md` (v0.7, Manager SoT; 〔候補〕 not counted), `consultant-role-responsibility-model.md` (Required Level), `pilot-assessment-strategy-consultant.md` if Assessor 1on1, `financial-analysis-for-consultants.md` if Company／Financial Analysis, `si-project-literacy.md` if Cap II / ② and learner lacks SI experience (candidate Skill material), `consultant-learning-map-example.md` if generating a map, `capability-model.md` (client org — do not merge) |
+| Consultant enablement / skill map | `skill-playbook-directory.md` (learner first read), `consultant-capability-skill-model.md` (v0.7.1, Manager SoT; 〔候補〕 not counted), `consultant-role-responsibility-model.md` (Required Level), `pilot-assessment-strategy-consultant.md` if Assessor 1on1, `financial-analysis-for-consultants.md` if Company／Financial Analysis, `si-project-literacy.md` if Cap II / ② and learner lacks SI experience (candidate Skill material), `client-advisor.md` if developing the candidate Skill Client Advisor, `consultant-learning-map-example.md` if generating a map, `capability-model.md` (client org — do not merge) |
+| Client meeting / advisor conversation | `frameworks/client-advisor.md`, `walk-in-as-peer.md`, `agenda-is-not-the-project.md`, `three-questions-per-meeting.md`; activation playbook only if the issue is why a person will not act |
 | PMO / transformation | `frameworks/transformation-pmo.md`, `playbooks/pmo-function-standup.md`, `playbooks/program-governance-cadence.md`, `playbooks/strategy-scn.md` (upstream Gate 1), `playbooks/cross-project-program-management.md` (§8.8 if reviewing issue-list response plans), `frameworks/si-project-literacy.md` (if SI未経験 and ② facts cannot yet become blast-radius questions), `playbooks/operations-transition-playbook.md` (Gate 3–5), `playbooks/stakeholder-activation-playbook.md` (if a specific person must act), `knowledge/patterns/related-project-external-coordination-radar.md` (if adjacent/external radar), `knowledge/patterns/topology-map-vs-issue-log.md` (if diagram is asked to carry issues), `knowledge/patterns/interim-as-confirmation-set.md` (if interim walks every extracted row), `knowledge/patterns/stay-then-repropose-on-handover.md` (if sponsor / PMO owner is changing and continuation is being locked outgoing), `knowledge/patterns/final-cut-hands-over-decision-themes.md` (if a final report walks issue rows or treats schedule / workshop mode as locked), `knowledge/patterns/pgmo-presence-via-client-stance.md` (if presence lost to trusted incumbent), `knowledge/patterns/buyer-side-gap-vs-vendor-pmo.md` (if vendor PMO is treated as buyer-side gap cover), `knowledge/patterns/transformation-practice-case-pack.md` (if internal practice packaging), `standards/pmo-operating-guide.md`, `knowledge/patterns/project-management-policy-layer.md` (if project-layer policy TOC), Archetype J if customer status, `frameworks/change-management.md` |
 | DX grand design | `frameworks/dx-grand-design.md`, change / roadmap as needed |
 | New venture assessment | `frameworks/new-venture-three-track-assessment.md` |

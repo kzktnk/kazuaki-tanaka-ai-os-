@@ -25,6 +25,7 @@ Full catalog and cross-links: [`knowledge/index/master-index.md`](../knowledge/i
 | File | Focus |
 |------|--------|
 | `consulting-strategy-process.md` | End-to-end consulting strategy process |
+| `client-advisor.md` | Role × breadth, agenda vs project status, three questions (draft; Sobel masterclass, judgment only) |
 | `it-strategy-foundations.md` | IT strategy formulation (legacy course distilled) |
 | `strategic-capability-network.md` | SCN / capability network |
 | `top-down-thinking.md` | Top-down problem structuring |

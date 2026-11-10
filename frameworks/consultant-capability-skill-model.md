@@ -10,6 +10,7 @@ related:
   - frameworks/financial-analysis-for-consultants.md（Capability IVの入口教材）
   - frameworks/si-project-literacy.md（Capability IIの候補Skill「SI Project Literacy」の教材・draft。Chapter 5 Pilot後に正式化）
   - standards/slide-design.md（Communicationの候補Evidenceの教材・draft。試行後に正式化）
+  - frameworks/client-advisor.md（Capability IIIの候補Skill「Client Advisor」の教材・draft。実面談2件の試行後に正式化）
   - frameworks/consultant-role-responsibility-model.md（Role／Responsibility層、Required Level一覧）
   - frameworks/top-down-thinking.md
   - frameworks/thinking-patterns/
@@ -21,7 +22,7 @@ related:
   - core/author-voice.md
   - standards/scn-creation-guide.md
   - playbooks/program-governance-cadence.md
-last_updated: 2026-09-27
+last_updated: 2026-10-27
 ---
 
 # コンサルタント Capability／スキル／レベル モデル
@@ -77,6 +78,7 @@ Playbookが増えてもCapability自体は増減しない状態を目指し、�
 |---|---|---|
 | Stakeholder Diagnosis | Segment（誰から動かすか）とDiagnose（なぜ動かないか）で見立てる | `playbooks/stakeholder-activation-playbook.md`（横串 Ch2・Ch3） |
 | Communication | 意思決定者向けに構造化して伝える | `core/author-voice.md` §3〜4 |
+| Client Advisor〔候補〕 | 会議の前に役割・相手のアジェンダ・3問を決め、進捗説明の入室をやめる | `frameworks/client-advisor.md`（draft） |
 | Facilitation | ワークショップ・レビューを回す | `standards/scn-creation-guide.md` §Workshop |
 | Influence／Activation | 原因に応じた打ち手を選び、個別化し、行動が変わったかを観察する | `playbooks/stakeholder-activation-playbook.md`（横串 Ch4〜8）、`playbooks/operations-transition-playbook.md`（③ Ch7、定着化の文脈） |
 | Governance／Escalation | Steering等への報告・エスカレーションを設計する | `playbooks/cross-project-program-management.md` Ch8.5、`playbooks/program-governance-cadence.md` |
@@ -107,6 +109,7 @@ Skillは横並びで管理するが、実務上は習得しやすい順序があ
 | Transition工数見積もり | Work Planning／WBS L2、Transition Due Diligence／Planning L1 |
 | Stakeholder Diagnosis | ―（入口） |
 | Communication | ―（仮説を作る L1と並行が望ましい） |
+| Client Advisor〔候補〕 | ―（入口。問いを立てる L1 があると、案件の論点と相手のアジェンダを混同しにくい） |
 | Facilitation | ―（入口） |
 | Influence／Activation | Stakeholder Diagnosis L2 |
 | Governance／Escalation | Risk／Issue Management L2、Stakeholder Diagnosis L1 |
@@ -127,12 +130,13 @@ draftの教材を根拠にするSkill・Evidenceは、本文に〔候補〕と�
 - 育成の場では使ってよい。ただし〔候補〕のEvidenceで判定したLevelは、Assessment StatusをProvisionalとする（§5）
 - 正式化の条件は候補ごとに書く。正式化したら〔候補〕を外し、上記の関連ファイルに反映する
 
-現在の候補は次の2件。
+現在の候補は次の3件。
 
 | 候補 | 教材 | 正式化の条件 |
 |---|---|---|
 | Capability II「SI Project Literacy」（Skill） | `frameworks/si-project-literacy.md`（draft v0.6.1） | Chapter 5 PilotでSI未経験者1名がL1→L2のEvidence（Factから波及と質問を自力で出す）を満たすか判定し、Ownerが正式化を判断する |
 | Capability III「Communication」の追加Evidence | `standards/slide-design.md`（draft v0.1） | 実案件のデッキ1本で試行し、Ownerが本書のActive化を判断する |
+| Capability III「Client Advisor」（Skill） | `frameworks/client-advisor.md`（draft v1.0） | 実在の役員面談2件で、会議前カード（役割、アジェンダのギャップ、象限の違う3問）と会議後の行動対照を行い、OwnerがEvidenceとして使えると判断する。質問集の暗記は条件にしない |
 
 ---
 
@@ -371,6 +375,17 @@ AIとの協働：Segment・Diagnoseの一次仮説をAIに作らせることは�
 | L1→L2 | 2件以上の資料で、タイトルだけを抜き出して通し読みすると1本のストーリーになっており、各タイトルが切り出しても結論として読める | slide-design §1.1・§1.4 |
 | L2→L3 | 複数の他者ドラフトで、タイトルと本文の数の食い違い、前提と帰結の左右逆転、軸の定義に当てはまらない表の行を発見し、なぜ問題か・どう直すべきかを示せる | slide-design §1.3・§2.1・§3.2 |
 
+#### Client Advisor〔候補〕
+
+会議の前に役割・相手のアジェンダ・3問を決める型（`frameworks/client-advisor.md`）が教材。変革で人が動かない原因（Stakeholder Diagnosis）とも、資料のトーン（Communication）とも、案件の論点（問いを立てる）とも別である。§1.6。正式化まで24 Skillに数えない。質問集の暗記はEvidenceにしない。
+
+| Current | Target | Learning／OJT | Evidence | 判定者 |
+|---|---|---|---|---|
+| L0 | L1 | `frameworks/client-advisor.md` を読み、指導者と一緒に直近の会議1件を役割×幅で置き直す | 4象限（エキスパート／アドバイザー／ベンダー／パートナー）と、反応と設定の違い、質問の4象限を自分の言葉で説明できる | 指導者 |
+| L1 | L2 | 条件の異なる役員2名について、会議前カードを自分で作り、会議後に行動を対照する | 2件で、役割、相手の3〜5個と案件進捗の取り違え、少なくとも2象限に分かれた3問を自分の文で書け、会議後にベンダーの行動が残ったかを指摘できる | 指導者→OJT先PM |
+| L2 | L3 | 他者の会議前カードと会議後メモをレビューする | 複数の他者準備で、ベンダー入室、進捗をアジェンダにしたこと、閉じた質問か定型句、質問集の転記を発見し、なぜ問題か・どう書き直すかを示せる | Capability IIIの認定L4 Reviewer（Bootstrap期はCapability Owner） |
+| L3 | L4 | エキスパートまたはベンダーに固定された関係を、アドバイザー側へ動かす設計を複数経験する | 複数の非標準（相手が専門家を買っている、口座が多く生涯関係にできない、クレーム直後）で、どこまで姿勢を上げるかを判断し、理由を説明して他者に教えられる | Capability Owner |
+
 #### Facilitation
 
 ワークショップの前提条件（事前調査・事前学習・記法トレーニング・Facilitator/Scribe分離）とAnti-Patternsが教材（`standards/scn-creation-guide.md`）。
@@ -527,7 +542,7 @@ Capability I〜IIIが「型（プロセス・技法）」であるのに対し�
 
 **教材開発の進捗**：Capability IVの6 Skillは、Required Levelは決まりEvidenceも定義済みだが、Learning Intervention（読んで身につける教材）が揃っていなかった。入口として Company／Financial Analysis の教材（`frameworks/financial-analysis-for-consultants.md`）を作成した。残り5 Skill（Business Model／Economics、Investment／Business Case、Corporate Governance／Management、Commercial／Contract Literacy、Regulatory／Risk Literacy）はまだ教材がない。§1.5のRecommended Prerequisiteの順（Financial Analysis→Business Model→Investment／Business Case）で、次点の候補は Business Model／Economics になる。
 
-**候補の試行**：§1.6の2件は、この2トラックPilotとは別に回してよい。SI Project LiteracyはChapter 5 Pilotがそのまま L1→L2 Evidence の判定になり、Communicationの追加Evidenceは `slide-design.md` の試行デッキの作成者とレビュー者で確かめる。
+**候補の試行**：§1.6の3件は、この2トラックPilotとは別に回してよい。SI Project LiteracyはChapter 5 Pilotがそのまま L1→L2 Evidence の判定になり、Communicationの追加Evidenceは `slide-design.md` の試行デッキの作成者とレビュー者で確かめる。Client Advisorは実在の役員面談2件の会議前カードと会議後の対照で確かめる。質問集の暗記は試行にしない。
 
 ---
 
@@ -548,3 +563,4 @@ Capability I〜IIIが「型（プロセス・技法）」であるのに対し�
 | v0.6.4 | ③・横串の正しいパスは末尾 `-playbook`。探していた `operations-transition.md` は誤名 |
 | v0.6.5 | Capability II共通Prerequisite候補として `si-project-literacy.md` を登録（draft。Pilot後にPass／Not Yet化）。Directory・②本編／selfstudyから導線 |
 | v0.7 | §1.6「候補（Candidate）の扱い」を新設し、draft教材に依存するSkill・Evidenceは〔候補〕として置き、教材の試行後に正式化するルールにした。SI Project LiteracyをB案で接続（2026-09-27 Owner判断。独立Skill。知識2項目はPrerequisite Knowledge、判断3項目はL0〜L4 Evidence）。4 Skillとの関係は§1.5の推奨順序（SI未経験者のみ）で表す。Communicationに `standards/slide-design.md` 由来の〔候補〕Evidenceを追加。正式化までSkill数は24のまま |
+| v0.7.1 | Capability IIIに Client Advisor〔候補〕を追加。教材は `frameworks/client-advisor.md`。正式化まで24 Skill・Pilot worksheet・RoleのRequired Levelに数えない |
