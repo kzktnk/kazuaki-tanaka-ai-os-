@@ -1,6 +1,6 @@
 # Legacy Source Index
 
-**Version:** v1.28  
+**Version:** v1.29  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** ローカル保管のレガシー原本と、リポジトリ内知識の対応索引。**原本の中身は含まない。**
@@ -680,6 +680,20 @@
 | 移行リスク／ガバナンス概説 | `knowledge/patterns/cutover-risk-families-then-four-controls.md` | カットオーバー ≠ take-on。5家族。Pilot / Rollback / Parallel / Test は選択。第二 PMO を作らない |
 
 **未登録:** PDF 本体、サンプル登録の行。
+
+---
+
+## Program Line AK: Client Advisor Masterclass（2021–2022、判断のみ）
+
+原本はローカル PDF。匿名ラベル: **client advisor masterclass / 2021–2022**。Andrew Sobel, *The Client Advisor Masterclass Series*。質問集の本文、会議依頼の文例、ワークシートの空欄、スライドの逸話は不登録。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| Expert to Advisor レビュー／チェックリスト／ポートフォリオワークシート | `frameworks/client-advisor.md` §1–2、`knowledge/patterns/walk-in-as-peer.md` | 役割×幅の4象限。姿勢と行動の対照。会議前の2問。組織側の6条件 |
+| Agenda Setting レビュー／事業理解チェックリスト／専用会議ワークシート | `frameworks/client-advisor.md` §3、`knowledge/patterns/agenda-is-not-the-project.md` | 相手の3〜5個。反応→感知→設定。非対称。年に数回の一段下がり |
+| Power Questions レビュー／作成ワークシート／質問集 | `frameworks/client-advisor.md` §4–5、`knowledge/patterns/three-questions-per-meeting.md` | 性質、4象限、3問、野心→能力→ギャップ。質問の仕事の種類。定型句は引退。例文は未登録 |
+
+**未登録:** 質問集の本文、依頼文の文例、クイズ、口座名の枠。
 
 ---
 
