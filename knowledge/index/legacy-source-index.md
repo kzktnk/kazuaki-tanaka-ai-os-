@@ -1,6 +1,6 @@
 # Legacy Source Index
 
-**Version:** v1.29  
+**Version:** v1.30  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** ローカル保管のレガシー原本と、リポジトリ内知識の対応索引。**原本の中身は含まない。**
@@ -694,6 +694,20 @@
 | Power Questions レビュー／作成ワークシート／質問集 | `frameworks/client-advisor.md` §4–5、`knowledge/patterns/three-questions-per-meeting.md` | 性質、4象限、3問、野心→能力→ギャップ。質問の仕事の種類。定型句は引退。例文は未登録 |
 
 **未登録:** 質問集の本文、依頼文の文例、クイズ、口座名の枠。
+
+---
+
+## Program Line AL: 変更管理の基準とベースライン（2026-09〜10、一般化のみ）
+
+原本はローカルの内部レビュー録音（2026-09-10、09-15、09-25、09-29、10-01、10-02）。匿名ラベル: **buyer-side change-control review / 2026-09–10**。**音声・文字起こしはリポジトリにアーカイブしない。** 社名、円、人名、日程、体制、ツール操作は不登録。2026-08-24 と 2026-08-28 は Line Z / AE のまま。10-08、10-29、11-06 は未反映。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| 内部レビュー（変更管理・品質チェック・役割図・月次の問題の出し方） | `knowledge/patterns/same-result-before-change-baseline.md` | 経験者と新人で同じ結果。プロセス・台帳・手引き。概算と確定見積。未確認の To-Be を変更票で救済しない。書面と実務のずれ。固有事実なし |
+| 同上 → 月次の行 | `standards/deliverable-archetypes.md` Archetype J | 「次回」はどの会議か。新しい問題を探さない |
+| 同上 → レビュー入口 | `standards/consulting-review.md` | プロセスをレビューするときの観点。本文の型はパターン |
+
+**未登録:** 録音・文字起こし全文、Must 定義の案件写し、経費・私事、10-08 以降。
 
 ---
 

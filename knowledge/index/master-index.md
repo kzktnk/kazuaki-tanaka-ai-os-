@@ -1,10 +1,10 @@
 # Knowledge Master Index
 
-**Version:** v1.48  
+**Version:** v1.49  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
-**Last updated:** 2026-10-27
+**Last updated:** 2026-11-11
 
 ---
 
@@ -76,9 +76,9 @@ kazuaki-tanaka-ai-os/
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
-│   ├── patterns/               ← 66 distilled patterns
+│   ├── patterns/               ← 67 distilled patterns
 │   ├── lessons/                ← 5 lessons
-│   ├── migrations/             ← 62 migration reports
+│   ├── migrations/             ← 63 migration reports
 │   └── decisions/              ← 4 records
 ├── templates/                  ← 1 template
 ├── prompts/                    ← README placeholder
@@ -253,7 +253,7 @@ knowledge/
 │       ├── 025/                      ← No.25 draft (archived, not published)
 │       ├── sp01–sp09/                ← special posts
 │       └── erf01–erf03/              ← Enterprise Redesign Framework
-├── patterns/                         ← 66 files (see table below)
+├── patterns/                         ← 67 files (see table below)
 ├── lessons/
 │   ├── governance-messaging.md
 │   ├── dual-roadmap-messaging.md
@@ -321,7 +321,8 @@ knowledge/
 │   ├── final-cut-decision-themes-2026-09.md
 │   ├── issue-structuring-skill-2026-09.md
 │   ├── cutover-risk-governance-2026-10.md
-│   └── client-advisor-masterclass-2026-10.md
+│   ├── client-advisor-masterclass-2026-10.md
+│   └── internal-review-change-criteria-2026-11.md
 └── decisions/
     ├── diagnose-from-gateway-not-client-error.md
     ├── sandbox-cost-controls-before-resources.md
@@ -329,7 +330,7 @@ knowledge/
     └── buyer-owns-ai-poc-ground-truth.md
 ```
 
-### Patterns (66)
+### Patterns (67)
 
 | Pattern | Primary themes |
 |---------|----------------|
@@ -338,6 +339,7 @@ knowledge/
 | `buyer-side-gap-vs-vendor-pmo.md` | Vendor PMO ≠ buyer ハザマ; continuation ≠ next-phase value; monthly as go-live-path education |
 | `unowned-work-in-effort-analysis.md` | Person-tied PDC leaks unowned work; 検討主体 then execute/manage; actuals ≠ WBS |
 | `change-agent-vs-communication-plan.md` | Agent hunt ≠ communication plan; plan before samples |
+| `same-result-before-change-baseline.md` | Change control runs when a novice and an expert reach the same result; do not rescue a non-baseline with a change ticket |
 | `pgmo-presence-via-client-stance.md` | Client-side PM/PO stance; ally with trusted incumbent; intersection risk → monthly→weekly reverse tracking |
 | `related-project-external-coordination-radar.md` | Adjacent-project radar + external coordination; hypothesis → confirm → promote |
 | `transformation-practice-case-pack.md` | Internal ET practice case-pack anatomy; Role × type matrix; theme-card schema |
@@ -1437,7 +1439,7 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | Task | Primary loads |
 |------|----------------|
 | Proposal review | `standards/consulting-review.md` (artifact job before MECE; §AI-Drafted Content Check if AI-written), `deliverable-archetypes.md`, `writing.md`, `slide-design.md` if slide pages, `interim-as-confirmation-set.md` if an interim pack is the working extraction, `final-cut-hands-over-decision-themes.md` if a closing pack walks rows or locks next-mode |
-| Customer weekly/monthly status | `deliverable-archetypes.md` Archetype J, `author-voice.md`, `project-management-policy-layer.md`, `support-effort-classification.md`, `change-agent-vs-communication-plan.md` / `unowned-work-in-effort-analysis.md` / `buyer-side-gap-vs-vendor-pmo.md` as needed, cadence / cross-project playbooks |
+| Customer weekly/monthly status | `deliverable-archetypes.md` Archetype J, `author-voice.md`, `project-management-policy-layer.md`, `support-effort-classification.md`, `change-agent-vs-communication-plan.md` / `unowned-work-in-effort-analysis.md` / `buyer-side-gap-vs-vendor-pmo.md` / `same-result-before-change-baseline.md` as needed, cadence / cross-project playbooks |
 | IT strategy | `frameworks/it-strategy-foundations.md`, `standards/it-strategy-engagement-guide.md`, `playbooks/strategy-scn.md` (if SCN → projectization) |
 | Strategy engagement / SCN | `consulting-strategy-process.md`, `strategy-engagement-guide.md`, `strategic-capability-network.md`, `scn-creation-guide.md`, `playbooks/strategy-scn.md` (sequence / Gate 1), `wbs-design.md` if Gate 2 WBS, `scn-as-landscape-not-completeness.md` if overlaying running PJs, `issue-structuring-reserves-three-judgments.md` if first-pass scoping or a How-first question, `.cursor/skills/issue-structuring/SKILL.md` if producing the memo |
 | Consultant enablement / skill map | `skill-playbook-directory.md` (learner first read), `consultant-capability-skill-model.md` (v0.7.1, Manager SoT; 〔候補〕 not counted), `consultant-role-responsibility-model.md` (Required Level), `pilot-assessment-strategy-consultant.md` if Assessor 1on1, `financial-analysis-for-consultants.md` if Company／Financial Analysis, `si-project-literacy.md` if Cap II / ② and learner lacks SI experience (candidate Skill material), `client-advisor.md` if developing the candidate Skill Client Advisor, `consultant-learning-map-example.md` if generating a map, `capability-model.md` (client org — do not merge) |

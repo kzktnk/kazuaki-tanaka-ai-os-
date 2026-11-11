@@ -1,6 +1,6 @@
 # Consulting Review Standard
 
-Version: v0.15 Bootstrap
+Version: v0.16 Bootstrap
 
 ## Purpose
 
@@ -149,6 +149,18 @@ When a deliverable (or a column in it, such as response plans in an issue list) 
 - **Client vocabulary** — Replace generic consulting or engineering jargon the client does not use
 
 For cross-project issue lists, apply `playbooks/cross-project-program-management.md` §8.8 as well.
+
+---
+
+# Process and Change Baseline
+
+When the deliverable is a process the client will run (change control, quality checklist, role chart), score whether it runs, not whether the meeting nodded. Tests are in `knowledge/patterns/same-result-before-change-baseline.md`.
+
+- A policy page is not a running process. Process, register, and how-to are a set. Walk one case with the operator before calling the baseline locked.
+- A criterion that an expert and a newcomer do not answer the same way is not a criterion.
+- Do not use change control to rescue a to-be that was never checked with the people who do the work. A budgetary estimate and a firm estimate are not the same baseline.
+- "Agreed" names who, and at what grain. A checklist log tracks started and done per deliverable. It does not re-score every check.
+- A monthly pack does not need a newly discovered problem. A named risk stays a risk until it materializes.
 
 ---
 

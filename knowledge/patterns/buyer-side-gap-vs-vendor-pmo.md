@@ -50,3 +50,4 @@
 - `playbooks/cross-project-program-management.md`  
 - `frameworks/transformation-pmo.md`  
 - `knowledge/migrations/coaching-20260828-change-effort-buyer-gap-2026-08.md`  
+- `knowledge/patterns/same-result-before-change-baseline.md` — 書面の役割と実務がずれているとき、新しい横断役を足す前に段を直す  

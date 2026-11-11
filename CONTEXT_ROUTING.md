@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.54
+Version: v1.55
 
 ## Purpose
 
@@ -379,6 +379,7 @@ Load:
 - knowledge/patterns/unowned-work-in-effort-analysis.md (if current-work / hearing structure is person-tied and may leak unowned tasks)
 - knowledge/patterns/change-agent-vs-communication-plan.md (if monthly appendix is change artefacts; agents ≠ communication plan)
 - knowledge/patterns/buyer-side-gap-vs-vendor-pmo.md (if monthly must surface go-live-path gaps the vendor PMO will not own)
+- knowledge/patterns/same-result-before-change-baseline.md (if change control, a quality checklist, or a role chart is being called agreed or started)
 - playbooks/program-governance-cadence.md (which meeting layer; do not collapse into SteerComm)
 - playbooks/cross-project-program-management.md (if boundary / dependency content is needed)
 - frameworks/top-down-thinking.md (frames as tools; derive axes from real work)
@@ -388,6 +389,7 @@ Focus:
 - Weekly vs monthly job split (exceptions/lookahead vs problem-portfolio narrative)
 - MECE / evaluation frames stay internal; Appendix only if asked; samples stay samples
 - Uncertainty visible; completion criteria before saying closed/resolved
+- "Next time" names the forum. Do not hunt a new monthly problem; materialize a named risk
 - Top-down slides + oral concrete detail; expression hygiene with key contacts
 - Short verbal head-up of parallel workstreams even when not on this agenda
 - Rare-cycle clients: mix go-live-path risks into monthly so muscle memory can form
@@ -450,6 +452,7 @@ Load:
 - knowledge/patterns/scn-as-landscape-not-completeness.md (if an SCN of running projects is being scored as MECE completeness)
 - knowledge/patterns/pgmo-presence-via-client-stance.md (if process pack runs but client trust / proposal value still sits with a long-trusted specialist PM)
 - knowledge/patterns/buyer-side-gap-vs-vendor-pmo.md (if vendor PMO coverage is being treated as buyer-side gap management)
+- knowledge/patterns/same-result-before-change-baseline.md (if a change process, checklist, or baseline is treated as running because a meeting agreed)
 - knowledge/patterns/stay-then-repropose-on-handover.md (if sponsor / PMO owner is changing and the next phase is being locked from the outgoing seat)
 - knowledge/patterns/final-cut-hands-over-decision-themes.md (if a final report walks issue rows, or treats a schedule update / workshop option as locked)
 - knowledge/patterns/transformation-practice-case-pack.md (if packaging internal transformation practice cases / MM learning packs—not client status)
