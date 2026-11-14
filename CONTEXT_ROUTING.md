@@ -2,7 +2,7 @@
 
 # CONTEXT_ROUTING
 
-Version: v1.54
+Version: v1.55
 
 ## Purpose
 
@@ -571,6 +571,7 @@ Load:
 - playbooks/stakeholder-activation-playbook.md (if the job is moving a specific person, not designing the org-wide change process)
 - knowledge/patterns/who-vs-lever-family.md (if the person is right but the lever is push/fear or logic-only)
 - knowledge/patterns/change-agent-vs-communication-plan.md (if Champion hunt is being treated as the communication plan)
+- knowledge/patterns/change-catalogue-is-not-the-plan.md (if a method catalogue or tool list is being run as the change plan)
 - knowledge/patterns/formulation-comms-vs-adoption-comms.md (if roadmap-formulation sessions are collapsed into an adoption communication plan, or a field team is planned before kick conditions)
 - knowledge/patterns/activation-first-for-site-led-work.md (if a named-person roster or model site is being filled before HQ-vs-site-led sort, verification theme, or selection criteria)
 - knowledge/patterns/interim-as-confirmation-set.md (if involvement vs calendar is being resolved by silently thinning the field, or an interim deck dumps the working extraction)

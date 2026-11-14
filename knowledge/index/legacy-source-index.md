@@ -1,6 +1,6 @@
 # Legacy Source Index
 
-**Version:** v1.29  
+**Version:** v1.30  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Purpose:** ローカル保管のレガシー原本と、リポジトリ内知識の対応索引。**原本の中身は含まない。**
@@ -694,6 +694,20 @@
 | Power Questions レビュー／作成ワークシート／質問集 | `frameworks/client-advisor.md` §4–5、`knowledge/patterns/three-questions-per-meeting.md` | 性質、4象限、3問、野心→能力→ギャップ。質問の仕事の種類。定型句は引退。例文は未登録 |
 
 **未登録:** 質問集の本文、依頼文の文例、クイズ、口座名の枠。
+
+---
+
+## Program Line AM: Change method catalogue screen（判断のみ）
+
+原本はローカルの OCM 方法論一式（概要、推進ガイド、テンプレート、顧客提案 1 件）。匿名ラベル: **change method catalogue / screen**。ガイド本文、調査項目、性格・文化の診断、顧客提案は不登録。
+
+| ローカル原本（種別） | 抽出先 | 登録範囲 |
+|---------------------|--------|---------|
+| 方法論の全体（7 つの推進要素） | `knowledge/patterns/change-catalogue-is-not-the-plan.md` | カタログは抜けを探す地図。実施順の WBS にしない |
+| 現場に出す道具の選別 | 同上 | 効果、汎用、すぐ使える、同じように使える。落ちた道具は登録しない |
+| 投資説明と現場への説明 | `frameworks/change-management.md` | 費用便益の文書は、この人への説明にならない。役割の影響は研修の前 |
+
+**未登録:** チーム役割、リーダーシップ様式、対人スタイル、文化モデル、受容度調査、コミュニケーション計画の様式。成功要因の百分率。顧客提案デッキ。
 
 ---
 

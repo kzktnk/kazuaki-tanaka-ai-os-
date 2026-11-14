@@ -1,10 +1,10 @@
 # Knowledge Master Index
 
-**Version:** v1.48  
+**Version:** v1.49  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Document role:** Expandable 3–4 level map of the AI OS knowledge base  
-**Last updated:** 2026-10-27
+**Last updated:** 2026-11-14
 
 ---
 
@@ -76,9 +76,9 @@ kazuaki-tanaka-ai-os/
 ├── knowledge/
 │   ├── index/                  ← this file + domain indexes
 │   ├── source/                 ← preserved originals (LinkedIn, etc.)
-│   ├── patterns/               ← 66 distilled patterns
+│   ├── patterns/               ← 67 distilled patterns
 │   ├── lessons/                ← 5 lessons
-│   ├── migrations/             ← 62 migration reports
+│   ├── migrations/             ← 63 migration reports
 │   └── decisions/              ← 4 records
 ├── templates/                  ← 1 template
 ├── prompts/                    ← README placeholder
@@ -321,7 +321,8 @@ knowledge/
 │   ├── final-cut-decision-themes-2026-09.md
 │   ├── issue-structuring-skill-2026-09.md
 │   ├── cutover-risk-governance-2026-10.md
-│   └── client-advisor-masterclass-2026-10.md
+│   ├── client-advisor-masterclass-2026-10.md
+│   └── change-catalogue-screen-2026-11.md
 └── decisions/
     ├── diagnose-from-gateway-not-client-error.md
     ├── sandbox-cost-controls-before-resources.md
@@ -329,7 +330,7 @@ knowledge/
     └── buyer-owns-ai-poc-ground-truth.md
 ```
 
-### Patterns (66)
+### Patterns (67)
 
 | Pattern | Primary themes |
 |---------|----------------|
@@ -338,6 +339,7 @@ knowledge/
 | `buyer-side-gap-vs-vendor-pmo.md` | Vendor PMO ≠ buyer ハザマ; continuation ≠ next-phase value; monthly as go-live-path education |
 | `unowned-work-in-effort-analysis.md` | Person-tied PDC leaks unowned work; 検討主体 then execute/manage; actuals ≠ WBS |
 | `change-agent-vs-communication-plan.md` | Agent hunt ≠ communication plan; plan before samples |
+| `change-catalogue-is-not-the-plan.md` | Method catalogue ≠ the plan; field-use screen; investment case ≠ change brief |
 | `pgmo-presence-via-client-stance.md` | Client-side PM/PO stance; ally with trusted incumbent; intersection risk → monthly→weekly reverse tracking |
 | `related-project-external-coordination-radar.md` | Adjacent-project radar + external coordination; hypothesis → confirm → promote |
 | `transformation-practice-case-pack.md` | Internal ET practice case-pack anatomy; Role × type matrix; theme-card schema |
@@ -1446,7 +1448,7 @@ Full detail in `CONTEXT_ROUTING.md`. High-traffic routes:
 | DX grand design | `frameworks/dx-grand-design.md`, change / roadmap as needed |
 | New venture assessment | `frameworks/new-venture-three-track-assessment.md` |
 | B2B sales workflow | `knowledge/patterns/sales-capacity-via-center-functions.md` |
-| Change management | `frameworks/change-management.md`, `all-at-once-vs-stepwise-change.md`, `change-agent-vs-communication-plan.md` (agent hunt ≠ communication plan), `formulation-comms-vs-adoption-comms.md` (formulation vs adoption; kick conditions first), `activation-first-for-site-led-work.md` (HQ-closable vs site-led; theme before site; criteria before site name), `who-vs-lever-family.md` (who ≠ lever family), `interim-as-confirmation-set.md` if involvement vs calendar is silently traded, `stay-then-repropose-on-handover.md` if workshop options are being locked by the outgoing owner, `final-cut-hands-over-decision-themes.md` if a closing CM pack treats workshop mode or site name as decided, `pmo-operating-guide.md` §CM, `playbooks/stakeholder-activation-playbook.md` (person-level), `playbooks/operations-transition-playbook.md` Chapter 7 (ops adoption) |
+| Change management | `frameworks/change-management.md`, `all-at-once-vs-stepwise-change.md`, `change-agent-vs-communication-plan.md` (agent hunt ≠ communication plan), `change-catalogue-is-not-the-plan.md` (catalogue ≠ plan; field-use screen), `formulation-comms-vs-adoption-comms.md` (formulation vs adoption; kick conditions first), `activation-first-for-site-led-work.md` (HQ-closable vs site-led; theme before site; criteria before site name), `who-vs-lever-family.md` (who ≠ lever family), `interim-as-confirmation-set.md` if involvement vs calendar is silently traded, `stay-then-repropose-on-handover.md` if workshop options are being locked by the outgoing owner, `final-cut-hands-over-decision-themes.md` if a closing CM pack treats workshop mode or site name as decided, `pmo-operating-guide.md` §CM, `playbooks/stakeholder-activation-playbook.md` (person-level), `playbooks/operations-transition-playbook.md` Chapter 7 (ops adoption) |
 | AI CoE / PgMO / Change | `knowledge/patterns/ai-coe-vs-pgmo-vs-change.md`, `ai-management-office.md`, `transformation-pmo.md`, `change-management.md` |
 | AI adoption / DX roadmap | `frameworks/ai-adoption-roadmap.md`, `playbooks/ai-utilization-roadmap.md`, `playbooks/ai-work-before-after.md`, `logical-vs-physical-document-unity.md` if document unification is the AI enabler, `human-reserved-two-rationales.md` if junior training-ground work is being automated (draft), `experience-preserving-ai-workflow.md` if AI is compressing the work juniors used to learn from (draft) |
 | AI PoC quality (buyer) | `playbooks/ai-poc-quality-review.md`, `rag-structure-diagnosis.md`, `buyer-owns-ai-poc-ground-truth.md`, `ai-output-evaluation-terms.md` if scoring an answer, `define-success-before-prompt-change.md` if prompts are being tuned, `explicit-before-elaborate-prompt.md` if the prompt is being lengthened before the task is clear, `logical-vs-physical-document-unity.md` if corpus / store strategy is open, `choose-access-by-volatility.md` if static vs RAG vs live vs agentic search is open, `match-capability-to-context-job.md` if persistent context or dumping all files is open, `field-practitioner-eval-before-uat.md` if field practitioners try a prototype before UAT |

@@ -1,6 +1,6 @@
 # Change Management Framework
 
-**Version:** v1.3  
+**Version:** v1.4  
 **Status:** Active  
 **Owner:** Kazuaki Tanaka  
 **Origin:** Generalized from legacy Strategic Change / LPD Change Management training (c. 2001–2003), plus later change-plan / workshop method (structure only). Japanese slide text in early `.ppt` was not recoverable; English structure recovered. Client cases, org charts, plan body, and vendor catalogues are **not** registered.
@@ -139,6 +139,12 @@ Communications fail when only the corporate “why” is told.
 
 Test: can a front-line supervisor answer all three without a slide?
 
+The investment paper answers whether the organization should spend (cost and benefit). It does not answer the three understandings. A leader who can only read the investment paper has not explained the change.
+
+Role and process impact is confirmed with the people who do the work before training materials are written. Change management does not invent the To-Be.
+
+A method catalogue is a map of missing jobs, not the plan. Tools that fail field use stay out. See `knowledge/patterns/change-catalogue-is-not-the-plan.md`.
+
 ### Time-phased messages
 
 - Map messages to **milestones**, not to a weekly newsletter habit  
@@ -238,7 +244,7 @@ AI-specific change (incomplete models, ethics, shadow tools, HITL) is `knowledge
 
 - Named client cases (life sciences, auto, utilities, etc.)  
 - Ice-breaker personality quizzes  
-- Vendor tool catalogues (culture inventories, MBTI, branded “change pro” suites)  
+- Vendor tool catalogues (culture inventories, MBTI, team-role and social-style instruments, branded “change pro” suites) — the screen for what to keep is `knowledge/patterns/change-catalogue-is-not-the-plan.md`  
 - Full training-factory WBS (EPSS, train-the-trainer shops) — keep only “enablement is a workstream”  
 - Full 変革推進計画 body, stakeholder maps with names, unit headcount, channel calendars  
 - Vendor % claims and overnight workshop minute-by-minute schedules
@@ -252,7 +258,8 @@ AI-specific change (incomplete models, ethics, shadow tools, HITL) is `knowledge
 - `playbooks/stakeholder-activation-playbook.md`
 - `knowledge/patterns/who-vs-lever-family.md`
 - `playbooks/operations-transition-playbook.md`
-- `knowledge/index/legacy-source-index.md` Program Line L, Program Line T, Program Line AE
+- `knowledge/index/legacy-source-index.md` Program Line L, Program Line T, Program Line AE, Program Line AM
+- `knowledge/patterns/change-catalogue-is-not-the-plan.md`
 - `knowledge/patterns/change-agent-vs-communication-plan.md`
 - `knowledge/patterns/formulation-comms-vs-adoption-comms.md`
 - `knowledge/patterns/activation-first-for-site-led-work.md`
